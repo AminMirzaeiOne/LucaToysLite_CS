@@ -66,6 +66,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Controls\LucaToysLogo.resx">
+      <DependentUpon>LucaToysLogo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\WindowToolbar.resx">
       <DependentUpon>WindowToolbar.cs</DependentUpon>
     </EmbeddedResource>
