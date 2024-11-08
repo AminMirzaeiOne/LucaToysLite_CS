@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\LucaToysLogo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\LucaToysLogo.Designer.cs">
+      <DependentUpon>LucaToysLogo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\WindowToolbar.cs">
       <SubType>UserControl</SubType>
     </Compile>
