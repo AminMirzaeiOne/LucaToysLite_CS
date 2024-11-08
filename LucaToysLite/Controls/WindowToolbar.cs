@@ -24,6 +24,7 @@ namespace LucaToysLite.Controls
         public System.Boolean MaximizeButton { get { return this.button2.Visible; } set { this.button2.Visible = value; } }
         public System.Boolean MinimizeButton { get { return this.button3.Visible; } set { this.button3.Visible = value; } }
         public System.Boolean MoveOption { get; set; } = true;
+        public System.Boolean IconButton { get { return this.button4.Visible; } set { this.button4.Visible = value; } }
 
         private void button1_Click(object sender, EventArgs e)
         {
