@@ -117,6 +117,8 @@
             // 
             // roundedButton1
             // 
+            this.roundedButton1.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.roundedButton1.FlatAppearance.BorderSize = 2;
             this.roundedButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton1.ForeColor = System.Drawing.Color.White;
             this.roundedButton1.Location = new System.Drawing.Point(270, 431);
