@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SplashScreen));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
+            this.lucaToysLogo1 = new LucaToysLite.Controls.LucaToysLogo();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -52,6 +54,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.panel1.Controls.Add(this.lucaToysLogo1);
             this.panel1.Controls.Add(this.windowToolbar1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 3);
@@ -68,6 +71,17 @@
             this.windowToolbar1.Size = new System.Drawing.Size(522, 45);
             this.windowToolbar1.TabIndex = 0;
             this.windowToolbar1.Window = this;
+            // 
+            // lucaToysLogo1
+            // 
+            this.lucaToysLogo1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.lucaToysLogo1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lucaToysLogo1.BackgroundImage")));
+            this.lucaToysLogo1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.lucaToysLogo1.Location = new System.Drawing.Point(113, 141);
+            this.lucaToysLogo1.Name = "lucaToysLogo1";
+            this.lucaToysLogo1.Radius = 100;
+            this.lucaToysLogo1.Size = new System.Drawing.Size(326, 284);
+            this.lucaToysLogo1.TabIndex = 1;
             // 
             // SplashScreen
             // 
@@ -92,5 +106,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
         private Controls.WindowToolbar windowToolbar1;
+        private Controls.LucaToysLogo lucaToysLogo1;
     }
 }

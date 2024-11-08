@@ -40,6 +40,7 @@
             this.DoubleBuffered = true;
             this.Name = "LucaToysLogo";
             this.Size = new System.Drawing.Size(326, 284);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.LucaToysLogo_Paint);
             this.ResumeLayout(false);
 
         }
