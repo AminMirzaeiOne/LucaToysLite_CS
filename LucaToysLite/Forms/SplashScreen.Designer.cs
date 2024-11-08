@@ -35,6 +35,7 @@
             this.lucaToysLogo1 = new LucaToysLite.Controls.LucaToysLogo();
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
             this.loadingControl1 = new LucaToysLite.Controls.LoadingControl();
+            this.roundedButton1 = new LucaToysLite.Controls.RoundedButton();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -56,6 +57,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.panel1.Controls.Add(this.roundedButton1);
             this.panel1.Controls.Add(this.loadingControl1);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.lucaToysLogo1);
@@ -113,6 +115,21 @@
             this.loadingControl1.Size = new System.Drawing.Size(560, 30);
             this.loadingControl1.TabIndex = 4;
             // 
+            // roundedButton1
+            // 
+            this.roundedButton1.BorderRadius = ((byte)(30));
+            this.roundedButton1.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.roundedButton1.FlatAppearance.BorderSize = 3;
+            this.roundedButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
+            this.roundedButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton1.ForeColor = System.Drawing.Color.White;
+            this.roundedButton1.Location = new System.Drawing.Point(251, 445);
+            this.roundedButton1.Name = "roundedButton1";
+            this.roundedButton1.Size = new System.Drawing.Size(200, 73);
+            this.roundedButton1.TabIndex = 5;
+            this.roundedButton1.Text = "roundedButton1";
+            this.roundedButton1.UseVisualStyleBackColor = true;
+            // 
             // SplashScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
@@ -139,5 +156,6 @@
         private Controls.LucaToysLogo lucaToysLogo1;
         private System.Windows.Forms.Button button1;
         private Controls.LoadingControl loadingControl1;
+        private Controls.RoundedButton roundedButton1;
     }
 }

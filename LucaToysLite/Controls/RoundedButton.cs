@@ -6,9 +6,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 
 namespace LucaToysLite.Controls
 {
+    [DefaultValue(FlatStyle.Flat)]
     public class RoundedButton : System.Windows.Forms.Button
     {
         public System.Byte BorderRadius { get; set; } = 20;
@@ -33,7 +36,7 @@ namespace LucaToysLite.Controls
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
-            this.FlatStyle = FlatStyle.Flat;
+            e.Graphics.SmoothingMode = SmoothingMode.HighQuality;
             RectangleF Rect = new RectangleF(0, 0, this.Width-1, this.Height-1);
             using (GraphicsPath GraphPath = GetRoundPath(Rect, this.BorderRadius))
             {
