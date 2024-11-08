@@ -58,11 +58,6 @@ namespace LucaToysLite.Controls
         private void RecreateRegion()
         {
             var bounds = ClientRectangle;
-
-            //using (var path = GetRoundRectagle(bounds, this.Radius))
-            //    this.Region = new Region(path);
-
-            //Better round rectangle
             this.Region = Region.FromHrgn(CreateRoundRectRgn(bounds.Left, bounds.Top,
                 bounds.Right, bounds.Bottom, Radius, radius));
             this.Invalidate();
@@ -77,7 +72,7 @@ namespace LucaToysLite.Controls
         private void LucaToysLogo_Paint(object sender, PaintEventArgs e)
         {
 
-            //PaintTransparentBackground(this, e);
+            
         }
     }
 }
