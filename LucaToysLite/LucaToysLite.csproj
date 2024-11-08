@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\WindowToolbar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WindowToolbar.Designer.cs">
+      <DependentUpon>WindowToolbar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\SplashScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,7 +86,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controls\" />
     <Folder Include="Pages\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
