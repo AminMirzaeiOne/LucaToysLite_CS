@@ -41,5 +41,11 @@ namespace LucaToysLite.Controls
                 }
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (this.Window != null)
+                this.Window.WindowState = FormWindowState.Minimized;
+        }
     }
 }
