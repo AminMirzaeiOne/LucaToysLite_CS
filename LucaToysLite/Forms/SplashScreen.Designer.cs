@@ -48,7 +48,7 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(528, 715);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(900, 600);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // panel1
@@ -59,7 +59,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(522, 709);
+            this.panel1.Size = new System.Drawing.Size(894, 594);
             this.panel1.TabIndex = 0;
             // 
             // lucaToysLogo1
@@ -67,10 +67,10 @@
             this.lucaToysLogo1.BackColor = System.Drawing.Color.RoyalBlue;
             this.lucaToysLogo1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lucaToysLogo1.BackgroundImage")));
             this.lucaToysLogo1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.lucaToysLogo1.Location = new System.Drawing.Point(113, 141);
+            this.lucaToysLogo1.Location = new System.Drawing.Point(336, 121);
             this.lucaToysLogo1.Name = "lucaToysLogo1";
             this.lucaToysLogo1.Radius = 100;
-            this.lucaToysLogo1.Size = new System.Drawing.Size(326, 284);
+            this.lucaToysLogo1.Size = new System.Drawing.Size(207, 200);
             this.lucaToysLogo1.TabIndex = 1;
             // 
             // windowToolbar1
@@ -83,7 +83,7 @@
             this.windowToolbar1.MinimizeButton = true;
             this.windowToolbar1.MoveOption = true;
             this.windowToolbar1.Name = "windowToolbar1";
-            this.windowToolbar1.Size = new System.Drawing.Size(522, 45);
+            this.windowToolbar1.Size = new System.Drawing.Size(894, 45);
             this.windowToolbar1.TabIndex = 0;
             this.windowToolbar1.Window = this;
             // 
@@ -92,7 +92,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.ClientSize = new System.Drawing.Size(528, 715);
+            this.ClientSize = new System.Drawing.Size(900, 600);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
