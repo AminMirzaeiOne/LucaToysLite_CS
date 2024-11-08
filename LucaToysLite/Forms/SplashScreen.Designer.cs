@@ -67,7 +67,7 @@
             this.windowToolbar1.Name = "windowToolbar1";
             this.windowToolbar1.Size = new System.Drawing.Size(887, 45);
             this.windowToolbar1.TabIndex = 0;
-            this.windowToolbar1.Window = null;
+            this.windowToolbar1.Window = this;
             // 
             // SplashScreen
             // 

@@ -55,8 +55,8 @@ namespace LucaToysLite.Controls
         {
             if (this.mouseDown == true)
             {
-                this.Location = new Point(
-                (this.Location.X - this.lastLocation.X) + e.X, (this.Location.Y - this.lastLocation.Y) + e.Y);
+                this.Window.Location = new Point(
+                (this.Window.Location.X - this.lastLocation.X) + e.X, (this.Window.Location.Y - this.lastLocation.Y) + e.Y);
 
                 this.Update();
             }
