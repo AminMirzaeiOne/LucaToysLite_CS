@@ -61,6 +61,7 @@
     <Compile Include="Controls\RoundedButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Controls\RoundedLabel.cs" />
     <Compile Include="Controls\WindowToolbar.cs">
       <SubType>UserControl</SubType>
     </Compile>
