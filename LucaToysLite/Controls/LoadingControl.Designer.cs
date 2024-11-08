@@ -37,17 +37,18 @@
             this.label2.Dock = System.Windows.Forms.DockStyle.Left;
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 25);
-            this.label2.TabIndex = 3;
+            this.label2.Size = new System.Drawing.Size(59, 30);
+            this.label2.TabIndex = 5;
             // 
             // LoadingControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.Controls.Add(this.label2);
             this.Name = "LoadingControl";
-            this.Size = new System.Drawing.Size(560, 25);
+            this.Size = new System.Drawing.Size(560, 30);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.LoadingControl_Paint);
             this.ResumeLayout(false);
 
         }

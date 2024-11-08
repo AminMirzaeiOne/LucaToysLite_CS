@@ -58,6 +58,9 @@
     <Compile Include="Controls\LucaToysLogo.Designer.cs">
       <DependentUpon>LucaToysLogo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\RoundedButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Controls\WindowToolbar.cs">
       <SubType>UserControl</SubType>
     </Compile>

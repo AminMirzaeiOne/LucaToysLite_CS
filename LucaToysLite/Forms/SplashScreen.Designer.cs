@@ -31,10 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SplashScreen));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.loadingControl1 = new LucaToysLite.Controls.LoadingControl();
             this.button1 = new System.Windows.Forms.Button();
             this.lucaToysLogo1 = new LucaToysLite.Controls.LucaToysLogo();
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
+            this.loadingControl1 = new LucaToysLite.Controls.LoadingControl();
+            this.roundedButton1 = new LucaToysLite.Controls.RoundedButton();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -56,6 +57,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.panel1.Controls.Add(this.roundedButton1);
             this.panel1.Controls.Add(this.loadingControl1);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.lucaToysLogo1);
@@ -65,14 +67,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(894, 544);
             this.panel1.TabIndex = 0;
-            // 
-            // loadingControl1
-            // 
-            this.loadingControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.loadingControl1.Location = new System.Drawing.Point(145, 350);
-            this.loadingControl1.Name = "loadingControl1";
-            this.loadingControl1.Size = new System.Drawing.Size(560, 25);
-            this.loadingControl1.TabIndex = 4;
             // 
             // button1
             // 
@@ -113,6 +107,25 @@
             this.windowToolbar1.TabIndex = 0;
             this.windowToolbar1.Window = this;
             // 
+            // loadingControl1
+            // 
+            this.loadingControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.loadingControl1.Location = new System.Drawing.Point(160, 324);
+            this.loadingControl1.Name = "loadingControl1";
+            this.loadingControl1.Size = new System.Drawing.Size(560, 30);
+            this.loadingControl1.TabIndex = 4;
+            // 
+            // roundedButton1
+            // 
+            this.roundedButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton1.ForeColor = System.Drawing.Color.White;
+            this.roundedButton1.Location = new System.Drawing.Point(270, 431);
+            this.roundedButton1.Name = "roundedButton1";
+            this.roundedButton1.Size = new System.Drawing.Size(217, 87);
+            this.roundedButton1.TabIndex = 5;
+            this.roundedButton1.Text = "Verson : 1.0.0";
+            this.roundedButton1.UseVisualStyleBackColor = true;
+            // 
             // SplashScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
@@ -139,5 +152,6 @@
         private Controls.LucaToysLogo lucaToysLogo1;
         private System.Windows.Forms.Button button1;
         private Controls.LoadingControl loadingControl1;
+        private Controls.RoundedButton roundedButton1;
     }
 }
