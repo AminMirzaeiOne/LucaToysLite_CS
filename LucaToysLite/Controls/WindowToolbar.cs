@@ -24,5 +24,22 @@ namespace LucaToysLite.Controls
             if(this.Window != null) 
                 this.Window.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (this.Window != null)
+            {
+                if (this.Window.WindowState == FormWindowState.Normal)
+                {
+                    this.button2.Text = "";
+                    this.Window.WindowState = FormWindowState.Maximized;
+                }
+                else if(this.Window.WindowState == FormWindowState.Maximized)
+                {
+                    this.button2.Text = "";
+                    this.Window.WindowState = FormWindowState.Normal;
+                }
+            }
+        }
     }
 }
