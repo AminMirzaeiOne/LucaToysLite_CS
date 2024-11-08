@@ -33,11 +33,12 @@ namespace LucaToysLite.Controls
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
+            this.FlatStyle = FlatStyle.Flat;
             RectangleF Rect = new RectangleF(0, 0, this.Width-1, this.Height-1);
             using (GraphicsPath GraphPath = GetRoundPath(Rect, this.BorderRadius))
             {
                 this.Region = new Region(GraphPath);
-                using (Pen pen = new Pen(this.FlatAppearance.BorderColor, this.BorderSize))
+                using (Pen pen = new Pen(this.FlatAppearance.BorderColor, this.FlatAppearance.BorderSize))
                 {
                     pen.Alignment = PenAlignment.Inset;
                     e.Graphics.DrawPath(pen, GraphPath);
