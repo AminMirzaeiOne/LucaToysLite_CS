@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SplashScreen));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
             this.lucaToysLogo1 = new LucaToysLite.Controls.LucaToysLogo();
+            this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -62,16 +62,6 @@
             this.panel1.Size = new System.Drawing.Size(522, 709);
             this.panel1.TabIndex = 0;
             // 
-            // windowToolbar1
-            // 
-            this.windowToolbar1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.windowToolbar1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.windowToolbar1.Location = new System.Drawing.Point(0, 0);
-            this.windowToolbar1.Name = "windowToolbar1";
-            this.windowToolbar1.Size = new System.Drawing.Size(522, 45);
-            this.windowToolbar1.TabIndex = 0;
-            this.windowToolbar1.Window = this;
-            // 
             // lucaToysLogo1
             // 
             this.lucaToysLogo1.BackColor = System.Drawing.Color.RoyalBlue;
@@ -82,6 +72,20 @@
             this.lucaToysLogo1.Radius = 100;
             this.lucaToysLogo1.Size = new System.Drawing.Size(326, 284);
             this.lucaToysLogo1.TabIndex = 1;
+            // 
+            // windowToolbar1
+            // 
+            this.windowToolbar1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.windowToolbar1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.windowToolbar1.IconButton = true;
+            this.windowToolbar1.Location = new System.Drawing.Point(0, 0);
+            this.windowToolbar1.MaximizeButton = false;
+            this.windowToolbar1.MinimizeButton = true;
+            this.windowToolbar1.MoveOption = true;
+            this.windowToolbar1.Name = "windowToolbar1";
+            this.windowToolbar1.Size = new System.Drawing.Size(522, 45);
+            this.windowToolbar1.TabIndex = 0;
+            this.windowToolbar1.Window = this;
             // 
             // SplashScreen
             // 
