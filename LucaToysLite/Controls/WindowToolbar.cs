@@ -12,6 +12,9 @@ namespace LucaToysLite.Controls
 {
     public partial class WindowToolbar : UserControl
     {
+        private bool mouseDown;
+        private Point lastLocation;
+
         public WindowToolbar()
         {
             InitializeComponent();
@@ -46,6 +49,28 @@ namespace LucaToysLite.Controls
         {
             if (this.Window != null)
                 this.Window.WindowState = FormWindowState.Minimized;
+        }
+
+        private void WindowToolbar_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (this.mouseDown == true)
+            {
+                this.Location = new Point(
+                (this.Location.X - this.lastLocation.X) + e.X, (this.Location.Y - this.lastLocation.Y) + e.Y);
+
+                this.Update();
+            }
+        }
+
+        private void WindowToolbar_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.mouseDown = true;
+            this.lastLocation = e.Location;
+        }
+
+        private void WindowToolbar_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.mouseDown = false;
         }
     }
 }

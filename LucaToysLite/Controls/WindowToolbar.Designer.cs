@@ -104,6 +104,9 @@
             this.Controls.Add(this.button1);
             this.Name = "WindowToolbar";
             this.Size = new System.Drawing.Size(600, 45);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.WindowToolbar_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.WindowToolbar_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.WindowToolbar_MouseUp);
             this.ResumeLayout(false);
 
         }
