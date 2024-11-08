@@ -16,5 +16,10 @@ namespace LucaToysLite.Forms
         {
             InitializeComponent();
         }
+
+        private void label1_Paint(object sender, PaintEventArgs e)
+        {
+            e.Graphics.DrawRectangle(new Pen(Color.RoyalBlue, 2), e.ClipRectangle);
+        }
     }
 }

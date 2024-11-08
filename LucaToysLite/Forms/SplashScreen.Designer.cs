@@ -31,8 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SplashScreen));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.lucaToysLogo1 = new LucaToysLite.Controls.LucaToysLogo();
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
+            this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -54,6 +56,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.lucaToysLogo1);
             this.panel1.Controls.Add(this.windowToolbar1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -62,15 +66,24 @@
             this.panel1.Size = new System.Drawing.Size(894, 594);
             this.panel1.TabIndex = 0;
             // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.label1.Location = new System.Drawing.Point(155, 364);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(560, 25);
+            this.label1.TabIndex = 2;
+            this.label1.Paint += new System.Windows.Forms.PaintEventHandler(this.label1_Paint);
+            // 
             // lucaToysLogo1
             // 
             this.lucaToysLogo1.BackColor = System.Drawing.Color.RoyalBlue;
             this.lucaToysLogo1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lucaToysLogo1.BackgroundImage")));
             this.lucaToysLogo1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.lucaToysLogo1.Location = new System.Drawing.Point(336, 121);
+            this.lucaToysLogo1.Location = new System.Drawing.Point(338, 108);
             this.lucaToysLogo1.Name = "lucaToysLogo1";
             this.lucaToysLogo1.Radius = 100;
-            this.lucaToysLogo1.Size = new System.Drawing.Size(207, 200);
+            this.lucaToysLogo1.Size = new System.Drawing.Size(200, 200);
             this.lucaToysLogo1.TabIndex = 1;
             // 
             // windowToolbar1
@@ -86,6 +99,14 @@
             this.windowToolbar1.Size = new System.Drawing.Size(894, 45);
             this.windowToolbar1.TabIndex = 0;
             this.windowToolbar1.Window = this;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label2.Location = new System.Drawing.Point(155, 364);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(71, 25);
+            this.label2.TabIndex = 2;
             // 
             // SplashScreen
             // 
@@ -111,5 +132,7 @@
         private System.Windows.Forms.Panel panel1;
         private Controls.WindowToolbar windowToolbar1;
         private Controls.LucaToysLogo lucaToysLogo1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
