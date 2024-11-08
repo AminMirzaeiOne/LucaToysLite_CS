@@ -16,5 +16,13 @@ namespace LucaToysLite.Controls
         {
             InitializeComponent();
         }
+
+        public System.Windows.Forms.Form Window { get; set; }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(this.Window != null) 
+                this.Window.Close();
+        }
     }
 }
