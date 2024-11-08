@@ -23,10 +23,11 @@ namespace LucaToysLite.Controls
         public System.Windows.Forms.Form Window { get; set; }
         public System.Boolean MaximizeButton { get { return this.button2.Visible; } set { this.button2.Visible = value; } }
         public System.Boolean MinimizeButton { get { return this.button3.Visible; } set { this.button3.Visible = value; } }
+        public System.Boolean MoveOption { get; set; } = true;
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(this.Window != null) 
+            if (this.Window != null)
                 this.Window.Close();
         }
 
@@ -39,7 +40,7 @@ namespace LucaToysLite.Controls
                     this.button2.Text = "";
                     this.Window.WindowState = FormWindowState.Maximized;
                 }
-                else if(this.Window.WindowState == FormWindowState.Maximized)
+                else if (this.Window.WindowState == FormWindowState.Maximized)
                 {
                     this.button2.Text = "";
                     this.Window.WindowState = FormWindowState.Normal;
@@ -55,24 +56,33 @@ namespace LucaToysLite.Controls
 
         private void WindowToolbar_MouseMove(object sender, MouseEventArgs e)
         {
-            if (this.mouseDown == true)
+            if (this.Window != null && this.MoveOption == true)
             {
-                this.Window.Location = new Point(
-                (this.Window.Location.X - this.lastLocation.X) + e.X, (this.Window.Location.Y - this.lastLocation.Y) + e.Y);
+                if (this.mouseDown == true)
+                {
+                    this.Window.Location = new Point(
+                    (this.Window.Location.X - this.lastLocation.X) + e.X, (this.Window.Location.Y - this.lastLocation.Y) + e.Y);
 
-                this.Update();
+                    this.Update();
+                }
             }
+
         }
 
         private void WindowToolbar_MouseDown(object sender, MouseEventArgs e)
         {
-            this.mouseDown = true;
-            this.lastLocation = e.Location;
+            if (this.Window != null)
+            {
+                this.mouseDown = true;
+                this.lastLocation = e.Location;
+            }
+
         }
 
         private void WindowToolbar_MouseUp(object sender, MouseEventArgs e)
         {
-            this.mouseDown = false;
+            if (this.Window != null)
+                this.mouseDown = false;
         }
     }
 }
