@@ -35,6 +35,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.RoyalBlue;
+            this.BackgroundImage = global::LucaToysLite.Properties.Resources.LucaToys;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.DoubleBuffered = true;
             this.Name = "LucaToysLogo";
             this.Size = new System.Drawing.Size(326, 284);
             this.ResumeLayout(false);
