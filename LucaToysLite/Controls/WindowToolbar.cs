@@ -119,10 +119,14 @@ namespace LucaToysLite.Controls
 
         private void RecreateRegion()
         {
-            var bounds = ClientRectangle;
-            this.Region = Region.FromHrgn(CreateRoundRectRgn(bounds.Left, bounds.Top,
-                bounds.Right, bounds.Bottom, Radius, radius));
-            this.Invalidate();
+            if(this.Parent != null)
+            {
+                var bounds = this.Parent.ClientRectangle;
+                this.Parent.Region = Region.FromHrgn(CreateRoundRectRgn(bounds.Left, bounds.Top,
+                    bounds.Right, bounds.Bottom, Radius, radius));
+                this.Parent.Invalidate();
+            }
+            
         }
 
         protected override void OnSizeChanged(EventArgs e)
@@ -152,10 +156,10 @@ namespace LucaToysLite.Controls
         private void Parent_Paint(object sender, PaintEventArgs e)
         {
             e.Graphics.SmoothingMode = SmoothingMode.HighQuality;
-            RectangleF Rect = new RectangleF(0, 0, this.Width, this.Height);
+            RectangleF Rect = new RectangleF(0, 0, this.Parent.Width, this.Parent.Height);
             using (GraphicsPath GraphPath = GetRoundPath(Rect, this.Radius))
             {
-                this.Region = new Region(GraphPath);
+                this.Parent.Region = new Region(GraphPath);
                 using (Pen pen = new Pen(Color.RoyalBlue, 3))
                 {
                     pen.Alignment = PenAlignment.Inset;

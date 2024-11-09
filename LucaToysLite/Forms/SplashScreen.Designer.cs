@@ -142,7 +142,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SplashScreen";
             this.Load += new System.EventHandler(this.SplashScreen_Load);
-            this.Paint += new System.Windows.Forms.PaintEventHandler(this.SplashScreen_Paint);
             this.ResumeLayout(false);
 
         }
