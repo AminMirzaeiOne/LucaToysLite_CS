@@ -49,6 +49,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClassLibrary\WindowAnimation.cs" />
     <Compile Include="Controls\LoadingControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -126,7 +127,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ClassLibrary\" />
     <Folder Include="Pages\" />
   </ItemGroup>
   <ItemGroup>
