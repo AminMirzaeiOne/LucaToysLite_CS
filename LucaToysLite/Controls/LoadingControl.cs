@@ -96,7 +96,7 @@ namespace LucaToysLite.Controls
                     e.Graphics.DrawPath(pen, GraphPath);
                 }
             }
-            e.Graphics.FillRectangle(new SolidBrush(Color.RoyalBlue),0,0,40,e.ClipRectangle.Size.Height);
+            RectangleRoundd.FillRoundedRectangle(e.Graphics,new SolidBrush(Color.RoyalBlue),new Rectangle(0, 0, 900, e.ClipRectangle.Size.Height),10);
         }
 
 
@@ -104,6 +104,19 @@ namespace LucaToysLite.Controls
 
     public static class RectangleRoundd
     {
+        public static void FillRoundedRectangle(this Graphics graphics, Brush brush, Rectangle bounds, int cornerRadius)
+        {
+            if (graphics == null)
+                throw new ArgumentNullException(nameof(graphics));
+            if (brush == null)
+                throw new ArgumentNullException(nameof(brush));
+
+            using (GraphicsPath path = RoundedRect(bounds, cornerRadius))
+            {
+                graphics.FillPath(brush, path);
+            }
+        }
+
         public static GraphicsPath RoundedRect(Rectangle bounds, int radius)
         {
             int diameter = radius * 2;
