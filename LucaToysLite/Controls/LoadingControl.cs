@@ -96,6 +96,7 @@ namespace LucaToysLite.Controls
                     e.Graphics.DrawPath(pen, GraphPath);
                 }
             }
+            e.Graphics.FillRectangle(new SolidBrush(Color.RoyalBlue),0,0,40,e.ClipRectangle.Size.Height);
         }
 
 
