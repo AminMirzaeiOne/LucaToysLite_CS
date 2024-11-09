@@ -93,6 +93,9 @@
     <EmbeddedResource Include="Controls\WindowToolbar.resx">
       <DependentUpon>WindowToolbar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\SplashScreen.resx">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </EmbeddedResource>
