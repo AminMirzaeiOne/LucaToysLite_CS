@@ -21,8 +21,8 @@ namespace LucaToysLite.Controls
         {
             InitializeComponent();
             this.Load += new EventHandler(this.LoadEvent);
-            
-                
+
+
         }
         public System.Boolean MaximizeButton { get { return this.roundedButton2.Visible; } set { this.roundedButton2.Visible = value; } }
         public System.Boolean MinimizeButton { get { return this.roundedButton3.Visible; } set { this.roundedButton3.Visible = value; } }
@@ -32,7 +32,20 @@ namespace LucaToysLite.Controls
         public System.Byte WindowBorderSize { get; set; } = 3;
 
         public System.Boolean DarkTheme { get; set; } = true;
-        public System.Drawing.Color ColorPalette { get; set; } = System.Drawing.Color.RoyalBlue;
+        public System.Drawing.Color ColorPalette
+        {
+            get { return this.BackColor; }
+            set
+            {
+                this.BackColor = value;
+                this.roundedButton1.BackColor = value;
+                this.roundedButton2.BackColor = value;
+                this.roundedButton3.BackColor = value;
+                this.roundedButton4.BackColor = value;
+
+
+            }
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -125,14 +138,14 @@ namespace LucaToysLite.Controls
 
         private void RecreateRegion()
         {
-            if(this.Parent != null)
+            if (this.Parent != null)
             {
                 var bounds = this.Parent.ClientRectangle;
                 this.Parent.Region = Region.FromHrgn(CreateRoundRectRgn(bounds.Left, bounds.Top,
                     bounds.Right, bounds.Bottom, Radius, radius));
                 this.Parent.Invalidate();
             }
-            
+
         }
 
         protected override void OnSizeChanged(EventArgs e)
@@ -166,7 +179,7 @@ namespace LucaToysLite.Controls
             using (GraphicsPath GraphPath = GetRoundPath(Rect, this.Radius))
             {
                 this.Parent.Region = new Region(GraphPath);
-                using (Pen pen = new Pen(Color.Red, this.WindowBorderSize))
+                using (Pen pen = new Pen(this.ColorPalette, this.WindowBorderSize))
                 {
                     pen.Alignment = PenAlignment.Inset;
                     e.Graphics.DrawPath(pen, GraphPath);
@@ -174,12 +187,15 @@ namespace LucaToysLite.Controls
             }
         }
 
-        private void LoadEvent(object sender,EventArgs e)
+        private void LoadEvent(object sender, EventArgs e)
         {
             if (this.Parent != null && this.BorderStyleRadius)
             {
                 this.Parent.Paint += new PaintEventHandler(this.Parent_Paint);
-
+                foreach (Control items in this.Parent.Controls)
+                {
+                    items.BackColor = this.ColorPalette;
+                }
             }
         }
 
