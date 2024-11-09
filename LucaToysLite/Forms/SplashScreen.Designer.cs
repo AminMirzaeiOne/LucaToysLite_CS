@@ -83,7 +83,7 @@
             this.windowToolbar1.IconButton = true;
             this.windowToolbar1.Location = new System.Drawing.Point(0, 0);
             this.windowToolbar1.MaximizeButton = true;
-            this.windowToolbar1.MinimizeButton = false;
+            this.windowToolbar1.MinimizeButton = true;
             this.windowToolbar1.MoveOption = true;
             this.windowToolbar1.Name = "windowToolbar1";
             this.windowToolbar1.Size = new System.Drawing.Size(900, 45);

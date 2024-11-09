@@ -77,7 +77,7 @@ namespace LucaToysLite.Controls
         private void button3_Click(object sender, EventArgs e)
         {
             if (this.Parent != null)
-                ((Form)this.Parent).WindowState = FormWindowState.Minimized;
+                this.animation.Minimize();
         }
 
         private void WindowToolbar_MouseMove(object sender, MouseEventArgs e)
