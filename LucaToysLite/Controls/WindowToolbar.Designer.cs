@@ -28,102 +28,139 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button4 = new System.Windows.Forms.Button();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.roundedButton4 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton3 = new LucaToysLite.Controls.RoundedButton();
-            this.roundedButton2 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton1 = new LucaToysLite.Controls.RoundedButton();
+            this.roundedButton2 = new LucaToysLite.Controls.RoundedButton();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button4
+            // tableLayoutPanel1
             // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Segoe MDL2 Assets", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(0, 0);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(55, 45);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "";
-            this.button4.UseVisualStyleBackColor = true;
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.Controls.Add(this.roundedButton3, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.roundedButton1, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.roundedButton2, 1, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(436, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(160, 45);
+            this.tableLayoutPanel1.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label1.Location = new System.Drawing.Point(596, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(4, 45);
+            this.label1.TabIndex = 6;
+            // 
+            // roundedButton4
+            // 
+            this.roundedButton4.BackColor = System.Drawing.Color.RoyalBlue;
+            this.roundedButton4.BorderRadius = ((byte)(25));
+            this.roundedButton4.BorderSize = ((byte)(0));
+            this.roundedButton4.FlatAppearance.BorderSize = 0;
+            this.roundedButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton4.Font = new System.Drawing.Font("Segoe MDL2 Assets", 8F);
+            this.roundedButton4.ForeColor = System.Drawing.Color.White;
+            this.roundedButton4.Location = new System.Drawing.Point(4, 3);
+            this.roundedButton4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.roundedButton4.Name = "roundedButton4";
+            this.roundedButton4.Size = new System.Drawing.Size(45, 39);
+            this.roundedButton4.TabIndex = 8;
+            this.roundedButton4.Text = "";
+            this.roundedButton4.UseVisualStyleBackColor = false;
             // 
             // roundedButton3
             // 
-            this.roundedButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.roundedButton3.BackColor = System.Drawing.Color.RoyalBlue;
-            this.roundedButton3.BorderRadius = ((byte)(20));
+            this.roundedButton3.BorderRadius = ((byte)(25));
             this.roundedButton3.BorderSize = ((byte)(0));
+            this.roundedButton3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.roundedButton3.FlatAppearance.BorderSize = 0;
             this.roundedButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton3.Font = new System.Drawing.Font("Segoe MDL2 Assets", 7F);
             this.roundedButton3.ForeColor = System.Drawing.Color.White;
-            this.roundedButton3.Location = new System.Drawing.Point(457, 2);
+            this.roundedButton3.Location = new System.Drawing.Point(4, 3);
+            this.roundedButton3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.roundedButton3.Name = "roundedButton3";
-            this.roundedButton3.Size = new System.Drawing.Size(40, 40);
+            this.roundedButton3.Size = new System.Drawing.Size(45, 39);
             this.roundedButton3.TabIndex = 4;
             this.roundedButton3.Text = "";
             this.roundedButton3.UseVisualStyleBackColor = false;
             this.roundedButton3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // roundedButton2
-            // 
-            this.roundedButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.roundedButton2.BackColor = System.Drawing.Color.RoyalBlue;
-            this.roundedButton2.BorderRadius = ((byte)(20));
-            this.roundedButton2.BorderSize = ((byte)(0));
-            this.roundedButton2.FlatAppearance.BorderSize = 0;
-            this.roundedButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton2.Font = new System.Drawing.Font("Segoe MDL2 Assets", 7F);
-            this.roundedButton2.ForeColor = System.Drawing.Color.White;
-            this.roundedButton2.Location = new System.Drawing.Point(503, 2);
-            this.roundedButton2.Name = "roundedButton2";
-            this.roundedButton2.Size = new System.Drawing.Size(40, 40);
-            this.roundedButton2.TabIndex = 4;
-            this.roundedButton2.Text = "";
-            this.roundedButton2.UseVisualStyleBackColor = false;
-            this.roundedButton2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // roundedButton1
             // 
-            this.roundedButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.roundedButton1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.roundedButton1.BorderRadius = ((byte)(20));
+            this.roundedButton1.BorderRadius = ((byte)(25));
             this.roundedButton1.BorderSize = ((byte)(0));
+            this.roundedButton1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.roundedButton1.FlatAppearance.BorderSize = 0;
             this.roundedButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton1.Font = new System.Drawing.Font("Segoe MDL2 Assets", 7F);
             this.roundedButton1.ForeColor = System.Drawing.Color.White;
-            this.roundedButton1.Location = new System.Drawing.Point(549, 2);
+            this.roundedButton1.Location = new System.Drawing.Point(110, 3);
+            this.roundedButton1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.roundedButton1.Name = "roundedButton1";
-            this.roundedButton1.Size = new System.Drawing.Size(40, 40);
+            this.roundedButton1.Size = new System.Drawing.Size(46, 39);
             this.roundedButton1.TabIndex = 4;
             this.roundedButton1.Text = "";
             this.roundedButton1.UseVisualStyleBackColor = false;
             this.roundedButton1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // roundedButton2
+            // 
+            this.roundedButton2.BackColor = System.Drawing.Color.RoyalBlue;
+            this.roundedButton2.BorderRadius = ((byte)(25));
+            this.roundedButton2.BorderSize = ((byte)(0));
+            this.roundedButton2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.roundedButton2.FlatAppearance.BorderSize = 0;
+            this.roundedButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton2.Font = new System.Drawing.Font("Segoe MDL2 Assets", 7F);
+            this.roundedButton2.ForeColor = System.Drawing.Color.White;
+            this.roundedButton2.Location = new System.Drawing.Point(57, 3);
+            this.roundedButton2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.roundedButton2.Name = "roundedButton2";
+            this.roundedButton2.Size = new System.Drawing.Size(45, 39);
+            this.roundedButton2.TabIndex = 4;
+            this.roundedButton2.Text = "";
+            this.roundedButton2.UseVisualStyleBackColor = false;
+            this.roundedButton2.Click += new System.EventHandler(this.button2_Click);
             // 
             // WindowToolbar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.RoyalBlue;
-            this.Controls.Add(this.roundedButton3);
-            this.Controls.Add(this.roundedButton2);
-            this.Controls.Add(this.roundedButton1);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.roundedButton4);
+            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.label1);
             this.Name = "WindowToolbar";
             this.Size = new System.Drawing.Size(600, 45);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.WindowToolbar_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.WindowToolbar_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.WindowToolbar_MouseUp);
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Button button4;
         private RoundedButton roundedButton1;
         private RoundedButton roundedButton2;
         private RoundedButton roundedButton3;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Label label1;
+        private RoundedButton roundedButton4;
     }
 }
