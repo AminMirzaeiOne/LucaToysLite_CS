@@ -17,6 +17,11 @@ namespace LucaToysLite.Controls
         private bool mouseDown;
         private Point lastLocation;
 
+        public enum StartupSounds
+        {
+            None, AStartupSound, BStartupSound, CStartupSound, DStartupSound, EStartupSound
+        }
+
         public WindowToolbar()
         {
             InitializeComponent();
@@ -52,7 +57,7 @@ namespace LucaToysLite.Controls
         {
             if (this.Parent != null)
                 this.animation.Close();
-                //((Form)this.Parent).Close();
+            //((Form)this.Parent).Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -71,7 +76,7 @@ namespace LucaToysLite.Controls
                 }
             }
 
-            
+
         }
 
         private void button3_Click(object sender, EventArgs e)
