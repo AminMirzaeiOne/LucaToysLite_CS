@@ -20,6 +20,7 @@ namespace LucaToysLite.Controls
         {
             float r2 = radius / 2f;
             GraphicsPath GraphPath = new GraphicsPath();
+            
             GraphPath.AddArc(Rect.X, Rect.Y, radius, radius, 180, 90);
             GraphPath.AddLine(Rect.X + r2, Rect.Y, Rect.Width - r2, Rect.Y);
             GraphPath.AddArc(Rect.X + Rect.Width - radius, Rect.Y, radius, radius, 270, 90);
@@ -37,7 +38,7 @@ namespace LucaToysLite.Controls
         {
             base.OnPaint(e);
             e.Graphics.SmoothingMode = SmoothingMode.HighQuality;
-            RectangleF Rect = new RectangleF(0, 0, this.Width-1, this.Height-1);
+            RectangleF Rect = new RectangleF(0, 0, this.Width, this.Height);
             using (GraphicsPath GraphPath = GetRoundPath(Rect, this.BorderRadius))
             {
                 this.Region = new Region(GraphPath);
