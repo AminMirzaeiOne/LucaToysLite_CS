@@ -126,6 +126,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="ClassLibrary\" />
     <Folder Include="Pages\" />
   </ItemGroup>
   <ItemGroup>

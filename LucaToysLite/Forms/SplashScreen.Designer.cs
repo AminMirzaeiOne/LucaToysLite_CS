@@ -40,7 +40,7 @@
             // 
             // roundedLabel1
             // 
-            this.roundedLabel1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.roundedLabel1.BackColor = System.Drawing.Color.Crimson;
             this.roundedLabel1.BorderRadius = ((byte)(25));
             this.roundedLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedLabel1.ForeColor = System.Drawing.Color.White;
@@ -54,6 +54,8 @@
             // loadingControl1
             // 
             this.loadingControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.loadingControl1.ColorPalette = System.Drawing.Color.Crimson;
+            this.loadingControl1.DarkTheme = true;
             this.loadingControl1.Location = new System.Drawing.Point(161, 337);
             this.loadingControl1.Name = "loadingControl1";
             this.loadingControl1.Size = new System.Drawing.Size(560, 30);
@@ -62,7 +64,7 @@
             // 
             // lucaToysLogo1
             // 
-            this.lucaToysLogo1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.lucaToysLogo1.BackColor = System.Drawing.Color.Crimson;
             this.lucaToysLogo1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lucaToysLogo1.BackgroundImage")));
             this.lucaToysLogo1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.lucaToysLogo1.Location = new System.Drawing.Point(343, 101);
@@ -90,7 +92,7 @@
             // 
             // roundedLabel2
             // 
-            this.roundedLabel2.BackColor = System.Drawing.Color.RoyalBlue;
+            this.roundedLabel2.BackColor = System.Drawing.Color.Crimson;
             this.roundedLabel2.BorderRadius = ((byte)(25));
             this.roundedLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedLabel2.ForeColor = System.Drawing.Color.White;
@@ -103,7 +105,7 @@
             // 
             // roundedLabel3
             // 
-            this.roundedLabel3.BackColor = System.Drawing.Color.RoyalBlue;
+            this.roundedLabel3.BackColor = System.Drawing.Color.Crimson;
             this.roundedLabel3.BorderRadius = ((byte)(25));
             this.roundedLabel3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedLabel3.ForeColor = System.Drawing.Color.White;
@@ -116,7 +118,7 @@
             // 
             // roundedLabel4
             // 
-            this.roundedLabel4.BackColor = System.Drawing.Color.RoyalBlue;
+            this.roundedLabel4.BackColor = System.Drawing.Color.Crimson;
             this.roundedLabel4.BorderRadius = ((byte)(25));
             this.roundedLabel4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedLabel4.ForeColor = System.Drawing.Color.White;
