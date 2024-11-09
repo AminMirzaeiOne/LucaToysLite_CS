@@ -16,9 +16,9 @@ namespace LucaToysLite.Controls
         public LoadingControl()
         {
             InitializeComponent();
-            
         }
 
+        private int progress = 0;
         private int radius = 20;
         [DefaultValue(20)]
         public int Radius
@@ -96,10 +96,24 @@ namespace LucaToysLite.Controls
                     e.Graphics.DrawPath(pen, GraphPath);
                 }
             }
-            RectangleRoundd.FillRoundedRectangle(e.Graphics,new SolidBrush(Color.RoyalBlue),new Rectangle(0, 0, 900, e.ClipRectangle.Size.Height),10);
+
+
+
+
+
         }
 
+        public void StartProgress()
+        {
+            this.timer1.Start();
+        }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            
+
+
+        }
     }
 
     public static class RectangleRoundd
@@ -163,5 +177,7 @@ namespace LucaToysLite.Controls
                 graphics.DrawPath(pen, path);
             }
         }
+
+
     }
 }

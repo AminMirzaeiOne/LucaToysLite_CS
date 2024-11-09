@@ -32,6 +32,11 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 1;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // LoadingControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);

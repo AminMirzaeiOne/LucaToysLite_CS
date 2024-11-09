@@ -93,5 +93,11 @@ namespace LucaToysLite.Forms
                 }
             }
         }
+
+        private void SplashScreen_Load(object sender, EventArgs e)
+        {
+            this.loadingControl1.StartProgress();
+
+        }
     }
 }

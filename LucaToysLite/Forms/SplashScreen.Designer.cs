@@ -66,6 +66,7 @@
             // roundedButton1
             // 
             this.roundedButton1.BorderRadius = ((byte)(30));
+            this.roundedButton1.BorderSize = ((byte)(3));
             this.roundedButton1.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
             this.roundedButton1.FlatAppearance.BorderSize = 0;
             this.roundedButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
@@ -128,6 +129,7 @@
             this.Name = "SplashScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SplashScreen";
+            this.Load += new System.EventHandler(this.SplashScreen_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.SplashScreen_Paint);
             this.ResumeLayout(false);
 
