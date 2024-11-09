@@ -18,6 +18,8 @@ namespace LucaToysLite.Controls
             InitializeComponent();
         }
 
+        public event EventHandler EndProcess;
+
         private int progress = 0;
         private int radius = 20;
         [DefaultValue(20)]
