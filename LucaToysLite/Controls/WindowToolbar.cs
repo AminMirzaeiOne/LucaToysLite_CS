@@ -51,7 +51,8 @@ namespace LucaToysLite.Controls
         private void button1_Click(object sender, EventArgs e)
         {
             if (this.Parent != null)
-                ((Form)this.Parent).Close();
+                this.animation.Close();
+                //((Form)this.Parent).Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
