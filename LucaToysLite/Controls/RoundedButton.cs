@@ -41,7 +41,7 @@ namespace LucaToysLite.Controls
             using (GraphicsPath GraphPath = GetRoundPath(Rect, this.BorderRadius))
             {
                 this.Region = new Region(GraphPath);
-                using (Pen pen = new Pen(this.FlatAppearance.BorderColor, this.FlatAppearance.BorderSize))
+                using (Pen pen = new Pen(this.FlatAppearance.BorderColor, 3))
                 {
                     pen.Alignment = PenAlignment.Inset;
                     e.Graphics.DrawPath(pen, GraphPath);
