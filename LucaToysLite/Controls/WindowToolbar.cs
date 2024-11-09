@@ -21,8 +21,8 @@ namespace LucaToysLite.Controls
         }
 
         public System.Windows.Forms.Form Window { get; set; }
-        public System.Boolean MaximizeButton { get { return this.button2.Visible; } set { this.button2.Visible = value; } }
-        public System.Boolean MinimizeButton { get { return this.button3.Visible; } set { this.button3.Visible = value; } }
+        public System.Boolean MaximizeButton { get { return this.roundedButton2.Visible; } set { this.roundedButton2.Visible = value; } }
+        public System.Boolean MinimizeButton { get { return this.roundedButton3.Visible; } set { this.roundedButton3.Visible = value; } }
         public System.Boolean MoveOption { get; set; } = true;
         public System.Boolean IconButton { get { return this.button4.Visible; } set { this.button4.Visible = value; } }
 
@@ -38,12 +38,12 @@ namespace LucaToysLite.Controls
             {
                 if (this.Window.WindowState == FormWindowState.Normal)
                 {
-                    this.button2.Text = "";
+                    this.roundedButton2.Text = "";
                     this.Window.WindowState = FormWindowState.Maximized;
                 }
                 else if (this.Window.WindowState == FormWindowState.Maximized)
                 {
-                    this.button2.Text = "";
+                    this.roundedButton2.Text = "";
                     this.Window.WindowState = FormWindowState.Normal;
                 }
             }

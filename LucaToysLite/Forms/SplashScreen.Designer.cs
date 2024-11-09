@@ -29,13 +29,27 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SplashScreen));
+            this.button1 = new System.Windows.Forms.Button();
             this.roundedLabel1 = new LucaToysLite.Controls.RoundedLabel();
             this.roundedButton1 = new LucaToysLite.Controls.RoundedButton();
             this.loadingControl1 = new LucaToysLite.Controls.LoadingControl();
-            this.button1 = new System.Windows.Forms.Button();
             this.lucaToysLogo1 = new LucaToysLite.Controls.LucaToysLogo();
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
             this.SuspendLayout();
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.button1.FlatAppearance.BorderSize = 2;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(24, 472);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(206, 62);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Version : 1.0.0";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // roundedLabel1
             // 
@@ -72,20 +86,6 @@
             this.loadingControl1.Size = new System.Drawing.Size(560, 30);
             this.loadingControl1.TabIndex = 10;
             // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.button1.FlatAppearance.BorderSize = 2;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(24, 472);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(206, 62);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Version : 1.0.0";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // lucaToysLogo1
             // 
             this.lucaToysLogo1.BackColor = System.Drawing.Color.RoyalBlue;
@@ -103,7 +103,7 @@
             this.windowToolbar1.Dock = System.Windows.Forms.DockStyle.Top;
             this.windowToolbar1.IconButton = true;
             this.windowToolbar1.Location = new System.Drawing.Point(0, 0);
-            this.windowToolbar1.MaximizeButton = false;
+            this.windowToolbar1.MaximizeButton = true;
             this.windowToolbar1.MinimizeButton = true;
             this.windowToolbar1.MoveOption = true;
             this.windowToolbar1.Name = "windowToolbar1";
