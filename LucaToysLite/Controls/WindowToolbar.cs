@@ -31,6 +31,9 @@ namespace LucaToysLite.Controls
         public System.Boolean BorderStyleRadius { get; set; } = true;
         public System.Byte WindowBorderSize { get; set; } = 3;
 
+        public System.Boolean DarkTheme { get; set; } = true;
+        public System.Drawing.Color ColorPalette { get; set; } = System.Drawing.Color.RoyalBlue;
+
         private void button1_Click(object sender, EventArgs e)
         {
             if (this.Parent != null)
@@ -163,7 +166,7 @@ namespace LucaToysLite.Controls
             using (GraphicsPath GraphPath = GetRoundPath(Rect, this.Radius))
             {
                 this.Parent.Region = new Region(GraphPath);
-                using (Pen pen = new Pen(Color.Red, 3))
+                using (Pen pen = new Pen(Color.Red, this.WindowBorderSize))
                 {
                     pen.Alignment = PenAlignment.Inset;
                     e.Graphics.DrawPath(pen, GraphPath);
