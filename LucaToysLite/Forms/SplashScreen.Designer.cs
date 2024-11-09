@@ -83,7 +83,6 @@
             this.windowToolbar1.Name = "windowToolbar1";
             this.windowToolbar1.Size = new System.Drawing.Size(900, 45);
             this.windowToolbar1.TabIndex = 7;
-            this.windowToolbar1.Window = this;
             // 
             // roundedLabel2
             // 

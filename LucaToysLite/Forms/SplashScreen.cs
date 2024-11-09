@@ -103,8 +103,8 @@ namespace LucaToysLite.Forms
         private void loadingControl1_EndProcess(object sender, EventArgs e)
         {
             System.Threading.Thread.Sleep(200);
-            Form frm = new Form();
-            frm.ShowDialog();
+            LucaToysLite.Forms.Home home = new Home();
+            home.Show();
         }
     }
 }

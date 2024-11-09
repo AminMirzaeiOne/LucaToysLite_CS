@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,51 +19,52 @@ namespace LucaToysLite.Controls
         public WindowToolbar()
         {
             InitializeComponent();
+            if (this.Parent != null && this.BorderStyleRadius)
+                this.Parent.Paint += new PaintEventHandler(this.Parent_Paint);
         }
-
-        public System.Windows.Forms.Form Window { get; set; }
         public System.Boolean MaximizeButton { get { return this.roundedButton2.Visible; } set { this.roundedButton2.Visible = value; } }
         public System.Boolean MinimizeButton { get { return this.roundedButton3.Visible; } set { this.roundedButton3.Visible = value; } }
         public System.Boolean MoveOption { get; set; } = true;
         public System.Boolean IconButton { get { return this.roundedButton4.Visible; } set { this.roundedButton4.Visible = value; } }
+        public System.Boolean BorderStyleRadius { get; set; } = true;
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (this.Window != null)
-                this.Window.Close();
+            if (this.Parent != null)
+                ((Form)this.Parent).Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (this.Window != null)
+            if (this.Parent != null)
             {
-                if (this.Window.WindowState == FormWindowState.Normal)
+                if (((Form)this.Parent).WindowState == FormWindowState.Normal)
                 {
                     this.roundedButton2.Text = "";
-                    this.Window.WindowState = FormWindowState.Maximized;
+                    ((Form)this.Parent).WindowState = FormWindowState.Maximized;
                 }
-                else if (this.Window.WindowState == FormWindowState.Maximized)
+                else if (((Form)this.Parent).WindowState == FormWindowState.Maximized)
                 {
                     this.roundedButton2.Text = "";
-                    this.Window.WindowState = FormWindowState.Normal;
+                    ((Form)this.Parent).WindowState = FormWindowState.Normal;
                 }
             }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (this.Window != null)
-                this.Window.WindowState = FormWindowState.Minimized;
+            if (this.Parent != null)
+                ((Form)this.Parent).WindowState = FormWindowState.Minimized;
         }
 
         private void WindowToolbar_MouseMove(object sender, MouseEventArgs e)
         {
-            if (this.Window != null && this.MoveOption == true)
+            if (this.Parent != null && this.MoveOption == true)
             {
                 if (this.mouseDown == true)
                 {
-                    this.Window.Location = new Point(
-                    (this.Window.Location.X - this.lastLocation.X) + e.X, (this.Window.Location.Y - this.lastLocation.Y) + e.Y);
+                    ((Form)this.Parent).Location = new Point(
+                    (((Form)this.Parent).Location.X - this.lastLocation.X) + e.X, (this.Parent.Location.Y - this.lastLocation.Y) + e.Y);
 
                     this.Update();
                 }
@@ -72,7 +74,7 @@ namespace LucaToysLite.Controls
 
         private void WindowToolbar_MouseDown(object sender, MouseEventArgs e)
         {
-            if (this.Window != null)
+            if (this.Parent != null)
             {
                 this.mouseDown = true;
                 this.lastLocation = e.Location;
@@ -82,8 +84,85 @@ namespace LucaToysLite.Controls
 
         private void WindowToolbar_MouseUp(object sender, MouseEventArgs e)
         {
-            if (this.Window != null)
+            if (this.Parent != null)
                 this.mouseDown = false;
         }
+
+        private int radius = 20;
+        [DefaultValue(20)]
+        public int Radius
+        {
+            get { return radius; }
+            set
+            {
+                radius = value;
+                this.RecreateRegion();
+            }
+        }
+
+        [System.Runtime.InteropServices.DllImport("gdi32.dll")]
+        private static extern IntPtr CreateRoundRectRgn(int nLeftRect, int nTopRect,
+            int nRightRect, int nBottomRect, int nWidthEllipse, int nHeightEllipse);
+
+        private GraphicsPath GetRoundRectagle(Rectangle bounds, int radius)
+        {
+            float r = radius;
+            GraphicsPath path = new GraphicsPath();
+            path.StartFigure();
+            path.AddArc(bounds.Left, bounds.Top, r, r, 180, 90);
+            path.AddArc(bounds.Right - r, bounds.Top, r, r, 270, 90);
+            path.AddArc(bounds.Right - r, bounds.Bottom - r, r, r, 0, 90);
+            path.AddArc(bounds.Left, bounds.Bottom - r, r, r, 90, 90);
+            path.CloseFigure();
+            return path;
+        }
+
+        private void RecreateRegion()
+        {
+            var bounds = ClientRectangle;
+            this.Region = Region.FromHrgn(CreateRoundRectRgn(bounds.Left, bounds.Top,
+                bounds.Right, bounds.Bottom, Radius, radius));
+            this.Invalidate();
+        }
+
+        protected override void OnSizeChanged(EventArgs e)
+        {
+            base.OnSizeChanged(e);
+            this.RecreateRegion();
+        }
+
+        GraphicsPath GetRoundPath(RectangleF Rect, int radius)
+        {
+            float r2 = radius / 2f;
+            GraphicsPath GraphPath = new GraphicsPath();
+
+            GraphPath.AddArc(Rect.X, Rect.Y, radius, radius, 180, 90);
+            GraphPath.AddLine(Rect.X + r2, Rect.Y, Rect.Width - r2, Rect.Y);
+            GraphPath.AddArc(Rect.X + Rect.Width - radius, Rect.Y, radius, radius, 270, 90);
+            GraphPath.AddLine(Rect.Width, Rect.Y + r2, Rect.Width, Rect.Height - r2);
+            GraphPath.AddArc(Rect.X + Rect.Width - radius,
+                             Rect.Y + Rect.Height - radius, radius, radius, 0, 90);
+            GraphPath.AddLine(Rect.Width - r2, Rect.Height, Rect.X + r2, Rect.Height);
+            GraphPath.AddArc(Rect.X, Rect.Y + Rect.Height - radius, radius, radius, 90, 90);
+            GraphPath.AddLine(Rect.X, Rect.Height - r2, Rect.X, Rect.Y + r2);
+            GraphPath.CloseFigure();
+            return GraphPath;
+        }
+
+        private void Parent_Paint(object sender, PaintEventArgs e)
+        {
+            e.Graphics.SmoothingMode = SmoothingMode.HighQuality;
+            RectangleF Rect = new RectangleF(0, 0, this.Width, this.Height);
+            using (GraphicsPath GraphPath = GetRoundPath(Rect, this.Radius))
+            {
+                this.Region = new Region(GraphPath);
+                using (Pen pen = new Pen(Color.RoyalBlue, 3))
+                {
+                    pen.Alignment = PenAlignment.Inset;
+                    e.Graphics.DrawPath(pen, GraphPath);
+                }
+            }
+        }
+
     }
 }
