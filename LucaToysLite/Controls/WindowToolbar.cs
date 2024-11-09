@@ -30,6 +30,8 @@ namespace LucaToysLite.Controls
         public System.Boolean BorderStyleRadius { get; set; } = true;
         public System.Byte WindowBorderSize { get; set; } = 3;
 
+        private LucaToysLite.ClassLibrary.WindowAnimation animation;
+
         public System.Boolean DarkTheme { get; set; } = true;
         public System.Drawing.Color ColorPalette
         {
@@ -188,6 +190,8 @@ namespace LucaToysLite.Controls
 
         private void LoadEvent(object sender, EventArgs e)
         {
+            this.animation = new ClassLibrary.WindowAnimation((Form)this.Parent);
+            this.animation.Start();
             if (this.Parent != null && this.BorderStyleRadius)
             {
                 this.Parent.Paint += new PaintEventHandler(this.Parent_Paint);
