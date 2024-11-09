@@ -110,7 +110,14 @@ namespace LucaToysLite.Controls
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            
+            if (this.roundedLabel1.Size.Width < this.Size.Width)
+            {
+                this.roundedLabel1.Width += 5;
+            }
+            else
+            {
+                this.timer1.Stop();
+            }
 
 
         }
