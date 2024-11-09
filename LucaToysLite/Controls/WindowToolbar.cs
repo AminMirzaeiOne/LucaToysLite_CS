@@ -37,6 +37,16 @@ namespace LucaToysLite.Controls
 
         private LucaToysLite.ClassLibrary.WindowAnimation animation;
 
+        private LucaToysLite.Controls.WindowToolbar.StartupSounds startupSounds = StartupSounds.None;
+        
+        public LucaToysLite.Controls.WindowToolbar.StartupSounds StartupSound
+        {
+            get { return this.startupSounds; }
+            set
+            {
+                this.startupSounds = value;
+            }
+        }
         public System.Boolean DarkTheme { get; set; } = true;
         public System.Drawing.Color ColorPalette
         {
