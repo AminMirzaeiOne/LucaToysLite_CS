@@ -15,6 +15,7 @@ namespace LucaToysLite.Controls
     public class RoundedButton : System.Windows.Forms.Button
     {
         public System.Byte BorderRadius { get; set; } = 20;
+        public System.Byte BorderSize { get; set; } = 3;
         
         GraphicsPath GetRoundPath(RectangleF Rect, int radius)
         {
@@ -42,7 +43,7 @@ namespace LucaToysLite.Controls
             using (GraphicsPath GraphPath = GetRoundPath(Rect, this.BorderRadius))
             {
                 this.Region = new Region(GraphPath);
-                using (Pen pen = new Pen(this.FlatAppearance.BorderColor, 3))
+                using (Pen pen = new Pen(this.FlatAppearance.BorderColor, this.BorderSize))
                 {
                     pen.Alignment = PenAlignment.Inset;
                     e.Graphics.DrawPath(pen, GraphPath);

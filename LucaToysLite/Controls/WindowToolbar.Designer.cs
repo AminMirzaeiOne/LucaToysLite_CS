@@ -32,6 +32,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.roundedButton1 = new LucaToysLite.Controls.RoundedButton();
             this.SuspendLayout();
             // 
             // button1
@@ -93,11 +94,27 @@
             this.button4.Text = "";
             this.button4.UseVisualStyleBackColor = true;
             // 
+            // roundedButton1
+            // 
+            this.roundedButton1.BorderRadius = ((byte)(20));
+            this.roundedButton1.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.roundedButton1.FlatAppearance.BorderSize = 0;
+            this.roundedButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton1.Font = new System.Drawing.Font("Segoe MDL2 Assets", 7F);
+            this.roundedButton1.ForeColor = System.Drawing.Color.White;
+            this.roundedButton1.Location = new System.Drawing.Point(271, 5);
+            this.roundedButton1.Name = "roundedButton1";
+            this.roundedButton1.Size = new System.Drawing.Size(40, 40);
+            this.roundedButton1.TabIndex = 4;
+            this.roundedButton1.Text = "";
+            this.roundedButton1.UseVisualStyleBackColor = true;
+            // 
             // WindowToolbar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.RoyalBlue;
+            this.Controls.Add(this.roundedButton1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -117,5 +134,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private RoundedButton roundedButton1;
     }
 }
