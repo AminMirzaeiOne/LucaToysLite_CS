@@ -16,17 +16,23 @@ namespace LucaToysLite.ClassLibrary
             this.timerClose.Interval = 30;
             this.timerMaximze.Interval = 30;
             this.timerMaximze2.Interval = 30;
+            this.timerResotre.Interval = 30;
+            this.timerResotre2.Interval = 30;
 
             this.timerStart.Tick += new EventHandler(this.TimerStart_Tick);
             this.timerClose.Tick += new EventHandler(this.TimerClose_Tick);
             this.timerMaximze.Tick += new EventHandler(this.TimerMaximize_Tick);
             this.timerMaximze2.Tick += new EventHandler(this.TimerMaximize2_Tick);
+            this.timerResotre.Tick += new EventHandler(this.TimerRestore_Tick);
+            this.timerResotre2.Tick += new EventHandler(this.TimerRestore2_Tick);
         }
 
         private System.Windows.Forms.Timer timerStart = new System.Windows.Forms.Timer();
         private System.Windows.Forms.Timer timerClose = new System.Windows.Forms.Timer();
         private System.Windows.Forms.Timer timerMaximze = new System.Windows.Forms.Timer();
         private System.Windows.Forms.Timer timerMaximze2 = new System.Windows.Forms.Timer();
+        private System.Windows.Forms.Timer timerResotre = new System.Windows.Forms.Timer();
+        private System.Windows.Forms.Timer timerResotre2 = new System.Windows.Forms.Timer();
 
         private System.Windows.Forms.Form window;
         private System.Boolean isMaximize = false;
@@ -47,6 +53,11 @@ namespace LucaToysLite.ClassLibrary
         public void Maximize()
         {
             this.timerMaximze.Start();
+        }
+
+        public void Resotre()
+        {
+            this.timerResotre.Start();
         }
 
         private void TimerStart_Tick(object sender, EventArgs e)
@@ -103,6 +114,32 @@ namespace LucaToysLite.ClassLibrary
                 this.timerMaximze2.Stop();
             }
 
+        }
+
+        private void TimerRestore_Tick(object sender, EventArgs e)
+        {
+            if (this.window.Opacity > 0)
+            {
+                this.window.Opacity -= 0.1;
+            }
+            else
+            {
+                this.window.WindowState = System.Windows.Forms.FormWindowState.Normal;
+                this.timerResotre.Stop();
+                this.timerResotre2.Start();
+            }
+        }
+
+        private void TimerRestore2_Tick(object sender, EventArgs e)
+        {
+            if (this.window.Opacity < 1)
+            {
+                this.window.Opacity += 0.1;
+            }
+            else
+            {
+                this.timerResotre2.Stop();
+            }
         }
 
 
