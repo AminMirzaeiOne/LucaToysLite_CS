@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -19,14 +20,16 @@ namespace LucaToysLite.Controls
         public WindowToolbar()
         {
             InitializeComponent();
-            if (this.Parent != null && this.BorderStyleRadius)
-                this.Parent.Paint += new PaintEventHandler(this.Parent_Paint);
+            this.Load += new EventHandler(this.LoadEvent);
+            
+                
         }
         public System.Boolean MaximizeButton { get { return this.roundedButton2.Visible; } set { this.roundedButton2.Visible = value; } }
         public System.Boolean MinimizeButton { get { return this.roundedButton3.Visible; } set { this.roundedButton3.Visible = value; } }
         public System.Boolean MoveOption { get; set; } = true;
         public System.Boolean IconButton { get { return this.roundedButton4.Visible; } set { this.roundedButton4.Visible = value; } }
         public System.Boolean BorderStyleRadius { get; set; } = true;
+        public System.Byte WindowBorderSize { get; set; } = 3;
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -160,11 +163,20 @@ namespace LucaToysLite.Controls
             using (GraphicsPath GraphPath = GetRoundPath(Rect, this.Radius))
             {
                 this.Parent.Region = new Region(GraphPath);
-                using (Pen pen = new Pen(Color.RoyalBlue, 3))
+                using (Pen pen = new Pen(Color.Red, 3))
                 {
                     pen.Alignment = PenAlignment.Inset;
                     e.Graphics.DrawPath(pen, GraphPath);
                 }
+            }
+        }
+
+        private void LoadEvent(object sender,EventArgs e)
+        {
+            if (this.Parent != null && this.BorderStyleRadius)
+            {
+                this.Parent.Paint += new PaintEventHandler(this.Parent_Paint);
+
             }
         }
 
