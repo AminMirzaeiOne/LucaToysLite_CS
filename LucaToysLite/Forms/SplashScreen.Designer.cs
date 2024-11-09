@@ -58,6 +58,7 @@
             this.loadingControl1.Name = "loadingControl1";
             this.loadingControl1.Size = new System.Drawing.Size(560, 30);
             this.loadingControl1.TabIndex = 10;
+            this.loadingControl1.EndProcess += new System.EventHandler(this.loadingControl1_EndProcess);
             // 
             // lucaToysLogo1
             // 

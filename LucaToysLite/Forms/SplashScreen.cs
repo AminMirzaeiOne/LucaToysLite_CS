@@ -99,5 +99,12 @@ namespace LucaToysLite.Forms
             this.loadingControl1.StartProgress();
 
         }
+
+        private void loadingControl1_EndProcess(object sender, EventArgs e)
+        {
+            System.Threading.Thread.Sleep(200);
+            Form frm = new Form();
+            frm.ShowDialog();
+        }
     }
 }

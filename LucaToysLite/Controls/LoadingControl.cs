@@ -119,6 +119,8 @@ namespace LucaToysLite.Controls
             else
             {
                 this.timer1.Stop();
+                if (this.EndProcess != null)
+                    this.EndProcess(null, null);
             }
 
 
