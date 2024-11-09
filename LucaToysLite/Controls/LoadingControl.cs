@@ -20,7 +20,6 @@ namespace LucaToysLite.Controls
 
         public event EventHandler EndProcess;
 
-        private int progress = 0;
         private int radius = 20;
         [DefaultValue(20)]
         public int Radius
@@ -30,6 +29,16 @@ namespace LucaToysLite.Controls
             {
                 radius = value;
                 this.RecreateRegion();
+            }
+        }
+
+        public System.Boolean DarkTheme { get; set; } = true;
+        public System.Drawing.Color ColorPalette
+        {
+            get { return this.roundedLabel1.BackColor; }
+            set
+            {
+                this.roundedLabel1.BackColor = value;
             }
         }
 
@@ -92,7 +101,7 @@ namespace LucaToysLite.Controls
             using (GraphicsPath GraphPath = GetRoundPath(Rect, this.Radius))
             {
                 this.Region = new Region(GraphPath);
-                using (Pen pen = new Pen(Color.RoyalBlue, 2))
+                using (Pen pen = new Pen(this.ColorPalette, 2))
                 {
                     pen.Alignment = PenAlignment.Inset;
                     e.Graphics.DrawPath(pen, GraphPath);

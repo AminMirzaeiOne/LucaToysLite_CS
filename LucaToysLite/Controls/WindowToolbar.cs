@@ -194,7 +194,10 @@ namespace LucaToysLite.Controls
                 this.Parent.Paint += new PaintEventHandler(this.Parent_Paint);
                 foreach (Control items in this.Parent.Controls)
                 {
-                    items.BackColor = this.ColorPalette;
+                    if (items.GetType() != typeof(LoadingControl))
+                        items.BackColor = this.ColorPalette;
+                    else
+                        ((LoadingControl)items).ColorPalette = this.ColorPalette;
                 }
             }
         }
