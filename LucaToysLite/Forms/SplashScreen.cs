@@ -31,7 +31,7 @@ namespace LucaToysLite.Forms
         {
             System.Threading.Thread.Sleep(200);
             LucaToysLite.Forms.Home home = new Home();
-            //home.Show();
+            home.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
