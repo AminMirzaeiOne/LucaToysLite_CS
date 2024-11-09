@@ -73,6 +73,7 @@
     <Compile Include="Controls\WindowToolbar.Designer.cs">
       <DependentUpon>WindowToolbar.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormBase.cs" />
     <Compile Include="Forms\Home.cs">
       <SubType>Form</SubType>
     </Compile>

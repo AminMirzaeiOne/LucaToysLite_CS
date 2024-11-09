@@ -73,9 +73,9 @@
             // 
             // windowToolbar1
             // 
-            this.windowToolbar1.BackColor = System.Drawing.Color.SlateBlue;
+            this.windowToolbar1.BackColor = System.Drawing.Color.Crimson;
             this.windowToolbar1.BorderStyleRadius = true;
-            this.windowToolbar1.ColorPalette = System.Drawing.Color.SlateBlue;
+            this.windowToolbar1.ColorPalette = System.Drawing.Color.Crimson;
             this.windowToolbar1.DarkTheme = true;
             this.windowToolbar1.Dock = System.Windows.Forms.DockStyle.Top;
             this.windowToolbar1.IconButton = true;
