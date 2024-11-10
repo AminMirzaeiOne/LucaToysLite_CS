@@ -33,7 +33,10 @@
             // 
             // windowToolbar1
             // 
-            this.windowToolbar1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.windowToolbar1.BackColor = System.Drawing.Color.Crimson;
+            this.windowToolbar1.BorderStyleRadius = true;
+            this.windowToolbar1.ColorPalette = System.Drawing.Color.Crimson;
+            this.windowToolbar1.DarkTheme = true;
             this.windowToolbar1.Dock = System.Windows.Forms.DockStyle.Top;
             this.windowToolbar1.IconButton = true;
             this.windowToolbar1.Location = new System.Drawing.Point(0, 0);
@@ -42,7 +45,9 @@
             this.windowToolbar1.MoveOption = true;
             this.windowToolbar1.Name = "windowToolbar1";
             this.windowToolbar1.Size = new System.Drawing.Size(1090, 45);
+            this.windowToolbar1.StartupSound = LucaToysLite.Controls.WindowToolbar.StartupSounds.None;
             this.windowToolbar1.TabIndex = 0;
+            this.windowToolbar1.WindowBorderSize = ((byte)(3));
             // 
             // Home
             // 

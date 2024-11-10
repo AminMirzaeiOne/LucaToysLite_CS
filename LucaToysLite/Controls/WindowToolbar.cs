@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
@@ -26,7 +27,6 @@ namespace LucaToysLite.Controls
         {
             InitializeComponent();
             this.Load += new EventHandler(this.LoadEvent);
-
         }
         public System.Boolean MaximizeButton { get { return this.roundedButton2.Visible; } set { this.roundedButton2.Visible = value; } }
         public System.Boolean MinimizeButton { get { return this.roundedButton3.Visible; } set { this.roundedButton3.Visible = value; } }
@@ -36,15 +36,22 @@ namespace LucaToysLite.Controls
         public System.Byte WindowBorderSize { get; set; } = 3;
 
         private LucaToysLite.ClassLibrary.WindowAnimation animation;
-
         private LucaToysLite.Controls.WindowToolbar.StartupSounds startupSounds = StartupSounds.None;
-        
+        private System.IO.MemoryStream soundLocation = new MemoryStream(Properties.Resources.EStartupSound);
+        private System.Media.SoundPlayer soundPlayer = new System.Media.SoundPlayer();
+
         public LucaToysLite.Controls.WindowToolbar.StartupSounds StartupSound
         {
             get { return this.startupSounds; }
             set
             {
                 this.startupSounds = value;
+                switch (value)
+                {
+                    case StartupSounds.AStartupSound:
+                        
+                        break;
+                }
             }
         }
         public System.Boolean DarkTheme { get; set; } = true;
@@ -193,17 +200,21 @@ namespace LucaToysLite.Controls
 
         private void Parent_Paint(object sender, PaintEventArgs e)
         {
-            e.Graphics.SmoothingMode = SmoothingMode.HighQuality;
-            RectangleF Rect = new RectangleF(0, 0, this.Parent.Width, this.Parent.Height);
-            using (GraphicsPath GraphPath = GetRoundPath(Rect, this.Radius))
+            if(this.Parent != null)
             {
-                this.Parent.Region = new Region(GraphPath);
-                using (Pen pen = new Pen(this.ColorPalette, this.WindowBorderSize))
+                e.Graphics.SmoothingMode = SmoothingMode.HighQuality;
+                RectangleF Rect = new RectangleF(0, 0, this.Parent.Width, this.Parent.Height);
+                using (GraphicsPath GraphPath = GetRoundPath(Rect, this.Radius))
                 {
-                    pen.Alignment = PenAlignment.Inset;
-                    e.Graphics.DrawPath(pen, GraphPath);
+                    this.Parent.Region = new Region(GraphPath);
+                    using (Pen pen = new Pen(this.ColorPalette, this.WindowBorderSize))
+                    {
+                        pen.Alignment = PenAlignment.Inset;
+                        e.Graphics.DrawPath(pen, GraphPath);
+                    }
                 }
             }
+            
         }
 
         private void LoadEvent(object sender, EventArgs e)
@@ -221,6 +232,8 @@ namespace LucaToysLite.Controls
                         ((LoadingControl)items).ColorPalette = this.ColorPalette;
                 }
             }
+            this.soundPlayer.Stream = soundLocation;
+            soundPlayer.Play();
         }
 
     }
