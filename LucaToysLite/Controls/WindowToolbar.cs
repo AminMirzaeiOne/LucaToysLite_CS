@@ -153,12 +153,16 @@ namespace LucaToysLite.Controls
         {
             float r = radius;
             GraphicsPath path = new GraphicsPath();
-            path.StartFigure();
-            path.AddArc(bounds.Left, bounds.Top, r, r, 180, 90);
-            path.AddArc(bounds.Right - r, bounds.Top, r, r, 270, 90);
-            path.AddArc(bounds.Right - r, bounds.Bottom - r, r, r, 0, 90);
-            path.AddArc(bounds.Left, bounds.Bottom - r, r, r, 90, 90);
-            path.CloseFigure();
+            if(this.Parent != null)
+            {
+                path.StartFigure();
+                path.AddArc(bounds.Left, bounds.Top, r, r, 180, 90);
+                path.AddArc(bounds.Right - r, bounds.Top, r, r, 270, 90);
+                path.AddArc(bounds.Right - r, bounds.Bottom - r, r, r, 0, 90);
+                path.AddArc(bounds.Left, bounds.Bottom - r, r, r, 90, 90);
+                path.CloseFigure();
+            }
+            
             return path;
         }
 
@@ -184,18 +188,24 @@ namespace LucaToysLite.Controls
         {
             float r2 = radius / 2f;
             GraphicsPath GraphPath = new GraphicsPath();
+            if (this.Parent != null)
+            {
+               
 
-            GraphPath.AddArc(Rect.X, Rect.Y, radius, radius, 180, 90);
-            GraphPath.AddLine(Rect.X + r2, Rect.Y, Rect.Width - r2, Rect.Y);
-            GraphPath.AddArc(Rect.X + Rect.Width - radius, Rect.Y, radius, radius, 270, 90);
-            GraphPath.AddLine(Rect.Width, Rect.Y + r2, Rect.Width, Rect.Height - r2);
-            GraphPath.AddArc(Rect.X + Rect.Width - radius,
-                             Rect.Y + Rect.Height - radius, radius, radius, 0, 90);
-            GraphPath.AddLine(Rect.Width - r2, Rect.Height, Rect.X + r2, Rect.Height);
-            GraphPath.AddArc(Rect.X, Rect.Y + Rect.Height - radius, radius, radius, 90, 90);
-            GraphPath.AddLine(Rect.X, Rect.Height - r2, Rect.X, Rect.Y + r2);
-            GraphPath.CloseFigure();
+                GraphPath.AddArc(Rect.X, Rect.Y, radius, radius, 180, 90);
+                GraphPath.AddLine(Rect.X + r2, Rect.Y, Rect.Width - r2, Rect.Y);
+                GraphPath.AddArc(Rect.X + Rect.Width - radius, Rect.Y, radius, radius, 270, 90);
+                GraphPath.AddLine(Rect.Width, Rect.Y + r2, Rect.Width, Rect.Height - r2);
+                GraphPath.AddArc(Rect.X + Rect.Width - radius,
+                                 Rect.Y + Rect.Height - radius, radius, radius, 0, 90);
+                GraphPath.AddLine(Rect.Width - r2, Rect.Height, Rect.X + r2, Rect.Height);
+                GraphPath.AddArc(Rect.X, Rect.Y + Rect.Height - radius, radius, radius, 90, 90);
+                GraphPath.AddLine(Rect.X, Rect.Height - r2, Rect.X, Rect.Y + r2);
+                GraphPath.CloseFigure();
+            }
             return GraphPath;
+
+
         }
 
         private void Parent_Paint(object sender, PaintEventArgs e)
