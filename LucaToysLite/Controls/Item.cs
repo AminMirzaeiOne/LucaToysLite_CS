@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LucaToysLite.Controls
 {
-    public partial class Items : UserControl
+    public partial class Item : UserControl
     {
-        public Items()
+        public Item()
         {
             InitializeComponent();
         }

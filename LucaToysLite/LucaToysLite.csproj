@@ -50,11 +50,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClassLibrary\WindowAnimation.cs" />
-    <Compile Include="Controls\Items.cs">
+    <Compile Include="Controls\Item.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Controls\Items.Designer.cs">
-      <DependentUpon>Items.cs</DependentUpon>
+    <Compile Include="Controls\Item.Designer.cs">
+      <DependentUpon>Item.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\LoadingControl.cs">
       <SubType>UserControl</SubType>

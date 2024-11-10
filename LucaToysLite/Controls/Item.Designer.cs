@@ -1,6 +1,6 @@
 ﻿namespace LucaToysLite.Controls
 {
-    partial class Items
+    partial class Item
     {
         /// <summary> 
         /// Required designer variable.
