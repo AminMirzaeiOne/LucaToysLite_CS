@@ -28,8 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.item1 = new LucaToysLite.Controls.Item();
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
             this.SuspendLayout();
+            // 
+            // item1
+            // 
+            this.item1.BackColor = System.Drawing.Color.Crimson;
+            this.item1.Location = new System.Drawing.Point(309, 150);
+            this.item1.Name = "item1";
+            this.item1.Size = new System.Drawing.Size(207, 204);
+            this.item1.TabIndex = 1;
             // 
             // windowToolbar1
             // 
@@ -55,6 +64,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(1090, 650);
+            this.Controls.Add(this.item1);
             this.Controls.Add(this.windowToolbar1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -68,5 +78,6 @@
         #endregion
 
         private Controls.WindowToolbar windowToolbar1;
+        private Controls.Item item1;
     }
 }

@@ -234,16 +234,42 @@ namespace LucaToysLite.Controls
             if (this.Parent != null && this.BorderStyleRadius)
             {
                 this.Parent.Paint += new PaintEventHandler(this.Parent_Paint);
-                foreach (Control items in this.Parent.Controls)
-                {
-                    if (items.GetType() != typeof(LoadingControl))
-                        items.BackColor = this.ColorPalette;
-                    else
-                        ((LoadingControl)items).ColorPalette = this.ColorPalette;
-                }
+                this.ApplyColor();
             }
             this.soundPlayer.Stream = soundLocation;
             soundPlayer.Play();
+        }
+
+        public void ApplyColor()
+        {
+            if (this.Parent != null)
+            {
+                foreach (LoadingControl loadingControl in this.Parent.Controls.OfType<LoadingControl>())
+                {
+                    loadingControl.ColorPalette = this.ColorPalette;
+                }
+
+                foreach (RoundedLabel roundedLabel in this.Parent.Controls.OfType<RoundedLabel>())
+                {
+                    roundedLabel.BackColor = this.ColorPalette;
+                }
+
+                foreach (RoundedButton roundedButton in this.Parent.Controls.OfType<RoundedButton>())
+                {
+                    roundedButton.FlatAppearance.BorderColor = this.ColorPalette;
+                }
+
+                foreach (LucaToysLogo lucaToysLogo in this.Parent.Controls.OfType<LucaToysLogo>())
+                {
+                    lucaToysLogo.BackColor = this.ColorPalette;
+                }
+
+                foreach (Item item in this.Parent.Controls.OfType<Item>())
+                {
+                    item.ColorPalette = this.ColorPalette;
+                }
+
+            }
         }
 
     }

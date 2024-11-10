@@ -29,14 +29,53 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SplashScreen));
+            this.roundedLabel4 = new LucaToysLite.Controls.RoundedLabel();
+            this.roundedLabel3 = new LucaToysLite.Controls.RoundedLabel();
+            this.roundedLabel2 = new LucaToysLite.Controls.RoundedLabel();
             this.roundedLabel1 = new LucaToysLite.Controls.RoundedLabel();
             this.loadingControl1 = new LucaToysLite.Controls.LoadingControl();
             this.lucaToysLogo1 = new LucaToysLite.Controls.LucaToysLogo();
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
-            this.roundedLabel2 = new LucaToysLite.Controls.RoundedLabel();
-            this.roundedLabel3 = new LucaToysLite.Controls.RoundedLabel();
-            this.roundedLabel4 = new LucaToysLite.Controls.RoundedLabel();
             this.SuspendLayout();
+            // 
+            // roundedLabel4
+            // 
+            this.roundedLabel4.BackColor = System.Drawing.Color.Crimson;
+            this.roundedLabel4.BorderRadius = ((byte)(25));
+            this.roundedLabel4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedLabel4.ForeColor = System.Drawing.Color.White;
+            this.roundedLabel4.Location = new System.Drawing.Point(671, 460);
+            this.roundedLabel4.Name = "roundedLabel4";
+            this.roundedLabel4.Size = new System.Drawing.Size(189, 65);
+            this.roundedLabel4.TabIndex = 12;
+            this.roundedLabel4.Text = "By : Amin Mirzaei";
+            this.roundedLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // roundedLabel3
+            // 
+            this.roundedLabel3.BackColor = System.Drawing.Color.Crimson;
+            this.roundedLabel3.BorderRadius = ((byte)(25));
+            this.roundedLabel3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedLabel3.ForeColor = System.Drawing.Color.White;
+            this.roundedLabel3.Location = new System.Drawing.Point(459, 460);
+            this.roundedLabel3.Name = "roundedLabel3";
+            this.roundedLabel3.Size = new System.Drawing.Size(189, 65);
+            this.roundedLabel3.TabIndex = 12;
+            this.roundedLabel3.Text = "License : MIT";
+            this.roundedLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // roundedLabel2
+            // 
+            this.roundedLabel2.BackColor = System.Drawing.Color.Crimson;
+            this.roundedLabel2.BorderRadius = ((byte)(25));
+            this.roundedLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedLabel2.ForeColor = System.Drawing.Color.White;
+            this.roundedLabel2.Location = new System.Drawing.Point(246, 460);
+            this.roundedLabel2.Name = "roundedLabel2";
+            this.roundedLabel2.Size = new System.Drawing.Size(189, 65);
+            this.roundedLabel2.TabIndex = 12;
+            this.roundedLabel2.Text = "Channel : Alpha";
+            this.roundedLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // roundedLabel1
             // 
@@ -87,47 +126,9 @@
             this.windowToolbar1.MoveOption = true;
             this.windowToolbar1.Name = "windowToolbar1";
             this.windowToolbar1.Size = new System.Drawing.Size(900, 45);
+            this.windowToolbar1.StartupSound = LucaToysLite.Controls.WindowToolbar.StartupSounds.None;
             this.windowToolbar1.TabIndex = 7;
             this.windowToolbar1.WindowBorderSize = ((byte)(3));
-            // 
-            // roundedLabel2
-            // 
-            this.roundedLabel2.BackColor = System.Drawing.Color.Crimson;
-            this.roundedLabel2.BorderRadius = ((byte)(25));
-            this.roundedLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedLabel2.ForeColor = System.Drawing.Color.White;
-            this.roundedLabel2.Location = new System.Drawing.Point(246, 460);
-            this.roundedLabel2.Name = "roundedLabel2";
-            this.roundedLabel2.Size = new System.Drawing.Size(189, 65);
-            this.roundedLabel2.TabIndex = 12;
-            this.roundedLabel2.Text = "Channel : Alpha";
-            this.roundedLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // roundedLabel3
-            // 
-            this.roundedLabel3.BackColor = System.Drawing.Color.Crimson;
-            this.roundedLabel3.BorderRadius = ((byte)(25));
-            this.roundedLabel3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedLabel3.ForeColor = System.Drawing.Color.White;
-            this.roundedLabel3.Location = new System.Drawing.Point(459, 460);
-            this.roundedLabel3.Name = "roundedLabel3";
-            this.roundedLabel3.Size = new System.Drawing.Size(189, 65);
-            this.roundedLabel3.TabIndex = 12;
-            this.roundedLabel3.Text = "License : MIT";
-            this.roundedLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // roundedLabel4
-            // 
-            this.roundedLabel4.BackColor = System.Drawing.Color.Crimson;
-            this.roundedLabel4.BorderRadius = ((byte)(25));
-            this.roundedLabel4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedLabel4.ForeColor = System.Drawing.Color.White;
-            this.roundedLabel4.Location = new System.Drawing.Point(671, 460);
-            this.roundedLabel4.Name = "roundedLabel4";
-            this.roundedLabel4.Size = new System.Drawing.Size(189, 65);
-            this.roundedLabel4.TabIndex = 12;
-            this.roundedLabel4.Text = "By : Amin Mirzaei";
-            this.roundedLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // SplashScreen
             // 
