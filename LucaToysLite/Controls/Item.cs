@@ -24,7 +24,7 @@ namespace LucaToysLite.Controls
             this.dropDown.BackColor = Color.FromArgb(15,15,15);
             this.roundedPanel.Controls.Add(tablepanel);
             this.tablepanel.Dock = DockStyle.Fill;
-            this.tablepanel.BackColor = Color.DimGray;
+            this.tablepanel.BackColor = Color.Crimson;
             tablepanel.ColumnCount = 1;
             tablepanel.RowCount = 1;
         }
@@ -57,6 +57,9 @@ namespace LucaToysLite.Controls
             {
                 this.RoundedButtons.Clear();
             }
+
+            TableLayoutControlCollection controls = tablepanel.Controls;
+
             foreach (string item in Items)
             {
                 RoundedButton rb = new RoundedButton();
@@ -64,7 +67,8 @@ namespace LucaToysLite.Controls
                 rb.Text = item;
                 rb.AutoSize = false;
                 rb.FlatStyle = FlatStyle.Flat;
-                rb.Dock = DockStyle.Top;
+                rb.Dock = DockStyle.Fill;
+                rb.Margin = new Padding(3);
                 rb.FlatAppearance.BorderSize = 0;
                 rb.BackColor = Color.FromArgb(15,15,15);
                 rb.Text = "Hello World";
@@ -72,7 +76,7 @@ namespace LucaToysLite.Controls
                 rb.ForeColor = Color.White;
                 rb.Height = 80;       
                 this.RoundedButtons.Add(rb);
-                this.tablepanel.Controls.Add(rb);
+                controls.Add(rb);
                 rb.BringToFront();
             }
         }
