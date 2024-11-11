@@ -173,6 +173,17 @@ namespace LucaToysLite.ClassLibrary
             }
         }
 
+        private byte borderSize = 2;
+        public byte BorderSize
+        {
+            get { return this.borderSize; }
+            set
+            {
+                this.borderSize = value;
+                this.RecreateRegion();
+            }
+        }
+
 
 
         [System.Runtime.InteropServices.DllImport("gdi32.dll")]
