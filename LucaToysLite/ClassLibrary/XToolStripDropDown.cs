@@ -184,6 +184,8 @@ namespace LucaToysLite.ClassLibrary
             }
         }
 
+        public System.Boolean EnableBorder { get; set; } = false;
+
 
 
         [System.Runtime.InteropServices.DllImport("gdi32.dll")]
@@ -243,10 +245,11 @@ namespace LucaToysLite.ClassLibrary
             using (GraphicsPath GraphPath = GetRoundPath(Rect, this.Radius))
             {
                 this.Region = new Region(GraphPath);
-                using (Pen pen = new Pen(Color.Crimson, 2))
+                using (Pen pen = new Pen(this.BorderColor, this.BorderSize))
                 {
                     pen.Alignment = PenAlignment.Inset;
-                    e.Graphics.DrawPath(pen, GraphPath);
+                    if (this.EnableBorder)
+                        e.Graphics.DrawPath(pen, GraphPath);
                 }
             }
         }

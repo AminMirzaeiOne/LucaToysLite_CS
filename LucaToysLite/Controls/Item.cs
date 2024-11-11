@@ -18,16 +18,16 @@ namespace LucaToysLite.Controls
             InitializeComponent();
             this.roundedPanel.Size = new System.Drawing.Size(this.Size.Width, 300);
             this.roundedPanel.BackColor = Color.FromArgb(15, 15, 15);
-            this.dropDown = new XDropDown.XToolStripDropDown(this.roundedPanel);
+            this.dropDown = new LucaToysLite.ClassLibrary.XToolStripDropDown(this.roundedPanel);
             this.dropDown.AllowTransparency = true;
-            
+
             this.dropDown.BackColor = Color.FromArgb(15,15,15);
         }
 
         public event EventHandler ClickedAction;
 
         private LucaToysLite.Controls.RoundedPanel roundedPanel = new RoundedPanel();
-
+        private LucaToysLite.ClassLibrary.XToolStripDropDown dropDown;
 
         public System.String TitleText
         {
@@ -133,7 +133,7 @@ namespace LucaToysLite.Controls
 
         private void roundedButton2_Click(object sender, EventArgs e)
         {
-            this.dropDown.Show(this);
+            this.dropDown.Show(this,new Point(0,this.roundedButton2.Bottom+30));
         }
     }
 }
