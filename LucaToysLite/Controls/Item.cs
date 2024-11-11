@@ -16,12 +16,12 @@ namespace LucaToysLite.Controls
         public Item()
         {
             InitializeComponent();
-            this.roundedPanel.Size = new System.Drawing.Size(this.Size.Width, 500);
-            this.roundedPanel.BackColor = Color.FromArgb(15, 15, 15);
+            this.roundedPanel.Size = new System.Drawing.Size(200, 500);
+            this.roundedPanel.BackColor = Color.FromArgb(35, 35, 35);
             this.dropDown = new LucaToysLite.ClassLibrary.XToolStripDropDown(this.roundedPanel);
             this.dropDown.AllowTransparency = true;
-
-            this.dropDown.BackColor = Color.FromArgb(15,15,15);
+            this.dropDown.Width = 200;
+            this.dropDown.BackColor = Color.FromArgb(35,35,35);
             this.roundedPanel.Controls.Add(tablepanel);
             this.tablepanel.Dock = DockStyle.Fill;
             this.tablepanel.BackColor = Color.Transparent;
@@ -49,7 +49,7 @@ namespace LucaToysLite.Controls
                 OnItemsChanged();
             }
         }
-
+        int size = 0;
         private void OnItemsChanged()
         {
             this.tablepanel.Controls.Clear();
@@ -68,18 +68,21 @@ namespace LucaToysLite.Controls
                 rb.AutoSize = false;
                 rb.FlatStyle = FlatStyle.Flat;
                 rb.Dock = DockStyle.Fill;
-                rb.Margin = new Padding(3);
+                rb.Margin = new Padding(10, 3, 10, 3);
                 rb.FlatAppearance.MouseOverBackColor = Color.Crimson;
                 rb.FlatAppearance.MouseDownBackColor = Color.IndianRed;
                 rb.FlatAppearance.BorderSize = 0;
-                rb.BackColor = Color.FromArgb(15,15,15);
+                rb.BackColor = Color.FromArgb(20,20,20);
                 rb.FlatAppearance.CheckedBackColor = Color.Plum;
                 rb.ForeColor = Color.White;
-                rb.Height = 80;       
+                rb.Height = 70;       
                 this.RoundedButtons.Add(rb);
                 controls.Add(rb);
                 rb.BringToFront();
+                size += rb.Height;
             }
+
+            this.roundedPanel.Height = size;
         }
 
         private void Rb_CheckedChanged(object sender, EventArgs e)
@@ -198,6 +201,8 @@ namespace LucaToysLite.Controls
 
         private void roundedButton2_Click(object sender, EventArgs e)
         {
+            this.roundedPanel.Width = this.Width;
+            this.roundedPanel.Height = this.tablepanel.Height;
             this.dropDown.Show(this,new Point(0,this.roundedButton2.Bottom+30));
         }
 

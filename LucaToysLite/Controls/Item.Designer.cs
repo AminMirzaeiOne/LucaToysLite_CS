@@ -34,6 +34,8 @@
             // 
             // roundedButton2
             // 
+            this.roundedButton2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.roundedButton2.BorderRadius = ((byte)(20));
             this.roundedButton2.BorderSize = ((byte)(0));
             this.roundedButton2.EnableBorder = false;
@@ -46,13 +48,17 @@
             this.roundedButton2.Location = new System.Drawing.Point(20, 160);
             this.roundedButton2.Name = "roundedButton2";
             this.roundedButton2.Size = new System.Drawing.Size(166, 30);
-            this.roundedButton2.TabIndex = 0;
+            this.roundedButton2.TabIndex = 3;
+            this.roundedButton2.TabStop = false;
             this.roundedButton2.Text = "";
             this.roundedButton2.UseVisualStyleBackColor = true;
             this.roundedButton2.Click += new System.EventHandler(this.roundedButton2_Click);
             // 
             // roundedButton1
             // 
+            this.roundedButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.roundedButton1.BorderRadius = ((byte)(20));
             this.roundedButton1.BorderSize = ((byte)(0));
             this.roundedButton1.EnableBorder = false;

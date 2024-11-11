@@ -47,7 +47,7 @@
             this.item2.ColorPalette = System.Drawing.Color.Crimson;
             this.item2.DarkTheme = true;
             this.item2.Items = new string[0];
-            this.item2.Location = new System.Drawing.Point(253, 138);
+            this.item2.Location = new System.Drawing.Point(39, 63);
             this.item2.Name = "item2";
             this.item2.Size = new System.Drawing.Size(207, 204);
             this.item2.TabIndex = 1;
@@ -67,9 +67,9 @@
         "CRZ",
         "Amazoon",
         "Youtube"};
-            this.item1.Location = new System.Drawing.Point(514, 138);
+            this.item1.Location = new System.Drawing.Point(289, 63);
             this.item1.Name = "item1";
-            this.item1.Size = new System.Drawing.Size(207, 204);
+            this.item1.Size = new System.Drawing.Size(303, 204);
             this.item1.TabIndex = 1;
             this.item1.TitleText = "Accounting";
             // 
