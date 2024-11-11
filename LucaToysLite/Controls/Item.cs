@@ -18,6 +18,12 @@ namespace LucaToysLite.Controls
             InitializeComponent();
         }
 
+        public System.String TitleText
+        {
+            get { return this.roundedButton1.Text; }
+            set { this.roundedButton1.Text = value;}
+        }
+
         public System.Boolean DarkTheme { get; set; } = true;
         public System.Drawing.Color ColorPalette
         {
