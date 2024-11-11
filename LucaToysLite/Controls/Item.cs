@@ -86,7 +86,6 @@ namespace LucaToysLite.Controls
                 rb.Height = 70;       
                 this.RoundedButtons.Add(rb);
                 controls.Add(rb);
-                rb.BringToFront();
                 size += rb.Height;
             }
 

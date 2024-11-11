@@ -28,9 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
             this.item1 = new LucaToysLite.Controls.Item();
+            this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
+            this.item2 = new LucaToysLite.Controls.Item();
             this.SuspendLayout();
+            // 
+            // item1
+            // 
+            this.item1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.item1.ColorPalette = System.Drawing.Color.Crimson;
+            this.item1.DarkTheme = true;
+            this.item1.Items = new string[] {
+        "Messi",
+        "Apple",
+        "Google",
+        "Microsoft",
+        "Youtube"};
+            this.item1.Location = new System.Drawing.Point(302, 134);
+            this.item1.Name = "item1";
+            this.item1.Size = new System.Drawing.Size(180, 142);
+            this.item1.TabIndex = 1;
+            this.item1.TitleText = "Accounting";
             // 
             // windowToolbar1
             // 
@@ -50,22 +68,17 @@
             this.windowToolbar1.TabIndex = 0;
             this.windowToolbar1.WindowBorderSize = ((byte)(3));
             // 
-            // item1
+            // item2
             // 
-            this.item1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.item1.ColorPalette = System.Drawing.Color.Empty;
-            this.item1.DarkTheme = true;
-            this.item1.Items = new string[] {
-        "Messi",
-        "Apple",
-        "Google",
-        "Microsoft",
-        "Youtube"};
-            this.item1.Location = new System.Drawing.Point(302, 134);
-            this.item1.Name = "item1";
-            this.item1.Size = new System.Drawing.Size(180, 142);
-            this.item1.TabIndex = 1;
-            this.item1.TitleText = "Accounting";
+            this.item2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.item2.ColorPalette = System.Drawing.Color.Empty;
+            this.item2.DarkTheme = true;
+            this.item2.Items = new string[0];
+            this.item2.Location = new System.Drawing.Point(637, 134);
+            this.item2.Name = "item2";
+            this.item2.Size = new System.Drawing.Size(207, 204);
+            this.item2.TabIndex = 2;
+            this.item2.TitleText = "Accounting";
             // 
             // Home
             // 
@@ -73,6 +86,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(1090, 650);
+            this.Controls.Add(this.item2);
             this.Controls.Add(this.item1);
             this.Controls.Add(this.windowToolbar1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -88,5 +102,6 @@
 
         private Controls.WindowToolbar windowToolbar1;
         private Controls.Item item1;
+        private Controls.Item item2;
     }
 }
