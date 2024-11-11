@@ -63,7 +63,10 @@
         "Ronaldo",
         "Apple",
         "Google",
-        "Microsoft"};
+        "Microsoft",
+        "CRZ",
+        "Amazoon",
+        "Youtube"};
             this.item1.Location = new System.Drawing.Point(514, 138);
             this.item1.Name = "item1";
             this.item1.Size = new System.Drawing.Size(207, 204);

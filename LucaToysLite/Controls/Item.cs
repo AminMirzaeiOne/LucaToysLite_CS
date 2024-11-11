@@ -16,7 +16,7 @@ namespace LucaToysLite.Controls
         public Item()
         {
             InitializeComponent();
-            this.roundedPanel.Size = new System.Drawing.Size(this.Size.Width, 300);
+            this.roundedPanel.Size = new System.Drawing.Size(this.Size.Width, 500);
             this.roundedPanel.BackColor = Color.FromArgb(15, 15, 15);
             this.dropDown = new LucaToysLite.ClassLibrary.XToolStripDropDown(this.roundedPanel);
             this.dropDown.AllowTransparency = true;
@@ -24,7 +24,7 @@ namespace LucaToysLite.Controls
             this.dropDown.BackColor = Color.FromArgb(15,15,15);
             this.roundedPanel.Controls.Add(tablepanel);
             this.tablepanel.Dock = DockStyle.Fill;
-            this.tablepanel.BackColor = Color.Crimson;
+            this.tablepanel.BackColor = Color.Transparent;
             tablepanel.ColumnCount = 1;
             tablepanel.RowCount = 1;
         }
@@ -71,7 +71,6 @@ namespace LucaToysLite.Controls
                 rb.Margin = new Padding(3);
                 rb.FlatAppearance.BorderSize = 0;
                 rb.BackColor = Color.FromArgb(15,15,15);
-                rb.Text = "Hello World";
                 rb.FlatAppearance.CheckedBackColor = Color.Plum;
                 rb.ForeColor = Color.White;
                 rb.Height = 80;       
