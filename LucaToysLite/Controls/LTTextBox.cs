@@ -17,24 +17,63 @@ namespace LucaToysLite.Controls
         {
             this.BorderStyle = BorderStyle.None;
             this.Controls.Add(this.holderLabel);
+            this.Controls.Add(this.btnClear);
             this.holderLabel.Left = this.Left + 5;
             this.holderLabel.Top = this.Bottom - 10;
-            this.holderLabel.BackColor = Color.FromArgb(10,10,10);
+            this.holderLabel.BackColor = Color.FromArgb(10, 10, 10);
             this.holderLabel.ForeColor = Color.White;
             this.holderLabel.Text = "Enter Text";
+            this.btnClear.FlatStyle = FlatStyle.Flat;
+            this.btnClear.FlatAppearance.BorderSize = 0;
+            this.btnClear.BorderSize = 0;
+            this.btnClear.EnableBorder = false;
+            this.btnClear.BackColor = Color.Crimson;
+            this.btnClear.ForeColor = Color.White;
+            this.btnClear.Text = "";
+            this.btnClear.BorderRadius = 5;
+            this.btnClear.Cursor = Cursors.Arrow;
+            this.btnClear.Font = new Font("Segoe MDL2 Assets", 7, FontStyle.Regular);
+            this.btnClear.Click += new EventHandler(this.ClearButton_Click);
         }
 
-
+        private LucaToysLite.Controls.RoundedButton btnClear = new RoundedButton();
         private System.Windows.Forms.Label holderLabel = new Label();
+
+        private void ClearButton_Click(object sender, EventArgs e)
+        {
+            this.Text = string.Empty;
+        }
 
         protected override void OnTextChanged(EventArgs e)
         {
             base.OnTextChanged(e);
-            if(this.Text.Length > 0 )
+            if (this.Text.Length > 0)
+            {
                 this.holderLabel.Visible = false;
+                this.btnClear.Visible = true;
+            }
             else
+            {
                 this.holderLabel.Visible = true;
+                this.btnClear.Visible = false;
+            }
         }
+
+        protected override void OnGotFocus(EventArgs e)
+        {
+            base.OnGotFocus(e);
+            this.HolderColor = Color.IndianRed;
+        }
+
+        protected override void OnLostFocus(EventArgs e)
+        {
+            base.OnLostFocus(e);
+            this.HolderColor = Color.Gray;
+        }
+
+
+        public System.Drawing.Size ClearSize { get { return this.btnClear.Size; } set { this.btnClear.Size = value; } }
+        public System.Drawing.Point ClearLocation { get { return this.btnClear.Location; } set { this.btnClear.Location = value; } }
 
         public System.String HolderText { get { return this.holderLabel.Text; } set { this.holderLabel.Text = value; } }
         public System.Drawing.Font HolderFont { get { return this.holderLabel.Font; } set { this.holderLabel.Font = value; } }

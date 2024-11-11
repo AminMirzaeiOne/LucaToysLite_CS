@@ -38,7 +38,10 @@
             this.ltTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
             this.ltTextBox1.BorderSize = ((byte)(2));
             this.ltTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ltTextBox1.ClearLocation = new System.Drawing.Point(265, 5);
+            this.ltTextBox1.ClearSize = new System.Drawing.Size(25, 25);
             this.ltTextBox1.ColorPallet = System.Drawing.Color.Crimson;
+            this.ltTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ltTextBox1.ForeColor = System.Drawing.Color.White;
             this.ltTextBox1.HolderColor = System.Drawing.Color.Gray;
             this.ltTextBox1.HolderFont = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
