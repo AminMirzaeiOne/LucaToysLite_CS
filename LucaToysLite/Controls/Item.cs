@@ -23,7 +23,7 @@ namespace LucaToysLite.Controls
         public System.String TitleText
         {
             get { return this.roundedButton1.Text; }
-            set { this.roundedButton1.Text = value;}
+            set { this.roundedButton1.Text = value; }
         }
 
         public System.Boolean DarkTheme { get; set; } = true;
@@ -118,7 +118,8 @@ namespace LucaToysLite.Controls
 
         private void roundedButton1_Click(object sender, EventArgs e)
         {
-            this.ClickedAction(null, null);
+            if (this.ClickedAction != null)
+                this.ClickedAction(null, null);
         }
     }
 }
