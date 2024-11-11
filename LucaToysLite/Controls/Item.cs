@@ -18,6 +18,8 @@ namespace LucaToysLite.Controls
             InitializeComponent();
         }
 
+        public event EventHandler ClickedAction;
+
         public System.String TitleText
         {
             get { return this.roundedButton1.Text; }
@@ -114,7 +116,9 @@ namespace LucaToysLite.Controls
             }
         }
 
-
-
+        private void roundedButton1_Click(object sender, EventArgs e)
+        {
+            this.ClickedAction(null, null);
+        }
     }
 }
