@@ -76,8 +76,8 @@ namespace LucaToysLite.Controls
             };
 
             //Drawing
-            using (Pen penBorder = new Pen(checkedColor, 1.6F))
-            using (SolidBrush brushRbCheck = new SolidBrush(checkedColor))
+            using (Pen penBorder = new Pen(this.CheckedColor, 1.6F))
+            using (SolidBrush brushRbCheck = new SolidBrush(this.CheckedColor))
             using (SolidBrush brushText = new SolidBrush(this.ForeColor))
             {
                 //Draw surface
