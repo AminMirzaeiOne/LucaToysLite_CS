@@ -22,9 +22,16 @@ namespace LucaToysLite.Controls
             this.dropDown.AllowTransparency = true;
 
             this.dropDown.BackColor = Color.FromArgb(15,15,15);
+            this.roundedPanel.Controls.Add(tablepanel);
+            this.tablepanel.Dock = DockStyle.Fill;
+            this.tablepanel.BackColor = Color.DimGray;
+            tablepanel.ColumnCount = 1;
+            tablepanel.RowCount = 1;
         }
 
         public event EventHandler ClickedAction;
+
+        TableLayoutPanel tablepanel = new TableLayoutPanel();
 
         private LucaToysLite.Controls.RoundedPanel roundedPanel = new RoundedPanel();
         private LucaToysLite.ClassLibrary.XToolStripDropDown dropDown;
@@ -40,6 +47,43 @@ namespace LucaToysLite.Controls
             {
                 _items = value.ToList();
                 OnItemsChanged();
+            }
+        }
+
+        private void OnItemsChanged()
+        {
+            this.tablepanel.Controls.Clear();
+            if (this.RoundedButtons != null)
+            {
+                this.RoundedButtons.Clear();
+            }
+            foreach (string item in Items)
+            {
+                RoundedButton rb = new RoundedButton();
+                this.tablepanel.RowCount++;
+                rb.Text = item;
+                rb.AutoSize = false;
+                rb.FlatStyle = FlatStyle.Flat;
+                rb.Dock = DockStyle.Top;
+                rb.FlatAppearance.BorderSize = 0;
+                rb.BackColor = Color.FromArgb(15,15,15);
+                rb.Text = "Hello World";
+                rb.FlatAppearance.CheckedBackColor = Color.Plum;
+                rb.ForeColor = Color.White;
+                rb.Height = 80;       
+                this.RoundedButtons.Add(rb);
+                this.tablepanel.Controls.Add(rb);
+                rb.BringToFront();
+            }
+        }
+
+        private void Rb_CheckedChanged(object sender, EventArgs e)
+        {
+            RadioButton rb = (RadioButton)sender;
+            if (rb.Checked)
+            {
+                SelectedItemChanged?.Invoke(rb, EventArgs.Empty);
+                //this.Content = rb.Text;
             }
         }
 

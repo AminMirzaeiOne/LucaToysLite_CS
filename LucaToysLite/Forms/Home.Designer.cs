@@ -28,11 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
-            this.item1 = new LucaToysLite.Controls.Item();
-            this.item2 = new LucaToysLite.Controls.Item();
             this.roundedPanel1 = new LucaToysLite.Controls.RoundedPanel();
+            this.item2 = new LucaToysLite.Controls.Item();
+            this.item1 = new LucaToysLite.Controls.Item();
+            this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
             this.SuspendLayout();
+            // 
+            // roundedPanel1
+            // 
+            this.roundedPanel1.Location = new System.Drawing.Point(823, 242);
+            this.roundedPanel1.Name = "roundedPanel1";
+            this.roundedPanel1.Size = new System.Drawing.Size(200, 318);
+            this.roundedPanel1.TabIndex = 2;
+            // 
+            // item2
+            // 
+            this.item2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.item2.ColorPalette = System.Drawing.Color.Crimson;
+            this.item2.DarkTheme = true;
+            this.item2.Items = new string[0];
+            this.item2.Location = new System.Drawing.Point(253, 138);
+            this.item2.Name = "item2";
+            this.item2.Size = new System.Drawing.Size(207, 204);
+            this.item2.TabIndex = 1;
+            this.item2.TitleText = "Accounting";
+            // 
+            // item1
+            // 
+            this.item1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.item1.ColorPalette = System.Drawing.Color.Crimson;
+            this.item1.DarkTheme = true;
+            this.item1.Items = new string[] {
+        "Messi",
+        "Ronaldo",
+        "Apple",
+        "Google",
+        "Microsoft"};
+            this.item1.Location = new System.Drawing.Point(514, 138);
+            this.item1.Name = "item1";
+            this.item1.Size = new System.Drawing.Size(207, 204);
+            this.item1.TabIndex = 1;
+            this.item1.TitleText = "Accounting";
             // 
             // windowToolbar1
             // 
@@ -51,35 +87,6 @@
             this.windowToolbar1.StartupSound = LucaToysLite.Controls.WindowToolbar.StartupSounds.None;
             this.windowToolbar1.TabIndex = 0;
             this.windowToolbar1.WindowBorderSize = ((byte)(3));
-            // 
-            // item1
-            // 
-            this.item1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.item1.ColorPalette = System.Drawing.Color.Crimson;
-            this.item1.DarkTheme = true;
-            this.item1.Location = new System.Drawing.Point(514, 138);
-            this.item1.Name = "item1";
-            this.item1.Size = new System.Drawing.Size(207, 204);
-            this.item1.TabIndex = 1;
-            this.item1.TitleText = "Accounting";
-            // 
-            // item2
-            // 
-            this.item2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.item2.ColorPalette = System.Drawing.Color.Crimson;
-            this.item2.DarkTheme = true;
-            this.item2.Location = new System.Drawing.Point(253, 138);
-            this.item2.Name = "item2";
-            this.item2.Size = new System.Drawing.Size(207, 204);
-            this.item2.TabIndex = 1;
-            this.item2.TitleText = "Accounting";
-            // 
-            // roundedPanel1
-            // 
-            this.roundedPanel1.Location = new System.Drawing.Point(823, 242);
-            this.roundedPanel1.Name = "roundedPanel1";
-            this.roundedPanel1.Size = new System.Drawing.Size(200, 318);
-            this.roundedPanel1.TabIndex = 2;
             // 
             // Home
             // 

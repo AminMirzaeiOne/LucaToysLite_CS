@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace LucaToysLite.Controls
 {
@@ -71,6 +72,22 @@ namespace LucaToysLite.Controls
             GraphPath.AddLine(Rect.X, Rect.Height - r2, Rect.X, Rect.Y + r2);
             GraphPath.CloseFigure();
             return GraphPath;
+        }
+
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            base.OnPaint(e);
+            e.Graphics.SmoothingMode = SmoothingMode.HighQuality;
+            RectangleF Rect = new RectangleF(0, 0, this.Width, this.Height);
+            using (GraphicsPath GraphPath = GetRoundPath(Rect, this.Radius))
+            {
+                this.Region = new Region(GraphPath);
+                using (Pen pen = new Pen(Color.Crimson, 2))
+                {
+                    pen.Alignment = PenAlignment.Inset;
+                    e.Graphics.DrawPath(pen, GraphPath);
+                }
+            }
         }
 
     }
