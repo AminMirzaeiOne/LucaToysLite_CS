@@ -65,7 +65,9 @@
     <Compile Include="Controls\LoadingControl.Designer.cs">
       <DependentUpon>LoadingControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\LTCheckBox.cs" />
+    <Compile Include="Controls\LTCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Controls\LTRadioButton.cs">
       <SubType>Component</SubType>
     </Compile>
