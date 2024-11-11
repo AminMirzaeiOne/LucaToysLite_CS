@@ -34,10 +34,18 @@ namespace LucaToysLite.Controls
             this.btnClear.Cursor = Cursors.Arrow;
             this.btnClear.Font = new Font("Segoe MDL2 Assets", 7, FontStyle.Regular);
             this.btnClear.Click += new EventHandler(this.ClearButton_Click);
+            this.contextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.microsoftToolStripMenuItem,
+            this.toolStripSeparator1});
+            this.ContextMenuStrip = this.contextMenu;
         }
 
         private LucaToysLite.Controls.RoundedButton btnClear = new RoundedButton();
         private System.Windows.Forms.Label holderLabel = new Label();
+        private LTContextMenu contextMenu = new LTContextMenu();
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1 = new ToolStripSeparator();
+        private System.Windows.Forms.ToolStripMenuItem microsoftToolStripMenuItem = new ToolStripMenuItem();
+
 
         private void ClearButton_Click(object sender, EventArgs e)
         {

@@ -14,8 +14,11 @@ namespace LucaToysLite.Controls
     {
         public LTContextMenu()
         {
-            this.Renderer = new MyMenuRenderer();
+            this.Renderer = this.renderer;
         }
+
+        private MyMenuRenderer renderer = new MyMenuRenderer();
+
         private int radius = 20;
         [DefaultValue(20)]
         public int Radius
@@ -29,7 +32,11 @@ namespace LucaToysLite.Controls
         }
 
         public System.Byte BorderSize { get; set; } = 2;
-        public System.Drawing.Color ColorPallet { get; set; } = Color.Crimson;
+        public System.Drawing.Color ColorPallet
+        {
+            get { return this.renderer.colorPallet; }
+            set { this.renderer.colorPallet = value; this.Update(); }
+        }
 
         [System.Runtime.InteropServices.DllImport("gdi32.dll")]
         private static extern IntPtr CreateRoundRectRgn(int nLeftRect, int nTopRect,
@@ -88,7 +95,7 @@ namespace LucaToysLite.Controls
             using (GraphicsPath GraphPath = GetRoundPath(Rect, this.Radius))
             {
                 this.Region = new Region(GraphPath);
-                using (Pen pen = new Pen(Color.Crimson, 2))
+                using (Pen pen = new Pen(this.ColorPallet, 2))
                 {
                     pen.Alignment = PenAlignment.Inset;
                     e.Graphics.DrawPath(pen, GraphPath);
@@ -98,13 +105,18 @@ namespace LucaToysLite.Controls
 
         public class MyMenuRenderer : ToolStripRenderer
         {
-
-
+            internal System.Drawing.Color colorPallet = Color.Crimson;
+            protected override void OnRenderArrow(ToolStripArrowRenderEventArgs e)
+            {
+                var tsMenuItem = e.Item as ToolStripMenuItem;
+                if (tsMenuItem != null)
+                    e.ArrowColor = Color.White;
+                base.OnRenderArrow(e);
+            }
 
             protected override void OnRenderMenuItemBackground(ToolStripItemRenderEventArgs e)
             {
                 base.OnRenderMenuItemBackground(e);
-
                 if (e.Item.Enabled)
                 {
                     if (e.Item.IsOnDropDown == false && e.Item.Selected)
@@ -123,7 +135,7 @@ namespace LucaToysLite.Controls
                     if (e.Item.IsOnDropDown && e.Item.Selected)
                     {
                         var rect = new Rectangle(0, 0, e.Item.Width - 1, e.Item.Height - 1);
-                        e.Graphics.FillRectangle(new SolidBrush(Color.FromArgb(60, 60, 60)), rect);
+                        e.Graphics.FillRectangle(new SolidBrush(this.colorPallet), rect);
                         e.Graphics.DrawRectangle(new Pen(new SolidBrush(Color.Black)), rect);
                         e.Item.ForeColor = Color.White;
                     }
@@ -140,7 +152,7 @@ namespace LucaToysLite.Controls
             protected override void OnRenderSeparator(ToolStripSeparatorRenderEventArgs e)
             {
                 base.OnRenderSeparator(e);
-                var DarkLine = new SolidBrush(Color.FromArgb(30, 30, 30));
+                var DarkLine = new SolidBrush(this.colorPallet);
                 var rect = new Rectangle(30, 3, e.Item.Width - 30, 1);
                 e.Graphics.FillRectangle(DarkLine, rect);
             }
@@ -154,8 +166,8 @@ namespace LucaToysLite.Controls
                 {
                     var rect = new Rectangle(4, 2, 18, 18);
                     var rect2 = new Rectangle(5, 3, 16, 16);
-                    SolidBrush b = new SolidBrush(Color.Black);
-                    SolidBrush b2 = new SolidBrush(Color.FromArgb(220, 220, 220));
+                    SolidBrush b = new SolidBrush(this.colorPallet);
+                    SolidBrush b2 = new SolidBrush(this.colorPallet);
 
                     e.Graphics.FillRectangle(b, rect);
                     e.Graphics.FillRectangle(b2, rect2);
@@ -191,6 +203,8 @@ namespace LucaToysLite.Controls
                 e.Graphics.DrawRectangle(new Pen(new SolidBrush(Color.Black)), rect2);
             }
         }
+
+        
 
     }
 }
