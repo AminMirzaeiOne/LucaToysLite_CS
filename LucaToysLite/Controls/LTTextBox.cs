@@ -16,7 +16,24 @@ namespace LucaToysLite.Controls
         public LTTextBox()
         {
             this.BorderStyle = BorderStyle.None;
+            this.Controls.Add(this.holderLabel);
+            this.holderLabel.Left = this.Left + 5;
+            this.holderLabel.Top = this.Bottom - 10;
+            this.holderLabel.BackColor = Color.FromArgb(10,10,10);
+            this.holderLabel.ForeColor = Color.White;
+            this.holderLabel.Text = "Enter Text";
+        }
 
+
+        private System.Windows.Forms.Label holderLabel = new Label();
+
+        protected override void OnTextChanged(EventArgs e)
+        {
+            base.OnTextChanged(e);
+            if(this.Text.Length > 0 )
+                this.holderLabel.Visible = false;
+            else
+                this.holderLabel.Visible = true;
         }
 
         private int radius = 20;
