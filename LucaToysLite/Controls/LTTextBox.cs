@@ -38,6 +38,7 @@ namespace LucaToysLite.Controls
 
         public System.String HolderText { get { return this.holderLabel.Text; } set { this.holderLabel.Text = value; } }
         public System.Drawing.Font HolderFont { get { return this.holderLabel.Font; } set { this.holderLabel.Font = value; } }
+        public System.Drawing.Color HolderColor { get { return this.holderLabel.ForeColor; } set { this.holderLabel.ForeColor = value; } }
 
         public System.Drawing.Point HolderLocation { get { return this.holderLabel.Location; } set { this.holderLabel.Location = value; } }
 

@@ -28,9 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.ltTextBox1 = new LucaToysLite.Controls.LTTextBox();
             this.ltCheckBox1 = new LucaToysLite.Controls.LTCheckBox();
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
             this.SuspendLayout();
+            // 
+            // ltTextBox1
+            // 
+            this.ltTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.ltTextBox1.BorderSize = ((byte)(2));
+            this.ltTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ltTextBox1.ColorPallet = System.Drawing.Color.Crimson;
+            this.ltTextBox1.ForeColor = System.Drawing.Color.White;
+            this.ltTextBox1.HolderColor = System.Drawing.Color.Gray;
+            this.ltTextBox1.HolderFont = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ltTextBox1.HolderLocation = new System.Drawing.Point(10, 5);
+            this.ltTextBox1.HolderText = "Enter Text";
+            this.ltTextBox1.Location = new System.Drawing.Point(613, 228);
+            this.ltTextBox1.Multiline = true;
+            this.ltTextBox1.Name = "ltTextBox1";
+            this.ltTextBox1.Radius = 10;
+            this.ltTextBox1.Size = new System.Drawing.Size(305, 38);
+            this.ltTextBox1.TabIndex = 5;
             // 
             // ltCheckBox1
             // 
@@ -74,6 +93,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(1090, 650);
+            this.Controls.Add(this.ltTextBox1);
             this.Controls.Add(this.ltCheckBox1);
             this.Controls.Add(this.windowToolbar1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -82,11 +102,13 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
         private Controls.WindowToolbar windowToolbar1;
         private Controls.LTCheckBox ltCheckBox1;
+        private Controls.LTTextBox ltTextBox1;
     }
 }
