@@ -28,10 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.item2 = new LucaToysLite.Controls.Item();
             this.item1 = new LucaToysLite.Controls.Item();
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
-            this.item2 = new LucaToysLite.Controls.Item();
+            this.ltRadioButton1 = new LucaToysLite.Controls.LTRadioButton();
+            this.ltRadioButton2 = new LucaToysLite.Controls.LTRadioButton();
+            this.ltRadioButton3 = new LucaToysLite.Controls.LTRadioButton();
+            this.ltRadioButton4 = new LucaToysLite.Controls.LTRadioButton();
             this.SuspendLayout();
+            // 
+            // item2
+            // 
+            this.item2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.item2.ColorPalette = System.Drawing.Color.Crimson;
+            this.item2.DarkTheme = true;
+            this.item2.Items = new string[0];
+            this.item2.Location = new System.Drawing.Point(637, 134);
+            this.item2.Name = "item2";
+            this.item2.Size = new System.Drawing.Size(207, 204);
+            this.item2.TabIndex = 2;
+            this.item2.TitleText = "Accounting";
             // 
             // item1
             // 
@@ -68,17 +84,69 @@
             this.windowToolbar1.TabIndex = 0;
             this.windowToolbar1.WindowBorderSize = ((byte)(3));
             // 
-            // item2
+            // ltRadioButton1
             // 
-            this.item2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.item2.ColorPalette = System.Drawing.Color.Empty;
-            this.item2.DarkTheme = true;
-            this.item2.Items = new string[0];
-            this.item2.Location = new System.Drawing.Point(637, 134);
-            this.item2.Name = "item2";
-            this.item2.Size = new System.Drawing.Size(207, 204);
-            this.item2.TabIndex = 2;
-            this.item2.TitleText = "Accounting";
+            this.ltRadioButton1.AutoSize = true;
+            this.ltRadioButton1.CheckedColor = System.Drawing.Color.Crimson;
+            this.ltRadioButton1.ForeColor = System.Drawing.Color.White;
+            this.ltRadioButton1.Location = new System.Drawing.Point(393, 437);
+            this.ltRadioButton1.MinimumSize = new System.Drawing.Size(0, 21);
+            this.ltRadioButton1.Name = "ltRadioButton1";
+            this.ltRadioButton1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.ltRadioButton1.Size = new System.Drawing.Size(166, 29);
+            this.ltRadioButton1.TabIndex = 3;
+            this.ltRadioButton1.TabStop = true;
+            this.ltRadioButton1.Text = "ltRadioButton1";
+            this.ltRadioButton1.UnCheckedColor = System.Drawing.Color.Gray;
+            this.ltRadioButton1.UseVisualStyleBackColor = true;
+            // 
+            // ltRadioButton2
+            // 
+            this.ltRadioButton2.AutoSize = true;
+            this.ltRadioButton2.CheckedColor = System.Drawing.Color.Crimson;
+            this.ltRadioButton2.ForeColor = System.Drawing.Color.White;
+            this.ltRadioButton2.Location = new System.Drawing.Point(654, 437);
+            this.ltRadioButton2.MinimumSize = new System.Drawing.Size(0, 21);
+            this.ltRadioButton2.Name = "ltRadioButton2";
+            this.ltRadioButton2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.ltRadioButton2.Size = new System.Drawing.Size(166, 29);
+            this.ltRadioButton2.TabIndex = 3;
+            this.ltRadioButton2.TabStop = true;
+            this.ltRadioButton2.Text = "ltRadioButton1";
+            this.ltRadioButton2.UnCheckedColor = System.Drawing.Color.Gray;
+            this.ltRadioButton2.UseVisualStyleBackColor = true;
+            // 
+            // ltRadioButton3
+            // 
+            this.ltRadioButton3.AutoSize = true;
+            this.ltRadioButton3.CheckedColor = System.Drawing.Color.Crimson;
+            this.ltRadioButton3.ForeColor = System.Drawing.Color.White;
+            this.ltRadioButton3.Location = new System.Drawing.Point(654, 516);
+            this.ltRadioButton3.MinimumSize = new System.Drawing.Size(0, 21);
+            this.ltRadioButton3.Name = "ltRadioButton3";
+            this.ltRadioButton3.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.ltRadioButton3.Size = new System.Drawing.Size(166, 29);
+            this.ltRadioButton3.TabIndex = 3;
+            this.ltRadioButton3.TabStop = true;
+            this.ltRadioButton3.Text = "ltRadioButton1";
+            this.ltRadioButton3.UnCheckedColor = System.Drawing.Color.Gray;
+            this.ltRadioButton3.UseVisualStyleBackColor = true;
+            // 
+            // ltRadioButton4
+            // 
+            this.ltRadioButton4.AutoSize = true;
+            this.ltRadioButton4.CheckedColor = System.Drawing.Color.Crimson;
+            this.ltRadioButton4.ForeColor = System.Drawing.Color.White;
+            this.ltRadioButton4.Location = new System.Drawing.Point(393, 516);
+            this.ltRadioButton4.MinimumSize = new System.Drawing.Size(0, 21);
+            this.ltRadioButton4.Name = "ltRadioButton4";
+            this.ltRadioButton4.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.ltRadioButton4.Size = new System.Drawing.Size(166, 29);
+            this.ltRadioButton4.TabIndex = 3;
+            this.ltRadioButton4.TabStop = true;
+            this.ltRadioButton4.Text = "ltRadioButton1";
+            this.ltRadioButton4.UnCheckedColor = System.Drawing.Color.Gray;
+            this.ltRadioButton4.UseVisualStyleBackColor = true;
             // 
             // Home
             // 
@@ -86,6 +154,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(1090, 650);
+            this.Controls.Add(this.ltRadioButton4);
+            this.Controls.Add(this.ltRadioButton3);
+            this.Controls.Add(this.ltRadioButton2);
+            this.Controls.Add(this.ltRadioButton1);
             this.Controls.Add(this.item2);
             this.Controls.Add(this.item1);
             this.Controls.Add(this.windowToolbar1);
@@ -95,6 +167,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -103,5 +176,9 @@
         private Controls.WindowToolbar windowToolbar1;
         private Controls.Item item1;
         private Controls.Item item2;
+        private Controls.LTRadioButton ltRadioButton1;
+        private Controls.LTRadioButton ltRadioButton2;
+        private Controls.LTRadioButton ltRadioButton3;
+        private Controls.LTRadioButton ltRadioButton4;
     }
 }
