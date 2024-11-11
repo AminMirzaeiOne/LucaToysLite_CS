@@ -30,7 +30,6 @@
         {
             this.ltCheckBox1 = new LucaToysLite.Controls.LTCheckBox();
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
-            this.ltTextBox1 = new LucaToysLite.Controls.LTTextBox();
             this.SuspendLayout();
             // 
             // ltCheckBox1
@@ -69,26 +68,12 @@
             this.windowToolbar1.TabIndex = 0;
             this.windowToolbar1.WindowBorderSize = ((byte)(3));
             // 
-            // ltTextBox1
-            // 
-            this.ltTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
-            this.ltTextBox1.BorderSize = ((byte)(2));
-            this.ltTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ltTextBox1.ColorPallet = System.Drawing.Color.Crimson;
-            this.ltTextBox1.ForeColor = System.Drawing.Color.White;
-            this.ltTextBox1.Location = new System.Drawing.Point(406, 196);
-            this.ltTextBox1.Multiline = true;
-            this.ltTextBox1.Name = "ltTextBox1";
-            this.ltTextBox1.Size = new System.Drawing.Size(472, 214);
-            this.ltTextBox1.TabIndex = 5;
-            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(1090, 650);
-            this.Controls.Add(this.ltTextBox1);
             this.Controls.Add(this.ltCheckBox1);
             this.Controls.Add(this.windowToolbar1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -97,13 +82,11 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
         private Controls.WindowToolbar windowToolbar1;
         private Controls.LTCheckBox ltCheckBox1;
-        private Controls.LTTextBox ltTextBox1;
     }
 }
