@@ -42,6 +42,7 @@ namespace LucaToysLite.Controls
         private void ClearButton_Click(object sender, EventArgs e)
         {
             this.Text = string.Empty;
+            this.Focus();
         }
 
         protected override void OnTextChanged(EventArgs e)

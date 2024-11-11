@@ -98,6 +98,9 @@ namespace LucaToysLite.Controls
 
         public class MyMenuRenderer : ToolStripRenderer
         {
+
+
+
             protected override void OnRenderMenuItemBackground(ToolStripItemRenderEventArgs e)
             {
                 base.OnRenderMenuItemBackground(e);
