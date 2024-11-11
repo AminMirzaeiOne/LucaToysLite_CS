@@ -162,6 +162,19 @@ namespace LucaToysLite.ClassLibrary
             }
         }
 
+        private Color borderColor = Color.Crimson;
+        public Color BorderColor
+        {
+            get { return this.borderColor; }
+            set
+            {
+                this.borderColor = value;
+                this.RecreateRegion();
+            }
+        }
+
+
+
         [System.Runtime.InteropServices.DllImport("gdi32.dll")]
         private static extern IntPtr CreateRoundRectRgn(int nLeftRect, int nTopRect,
             int nRightRect, int nBottomRect, int nWidthEllipse, int nHeightEllipse);
@@ -209,6 +222,22 @@ namespace LucaToysLite.ClassLibrary
             GraphPath.AddLine(Rect.X, Rect.Height - r2, Rect.X, Rect.Y + r2);
             GraphPath.CloseFigure();
             return GraphPath;
+        }
+
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            base.OnPaint(e);
+            e.Graphics.SmoothingMode = SmoothingMode.HighQuality;
+            RectangleF Rect = new RectangleF(0, 0, this.Width, this.Height);
+            using (GraphicsPath GraphPath = GetRoundPath(Rect, this.Radius))
+            {
+                this.Region = new Region(GraphPath);
+                using (Pen pen = new Pen(Color.Crimson, 2))
+                {
+                    pen.Alignment = PenAlignment.Inset;
+                    e.Graphics.DrawPath(pen, GraphPath);
+                }
+            }
         }
 
 
