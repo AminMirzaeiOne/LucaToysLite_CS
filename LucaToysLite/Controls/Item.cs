@@ -28,6 +28,22 @@ namespace LucaToysLite.Controls
 
         private LucaToysLite.Controls.RoundedPanel roundedPanel = new RoundedPanel();
         private LucaToysLite.ClassLibrary.XToolStripDropDown dropDown;
+        public List<RoundedButton> RoundedButtons = new List<RoundedButton>();
+
+        public event EventHandler<EventArgs> SelectedItemChanged;
+
+        private List<string> _items = new List<string>();
+        public string[] Items
+        {
+            get { return _items.ToArray(); }
+            set
+            {
+                _items = value.ToList();
+                OnItemsChanged();
+            }
+        }
+
+
 
         public System.String TitleText
         {
