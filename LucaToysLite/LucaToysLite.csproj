@@ -47,6 +47,9 @@
     <Reference Include="WFAnimations">
       <HintPath>C:\Users\Amin\Downloads\WFAnimations.dll</HintPath>
     </Reference>
+    <Reference Include="XDropDown">
+      <HintPath>C:\Users\Amin\Downloads\XDropDown.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClassLibrary\WindowAnimation.cs" />
