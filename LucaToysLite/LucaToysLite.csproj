@@ -74,12 +74,6 @@
     <Compile Include="Controls\RoundedLabel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Controls\Submenu.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Controls\Submenu.Designer.cs">
-      <DependentUpon>Submenu.cs</DependentUpon>
-    </Compile>
     <Compile Include="Controls\WindowToolbar.cs">
       <SubType>UserControl</SubType>
     </Compile>
