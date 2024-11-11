@@ -53,7 +53,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClassLibrary\WindowAnimation.cs" />
-    <Compile Include="ClassLibrary\XToolStripDropDown.cs" />
+    <Compile Include="ClassLibrary\XToolStripDropDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Controls\Item.cs">
       <SubType>UserControl</SubType>
     </Compile>
