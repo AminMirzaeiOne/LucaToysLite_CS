@@ -135,5 +135,10 @@ namespace LucaToysLite.Controls
         {
             this.dropDown.Show(this,new Point(0,this.roundedButton2.Bottom+30));
         }
+
+        private void NewSubItem()
+        {
+
+        }
     }
 }
