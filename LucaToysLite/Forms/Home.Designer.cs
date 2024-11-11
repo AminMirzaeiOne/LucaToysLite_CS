@@ -35,8 +35,8 @@
             this.ltRadioButton1 = new LucaToysLite.Controls.LTRadioButton();
             this.item2 = new LucaToysLite.Controls.Item();
             this.item1 = new LucaToysLite.Controls.Item();
-            this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
             this.ltTextBox1 = new LucaToysLite.Controls.LTTextBox();
+            this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
             this.SuspendLayout();
             // 
             // ltCheckBox1
@@ -144,11 +144,23 @@
         "Google",
         "Microsoft",
         "Youtube"};
-            this.item1.Location = new System.Drawing.Point(302, 134);
+            this.item1.Location = new System.Drawing.Point(870, 134);
             this.item1.Name = "item1";
             this.item1.Size = new System.Drawing.Size(180, 142);
             this.item1.TabIndex = 1;
             this.item1.TitleText = "Accounting";
+            // 
+            // ltTextBox1
+            // 
+            this.ltTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.ltTextBox1.BorderSize = ((byte)(2));
+            this.ltTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ltTextBox1.ColorPallet = System.Drawing.Color.Crimson;
+            this.ltTextBox1.Location = new System.Drawing.Point(31, 106);
+            this.ltTextBox1.Multiline = true;
+            this.ltTextBox1.Name = "ltTextBox1";
+            this.ltTextBox1.Size = new System.Drawing.Size(497, 219);
+            this.ltTextBox1.TabIndex = 5;
             // 
             // windowToolbar1
             // 
@@ -167,18 +179,6 @@
             this.windowToolbar1.StartupSound = LucaToysLite.Controls.WindowToolbar.StartupSounds.None;
             this.windowToolbar1.TabIndex = 0;
             this.windowToolbar1.WindowBorderSize = ((byte)(3));
-            // 
-            // ltTextBox1
-            // 
-            this.ltTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
-            this.ltTextBox1.BorderSize = ((byte)(2));
-            this.ltTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ltTextBox1.ColorPallet = System.Drawing.Color.Crimson;
-            this.ltTextBox1.Location = new System.Drawing.Point(302, 323);
-            this.ltTextBox1.Multiline = true;
-            this.ltTextBox1.Name = "ltTextBox1";
-            this.ltTextBox1.Size = new System.Drawing.Size(180, 64);
-            this.ltTextBox1.TabIndex = 5;
             // 
             // Home
             // 
@@ -206,8 +206,6 @@
         }
 
         #endregion
-
-        private Controls.WindowToolbar windowToolbar1;
         private Controls.Item item1;
         private Controls.Item item2;
         private Controls.LTRadioButton ltRadioButton1;
@@ -216,5 +214,6 @@
         private Controls.LTRadioButton ltRadioButton4;
         private Controls.LTCheckBox ltCheckBox1;
         private Controls.LTTextBox ltTextBox1;
+        private Controls.WindowToolbar windowToolbar1;
     }
 }
