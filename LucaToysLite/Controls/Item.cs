@@ -69,6 +69,8 @@ namespace LucaToysLite.Controls
                 rb.FlatStyle = FlatStyle.Flat;
                 rb.Dock = DockStyle.Fill;
                 rb.Margin = new Padding(3);
+                rb.FlatAppearance.MouseOverBackColor = Color.Crimson;
+                rb.FlatAppearance.MouseDownBackColor = Color.IndianRed;
                 rb.FlatAppearance.BorderSize = 0;
                 rb.BackColor = Color.FromArgb(15,15,15);
                 rb.FlatAppearance.CheckedBackColor = Color.Plum;
