@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace LucaToysLite.Controls
 {
-    internal class LTTextBox
+    public class LTTextBox : System.Windows.Forms.TextBox
     {
+
     }
 }
