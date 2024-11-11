@@ -36,6 +36,7 @@
             this.item2 = new LucaToysLite.Controls.Item();
             this.item1 = new LucaToysLite.Controls.Item();
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
+            this.ltTextBox1 = new LucaToysLite.Controls.LTTextBox();
             this.SuspendLayout();
             // 
             // ltCheckBox1
@@ -167,12 +168,25 @@
             this.windowToolbar1.TabIndex = 0;
             this.windowToolbar1.WindowBorderSize = ((byte)(3));
             // 
+            // ltTextBox1
+            // 
+            this.ltTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.ltTextBox1.BorderSize = ((byte)(2));
+            this.ltTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ltTextBox1.ColorPallet = System.Drawing.Color.Crimson;
+            this.ltTextBox1.Location = new System.Drawing.Point(302, 323);
+            this.ltTextBox1.Multiline = true;
+            this.ltTextBox1.Name = "ltTextBox1";
+            this.ltTextBox1.Size = new System.Drawing.Size(180, 64);
+            this.ltTextBox1.TabIndex = 5;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(1090, 650);
+            this.Controls.Add(this.ltTextBox1);
             this.Controls.Add(this.ltCheckBox1);
             this.Controls.Add(this.ltRadioButton4);
             this.Controls.Add(this.ltRadioButton3);
@@ -201,5 +215,6 @@
         private Controls.LTRadioButton ltRadioButton3;
         private Controls.LTRadioButton ltRadioButton4;
         private Controls.LTCheckBox ltCheckBox1;
+        private Controls.LTTextBox ltTextBox1;
     }
 }
