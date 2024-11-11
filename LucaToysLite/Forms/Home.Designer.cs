@@ -41,8 +41,10 @@
             // ltCheckBox1
             // 
             this.ltCheckBox1.Appearance = System.Windows.Forms.Appearance.Button;
+            this.ltCheckBox1.BorderSize = ((byte)(2));
+            this.ltCheckBox1.ColorPallet = System.Drawing.Color.DarkGreen;
             this.ltCheckBox1.FlatAppearance.BorderSize = 0;
-            this.ltCheckBox1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
+            this.ltCheckBox1.FlatAppearance.CheckedBackColor = System.Drawing.Color.DarkGreen;
             this.ltCheckBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ltCheckBox1.Font = new System.Drawing.Font("Segoe MDL2 Assets", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ltCheckBox1.ForeColor = System.Drawing.Color.White;
@@ -51,7 +53,6 @@
             this.ltCheckBox1.Radius = 10;
             this.ltCheckBox1.Size = new System.Drawing.Size(35, 33);
             this.ltCheckBox1.TabIndex = 4;
-            this.ltCheckBox1.Text = "";
             this.ltCheckBox1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.ltCheckBox1.UseVisualStyleBackColor = true;
             // 

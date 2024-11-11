@@ -33,6 +33,13 @@ namespace LucaToysLite.Controls
             }
         }
 
+        public System.Byte BorderSize { get; set; } = 2;
+        public System.Drawing.Color ColorPallet
+        {
+            get { return this.FlatAppearance.CheckedBackColor; }
+            set {  this.FlatAppearance.CheckedBackColor = value;}
+        }
+
         [System.Runtime.InteropServices.DllImport("gdi32.dll")]
         private static extern IntPtr CreateRoundRectRgn(int nLeftRect, int nTopRect,
             int nRightRect, int nBottomRect, int nWidthEllipse, int nHeightEllipse);
@@ -90,7 +97,7 @@ namespace LucaToysLite.Controls
             using (GraphicsPath GraphPath = GetRoundPath(Rect, this.Radius))
             {
                 this.Region = new Region(GraphPath);
-                using (Pen pen = new Pen(Color.Crimson, 2))
+                using (Pen pen = new Pen(this.ColorPallet, this.BorderSize))
                 {
                     pen.Alignment = PenAlignment.Inset;
                     e.Graphics.DrawPath(pen, GraphPath);
