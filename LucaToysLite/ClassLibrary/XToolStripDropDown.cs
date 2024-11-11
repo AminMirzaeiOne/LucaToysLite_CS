@@ -149,5 +149,18 @@ namespace LucaToysLite.ClassLibrary
             base.OnOpened(e);
         }
 
+        private int radius = 20;
+        [DefaultValue(20)]
+        public int Radius
+        {
+            get { return radius; }
+            set
+            {
+                radius = value;
+                this.RecreateRegion();
+            }
+        }
+
+
     }
 }
