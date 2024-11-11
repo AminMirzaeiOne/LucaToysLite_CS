@@ -16,6 +16,13 @@ namespace LucaToysLite.Controls
         public Item()
         {
             InitializeComponent();
+            Label SeparatorOne = new Label();
+            SeparatorOne.AutoSize = false;
+            SeparatorOne.Text = string.Empty;
+            SeparatorOne.BackColor = Color.Transparent;
+            SeparatorOne.Dock = DockStyle.Top;
+            SeparatorOne.Height = 5;
+            this.roundedPanel.Controls.Add(SeparatorOne);
             this.roundedPanel.Size = new System.Drawing.Size(200, 500);
             this.roundedPanel.BackColor = Color.FromArgb(35, 35, 35);
             this.dropDown = new LucaToysLite.ClassLibrary.XToolStripDropDown(this.roundedPanel);
@@ -25,6 +32,7 @@ namespace LucaToysLite.Controls
             this.roundedPanel.Controls.Add(tablepanel);
             this.tablepanel.Dock = DockStyle.Fill;
             this.tablepanel.BackColor = Color.Transparent;
+            this.tablepanel.BringToFront();
             tablepanel.ColumnCount = 1;
             tablepanel.RowCount = 1;
         }
@@ -202,7 +210,7 @@ namespace LucaToysLite.Controls
         private void roundedButton2_Click(object sender, EventArgs e)
         {
             this.roundedPanel.Width = this.Width;
-            this.roundedPanel.Height = this.tablepanel.Height;
+            this.roundedPanel.Height = this.tablepanel.Height+40;
             this.dropDown.Show(this,new Point(0,this.roundedButton2.Bottom+30));
         }
 

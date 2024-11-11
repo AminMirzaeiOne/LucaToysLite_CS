@@ -237,7 +237,7 @@ namespace LucaToysLite.Controls
                 this.ApplyColor();
             }
             this.soundPlayer.Stream = soundLocation;
-            soundPlayer.Play();
+            //soundPlayer.Play();
         }
 
         public void ApplyColor()
