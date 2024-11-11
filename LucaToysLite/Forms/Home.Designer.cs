@@ -29,14 +29,8 @@
         private void InitializeComponent()
         {
             this.ltCheckBox1 = new LucaToysLite.Controls.LTCheckBox();
-            this.ltRadioButton4 = new LucaToysLite.Controls.LTRadioButton();
-            this.ltRadioButton3 = new LucaToysLite.Controls.LTRadioButton();
-            this.ltRadioButton2 = new LucaToysLite.Controls.LTRadioButton();
-            this.ltRadioButton1 = new LucaToysLite.Controls.LTRadioButton();
-            this.item2 = new LucaToysLite.Controls.Item();
-            this.item1 = new LucaToysLite.Controls.Item();
-            this.ltTextBox1 = new LucaToysLite.Controls.LTTextBox();
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
+            this.ltTextBox1 = new LucaToysLite.Controls.LTTextBox();
             this.SuspendLayout();
             // 
             // ltCheckBox1
@@ -57,111 +51,6 @@
             this.ltCheckBox1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.ltCheckBox1.UseVisualStyleBackColor = true;
             // 
-            // ltRadioButton4
-            // 
-            this.ltRadioButton4.AutoSize = true;
-            this.ltRadioButton4.CheckedColor = System.Drawing.Color.Crimson;
-            this.ltRadioButton4.ForeColor = System.Drawing.Color.White;
-            this.ltRadioButton4.Location = new System.Drawing.Point(393, 516);
-            this.ltRadioButton4.MinimumSize = new System.Drawing.Size(0, 21);
-            this.ltRadioButton4.Name = "ltRadioButton4";
-            this.ltRadioButton4.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.ltRadioButton4.Size = new System.Drawing.Size(166, 29);
-            this.ltRadioButton4.TabIndex = 3;
-            this.ltRadioButton4.TabStop = true;
-            this.ltRadioButton4.Text = "ltRadioButton1";
-            this.ltRadioButton4.UnCheckedColor = System.Drawing.Color.Gray;
-            this.ltRadioButton4.UseVisualStyleBackColor = true;
-            // 
-            // ltRadioButton3
-            // 
-            this.ltRadioButton3.AutoSize = true;
-            this.ltRadioButton3.CheckedColor = System.Drawing.Color.Crimson;
-            this.ltRadioButton3.ForeColor = System.Drawing.Color.White;
-            this.ltRadioButton3.Location = new System.Drawing.Point(654, 516);
-            this.ltRadioButton3.MinimumSize = new System.Drawing.Size(0, 21);
-            this.ltRadioButton3.Name = "ltRadioButton3";
-            this.ltRadioButton3.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.ltRadioButton3.Size = new System.Drawing.Size(166, 29);
-            this.ltRadioButton3.TabIndex = 3;
-            this.ltRadioButton3.TabStop = true;
-            this.ltRadioButton3.Text = "ltRadioButton1";
-            this.ltRadioButton3.UnCheckedColor = System.Drawing.Color.Gray;
-            this.ltRadioButton3.UseVisualStyleBackColor = true;
-            // 
-            // ltRadioButton2
-            // 
-            this.ltRadioButton2.AutoSize = true;
-            this.ltRadioButton2.CheckedColor = System.Drawing.Color.Crimson;
-            this.ltRadioButton2.ForeColor = System.Drawing.Color.White;
-            this.ltRadioButton2.Location = new System.Drawing.Point(654, 437);
-            this.ltRadioButton2.MinimumSize = new System.Drawing.Size(0, 21);
-            this.ltRadioButton2.Name = "ltRadioButton2";
-            this.ltRadioButton2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.ltRadioButton2.Size = new System.Drawing.Size(166, 29);
-            this.ltRadioButton2.TabIndex = 3;
-            this.ltRadioButton2.TabStop = true;
-            this.ltRadioButton2.Text = "ltRadioButton1";
-            this.ltRadioButton2.UnCheckedColor = System.Drawing.Color.Gray;
-            this.ltRadioButton2.UseVisualStyleBackColor = true;
-            // 
-            // ltRadioButton1
-            // 
-            this.ltRadioButton1.AutoSize = true;
-            this.ltRadioButton1.CheckedColor = System.Drawing.Color.Crimson;
-            this.ltRadioButton1.ForeColor = System.Drawing.Color.White;
-            this.ltRadioButton1.Location = new System.Drawing.Point(393, 437);
-            this.ltRadioButton1.MinimumSize = new System.Drawing.Size(0, 21);
-            this.ltRadioButton1.Name = "ltRadioButton1";
-            this.ltRadioButton1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.ltRadioButton1.Size = new System.Drawing.Size(166, 29);
-            this.ltRadioButton1.TabIndex = 3;
-            this.ltRadioButton1.TabStop = true;
-            this.ltRadioButton1.Text = "ltRadioButton1";
-            this.ltRadioButton1.UnCheckedColor = System.Drawing.Color.Gray;
-            this.ltRadioButton1.UseVisualStyleBackColor = true;
-            // 
-            // item2
-            // 
-            this.item2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.item2.ColorPalette = System.Drawing.Color.Crimson;
-            this.item2.DarkTheme = true;
-            this.item2.Items = new string[0];
-            this.item2.Location = new System.Drawing.Point(637, 134);
-            this.item2.Name = "item2";
-            this.item2.Size = new System.Drawing.Size(207, 204);
-            this.item2.TabIndex = 2;
-            this.item2.TitleText = "Accounting";
-            // 
-            // item1
-            // 
-            this.item1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.item1.ColorPalette = System.Drawing.Color.Crimson;
-            this.item1.DarkTheme = true;
-            this.item1.Items = new string[] {
-        "Messi",
-        "Apple",
-        "Google",
-        "Microsoft",
-        "Youtube"};
-            this.item1.Location = new System.Drawing.Point(870, 134);
-            this.item1.Name = "item1";
-            this.item1.Size = new System.Drawing.Size(180, 142);
-            this.item1.TabIndex = 1;
-            this.item1.TitleText = "Accounting";
-            // 
-            // ltTextBox1
-            // 
-            this.ltTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
-            this.ltTextBox1.BorderSize = ((byte)(2));
-            this.ltTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ltTextBox1.ColorPallet = System.Drawing.Color.Crimson;
-            this.ltTextBox1.Location = new System.Drawing.Point(31, 106);
-            this.ltTextBox1.Multiline = true;
-            this.ltTextBox1.Name = "ltTextBox1";
-            this.ltTextBox1.Size = new System.Drawing.Size(497, 219);
-            this.ltTextBox1.TabIndex = 5;
-            // 
             // windowToolbar1
             // 
             this.windowToolbar1.BackColor = System.Drawing.Color.Crimson;
@@ -180,6 +69,19 @@
             this.windowToolbar1.TabIndex = 0;
             this.windowToolbar1.WindowBorderSize = ((byte)(3));
             // 
+            // ltTextBox1
+            // 
+            this.ltTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.ltTextBox1.BorderSize = ((byte)(2));
+            this.ltTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ltTextBox1.ColorPallet = System.Drawing.Color.Crimson;
+            this.ltTextBox1.ForeColor = System.Drawing.Color.White;
+            this.ltTextBox1.Location = new System.Drawing.Point(406, 196);
+            this.ltTextBox1.Multiline = true;
+            this.ltTextBox1.Name = "ltTextBox1";
+            this.ltTextBox1.Size = new System.Drawing.Size(472, 214);
+            this.ltTextBox1.TabIndex = 5;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
@@ -188,12 +90,6 @@
             this.ClientSize = new System.Drawing.Size(1090, 650);
             this.Controls.Add(this.ltTextBox1);
             this.Controls.Add(this.ltCheckBox1);
-            this.Controls.Add(this.ltRadioButton4);
-            this.Controls.Add(this.ltRadioButton3);
-            this.Controls.Add(this.ltRadioButton2);
-            this.Controls.Add(this.ltRadioButton1);
-            this.Controls.Add(this.item2);
-            this.Controls.Add(this.item1);
             this.Controls.Add(this.windowToolbar1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -206,14 +102,8 @@
         }
 
         #endregion
-        private Controls.Item item1;
-        private Controls.Item item2;
-        private Controls.LTRadioButton ltRadioButton1;
-        private Controls.LTRadioButton ltRadioButton2;
-        private Controls.LTRadioButton ltRadioButton3;
-        private Controls.LTRadioButton ltRadioButton4;
+        private Controls.WindowToolbar windowToolbar1;
         private Controls.LTCheckBox ltCheckBox1;
         private Controls.LTTextBox ltTextBox1;
-        private Controls.WindowToolbar windowToolbar1;
     }
 }

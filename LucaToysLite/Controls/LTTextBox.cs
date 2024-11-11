@@ -83,51 +83,62 @@ namespace LucaToysLite.Controls
             return GraphPath;
         }
 
-
-
-
-        [DllImport("user32")]
-        private static extern IntPtr GetWindowDC(IntPtr hwnd);
-        private const int WM_NCPAINT = 0x85;
-
-        protected override void WndProc(ref Message m)
+        protected override void OnPaint(PaintEventArgs e)
         {
-            base.WndProc(ref m);
-            var dc = GetWindowDC(Handle);
-            using (Graphics g = Graphics.FromHdc(dc))
+            base.OnPaint(e);
+            Pen penBorder = new Pen(Color.Red, 4);
+            Rectangle rectBorder = new Rectangle(e.ClipRectangle.X, e.ClipRectangle.Y, e.ClipRectangle.Width - 1, e.ClipRectangle.Height - 1);
+            e.Graphics.DrawRectangle(penBorder, rectBorder);
 
-            {
-                // ایجاد یک مسیر برای رسم شکل
-                using (GraphicsPath path = new GraphicsPath())
-                {
-                    // تنظیم شعاع گوشه‌های گرد
-                    int radius = 10;
-
-                    // اضافه کردن قوس‌ها برای هر گوشه
-                    path.AddArc(new Rectangle(0, 0, radius, radius), 180, 90); // گوشه بالا سمت چپ
-                    path.AddLine(radius, 0, Width - radius, 0); // خط افقی بالا
-                    path.AddArc(new Rectangle(Width - radius, 0, radius, radius), 270, 90); // گوشه بالا سمت راست
-                    path.AddLine(Width, radius, Width, Height - radius); // خط عمودی راست
-                    path.AddArc(new Rectangle(Width - radius, Height - radius, radius, radius), 0, 90); // گوشه پایین سمت راست
-                    path.AddLine(radius, Height, 0, Height); // خط افقی پایین
-                    path.AddArc(new Rectangle(0, Height - radius, radius, radius), 90, 90); // گوشه پایین سمت چپ
-                    path.CloseFigure();
-
-                    // پر کردن داخل شکل با رنگ پس‌زمینه کنترل
-                    using (SolidBrush brush = new SolidBrush(BackColor))
-                    {
-                        g.FillPath(brush, path);
-                    }
-
-                    // رسم خط دور شکل با رنگ قرمز
-                    using (Pen pen = new Pen(Color.Crimson, 2))
-                    {
-                        g.DrawPath(pen, path);
-                    }
-                }
-            }
-
+            Rectangle textRec = new Rectangle(e.ClipRectangle.X + 1, e.ClipRectangle.Y + 1, e.ClipRectangle.Width - 1, e.ClipRectangle.Height - 1);
+            TextRenderer.DrawText(e.Graphics, Text, this.Font, textRec, this.ForeColor, this.BackColor, TextFormatFlags.Default);
         }
+
+
+
+
+        //[DllImport("user32")]
+        //private static extern IntPtr GetWindowDC(IntPtr hwnd);
+        //private const int WM_NCPAINT = 0x85;
+
+        //protected override void WndProc(ref Message m)
+        //{
+        //    base.WndProc(ref m);
+        //    var dc = GetWindowDC(Handle);
+        //    using (Graphics g = Graphics.FromHdc(dc))
+
+        //    {
+        //        // ایجاد یک مسیر برای رسم شکل
+        //        using (GraphicsPath path = new GraphicsPath())
+        //        {
+        //            // تنظیم شعاع گوشه‌های گرد
+        //            int radius = 10;
+
+        //            // اضافه کردن قوس‌ها برای هر گوشه
+        //            path.AddArc(new Rectangle(0, 0, radius, radius), 180, 90); // گوشه بالا سمت چپ
+        //            path.AddLine(radius, 0, Width - radius, 0); // خط افقی بالا
+        //            path.AddArc(new Rectangle(Width - radius, 0, radius, radius), 270, 90); // گوشه بالا سمت راست
+        //            path.AddLine(Width, radius, Width, Height - radius); // خط عمودی راست
+        //            path.AddArc(new Rectangle(Width - radius, Height - radius, radius, radius), 0, 90); // گوشه پایین سمت راست
+        //            path.AddLine(radius, Height, 0, Height); // خط افقی پایین
+        //            path.AddArc(new Rectangle(0, Height - radius, radius, radius), 90, 90); // گوشه پایین سمت چپ
+        //            path.CloseFigure();
+
+        //            // پر کردن داخل شکل با رنگ پس‌زمینه کنترل
+        //            using (SolidBrush brush = new SolidBrush(BackColor))
+        //            {
+        //                g.FillPath(brush, path);
+        //            }
+
+        //            // رسم خط دور شکل با رنگ قرمز
+        //            using (Pen pen = new Pen(Color.Crimson, 2))
+        //            {
+        //                g.DrawPath(pen, path);
+        //            }
+        //        }
+        //    }
+
+        //}
 
 
     }
