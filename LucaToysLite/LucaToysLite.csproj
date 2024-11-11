@@ -74,7 +74,9 @@
     <Compile Include="Controls\RoundedLabel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Controls\RoundedPanel.cs" />
+    <Compile Include="Controls\RoundedPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Controls\WindowToolbar.cs">
       <SubType>UserControl</SubType>
     </Compile>
