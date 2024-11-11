@@ -49,6 +49,7 @@
             this.roundedButton2.TabIndex = 0;
             this.roundedButton2.Text = "";
             this.roundedButton2.UseVisualStyleBackColor = true;
+            this.roundedButton2.Click += new System.EventHandler(this.roundedButton2_Click);
             // 
             // roundedButton1
             // 
