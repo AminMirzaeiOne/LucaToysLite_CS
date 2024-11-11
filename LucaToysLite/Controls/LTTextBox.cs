@@ -36,6 +36,9 @@ namespace LucaToysLite.Controls
                 this.holderLabel.Visible = true;
         }
 
+        public System.String HolderText { get { return this.holderLabel.Text; } set { this.holderLabel.Text = value; } }
+        public System.Drawing.Font HolderFont { get { return this.holderLabel.Font; } set { this.holderLabel.Font = value; } }
+
         private int radius = 20;
         [DefaultValue(20)]
         public int Radius
