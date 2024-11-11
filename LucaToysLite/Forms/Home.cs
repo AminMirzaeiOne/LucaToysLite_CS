@@ -15,6 +15,7 @@ namespace LucaToysLite.Forms
         public Home()
         {
             InitializeComponent();
+            this.ltTextBox1.ContextMenuStrip = this.ltContextMenu1;
         }
     }
 }

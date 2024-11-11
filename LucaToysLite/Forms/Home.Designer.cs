@@ -31,6 +31,11 @@
             this.ltTextBox1 = new LucaToysLite.Controls.LTTextBox();
             this.ltCheckBox1 = new LucaToysLite.Controls.LTCheckBox();
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
+            this.ltContextMenu1 = new LucaToysLite.Controls.LTContextMenu();
+            this.microsoftToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.androidToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.youbeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ltContextMenu1.SuspendLayout();
             this.SuspendLayout();
             // 
             // ltTextBox1
@@ -90,6 +95,36 @@
             this.windowToolbar1.TabIndex = 0;
             this.windowToolbar1.WindowBorderSize = ((byte)(3));
             // 
+            // ltContextMenu1
+            // 
+            this.ltContextMenu1.BorderSize = ((byte)(2));
+            this.ltContextMenu1.ColorPallet = System.Drawing.Color.Crimson;
+            this.ltContextMenu1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.ltContextMenu1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.microsoftToolStripMenuItem,
+            this.androidToolStripMenuItem,
+            this.youbeToolStripMenuItem});
+            this.ltContextMenu1.Name = "ltContextMenu1";
+            this.ltContextMenu1.Size = new System.Drawing.Size(161, 100);
+            // 
+            // microsoftToolStripMenuItem
+            // 
+            this.microsoftToolStripMenuItem.Name = "microsoftToolStripMenuItem";
+            this.microsoftToolStripMenuItem.Size = new System.Drawing.Size(160, 32);
+            this.microsoftToolStripMenuItem.Text = "Microsoft";
+            // 
+            // androidToolStripMenuItem
+            // 
+            this.androidToolStripMenuItem.Name = "androidToolStripMenuItem";
+            this.androidToolStripMenuItem.Size = new System.Drawing.Size(160, 32);
+            this.androidToolStripMenuItem.Text = "Android";
+            // 
+            // youbeToolStripMenuItem
+            // 
+            this.youbeToolStripMenuItem.Name = "youbeToolStripMenuItem";
+            this.youbeToolStripMenuItem.Size = new System.Drawing.Size(160, 32);
+            this.youbeToolStripMenuItem.Text = "Yoube";
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
@@ -104,6 +139,7 @@
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
+            this.ltContextMenu1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -113,5 +149,9 @@
         private Controls.WindowToolbar windowToolbar1;
         private Controls.LTCheckBox ltCheckBox1;
         private Controls.LTTextBox ltTextBox1;
+        private Controls.LTContextMenu ltContextMenu1;
+        private System.Windows.Forms.ToolStripMenuItem microsoftToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem androidToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem youbeToolStripMenuItem;
     }
 }
