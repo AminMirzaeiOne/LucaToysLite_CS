@@ -133,6 +133,9 @@
     <EmbeddedResource Include="Controls\LoadingControl.resx">
       <DependentUpon>LoadingControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controls\LTClock.resx">
+      <DependentUpon>LTClock.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\LTTextBox.resx">
       <DependentUpon>LTTextBox.cs</DependentUpon>
     </EmbeddedResource>
