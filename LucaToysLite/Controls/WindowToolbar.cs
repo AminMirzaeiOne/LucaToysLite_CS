@@ -28,6 +28,7 @@ namespace LucaToysLite.Controls
             InitializeComponent();
             this.Load += new EventHandler(this.LoadEvent);
         }
+        public System.Boolean CloseMessage { get; set; } = true;
         public System.Boolean MaximizeButton { get { return this.roundedButton2.Visible; } set { this.roundedButton2.Visible = value; } }
         public System.Boolean MinimizeButton { get { return this.roundedButton3.Visible; } set { this.roundedButton3.Visible = value; } }
         public System.Boolean MoveOption { get; set; } = true;
