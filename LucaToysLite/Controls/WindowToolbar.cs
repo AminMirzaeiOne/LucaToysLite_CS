@@ -94,7 +94,7 @@ namespace LucaToysLite.Controls
                 this.roundedButton2.BackColor = value;
                 this.roundedButton3.BackColor = value;
                 this.roundedButton4.BackColor = value;
-
+                this.ltContextMenu1.ColorPallet = value;
 
             }
         }
