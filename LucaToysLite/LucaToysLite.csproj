@@ -181,6 +181,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Messages\" />
     <Folder Include="Pages\" />
   </ItemGroup>
   <ItemGroup>
