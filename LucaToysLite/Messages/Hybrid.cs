@@ -92,11 +92,26 @@ namespace LucaToysLite.Messages
             this.actionType = action;
         }
 
+        
+
         private LucaToysLite.Messages.Hybrid.ActionTypes actionType = ActionTypes.None;
 
         public event EventHandler DefaultButtonAction;
         public event EventHandler ButtonTwoAction;
         public event EventHandler ButtonThreeAction;
+
+        public System.Drawing.Color ColorPallet
+        {
+            get { return this.roundedButton1.BackColor; }
+            set
+            {
+                this.roundedButton1.BackColor = value;
+                this.roundedButton2.FlatAppearance.BorderColor = value;
+                this.roundedButton3.FlatAppearance.BorderColor = value;
+                this.windowToolbar1.ColorPalette = value;
+
+            }
+        }
 
         public System.String TitleText { get { return this.windowToolbar1.TitleText; } set { this.windowToolbar1.TitleText = value; } }
         public System.String ContentText { get { return this.label2.Text; } set { this.label2.Text = value; } }

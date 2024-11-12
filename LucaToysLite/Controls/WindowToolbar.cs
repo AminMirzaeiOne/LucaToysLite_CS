@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.IO;
@@ -103,7 +104,18 @@ namespace LucaToysLite.Controls
         public void Close()
         {
             if (this.Parent != null)
-                this.animation.Close();
+            {
+                if (this.CloseMessage)
+                {
+                    LucaToysLite.Messages.Hybrid hybrid = new Messages.Hybrid("Close Window", "Close This Window", $"Do you want to exit X Window ?", Messages.Hybrid.ActionTypes.Close);
+                    hybrid.ButtonTwoText = "Cancel";
+                    hybrid.ButtonThreeText = "";
+                    hybrid.ColorPallet = this.ColorPalette;
+                    hybrid.Show();
+                }
+                else
+                    this.animation.Close();
+            }
         }
 
         public void Maximize()
@@ -323,7 +335,7 @@ namespace LucaToysLite.Controls
         private void roundedButton4_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left && this.IconMenu)
-                this.ltContextMenu1.Show(this.roundedButton4,0,this.roundedButton4.Bottom);
+                this.ltContextMenu1.Show(this.roundedButton4, 0, this.roundedButton4.Bottom);
         }
 
         private void exitAppToolStripMenuItem_Click(object sender, EventArgs e)

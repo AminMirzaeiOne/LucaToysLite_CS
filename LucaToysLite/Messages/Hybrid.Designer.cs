@@ -30,12 +30,21 @@
         {
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.roundedButton3 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton2 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton1 = new LucaToysLite.Controls.RoundedButton();
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ltContextMenu1 = new LucaToysLite.Controls.LTContextMenu();
+            this.copyContentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.copyDescriptionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.searchContentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.searchDescriptionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.defaultButtonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.ltContextMenu1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label2
@@ -59,13 +68,23 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "asdfsadfklasdflas;df\r\nasdflasjdfkasdfasdflasfj\r\nasdfasdlfkajsldfjasldfjaslfd";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::LucaToysLite.Properties.Resources.icons8_info_96;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(33, 135);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(180, 180);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
             // roundedButton3
             // 
             this.roundedButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
             this.roundedButton3.BorderRadius = ((byte)(20));
             this.roundedButton3.BorderSize = ((byte)(3));
             this.roundedButton3.EnableBorder = true;
-            this.roundedButton3.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.roundedButton3.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
             this.roundedButton3.FlatAppearance.BorderSize = 0;
             this.roundedButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -84,7 +103,7 @@
             this.roundedButton2.BorderRadius = ((byte)(20));
             this.roundedButton2.BorderSize = ((byte)(3));
             this.roundedButton2.EnableBorder = true;
-            this.roundedButton2.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.roundedButton2.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
             this.roundedButton2.FlatAppearance.BorderSize = 0;
             this.roundedButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -99,11 +118,11 @@
             // 
             // roundedButton1
             // 
-            this.roundedButton1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.roundedButton1.BackColor = System.Drawing.Color.Crimson;
             this.roundedButton1.BorderRadius = ((byte)(20));
             this.roundedButton1.BorderSize = ((byte)(3));
             this.roundedButton1.EnableBorder = false;
-            this.roundedButton1.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.roundedButton1.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
             this.roundedButton1.FlatAppearance.BorderSize = 0;
             this.roundedButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -118,9 +137,10 @@
             // 
             // windowToolbar1
             // 
-            this.windowToolbar1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.windowToolbar1.BackColor = System.Drawing.Color.Crimson;
             this.windowToolbar1.BorderStyleRadius = true;
-            this.windowToolbar1.ColorPalette = System.Drawing.Color.RoyalBlue;
+            this.windowToolbar1.CloseMessage = true;
+            this.windowToolbar1.ColorPalette = System.Drawing.Color.Crimson;
             this.windowToolbar1.DarkTheme = true;
             this.windowToolbar1.Dock = System.Windows.Forms.DockStyle.Top;
             this.windowToolbar1.IconButton = true;
@@ -138,15 +158,66 @@
             this.windowToolbar1.TitleText = "Close Window";
             this.windowToolbar1.WindowBorderSize = ((byte)(3));
             // 
-            // pictureBox1
+            // ltContextMenu1
             // 
-            this.pictureBox1.BackgroundImage = global::LucaToysLite.Properties.Resources.icons8_info_96;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(33, 135);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(180, 180);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.ltContextMenu1.BorderSize = ((byte)(2));
+            this.ltContextMenu1.ColorPallet = System.Drawing.Color.Crimson;
+            this.ltContextMenu1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.ltContextMenu1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.copyContentToolStripMenuItem,
+            this.copyDescriptionToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.searchContentToolStripMenuItem,
+            this.searchDescriptionToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.defaultButtonToolStripMenuItem});
+            this.ltContextMenu1.Name = "ltContextMenu1";
+            this.ltContextMenu1.Size = new System.Drawing.Size(232, 176);
+            // 
+            // copyContentToolStripMenuItem
+            // 
+            this.copyContentToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.copyContentToolStripMenuItem.Name = "copyContentToolStripMenuItem";
+            this.copyContentToolStripMenuItem.Size = new System.Drawing.Size(231, 32);
+            this.copyContentToolStripMenuItem.Text = "Copy Content";
+            // 
+            // copyDescriptionToolStripMenuItem
+            // 
+            this.copyDescriptionToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.copyDescriptionToolStripMenuItem.Name = "copyDescriptionToolStripMenuItem";
+            this.copyDescriptionToolStripMenuItem.Size = new System.Drawing.Size(231, 32);
+            this.copyDescriptionToolStripMenuItem.Text = "Copy Description";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(228, 6);
+            // 
+            // searchContentToolStripMenuItem
+            // 
+            this.searchContentToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.searchContentToolStripMenuItem.Name = "searchContentToolStripMenuItem";
+            this.searchContentToolStripMenuItem.Size = new System.Drawing.Size(231, 32);
+            this.searchContentToolStripMenuItem.Text = "Search Content";
+            // 
+            // searchDescriptionToolStripMenuItem
+            // 
+            this.searchDescriptionToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.searchDescriptionToolStripMenuItem.Name = "searchDescriptionToolStripMenuItem";
+            this.searchDescriptionToolStripMenuItem.Size = new System.Drawing.Size(231, 32);
+            this.searchDescriptionToolStripMenuItem.Text = "Search Description";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(228, 6);
+            // 
+            // defaultButtonToolStripMenuItem
+            // 
+            this.defaultButtonToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.defaultButtonToolStripMenuItem.Name = "defaultButtonToolStripMenuItem";
+            this.defaultButtonToolStripMenuItem.Size = new System.Drawing.Size(231, 32);
+            this.defaultButtonToolStripMenuItem.Text = "Default Button";
             // 
             // Hybrid
             // 
@@ -167,6 +238,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CloseWindow";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ltContextMenu1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -180,5 +252,13 @@
         private Controls.RoundedButton roundedButton1;
         private Controls.RoundedButton roundedButton2;
         private Controls.RoundedButton roundedButton3;
+        private Controls.LTContextMenu ltContextMenu1;
+        private System.Windows.Forms.ToolStripMenuItem copyContentToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem copyDescriptionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem searchContentToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem searchDescriptionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem defaultButtonToolStripMenuItem;
     }
 }
