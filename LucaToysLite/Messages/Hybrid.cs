@@ -106,7 +106,7 @@ namespace LucaToysLite.Messages
         private void roundedButton1_Click(object sender, EventArgs e)
         {
             if (this.DefaultButtonAction == null)
-                this.Close();
+                this.windowToolbar1.Close();
             else
                 this.DefaultButtonAction(null, null);
         }
@@ -114,7 +114,7 @@ namespace LucaToysLite.Messages
         private void roundedButton2_Click(object sender, EventArgs e)
         {
             if (this.ButtonTwoAction == null)
-                this.Close();
+                this.windowToolbar1.Close();
             else
                 this.ButtonTwoAction(null, null);
         }
@@ -122,7 +122,7 @@ namespace LucaToysLite.Messages
         private void roundedButton3_Click(object sender, EventArgs e)
         {
             if (this.ButtonThreeAction == null)
-                this.Close();
+                this.windowToolbar1.Close();
             else
                 this.ButtonThreeAction(null, null);
         }
