@@ -16,5 +16,7 @@ namespace LucaToysLite.Messages
         {
             InitializeComponent();
         }
+
+        public System.String TitleText { get { return this.windowToolbar1.TitleText; } set { this.windowToolbar1.TitleText = value; } }
     }
 }
