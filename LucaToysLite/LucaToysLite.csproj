@@ -163,6 +163,9 @@
     <EmbeddedResource Include="Menus\HomeMenu.resx">
       <DependentUpon>HomeMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Messages\CloseWindow.resx">
+      <DependentUpon>CloseWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
