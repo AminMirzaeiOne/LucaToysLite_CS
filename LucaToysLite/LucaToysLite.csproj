@@ -207,5 +207,14 @@
   <ItemGroup>
     <None Include="Resources\icons8-error-96.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-exit-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-restart-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-close-window-96.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -70,6 +70,27 @@ namespace LucaToysLite.Messages
             }
         }
 
+        public Hybrid(string title, string content, string description,ActionTypes action)
+        {
+            InitializeComponent();
+            this.TitleText = title;
+            this.ContentText = content;
+            this.DescriptionText = description;
+
+            switch (action)
+            {
+                case ActionTypes.Close:
+                    this.MessageIcon = Properties.Resources.icons8_close_window_96;
+                    break;
+                case ActionTypes.Exit:
+                    this.MessageIcon = Properties.Resources.icons8_exit_96;
+                    break;
+                case ActionTypes.Restart:
+                    this.MessageIcon = Properties.Resources.icons8_restart_96;
+                    break;
+            }
+        }
+
         public event EventHandler DefaultButtonAction;
         public event EventHandler ButtonTwoAction;
         public event EventHandler ButtonThreeAction;
