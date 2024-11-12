@@ -47,6 +47,12 @@ namespace LucaToysLite.Controls
             set { this.roundedButton4.Text = value; }
         }
 
+        public System.Drawing.Image IconButtonImage
+        {
+            get { return this.roundedButton4.Image; }
+            set { this.roundedButton4.Image = value; }
+        }
+
         public System.String TitleText
         {
             get { return this.label2.Text; }
