@@ -21,5 +21,7 @@ namespace LucaToysLite.Messages
         public System.String ContentText { get { return this.label2.Text; } set { this.label2.Text = value; } }
         public System.String DescriptionText { get { return this.label1.Text; } set { this.label1.Text = value; } }
         public System.Drawing.Image MessageIcon { get { return this.pictureBox1.BackgroundImage; } set { this.pictureBox1.BackgroundImage = value; } }
+
+        public System.Boolean ButtonTwo { get { return this.roundedButton2.Visible; } set { this.roundedButton2.Visible = value; } }
     }
 }
