@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.ltTextBox1 = new LucaToysLite.Controls.LTTextBox();
             this.ltCheckBox1 = new LucaToysLite.Controls.LTCheckBox();
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
+            this.ltClock1 = new LucaToysLite.Controls.LTClock();
             this.SuspendLayout();
             // 
             // ltTextBox1
@@ -64,7 +66,7 @@
             this.ltCheckBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ltCheckBox1.Font = new System.Drawing.Font("Segoe MDL2 Assets", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ltCheckBox1.ForeColor = System.Drawing.Color.White;
-            this.ltCheckBox1.Location = new System.Drawing.Point(187, 367);
+            this.ltCheckBox1.Location = new System.Drawing.Point(86, 324);
             this.ltCheckBox1.Name = "ltCheckBox1";
             this.ltCheckBox1.Radius = 10;
             this.ltCheckBox1.Size = new System.Drawing.Size(35, 33);
@@ -90,12 +92,23 @@
             this.windowToolbar1.TabIndex = 0;
             this.windowToolbar1.WindowBorderSize = ((byte)(3));
             // 
+            // ltClock1
+            // 
+            this.ltClock1.BackColor = System.Drawing.Color.White;
+            this.ltClock1.ColorPallet = System.Drawing.Color.Crimson;
+            this.ltClock1.Location = new System.Drawing.Point(197, 99);
+            this.ltClock1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.ltClock1.Name = "ltClock1";
+            this.ltClock1.Size = new System.Drawing.Size(300, 308);
+            this.ltClock1.TabIndex = 6;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(1090, 650);
+            this.Controls.Add(this.ltClock1);
             this.Controls.Add(this.ltTextBox1);
             this.Controls.Add(this.ltCheckBox1);
             this.Controls.Add(this.windowToolbar1);
@@ -113,5 +126,6 @@
         private Controls.WindowToolbar windowToolbar1;
         private Controls.LTCheckBox ltCheckBox1;
         private Controls.LTTextBox ltTextBox1;
+        private Controls.LTClock ltClock1;
     }
 }
