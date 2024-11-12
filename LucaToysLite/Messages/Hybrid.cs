@@ -26,5 +26,6 @@ namespace LucaToysLite.Messages
         public System.Boolean ButtonThree { get { return this.roundedButton3.Visible; } set { this.roundedButton3.Visible = value; } }
 
         public System.String DefaultButtonText { get { return this.roundedButton1.Text; } set { this.roundedButton1.Text = value; } }
+        public System.String ButtonTwoText { get { return this.roundedButton2.Text; } set { this.roundedButton2.Text = value; } }
     }
 }
