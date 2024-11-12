@@ -41,6 +41,12 @@ namespace LucaToysLite.Controls
             }
         }
 
+        public System.String IconButtonSybmol
+        {
+            get { return this.roundedButton4.Text; }
+            set { this.roundedButton4.Text = value; }
+        }
+
         public System.String TitleText
         {
             get { return this.label2.Text; }
