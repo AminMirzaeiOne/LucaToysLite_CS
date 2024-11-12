@@ -18,10 +18,16 @@ namespace LucaToysLite.Controls
             this.FlatAppearance.BorderColor = Color.Crimson;
             xDrop = new LucaToysLite.ClassLibrary.XToolStripDropDown(panel);
             this.panel.BackColor = Color.Black;
-            this.chilePanel.BackColor = Color.Blue;
+            this.chilePanel.BackColor = Color.Transparent;
             this.panel.Controls.Add(this.chilePanel);
             this.chilePanel.Location = new System.Drawing.Point(5, 5);
             this.chilePanel.Anchor = AnchorStyles.Left | AnchorStyles.Right | AnchorStyles.Top | AnchorStyles.Bottom;
+            this.panel.BorderSize = 3;
+
+
+
+
+
         }
 
         private LucaToysLite.ClassLibrary.XToolStripDropDown xDrop;
@@ -194,8 +200,8 @@ namespace LucaToysLite.Controls
                 }
             }
 
-            this.panel.Size = new Size(this.Width, height + 4);
-            this.chilePanel.Size = new Size(this.panel.Size.Width - 10, this.panel.Size.Height - 8);
+            this.panel.Size = new Size(this.Width, height + 5);
+            this.chilePanel.Size = new Size(this.panel.Size.Width - 8, this.panel.Size.Height - 9);
 
             if (!this.TopDirection)
                 xDrop.Show(this);

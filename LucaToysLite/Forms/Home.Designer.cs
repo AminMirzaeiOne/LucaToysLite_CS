@@ -29,12 +29,86 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            this.roundedRadioButton4 = new LucaToysLite.Controls.RoundedRadioButton();
+            this.roundedRadioButton3 = new LucaToysLite.Controls.RoundedRadioButton();
+            this.roundedRadioButton2 = new LucaToysLite.Controls.RoundedRadioButton();
+            this.roundedRadioButton1 = new LucaToysLite.Controls.RoundedRadioButton();
             this.ltComboBox1 = new LucaToysLite.Controls.LTComboBox();
             this.ltClock1 = new LucaToysLite.Controls.LTClock();
             this.ltTextBox1 = new LucaToysLite.Controls.LTTextBox();
             this.ltCheckBox1 = new LucaToysLite.Controls.LTCheckBox();
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
             this.SuspendLayout();
+            // 
+            // roundedRadioButton4
+            // 
+            this.roundedRadioButton4.Appearance = System.Windows.Forms.Appearance.Button;
+            this.roundedRadioButton4.BorderSize = ((byte)(2));
+            this.roundedRadioButton4.ColorPallet = System.Drawing.Color.Crimson;
+            this.roundedRadioButton4.FlatAppearance.BorderSize = 0;
+            this.roundedRadioButton4.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
+            this.roundedRadioButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedRadioButton4.ForeColor = System.Drawing.Color.White;
+            this.roundedRadioButton4.Location = new System.Drawing.Point(247, 538);
+            this.roundedRadioButton4.Name = "roundedRadioButton4";
+            this.roundedRadioButton4.Size = new System.Drawing.Size(201, 37);
+            this.roundedRadioButton4.TabIndex = 8;
+            this.roundedRadioButton4.TabStop = true;
+            this.roundedRadioButton4.Text = "roundedRadioButton1";
+            this.roundedRadioButton4.UseVisualStyleBackColor = true;
+            // 
+            // roundedRadioButton3
+            // 
+            this.roundedRadioButton3.Appearance = System.Windows.Forms.Appearance.Button;
+            this.roundedRadioButton3.BorderSize = ((byte)(2));
+            this.roundedRadioButton3.ColorPallet = System.Drawing.Color.Crimson;
+            this.roundedRadioButton3.FlatAppearance.BorderSize = 0;
+            this.roundedRadioButton3.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
+            this.roundedRadioButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedRadioButton3.ForeColor = System.Drawing.Color.White;
+            this.roundedRadioButton3.Location = new System.Drawing.Point(603, 538);
+            this.roundedRadioButton3.Name = "roundedRadioButton3";
+            this.roundedRadioButton3.Size = new System.Drawing.Size(218, 58);
+            this.roundedRadioButton3.TabIndex = 8;
+            this.roundedRadioButton3.TabStop = true;
+            this.roundedRadioButton3.Text = "roundedRadioButton1";
+            this.roundedRadioButton3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.roundedRadioButton3.UseVisualStyleBackColor = true;
+            // 
+            // roundedRadioButton2
+            // 
+            this.roundedRadioButton2.Appearance = System.Windows.Forms.Appearance.Button;
+            this.roundedRadioButton2.BorderSize = ((byte)(2));
+            this.roundedRadioButton2.ColorPallet = System.Drawing.Color.Crimson;
+            this.roundedRadioButton2.FlatAppearance.BorderSize = 0;
+            this.roundedRadioButton2.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
+            this.roundedRadioButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedRadioButton2.ForeColor = System.Drawing.Color.White;
+            this.roundedRadioButton2.Location = new System.Drawing.Point(603, 465);
+            this.roundedRadioButton2.Name = "roundedRadioButton2";
+            this.roundedRadioButton2.Size = new System.Drawing.Size(235, 57);
+            this.roundedRadioButton2.TabIndex = 8;
+            this.roundedRadioButton2.TabStop = true;
+            this.roundedRadioButton2.Text = "roundedRadioButton1";
+            this.roundedRadioButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.roundedRadioButton2.UseVisualStyleBackColor = true;
+            // 
+            // roundedRadioButton1
+            // 
+            this.roundedRadioButton1.Appearance = System.Windows.Forms.Appearance.Button;
+            this.roundedRadioButton1.BorderSize = ((byte)(2));
+            this.roundedRadioButton1.ColorPallet = System.Drawing.Color.Crimson;
+            this.roundedRadioButton1.FlatAppearance.BorderSize = 0;
+            this.roundedRadioButton1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
+            this.roundedRadioButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedRadioButton1.ForeColor = System.Drawing.Color.White;
+            this.roundedRadioButton1.Location = new System.Drawing.Point(247, 475);
+            this.roundedRadioButton1.Name = "roundedRadioButton1";
+            this.roundedRadioButton1.Size = new System.Drawing.Size(201, 37);
+            this.roundedRadioButton1.TabIndex = 8;
+            this.roundedRadioButton1.TabStop = true;
+            this.roundedRadioButton1.Text = "roundedRadioButton1";
+            this.roundedRadioButton1.UseVisualStyleBackColor = true;
             // 
             // ltComboBox1
             // 
@@ -51,7 +125,12 @@
         "Google",
         "Microsoft",
         "Android",
-        "Youtube"};
+        "Youtube",
+        "Messi",
+        "Ronaldo",
+        "IOS",
+        "Windows",
+        "Linux"};
             this.ltComboBox1.ItemsBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ltComboBox1.ItemsCheckedColor = System.Drawing.Color.Crimson;
             this.ltComboBox1.ItemsFont = new System.Drawing.Font("Segoe UI Semibold", 9F);
@@ -139,6 +218,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(1090, 650);
+            this.Controls.Add(this.roundedRadioButton4);
+            this.Controls.Add(this.roundedRadioButton3);
+            this.Controls.Add(this.roundedRadioButton2);
+            this.Controls.Add(this.roundedRadioButton1);
             this.Controls.Add(this.ltComboBox1);
             this.Controls.Add(this.ltClock1);
             this.Controls.Add(this.ltTextBox1);
@@ -160,5 +243,9 @@
         private Controls.LTTextBox ltTextBox1;
         private Controls.LTClock ltClock1;
         private Controls.LTComboBox ltComboBox1;
+        private Controls.RoundedRadioButton roundedRadioButton1;
+        private Controls.RoundedRadioButton roundedRadioButton2;
+        private Controls.RoundedRadioButton roundedRadioButton3;
+        private Controls.RoundedRadioButton roundedRadioButton4;
     }
 }
