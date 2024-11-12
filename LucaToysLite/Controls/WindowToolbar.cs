@@ -31,7 +31,23 @@ namespace LucaToysLite.Controls
         public System.Boolean MaximizeButton { get { return this.roundedButton2.Visible; } set { this.roundedButton2.Visible = value; } }
         public System.Boolean MinimizeButton { get { return this.roundedButton3.Visible; } set { this.roundedButton3.Visible = value; } }
         public System.Boolean MoveOption { get; set; } = true;
-        public System.Boolean IconButton { get { return this.roundedButton4.Visible; } set { this.roundedButton4.Visible = value; } }
+        public System.Boolean IconButton
+        {
+            get { return this.roundedButton4.Visible; }
+            set
+            {
+                this.roundedButton4.Visible = value;
+                this.label4.Visible = value;
+                this.label3.Visible = value;
+            }
+        }
+
+        public System.String TitleText
+        {
+            get { return this.label2.Text; }
+            set { this.label2.Text = value; }
+        }
+
         public System.Boolean BorderStyleRadius { get; set; } = true;
         public System.Byte WindowBorderSize { get; set; } = 3;
 
@@ -49,7 +65,7 @@ namespace LucaToysLite.Controls
                 switch (value)
                 {
                     case StartupSounds.AStartupSound:
-                        
+
                         break;
                 }
             }
@@ -153,7 +169,7 @@ namespace LucaToysLite.Controls
         {
             float r = radius;
             GraphicsPath path = new GraphicsPath();
-            if(this.Parent != null)
+            if (this.Parent != null)
             {
                 path.StartFigure();
                 path.AddArc(bounds.Left, bounds.Top, r, r, 180, 90);
@@ -162,7 +178,7 @@ namespace LucaToysLite.Controls
                 path.AddArc(bounds.Left, bounds.Bottom - r, r, r, 90, 90);
                 path.CloseFigure();
             }
-            
+
             return path;
         }
 
@@ -190,7 +206,7 @@ namespace LucaToysLite.Controls
             GraphicsPath GraphPath = new GraphicsPath();
             if (this.Parent != null)
             {
-               
+
 
                 GraphPath.AddArc(Rect.X, Rect.Y, radius, radius, 180, 90);
                 GraphPath.AddLine(Rect.X + r2, Rect.Y, Rect.Width - r2, Rect.Y);
@@ -210,7 +226,7 @@ namespace LucaToysLite.Controls
 
         private void Parent_Paint(object sender, PaintEventArgs e)
         {
-            if(this.Parent != null)
+            if (this.Parent != null)
             {
                 e.Graphics.SmoothingMode = SmoothingMode.HighQuality;
                 RectangleF Rect = new RectangleF(0, 0, this.Parent.Width, this.Parent.Height);
@@ -224,7 +240,7 @@ namespace LucaToysLite.Controls
                     }
                 }
             }
-            
+
         }
 
         private void LoadEvent(object sender, EventArgs e)
