@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LucaToysLite.Messages
 {
-    public partial class CloseWindow : Form
+    public partial class Hybrid : Form
     {
-        public CloseWindow()
+        public Hybrid()
         {
             InitializeComponent();
         }

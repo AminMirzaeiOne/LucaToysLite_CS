@@ -20,7 +20,7 @@ namespace LucaToysLite
             SetProcessDPIAware();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LucaToysLite.Messages.CloseWindow());
+            Application.Run(new LucaToysLite.Messages.Hybrid());
         }
 
         [System.Runtime.InteropServices.DllImport("user32.dll")]
