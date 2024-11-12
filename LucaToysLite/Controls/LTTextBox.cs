@@ -15,6 +15,7 @@ namespace LucaToysLite.Controls
     {
         public LTTextBox()
         {
+            this.InitializeComponent();
             this.BorderStyle = BorderStyle.None;
             this.Controls.Add(this.holderLabel);
             this.Controls.Add(this.btnClear);
@@ -34,16 +35,20 @@ namespace LucaToysLite.Controls
             this.btnClear.Cursor = Cursors.Arrow;
             this.btnClear.Font = new Font("Segoe MDL2 Assets", 7, FontStyle.Regular);
             this.btnClear.Click += new EventHandler(this.ClearButton_Click);
-            this.contextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.microsoftToolStripMenuItem,
-            this.toolStripSeparator1});
-            this.ContextMenuStrip = this.contextMenu;
         }
 
         private LucaToysLite.Controls.RoundedButton btnClear = new RoundedButton();
         private System.Windows.Forms.Label holderLabel = new Label();
-        private LTContextMenu contextMenu = new LTContextMenu();
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1 = new ToolStripSeparator();
+        private LTContextMenu ltContextMenu1;
+        private ToolStripMenuItem undoToolStripMenuItem;
+        private ToolStripSeparator toolStripSeparator2;
+        private ToolStripMenuItem cutToolStripMenuItem;
+        private ToolStripMenuItem copyToolStripMenuItem;
+        private ToolStripMenuItem pasteToolStripMenuItem;
+        private ToolStripSeparator toolStripSeparator3;
+        private ToolStripMenuItem selectToolStripMenuItem;
+        private ToolStripMenuItem deleteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem microsoftToolStripMenuItem = new ToolStripMenuItem();
 
 
@@ -163,6 +168,137 @@ namespace LucaToysLite.Controls
 
             Rectangle textRec = new Rectangle(e.ClipRectangle.X + 1, e.ClipRectangle.Y + 1, e.ClipRectangle.Width - 1, e.ClipRectangle.Height - 1);
             TextRenderer.DrawText(e.Graphics, Text, this.Font, textRec, this.ForeColor, this.BackColor, TextFormatFlags.Default);
+        }
+
+        private void InitializeComponent()
+        {
+            this.ltContextMenu1 = new LucaToysLite.Controls.LTContextMenu();
+            this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.cutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.selectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ltContextMenu1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // ltContextMenu1
+            // 
+            this.ltContextMenu1.BorderSize = ((byte)(2));
+            this.ltContextMenu1.ColorPallet = System.Drawing.Color.Crimson;
+            this.ltContextMenu1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.ltContextMenu1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.undoToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.cutToolStripMenuItem,
+            this.copyToolStripMenuItem,
+            this.pasteToolStripMenuItem,
+            this.toolStripSeparator3,
+            this.selectToolStripMenuItem,
+            this.deleteToolStripMenuItem});
+            this.ltContextMenu1.Name = "ltContextMenu1";
+            this.ltContextMenu1.Size = new System.Drawing.Size(156, 208);
+            this.ltContextMenu1.Opened += new System.EventHandler(this.ltContextMenu1_Opened);
+            // 
+            // undoToolStripMenuItem
+            // 
+            this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(155, 32);
+            this.undoToolStripMenuItem.Text = "Undo";
+            this.undoToolStripMenuItem.Click += new System.EventHandler(this.undoToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(152, 6);
+            // 
+            // cutToolStripMenuItem
+            // 
+            this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
+            this.cutToolStripMenuItem.Size = new System.Drawing.Size(155, 32);
+            this.cutToolStripMenuItem.Text = "Cut";
+            this.cutToolStripMenuItem.Click += new System.EventHandler(this.cutToolStripMenuItem_Click);
+            // 
+            // copyToolStripMenuItem
+            // 
+            this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(155, 32);
+            this.copyToolStripMenuItem.Text = "Copy";
+            this.copyToolStripMenuItem.Click += new System.EventHandler(this.copyToolStripMenuItem_Click);
+            // 
+            // pasteToolStripMenuItem
+            // 
+            this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
+            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(155, 32);
+            this.pasteToolStripMenuItem.Text = "Paste";
+            this.pasteToolStripMenuItem.Click += new System.EventHandler(this.pasteToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(152, 6);
+            // 
+            // selectToolStripMenuItem
+            // 
+            this.selectToolStripMenuItem.Name = "selectToolStripMenuItem";
+            this.selectToolStripMenuItem.Size = new System.Drawing.Size(155, 32);
+            this.selectToolStripMenuItem.Text = "Select All";
+            this.selectToolStripMenuItem.Click += new System.EventHandler(this.selectToolStripMenuItem_Click);
+            // 
+            // deleteToolStripMenuItem
+            // 
+            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(155, 32);
+            this.deleteToolStripMenuItem.Text = "Delete";
+            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
+            // 
+            // LTTextBox
+            // 
+            this.ContextMenuStrip = this.ltContextMenu1;
+            this.ltContextMenu1.ResumeLayout(false);
+            this.ResumeLayout(false);
+
+        }
+
+        private void undoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            this.Undo();
+        }
+
+        private void cutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Cut();
+        }
+
+        private void copyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Copy();
+        }
+
+        private void pasteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Paste();
+        }
+
+        private void selectToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.SelectAll();
+        }
+
+        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.SelectedText = "";
+        }
+
+        private void ltContextMenu1_Opened(object sender, EventArgs e)
+        {
+            this.undoToolStripMenuItem.Enabled = this.CanUndo;
+            this.copyToolStripMenuItem.Enabled = this.CanSelect;
+            this.cutToolStripMenuItem.Enabled = this.CanSelect;
+            this.deleteToolStripMenuItem.Enabled = this.CanSelect;
         }
 
 
