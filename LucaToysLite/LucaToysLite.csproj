@@ -74,7 +74,9 @@
     <Compile Include="Controls\LTClock.Designer.cs">
       <DependentUpon>LTClock.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\LTComboBox.cs" />
+    <Compile Include="Controls\LTComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Controls\LTContextMenu.cs">
       <SubType>Component</SubType>
     </Compile>
