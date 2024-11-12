@@ -53,7 +53,7 @@
             // 
             this.pictureBox1.BackgroundImage = global::LucaToysLite.Properties.Resources.icons8_delete_document_96;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(36, 131);
+            this.pictureBox1.Location = new System.Drawing.Point(33, 131);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(200, 200);
             this.pictureBox1.TabIndex = 2;
