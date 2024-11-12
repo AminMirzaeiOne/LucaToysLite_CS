@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.roundedButton3 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton2 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton1 = new LucaToysLite.Controls.RoundedButton();
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,16 +48,6 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Close This Window";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::LucaToysLite.Properties.Resources.icons8_delete_document_96;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(33, 131);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -147,6 +137,16 @@
             this.windowToolbar1.TabIndex = 0;
             this.windowToolbar1.TitleText = "Close Window";
             this.windowToolbar1.WindowBorderSize = ((byte)(3));
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::LucaToysLite.Properties.Resources.icons8_info_94;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(33, 135);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(180, 180);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // Hybrid
             // 

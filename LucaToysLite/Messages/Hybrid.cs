@@ -14,16 +14,55 @@ namespace LucaToysLite.Messages
     {
         public enum MessageTypes
         {
-            Error, Info, Warningk
+            None,Error, Info, Warning
         }
         public Hybrid()
         {
             InitializeComponent();
         }
 
-        public Hybrid()
+        public Hybrid(string title, string content)
         {
             InitializeComponent();
+            this.TitleText = title;
+            this.ContentText = content;
+        }
+
+        public Hybrid(string title, string content,string description)
+        {
+            InitializeComponent();
+            this.TitleText = title;
+            this.ContentText = content;
+            this.DescriptionText = description;
+        }
+
+        public Hybrid(string title, string content, string description,Image icon)
+        {
+            InitializeComponent();
+            this.TitleText = title;
+            this.ContentText = content;
+            this.DescriptionText = description;
+            this.MessageIcon = icon;
+        }
+
+        public Hybrid(string title, string content, string description, MessageTypes type)
+        {
+            InitializeComponent();
+            this.TitleText = title;
+            this.ContentText = content;
+            this.DescriptionText = description;
+            switch (type)
+            {
+                case MessageTypes.Error:
+                    this.MessageIcon = Properties.Resources.icons8_error_94;
+                    break;
+                case MessageTypes.Warning:
+                    this.MessageIcon = Properties.Resources.icons8_warning_94;
+                    break;
+                case MessageTypes.Info:
+                    this.MessageIcon = Properties.Resources.icons8_info_94;
+                    break;
+            }
         }
 
         public event EventHandler DefaultButtonAction;
