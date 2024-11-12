@@ -14,8 +14,13 @@ namespace LucaToysLite.Messages
     {
         public enum MessageTypes
         {
-            None,Error, Info, Warning
+            None, Error, Info, Warning
         }
+        public enum ActionTypes
+        {
+            Close, Exit, Restart
+        }
+
         public Hybrid()
         {
             InitializeComponent();
@@ -28,7 +33,7 @@ namespace LucaToysLite.Messages
             this.ContentText = content;
         }
 
-        public Hybrid(string title, string content,string description)
+        public Hybrid(string title, string content, string description)
         {
             InitializeComponent();
             this.TitleText = title;
@@ -36,7 +41,7 @@ namespace LucaToysLite.Messages
             this.DescriptionText = description;
         }
 
-        public Hybrid(string title, string content, string description,Image icon)
+        public Hybrid(string title, string content, string description, Image icon)
         {
             InitializeComponent();
             this.TitleText = title;
