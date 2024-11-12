@@ -299,5 +299,10 @@ namespace LucaToysLite.Controls
             }
         }
 
+        private void roundedButton4_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+                this.ltContextMenu1.Show(this.roundedButton4,0,this.roundedButton4.Bottom);
+        }
     }
 }

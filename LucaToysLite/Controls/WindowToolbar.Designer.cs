@@ -41,7 +41,18 @@
             this.roundedButton3 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton1 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton2 = new LucaToysLite.Controls.RoundedButton();
+            this.ltContextMenu1 = new LucaToysLite.Controls.LTContextMenu();
+            this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.maximizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.minimizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.exitAppToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.restartAppToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
+            this.ltContextMenu1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -146,6 +157,7 @@
             this.roundedButton4.TabIndex = 8;
             this.roundedButton4.Text = "";
             this.roundedButton4.UseVisualStyleBackColor = false;
+            this.roundedButton4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.roundedButton4_MouseDown);
             // 
             // roundedButton3
             // 
@@ -210,6 +222,85 @@
             this.roundedButton2.UseVisualStyleBackColor = false;
             this.roundedButton2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // ltContextMenu1
+            // 
+            this.ltContextMenu1.BorderSize = ((byte)(2));
+            this.ltContextMenu1.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.ltContextMenu1, WFAnimations.DecorationType.None);
+            this.ltContextMenu1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ltContextMenu1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.ltContextMenu1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.closeToolStripMenuItem,
+            this.maximizeToolStripMenuItem,
+            this.minimizeToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.helpToolStripMenuItem,
+            this.aboutToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.exitAppToolStripMenuItem,
+            this.restartAppToolStripMenuItem});
+            this.ltContextMenu1.Name = "ltContextMenu1";
+            this.ltContextMenu1.Size = new System.Drawing.Size(199, 268);
+            // 
+            // closeToolStripMenuItem
+            // 
+            this.closeToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(198, 36);
+            this.closeToolStripMenuItem.Text = "Close";
+            // 
+            // maximizeToolStripMenuItem
+            // 
+            this.maximizeToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.maximizeToolStripMenuItem.Name = "maximizeToolStripMenuItem";
+            this.maximizeToolStripMenuItem.Size = new System.Drawing.Size(198, 36);
+            this.maximizeToolStripMenuItem.Text = "Maximize";
+            // 
+            // minimizeToolStripMenuItem
+            // 
+            this.minimizeToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.minimizeToolStripMenuItem.Name = "minimizeToolStripMenuItem";
+            this.minimizeToolStripMenuItem.Size = new System.Drawing.Size(198, 36);
+            this.minimizeToolStripMenuItem.Text = "Minimize";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(195, 6);
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(198, 36);
+            this.helpToolStripMenuItem.Text = "Help";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(198, 36);
+            this.aboutToolStripMenuItem.Text = "About";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(195, 6);
+            // 
+            // exitAppToolStripMenuItem
+            // 
+            this.exitAppToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.exitAppToolStripMenuItem.Name = "exitAppToolStripMenuItem";
+            this.exitAppToolStripMenuItem.Size = new System.Drawing.Size(198, 36);
+            this.exitAppToolStripMenuItem.Text = "Exit App";
+            // 
+            // restartAppToolStripMenuItem
+            // 
+            this.restartAppToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.restartAppToolStripMenuItem.Name = "restartAppToolStripMenuItem";
+            this.restartAppToolStripMenuItem.Size = new System.Drawing.Size(198, 36);
+            this.restartAppToolStripMenuItem.Text = "Restart App";
+            // 
             // WindowToolbar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
@@ -228,6 +319,7 @@
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.WindowToolbar_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.WindowToolbar_MouseUp);
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.ltContextMenu1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -243,5 +335,15 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private LTContextMenu ltContextMenu1;
+        private System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem maximizeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem minimizeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem exitAppToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem restartAppToolStripMenuItem;
     }
 }
