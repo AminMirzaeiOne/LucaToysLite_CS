@@ -107,9 +107,7 @@ namespace LucaToysLite.Controls
             {
                 if (this.CloseMessage)
                 {
-                    LucaToysLite.Messages.Hybrid hybrid = new Messages.Hybrid("Close Window", "Close This Window", $"Do you want to exit X Window ?", Messages.Hybrid.ActionTypes.Close);
-                    hybrid.ButtonTwoText = "Cancel";
-                    hybrid.ButtonThreeText = "";
+                    LucaToysLite.Messages.Hybrid hybrid = new Messages.Hybrid("Close Window", "Close This Window", $"Do you want to exit X Window ?", Messages.Hybrid.ActionTypes.Exit);
                     hybrid.ColorPallet = this.ColorPalette;
                     hybrid.Show();
                 }

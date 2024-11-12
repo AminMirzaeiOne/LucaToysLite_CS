@@ -81,12 +81,21 @@ namespace LucaToysLite.Messages
             {
                 case ActionTypes.Close:
                     this.MessageIcon = Properties.Resources.icons8_close_window_96;
+                    this.DefaultButtonText = "Yes";
+                    this.ButtonTwoText = "No";
+                    this.ButtonThree = false;
                     break;
                 case ActionTypes.Exit:
                     this.MessageIcon = Properties.Resources.icons8_exit_96;
+                    this.DefaultButtonText = "Yes";
+                    this.ButtonTwoText = "No";
+                    this.ButtonThree = false;
                     break;
                 case ActionTypes.Restart:
                     this.MessageIcon = Properties.Resources.icons8_restart_96;
+                    this.DefaultButtonText = "Yes";
+                    this.ButtonTwoText = "No";
+                    this.ButtonThree = false;
                     break;
             }
             this.actionType = action;
