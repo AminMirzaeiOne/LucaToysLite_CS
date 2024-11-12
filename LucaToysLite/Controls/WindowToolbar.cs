@@ -31,6 +31,8 @@ namespace LucaToysLite.Controls
         public System.Boolean MaximizeButton { get { return this.roundedButton2.Visible; } set { this.roundedButton2.Visible = value; } }
         public System.Boolean MinimizeButton { get { return this.roundedButton3.Visible; } set { this.roundedButton3.Visible = value; } }
         public System.Boolean MoveOption { get; set; } = true;
+        public System.Boolean IconMenu { get; set; } = true;
+
         public System.Boolean IconButton
         {
             get { return this.roundedButton4.Visible; }
@@ -301,7 +303,7 @@ namespace LucaToysLite.Controls
 
         private void roundedButton4_MouseDown(object sender, MouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
+            if (e.Button == MouseButtons.Left && this.IconMenu)
                 this.ltContextMenu1.Show(this.roundedButton4,0,this.roundedButton4.Bottom);
         }
     }
