@@ -12,6 +12,15 @@ namespace LucaToysLite.Messages
 {
     public partial class Hybrid : Form
     {
+        public enum MessageTypes
+        {
+            Error, Info, Warningk
+        }
+        public Hybrid()
+        {
+            InitializeComponent();
+        }
+
         public Hybrid()
         {
             InitializeComponent();
@@ -30,9 +39,10 @@ namespace LucaToysLite.Messages
         public System.Boolean ButtonThree { get { return this.roundedButton3.Visible; } set { this.roundedButton3.Visible = value; } }
 
         public System.String DefaultButtonText { get { return this.roundedButton1.Text; } set { this.roundedButton1.Text = value; } }
-        public System.String ButtonTwoText { 
-            get { return this.roundedButton2.Text; } 
-            set 
+        public System.String ButtonTwoText
+        {
+            get { return this.roundedButton2.Text; }
+            set
             {
                 this.roundedButton2.Text = value;
                 if (value == "")
@@ -41,22 +51,22 @@ namespace LucaToysLite.Messages
                     this.ButtonTwo = true;
             }
         }
-        public System.String ButtonThreeText 
-        { 
+        public System.String ButtonThreeText
+        {
             get { return this.roundedButton3.Text; }
-            set 
-            { 
+            set
+            {
                 this.roundedButton3.Text = value;
                 if (value == "")
                     this.ButtonThree = false;
                 else
                     this.ButtonThree = true;
-            } 
+            }
         }
 
         private void roundedButton1_Click(object sender, EventArgs e)
         {
-            if(this.DefaultButtonAction == null)
+            if (this.DefaultButtonAction == null)
                 this.Close();
             else
                 this.DefaultButtonAction(null, null);
