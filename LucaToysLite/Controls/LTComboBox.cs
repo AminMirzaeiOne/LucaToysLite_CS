@@ -17,11 +17,16 @@ namespace LucaToysLite.Controls
             this.FlatAppearance.BorderSize = 0;
             this.FlatAppearance.BorderColor = Color.Crimson;
             xDrop = new LucaToysLite.ClassLibrary.XToolStripDropDown(panel);
-
+            this.panel.BackColor = Color.Black;
+            this.chilePanel.BackColor = Color.Blue;
+            this.panel.Controls.Add(this.chilePanel);
+            this.chilePanel.Location = new System.Drawing.Point(5, 5);
+            this.chilePanel.Anchor = AnchorStyles.Left | AnchorStyles.Right | AnchorStyles.Top | AnchorStyles.Bottom;
         }
 
         private LucaToysLite.ClassLibrary.XToolStripDropDown xDrop;
         private LucaToysLite.Controls.RoundedPanel panel = new RoundedPanel();
+        private System.Windows.Forms.Panel chilePanel = new Panel();
         private System.Int32 height = 0;
         private System.Byte itemsHeight = 40;
         private System.Drawing.Color itemsCheckedColor = Color.Plum;
@@ -145,7 +150,7 @@ namespace LucaToysLite.Controls
 
         private void OnItemsChanged()
         {
-            panel.Controls.Clear();
+            this.chilePanel.Controls.Clear();
             if (this.RadioItems != null)
             {
                 this.RadioItems.Clear();
@@ -163,7 +168,7 @@ namespace LucaToysLite.Controls
                 rb.ForeColor = Color.White;
                 rb.CheckedChanged += Rb_CheckedChanged;
                 this.RadioItems.Add(rb);
-                panel.Controls.Add(rb);
+                this.chilePanel.Controls.Add(rb);
                 rb.BringToFront();
             }
         }
@@ -190,6 +195,7 @@ namespace LucaToysLite.Controls
             }
 
             this.panel.Size = new Size(this.Width, height + 4);
+            this.chilePanel.Size = new Size(this.panel.Size.Width - 10, this.panel.Size.Height - 8);
 
             if (!this.TopDirection)
                 xDrop.Show(this);
