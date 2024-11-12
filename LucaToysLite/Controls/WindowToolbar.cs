@@ -37,7 +37,6 @@ namespace LucaToysLite.Controls
             set
             {
                 this.roundedButton4.Visible = value;
-                this.label4.Visible = value;
                 this.label3.Visible = value;
             }
         }
