@@ -18,7 +18,7 @@ namespace LucaToysLite.Messages
         }
         public enum ActionTypes
         {
-            Close, Exit, Restart
+            None,Close, Exit, Restart
         }
 
         public Hybrid()
@@ -81,18 +81,18 @@ namespace LucaToysLite.Messages
             {
                 case ActionTypes.Close:
                     this.MessageIcon = Properties.Resources.icons8_close_window_96;
-                    this.Owner.Close();
                     break;
                 case ActionTypes.Exit:
                     this.MessageIcon = Properties.Resources.icons8_exit_96;
-                    System.Windows.Forms.Application.Exit();
                     break;
                 case ActionTypes.Restart:
                     this.MessageIcon = Properties.Resources.icons8_restart_96;
-                    System.Windows.Forms.Application.Restart();
                     break;
             }
+            this.actionType = action;
         }
+
+        private LucaToysLite.Messages.Hybrid.ActionTypes actionType = ActionTypes.None;
 
         public event EventHandler DefaultButtonAction;
         public event EventHandler ButtonTwoAction;
@@ -136,6 +136,21 @@ namespace LucaToysLite.Messages
         {
             if (this.DefaultButtonAction == null)
                 this.windowToolbar1.Close();
+            else if (actionType != ActionTypes.None)
+            {
+                switch (actionType) 
+                {
+                    case ActionTypes.Close:
+                        this.Owner.Close();
+                        break;
+                    case ActionTypes.Exit:
+                        System.Windows.Forms.Application.Exit();
+                        break;
+                    case ActionTypes.Restart:
+                        System.Windows.Forms.Application.Restart();
+                        break;
+                }
+            }
             else
                 this.DefaultButtonAction(null, null);
         }
