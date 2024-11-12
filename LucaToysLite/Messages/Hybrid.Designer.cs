@@ -140,7 +140,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::LucaToysLite.Properties.Resources.icons8_info_94;
+            this.pictureBox1.BackgroundImage = global::LucaToysLite.Properties.Resources.icons8_info_96;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Location = new System.Drawing.Point(33, 135);
             this.pictureBox1.Name = "pictureBox1";

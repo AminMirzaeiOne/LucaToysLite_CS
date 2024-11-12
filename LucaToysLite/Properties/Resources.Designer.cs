@@ -163,9 +163,9 @@ namespace LucaToysLite.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_delete_document_96 {
+        internal static System.Drawing.Bitmap icons8_error_96 {
             get {
-                object obj = ResourceManager.GetObject("icons8-delete-document-96", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8-error-96", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,9 +173,9 @@ namespace LucaToysLite.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_error_94 {
+        internal static System.Drawing.Bitmap icons8_info_96 {
             get {
-                object obj = ResourceManager.GetObject("icons8-error-94", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8-info-96", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -183,19 +183,9 @@ namespace LucaToysLite.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_info_94 {
+        internal static System.Drawing.Bitmap icons8_warning_96 {
             get {
-                object obj = ResourceManager.GetObject("icons8-info-94", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_warning_94 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-warning-94", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8-warning-96", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -54,13 +54,13 @@ namespace LucaToysLite.Messages
             switch (type)
             {
                 case MessageTypes.Error:
-                    this.MessageIcon = Properties.Resources.icons8_error_94;
+                    this.MessageIcon = Properties.Resources.icons8_error_96;
                     break;
                 case MessageTypes.Warning:
-                    this.MessageIcon = Properties.Resources.icons8_warning_94;
+                    this.MessageIcon = Properties.Resources.icons8_warning_96;
                     break;
                 case MessageTypes.Info:
-                    this.MessageIcon = Properties.Resources.icons8_info_94;
+                    this.MessageIcon = Properties.Resources.icons8_info_96;
                     break;
             }
         }

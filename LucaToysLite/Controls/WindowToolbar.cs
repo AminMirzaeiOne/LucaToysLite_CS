@@ -99,14 +99,13 @@ namespace LucaToysLite.Controls
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        public void Close()
         {
             if (this.Parent != null)
                 this.animation.Close();
-            //((Form)this.Parent).Close();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        public void Maximize()
         {
             if (this.Parent != null)
             {
@@ -123,14 +122,29 @@ namespace LucaToysLite.Controls
                     this.animation.Resotre();
                 }
             }
+        }
+
+        public void Minimize()
+        {
+            if (this.Parent != null)
+                this.animation.Minimize();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Maximize();
 
 
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (this.Parent != null)
-                this.animation.Minimize();
+            this.Minimize();
         }
 
         private void WindowToolbar_MouseMove(object sender, MouseEventArgs e)

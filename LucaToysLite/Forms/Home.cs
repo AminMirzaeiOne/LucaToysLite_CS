@@ -20,7 +20,8 @@ namespace LucaToysLite.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            Hybrid hybrid = new Hybrid("Microsoft","Microsoft Office","Hello World Microsoft I Am Amin",Hybrid.MessageTypes.Error);
+            hybrid.Show();
         }
     }
 }

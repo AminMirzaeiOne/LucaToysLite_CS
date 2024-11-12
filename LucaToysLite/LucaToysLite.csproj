@@ -199,13 +199,13 @@
     <None Include="Resources\icons8-delete-document-96.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icons8-info-94.png" />
+    <None Include="Resources\icons8-info-96.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icons8-warning-94.png" />
+    <None Include="Resources\icons8-warning-96.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icons8-error-94.png" />
+    <None Include="Resources\icons8-error-96.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
