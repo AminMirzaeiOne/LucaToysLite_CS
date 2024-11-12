@@ -38,6 +38,7 @@
             this.ltTextBox1 = new LucaToysLite.Controls.LTTextBox();
             this.ltCheckBox1 = new LucaToysLite.Controls.LTCheckBox();
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // roundedRadioButton4
@@ -202,6 +203,9 @@
             this.windowToolbar1.DarkTheme = true;
             this.windowToolbar1.Dock = System.Windows.Forms.DockStyle.Top;
             this.windowToolbar1.IconButton = true;
+            this.windowToolbar1.IconButtonImage = null;
+            this.windowToolbar1.IconButtonSybmol = "";
+            this.windowToolbar1.IconMenu = true;
             this.windowToolbar1.Location = new System.Drawing.Point(0, 0);
             this.windowToolbar1.MaximizeButton = true;
             this.windowToolbar1.MinimizeButton = true;
@@ -210,7 +214,18 @@
             this.windowToolbar1.Size = new System.Drawing.Size(1090, 45);
             this.windowToolbar1.StartupSound = LucaToysLite.Controls.WindowToolbar.StartupSounds.None;
             this.windowToolbar1.TabIndex = 0;
+            this.windowToolbar1.TitleText = "Window";
             this.windowToolbar1.WindowBorderSize = ((byte)(3));
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(442, 306);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Home
             // 
@@ -218,6 +233,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(1090, 650);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.roundedRadioButton4);
             this.Controls.Add(this.roundedRadioButton3);
             this.Controls.Add(this.roundedRadioButton2);
@@ -247,5 +263,6 @@
         private Controls.RoundedRadioButton roundedRadioButton2;
         private Controls.RoundedRadioButton roundedRadioButton3;
         private Controls.RoundedRadioButton roundedRadioButton4;
+        private System.Windows.Forms.Button button1;
     }
 }

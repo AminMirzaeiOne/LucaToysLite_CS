@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LucaToysLite.Messages;
 
 namespace LucaToysLite.Forms
 {
@@ -15,6 +16,11 @@ namespace LucaToysLite.Forms
         public Home()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

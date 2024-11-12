@@ -113,11 +113,13 @@ namespace LucaToysLite.Controls
                 if (((Form)this.Parent).WindowState == FormWindowState.Normal)
                 {
                     this.roundedButton2.Text = "";
+                    this.maximizeToolStripMenuItem.Text = "Restore";
                     this.animation.Maximize();
                 }
                 else if (((Form)this.Parent).WindowState == FormWindowState.Maximized)
                 {
                     this.roundedButton2.Text = "";
+                    this.maximizeToolStripMenuItem.Text = "Maximize";
                     this.animation.Resotre();
                 }
             }
