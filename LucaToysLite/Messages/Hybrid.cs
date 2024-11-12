@@ -81,12 +81,15 @@ namespace LucaToysLite.Messages
             {
                 case ActionTypes.Close:
                     this.MessageIcon = Properties.Resources.icons8_close_window_96;
+                    this.Owner.Close();
                     break;
                 case ActionTypes.Exit:
                     this.MessageIcon = Properties.Resources.icons8_exit_96;
+                    System.Windows.Forms.Application.Exit();
                     break;
                 case ActionTypes.Restart:
                     this.MessageIcon = Properties.Resources.icons8_restart_96;
+                    System.Windows.Forms.Application.Restart();
                     break;
             }
         }
