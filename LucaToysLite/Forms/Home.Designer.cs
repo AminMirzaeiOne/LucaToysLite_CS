@@ -29,11 +29,21 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            this.ltClock1 = new LucaToysLite.Controls.LTClock();
             this.ltTextBox1 = new LucaToysLite.Controls.LTTextBox();
             this.ltCheckBox1 = new LucaToysLite.Controls.LTCheckBox();
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
-            this.ltClock1 = new LucaToysLite.Controls.LTClock();
             this.SuspendLayout();
+            // 
+            // ltClock1
+            // 
+            this.ltClock1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.ltClock1.ColorPallet = System.Drawing.Color.Crimson;
+            this.ltClock1.Location = new System.Drawing.Point(197, 99);
+            this.ltClock1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.ltClock1.Name = "ltClock1";
+            this.ltClock1.Size = new System.Drawing.Size(200, 200);
+            this.ltClock1.TabIndex = 6;
             // 
             // ltTextBox1
             // 
@@ -91,16 +101,6 @@
             this.windowToolbar1.StartupSound = LucaToysLite.Controls.WindowToolbar.StartupSounds.None;
             this.windowToolbar1.TabIndex = 0;
             this.windowToolbar1.WindowBorderSize = ((byte)(3));
-            // 
-            // ltClock1
-            // 
-            this.ltClock1.BackColor = System.Drawing.Color.White;
-            this.ltClock1.ColorPallet = System.Drawing.Color.Crimson;
-            this.ltClock1.Location = new System.Drawing.Point(197, 99);
-            this.ltClock1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.ltClock1.Name = "ltClock1";
-            this.ltClock1.Size = new System.Drawing.Size(300, 308);
-            this.ltClock1.TabIndex = 6;
             // 
             // Home
             // 

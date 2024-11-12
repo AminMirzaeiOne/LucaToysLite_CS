@@ -92,9 +92,6 @@
     <Compile Include="Controls\RoundedButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Controls\RoundedComboBox.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="Controls\RoundedLabel.cs">
       <SubType>Component</SubType>
     </Compile>
