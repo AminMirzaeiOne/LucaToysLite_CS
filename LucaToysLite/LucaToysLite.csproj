@@ -101,7 +101,9 @@
     <Compile Include="Controls\RoundedPanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Controls\RoundedRadioButton.cs" />
+    <Compile Include="Controls\RoundedRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Controls\WindowToolbar.cs">
       <SubType>UserControl</SubType>
     </Compile>
