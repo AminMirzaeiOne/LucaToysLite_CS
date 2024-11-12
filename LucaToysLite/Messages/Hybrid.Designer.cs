@@ -178,15 +178,17 @@
             // 
             this.copyContentToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.copyContentToolStripMenuItem.Name = "copyContentToolStripMenuItem";
-            this.copyContentToolStripMenuItem.Size = new System.Drawing.Size(231, 32);
+            this.copyContentToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
             this.copyContentToolStripMenuItem.Text = "Copy Content";
+            this.copyContentToolStripMenuItem.Click += new System.EventHandler(this.copyContentToolStripMenuItem_Click);
             // 
             // copyDescriptionToolStripMenuItem
             // 
             this.copyDescriptionToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.copyDescriptionToolStripMenuItem.Name = "copyDescriptionToolStripMenuItem";
-            this.copyDescriptionToolStripMenuItem.Size = new System.Drawing.Size(231, 32);
+            this.copyDescriptionToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
             this.copyDescriptionToolStripMenuItem.Text = "Copy Description";
+            this.copyDescriptionToolStripMenuItem.Click += new System.EventHandler(this.copyDescriptionToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
@@ -197,15 +199,17 @@
             // 
             this.searchContentToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.searchContentToolStripMenuItem.Name = "searchContentToolStripMenuItem";
-            this.searchContentToolStripMenuItem.Size = new System.Drawing.Size(231, 32);
+            this.searchContentToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
             this.searchContentToolStripMenuItem.Text = "Search Content";
+            this.searchContentToolStripMenuItem.Click += new System.EventHandler(this.searchContentToolStripMenuItem_Click);
             // 
             // searchDescriptionToolStripMenuItem
             // 
             this.searchDescriptionToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.searchDescriptionToolStripMenuItem.Name = "searchDescriptionToolStripMenuItem";
-            this.searchDescriptionToolStripMenuItem.Size = new System.Drawing.Size(231, 32);
+            this.searchDescriptionToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
             this.searchDescriptionToolStripMenuItem.Text = "Search Description";
+            this.searchDescriptionToolStripMenuItem.Click += new System.EventHandler(this.searchDescriptionToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
@@ -216,8 +220,9 @@
             // 
             this.defaultButtonToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.defaultButtonToolStripMenuItem.Name = "defaultButtonToolStripMenuItem";
-            this.defaultButtonToolStripMenuItem.Size = new System.Drawing.Size(231, 32);
+            this.defaultButtonToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
             this.defaultButtonToolStripMenuItem.Text = "Default Button";
+            this.defaultButtonToolStripMenuItem.Click += new System.EventHandler(this.roundedButton1_Click);
             // 
             // Hybrid
             // 
@@ -225,6 +230,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(750, 450);
+            this.ContextMenuStrip = this.ltContextMenu1;
             this.Controls.Add(this.roundedButton3);
             this.Controls.Add(this.roundedButton2);
             this.Controls.Add(this.roundedButton1);

@@ -49,6 +49,8 @@ namespace LucaToysLite.Controls
         private ToolStripSeparator toolStripSeparator3;
         private ToolStripMenuItem selectToolStripMenuItem;
         private ToolStripMenuItem deleteToolStripMenuItem;
+        private WFAnimations.Animator animator1;
+        private IContainer components;
         private System.Windows.Forms.ToolStripMenuItem microsoftToolStripMenuItem = new ToolStripMenuItem();
 
 
@@ -64,12 +66,12 @@ namespace LucaToysLite.Controls
             if (this.Text.Length > 0)
             {
                 this.holderLabel.Visible = false;
-                this.btnClear.Visible = true;
+                this.animator1.Show(this.btnClear);
             }
             else
             {
                 this.holderLabel.Visible = true;
-                this.btnClear.Visible = false;
+                this.animator1.Hide(this.btnClear);
             }
         }
 
@@ -172,6 +174,9 @@ namespace LucaToysLite.Controls
 
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            WFAnimations.Animation animation1 = new WFAnimations.Animation();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LTTextBox));
             this.ltContextMenu1 = new LucaToysLite.Controls.LTContextMenu();
             this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
@@ -181,6 +186,7 @@ namespace LucaToysLite.Controls
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.selectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.animator1 = new WFAnimations.Animator(this.components);
             this.ltContextMenu1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -188,6 +194,7 @@ namespace LucaToysLite.Controls
             // 
             this.ltContextMenu1.BorderSize = ((byte)(2));
             this.ltContextMenu1.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.ltContextMenu1, WFAnimations.DecorationType.None);
             this.ltContextMenu1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.ltContextMenu1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.undoToolStripMenuItem,
@@ -254,9 +261,32 @@ namespace LucaToysLite.Controls
             this.deleteToolStripMenuItem.Text = "Delete";
             this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
+            // animator1
+            // 
+            this.animator1.AnimationType = WFAnimations.AnimationType.Transparent;
+            this.animator1.Cursor = null;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 1F;
+            this.animator1.DefaultAnimation = animation1;
+            this.animator1.Upside = false;
+            // 
             // LTTextBox
             // 
             this.ContextMenuStrip = this.ltContextMenu1;
+            this.animator1.SetDecoration(this, WFAnimations.DecorationType.None);
             this.ltContextMenu1.ResumeLayout(false);
             this.ResumeLayout(false);
 

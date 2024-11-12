@@ -185,5 +185,27 @@ namespace LucaToysLite.Messages
             else
                 this.ButtonThreeAction(null, null);
         }
+
+        private void copyContentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Clipboard.SetText(this.label2.Text);
+        }
+
+        private void copyDescriptionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Clipboard.SetText(this.label1.Text);
+
+        }
+
+        private void searchContentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start($"https://www.google.com/search?q={this.label2.Text}");
+        }
+
+        private void searchDescriptionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start($"https://www.google.com/search?q={this.label1.Text}");
+
+        }
     }
 }
