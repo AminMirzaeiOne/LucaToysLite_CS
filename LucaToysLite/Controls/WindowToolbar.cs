@@ -163,6 +163,8 @@ namespace LucaToysLite.Controls
         }
 
         private int radius = 20;
+        private object toolStripItemCollection;
+
         [DefaultValue(20)]
         public int Radius
         {
@@ -305,6 +307,16 @@ namespace LucaToysLite.Controls
         {
             if (e.Button == MouseButtons.Left && this.IconMenu)
                 this.ltContextMenu1.Show(this.roundedButton4,0,this.roundedButton4.Bottom);
+        }
+
+        private void exitAppToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
+
+        private void restartAppToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Restart();
         }
     }
 }

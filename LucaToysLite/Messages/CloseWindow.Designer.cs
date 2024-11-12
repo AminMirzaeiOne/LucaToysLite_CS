@@ -39,6 +39,9 @@
             this.windowToolbar1.DarkTheme = true;
             this.windowToolbar1.Dock = System.Windows.Forms.DockStyle.Top;
             this.windowToolbar1.IconButton = true;
+            this.windowToolbar1.IconButtonImage = null;
+            this.windowToolbar1.IconButtonSybmol = "";
+            this.windowToolbar1.IconMenu = true;
             this.windowToolbar1.Location = new System.Drawing.Point(0, 0);
             this.windowToolbar1.MaximizeButton = true;
             this.windowToolbar1.MinimizeButton = true;
