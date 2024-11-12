@@ -29,12 +29,42 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            this.ltComboBox1 = new LucaToysLite.Controls.LTComboBox();
             this.ltClock1 = new LucaToysLite.Controls.LTClock();
             this.ltTextBox1 = new LucaToysLite.Controls.LTTextBox();
             this.ltCheckBox1 = new LucaToysLite.Controls.LTCheckBox();
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
-            this.ltComboBox1 = new LucaToysLite.Controls.LTComboBox();
             this.SuspendLayout();
+            // 
+            // ltComboBox1
+            // 
+            this.ltComboBox1.BorderRadius = ((byte)(20));
+            this.ltComboBox1.BorderSize = ((byte)(3));
+            this.ltComboBox1.ColorPallet = System.Drawing.Color.Crimson;
+            this.ltComboBox1.EnableBorder = true;
+            this.ltComboBox1.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
+            this.ltComboBox1.FlatAppearance.BorderSize = 0;
+            this.ltComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ltComboBox1.ForeColor = System.Drawing.Color.White;
+            this.ltComboBox1.Items = new string[] {
+        "Apple",
+        "Google",
+        "Microsoft",
+        "Android",
+        "Youtube"};
+            this.ltComboBox1.ItemsBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.ltComboBox1.ItemsCheckedColor = System.Drawing.Color.Crimson;
+            this.ltComboBox1.ItemsFont = new System.Drawing.Font("Segoe UI Semibold", 9F);
+            this.ltComboBox1.ItemsForeColor = System.Drawing.Color.White;
+            this.ltComboBox1.ItemsHeight = ((byte)(40));
+            this.ltComboBox1.Location = new System.Drawing.Point(625, 357);
+            this.ltComboBox1.Name = "ltComboBox1";
+            this.ltComboBox1.Size = new System.Drawing.Size(271, 53);
+            this.ltComboBox1.TabIndex = 7;
+            this.ltComboBox1.Text = "ltComboBox1";
+            this.ltComboBox1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ltComboBox1.TopDirection = false;
+            this.ltComboBox1.UseVisualStyleBackColor = true;
             // 
             // ltClock1
             // 
@@ -102,21 +132,6 @@
             this.windowToolbar1.StartupSound = LucaToysLite.Controls.WindowToolbar.StartupSounds.None;
             this.windowToolbar1.TabIndex = 0;
             this.windowToolbar1.WindowBorderSize = ((byte)(3));
-            // 
-            // ltComboBox1
-            // 
-            this.ltComboBox1.BorderRadius = ((byte)(20));
-            this.ltComboBox1.BorderSize = ((byte)(3));
-            this.ltComboBox1.EnableBorder = true;
-            this.ltComboBox1.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
-            this.ltComboBox1.FlatAppearance.BorderSize = 0;
-            this.ltComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ltComboBox1.Location = new System.Drawing.Point(625, 357);
-            this.ltComboBox1.Name = "ltComboBox1";
-            this.ltComboBox1.Size = new System.Drawing.Size(271, 100);
-            this.ltComboBox1.TabIndex = 7;
-            this.ltComboBox1.Text = "ltComboBox1";
-            this.ltComboBox1.UseVisualStyleBackColor = true;
             // 
             // Home
             // 
