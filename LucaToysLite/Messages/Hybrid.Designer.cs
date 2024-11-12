@@ -31,10 +31,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.roundedButton3 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton2 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton1 = new LucaToysLite.Controls.RoundedButton();
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
-            this.roundedButton3 = new LucaToysLite.Controls.RoundedButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,6 +69,25 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "asdfsadfklasdflas;df\r\nasdflasjdfkasdfasdflasfj\r\nasdfasdlfkajsldfjasldfjaslfd";
             // 
+            // roundedButton3
+            // 
+            this.roundedButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.roundedButton3.BorderRadius = ((byte)(20));
+            this.roundedButton3.BorderSize = ((byte)(3));
+            this.roundedButton3.EnableBorder = true;
+            this.roundedButton3.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.roundedButton3.FlatAppearance.BorderSize = 0;
+            this.roundedButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedButton3.ForeColor = System.Drawing.Color.White;
+            this.roundedButton3.Location = new System.Drawing.Point(341, 393);
+            this.roundedButton3.Name = "roundedButton3";
+            this.roundedButton3.Size = new System.Drawing.Size(124, 40);
+            this.roundedButton3.TabIndex = 0;
+            this.roundedButton3.Text = "Btn 3";
+            this.roundedButton3.UseVisualStyleBackColor = false;
+            this.roundedButton3.Click += new System.EventHandler(this.roundedButton3_Click);
+            // 
             // roundedButton2
             // 
             this.roundedButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
@@ -86,6 +105,7 @@
             this.roundedButton2.TabIndex = 0;
             this.roundedButton2.Text = "Cancel";
             this.roundedButton2.UseVisualStyleBackColor = false;
+            this.roundedButton2.Click += new System.EventHandler(this.roundedButton2_Click);
             // 
             // roundedButton1
             // 
@@ -104,6 +124,7 @@
             this.roundedButton1.TabIndex = 0;
             this.roundedButton1.Text = "OK";
             this.roundedButton1.UseVisualStyleBackColor = false;
+            this.roundedButton1.Click += new System.EventHandler(this.roundedButton1_Click);
             // 
             // windowToolbar1
             // 
@@ -126,24 +147,6 @@
             this.windowToolbar1.TabIndex = 0;
             this.windowToolbar1.TitleText = "Close Window";
             this.windowToolbar1.WindowBorderSize = ((byte)(3));
-            // 
-            // roundedButton3
-            // 
-            this.roundedButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
-            this.roundedButton3.BorderRadius = ((byte)(20));
-            this.roundedButton3.BorderSize = ((byte)(3));
-            this.roundedButton3.EnableBorder = true;
-            this.roundedButton3.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.roundedButton3.FlatAppearance.BorderSize = 0;
-            this.roundedButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedButton3.ForeColor = System.Drawing.Color.White;
-            this.roundedButton3.Location = new System.Drawing.Point(341, 393);
-            this.roundedButton3.Name = "roundedButton3";
-            this.roundedButton3.Size = new System.Drawing.Size(124, 40);
-            this.roundedButton3.TabIndex = 0;
-            this.roundedButton3.Text = "Btn 3";
-            this.roundedButton3.UseVisualStyleBackColor = false;
             // 
             // Hybrid
             // 

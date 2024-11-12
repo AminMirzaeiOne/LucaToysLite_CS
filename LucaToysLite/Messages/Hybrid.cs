@@ -16,6 +16,7 @@ namespace LucaToysLite.Messages
         {
             InitializeComponent();
         }
+
         public event EventHandler DefaultButtonAction;
         public event EventHandler ButtonTwoAction;
         public event EventHandler ButtonThreeAction;
@@ -29,7 +30,52 @@ namespace LucaToysLite.Messages
         public System.Boolean ButtonThree { get { return this.roundedButton3.Visible; } set { this.roundedButton3.Visible = value; } }
 
         public System.String DefaultButtonText { get { return this.roundedButton1.Text; } set { this.roundedButton1.Text = value; } }
-        public System.String ButtonTwoText { get { return this.roundedButton2.Text; } set { this.roundedButton2.Text = value; } }
-        public System.String ButtonThreeText { get { return this.roundedButton3.Text; } set { this.roundedButton3.Text = value; } }
+        public System.String ButtonTwoText { 
+            get { return this.roundedButton2.Text; } 
+            set 
+            {
+                this.roundedButton2.Text = value;
+                if (value == "")
+                    this.ButtonTwo = false;
+                else
+                    this.ButtonTwo = true;
+            }
+        }
+        public System.String ButtonThreeText 
+        { 
+            get { return this.roundedButton3.Text; }
+            set 
+            { 
+                this.roundedButton3.Text = value;
+                if (value == "")
+                    this.ButtonThree = false;
+                else
+                    this.ButtonThree = true;
+            } 
+        }
+
+        private void roundedButton1_Click(object sender, EventArgs e)
+        {
+            if(this.DefaultButtonAction == null)
+                this.Close();
+            else
+                this.DefaultButtonAction(null, null);
+        }
+
+        private void roundedButton2_Click(object sender, EventArgs e)
+        {
+            if (this.ButtonTwoAction == null)
+                this.Close();
+            else
+                this.ButtonTwoAction(null, null);
+        }
+
+        private void roundedButton3_Click(object sender, EventArgs e)
+        {
+            if (this.ButtonThreeAction == null)
+                this.Close();
+            else
+                this.ButtonThreeAction(null, null);
+        }
     }
 }
