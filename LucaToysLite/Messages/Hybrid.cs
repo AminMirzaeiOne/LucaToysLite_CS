@@ -94,6 +94,37 @@ namespace LucaToysLite.Messages
             this.ActionType = action;
         }
 
+        public Hybrid(string title, string content, string description,System.Drawing.Image icon, LucaToysLite.Controls.LTMessageBox.StartSounds sound)
+        {
+            InitializeComponent();
+            this.TitleText = title;
+            this.ContentText = content;
+            this.DescriptionText = description;
+            this.MessageIcon = icon;
+            this.SoundType = sound;
+        }
+
+        public Hybrid(string title, string content, string description, LucaToysLite.Controls.LTMessageBox.IconTypes icon, LucaToysLite.Controls.LTMessageBox.StartSounds sound)
+        {
+            InitializeComponent();
+            this.TitleText = title;
+            this.ContentText = content;
+            this.DescriptionText = description;
+            this.IconType = icon;
+            this.SoundType = sound;
+        }
+
+        public Hybrid(string title, string content, string description, LucaToysLite.Controls.LTMessageBox.ActionTypes action, LucaToysLite.Controls.LTMessageBox.StartSounds sound)
+        {
+            InitializeComponent();
+            this.TitleText = title;
+            this.ContentText = content;
+            this.DescriptionText = description;
+            this.ActionType = action;
+            this.SoundType = sound;
+        }
+
+
 
 
         private LucaToysLite.Controls.LTMessageBox.ActionTypes actionType = LucaToysLite.Controls.LTMessageBox.ActionTypes.None;
