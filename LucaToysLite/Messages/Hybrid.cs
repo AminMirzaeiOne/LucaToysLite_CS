@@ -163,7 +163,13 @@ namespace LucaToysLite.Messages
                 switch (value)
                 {
                     case LucaToysLite.Controls.LTMessageBox.StartSounds.DSound:
-                        this.windowToolbar1.StartupSound = LucaToysLite.Controls.WindowToolbar.StartupSounds.DStartupSound;
+                        this.windowToolbar1.StartupSound = LucaToysLite.Controls.WindowToolbar.StartupSounds.DSound;
+                        break;
+                    case LucaToysLite.Controls.LTMessageBox.StartSounds.CSound:
+                        this.windowToolbar1.StartupSound = LucaToysLite.Controls.WindowToolbar.StartupSounds.CSound;
+                        break;
+                    case LucaToysLite.Controls.LTMessageBox.StartSounds.GSound:
+                        this.windowToolbar1.StartupSound = LucaToysLite.Controls.WindowToolbar.StartupSounds.GSound;
                         break;
                 }
             }
