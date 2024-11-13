@@ -48,18 +48,6 @@ namespace LucaToysLite.Messages
             this.TitleText = title;
             this.ContentText = content;
             this.DescriptionText = description;
-            switch (type)
-            {
-                case LucaToysLite.Controls.LTMessageBox.IconTypes.Error:
-                    this.MessageIcon = Properties.Resources.icons8_error_96;
-                    break;
-                case LucaToysLite.Controls.LTMessageBox.IconTypes.Warning:
-                    this.MessageIcon = Properties.Resources.icons8_warning_96;
-                    break;
-                case LucaToysLite.Controls.LTMessageBox.IconTypes.Information:
-                    this.MessageIcon = Properties.Resources.icons8_info_96;
-                    break;
-            }
             this.IconType = type;
         }
 
@@ -152,7 +140,22 @@ namespace LucaToysLite.Messages
         public LucaToysLite.Controls.LTMessageBox.IconTypes IconType
         {
             get { return this.iconType; }
-            set { this.iconType = value; }
+            set 
+            { 
+                this.iconType = value;
+                switch (value)
+                {
+                    case LucaToysLite.Controls.LTMessageBox.IconTypes.Error:
+                        this.MessageIcon = Properties.Resources.icons8_error_96;
+                        break;
+                    case LucaToysLite.Controls.LTMessageBox.IconTypes.Warning:
+                        this.MessageIcon = Properties.Resources.icons8_warning_96;
+                        break;
+                    case LucaToysLite.Controls.LTMessageBox.IconTypes.Information:
+                        this.MessageIcon = Properties.Resources.icons8_info_96;
+                        break;
+                }
+            }
         }
 
         public System.Drawing.Color ColorPallet
