@@ -24,6 +24,7 @@ namespace LucaToysLite.Messages
             this.Owner = owner;
             this.TitleText = title;
             this.ContentText = content;
+            this.windowToolbar1.CloseMessage = false;
         }
 
         public Hybrid(Form owner,string title, string content, string description)
@@ -33,6 +34,8 @@ namespace LucaToysLite.Messages
             this.TitleText = title;
             this.ContentText = content;
             this.DescriptionText = description;
+            this.windowToolbar1.CloseMessage = false;
+
         }
 
         public Hybrid(Form owner,string title, string content, string description, Image icon)
@@ -43,6 +46,8 @@ namespace LucaToysLite.Messages
             this.ContentText = content;
             this.DescriptionText = description;
             this.MessageIcon = icon;
+            this.windowToolbar1.CloseMessage = false;
+
         }
 
         public Hybrid(Form owner, string title, string content, string description, LucaToysLite.Controls.LTMessageBox.IconTypes type)
@@ -53,6 +58,8 @@ namespace LucaToysLite.Messages
             this.ContentText = content;
             this.DescriptionText = description;
             this.IconType = type;
+            this.windowToolbar1.CloseMessage = false;
+
         }
 
         public Hybrid(Form owner,string title, string content, string description, LucaToysLite.Controls.LTMessageBox.ActionTypes action)
@@ -63,6 +70,8 @@ namespace LucaToysLite.Messages
             this.ContentText = content;
             this.DescriptionText = description;
             this.ActionType = action;
+            this.windowToolbar1.CloseMessage = false;
+
         }
 
         public Hybrid(Form owner,string title, string content, string description, System.Drawing.Image icon, LucaToysLite.Controls.LTMessageBox.StartSounds sound)
@@ -74,6 +83,8 @@ namespace LucaToysLite.Messages
             this.DescriptionText = description;
             this.MessageIcon = icon;
             this.SoundType = sound;
+            this.windowToolbar1.CloseMessage = false;
+
         }
 
         public Hybrid(Form owner, string title, string content, string description, LucaToysLite.Controls.LTMessageBox.IconTypes icon, LucaToysLite.Controls.LTMessageBox.StartSounds sound)
@@ -85,6 +96,8 @@ namespace LucaToysLite.Messages
             this.DescriptionText = description;
             this.IconType = icon;
             this.SoundType = sound;
+            this.windowToolbar1.CloseMessage = false;
+
         }
 
         public Hybrid(Form owner,string title, string content, string description, LucaToysLite.Controls.LTMessageBox.ActionTypes action, LucaToysLite.Controls.LTMessageBox.StartSounds sound)
@@ -96,6 +109,8 @@ namespace LucaToysLite.Messages
             this.DescriptionText = description;
             this.ActionType = action;
             this.SoundType = sound;
+            this.windowToolbar1.CloseMessage = false;
+
         }
 
 
@@ -245,10 +260,18 @@ namespace LucaToysLite.Messages
 
         private void roundedButton2_Click(object sender, EventArgs e)
         {
-            if (this.ButtonTwoAction == null)
-                this.windowToolbar1.Close();
-            else
-                this.ButtonTwoAction(null, null);
+            switch (this.ActionType)
+            {
+                case LucaToysLite.Controls.LTMessageBox.ActionTypes.None:
+                    if (this.ButtonTwoAction != null)
+                        this.ButtonTwoAction(null, null);
+                    break;
+                case LucaToysLite.Controls.LTMessageBox.ActionTypes.Close:
+                case LucaToysLite.Controls.LTMessageBox.ActionTypes.Exit:
+                case LucaToysLite.Controls.LTMessageBox.ActionTypes.Restart:
+                    this.windowToolbar1.Close();
+                    break;
+            }
         }
 
         private void roundedButton3_Click(object sender, EventArgs e)

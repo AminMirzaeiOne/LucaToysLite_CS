@@ -21,7 +21,7 @@ namespace LucaToysLite.Controls
 
         public enum StartupSounds
         {
-            None, AStartupSound, BStartupSound, CStartupSound, DStartupSound, EStartupSound
+            None, DSound, GSound, CSound, AStartupSound, BStartupSound, CStartupSound, DStartupSound, EStartupSound
         }
 
         public WindowToolbar()
@@ -68,9 +68,7 @@ namespace LucaToysLite.Controls
 
         private LucaToysLite.ClassLibrary.WindowAnimation animation;
         private LucaToysLite.Controls.WindowToolbar.StartupSounds startupSounds = StartupSounds.None;
-        private System.IO.MemoryStream soundLocation = new MemoryStream(Properties.Resources.EStartupSound);
         private System.Media.SoundPlayer soundPlayer = new System.Media.SoundPlayer();
-
 
         public LucaToysLite.Controls.WindowToolbar.StartupSounds StartupSound
         {
@@ -81,7 +79,28 @@ namespace LucaToysLite.Controls
                 switch (value)
                 {
                     case StartupSounds.AStartupSound:
-
+                        soundPlayer.Stream = new MemoryStream(Properties.Resources.AStartupSound);
+                        break;
+                    case StartupSounds.BStartupSound:
+                        soundPlayer.Stream = new MemoryStream(Properties.Resources.BStartupSound);
+                        break;
+                    case StartupSounds.CStartupSound:
+                        soundPlayer.Stream = new MemoryStream(Properties.Resources.CStartupSound);
+                        break;
+                    case StartupSounds.DStartupSound:
+                        soundPlayer.Stream = new MemoryStream(Properties.Resources.DStartupSound);
+                        break;
+                    case StartupSounds.EStartupSound:
+                        soundPlayer.Stream = new MemoryStream(Properties.Resources.EStartupSound);
+                        break;
+                    case StartupSounds.DSound:
+                        soundPlayer.Stream = new MemoryStream(Properties.Resources.DSound);
+                        break;
+                    case StartupSounds.GSound:
+                        soundPlayer.Stream = new MemoryStream(Properties.Resources.GSound);
+                        break;
+                    case StartupSounds.CSound:
+                        soundPlayer.Stream = new MemoryStream(Properties.Resources.CSound);
                         break;
                 }
             }
@@ -106,7 +125,14 @@ namespace LucaToysLite.Controls
         {
             if (this.Parent != null)
             {
+                if (this.CloseMessage)
+                {
+                    LTMessageBox.Show((Form)this.Parent, "Close Window", "Close This Window", "Do you want to exit this window?", LTMessageBox.ActionTypes.Close, LTMessageBox.StartSounds.GSound);
+                }
+                else
+                {
                     this.animation.Close();
+                }
             }
         }
 
@@ -288,8 +314,8 @@ namespace LucaToysLite.Controls
                 this.Parent.Paint += new PaintEventHandler(this.Parent_Paint);
                 this.ApplyColor();
             }
-            this.soundPlayer.Stream = soundLocation;
-            //soundPlayer.Play();
+            if (this.StartupSound != StartupSounds.None)
+                soundPlayer.Play();
         }
 
         public void ApplyColor()
