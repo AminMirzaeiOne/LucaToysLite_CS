@@ -8,9 +8,9 @@ namespace LucaToysLite.Controls
 {
     public static class LTMessageBox
     {
-        public enum IconTypes { Error, Warning, Information }
-        public enum ActionTypes { Close, Restart, Exit }
-        public enum StartSounds { GSound, DSound, CSound }
+        public enum IconTypes { None,Error, Warning, Information }
+        public enum ActionTypes { None,Close, Restart, Exit }
+        public enum StartSounds { None,GSound, DSound, CSound }
 
         public static void Show(string title, string caption)
         {
@@ -32,20 +32,20 @@ namespace LucaToysLite.Controls
 
         }
 
-        public static void Show(string title, string caption, string description, IconTypes icontype, ActionTypes actiontype)
+        public static void Show(string title, string caption, string description, ActionTypes actiontype)
         {
 
         }
 
-        public static void Show(string title, string caption, string description, System.Drawing.Image icon, ActionTypes actiontype)
+        public static void Show(string title, string caption, string description, System.Drawing.Image icon, StartSounds sound)
         {
 
         }
-        public static void Show(string title, string caption, string description, System.Drawing.Image icon, ActionTypes actiontype, StartSounds sound)
+        public static void Show(string title, string caption, string description, ActionTypes actiontype, StartSounds sound)
         {
 
         }
-        public static void Show(string title, string caption, string description, IconTypes icontype, ActionTypes actiontype, StartSounds sound)
+        public static void Show(string title, string caption, string description, IconTypes icontype, StartSounds sound)
         {
 
         }

@@ -12,14 +12,6 @@ namespace LucaToysLite.Messages
 {
     public partial class Hybrid : Form
     {
-        public enum MessageTypes
-        {
-            None, Error, Info, Warning
-        }
-        public enum ActionTypes
-        {
-            None, Close, Exit, Restart
-        }
 
         public Hybrid()
         {
@@ -50,7 +42,7 @@ namespace LucaToysLite.Messages
             this.MessageIcon = icon;
         }
 
-        public Hybrid(string title, string content, string description, MessageTypes type)
+        public Hybrid(string title, string content, string description, LucaToysLite.Controls.LTMessageBox.IconTypes type)
         {
             InitializeComponent();
             this.TitleText = title;
@@ -58,20 +50,20 @@ namespace LucaToysLite.Messages
             this.DescriptionText = description;
             switch (type)
             {
-                case MessageTypes.Error:
+                case LucaToysLite.Controls.LTMessageBox.IconTypes.Error:
                     this.MessageIcon = Properties.Resources.icons8_error_96;
                     break;
-                case MessageTypes.Warning:
+                case LucaToysLite.Controls.LTMessageBox.IconTypes.Warning:
                     this.MessageIcon = Properties.Resources.icons8_warning_96;
                     break;
-                case MessageTypes.Info:
+                case LucaToysLite.Controls.LTMessageBox.IconTypes.Information:
                     this.MessageIcon = Properties.Resources.icons8_info_96;
                     break;
             }
-            this.MessageType = type;
+            this.IconType = type;
         }
 
-        public Hybrid(string title, string content, string description, ActionTypes action)
+        public Hybrid(string title, string content, string description, LucaToysLite.Controls.LTMessageBox.ActionTypes action)
         {
             InitializeComponent();
             this.TitleText = title;
@@ -80,19 +72,19 @@ namespace LucaToysLite.Messages
 
             switch (action)
             {
-                case ActionTypes.Close:
+                case LucaToysLite.Controls.LTMessageBox.ActionTypes.Close:
                     this.MessageIcon = Properties.Resources.icons8_close_window_96;
                     this.DefaultButtonText = "Yes";
                     this.ButtonTwoText = "No";
                     this.ButtonThree = false;
                     break;
-                case ActionTypes.Exit:
+                case LucaToysLite.Controls.LTMessageBox.ActionTypes.Exit:
                     this.MessageIcon = Properties.Resources.icons8_exit_96;
                     this.DefaultButtonText = "Yes";
                     this.ButtonTwoText = "No";
                     this.ButtonThree = false;
                     break;
-                case ActionTypes.Restart:
+                case LucaToysLite.Controls.LTMessageBox.ActionTypes.Restart:
                     this.MessageIcon = Properties.Resources.icons8_restart_96;
                     this.DefaultButtonText = "Yes";
                     this.ButtonTwoText = "No";
@@ -104,23 +96,30 @@ namespace LucaToysLite.Messages
 
 
 
-        private LucaToysLite.Messages.Hybrid.ActionTypes actionType = ActionTypes.None;
-        private LucaToysLite.Messages.Hybrid.MessageTypes messageType = MessageTypes.None;
+        private LucaToysLite.Controls.LTMessageBox.ActionTypes actionType = LucaToysLite.Controls.LTMessageBox.ActionTypes.None;
+        private LucaToysLite.Controls.LTMessageBox.IconTypes iconType = LucaToysLite.Controls.LTMessageBox.IconTypes.None;
+        private LucaToysLite.Controls.LTMessageBox.StartSounds soundType = LucaToysLite.Controls.LTMessageBox.StartSounds.None;
 
         public event EventHandler DefaultButtonAction;
         public event EventHandler ButtonTwoAction;
         public event EventHandler ButtonThreeAction;
 
-        public LucaToysLite.Messages.Hybrid.ActionTypes ActionType
+        public LucaToysLite.Controls.LTMessageBox.ActionTypes ActionType
         {
             get { return this.actionType; }
             set { this.actionType = value; }
         }
 
-        public LucaToysLite.Messages.Hybrid.MessageTypes MessageType
+        public LucaToysLite.Controls.LTMessageBox.StartSounds SoundType
         {
-            get { return this.messageType; }
-            set { this.messageType = value; }
+            get { return this.soundType; }
+            set { this.soundType = value; }
+        }
+
+        public LucaToysLite.Controls.LTMessageBox.IconTypes IconType
+        {
+            get { return this.iconType; }
+            set { this.iconType = value; }
         }
 
         public System.Drawing.Color ColorPallet
@@ -174,17 +173,17 @@ namespace LucaToysLite.Messages
         {
             if (this.DefaultButtonAction == null)
                 this.windowToolbar1.Close();
-            else if (this.ActionType != ActionTypes.None)
+            else if (this.ActionType != LucaToysLite.Controls.LTMessageBox.ActionTypes.None)
             {
                 switch (this.ActionType)
                 {
-                    case ActionTypes.Close:
+                    case LucaToysLite.Controls.LTMessageBox.ActionTypes.Close:
                         this.Owner.Close();
                         break;
-                    case ActionTypes.Exit:
+                    case LucaToysLite.Controls.LTMessageBox.ActionTypes.Exit:
                         System.Windows.Forms.Application.Exit();
                         break;
-                    case ActionTypes.Restart:
+                    case LucaToysLite.Controls.LTMessageBox.ActionTypes.Restart:
                         System.Windows.Forms.Application.Restart();
                         break;
                 }
