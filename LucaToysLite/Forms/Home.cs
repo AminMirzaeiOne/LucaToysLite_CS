@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LucaToysLite.Controls;
 using LucaToysLite.Messages;
 
 namespace LucaToysLite.Forms
@@ -20,8 +21,7 @@ namespace LucaToysLite.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Hybrid hybrid = new Hybrid("Microsoft","Microsoft Office","Hello World Microsoft I Am Amin", LucaToysLite.Controls.LTMessageBox.IconTypes.Warning);
-            hybrid.Show();
+            LTMessageBox.Show("Maxelite", "Hello Maxelite", "Android or Windows Base Is Linux", LTMessageBox.ActionTypes.Close);
         }
     }
 }

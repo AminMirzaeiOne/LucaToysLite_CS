@@ -60,7 +60,7 @@ namespace LucaToysLite.Messages
             this.ActionType = action;
         }
 
-        public Hybrid(string title, string content, string description,System.Drawing.Image icon, LucaToysLite.Controls.LTMessageBox.StartSounds sound)
+        public Hybrid(string title, string content, string description, System.Drawing.Image icon, LucaToysLite.Controls.LTMessageBox.StartSounds sound)
         {
             InitializeComponent();
             this.TitleText = title;
@@ -104,8 +104,8 @@ namespace LucaToysLite.Messages
         public LucaToysLite.Controls.LTMessageBox.ActionTypes ActionType
         {
             get { return this.actionType; }
-            set 
-            { 
+            set
+            {
                 this.actionType = value;
                 switch (value)
                 {
@@ -134,7 +134,7 @@ namespace LucaToysLite.Messages
         public LucaToysLite.Controls.LTMessageBox.StartSounds SoundType
         {
             get { return this.soundType; }
-            set 
+            set
             {
                 this.soundType = value;
                 switch (value)
@@ -149,8 +149,8 @@ namespace LucaToysLite.Messages
         public LucaToysLite.Controls.LTMessageBox.IconTypes IconType
         {
             get { return this.iconType; }
-            set 
-            { 
+            set
+            {
                 this.iconType = value;
                 switch (value)
                 {
@@ -216,25 +216,23 @@ namespace LucaToysLite.Messages
 
         private void roundedButton1_Click(object sender, EventArgs e)
         {
-            if (this.DefaultButtonAction == null)
-                this.windowToolbar1.Close();
-            else if (this.ActionType != LucaToysLite.Controls.LTMessageBox.ActionTypes.None)
+            switch (this.ActionType)
             {
-                switch (this.ActionType)
-                {
-                    case LucaToysLite.Controls.LTMessageBox.ActionTypes.Close:
+                case LucaToysLite.Controls.LTMessageBox.ActionTypes.None:
+                    if (this.DefaultButtonAction != null)
+                        this.DefaultButtonAction(null, null);
+                    break;
+                case LucaToysLite.Controls.LTMessageBox.ActionTypes.Close:
+                    if (this.Owner != null)
                         this.Owner.Close();
-                        break;
-                    case LucaToysLite.Controls.LTMessageBox.ActionTypes.Exit:
-                        System.Windows.Forms.Application.Exit();
-                        break;
-                    case LucaToysLite.Controls.LTMessageBox.ActionTypes.Restart:
-                        System.Windows.Forms.Application.Restart();
-                        break;
-                }
+                    break;
+                case LucaToysLite.Controls.LTMessageBox.ActionTypes.Exit:
+                    System.Windows.Forms.Application.Exit();
+                    break;
+                case LucaToysLite.Controls.LTMessageBox.ActionTypes.Restart:
+                    System.Windows.Forms.Application.Restart();
+                    break;
             }
-            else
-                this.DefaultButtonAction(null, null);
         }
 
         private void roundedButton2_Click(object sender, EventArgs e)
