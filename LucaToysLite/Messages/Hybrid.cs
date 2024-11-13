@@ -134,7 +134,16 @@ namespace LucaToysLite.Messages
         public LucaToysLite.Controls.LTMessageBox.StartSounds SoundType
         {
             get { return this.soundType; }
-            set { this.soundType = value; }
+            set 
+            {
+                this.soundType = value;
+                switch (value)
+                {
+                    case LucaToysLite.Controls.LTMessageBox.StartSounds.DSound:
+                        this.windowToolbar1.StartupSound = LucaToysLite.Controls.WindowToolbar.StartupSounds.DStartupSound;
+                        break;
+                }
+            }
         }
 
         public LucaToysLite.Controls.LTMessageBox.IconTypes IconType
