@@ -71,6 +71,7 @@ namespace LucaToysLite.Controls
         private System.IO.MemoryStream soundLocation = new MemoryStream(Properties.Resources.EStartupSound);
         private System.Media.SoundPlayer soundPlayer = new System.Media.SoundPlayer();
 
+
         public LucaToysLite.Controls.WindowToolbar.StartupSounds StartupSound
         {
             get { return this.startupSounds; }
@@ -105,13 +106,6 @@ namespace LucaToysLite.Controls
         {
             if (this.Parent != null)
             {
-                if (this.CloseMessage)
-                {
-                    LucaToysLite.Messages.Hybrid hybrid = new Messages.Hybrid("Close Window", "Close This Window", $"Do you want to exit X Window ?", Messages.Hybrid.ActionTypes.Exit);
-                    hybrid.ColorPallet = this.ColorPalette;
-                    hybrid.Show();
-                }
-                else
                     this.animation.Close();
             }
         }

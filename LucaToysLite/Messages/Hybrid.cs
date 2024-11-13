@@ -18,7 +18,7 @@ namespace LucaToysLite.Messages
         }
         public enum ActionTypes
         {
-            None,Close, Exit, Restart
+            None, Close, Exit, Restart
         }
 
         public Hybrid()
@@ -68,9 +68,10 @@ namespace LucaToysLite.Messages
                     this.MessageIcon = Properties.Resources.icons8_info_96;
                     break;
             }
+            this.MessageType = type;
         }
 
-        public Hybrid(string title, string content, string description,ActionTypes action)
+        public Hybrid(string title, string content, string description, ActionTypes action)
         {
             InitializeComponent();
             this.TitleText = title;
@@ -98,16 +99,29 @@ namespace LucaToysLite.Messages
                     this.ButtonThree = false;
                     break;
             }
-            this.actionType = action;
+            this.ActionType = action;
         }
 
-        
+
 
         private LucaToysLite.Messages.Hybrid.ActionTypes actionType = ActionTypes.None;
+        private LucaToysLite.Messages.Hybrid.MessageTypes messageType = MessageTypes.None;
 
         public event EventHandler DefaultButtonAction;
         public event EventHandler ButtonTwoAction;
         public event EventHandler ButtonThreeAction;
+
+        public LucaToysLite.Messages.Hybrid.ActionTypes ActionType
+        {
+            get { return this.actionType; }
+            set { this.actionType = value; }
+        }
+
+        public LucaToysLite.Messages.Hybrid.MessageTypes MessageType
+        {
+            get { return this.messageType; }
+            set { this.messageType = value; }
+        }
 
         public System.Drawing.Color ColorPallet
         {
@@ -160,9 +174,9 @@ namespace LucaToysLite.Messages
         {
             if (this.DefaultButtonAction == null)
                 this.windowToolbar1.Close();
-            else if (actionType != ActionTypes.None)
+            else if (this.ActionType != ActionTypes.None)
             {
-                switch (actionType) 
+                switch (this.ActionType)
                 {
                     case ActionTypes.Close:
                         this.Owner.Close();
