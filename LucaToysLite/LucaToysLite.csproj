@@ -96,6 +96,7 @@
     <Compile Include="Controls\LucaToysLogo.Designer.cs">
       <DependentUpon>LucaToysLogo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\MultiPage.cs" />
     <Compile Include="Controls\RoundedButton.cs">
       <SubType>Component</SubType>
     </Compile>
