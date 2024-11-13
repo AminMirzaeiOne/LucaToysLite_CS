@@ -69,28 +69,6 @@ namespace LucaToysLite.Messages
             this.TitleText = title;
             this.ContentText = content;
             this.DescriptionText = description;
-
-            switch (action)
-            {
-                case LucaToysLite.Controls.LTMessageBox.ActionTypes.Close:
-                    this.MessageIcon = Properties.Resources.icons8_close_window_96;
-                    this.DefaultButtonText = "Yes";
-                    this.ButtonTwoText = "No";
-                    this.ButtonThree = false;
-                    break;
-                case LucaToysLite.Controls.LTMessageBox.ActionTypes.Exit:
-                    this.MessageIcon = Properties.Resources.icons8_exit_96;
-                    this.DefaultButtonText = "Yes";
-                    this.ButtonTwoText = "No";
-                    this.ButtonThree = false;
-                    break;
-                case LucaToysLite.Controls.LTMessageBox.ActionTypes.Restart:
-                    this.MessageIcon = Properties.Resources.icons8_restart_96;
-                    this.DefaultButtonText = "Yes";
-                    this.ButtonTwoText = "No";
-                    this.ButtonThree = false;
-                    break;
-            }
             this.ActionType = action;
         }
 
@@ -138,7 +116,31 @@ namespace LucaToysLite.Messages
         public LucaToysLite.Controls.LTMessageBox.ActionTypes ActionType
         {
             get { return this.actionType; }
-            set { this.actionType = value; }
+            set 
+            { 
+                this.actionType = value;
+                switch (value)
+                {
+                    case LucaToysLite.Controls.LTMessageBox.ActionTypes.Close:
+                        this.MessageIcon = Properties.Resources.icons8_close_window_96;
+                        this.DefaultButtonText = "Yes";
+                        this.ButtonTwoText = "No";
+                        this.ButtonThree = false;
+                        break;
+                    case LucaToysLite.Controls.LTMessageBox.ActionTypes.Exit:
+                        this.MessageIcon = Properties.Resources.icons8_exit_96;
+                        this.DefaultButtonText = "Yes";
+                        this.ButtonTwoText = "No";
+                        this.ButtonThree = false;
+                        break;
+                    case LucaToysLite.Controls.LTMessageBox.ActionTypes.Restart:
+                        this.MessageIcon = Properties.Resources.icons8_restart_96;
+                        this.DefaultButtonText = "Yes";
+                        this.ButtonTwoText = "No";
+                        this.ButtonThree = false;
+                        break;
+                }
+            }
         }
 
         public LucaToysLite.Controls.LTMessageBox.StartSounds SoundType
