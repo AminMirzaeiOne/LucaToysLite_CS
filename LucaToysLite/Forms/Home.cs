@@ -21,7 +21,7 @@ namespace LucaToysLite.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            LTMessageBox.Show("Maxelite", "Hello Maxelite", "Android or Windows Base Is Linux", LTMessageBox.ActionTypes.Close);
+            LTMessageBox.Show(this,"Maxelite", "Hello Maxelite", "Android or Windows Base Is Linux", LTMessageBox.ActionTypes.Close);
         }
     }
 }

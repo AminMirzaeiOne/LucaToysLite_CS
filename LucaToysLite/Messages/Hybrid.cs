@@ -18,51 +18,57 @@ namespace LucaToysLite.Messages
             InitializeComponent();
         }
 
-        public Hybrid(string title, string content)
+        public Hybrid(Form owner,string title, string content)
         {
             InitializeComponent();
+            this.Owner = owner;
             this.TitleText = title;
             this.ContentText = content;
         }
 
-        public Hybrid(string title, string content, string description)
+        public Hybrid(Form owner,string title, string content, string description)
         {
             InitializeComponent();
+            this.Owner= owner;
             this.TitleText = title;
             this.ContentText = content;
             this.DescriptionText = description;
         }
 
-        public Hybrid(string title, string content, string description, Image icon)
+        public Hybrid(Form owner,string title, string content, string description, Image icon)
         {
             InitializeComponent();
+            this.Owner = owner;
             this.TitleText = title;
             this.ContentText = content;
             this.DescriptionText = description;
             this.MessageIcon = icon;
         }
 
-        public Hybrid(string title, string content, string description, LucaToysLite.Controls.LTMessageBox.IconTypes type)
+        public Hybrid(Form owner, string title, string content, string description, LucaToysLite.Controls.LTMessageBox.IconTypes type)
         {
             InitializeComponent();
+            this.Owner = owner;
             this.TitleText = title;
             this.ContentText = content;
             this.DescriptionText = description;
             this.IconType = type;
         }
 
-        public Hybrid(string title, string content, string description, LucaToysLite.Controls.LTMessageBox.ActionTypes action)
+        public Hybrid(Form owner,string title, string content, string description, LucaToysLite.Controls.LTMessageBox.ActionTypes action)
         {
             InitializeComponent();
+            this.Owner = owner;
             this.TitleText = title;
             this.ContentText = content;
             this.DescriptionText = description;
             this.ActionType = action;
         }
 
-        public Hybrid(string title, string content, string description, System.Drawing.Image icon, LucaToysLite.Controls.LTMessageBox.StartSounds sound)
+        public Hybrid(Form owner,string title, string content, string description, System.Drawing.Image icon, LucaToysLite.Controls.LTMessageBox.StartSounds sound)
         {
             InitializeComponent();
+            this.Owner = owner;
             this.TitleText = title;
             this.ContentText = content;
             this.DescriptionText = description;
@@ -70,9 +76,10 @@ namespace LucaToysLite.Messages
             this.SoundType = sound;
         }
 
-        public Hybrid(string title, string content, string description, LucaToysLite.Controls.LTMessageBox.IconTypes icon, LucaToysLite.Controls.LTMessageBox.StartSounds sound)
+        public Hybrid(Form owner, string title, string content, string description, LucaToysLite.Controls.LTMessageBox.IconTypes icon, LucaToysLite.Controls.LTMessageBox.StartSounds sound)
         {
             InitializeComponent();
+            this.Owner = owner;
             this.TitleText = title;
             this.ContentText = content;
             this.DescriptionText = description;
@@ -80,9 +87,10 @@ namespace LucaToysLite.Messages
             this.SoundType = sound;
         }
 
-        public Hybrid(string title, string content, string description, LucaToysLite.Controls.LTMessageBox.ActionTypes action, LucaToysLite.Controls.LTMessageBox.StartSounds sound)
+        public Hybrid(Form owner,string title, string content, string description, LucaToysLite.Controls.LTMessageBox.ActionTypes action, LucaToysLite.Controls.LTMessageBox.StartSounds sound)
         {
             InitializeComponent();
+            this.Owner = owner;
             this.TitleText = title;
             this.ContentText = content;
             this.DescriptionText = description;

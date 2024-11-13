@@ -12,63 +12,63 @@ namespace LucaToysLite.Controls
         public enum ActionTypes { None, Close, Restart, Exit }
         public enum StartSounds { None, GSound, DSound, CSound }
 
-        public static void Show(string title, string caption)
+        public static void Show(System.Windows.Forms.Form owner,string title, string caption)
         {
-            using (var form = new LucaToysLite.Messages.Hybrid(title, caption))
+            using (var form = new LucaToysLite.Messages.Hybrid(owner,title, caption))
             {
                 form.ShowDialog();
             }
         }
 
-        public static void Show(string title, string caption, string description)
+        public static void Show(System.Windows.Forms.Form owner, string title, string caption, string description)
         {
-            using (var form = new LucaToysLite.Messages.Hybrid(title, caption, description))
+            using (var form = new LucaToysLite.Messages.Hybrid(owner, title, caption, description))
             {
                 form.ShowDialog();
             }
         }
 
-        public static void Show(string title, string caption, string description, IconTypes icontype)
+        public static void Show(System.Windows.Forms.Form owner, string title, string caption, string description, IconTypes icontype)
         {
-            using (var form = new LucaToysLite.Messages.Hybrid(title, caption, description, icontype))
+            using (var form = new LucaToysLite.Messages.Hybrid(owner, title, caption, description, icontype))
             {
                 form.ShowDialog();
             }
         }
 
-        public static void Show(string title, string caption, string description, System.Drawing.Image icon)
+        public static void Show(System.Windows.Forms.Form owner, string title, string caption, string description, System.Drawing.Image icon)
         {
-            using (var form = new LucaToysLite.Messages.Hybrid(title, caption, description, icon))
+            using (var form = new LucaToysLite.Messages.Hybrid(owner, title, caption, description, icon))
             {
                 form.ShowDialog();
             }
         }
 
-        public static void Show(string title, string caption, string description, ActionTypes actiontype)
+        public static void Show(System.Windows.Forms.Form owner, string title, string caption, string description, ActionTypes actiontype)
         {
-            using (var form = new LucaToysLite.Messages.Hybrid(title, caption, description, actiontype))
+            using (var form = new LucaToysLite.Messages.Hybrid(owner,title, caption, description, actiontype))
             {
                 form.ShowDialog();
             }
         }
 
-        public static void Show(string title, string caption, string description, System.Drawing.Image icon, StartSounds sound)
+        public static void Show(System.Windows.Forms.Form owner, string title, string caption, string description, System.Drawing.Image icon, StartSounds sound)
         {
-            using (var form = new LucaToysLite.Messages.Hybrid(title, caption, description, icon, sound))
+            using (var form = new LucaToysLite.Messages.Hybrid(owner, title, caption, description, icon, sound))
             {
                 form.ShowDialog();
             }
         }
-        public static void Show(string title, string caption, string description, ActionTypes actiontype, StartSounds sound)
+        public static void Show(System.Windows.Forms.Form owner, string title, string caption, string description, ActionTypes actiontype, StartSounds sound)
         {
-            using (var form = new LucaToysLite.Messages.Hybrid(title, caption, description, actiontype, sound))
+            using (var form = new LucaToysLite.Messages.Hybrid(owner,title, caption, description, actiontype, sound))
             {
                 form.ShowDialog();
             }
         }
-        public static void Show(string title, string caption, string description, IconTypes icontype, StartSounds sound)
+        public static void Show(System.Windows.Forms.Form owner, string title, string caption, string description, IconTypes icontype, StartSounds sound)
         {
-            using (var form = new LucaToysLite.Messages.Hybrid(title, caption, description, icontype, sound))
+            using (var form = new LucaToysLite.Messages.Hybrid(owner,title, caption, description, icontype, sound))
             {
                 form.ShowDialog();
             }
