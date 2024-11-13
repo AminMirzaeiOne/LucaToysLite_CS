@@ -105,6 +105,12 @@
     <Compile Include="Controls\RoundedRadioButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Controls\VerticalMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\VerticalMenu.Designer.cs">
+      <DependentUpon>VerticalMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\WindowToolbar.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -157,6 +163,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\LucaToysLogo.resx">
       <DependentUpon>LucaToysLogo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\VerticalMenu.resx">
+      <DependentUpon>VerticalMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\WindowToolbar.resx">
       <DependentUpon>WindowToolbar.cs</DependentUpon>
