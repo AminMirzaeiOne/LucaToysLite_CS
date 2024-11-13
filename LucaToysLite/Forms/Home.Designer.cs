@@ -223,7 +223,7 @@
             this.windowToolbar1.MoveOption = true;
             this.windowToolbar1.Name = "windowToolbar1";
             this.windowToolbar1.Size = new System.Drawing.Size(1090, 45);
-            this.windowToolbar1.StartupSound = LucaToysLite.Controls.WindowToolbar.StartupSounds.EStartupSound;
+            this.windowToolbar1.StartupSound = LucaToysLite.Controls.WindowToolbar.StartupSounds.None;
             this.windowToolbar1.TabIndex = 0;
             this.windowToolbar1.TitleText = "Window";
             this.windowToolbar1.WindowBorderSize = ((byte)(3));

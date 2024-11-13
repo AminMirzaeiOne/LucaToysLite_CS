@@ -358,12 +358,13 @@ namespace LucaToysLite.Controls
 
         private void exitAppToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            System.Windows.Forms.Application.Exit();
+            LTMessageBox.Show((Form)this.Parent, "Exit App", "Exit Application", "Do you want to exit the application?", LTMessageBox.ActionTypes.Exit, LTMessageBox.StartSounds.GSound);
         }
 
         private void restartAppToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            System.Windows.Forms.Application.Restart();
+            LTMessageBox.Show((Form)this.Parent, "Restart App", "Restart Application", "Do you want to restart the application?", LTMessageBox.ActionTypes.Restart, LTMessageBox.StartSounds.GSound);
+
         }
     }
 }
