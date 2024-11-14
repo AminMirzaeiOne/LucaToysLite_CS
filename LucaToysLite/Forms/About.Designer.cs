@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.roundedRadioButton4 = new LucaToysLite.Controls.RoundedRadioButton();
+            this.roundedRadioButton3 = new LucaToysLite.Controls.RoundedRadioButton();
+            this.roundedRadioButton2 = new LucaToysLite.Controls.RoundedRadioButton();
+            this.roundedRadioButton1 = new LucaToysLite.Controls.RoundedRadioButton();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -55,11 +59,12 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.roundedRadioButton4 = new LucaToysLite.Controls.RoundedRadioButton();
-            this.roundedRadioButton3 = new LucaToysLite.Controls.RoundedRadioButton();
-            this.roundedRadioButton2 = new LucaToysLite.Controls.RoundedRadioButton();
-            this.roundedRadioButton1 = new LucaToysLite.Controls.RoundedRadioButton();
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
+            this.multiPage1 = new LucaToysLite.Controls.MultiPage();
+            this.panel23 = new System.Windows.Forms.Panel();
+            this.panel24 = new System.Windows.Forms.Panel();
+            this.panel25 = new System.Windows.Forms.Panel();
+            this.panel26 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.SuspendLayout();
@@ -83,6 +88,90 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(209, 481);
             this.tableLayoutPanel1.TabIndex = 1;
+            // 
+            // roundedRadioButton4
+            // 
+            this.roundedRadioButton4.Appearance = System.Windows.Forms.Appearance.Button;
+            this.roundedRadioButton4.BorderSize = ((byte)(2));
+            this.roundedRadioButton4.ColorPallet = System.Drawing.Color.Crimson;
+            this.roundedRadioButton4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.roundedRadioButton4.FlatAppearance.BorderSize = 0;
+            this.roundedRadioButton4.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
+            this.roundedRadioButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedRadioButton4.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.roundedRadioButton4.ForeColor = System.Drawing.Color.White;
+            this.roundedRadioButton4.Location = new System.Drawing.Point(5, 365);
+            this.roundedRadioButton4.Margin = new System.Windows.Forms.Padding(5);
+            this.roundedRadioButton4.Name = "roundedRadioButton4";
+            this.roundedRadioButton4.Size = new System.Drawing.Size(199, 111);
+            this.roundedRadioButton4.TabIndex = 3;
+            this.roundedRadioButton4.TabStop = true;
+            this.roundedRadioButton4.Text = "Developer";
+            this.roundedRadioButton4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.roundedRadioButton4.UseVisualStyleBackColor = true;
+            // 
+            // roundedRadioButton3
+            // 
+            this.roundedRadioButton3.Appearance = System.Windows.Forms.Appearance.Button;
+            this.roundedRadioButton3.BorderSize = ((byte)(2));
+            this.roundedRadioButton3.ColorPallet = System.Drawing.Color.Crimson;
+            this.roundedRadioButton3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.roundedRadioButton3.FlatAppearance.BorderSize = 0;
+            this.roundedRadioButton3.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
+            this.roundedRadioButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedRadioButton3.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.roundedRadioButton3.ForeColor = System.Drawing.Color.White;
+            this.roundedRadioButton3.Location = new System.Drawing.Point(5, 245);
+            this.roundedRadioButton3.Margin = new System.Windows.Forms.Padding(5);
+            this.roundedRadioButton3.Name = "roundedRadioButton3";
+            this.roundedRadioButton3.Size = new System.Drawing.Size(199, 110);
+            this.roundedRadioButton3.TabIndex = 2;
+            this.roundedRadioButton3.TabStop = true;
+            this.roundedRadioButton3.Text = "Update";
+            this.roundedRadioButton3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.roundedRadioButton3.UseVisualStyleBackColor = true;
+            // 
+            // roundedRadioButton2
+            // 
+            this.roundedRadioButton2.Appearance = System.Windows.Forms.Appearance.Button;
+            this.roundedRadioButton2.BorderSize = ((byte)(2));
+            this.roundedRadioButton2.ColorPallet = System.Drawing.Color.Crimson;
+            this.roundedRadioButton2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.roundedRadioButton2.FlatAppearance.BorderSize = 0;
+            this.roundedRadioButton2.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
+            this.roundedRadioButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedRadioButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.roundedRadioButton2.ForeColor = System.Drawing.Color.White;
+            this.roundedRadioButton2.Location = new System.Drawing.Point(5, 125);
+            this.roundedRadioButton2.Margin = new System.Windows.Forms.Padding(5);
+            this.roundedRadioButton2.Name = "roundedRadioButton2";
+            this.roundedRadioButton2.Size = new System.Drawing.Size(199, 110);
+            this.roundedRadioButton2.TabIndex = 1;
+            this.roundedRadioButton2.TabStop = true;
+            this.roundedRadioButton2.Text = "License";
+            this.roundedRadioButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.roundedRadioButton2.UseVisualStyleBackColor = true;
+            // 
+            // roundedRadioButton1
+            // 
+            this.roundedRadioButton1.Appearance = System.Windows.Forms.Appearance.Button;
+            this.roundedRadioButton1.BorderSize = ((byte)(2));
+            this.roundedRadioButton1.ColorPallet = System.Drawing.Color.Crimson;
+            this.roundedRadioButton1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.roundedRadioButton1.FlatAppearance.BorderSize = 0;
+            this.roundedRadioButton1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
+            this.roundedRadioButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedRadioButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.roundedRadioButton1.ForeColor = System.Drawing.Color.White;
+            this.roundedRadioButton1.Location = new System.Drawing.Point(5, 5);
+            this.roundedRadioButton1.Margin = new System.Windows.Forms.Padding(5);
+            this.roundedRadioButton1.Name = "roundedRadioButton1";
+            this.roundedRadioButton1.Size = new System.Drawing.Size(199, 110);
+            this.roundedRadioButton1.TabIndex = 0;
+            this.roundedRadioButton1.TabStop = true;
+            this.roundedRadioButton1.Text = "Version";
+            this.roundedRadioButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.roundedRadioButton1.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -294,90 +383,6 @@
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // roundedRadioButton4
-            // 
-            this.roundedRadioButton4.Appearance = System.Windows.Forms.Appearance.Button;
-            this.roundedRadioButton4.BorderSize = ((byte)(2));
-            this.roundedRadioButton4.ColorPallet = System.Drawing.Color.Crimson;
-            this.roundedRadioButton4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.roundedRadioButton4.FlatAppearance.BorderSize = 0;
-            this.roundedRadioButton4.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
-            this.roundedRadioButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedRadioButton4.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
-            this.roundedRadioButton4.ForeColor = System.Drawing.Color.White;
-            this.roundedRadioButton4.Location = new System.Drawing.Point(5, 365);
-            this.roundedRadioButton4.Margin = new System.Windows.Forms.Padding(5);
-            this.roundedRadioButton4.Name = "roundedRadioButton4";
-            this.roundedRadioButton4.Size = new System.Drawing.Size(199, 111);
-            this.roundedRadioButton4.TabIndex = 3;
-            this.roundedRadioButton4.TabStop = true;
-            this.roundedRadioButton4.Text = "Developer";
-            this.roundedRadioButton4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.roundedRadioButton4.UseVisualStyleBackColor = true;
-            // 
-            // roundedRadioButton3
-            // 
-            this.roundedRadioButton3.Appearance = System.Windows.Forms.Appearance.Button;
-            this.roundedRadioButton3.BorderSize = ((byte)(2));
-            this.roundedRadioButton3.ColorPallet = System.Drawing.Color.Crimson;
-            this.roundedRadioButton3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.roundedRadioButton3.FlatAppearance.BorderSize = 0;
-            this.roundedRadioButton3.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
-            this.roundedRadioButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedRadioButton3.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
-            this.roundedRadioButton3.ForeColor = System.Drawing.Color.White;
-            this.roundedRadioButton3.Location = new System.Drawing.Point(5, 245);
-            this.roundedRadioButton3.Margin = new System.Windows.Forms.Padding(5);
-            this.roundedRadioButton3.Name = "roundedRadioButton3";
-            this.roundedRadioButton3.Size = new System.Drawing.Size(199, 110);
-            this.roundedRadioButton3.TabIndex = 2;
-            this.roundedRadioButton3.TabStop = true;
-            this.roundedRadioButton3.Text = "Update";
-            this.roundedRadioButton3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.roundedRadioButton3.UseVisualStyleBackColor = true;
-            // 
-            // roundedRadioButton2
-            // 
-            this.roundedRadioButton2.Appearance = System.Windows.Forms.Appearance.Button;
-            this.roundedRadioButton2.BorderSize = ((byte)(2));
-            this.roundedRadioButton2.ColorPallet = System.Drawing.Color.Crimson;
-            this.roundedRadioButton2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.roundedRadioButton2.FlatAppearance.BorderSize = 0;
-            this.roundedRadioButton2.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
-            this.roundedRadioButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedRadioButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
-            this.roundedRadioButton2.ForeColor = System.Drawing.Color.White;
-            this.roundedRadioButton2.Location = new System.Drawing.Point(5, 125);
-            this.roundedRadioButton2.Margin = new System.Windows.Forms.Padding(5);
-            this.roundedRadioButton2.Name = "roundedRadioButton2";
-            this.roundedRadioButton2.Size = new System.Drawing.Size(199, 110);
-            this.roundedRadioButton2.TabIndex = 1;
-            this.roundedRadioButton2.TabStop = true;
-            this.roundedRadioButton2.Text = "License";
-            this.roundedRadioButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.roundedRadioButton2.UseVisualStyleBackColor = true;
-            // 
-            // roundedRadioButton1
-            // 
-            this.roundedRadioButton1.Appearance = System.Windows.Forms.Appearance.Button;
-            this.roundedRadioButton1.BorderSize = ((byte)(2));
-            this.roundedRadioButton1.ColorPallet = System.Drawing.Color.Crimson;
-            this.roundedRadioButton1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.roundedRadioButton1.FlatAppearance.BorderSize = 0;
-            this.roundedRadioButton1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
-            this.roundedRadioButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedRadioButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
-            this.roundedRadioButton1.ForeColor = System.Drawing.Color.White;
-            this.roundedRadioButton1.Location = new System.Drawing.Point(5, 5);
-            this.roundedRadioButton1.Margin = new System.Windows.Forms.Padding(5);
-            this.roundedRadioButton1.Name = "roundedRadioButton1";
-            this.roundedRadioButton1.Size = new System.Drawing.Size(199, 110);
-            this.roundedRadioButton1.TabIndex = 0;
-            this.roundedRadioButton1.TabStop = true;
-            this.roundedRadioButton1.Text = "Version";
-            this.roundedRadioButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.roundedRadioButton1.UseVisualStyleBackColor = true;
-            // 
             // windowToolbar1
             // 
             this.windowToolbar1.BackColor = System.Drawing.Color.Crimson;
@@ -401,12 +406,54 @@
             this.windowToolbar1.TitleText = "About";
             this.windowToolbar1.WindowBorderSize = ((byte)(3));
             // 
+            // multiPage1
+            // 
+            this.multiPage1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.multiPage1.Location = new System.Drawing.Point(265, 208);
+            this.multiPage1.Name = "multiPage1";
+            this.multiPage1.SelectedIndex = -1;
+            this.multiPage1.Size = new System.Drawing.Size(267, 202);
+            this.multiPage1.TabIndex = 7;
+            // 
+            // panel23
+            // 
+            this.panel23.BackColor = System.Drawing.Color.Red;
+            this.panel23.Location = new System.Drawing.Point(0, 0);
+            this.panel23.Name = "panel23";
+            this.panel23.Size = new System.Drawing.Size(200, 100);
+            this.panel23.TabIndex = 0;
+            // 
+            // panel24
+            // 
+            this.panel24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panel24.Location = new System.Drawing.Point(0, 0);
+            this.panel24.Name = "panel24";
+            this.panel24.Size = new System.Drawing.Size(200, 100);
+            this.panel24.TabIndex = 0;
+            // 
+            // panel25
+            // 
+            this.panel25.BackColor = System.Drawing.Color.Lime;
+            this.panel25.Location = new System.Drawing.Point(0, 0);
+            this.panel25.Name = "panel25";
+            this.panel25.Size = new System.Drawing.Size(200, 100);
+            this.panel25.TabIndex = 0;
+            // 
+            // panel26
+            // 
+            this.panel26.BackColor = System.Drawing.Color.Magenta;
+            this.panel26.Location = new System.Drawing.Point(0, 0);
+            this.panel26.Name = "panel26";
+            this.panel26.Size = new System.Drawing.Size(200, 100);
+            this.panel26.TabIndex = 0;
+            // 
             // About
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(968, 548);
+            this.Controls.Add(this.multiPage1);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tableLayoutPanel1);
@@ -455,5 +502,10 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
+        private Controls.MultiPage multiPage1;
+        private System.Windows.Forms.Panel panel23;
+        private System.Windows.Forms.Panel panel24;
+        private System.Windows.Forms.Panel panel25;
+        private System.Windows.Forms.Panel panel26;
     }
 }
