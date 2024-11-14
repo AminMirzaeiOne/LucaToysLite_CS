@@ -29,16 +29,14 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.multiPage1 = new LucaToysLite.Controls.MultiPage();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
             this.roundedRadioButton4 = new LucaToysLite.Controls.RoundedRadioButton();
             this.roundedRadioButton3 = new LucaToysLite.Controls.RoundedRadioButton();
             this.roundedRadioButton2 = new LucaToysLite.Controls.RoundedRadioButton();
             this.roundedRadioButton1 = new LucaToysLite.Controls.RoundedRadioButton();
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1.SuspendLayout();
-            this.multiPage1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -58,41 +56,16 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(209, 481);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(210, 533);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
-            // multiPage1
+            // label1
             // 
-            this.multiPage1.Controls.Add(this.tabPage1);
-            this.multiPage1.Controls.Add(this.tabPage2);
-            this.multiPage1.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
-            this.multiPage1.ItemSize = new System.Drawing.Size(100, 36);
-            this.multiPage1.Location = new System.Drawing.Point(238, 148);
-            this.multiPage1.Name = "multiPage1";
-            this.multiPage1.SelectedIndex = 0;
-            this.multiPage1.Size = new System.Drawing.Size(704, 383);
-            this.multiPage1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
-            this.multiPage1.TabIndex = 4;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.BackColor = System.Drawing.Color.DimGray;
-            this.tabPage1.Location = new System.Drawing.Point(4, 40);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(696, 339);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.BackColor = System.Drawing.Color.IndianRed;
-            this.tabPage2.Location = new System.Drawing.Point(4, 40);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(696, 339);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
+            this.label1.BackColor = System.Drawing.Color.Crimson;
+            this.label1.Location = new System.Drawing.Point(232, 39);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(2, 559);
+            this.label1.TabIndex = 2;
             // 
             // roundedRadioButton4
             // 
@@ -105,10 +78,10 @@
             this.roundedRadioButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedRadioButton4.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.roundedRadioButton4.ForeColor = System.Drawing.Color.White;
-            this.roundedRadioButton4.Location = new System.Drawing.Point(5, 365);
-            this.roundedRadioButton4.Margin = new System.Windows.Forms.Padding(5);
+            this.roundedRadioButton4.Location = new System.Drawing.Point(6, 405);
+            this.roundedRadioButton4.Margin = new System.Windows.Forms.Padding(6);
             this.roundedRadioButton4.Name = "roundedRadioButton4";
-            this.roundedRadioButton4.Size = new System.Drawing.Size(199, 111);
+            this.roundedRadioButton4.Size = new System.Drawing.Size(198, 122);
             this.roundedRadioButton4.TabIndex = 3;
             this.roundedRadioButton4.TabStop = true;
             this.roundedRadioButton4.Text = "Developer";
@@ -126,10 +99,10 @@
             this.roundedRadioButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedRadioButton3.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.roundedRadioButton3.ForeColor = System.Drawing.Color.White;
-            this.roundedRadioButton3.Location = new System.Drawing.Point(5, 245);
-            this.roundedRadioButton3.Margin = new System.Windows.Forms.Padding(5);
+            this.roundedRadioButton3.Location = new System.Drawing.Point(6, 272);
+            this.roundedRadioButton3.Margin = new System.Windows.Forms.Padding(6);
             this.roundedRadioButton3.Name = "roundedRadioButton3";
-            this.roundedRadioButton3.Size = new System.Drawing.Size(199, 110);
+            this.roundedRadioButton3.Size = new System.Drawing.Size(198, 121);
             this.roundedRadioButton3.TabIndex = 2;
             this.roundedRadioButton3.TabStop = true;
             this.roundedRadioButton3.Text = "Update";
@@ -147,10 +120,10 @@
             this.roundedRadioButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedRadioButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.roundedRadioButton2.ForeColor = System.Drawing.Color.White;
-            this.roundedRadioButton2.Location = new System.Drawing.Point(5, 125);
-            this.roundedRadioButton2.Margin = new System.Windows.Forms.Padding(5);
+            this.roundedRadioButton2.Location = new System.Drawing.Point(6, 139);
+            this.roundedRadioButton2.Margin = new System.Windows.Forms.Padding(6);
             this.roundedRadioButton2.Name = "roundedRadioButton2";
-            this.roundedRadioButton2.Size = new System.Drawing.Size(199, 110);
+            this.roundedRadioButton2.Size = new System.Drawing.Size(198, 121);
             this.roundedRadioButton2.TabIndex = 1;
             this.roundedRadioButton2.TabStop = true;
             this.roundedRadioButton2.Text = "License";
@@ -168,10 +141,10 @@
             this.roundedRadioButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedRadioButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.roundedRadioButton1.ForeColor = System.Drawing.Color.White;
-            this.roundedRadioButton1.Location = new System.Drawing.Point(5, 5);
-            this.roundedRadioButton1.Margin = new System.Windows.Forms.Padding(5);
+            this.roundedRadioButton1.Location = new System.Drawing.Point(6, 6);
+            this.roundedRadioButton1.Margin = new System.Windows.Forms.Padding(6);
             this.roundedRadioButton1.Name = "roundedRadioButton1";
-            this.roundedRadioButton1.Size = new System.Drawing.Size(199, 110);
+            this.roundedRadioButton1.Size = new System.Drawing.Size(198, 121);
             this.roundedRadioButton1.TabIndex = 0;
             this.roundedRadioButton1.TabStop = true;
             this.roundedRadioButton1.Text = "Version";
@@ -195,19 +168,27 @@
             this.windowToolbar1.MinimizeButton = true;
             this.windowToolbar1.MoveOption = true;
             this.windowToolbar1.Name = "windowToolbar1";
-            this.windowToolbar1.Size = new System.Drawing.Size(968, 45);
+            this.windowToolbar1.Size = new System.Drawing.Size(1030, 45);
             this.windowToolbar1.StartupSound = LucaToysLite.Controls.WindowToolbar.StartupSounds.None;
             this.windowToolbar1.TabIndex = 0;
             this.windowToolbar1.TitleText = "About";
             this.windowToolbar1.WindowBorderSize = ((byte)(3));
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(252, 61);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(753, 521);
+            this.panel1.TabIndex = 3;
             // 
             // About
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.ClientSize = new System.Drawing.Size(968, 548);
-            this.Controls.Add(this.multiPage1);
+            this.ClientSize = new System.Drawing.Size(1030, 600);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.windowToolbar1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -215,7 +196,6 @@
             this.Name = "About";
             this.Text = "About";
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.multiPage1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -228,8 +208,7 @@
         private Controls.RoundedRadioButton roundedRadioButton4;
         private Controls.RoundedRadioButton roundedRadioButton3;
         private Controls.RoundedRadioButton roundedRadioButton2;
-        private Controls.MultiPage multiPage1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel1;
     }
 }

@@ -216,7 +216,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Pages\" />
+    <Folder Include="Pages\About\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\LucaToys.png" />
