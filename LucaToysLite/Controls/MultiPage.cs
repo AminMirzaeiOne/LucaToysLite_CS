@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Drawing.Drawing2D;
+using System.ComponentModel;
+using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -9,9 +10,11 @@ using System.Windows.Forms;
 
 namespace LucaToysLite.Controls
 {
-    public class MultiPage : System.Windows.Forms.Control
+    public partial class MultiPage : UserControl
     {
-        private System.Collections.Generic.List<System.Windows.Forms.Panel> pages = new System.Collections.Generic.List<System.Windows.Forms.Panel>();
+        public MultiPage()
+        {
+            InitializeComponent();
+        }
     }
 }
-

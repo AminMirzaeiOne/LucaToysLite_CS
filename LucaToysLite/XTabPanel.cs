@@ -25,6 +25,15 @@ namespace LucaToysLite
         public List<Panel> Pages
         {
             get { return pages; }
+            set
+            {
+                this.pages = value;
+                foreach(Panel p in pages)
+                {
+                    p.Dock = DockStyle.Fill;
+                    this.Controls.Add(p);
+                }
+            }
         }
 
         public int SelectedIndex
