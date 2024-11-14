@@ -154,6 +154,12 @@
     <Compile Include="Messages\Hybrid.Designer.cs">
       <DependentUpon>Hybrid.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pages\About\Version.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\About\Version.Designer.cs">
+      <DependentUpon>Version.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Controls\Item.resx">
@@ -215,9 +221,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Pages\About\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\LucaToys.png" />
   </ItemGroup>
