@@ -11,12 +11,12 @@ namespace LucaToysLite.Controls
 {
     public class MultiPage : System.Windows.Forms.TabControl
     {
-        
+        public System.Drawing.Color Background { get; set; } = Color.Black;
 
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
-            e.Graphics.FillRectangle(new SolidBrush(Color.Black), e.ClipRectangle);
+            e.Graphics.FillRectangle(new SolidBrush(this.Background), e.ClipRectangle);
         }
 
 
