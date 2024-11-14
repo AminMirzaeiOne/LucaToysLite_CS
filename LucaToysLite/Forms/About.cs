@@ -16,15 +16,15 @@ namespace LucaToysLite.Forms
         public About()
         {
             InitializeComponent();
-            this.multiPage1.AddPage(this.panel23);
-            this.multiPage1.AddPage(this.panel24);
-            this.multiPage1.AddPage(this.panel25);
-            this.multiPage1.AddPage(this.panel26);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.multiPage1.SelectedIndex = 2;
+        }
+
+        private void multiPage1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
