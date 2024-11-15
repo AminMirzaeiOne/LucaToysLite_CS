@@ -278,5 +278,14 @@
   <ItemGroup>
     <None Include="Resources\icons8-license-48.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-developer-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-github-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-instagram-old-48.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

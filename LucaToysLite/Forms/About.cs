@@ -18,13 +18,16 @@ namespace LucaToysLite.Forms
             InitializeComponent();
             this.panel1.Controls.Add(this.version);
             this.panel1.Controls.Add(this.license);
+            this.panel1.Controls.Add(this.developer);
             this.version.Dock = DockStyle.Fill;
             this.license.Dock = DockStyle.Fill;
+            this.developer.Dock = DockStyle.Fill;
 
         }
 
         private LucaToysLite.Pages.About.Version version = new Pages.About.Version();
         private LucaToysLite.Pages.About.License license = new Pages.About.License();
+        private LucaToysLite.Pages.About.Developer developer = new Pages.About.Developer();
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -45,6 +48,12 @@ namespace LucaToysLite.Forms
         {
             if (this.roundedRadioButton2.Checked)
                 this.license.BringToFront();
+        }
+
+        private void roundedRadioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.roundedRadioButton3.Checked)
+                this.developer.BringToFront();
         }
     }
 }

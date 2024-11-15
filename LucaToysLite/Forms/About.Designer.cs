@@ -115,6 +115,7 @@
             this.roundedRadioButton3.Text = "Update";
             this.roundedRadioButton3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.roundedRadioButton3.UseVisualStyleBackColor = true;
+            this.roundedRadioButton3.CheckedChanged += new System.EventHandler(this.roundedRadioButton3_CheckedChanged);
             // 
             // roundedRadioButton2
             // 
