@@ -136,6 +136,7 @@
             this.roundedRadioButton2.Text = "License";
             this.roundedRadioButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.roundedRadioButton2.UseVisualStyleBackColor = true;
+            this.roundedRadioButton2.CheckedChanged += new System.EventHandler(this.roundedRadioButton2_CheckedChanged);
             // 
             // roundedRadioButton1
             // 
