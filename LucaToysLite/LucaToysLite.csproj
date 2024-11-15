@@ -296,5 +296,8 @@
   <ItemGroup>
     <None Include="Resources\icons8-instagram-old-48.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-new-year%27s-eve-48%281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
