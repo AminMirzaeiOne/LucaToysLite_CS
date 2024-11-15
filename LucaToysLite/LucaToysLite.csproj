@@ -154,6 +154,12 @@
     <Compile Include="Messages\Hybrid.Designer.cs">
       <DependentUpon>Hybrid.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pages\About\Developer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\About\Developer.Designer.cs">
+      <DependentUpon>Developer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pages\About\License.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -203,6 +209,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Messages\Hybrid.resx">
       <DependentUpon>Hybrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\About\Developer.resx">
+      <DependentUpon>Developer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\About\License.resx">
       <DependentUpon>License.cs</DependentUpon>
