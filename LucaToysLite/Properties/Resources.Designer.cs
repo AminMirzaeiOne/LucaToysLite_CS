@@ -273,6 +273,26 @@ namespace LucaToysLite.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_software_license_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-software-license-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_update_48_1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-update-48(1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_version_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-version-48", resourceCulture);
@@ -293,9 +313,29 @@ namespace LucaToysLite.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_version_481 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-version-481", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_warning_96 {
             get {
                 object obj = ResourceManager.GetObject("icons8-warning-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_working_with_a_laptop_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-working-with-a-laptop-48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

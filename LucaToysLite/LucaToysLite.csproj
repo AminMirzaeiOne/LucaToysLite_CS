@@ -308,5 +308,17 @@
   <ItemGroup>
     <None Include="Resources\icons8-new-year%27s-eve-48%281%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-version-481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-software-license-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-update-48%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-working-with-a-laptop-48.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
