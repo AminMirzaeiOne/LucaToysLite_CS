@@ -94,6 +94,7 @@
             this.roundedRadioButton4.Text = "Developer";
             this.roundedRadioButton4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.roundedRadioButton4.UseVisualStyleBackColor = true;
+            this.roundedRadioButton4.CheckedChanged += new System.EventHandler(this.roundedRadioButton4_CheckedChanged);
             // 
             // roundedRadioButton3
             // 

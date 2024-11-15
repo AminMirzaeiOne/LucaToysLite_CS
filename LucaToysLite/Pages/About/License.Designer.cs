@@ -34,8 +34,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.roundedPanel2 = new LucaToysLite.Controls.RoundedPanel();
             this.label4 = new System.Windows.Forms.Label();
+            this.ltContextMenu1 = new LucaToysLite.Controls.LTContextMenu();
+            this.copyLicenseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.searchLicenseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.roundedPanel1.SuspendLayout();
             this.roundedPanel2.SuspendLayout();
+            this.ltContextMenu1.SuspendLayout();
             this.SuspendLayout();
             // 
             // roundedPanel1
@@ -87,6 +91,7 @@
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.ContextMenuStrip = this.ltContextMenu1;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(20, 25);
@@ -94,6 +99,31 @@
             this.label4.Size = new System.Drawing.Size(652, 292);
             this.label4.TabIndex = 0;
             this.label4.Text = resources.GetString("label4.Text");
+            // 
+            // ltContextMenu1
+            // 
+            this.ltContextMenu1.BorderSize = ((byte)(2));
+            this.ltContextMenu1.ColorPallet = System.Drawing.Color.Crimson;
+            this.ltContextMenu1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.ltContextMenu1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.copyLicenseToolStripMenuItem,
+            this.searchLicenseToolStripMenuItem});
+            this.ltContextMenu1.Name = "ltContextMenu1";
+            this.ltContextMenu1.Size = new System.Drawing.Size(198, 68);
+            // 
+            // copyLicenseToolStripMenuItem
+            // 
+            this.copyLicenseToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.copyLicenseToolStripMenuItem.Name = "copyLicenseToolStripMenuItem";
+            this.copyLicenseToolStripMenuItem.Size = new System.Drawing.Size(197, 32);
+            this.copyLicenseToolStripMenuItem.Text = "Copy License";
+            // 
+            // searchLicenseToolStripMenuItem
+            // 
+            this.searchLicenseToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.searchLicenseToolStripMenuItem.Name = "searchLicenseToolStripMenuItem";
+            this.searchLicenseToolStripMenuItem.Size = new System.Drawing.Size(197, 32);
+            this.searchLicenseToolStripMenuItem.Text = "Search License";
             // 
             // License
             // 
@@ -106,6 +136,7 @@
             this.Size = new System.Drawing.Size(753, 521);
             this.roundedPanel1.ResumeLayout(false);
             this.roundedPanel2.ResumeLayout(false);
+            this.ltContextMenu1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -117,5 +148,8 @@
         private System.Windows.Forms.Label label1;
         private Controls.RoundedPanel roundedPanel2;
         private System.Windows.Forms.Label label4;
+        private Controls.LTContextMenu ltContextMenu1;
+        private System.Windows.Forms.ToolStripMenuItem copyLicenseToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem searchLicenseToolStripMenuItem;
     }
 }
