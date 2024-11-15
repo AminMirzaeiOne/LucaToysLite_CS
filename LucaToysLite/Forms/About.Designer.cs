@@ -30,12 +30,12 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.roundedRadioButton4 = new LucaToysLite.Controls.RoundedRadioButton();
             this.roundedRadioButton3 = new LucaToysLite.Controls.RoundedRadioButton();
             this.roundedRadioButton2 = new LucaToysLite.Controls.RoundedRadioButton();
             this.roundedRadioButton1 = new LucaToysLite.Controls.RoundedRadioButton();
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,6 +66,13 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(2, 559);
             this.label1.TabIndex = 2;
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(252, 61);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(753, 521);
+            this.panel1.TabIndex = 3;
             // 
             // roundedRadioButton4
             // 
@@ -150,6 +157,7 @@
             this.roundedRadioButton1.Text = "Version";
             this.roundedRadioButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.roundedRadioButton1.UseVisualStyleBackColor = true;
+            this.roundedRadioButton1.CheckedChanged += new System.EventHandler(this.roundedRadioButton1_CheckedChanged);
             // 
             // windowToolbar1
             // 
@@ -173,13 +181,6 @@
             this.windowToolbar1.TabIndex = 0;
             this.windowToolbar1.TitleText = "About";
             this.windowToolbar1.WindowBorderSize = ((byte)(3));
-            // 
-            // panel1
-            // 
-            this.panel1.Location = new System.Drawing.Point(252, 61);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(753, 521);
-            this.panel1.TabIndex = 3;
             // 
             // About
             // 

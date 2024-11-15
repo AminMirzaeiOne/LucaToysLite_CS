@@ -154,6 +154,12 @@
     <Compile Include="Messages\Hybrid.Designer.cs">
       <DependentUpon>Hybrid.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pages\About\License.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\About\License.Designer.cs">
+      <DependentUpon>License.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pages\About\Version.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -198,6 +204,12 @@
     <EmbeddedResource Include="Messages\Hybrid.resx">
       <DependentUpon>Hybrid.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pages\About\License.resx">
+      <DependentUpon>License.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\About\Version.resx">
+      <DependentUpon>Version.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -221,7 +233,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\icons8-version-48 %281%29.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\LucaToys.png" />
   </ItemGroup>
@@ -245,6 +259,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-close-window-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-version-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-brick-wall-48.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
