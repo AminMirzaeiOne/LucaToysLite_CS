@@ -37,7 +37,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Appearance";
-            this.Size = new System.Drawing.Size(247, 210);
+            this.Size = new System.Drawing.Size(753, 521);
             this.ResumeLayout(false);
 
         }
