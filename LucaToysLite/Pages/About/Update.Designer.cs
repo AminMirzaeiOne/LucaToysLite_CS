@@ -36,8 +36,12 @@
             this.roundedButton1 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton2 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton3 = new LucaToysLite.Controls.RoundedButton();
+            this.ltContextMenu1 = new LucaToysLite.Controls.LTContextMenu();
+            this.copyDescriptionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.seachDescriptionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.roundedPanel1.SuspendLayout();
             this.roundedPanel2.SuspendLayout();
+            this.ltContextMenu1.SuspendLayout();
             this.SuspendLayout();
             // 
             // roundedPanel1
@@ -89,6 +93,7 @@
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.ContextMenuStrip = this.ltContextMenu1;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(20, 25);
@@ -151,6 +156,31 @@
             this.roundedButton3.Text = "No Update";
             this.roundedButton3.UseVisualStyleBackColor = true;
             // 
+            // ltContextMenu1
+            // 
+            this.ltContextMenu1.BorderSize = ((byte)(2));
+            this.ltContextMenu1.ColorPallet = System.Drawing.Color.Crimson;
+            this.ltContextMenu1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.ltContextMenu1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.copyDescriptionToolStripMenuItem,
+            this.seachDescriptionToolStripMenuItem});
+            this.ltContextMenu1.Name = "ltContextMenu1";
+            this.ltContextMenu1.Size = new System.Drawing.Size(226, 68);
+            // 
+            // copyDescriptionToolStripMenuItem
+            // 
+            this.copyDescriptionToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.copyDescriptionToolStripMenuItem.Name = "copyDescriptionToolStripMenuItem";
+            this.copyDescriptionToolStripMenuItem.Size = new System.Drawing.Size(225, 32);
+            this.copyDescriptionToolStripMenuItem.Text = "Copy Description";
+            // 
+            // seachDescriptionToolStripMenuItem
+            // 
+            this.seachDescriptionToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.seachDescriptionToolStripMenuItem.Name = "seachDescriptionToolStripMenuItem";
+            this.seachDescriptionToolStripMenuItem.Size = new System.Drawing.Size(225, 32);
+            this.seachDescriptionToolStripMenuItem.Text = "Seach Description";
+            // 
             // Update
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
@@ -165,6 +195,7 @@
             this.Size = new System.Drawing.Size(753, 521);
             this.roundedPanel1.ResumeLayout(false);
             this.roundedPanel2.ResumeLayout(false);
+            this.ltContextMenu1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -179,5 +210,8 @@
         private Controls.RoundedButton roundedButton1;
         private Controls.RoundedButton roundedButton2;
         private Controls.RoundedButton roundedButton3;
+        private Controls.LTContextMenu ltContextMenu1;
+        private System.Windows.Forms.ToolStripMenuItem copyDescriptionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem seachDescriptionToolStripMenuItem;
     }
 }
