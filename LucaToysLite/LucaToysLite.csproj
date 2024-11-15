@@ -166,6 +166,12 @@
     <Compile Include="Pages\About\License.Designer.cs">
       <DependentUpon>License.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pages\About\Update.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\About\Update.Designer.cs">
+      <DependentUpon>Update.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pages\About\Version.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -215,6 +221,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\About\License.resx">
       <DependentUpon>License.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\About\Update.resx">
+      <DependentUpon>Update.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\About\Version.resx">
       <DependentUpon>Version.cs</DependentUpon>
