@@ -90,7 +90,6 @@
             this.roundedRadioButton4.Name = "roundedRadioButton4";
             this.roundedRadioButton4.Size = new System.Drawing.Size(198, 122);
             this.roundedRadioButton4.TabIndex = 3;
-            this.roundedRadioButton4.TabStop = true;
             this.roundedRadioButton4.Text = "Developer";
             this.roundedRadioButton4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.roundedRadioButton4.UseVisualStyleBackColor = true;
@@ -112,7 +111,6 @@
             this.roundedRadioButton3.Name = "roundedRadioButton3";
             this.roundedRadioButton3.Size = new System.Drawing.Size(198, 121);
             this.roundedRadioButton3.TabIndex = 2;
-            this.roundedRadioButton3.TabStop = true;
             this.roundedRadioButton3.Text = "Update";
             this.roundedRadioButton3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.roundedRadioButton3.UseVisualStyleBackColor = true;
@@ -134,7 +132,6 @@
             this.roundedRadioButton2.Name = "roundedRadioButton2";
             this.roundedRadioButton2.Size = new System.Drawing.Size(198, 121);
             this.roundedRadioButton2.TabIndex = 1;
-            this.roundedRadioButton2.TabStop = true;
             this.roundedRadioButton2.Text = "License";
             this.roundedRadioButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.roundedRadioButton2.UseVisualStyleBackColor = true;
@@ -144,6 +141,7 @@
             // 
             this.roundedRadioButton1.Appearance = System.Windows.Forms.Appearance.Button;
             this.roundedRadioButton1.BorderSize = ((byte)(2));
+            this.roundedRadioButton1.Checked = true;
             this.roundedRadioButton1.ColorPallet = System.Drawing.Color.Crimson;
             this.roundedRadioButton1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.roundedRadioButton1.FlatAppearance.BorderSize = 0;
@@ -175,7 +173,7 @@
             this.windowToolbar1.IconButtonSybmol = "";
             this.windowToolbar1.IconMenu = true;
             this.windowToolbar1.Location = new System.Drawing.Point(0, 0);
-            this.windowToolbar1.MaximizeButton = true;
+            this.windowToolbar1.MaximizeButton = false;
             this.windowToolbar1.MinimizeButton = true;
             this.windowToolbar1.MoveOption = true;
             this.windowToolbar1.Name = "windowToolbar1";
