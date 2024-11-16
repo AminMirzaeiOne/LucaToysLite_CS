@@ -341,7 +341,9 @@
   <ItemGroup>
     <None Include="Resources\icons8-comments-48.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\icons8-change-theme-48%281%29.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-xlarge-icons-48%281%29.png" />
   </ItemGroup>
