@@ -55,5 +55,20 @@ namespace LucaToysLite.Controls
             }
         }
 
+        public System.Boolean SolidColor
+        {
+            get { return this.solidColor; }
+            set
+            {
+                this.solidColor = value;
+                this.Invalidate();
+            }
+        }
+
+        public LTSwitchButton()
+        {
+            this.MinimumSize = new Size(45, 23);
+        }
+
     }
 }
