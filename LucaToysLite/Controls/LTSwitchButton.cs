@@ -7,13 +7,23 @@ using System.Threading.Tasks;
 
 namespace LucaToysLite.Controls
 {
-    public class LTSwitchButton 
+    public class LTSwitchButton : System.Windows.Forms.CheckBox
     {
         private System.Drawing.Color onBackColor = Color.Crimson;
         private System.Drawing.Color onToggleColor = Color.Linen;
         private System.Drawing.Color offBackColor = Color.Gray;
         private System.Drawing.Color offToggleColor = Color.Gainsboro;
         private System.Boolean solidColor = true;
+
+        public System.Drawing.Color OnBackColor
+        {
+            get { return this.onBackColor; }
+            set
+            {
+                this.onBackColor = value;
+                this.Invalidate();
+            }
+        }
 
     }
 }
