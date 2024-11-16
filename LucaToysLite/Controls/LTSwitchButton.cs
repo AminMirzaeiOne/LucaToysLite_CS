@@ -25,5 +25,35 @@ namespace LucaToysLite.Controls
             }
         }
 
+        public System.Drawing.Color OnToggleColor
+        {
+            get { return this.onToggleColor; }
+            set
+            {
+                this.onToggleColor = value;
+                this.Invalidate();
+            }
+        }
+
+        public System.Drawing.Color OffBackColor
+        {
+            get { return this.offBackColor; }
+            set
+            {
+                this.offBackColor = value;
+                this.Invalidate();
+            }
+        }
+
+        public System.Drawing.Color OffToggleColor
+        {
+            get { return this.offToggleColor; }
+            set
+            {
+                this.offToggleColor = value;
+                this.Invalidate();
+            }
+        }
+
     }
 }
