@@ -28,12 +28,82 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.roundedPanel2 = new LucaToysLite.Controls.RoundedPanel();
+            this.ltComboBox2 = new LucaToysLite.Controls.LTComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.roundedPanel1 = new LucaToysLite.Controls.RoundedPanel();
             this.ltComboBox1 = new LucaToysLite.Controls.LTComboBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.roundedPanel3 = new LucaToysLite.Controls.RoundedPanel();
+            this.ltComboBox3 = new LucaToysLite.Controls.LTComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.roundedPanel2.SuspendLayout();
             this.roundedPanel1.SuspendLayout();
+            this.roundedPanel3.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // roundedPanel2
+            // 
+            this.roundedPanel2.BackColor = System.Drawing.Color.Crimson;
+            this.roundedPanel2.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedPanel2.BorderSize = ((byte)(0));
+            this.roundedPanel2.Controls.Add(this.ltComboBox2);
+            this.roundedPanel2.Controls.Add(this.label3);
+            this.roundedPanel2.Controls.Add(this.label4);
+            this.roundedPanel2.Location = new System.Drawing.Point(25, 195);
+            this.roundedPanel2.Name = "roundedPanel2";
+            this.roundedPanel2.Size = new System.Drawing.Size(696, 128);
+            this.roundedPanel2.TabIndex = 1;
+            // 
+            // ltComboBox2
+            // 
+            this.ltComboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.ltComboBox2.BorderRadius = ((byte)(20));
+            this.ltComboBox2.BorderSize = ((byte)(0));
+            this.ltComboBox2.ColorPallet = System.Drawing.Color.Crimson;
+            this.ltComboBox2.EnableBorder = true;
+            this.ltComboBox2.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
+            this.ltComboBox2.FlatAppearance.BorderSize = 0;
+            this.ltComboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ltComboBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ltComboBox2.ForeColor = System.Drawing.Color.White;
+            this.ltComboBox2.Items = new string[] {
+        "Blue",
+        "Red",
+        "Gold",
+        "Green",
+        "Tomato",
+        "Crimson",
+        "Royal Blue",
+        "Custom Color"};
+            this.ltComboBox2.ItemsBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.ltComboBox2.ItemsCheckedColor = System.Drawing.Color.Crimson;
+            this.ltComboBox2.ItemsFont = new System.Drawing.Font("Segoe UI Semibold", 9F);
+            this.ltComboBox2.ItemsForeColor = System.Drawing.Color.White;
+            this.ltComboBox2.ItemsHeight = ((byte)(40));
+            this.ltComboBox2.Location = new System.Drawing.Point(475, 41);
+            this.ltComboBox2.Name = "ltComboBox2";
+            this.ltComboBox2.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.ltComboBox2.Size = new System.Drawing.Size(200, 50);
+            this.ltComboBox2.TabIndex = 1;
+            this.ltComboBox2.Text = "Select Color";
+            this.ltComboBox2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ltComboBox2.TopDirection = false;
+            this.ltComboBox2.UseVisualStyleBackColor = false;
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(112, 26);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(258, 79);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Color Pallet : Crimson";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // roundedPanel1
             // 
@@ -90,6 +160,82 @@
             this.label2.Text = "Theme : Dark";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // roundedPanel3
+            // 
+            this.roundedPanel3.BackColor = System.Drawing.Color.Crimson;
+            this.roundedPanel3.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedPanel3.BorderSize = ((byte)(0));
+            this.roundedPanel3.Controls.Add(this.ltComboBox3);
+            this.roundedPanel3.Controls.Add(this.label5);
+            this.roundedPanel3.Controls.Add(this.label6);
+            this.roundedPanel3.Location = new System.Drawing.Point(25, 356);
+            this.roundedPanel3.Name = "roundedPanel3";
+            this.roundedPanel3.Size = new System.Drawing.Size(696, 128);
+            this.roundedPanel3.TabIndex = 1;
+            // 
+            // ltComboBox3
+            // 
+            this.ltComboBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.ltComboBox3.BorderRadius = ((byte)(20));
+            this.ltComboBox3.BorderSize = ((byte)(0));
+            this.ltComboBox3.ColorPallet = System.Drawing.Color.Crimson;
+            this.ltComboBox3.EnableBorder = true;
+            this.ltComboBox3.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
+            this.ltComboBox3.FlatAppearance.BorderSize = 0;
+            this.ltComboBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ltComboBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ltComboBox3.ForeColor = System.Drawing.Color.White;
+            this.ltComboBox3.Items = new string[] {
+        "Segoe UI",
+        "Consolas",
+        "Leelawadee UI",
+        "Microsoft Himalaya"};
+            this.ltComboBox3.ItemsBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.ltComboBox3.ItemsCheckedColor = System.Drawing.Color.Crimson;
+            this.ltComboBox3.ItemsFont = new System.Drawing.Font("Segoe UI Semibold", 9F);
+            this.ltComboBox3.ItemsForeColor = System.Drawing.Color.White;
+            this.ltComboBox3.ItemsHeight = ((byte)(40));
+            this.ltComboBox3.Location = new System.Drawing.Point(475, 41);
+            this.ltComboBox3.Name = "ltComboBox3";
+            this.ltComboBox3.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.ltComboBox3.Size = new System.Drawing.Size(200, 50);
+            this.ltComboBox3.TabIndex = 1;
+            this.ltComboBox3.Text = "Select Font";
+            this.ltComboBox3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ltComboBox3.TopDirection = false;
+            this.ltComboBox3.UseVisualStyleBackColor = false;
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(112, 26);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(258, 79);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Font Family : Segoe UI";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label6
+            // 
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Image = global::LucaToysLite.Properties.Resources.icons8_text_box_48_1_;
+            this.label6.Location = new System.Drawing.Point(20, 25);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(92, 79);
+            this.label6.TabIndex = 0;
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label4
+            // 
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Image = global::LucaToysLite.Properties.Resources.icons8_theme_48;
+            this.label4.Location = new System.Drawing.Point(20, 25);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(92, 79);
+            this.label4.TabIndex = 0;
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // label1
             // 
             this.label1.ForeColor = System.Drawing.Color.White;
@@ -105,11 +251,15 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.Controls.Add(this.roundedPanel3);
+            this.Controls.Add(this.roundedPanel2);
             this.Controls.Add(this.roundedPanel1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Appearance";
             this.Size = new System.Drawing.Size(753, 521);
+            this.roundedPanel2.ResumeLayout(false);
             this.roundedPanel1.ResumeLayout(false);
+            this.roundedPanel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -120,5 +270,13 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private Controls.LTComboBox ltComboBox1;
+        private Controls.RoundedPanel roundedPanel2;
+        private Controls.LTComboBox ltComboBox2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private Controls.RoundedPanel roundedPanel3;
+        private Controls.LTComboBox ltComboBox3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }

@@ -347,5 +347,11 @@
   <ItemGroup>
     <None Include="Resources\icons8-xlarge-icons-48%281%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-theme-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-text-box-48%281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
