@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
@@ -12,10 +13,30 @@ namespace LucaToysLite.Controls
     public class LTSwitchButton : System.Windows.Forms.CheckBox
     {
         private System.Drawing.Color onBackColor = Color.Crimson;
-        private System.Drawing.Color onToggleColor = Color.Linen;
+        private System.Drawing.Color onToggleColor = Color.White;
         private System.Drawing.Color offBackColor = Color.Gray;
         private System.Drawing.Color offToggleColor = Color.Gainsboro;
-        private System.Boolean solidColor = true;
+        private System.Boolean solidColor = false;
+
+
+        protected override void OnCheckedChanged(EventArgs e)
+        {
+            base.OnCheckedChanged(e);
+            this.SolidColor = this.Checked;
+        }
+
+        public System.Byte Radius { get; set; } = 40;
+
+        public System.Drawing.Color ColorPallet
+        {
+            get { return this.onBackColor; }
+            set
+            {
+                this.OnBackColor = value;
+                this.OffBackColor = value;
+            }
+        }
+
 
         public System.Drawing.Color OnBackColor
         {
@@ -69,42 +90,97 @@ namespace LucaToysLite.Controls
 
         public LTSwitchButton()
         {
-            this.MinimumSize = new Size(45, 23);
+            //this.MinimumSize = new Size(45, 25);
         }
 
-        private GraphicsPath GetFigurePath()
-        {
-            int arcSize = this.Height - 1;
-            System.Drawing.Rectangle leftArc = new Rectangle(0, 0, arcSize, arcSize);
-            System.Drawing.Rectangle rightArc = new Rectangle(this.Width - arcSize - 2, 0, arcSize, arcSize);
-            GraphicsPath path = new GraphicsPath();
+        [System.Runtime.InteropServices.DllImport("gdi32.dll")]
+        private static extern IntPtr CreateRoundRectRgn(int nLeftRect, int nTopRect,
+            int nRightRect, int nBottomRect, int nWidthEllipse, int nHeightEllipse);
 
+        private GraphicsPath GetRoundRectagle(Rectangle bounds, int radius)
+        {
+            float r = radius;
+            GraphicsPath path = new GraphicsPath();
             path.StartFigure();
-            path.AddArc(leftArc, 90, 180);
-            path.AddArc(rightArc, 270, 180);
+            path.AddArc(bounds.Left, bounds.Top, r, r, 180, 90);
+            path.AddArc(bounds.Right - r, bounds.Top, r, r, 270, 90);
+            path.AddArc(bounds.Right - r, bounds.Bottom - r, r, r, 0, 90);
+            path.AddArc(bounds.Left, bounds.Bottom - r, r, r, 90, 90);
+            path.CloseFigure();
             return path;
         }
 
+        private void RecreateRegion()
+        {
+            var bounds = ClientRectangle;
+            this.Region = Region.FromHrgn(CreateRoundRectRgn(bounds.Left, bounds.Top,
+                bounds.Right, bounds.Bottom, Radius, this.Radius));
+            this.Invalidate();
+        }
+
+        protected override void OnSizeChanged(EventArgs e)
+        {
+            base.OnSizeChanged(e);
+            this.RecreateRegion();
+        }
+
+        GraphicsPath GetRoundPath(RectangleF Rect, int radius)
+        {
+            float r2 = radius / 2f;
+            GraphicsPath GraphPath = new GraphicsPath();
+
+            GraphPath.AddArc(Rect.X, Rect.Y, radius, radius, 180, 90);
+            GraphPath.AddLine(Rect.X + r2, Rect.Y, Rect.Width - r2, Rect.Y);
+            GraphPath.AddArc(Rect.X + Rect.Width - radius, Rect.Y, radius, radius, 270, 90);
+            GraphPath.AddLine(Rect.Width, Rect.Y + r2, Rect.Width, Rect.Height - r2);
+            GraphPath.AddArc(Rect.X + Rect.Width - radius,
+                             Rect.Y + Rect.Height - radius, radius, radius, 0, 90);
+            GraphPath.AddLine(Rect.Width - r2, Rect.Height, Rect.X + r2, Rect.Height);
+            GraphPath.AddArc(Rect.X, Rect.Y + Rect.Height - radius, radius, radius, 90, 90);
+            GraphPath.AddLine(Rect.X, Rect.Height - r2, Rect.X, Rect.Y + r2);
+            GraphPath.CloseFigure();
+            return GraphPath;
+        }
+
+
         protected override void OnPaint(PaintEventArgs pevent)
         {
-            int togglesize = this.Height - 5;
-            pevent.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
+            
+            //pevent.Graphics.SmoothingMode = SmoothingMode.HighQuality;
+            //RectangleF Rect = new RectangleF(0, 0, this.Width, this.Height);
+            //using (GraphicsPath GraphPath = GetRoundPath(Rect, this.Radius))
+            //{
+            //    this.Region = new Region(GraphPath);
+            //    using (Pen pen = new Pen(this.BorderColor, this.BorderSize))
+            //    {
+            //        pen.Alignment = PenAlignment.Inset;
+            //        pevent.Graphics.DrawPath(pen, GraphPath);
+            //    }
+            //}
+
+            int togglesize = this.Height - 10;
+            pevent.Graphics.SmoothingMode = SmoothingMode.HighQuality;
             pevent.Graphics.Clear(this.Parent.BackColor);
+            RectangleF Rect = new RectangleF(0, 0, this.Width, this.Height);
+            GraphicsPath GraphPath = GetRoundPath(Rect, this.Radius);
+            this.Region = new Region(GraphPath);
             if (this.Checked)
             {
                 if (this.SolidColor)
-                    pevent.Graphics.FillPath(new SolidBrush(this.OnBackColor), this.GetFigurePath());
+                {
+                    pevent.Graphics.FillPath(new SolidBrush(this.OnBackColor), GraphPath);
+                }
                 else
-                    pevent.Graphics.DrawPath(new Pen(this.OnBackColor, 2), this.GetFigurePath());
-                pevent.Graphics.FillEllipse(new SolidBrush(this.OnToggleColor), new Rectangle(this.Width - this.Height + 1, 2, togglesize, togglesize));
+                    pevent.Graphics.DrawPath(new Pen(this.OnBackColor, 3), GraphPath);
+                pevent.Graphics.FillEllipse(new SolidBrush(this.OnToggleColor), new Rectangle(this.Width - this.Height + 1, 5, togglesize, togglesize));
             }
             else
             {
                 if (this.SolidColor)
-                    pevent.Graphics.FillPath(new SolidBrush(this.OffBackColor), this.GetFigurePath());
+                    pevent.Graphics.FillPath(new SolidBrush(this.OffBackColor), GraphPath);
                 else
-                    pevent.Graphics.DrawPath(new Pen(this.OffBackColor, 2), this.GetFigurePath());
-                pevent.Graphics.FillEllipse(new SolidBrush(this.OffToggleColor), new Rectangle(2, 2, togglesize, togglesize));
+                    pevent.Graphics.DrawPath(new Pen(this.OffBackColor, 3), GraphPath);
+                pevent.Graphics.FillEllipse(new SolidBrush(this.OffToggleColor), new Rectangle(4, 5, togglesize, togglesize));
             }
 
         }
