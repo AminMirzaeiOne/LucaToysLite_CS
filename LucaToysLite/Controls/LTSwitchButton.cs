@@ -146,17 +146,6 @@ namespace LucaToysLite.Controls
         protected override void OnPaint(PaintEventArgs pevent)
         {
             
-            //pevent.Graphics.SmoothingMode = SmoothingMode.HighQuality;
-            //RectangleF Rect = new RectangleF(0, 0, this.Width, this.Height);
-            //using (GraphicsPath GraphPath = GetRoundPath(Rect, this.Radius))
-            //{
-            //    this.Region = new Region(GraphPath);
-            //    using (Pen pen = new Pen(this.BorderColor, this.BorderSize))
-            //    {
-            //        pen.Alignment = PenAlignment.Inset;
-            //        pevent.Graphics.DrawPath(pen, GraphPath);
-            //    }
-            //}
 
             int togglesize = this.Height - 10;
             pevent.Graphics.SmoothingMode = SmoothingMode.HighQuality;
@@ -171,7 +160,7 @@ namespace LucaToysLite.Controls
                     pevent.Graphics.FillPath(new SolidBrush(this.OnBackColor), GraphPath);
                 }
                 else
-                    pevent.Graphics.DrawPath(new Pen(this.OnBackColor, 3), GraphPath);
+                    pevent.Graphics.DrawPath(new Pen(this.OnBackColor, 4), GraphPath);
                 pevent.Graphics.FillEllipse(new SolidBrush(this.OnToggleColor), new Rectangle(this.Width - this.Height + 1, 5, togglesize, togglesize));
             }
             else
@@ -179,7 +168,7 @@ namespace LucaToysLite.Controls
                 if (this.SolidColor)
                     pevent.Graphics.FillPath(new SolidBrush(this.OffBackColor), GraphPath);
                 else
-                    pevent.Graphics.DrawPath(new Pen(this.OffBackColor, 3), GraphPath);
+                    pevent.Graphics.DrawPath(new Pen(this.OffBackColor, 4), GraphPath);
                 pevent.Graphics.FillEllipse(new SolidBrush(this.OffToggleColor), new Rectangle(4, 5, togglesize, togglesize));
             }
 

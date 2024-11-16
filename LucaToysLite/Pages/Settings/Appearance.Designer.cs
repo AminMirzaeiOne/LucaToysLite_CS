@@ -48,6 +48,9 @@
             this.ltComboBox1 = new LucaToysLite.Controls.LTComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.ltSwitchButton4 = new LucaToysLite.Controls.LTSwitchButton();
+            this.ltSwitchButton5 = new LucaToysLite.Controls.LTSwitchButton();
+            this.ltSwitchButton6 = new LucaToysLite.Controls.LTSwitchButton();
             this.roundedPanel4.SuspendLayout();
             this.roundedPanel3.SuspendLayout();
             this.roundedPanel2.SuspendLayout();
@@ -65,15 +68,15 @@
             // ltSwitchButton2
             // 
             this.ltSwitchButton2.Appearance = System.Windows.Forms.Appearance.Button;
-            this.ltSwitchButton2.ColorPallet = System.Drawing.Color.MediumOrchid;
+            this.ltSwitchButton2.ColorPallet = System.Drawing.Color.MediumSeaGreen;
             this.ltSwitchButton2.Location = new System.Drawing.Point(527, 247);
             this.ltSwitchButton2.MinimumSize = new System.Drawing.Size(45, 23);
             this.ltSwitchButton2.Name = "ltSwitchButton2";
-            this.ltSwitchButton2.OffBackColor = System.Drawing.Color.MediumOrchid;
+            this.ltSwitchButton2.OffBackColor = System.Drawing.Color.MediumSeaGreen;
             this.ltSwitchButton2.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.ltSwitchButton2.OnBackColor = System.Drawing.Color.MediumOrchid;
+            this.ltSwitchButton2.OnBackColor = System.Drawing.Color.MediumSeaGreen;
             this.ltSwitchButton2.OnToggleColor = System.Drawing.Color.Linen;
-            this.ltSwitchButton2.Radius = ((byte)(30));
+            this.ltSwitchButton2.Radius = ((byte)(40));
             this.ltSwitchButton2.Size = new System.Drawing.Size(151, 44);
             this.ltSwitchButton2.SolidColor = false;
             this.ltSwitchButton2.TabIndex = 2;
@@ -383,11 +386,68 @@
             this.label1.TabIndex = 0;
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // ltSwitchButton4
+            // 
+            this.ltSwitchButton4.Appearance = System.Windows.Forms.Appearance.Button;
+            this.ltSwitchButton4.ColorPallet = System.Drawing.Color.MediumSlateBlue;
+            this.ltSwitchButton4.Location = new System.Drawing.Point(287, 286);
+            this.ltSwitchButton4.MinimumSize = new System.Drawing.Size(45, 23);
+            this.ltSwitchButton4.Name = "ltSwitchButton4";
+            this.ltSwitchButton4.OffBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.ltSwitchButton4.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.ltSwitchButton4.OnBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.ltSwitchButton4.OnToggleColor = System.Drawing.Color.Linen;
+            this.ltSwitchButton4.Radius = ((byte)(30));
+            this.ltSwitchButton4.Size = new System.Drawing.Size(76, 35);
+            this.ltSwitchButton4.SolidColor = false;
+            this.ltSwitchButton4.TabIndex = 2;
+            this.ltSwitchButton4.Text = "ltSwitchButton1";
+            this.ltSwitchButton4.UseVisualStyleBackColor = true;
+            // 
+            // ltSwitchButton5
+            // 
+            this.ltSwitchButton5.Appearance = System.Windows.Forms.Appearance.Button;
+            this.ltSwitchButton5.ColorPallet = System.Drawing.Color.MediumSlateBlue;
+            this.ltSwitchButton5.Location = new System.Drawing.Point(287, 327);
+            this.ltSwitchButton5.MinimumSize = new System.Drawing.Size(45, 23);
+            this.ltSwitchButton5.Name = "ltSwitchButton5";
+            this.ltSwitchButton5.OffBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.ltSwitchButton5.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.ltSwitchButton5.OnBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.ltSwitchButton5.OnToggleColor = System.Drawing.Color.Linen;
+            this.ltSwitchButton5.Radius = ((byte)(30));
+            this.ltSwitchButton5.Size = new System.Drawing.Size(76, 35);
+            this.ltSwitchButton5.SolidColor = false;
+            this.ltSwitchButton5.TabIndex = 2;
+            this.ltSwitchButton5.Text = "ltSwitchButton1";
+            this.ltSwitchButton5.UseVisualStyleBackColor = true;
+            // 
+            // ltSwitchButton6
+            // 
+            this.ltSwitchButton6.Appearance = System.Windows.Forms.Appearance.Button;
+            this.ltSwitchButton6.ColorPallet = System.Drawing.Color.MediumSlateBlue;
+            this.ltSwitchButton6.Location = new System.Drawing.Point(287, 368);
+            this.ltSwitchButton6.MinimumSize = new System.Drawing.Size(45, 23);
+            this.ltSwitchButton6.Name = "ltSwitchButton6";
+            this.ltSwitchButton6.OffBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.ltSwitchButton6.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.ltSwitchButton6.OnBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.ltSwitchButton6.OnToggleColor = System.Drawing.Color.Linen;
+            this.ltSwitchButton6.Radius = ((byte)(30));
+            this.ltSwitchButton6.Size = new System.Drawing.Size(76, 35);
+            this.ltSwitchButton6.SolidColor = false;
+            this.ltSwitchButton6.TabIndex = 2;
+            this.ltSwitchButton6.Text = "ltSwitchButton1";
+            this.ltSwitchButton6.UseVisualStyleBackColor = true;
+            // 
             // Appearance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.Controls.Add(this.ltSwitchButton6);
+            this.Controls.Add(this.ltSwitchButton5);
+            this.Controls.Add(this.ltSwitchButton4);
             this.Controls.Add(this.ltSwitchButton2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.ltSwitchButton3);
@@ -429,5 +489,8 @@
         private Controls.LTSwitchButton ltSwitchButton2;
         private Controls.LTSwitchButton ltSwitchButton3;
         private System.Windows.Forms.Panel panel1;
+        private Controls.LTSwitchButton ltSwitchButton4;
+        private Controls.LTSwitchButton ltSwitchButton5;
+        private Controls.LTSwitchButton ltSwitchButton6;
     }
 }
