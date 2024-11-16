@@ -5,6 +5,7 @@ using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace LucaToysLite.Controls
 {
@@ -75,13 +76,37 @@ namespace LucaToysLite.Controls
         {
             int arcSize = this.Height - 1;
             System.Drawing.Rectangle leftArc = new Rectangle(0, 0, arcSize, arcSize);
-            System.Drawing.Rectangle rightArc = new Rectangle(this.Width-arcSize-2, 0, arcSize, arcSize);
+            System.Drawing.Rectangle rightArc = new Rectangle(this.Width - arcSize - 2, 0, arcSize, arcSize);
             GraphicsPath path = new GraphicsPath();
 
             path.StartFigure();
             path.AddArc(leftArc, 90, 180);
             path.AddArc(rightArc, 270, 180);
             return path;
+        }
+
+        protected override void OnPaint(PaintEventArgs pevent)
+        {
+            int togglesize = this.Height - 5;
+            pevent.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
+            pevent.Graphics.Clear(this.Parent.BackColor);
+            if (this.Checked)
+            {
+                if (this.SolidColor)
+                    pevent.Graphics.FillPath(new SolidBrush(this.OnBackColor), this.GetFigurePath());
+                else
+                    pevent.Graphics.DrawPath(new Pen(this.OnBackColor, 2), this.GetFigurePath());
+                pevent.Graphics.FillEllipse(new SolidBrush(this.OnToggleColor), new Rectangle(this.Width - this.Height + 1, 2, togglesize, togglesize));
+            }
+            else
+            {
+                if (this.SolidColor)
+                    pevent.Graphics.FillPath(new SolidBrush(this.OffBackColor), this.GetFigurePath());
+                else
+                    pevent.Graphics.DrawPath(new Pen(this.OffBackColor, 2), this.GetFigurePath());
+                pevent.Graphics.FillEllipse(new SolidBrush(this.OffToggleColor), new Rectangle(2, 2, togglesize, togglesize));
+            }
+
         }
 
 
