@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace LucaToysLite.Controls
 {
-    public class RoundedRadioButton:System.Windows.Forms.RadioButton
+    public class RoundedRadioButton : System.Windows.Forms.RadioButton
     {
         public RoundedRadioButton()
         {
@@ -30,6 +30,8 @@ namespace LucaToysLite.Controls
                 this.RecreateRegion();
             }
         }
+
+        public System.Boolean EnableBorder { get; set; } = true;
 
         public System.Byte BorderSize { get; set; } = 2;
         public System.Drawing.Color ColorPallet
@@ -98,7 +100,8 @@ namespace LucaToysLite.Controls
                 using (Pen pen = new Pen(this.ColorPallet, this.BorderSize))
                 {
                     pen.Alignment = PenAlignment.Inset;
-                    e.Graphics.DrawPath(pen, GraphPath);
+                    if (this.EnableBorder)
+                        e.Graphics.DrawPath(pen, GraphPath);
                 }
             }
         }

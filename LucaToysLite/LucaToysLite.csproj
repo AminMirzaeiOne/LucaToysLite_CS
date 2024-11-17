@@ -371,5 +371,17 @@
   <ItemGroup>
     <None Include="Resources\icons8-medium-icons-48.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-theme-28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-font-28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-english-to-arabic-28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-restore-28.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
