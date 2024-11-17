@@ -208,6 +208,12 @@
     <Compile Include="Pages\Settings\Appearance.Designer.cs">
       <DependentUpon>Appearance.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Settings\AppearancePages\Based.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\Settings\AppearancePages\Based.Designer.cs">
+      <DependentUpon>Based.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Controls\Item.resx">
@@ -266,6 +272,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\Settings\Appearance.resx">
       <DependentUpon>Appearance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Settings\AppearancePages\Based.resx">
+      <DependentUpon>Based.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
