@@ -91,6 +91,9 @@
     <Compile Include="Controls\LTSwitchButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Controls\LTTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Controls\LTTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
