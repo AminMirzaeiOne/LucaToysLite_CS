@@ -27,6 +27,8 @@ namespace LucaToysLite.Controls
 
         public System.Byte Radius { get; set; } = 40;
 
+        public System.Byte BorderSize { get; set; } = 4;
+
         public System.Drawing.Color ColorPallet
         {
             get { return this.onBackColor; }
@@ -160,7 +162,7 @@ namespace LucaToysLite.Controls
                     pevent.Graphics.FillPath(new SolidBrush(this.OnBackColor), GraphPath);
                 }
                 else
-                    pevent.Graphics.DrawPath(new Pen(this.OnBackColor, 4), GraphPath);
+                    pevent.Graphics.DrawPath(new Pen(this.OnBackColor, this.BorderSize), GraphPath);
                 pevent.Graphics.FillEllipse(new SolidBrush(this.OnToggleColor), new Rectangle(this.Width - this.Height + 1, 5, togglesize, togglesize));
             }
             else
@@ -168,7 +170,7 @@ namespace LucaToysLite.Controls
                 if (this.SolidColor)
                     pevent.Graphics.FillPath(new SolidBrush(this.OffBackColor), GraphPath);
                 else
-                    pevent.Graphics.DrawPath(new Pen(this.OffBackColor, 4), GraphPath);
+                    pevent.Graphics.DrawPath(new Pen(this.OffBackColor, this.BorderSize), GraphPath);
                 pevent.Graphics.FillEllipse(new SolidBrush(this.OffToggleColor), new Rectangle(4, 5, togglesize, togglesize));
             }
 
