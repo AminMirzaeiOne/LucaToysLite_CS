@@ -94,7 +94,9 @@
     <Compile Include="Controls\LTToolTip.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Controls\LTVerticalScrollBar.cs" />
+    <Compile Include="Controls\LTVerticalScrollBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Controls\LucaToysLogo.cs">
       <SubType>UserControl</SubType>
     </Compile>
