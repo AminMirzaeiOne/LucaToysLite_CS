@@ -467,5 +467,17 @@
   <ItemGroup>
     <None Include="Resources\icons8-property-48.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-table-properties-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-database-administrator-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-admin-settings-male-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-caretaker-48.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

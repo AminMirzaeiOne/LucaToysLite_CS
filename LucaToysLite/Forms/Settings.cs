@@ -23,7 +23,12 @@ namespace LucaToysLite.Forms
 
         private void roundedRadioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            if (this.roundedRadioButton1.Checked)
+            
+        }
+
+        private void roundedRadioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.roundedRadioButton2.Checked)
                 this.appearance.BringToFront();
         }
     }
