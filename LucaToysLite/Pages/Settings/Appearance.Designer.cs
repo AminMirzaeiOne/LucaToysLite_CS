@@ -34,8 +34,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.animator1 = new WFAnimations.Animator(this.components);
             this.roundedPanel5 = new LucaToysLite.Controls.RoundedPanel();
-            this.roundedButton1 = new LucaToysLite.Controls.RoundedButton();
             this.roundedPanel1 = new LucaToysLite.Controls.RoundedPanel();
+            this.roundedButton1 = new LucaToysLite.Controls.RoundedButton();
             this.roundedRadioButton5 = new LucaToysLite.Controls.RoundedRadioButton();
             this.roundedRadioButton2 = new LucaToysLite.Controls.RoundedRadioButton();
             this.roundedRadioButton4 = new LucaToysLite.Controls.RoundedRadioButton();
@@ -88,6 +88,22 @@
             this.roundedPanel5.Size = new System.Drawing.Size(67, 70);
             this.roundedPanel5.TabIndex = 0;
             // 
+            // roundedPanel1
+            // 
+            this.roundedPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.roundedPanel1.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedPanel1.BorderSize = ((byte)(3));
+            this.roundedPanel1.Controls.Add(this.roundedRadioButton5);
+            this.roundedPanel1.Controls.Add(this.roundedRadioButton2);
+            this.roundedPanel1.Controls.Add(this.roundedRadioButton4);
+            this.roundedPanel1.Controls.Add(this.roundedRadioButton3);
+            this.roundedPanel1.Controls.Add(this.roundedRadioButton1);
+            this.animator1.SetDecoration(this.roundedPanel1, WFAnimations.DecorationType.None);
+            this.roundedPanel1.Location = new System.Drawing.Point(14, 5);
+            this.roundedPanel1.Name = "roundedPanel1";
+            this.roundedPanel1.Size = new System.Drawing.Size(653, 70);
+            this.roundedPanel1.TabIndex = 0;
+            // 
             // roundedButton1
             // 
             this.roundedButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
@@ -107,22 +123,6 @@
             this.roundedButton1.Size = new System.Drawing.Size(42, 45);
             this.roundedButton1.TabIndex = 0;
             this.roundedButton1.UseVisualStyleBackColor = false;
-            // 
-            // roundedPanel1
-            // 
-            this.roundedPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.roundedPanel1.BorderColor = System.Drawing.Color.Crimson;
-            this.roundedPanel1.BorderSize = ((byte)(3));
-            this.roundedPanel1.Controls.Add(this.roundedRadioButton5);
-            this.roundedPanel1.Controls.Add(this.roundedRadioButton2);
-            this.roundedPanel1.Controls.Add(this.roundedRadioButton4);
-            this.roundedPanel1.Controls.Add(this.roundedRadioButton3);
-            this.roundedPanel1.Controls.Add(this.roundedRadioButton1);
-            this.animator1.SetDecoration(this.roundedPanel1, WFAnimations.DecorationType.None);
-            this.roundedPanel1.Location = new System.Drawing.Point(14, 5);
-            this.roundedPanel1.Name = "roundedPanel1";
-            this.roundedPanel1.Size = new System.Drawing.Size(653, 70);
-            this.roundedPanel1.TabIndex = 0;
             // 
             // roundedRadioButton5
             // 

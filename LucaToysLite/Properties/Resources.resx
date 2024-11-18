@@ -145,6 +145,12 @@
   <data name="DSound" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DSound.wav;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="icons8-font-style-formatting-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-font-style-formatting-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-iran-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-iran-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="LucaToys" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LucaToys.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -153,6 +159,9 @@
   </data>
   <data name="icons8-warning-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-warning-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-english-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-english-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-comments-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-comments-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,6 +184,9 @@
   <data name="icons8-restart-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-restart-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8-germany-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-germany-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8-text-box-48(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-text-box-48(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -193,11 +205,17 @@
   <data name="icons8-xlarge-icons-48(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-xlarge-icons-48(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8-geography-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-geography-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="GSound" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GSound.wav;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="AStartupSound" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ASSound.wav;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BStartupSound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BSSound.wav;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="DStartupSound" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DSSound.wav;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -205,11 +223,11 @@
   <data name="icons8-version-481" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-version-481.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BStartupSound" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BSSound.wav;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="icons8-effect-28" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-effect-28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-font-style-formatting-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-font-style-formatting-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-region-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-region-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-restore-28" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-restore-28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -244,7 +262,7 @@
   <data name="icons8-software-license-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-software-license-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-effect-28" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-effect-28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-france-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-france-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

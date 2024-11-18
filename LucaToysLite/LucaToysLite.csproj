@@ -419,5 +419,23 @@
   <ItemGroup>
     <None Include="Resources\icons8-effect-28.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-region-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-geography-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-english-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-iran-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-germany-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-france-48.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
