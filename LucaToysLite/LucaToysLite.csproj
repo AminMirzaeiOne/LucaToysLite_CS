@@ -208,6 +208,12 @@
     <Compile Include="Pages\Settings\Appearance.Designer.cs">
       <DependentUpon>Appearance.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Settings\AppearancePages\Animations.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\Settings\AppearancePages\Animations.Designer.cs">
+      <DependentUpon>Animations.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Settings\AppearancePages\Based.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -290,6 +296,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\Settings\Appearance.resx">
       <DependentUpon>Appearance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Settings\AppearancePages\Animations.resx">
+      <DependentUpon>Animations.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\Settings\AppearancePages\Based.resx">
       <DependentUpon>Based.cs</DependentUpon>
