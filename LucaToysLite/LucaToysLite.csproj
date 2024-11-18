@@ -488,5 +488,11 @@
   <ItemGroup>
     <None Include="Resources\icons8-caretaker-48.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-backup-28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Pages\Settings\DatabasePages\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
