@@ -220,6 +220,12 @@
     <Compile Include="Pages\Settings\AppearancePages\Fonts.Designer.cs">
       <DependentUpon>Fonts.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Settings\AppearancePages\Region.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\Settings\AppearancePages\Region.Designer.cs">
+      <DependentUpon>Region.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Controls\Item.resx">
@@ -284,6 +290,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\Settings\AppearancePages\Fonts.resx">
       <DependentUpon>Fonts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Settings\AppearancePages\Region.resx">
+      <DependentUpon>Region.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
