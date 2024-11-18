@@ -28,9 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
             this.homeMenu1 = new LucaToysLite.Menus.HomeMenu();
+            this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
             this.SuspendLayout();
+            // 
+            // homeMenu1
+            // 
+            this.homeMenu1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.homeMenu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.homeMenu1.BorderColor = System.Drawing.Color.Crimson;
+            this.homeMenu1.BorderSize = ((byte)(2));
+            this.homeMenu1.Location = new System.Drawing.Point(12, 52);
+            this.homeMenu1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.homeMenu1.Name = "homeMenu1";
+            this.homeMenu1.Size = new System.Drawing.Size(1066, 230);
+            this.homeMenu1.TabIndex = 1;
             // 
             // windowToolbar1
             // 
@@ -54,17 +67,6 @@
             this.windowToolbar1.TabIndex = 0;
             this.windowToolbar1.TitleText = "Window";
             this.windowToolbar1.WindowBorderSize = ((byte)(3));
-            // 
-            // homeMenu1
-            // 
-            this.homeMenu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.homeMenu1.BorderColor = System.Drawing.Color.Crimson;
-            this.homeMenu1.BorderSize = ((byte)(2));
-            this.homeMenu1.Location = new System.Drawing.Point(12, 52);
-            this.homeMenu1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.homeMenu1.Name = "homeMenu1";
-            this.homeMenu1.Size = new System.Drawing.Size(900, 230);
-            this.homeMenu1.TabIndex = 1;
             // 
             // Home
             // 

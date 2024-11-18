@@ -500,5 +500,20 @@
   <ItemGroup>
     <None Include="Resources\icons8-user-groups-34.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-code-blocks-34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-stock-share-34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-accounting-34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-invoice-34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-petition-34.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
