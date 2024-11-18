@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            WFAnimations.Animation animation1 = new WFAnimations.Animation();
+            WFAnimations.Animation animation2 = new WFAnimations.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Appearance));
             this.panel1 = new System.Windows.Forms.Panel();
             this.animator1 = new WFAnimations.Animator(this.components);
             this.roundedPanel5 = new LucaToysLite.Controls.RoundedPanel();
-            this.roundedButton3 = new LucaToysLite.Controls.RoundedButton();
-            this.roundedButton2 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton1 = new LucaToysLite.Controls.RoundedButton();
             this.roundedPanel1 = new LucaToysLite.Controls.RoundedPanel();
+            this.roundedRadioButton5 = new LucaToysLite.Controls.RoundedRadioButton();
+            this.roundedRadioButton2 = new LucaToysLite.Controls.RoundedRadioButton();
             this.roundedRadioButton4 = new LucaToysLite.Controls.RoundedRadioButton();
             this.roundedRadioButton3 = new LucaToysLite.Controls.RoundedRadioButton();
             this.roundedRadioButton1 = new LucaToysLite.Controls.RoundedRadioButton();
@@ -58,22 +58,22 @@
             // 
             this.animator1.AnimationType = WFAnimations.AnimationType.Leaf;
             this.animator1.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 1F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.animator1.DefaultAnimation = animation1;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 1F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.animator1.DefaultAnimation = animation2;
             this.animator1.Upside = false;
             // 
             // roundedPanel5
@@ -81,54 +81,12 @@
             this.roundedPanel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.roundedPanel5.BorderColor = System.Drawing.Color.Crimson;
             this.roundedPanel5.BorderSize = ((byte)(3));
-            this.roundedPanel5.Controls.Add(this.roundedButton3);
-            this.roundedPanel5.Controls.Add(this.roundedButton2);
             this.roundedPanel5.Controls.Add(this.roundedButton1);
             this.animator1.SetDecoration(this.roundedPanel5, WFAnimations.DecorationType.None);
-            this.roundedPanel5.Location = new System.Drawing.Point(558, 8);
+            this.roundedPanel5.Location = new System.Drawing.Point(673, 5);
             this.roundedPanel5.Name = "roundedPanel5";
-            this.roundedPanel5.Size = new System.Drawing.Size(161, 60);
+            this.roundedPanel5.Size = new System.Drawing.Size(67, 70);
             this.roundedPanel5.TabIndex = 0;
-            // 
-            // roundedButton3
-            // 
-            this.roundedButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.roundedButton3.BorderRadius = ((byte)(20));
-            this.roundedButton3.BorderSize = ((byte)(2));
-            this.animator1.SetDecoration(this.roundedButton3, WFAnimations.DecorationType.None);
-            this.roundedButton3.EnableBorder = false;
-            this.roundedButton3.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
-            this.roundedButton3.FlatAppearance.BorderSize = 0;
-            this.roundedButton3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Crimson;
-            this.roundedButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton3.Font = new System.Drawing.Font("Segoe MDL2 Assets", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedButton3.ForeColor = System.Drawing.Color.White;
-            this.roundedButton3.Location = new System.Drawing.Point(109, 11);
-            this.roundedButton3.Name = "roundedButton3";
-            this.roundedButton3.Size = new System.Drawing.Size(42, 40);
-            this.roundedButton3.TabIndex = 0;
-            this.roundedButton3.Text = "";
-            this.roundedButton3.UseVisualStyleBackColor = false;
-            // 
-            // roundedButton2
-            // 
-            this.roundedButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.roundedButton2.BorderRadius = ((byte)(20));
-            this.roundedButton2.BorderSize = ((byte)(2));
-            this.animator1.SetDecoration(this.roundedButton2, WFAnimations.DecorationType.None);
-            this.roundedButton2.EnableBorder = false;
-            this.roundedButton2.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
-            this.roundedButton2.FlatAppearance.BorderSize = 0;
-            this.roundedButton2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Crimson;
-            this.roundedButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton2.Font = new System.Drawing.Font("Segoe MDL2 Assets", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedButton2.ForeColor = System.Drawing.Color.White;
-            this.roundedButton2.Location = new System.Drawing.Point(61, 11);
-            this.roundedButton2.Name = "roundedButton2";
-            this.roundedButton2.Size = new System.Drawing.Size(42, 40);
-            this.roundedButton2.TabIndex = 0;
-            this.roundedButton2.Text = "";
-            this.roundedButton2.UseVisualStyleBackColor = false;
             // 
             // roundedButton1
             // 
@@ -144,9 +102,9 @@
             this.roundedButton1.Font = new System.Drawing.Font("Segoe MDL2 Assets", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedButton1.ForeColor = System.Drawing.Color.White;
             this.roundedButton1.Image = global::LucaToysLite.Properties.Resources.icons8_restore_28;
-            this.roundedButton1.Location = new System.Drawing.Point(13, 11);
+            this.roundedButton1.Location = new System.Drawing.Point(13, 13);
             this.roundedButton1.Name = "roundedButton1";
-            this.roundedButton1.Size = new System.Drawing.Size(42, 40);
+            this.roundedButton1.Size = new System.Drawing.Size(42, 45);
             this.roundedButton1.TabIndex = 0;
             this.roundedButton1.UseVisualStyleBackColor = false;
             // 
@@ -155,14 +113,62 @@
             this.roundedPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.roundedPanel1.BorderColor = System.Drawing.Color.Crimson;
             this.roundedPanel1.BorderSize = ((byte)(3));
+            this.roundedPanel1.Controls.Add(this.roundedRadioButton5);
+            this.roundedPanel1.Controls.Add(this.roundedRadioButton2);
             this.roundedPanel1.Controls.Add(this.roundedRadioButton4);
             this.roundedPanel1.Controls.Add(this.roundedRadioButton3);
             this.roundedPanel1.Controls.Add(this.roundedRadioButton1);
             this.animator1.SetDecoration(this.roundedPanel1, WFAnimations.DecorationType.None);
-            this.roundedPanel1.Location = new System.Drawing.Point(25, 8);
+            this.roundedPanel1.Location = new System.Drawing.Point(14, 5);
             this.roundedPanel1.Name = "roundedPanel1";
-            this.roundedPanel1.Size = new System.Drawing.Size(509, 60);
+            this.roundedPanel1.Size = new System.Drawing.Size(653, 70);
             this.roundedPanel1.TabIndex = 0;
+            // 
+            // roundedRadioButton5
+            // 
+            this.roundedRadioButton5.Appearance = System.Windows.Forms.Appearance.Button;
+            this.roundedRadioButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.roundedRadioButton5.BorderSize = ((byte)(0));
+            this.roundedRadioButton5.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.roundedRadioButton5, WFAnimations.DecorationType.None);
+            this.roundedRadioButton5.EnableBorder = false;
+            this.roundedRadioButton5.FlatAppearance.BorderSize = 0;
+            this.roundedRadioButton5.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
+            this.roundedRadioButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedRadioButton5.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedRadioButton5.ForeColor = System.Drawing.Color.White;
+            this.roundedRadioButton5.Image = global::LucaToysLite.Properties.Resources.icons8_effect_28;
+            this.roundedRadioButton5.Location = new System.Drawing.Point(487, 11);
+            this.roundedRadioButton5.Name = "roundedRadioButton5";
+            this.roundedRadioButton5.Size = new System.Drawing.Size(146, 50);
+            this.roundedRadioButton5.TabIndex = 0;
+            this.roundedRadioButton5.Text = "Animation";
+            this.roundedRadioButton5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.roundedRadioButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.roundedRadioButton5.UseVisualStyleBackColor = false;
+            // 
+            // roundedRadioButton2
+            // 
+            this.roundedRadioButton2.Appearance = System.Windows.Forms.Appearance.Button;
+            this.roundedRadioButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.roundedRadioButton2.BorderSize = ((byte)(0));
+            this.roundedRadioButton2.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.roundedRadioButton2, WFAnimations.DecorationType.None);
+            this.roundedRadioButton2.EnableBorder = false;
+            this.roundedRadioButton2.FlatAppearance.BorderSize = 0;
+            this.roundedRadioButton2.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
+            this.roundedRadioButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedRadioButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedRadioButton2.ForeColor = System.Drawing.Color.White;
+            this.roundedRadioButton2.Image = global::LucaToysLite.Properties.Resources.icons8_media_28;
+            this.roundedRadioButton2.Location = new System.Drawing.Point(369, 11);
+            this.roundedRadioButton2.Name = "roundedRadioButton2";
+            this.roundedRadioButton2.Size = new System.Drawing.Size(107, 50);
+            this.roundedRadioButton2.TabIndex = 0;
+            this.roundedRadioButton2.Text = "Sound";
+            this.roundedRadioButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.roundedRadioButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.roundedRadioButton2.UseVisualStyleBackColor = false;
             // 
             // roundedRadioButton4
             // 
@@ -178,11 +184,11 @@
             this.roundedRadioButton4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedRadioButton4.ForeColor = System.Drawing.Color.White;
             this.roundedRadioButton4.Image = global::LucaToysLite.Properties.Resources.icons8_english_to_arabic_28;
-            this.roundedRadioButton4.Location = new System.Drawing.Point(346, 7);
+            this.roundedRadioButton4.Location = new System.Drawing.Point(252, 11);
             this.roundedRadioButton4.Name = "roundedRadioButton4";
-            this.roundedRadioButton4.Size = new System.Drawing.Size(151, 45);
+            this.roundedRadioButton4.Size = new System.Drawing.Size(107, 50);
             this.roundedRadioButton4.TabIndex = 0;
-            this.roundedRadioButton4.Text = "Languages";
+            this.roundedRadioButton4.Text = "Region";
             this.roundedRadioButton4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.roundedRadioButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.roundedRadioButton4.UseVisualStyleBackColor = false;
@@ -201,9 +207,9 @@
             this.roundedRadioButton3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedRadioButton3.ForeColor = System.Drawing.Color.White;
             this.roundedRadioButton3.Image = global::LucaToysLite.Properties.Resources.icons8_font_28;
-            this.roundedRadioButton3.Location = new System.Drawing.Point(179, 7);
+            this.roundedRadioButton3.Location = new System.Drawing.Point(137, 11);
             this.roundedRadioButton3.Name = "roundedRadioButton3";
-            this.roundedRadioButton3.Size = new System.Drawing.Size(151, 45);
+            this.roundedRadioButton3.Size = new System.Drawing.Size(105, 50);
             this.roundedRadioButton3.TabIndex = 0;
             this.roundedRadioButton3.Text = " Fonts";
             this.roundedRadioButton3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -226,9 +232,9 @@
             this.roundedRadioButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedRadioButton1.ForeColor = System.Drawing.Color.White;
             this.roundedRadioButton1.Image = global::LucaToysLite.Properties.Resources.icons8_theme_28;
-            this.roundedRadioButton1.Location = new System.Drawing.Point(13, 7);
+            this.roundedRadioButton1.Location = new System.Drawing.Point(21, 11);
             this.roundedRadioButton1.Name = "roundedRadioButton1";
-            this.roundedRadioButton1.Size = new System.Drawing.Size(151, 45);
+            this.roundedRadioButton1.Size = new System.Drawing.Size(105, 50);
             this.roundedRadioButton1.TabIndex = 0;
             this.roundedRadioButton1.TabStop = true;
             this.roundedRadioButton1.Text = " Based";
@@ -262,10 +268,10 @@
         private Controls.RoundedRadioButton roundedRadioButton4;
         private Controls.RoundedRadioButton roundedRadioButton3;
         private Controls.RoundedPanel roundedPanel5;
-        private Controls.RoundedButton roundedButton3;
-        private Controls.RoundedButton roundedButton2;
         private Controls.RoundedButton roundedButton1;
         private System.Windows.Forms.Panel panel1;
         private WFAnimations.Animator animator1;
+        private Controls.RoundedRadioButton roundedRadioButton5;
+        private Controls.RoundedRadioButton roundedRadioButton2;
     }
 }
