@@ -503,6 +503,16 @@ namespace LucaToysLite.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_show_property_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-show-property-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_software_license_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-software-license-48", resourceCulture);
