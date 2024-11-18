@@ -446,5 +446,17 @@
   <ItemGroup>
     <None Include="Resources\icons8-france-48.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-button-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-browse-page-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-button-481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-property-48.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
