@@ -536,5 +536,23 @@
   <ItemGroup>
     <None Include="Resources\icons8-info-34.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-racism-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-racism-68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-user-male-68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-denied-68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-registration-68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-user-group-woman-man-68.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

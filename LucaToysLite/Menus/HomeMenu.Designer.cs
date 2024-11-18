@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.users1 = new LucaToysLite.Menus.Users();
             this.roundedPanel1 = new LucaToysLite.Controls.RoundedPanel();
             this.roundedRadioButton1 = new LucaToysLite.Controls.RoundedRadioButton();
             this.roundedRadioButton9 = new LucaToysLite.Controls.RoundedRadioButton();
@@ -42,11 +43,19 @@
             this.roundedPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
+            // users1
+            // 
+            this.users1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.users1.Location = new System.Drawing.Point(15, 84);
+            this.users1.Name = "users1";
+            this.users1.Size = new System.Drawing.Size(1700, 140);
+            this.users1.TabIndex = 2;
+            // 
             // roundedPanel1
             // 
             this.roundedPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.roundedPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.roundedPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.roundedPanel1.BorderColor = System.Drawing.Color.Crimson;
             this.roundedPanel1.BorderSize = ((byte)(0));
             this.roundedPanel1.Controls.Add(this.roundedRadioButton1);
@@ -290,6 +299,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.Controls.Add(this.users1);
             this.Controls.Add(this.roundedPanel1);
             this.Name = "HomeMenu";
             this.Size = new System.Drawing.Size(1775, 230);
@@ -310,5 +320,6 @@
         private Controls.RoundedRadioButton roundedRadioButton8;
         private Controls.RoundedRadioButton roundedRadioButton9;
         private Controls.RoundedRadioButton roundedRadioButton10;
+        private Users users1;
     }
 }
