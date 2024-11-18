@@ -19,22 +19,26 @@ namespace LucaToysLite.Pages.Settings
             this.panel1.Controls.Add(this.fonts);
             this.panel1.Controls.Add(this.region);
             this.panel1.Controls.Add(this.sounds);
+            this.panel1.Controls.Add(this.animations);
 
             this.based.Dock = DockStyle.Fill;
             this.fonts.Dock = DockStyle.Fill;
             this.region.Dock = DockStyle.Fill;
             this.sounds.Dock = DockStyle.Fill;
+            this.animations.Dock = DockStyle.Fill;
 
             this.based.Visible = true;
             this.fonts.Visible = false;
             this.region.Visible = false;
             this.sounds.Visible = false;
+            this.animations.Visible = false;
         }
 
         private LucaToysLite.Pages.Settings.AppearancePages.Based based = new AppearancePages.Based();
         private LucaToysLite.Pages.Settings.AppearancePages.Fonts fonts = new AppearancePages.Fonts();
         private LucaToysLite.Pages.Settings.AppearancePages.Region region = new AppearancePages.Region();
         private LucaToysLite.Pages.Settings.AppearancePages.Sounds sounds = new AppearancePages.Sounds();
+        private LucaToysLite.Pages.Settings.AppearancePages.Animations animations = new AppearancePages.Animations();
 
         private void roundedRadioButton1_CheckedChanged(object sender, EventArgs e)
         {
@@ -43,6 +47,7 @@ namespace LucaToysLite.Pages.Settings
                 this.fonts.Visible = false;
                 this.region.Visible = false;
                 this.sounds.Visible = false;
+                this.animations.Visible = false;
                 this.animator1.Show(this.based);
             }
         }
@@ -54,6 +59,7 @@ namespace LucaToysLite.Pages.Settings
                 this.based.Visible = false;
                 this.region.Visible = false;
                 this.sounds.Visible = false;
+                this.animations.Visible = false;
                 this.animator1.Show(this.fonts);
             }
         }
@@ -65,6 +71,7 @@ namespace LucaToysLite.Pages.Settings
                 this.fonts.Visible = false;
                 this.based.Visible = false;
                 this.sounds.Visible = false;
+                this.animations.Visible = false;
                 this.animator1.Show(this.region);
             }
         }
@@ -76,7 +83,20 @@ namespace LucaToysLite.Pages.Settings
                 this.fonts.Visible = false;
                 this.based.Visible = false;
                 this.region.Visible = false;
+                this.animations.Visible = false;
                 this.animator1.Show(this.sounds);
+            }
+        }
+
+        private void roundedRadioButton5_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.roundedRadioButton5.Checked)
+            {
+                this.fonts.Visible = false;
+                this.based.Visible = false;
+                this.region.Visible = false;
+                this.sounds.Visible = false;
+                this.animator1.Show(this.animations);
             }
         }
     }
