@@ -166,6 +166,12 @@
     <Compile Include="Menus\HomeMenu.Designer.cs">
       <DependentUpon>HomeMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Menus\Users.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Menus\Users.Designer.cs">
+      <DependentUpon>Users.cs</DependentUpon>
+    </Compile>
     <Compile Include="Messages\Hybrid.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -281,6 +287,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menus\HomeMenu.resx">
       <DependentUpon>HomeMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\Users.resx">
+      <DependentUpon>Users.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Messages\Hybrid.resx">
       <DependentUpon>Hybrid.cs</DependentUpon>
@@ -514,6 +523,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-petition-34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-data-migration-34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-settings-34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-help-34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-info-34.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
