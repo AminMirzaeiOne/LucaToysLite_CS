@@ -24,6 +24,8 @@ namespace LucaToysLite.Controls
             }
         }
 
+        public System.Boolean EnableBorder { get; set; } = true;
+
         public System.Drawing.Color BorderColor { get; set; } = Color.Crimson;
         public System.Byte BorderSize { get; set; } = 2;
 
@@ -84,10 +86,11 @@ namespace LucaToysLite.Controls
             using (GraphicsPath GraphPath = GetRoundPath(Rect, this.Radius))
             {
                 this.Region = new Region(GraphPath);
-                using (Pen pen = new Pen(this.BorderColor,this.BorderSize))
+                using (Pen pen = new Pen(this.BorderColor, this.BorderSize))
                 {
                     pen.Alignment = PenAlignment.Inset;
-                    e.Graphics.DrawPath(pen, GraphPath);
+                    if (this.EnableBorder)
+                        e.Graphics.DrawPath(pen, GraphPath);
                 }
             }
         }
