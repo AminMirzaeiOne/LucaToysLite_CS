@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.roundedPanel3 = new LucaToysLite.Controls.RoundedPanel();
+            this.ltSwitchButton1 = new LucaToysLite.Controls.LTSwitchButton();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.roundedPanel2 = new LucaToysLite.Controls.RoundedPanel();
@@ -39,7 +40,6 @@
             this.ltComboBox1 = new LucaToysLite.Controls.LTComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.ltSwitchButton1 = new LucaToysLite.Controls.LTSwitchButton();
             this.roundedPanel3.SuspendLayout();
             this.roundedPanel2.SuspendLayout();
             this.roundedPanel4.SuspendLayout();
@@ -57,6 +57,25 @@
             this.roundedPanel3.Name = "roundedPanel3";
             this.roundedPanel3.Size = new System.Drawing.Size(696, 120);
             this.roundedPanel3.TabIndex = 11;
+            // 
+            // ltSwitchButton1
+            // 
+            this.ltSwitchButton1.BorderSize = ((byte)(4));
+            this.ltSwitchButton1.Checked = true;
+            this.ltSwitchButton1.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.ltSwitchButton1.ColorPallet = System.Drawing.Color.Crimson;
+            this.ltSwitchButton1.Location = new System.Drawing.Point(562, 49);
+            this.ltSwitchButton1.Name = "ltSwitchButton1";
+            this.ltSwitchButton1.OffBackColor = System.Drawing.Color.Crimson;
+            this.ltSwitchButton1.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.ltSwitchButton1.OnBackColor = System.Drawing.Color.Crimson;
+            this.ltSwitchButton1.OnToggleColor = System.Drawing.Color.White;
+            this.ltSwitchButton1.Radius = ((byte)(40));
+            this.ltSwitchButton1.Size = new System.Drawing.Size(85, 40);
+            this.ltSwitchButton1.SolidColor = true;
+            this.ltSwitchButton1.TabIndex = 1;
+            this.ltSwitchButton1.Text = "ltSwitchButton1";
+            this.ltSwitchButton1.UseVisualStyleBackColor = true;
             // 
             // label5
             // 
@@ -207,23 +226,6 @@
             this.label1.Size = new System.Drawing.Size(92, 79);
             this.label1.TabIndex = 0;
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // ltSwitchButton1
-            // 
-            this.ltSwitchButton1.BorderSize = ((byte)(4));
-            this.ltSwitchButton1.ColorPallet = System.Drawing.Color.Crimson;
-            this.ltSwitchButton1.Location = new System.Drawing.Point(541, 50);
-            this.ltSwitchButton1.Name = "ltSwitchButton1";
-            this.ltSwitchButton1.OffBackColor = System.Drawing.Color.Crimson;
-            this.ltSwitchButton1.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.ltSwitchButton1.OnBackColor = System.Drawing.Color.Crimson;
-            this.ltSwitchButton1.OnToggleColor = System.Drawing.Color.White;
-            this.ltSwitchButton1.Radius = ((byte)(40));
-            this.ltSwitchButton1.Size = new System.Drawing.Size(104, 38);
-            this.ltSwitchButton1.SolidColor = false;
-            this.ltSwitchButton1.TabIndex = 1;
-            this.ltSwitchButton1.Text = "ltSwitchButton1";
-            this.ltSwitchButton1.UseVisualStyleBackColor = true;
             // 
             // Animations
             // 
