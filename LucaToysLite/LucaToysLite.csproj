@@ -238,6 +238,12 @@
     <Compile Include="Pages\Settings\AppearancePages\Sounds.Designer.cs">
       <DependentUpon>Sounds.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Settings\Database.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\Settings\Database.Designer.cs">
+      <DependentUpon>Database.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Controls\Item.resx">
@@ -311,6 +317,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\Settings\AppearancePages\Sounds.resx">
       <DependentUpon>Sounds.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Settings\Database.resx">
+      <DependentUpon>Database.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
