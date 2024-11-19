@@ -74,6 +74,12 @@
     <Compile Include="Apps\Translator.Designer.cs">
       <DependentUpon>Translator.cs</DependentUpon>
     </Compile>
+    <Compile Include="Apps\WebBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apps\WebBrowser.Designer.cs">
+      <DependentUpon>WebBrowser.cs</DependentUpon>
+    </Compile>
     <Compile Include="ClassLibrary\WindowAnimation.cs" />
     <Compile Include="ClassLibrary\XToolStripDropDown.cs">
       <SubType>Component</SubType>
@@ -326,6 +332,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Apps\Translator.resx">
       <DependentUpon>Translator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apps\WebBrowser.resx">
+      <DependentUpon>WebBrowser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Item.resx">
       <DependentUpon>Item.cs</DependentUpon>
