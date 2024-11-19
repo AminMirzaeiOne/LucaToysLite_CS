@@ -160,6 +160,12 @@
     <Compile Include="Forms\SplashScreen.Designer.cs">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Menus\Accounting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Menus\Accounting.Designer.cs">
+      <DependentUpon>Accounting.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menus\Finance.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -296,6 +302,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SplashScreen.resx">
       <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\Accounting.resx">
+      <DependentUpon>Accounting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menus\Finance.resx">
       <DependentUpon>Finance.cs</DependentUpon>

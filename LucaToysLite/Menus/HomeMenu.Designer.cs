@@ -108,6 +108,7 @@
             // 
             this.roundedRadioButton1.Appearance = System.Windows.Forms.Appearance.Button;
             this.roundedRadioButton1.BorderSize = ((byte)(2));
+            this.roundedRadioButton1.Checked = true;
             this.roundedRadioButton1.ColorPallet = System.Drawing.Color.Crimson;
             this.animator1.SetDecoration(this.roundedRadioButton1, WFAnimations.DecorationType.None);
             this.roundedRadioButton1.EnableBorder = true;
@@ -145,7 +146,6 @@
             this.roundedRadioButton9.Name = "roundedRadioButton9";
             this.roundedRadioButton9.Size = new System.Drawing.Size(160, 64);
             this.roundedRadioButton9.TabIndex = 0;
-            this.roundedRadioButton9.TabStop = true;
             this.roundedRadioButton9.Text = " About";
             this.roundedRadioButton9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.roundedRadioButton9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -168,7 +168,6 @@
             this.roundedRadioButton10.Name = "roundedRadioButton10";
             this.roundedRadioButton10.Size = new System.Drawing.Size(160, 64);
             this.roundedRadioButton10.TabIndex = 0;
-            this.roundedRadioButton10.TabStop = true;
             this.roundedRadioButton10.Text = " Settings";
             this.roundedRadioButton10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.roundedRadioButton10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -191,7 +190,6 @@
             this.roundedRadioButton8.Name = "roundedRadioButton8";
             this.roundedRadioButton8.Size = new System.Drawing.Size(160, 64);
             this.roundedRadioButton8.TabIndex = 0;
-            this.roundedRadioButton8.TabStop = true;
             this.roundedRadioButton8.Text = " Help";
             this.roundedRadioButton8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.roundedRadioButton8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -214,7 +212,6 @@
             this.roundedRadioButton7.Name = "roundedRadioButton7";
             this.roundedRadioButton7.Size = new System.Drawing.Size(160, 64);
             this.roundedRadioButton7.TabIndex = 0;
-            this.roundedRadioButton7.TabStop = true;
             this.roundedRadioButton7.Text = " Export Data";
             this.roundedRadioButton7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.roundedRadioButton7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -237,7 +234,6 @@
             this.roundedRadioButton6.Name = "roundedRadioButton6";
             this.roundedRadioButton6.Size = new System.Drawing.Size(160, 64);
             this.roundedRadioButton6.TabIndex = 0;
-            this.roundedRadioButton6.TabStop = true;
             this.roundedRadioButton6.Text = " Documents";
             this.roundedRadioButton6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.roundedRadioButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -260,7 +256,6 @@
             this.roundedRadioButton5.Name = "roundedRadioButton5";
             this.roundedRadioButton5.Size = new System.Drawing.Size(160, 64);
             this.roundedRadioButton5.TabIndex = 0;
-            this.roundedRadioButton5.TabStop = true;
             this.roundedRadioButton5.Text = " Invoice";
             this.roundedRadioButton5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.roundedRadioButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -283,7 +278,6 @@
             this.roundedRadioButton4.Name = "roundedRadioButton4";
             this.roundedRadioButton4.Size = new System.Drawing.Size(160, 64);
             this.roundedRadioButton4.TabIndex = 0;
-            this.roundedRadioButton4.TabStop = true;
             this.roundedRadioButton4.Text = " Accounting";
             this.roundedRadioButton4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.roundedRadioButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -306,11 +300,11 @@
             this.roundedRadioButton3.Name = "roundedRadioButton3";
             this.roundedRadioButton3.Size = new System.Drawing.Size(160, 64);
             this.roundedRadioButton3.TabIndex = 0;
-            this.roundedRadioButton3.TabStop = true;
             this.roundedRadioButton3.Text = " Finance";
             this.roundedRadioButton3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.roundedRadioButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.roundedRadioButton3.UseVisualStyleBackColor = true;
+            this.roundedRadioButton3.CheckedChanged += new System.EventHandler(this.roundedRadioButton3_CheckedChanged);
             // 
             // roundedRadioButton2
             // 
@@ -329,7 +323,6 @@
             this.roundedRadioButton2.Name = "roundedRadioButton2";
             this.roundedRadioButton2.Size = new System.Drawing.Size(160, 64);
             this.roundedRadioButton2.TabIndex = 0;
-            this.roundedRadioButton2.TabStop = true;
             this.roundedRadioButton2.Text = " Products";
             this.roundedRadioButton2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.roundedRadioButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;

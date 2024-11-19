@@ -18,16 +18,20 @@ namespace LucaToysLite.Menus
             InitializeComponent();
             this.panel1.Controls.Add(this.users);
             this.panel1.Controls.Add(this.products);
+            this.panel1.Controls.Add(this.finance);
 
             this.users.Dock = DockStyle.Fill;
             this.products.Dock = DockStyle.Fill;
+            this.finance.Dock = DockStyle.Fill;
 
-            this.users.Visible = false;
+            this.users.Visible = true;
             this.products.Visible = false;
+            this.finance.Visible = false;
         }
 
         private LucaToysLite.Menus.Users users = new Users();
         private LucaToysLite.Menus.Products products = new Products();
+        private LucaToysLite.Menus.Finance finance = new Finance();
 
         private int radius = 20;
         [DefaultValue(20)]
@@ -119,6 +123,7 @@ namespace LucaToysLite.Menus
             if (this.roundedRadioButton1.Checked)
             {
                 this.products.Visible = false;
+                this.finance.Visible = false;
                 this.animator1.Show(this.users);
             }
         }
@@ -128,7 +133,18 @@ namespace LucaToysLite.Menus
             if (this.roundedRadioButton2.Checked)
             {
                 this.users.Visible = false;
+                this.finance.Visible = false;
                 this.animator1.Show(this.products);
+            }
+        }
+
+        private void roundedRadioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.roundedRadioButton3.Checked)
+            {
+                this.users.Visible = false;
+                this.products.Visible = false;
+                this.animator1.Show(this.finance);
             }
         }
     }
