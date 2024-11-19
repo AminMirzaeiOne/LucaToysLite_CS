@@ -35,5 +35,30 @@ namespace LucaToysLite.Apps
         {
             this.downButton.BackColor = System.Drawing.Color.FromArgb(10,10,10);
         }
+
+        private void roundedButton2_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.downButton = this.roundedButton2;
+            this.ltContextMenu2.Show(this.roundedButton2, new Point(0, 50));
+        }
+
+        private void roundedButton3_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.downButton = this.roundedButton3;
+            this.ltContextMenu3.Show(this.roundedButton3, new Point(0, 50));
+
+        }
+
+        private void roundedButton4_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.downButton = this.roundedButton4;
+            this.ltContextMenu4.Show(this.roundedButton4, new Point(0, 50));
+        }
+
+        private void roundedButton5_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.downButton = this.roundedButton5;
+            this.ltContextMenu5.Show(this.roundedButton5, new Point(0, 50));
+        }
     }
 }
