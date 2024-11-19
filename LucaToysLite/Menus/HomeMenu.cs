@@ -16,7 +16,14 @@ namespace LucaToysLite.Menus
         public HomeMenu()
         {
             InitializeComponent();
+            this.panel1.Controls.Add(this.users);
+
+            this.users.Dock = DockStyle.Fill;
+
+            this.users.Visible = false;
         }
+
+        private LucaToysLite.Menus.Users users = new Users();
 
         private int radius = 20;
         [DefaultValue(20)]
@@ -101,6 +108,12 @@ namespace LucaToysLite.Menus
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void roundedRadioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.roundedRadioButton1.Checked)
+                this.animator1.Show(this.users);
         }
     }
 }

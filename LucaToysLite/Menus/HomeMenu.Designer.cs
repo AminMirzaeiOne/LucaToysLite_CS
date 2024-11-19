@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             WFAnimations.Animation animation1 = new WFAnimations.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeMenu));
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.animator1 = new WFAnimations.Animator(this.components);
             this.roundedPanel1 = new LucaToysLite.Controls.RoundedPanel();
             this.roundedRadioButton1 = new LucaToysLite.Controls.RoundedRadioButton();
             this.roundedRadioButton9 = new LucaToysLite.Controls.RoundedRadioButton();
@@ -42,10 +44,41 @@
             this.roundedRadioButton4 = new LucaToysLite.Controls.RoundedRadioButton();
             this.roundedRadioButton3 = new LucaToysLite.Controls.RoundedRadioButton();
             this.roundedRadioButton2 = new LucaToysLite.Controls.RoundedRadioButton();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.animator1 = new WFAnimations.Animator(this.components);
             this.roundedPanel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.animator1.SetDecoration(this.panel1, WFAnimations.DecorationType.None);
+            this.panel1.Location = new System.Drawing.Point(3, 87);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1769, 140);
+            this.panel1.TabIndex = 2;
+            // 
+            // animator1
+            // 
+            this.animator1.AnimationType = WFAnimations.AnimationType.Transparent;
+            this.animator1.Cursor = null;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 1F;
+            this.animator1.DefaultAnimation = animation1;
+            this.animator1.Upside = false;
             // 
             // roundedPanel1
             // 
@@ -64,6 +97,7 @@
             this.roundedPanel1.Controls.Add(this.roundedRadioButton4);
             this.roundedPanel1.Controls.Add(this.roundedRadioButton3);
             this.roundedPanel1.Controls.Add(this.roundedRadioButton2);
+            this.animator1.SetDecoration(this.roundedPanel1, WFAnimations.DecorationType.None);
             this.roundedPanel1.EnableBorder = false;
             this.roundedPanel1.Location = new System.Drawing.Point(3, 2);
             this.roundedPanel1.Name = "roundedPanel1";
@@ -75,6 +109,7 @@
             this.roundedRadioButton1.Appearance = System.Windows.Forms.Appearance.Button;
             this.roundedRadioButton1.BorderSize = ((byte)(2));
             this.roundedRadioButton1.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.roundedRadioButton1, WFAnimations.DecorationType.None);
             this.roundedRadioButton1.EnableBorder = true;
             this.roundedRadioButton1.FlatAppearance.BorderSize = 0;
             this.roundedRadioButton1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
@@ -91,12 +126,14 @@
             this.roundedRadioButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.roundedRadioButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.roundedRadioButton1.UseVisualStyleBackColor = true;
+            this.roundedRadioButton1.CheckedChanged += new System.EventHandler(this.roundedRadioButton1_CheckedChanged);
             // 
             // roundedRadioButton9
             // 
             this.roundedRadioButton9.Appearance = System.Windows.Forms.Appearance.Button;
             this.roundedRadioButton9.BorderSize = ((byte)(2));
             this.roundedRadioButton9.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.roundedRadioButton9, WFAnimations.DecorationType.None);
             this.roundedRadioButton9.EnableBorder = true;
             this.roundedRadioButton9.FlatAppearance.BorderSize = 0;
             this.roundedRadioButton9.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
@@ -119,6 +156,7 @@
             this.roundedRadioButton10.Appearance = System.Windows.Forms.Appearance.Button;
             this.roundedRadioButton10.BorderSize = ((byte)(2));
             this.roundedRadioButton10.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.roundedRadioButton10, WFAnimations.DecorationType.None);
             this.roundedRadioButton10.EnableBorder = true;
             this.roundedRadioButton10.FlatAppearance.BorderSize = 0;
             this.roundedRadioButton10.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
@@ -141,6 +179,7 @@
             this.roundedRadioButton8.Appearance = System.Windows.Forms.Appearance.Button;
             this.roundedRadioButton8.BorderSize = ((byte)(2));
             this.roundedRadioButton8.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.roundedRadioButton8, WFAnimations.DecorationType.None);
             this.roundedRadioButton8.EnableBorder = true;
             this.roundedRadioButton8.FlatAppearance.BorderSize = 0;
             this.roundedRadioButton8.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
@@ -163,6 +202,7 @@
             this.roundedRadioButton7.Appearance = System.Windows.Forms.Appearance.Button;
             this.roundedRadioButton7.BorderSize = ((byte)(2));
             this.roundedRadioButton7.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.roundedRadioButton7, WFAnimations.DecorationType.None);
             this.roundedRadioButton7.EnableBorder = true;
             this.roundedRadioButton7.FlatAppearance.BorderSize = 0;
             this.roundedRadioButton7.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
@@ -185,6 +225,7 @@
             this.roundedRadioButton6.Appearance = System.Windows.Forms.Appearance.Button;
             this.roundedRadioButton6.BorderSize = ((byte)(2));
             this.roundedRadioButton6.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.roundedRadioButton6, WFAnimations.DecorationType.None);
             this.roundedRadioButton6.EnableBorder = true;
             this.roundedRadioButton6.FlatAppearance.BorderSize = 0;
             this.roundedRadioButton6.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
@@ -207,6 +248,7 @@
             this.roundedRadioButton5.Appearance = System.Windows.Forms.Appearance.Button;
             this.roundedRadioButton5.BorderSize = ((byte)(2));
             this.roundedRadioButton5.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.roundedRadioButton5, WFAnimations.DecorationType.None);
             this.roundedRadioButton5.EnableBorder = true;
             this.roundedRadioButton5.FlatAppearance.BorderSize = 0;
             this.roundedRadioButton5.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
@@ -229,6 +271,7 @@
             this.roundedRadioButton4.Appearance = System.Windows.Forms.Appearance.Button;
             this.roundedRadioButton4.BorderSize = ((byte)(2));
             this.roundedRadioButton4.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.roundedRadioButton4, WFAnimations.DecorationType.None);
             this.roundedRadioButton4.EnableBorder = true;
             this.roundedRadioButton4.FlatAppearance.BorderSize = 0;
             this.roundedRadioButton4.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
@@ -251,6 +294,7 @@
             this.roundedRadioButton3.Appearance = System.Windows.Forms.Appearance.Button;
             this.roundedRadioButton3.BorderSize = ((byte)(2));
             this.roundedRadioButton3.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.roundedRadioButton3, WFAnimations.DecorationType.None);
             this.roundedRadioButton3.EnableBorder = true;
             this.roundedRadioButton3.FlatAppearance.BorderSize = 0;
             this.roundedRadioButton3.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
@@ -273,6 +317,7 @@
             this.roundedRadioButton2.Appearance = System.Windows.Forms.Appearance.Button;
             this.roundedRadioButton2.BorderSize = ((byte)(2));
             this.roundedRadioButton2.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.roundedRadioButton2, WFAnimations.DecorationType.None);
             this.roundedRadioButton2.EnableBorder = true;
             this.roundedRadioButton2.FlatAppearance.BorderSize = 0;
             this.roundedRadioButton2.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
@@ -290,36 +335,6 @@
             this.roundedRadioButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.roundedRadioButton2.UseVisualStyleBackColor = true;
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.panel1.Location = new System.Drawing.Point(3, 87);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1769, 140);
-            this.panel1.TabIndex = 2;
-            // 
-            // animator1
-            // 
-            this.animator1.AnimationType = WFAnimations.AnimationType.VertSlide;
-            this.animator1.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.animator1.DefaultAnimation = animation1;
-            this.animator1.Upside = false;
-            // 
             // HomeMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
@@ -327,6 +342,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.roundedPanel1);
+            this.animator1.SetDecoration(this, WFAnimations.DecorationType.None);
             this.Name = "HomeMenu";
             this.Size = new System.Drawing.Size(1775, 230);
             this.roundedPanel1.ResumeLayout(false);

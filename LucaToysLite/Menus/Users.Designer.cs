@@ -35,9 +35,9 @@
             this.roundedButton5 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton4 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton3 = new LucaToysLite.Controls.RoundedButton();
+            this.roundedButton8 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton2 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton1 = new LucaToysLite.Controls.RoundedButton();
-            this.roundedButton8 = new LucaToysLite.Controls.RoundedButton();
             this.SuspendLayout();
             // 
             // roundedLabel2
@@ -158,6 +158,26 @@
             this.roundedButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.roundedButton3.UseVisualStyleBackColor = true;
             // 
+            // roundedButton8
+            // 
+            this.roundedButton8.BorderRadius = ((byte)(20));
+            this.roundedButton8.BorderSize = ((byte)(3));
+            this.roundedButton8.EnableBorder = true;
+            this.roundedButton8.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedButton8.FlatAppearance.BorderSize = 0;
+            this.roundedButton8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Crimson;
+            this.roundedButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton8.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedButton8.ForeColor = System.Drawing.Color.White;
+            this.roundedButton8.Image = global::LucaToysLite.Properties.Resources.icons8_search_client_68;
+            this.roundedButton8.Location = new System.Drawing.Point(233, 6);
+            this.roundedButton8.Name = "roundedButton8";
+            this.roundedButton8.Size = new System.Drawing.Size(200, 125);
+            this.roundedButton8.TabIndex = 3;
+            this.roundedButton8.Text = "Search User";
+            this.roundedButton8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.roundedButton8.UseVisualStyleBackColor = true;
+            // 
             // roundedButton2
             // 
             this.roundedButton2.BorderRadius = ((byte)(20));
@@ -198,31 +218,11 @@
             this.roundedButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.roundedButton1.UseVisualStyleBackColor = true;
             // 
-            // roundedButton8
-            // 
-            this.roundedButton8.BorderRadius = ((byte)(20));
-            this.roundedButton8.BorderSize = ((byte)(3));
-            this.roundedButton8.EnableBorder = true;
-            this.roundedButton8.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
-            this.roundedButton8.FlatAppearance.BorderSize = 0;
-            this.roundedButton8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Crimson;
-            this.roundedButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton8.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedButton8.ForeColor = System.Drawing.Color.White;
-            this.roundedButton8.Image = global::LucaToysLite.Properties.Resources.icons8_search_client_68;
-            this.roundedButton8.Location = new System.Drawing.Point(233, 6);
-            this.roundedButton8.Name = "roundedButton8";
-            this.roundedButton8.Size = new System.Drawing.Size(200, 125);
-            this.roundedButton8.TabIndex = 3;
-            this.roundedButton8.Text = "Search User";
-            this.roundedButton8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.roundedButton8.UseVisualStyleBackColor = true;
-            // 
             // Users
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.Controls.Add(this.roundedLabel2);
             this.Controls.Add(this.roundedLabel1);
             this.Controls.Add(this.roundedButton7);
@@ -234,7 +234,7 @@
             this.Controls.Add(this.roundedButton2);
             this.Controls.Add(this.roundedButton1);
             this.Name = "Users";
-            this.Size = new System.Drawing.Size(1700, 140);
+            this.Size = new System.Drawing.Size(1843, 140);
             this.ResumeLayout(false);
 
         }
