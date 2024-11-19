@@ -50,6 +50,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Apps\Notepad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apps\Notepad.Designer.cs">
+      <DependentUpon>Notepad.cs</DependentUpon>
+    </Compile>
     <Compile Include="ClassLibrary\WindowAnimation.cs" />
     <Compile Include="ClassLibrary\XToolStripDropDown.cs">
       <SubType>Component</SubType>
@@ -288,6 +294,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Apps\Notepad.resx">
+      <DependentUpon>Notepad.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\Item.resx">
       <DependentUpon>Item.cs</DependentUpon>
     </EmbeddedResource>
@@ -555,7 +564,6 @@
     <None Include="Resources\icons8-backup-28.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Apps\" />
     <Folder Include="Pages\Settings\DatabasePages\" />
   </ItemGroup>
   <ItemGroup>
