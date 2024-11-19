@@ -69,12 +69,12 @@
             this.roundedButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton7.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedButton7.ForeColor = System.Drawing.Color.White;
-            this.roundedButton7.Image = global::LucaToysLite.Properties.Resources.Group_5_1_;
+            this.roundedButton7.Image = global::LucaToysLite.Properties.Resources.icons8_bank_cards_68;
             this.roundedButton7.Location = new System.Drawing.Point(1632, 6);
             this.roundedButton7.Name = "roundedButton7";
             this.roundedButton7.Size = new System.Drawing.Size(200, 125);
             this.roundedButton7.TabIndex = 5;
-            this.roundedButton7.Text = "Update Doll";
+            this.roundedButton7.Text = "Accounts";
             this.roundedButton7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.roundedButton7.UseVisualStyleBackColor = true;
             // 
@@ -89,12 +89,12 @@
             this.roundedButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton6.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedButton6.ForeColor = System.Drawing.Color.White;
-            this.roundedButton6.Image = global::LucaToysLite.Properties.Resources.Group_6;
+            this.roundedButton6.Image = global::LucaToysLite.Properties.Resources.Group_8;
             this.roundedButton6.Location = new System.Drawing.Point(1410, 6);
             this.roundedButton6.Name = "roundedButton6";
             this.roundedButton6.Size = new System.Drawing.Size(200, 125);
             this.roundedButton6.TabIndex = 6;
-            this.roundedButton6.Text = "Delete Doll";
+            this.roundedButton6.Text = "Sold Dolls";
             this.roundedButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.roundedButton6.UseVisualStyleBackColor = true;
             // 
@@ -109,12 +109,12 @@
             this.roundedButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton5.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedButton5.ForeColor = System.Drawing.Color.White;
-            this.roundedButton5.Image = global::LucaToysLite.Properties.Resources.Group_7;
+            this.roundedButton5.Image = global::LucaToysLite.Properties.Resources.Group_9;
             this.roundedButton5.Location = new System.Drawing.Point(1188, 6);
             this.roundedButton5.Name = "roundedButton5";
             this.roundedButton5.Size = new System.Drawing.Size(200, 125);
             this.roundedButton5.TabIndex = 7;
-            this.roundedButton5.Text = "Add Doll";
+            this.roundedButton5.Text = "Sold Toys";
             this.roundedButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.roundedButton5.UseVisualStyleBackColor = true;
             // 
@@ -129,7 +129,7 @@
             this.roundedButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton4.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedButton4.ForeColor = System.Drawing.Color.White;
-            this.roundedButton4.Image = global::LucaToysLite.Properties.Resources.Group_5;
+            this.roundedButton4.Image = global::LucaToysLite.Properties.Resources.icons8_bribery_68;
             this.roundedButton4.Location = new System.Drawing.Point(922, 6);
             this.roundedButton4.Name = "roundedButton4";
             this.roundedButton4.Size = new System.Drawing.Size(200, 125);
@@ -149,12 +149,12 @@
             this.roundedButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton3.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedButton3.ForeColor = System.Drawing.Color.White;
-            this.roundedButton3.Image = global::LucaToysLite.Properties.Resources.Group_4;
+            this.roundedButton3.Image = global::LucaToysLite.Properties.Resources.icons8_money_68;
             this.roundedButton3.Location = new System.Drawing.Point(706, 6);
             this.roundedButton3.Name = "roundedButton3";
             this.roundedButton3.Size = new System.Drawing.Size(200, 125);
             this.roundedButton3.TabIndex = 9;
-            this.roundedButton3.Text = "Delete Toy";
+            this.roundedButton3.Text = "Revenues";
             this.roundedButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.roundedButton3.UseVisualStyleBackColor = true;
             // 
@@ -169,12 +169,12 @@
             this.roundedButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton8.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedButton8.ForeColor = System.Drawing.Color.White;
-            this.roundedButton8.Image = global::LucaToysLite.Properties.Resources.icons8_package_search_68;
+            this.roundedButton8.Image = global::LucaToysLite.Properties.Resources.icons8_ledger_68;
             this.roundedButton8.Location = new System.Drawing.Point(233, 6);
             this.roundedButton8.Name = "roundedButton8";
             this.roundedButton8.Size = new System.Drawing.Size(200, 125);
             this.roundedButton8.TabIndex = 10;
-            this.roundedButton8.Text = "Search Products";
+            this.roundedButton8.Text = "Transactions";
             this.roundedButton8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.roundedButton8.UseVisualStyleBackColor = true;
             // 
@@ -189,12 +189,12 @@
             this.roundedButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedButton2.ForeColor = System.Drawing.Color.White;
-            this.roundedButton2.Image = global::LucaToysLite.Properties.Resources.Group_2;
+            this.roundedButton2.Image = global::LucaToysLite.Properties.Resources.icons8_cash_68;
             this.roundedButton2.Location = new System.Drawing.Point(491, 6);
             this.roundedButton2.Name = "roundedButton2";
             this.roundedButton2.Size = new System.Drawing.Size(200, 125);
             this.roundedButton2.TabIndex = 11;
-            this.roundedButton2.Text = "Add Toy";
+            this.roundedButton2.Text = "Cash Operation";
             this.roundedButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.roundedButton2.UseVisualStyleBackColor = true;
             // 
@@ -209,12 +209,12 @@
             this.roundedButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedButton1.ForeColor = System.Drawing.Color.White;
-            this.roundedButton1.Image = global::LucaToysLite.Properties.Resources.icons8_product_68;
+            this.roundedButton1.Image = global::LucaToysLite.Properties.Resources.icons8_performance_68;
             this.roundedButton1.Location = new System.Drawing.Point(10, 6);
             this.roundedButton1.Name = "roundedButton1";
             this.roundedButton1.Size = new System.Drawing.Size(200, 125);
             this.roundedButton1.TabIndex = 12;
-            this.roundedButton1.Text = "Manage Products";
+            this.roundedButton1.Text = "Performance";
             this.roundedButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.roundedButton1.UseVisualStyleBackColor = true;
             // 
