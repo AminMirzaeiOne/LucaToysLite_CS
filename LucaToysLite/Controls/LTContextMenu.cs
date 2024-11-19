@@ -19,6 +19,16 @@ namespace LucaToysLite.Controls
 
         private MyMenuRenderer renderer = new MyMenuRenderer();
 
+        public Color Background
+        {
+            get { return this.renderer.background; }
+            set
+            {
+                this.renderer.background = value;
+            }
+        }
+        
+
         private int radius = 20;
         [DefaultValue(20)]
         public int Radius
@@ -106,6 +116,7 @@ namespace LucaToysLite.Controls
         public class MyMenuRenderer : ToolStripRenderer
         {
             internal System.Drawing.Color colorPallet = Color.Crimson;
+            internal System.Drawing.Color background = Color.FromArgb(15, 15, 15);
             protected override void OnRenderArrow(ToolStripArrowRenderEventArgs e)
             {
                 var tsMenuItem = e.Item as ToolStripMenuItem;
@@ -191,9 +202,9 @@ namespace LucaToysLite.Controls
                 base.OnRenderImageMargin(e);
 
                 var rect = new Rectangle(0, 0, e.ToolStrip.Width, e.ToolStrip.Height);
-                e.Graphics.FillRectangle(new SolidBrush(Color.FromArgb(20, 20, 20)), rect);
+                e.Graphics.FillRectangle(new SolidBrush(this.background), rect);
 
-                var DarkLine = new SolidBrush(Color.FromArgb(20, 20, 20));
+                var DarkLine = new SolidBrush(this.background);
                 var rect3 = new Rectangle(0, 0, 26, e.AffectedBounds.Height);
                 e.Graphics.FillRectangle(DarkLine, rect3);
 
