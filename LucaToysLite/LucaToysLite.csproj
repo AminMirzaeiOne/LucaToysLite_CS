@@ -56,6 +56,12 @@
     <Compile Include="Apps\Notepad.Designer.cs">
       <DependentUpon>Notepad.cs</DependentUpon>
     </Compile>
+    <Compile Include="Apps\Paint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apps\Paint.Designer.cs">
+      <DependentUpon>Paint.cs</DependentUpon>
+    </Compile>
     <Compile Include="ClassLibrary\WindowAnimation.cs" />
     <Compile Include="ClassLibrary\XToolStripDropDown.cs">
       <SubType>Component</SubType>
@@ -299,6 +305,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Apps\Notepad.resx">
       <DependentUpon>Notepad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apps\Paint.resx">
+      <DependentUpon>Paint.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Item.resx">
       <DependentUpon>Item.cs</DependentUpon>
