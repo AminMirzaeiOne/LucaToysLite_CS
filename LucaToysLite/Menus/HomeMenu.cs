@@ -17,13 +17,17 @@ namespace LucaToysLite.Menus
         {
             InitializeComponent();
             this.panel1.Controls.Add(this.users);
+            this.panel1.Controls.Add(this.products);
 
             this.users.Dock = DockStyle.Fill;
+            this.products.Dock = DockStyle.Fill;
 
             this.users.Visible = false;
+            this.products.Visible = false;
         }
 
         private LucaToysLite.Menus.Users users = new Users();
+        private LucaToysLite.Menus.Products products = new Products();
 
         private int radius = 20;
         [DefaultValue(20)]
@@ -113,7 +117,19 @@ namespace LucaToysLite.Menus
         private void roundedRadioButton1_CheckedChanged(object sender, EventArgs e)
         {
             if (this.roundedRadioButton1.Checked)
+            {
+                this.products.Visible = false;
                 this.animator1.Show(this.users);
+            }
+        }
+
+        private void roundedRadioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.roundedRadioButton2.Checked)
+            {
+                this.users.Visible = false;
+                this.animator1.Show(this.products);
+            }
         }
     }
 }
