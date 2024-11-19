@@ -719,5 +719,11 @@
   <ItemGroup>
     <None Include="Resources\icons8-xls-68.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-tools-68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-android-app-drawer-34.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
