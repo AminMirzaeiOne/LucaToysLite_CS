@@ -238,6 +238,7 @@
             this.roundedRadioButton6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.roundedRadioButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.roundedRadioButton6.UseVisualStyleBackColor = true;
+            this.roundedRadioButton6.CheckedChanged += new System.EventHandler(this.roundedRadioButton6_CheckedChanged);
             // 
             // roundedRadioButton5
             // 

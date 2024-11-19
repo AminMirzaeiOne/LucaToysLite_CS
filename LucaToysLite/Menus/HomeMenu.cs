@@ -21,18 +21,21 @@ namespace LucaToysLite.Menus
             this.panel1.Controls.Add(this.finance);
             this.panel1.Controls.Add(this.accounting);
             this.panel1.Controls.Add(this.invoice);
+            this.panel1.Controls.Add(this.documents);
 
             this.users.Dock = DockStyle.Fill;
             this.products.Dock = DockStyle.Fill;
             this.finance.Dock = DockStyle.Fill;
             this.accounting.Dock = DockStyle.Fill;
             this.invoice.Dock = DockStyle.Fill;
+            this.documents.Dock = DockStyle.Fill;
 
             this.users.Visible = true;
             this.products.Visible = false;
             this.finance.Visible = false;
             this.accounting.Visible = false;
             this.invoice.Visible = false;
+            this.documents.Visible = false;
         }
 
         private LucaToysLite.Menus.Users users = new Users();
@@ -40,6 +43,7 @@ namespace LucaToysLite.Menus
         private LucaToysLite.Menus.Finance finance = new Finance();
         private LucaToysLite.Menus.Accounting accounting = new Accounting();
         private LucaToysLite.Menus.Invoice invoice = new Invoice();
+        private LucaToysLite.Menus.Documents documents = new Documents();
 
         private int radius = 20;
         [DefaultValue(20)]
@@ -134,6 +138,7 @@ namespace LucaToysLite.Menus
                 this.finance.Visible = false;
                 this.accounting.Visible = false;
                 this.invoice.Visible = false;
+                this.documents.Visible = false;
                 this.animator1.Show(this.users);
             }
         }
@@ -146,6 +151,7 @@ namespace LucaToysLite.Menus
                 this.finance.Visible = false;
                 this.accounting.Visible = false;
                 this.invoice.Visible = false;
+                this.documents.Visible = false;
                 this.animator1.Show(this.products);
             }
         }
@@ -158,6 +164,7 @@ namespace LucaToysLite.Menus
                 this.products.Visible = false;
                 this.accounting.Visible = false;
                 this.invoice.Visible = false;
+                this.documents.Visible = false;
                 this.animator1.Show(this.finance);
             }
         }
@@ -170,6 +177,7 @@ namespace LucaToysLite.Menus
                 this.products.Visible = false;
                 this.finance.Visible = false;
                 this.invoice.Visible = false;
+                this.documents.Visible = false;
                 this.animator1.Show(this.accounting);
             }
         }
@@ -182,7 +190,21 @@ namespace LucaToysLite.Menus
                 this.products.Visible = false;
                 this.finance.Visible = false;
                 this.accounting.Visible = false;
+                this.documents.Visible = false;
                 this.animator1.Show(this.invoice);
+            }
+        }
+
+        private void roundedRadioButton6_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.roundedRadioButton6.Checked)
+            {
+                this.users.Visible = false;
+                this.products.Visible = false;
+                this.finance.Visible = false;
+                this.accounting.Visible = false;
+                this.invoice.Visible = false;
+                this.animator1.Show(this.documents);
             }
         }
     }

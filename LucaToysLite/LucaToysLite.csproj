@@ -172,6 +172,12 @@
     <Compile Include="Menus\Documents.Designer.cs">
       <DependentUpon>Documents.cs</DependentUpon>
     </Compile>
+    <Compile Include="Menus\ExportData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Menus\ExportData.Designer.cs">
+      <DependentUpon>ExportData.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menus\Finance.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -320,6 +326,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menus\Documents.resx">
       <DependentUpon>Documents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\ExportData.resx">
+      <DependentUpon>ExportData.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menus\Finance.resx">
       <DependentUpon>Finance.cs</DependentUpon>
@@ -688,6 +697,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-payment-68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-disk-partition-68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-database-restore-68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-disk-partition-681.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-txt-68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-csv-68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pdf-68%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-xls-68.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
