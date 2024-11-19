@@ -31,6 +31,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.roundedPanel2 = new LucaToysLite.Controls.RoundedPanel();
+            this.roundedPanel8 = new LucaToysLite.Controls.RoundedPanel();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.roundedPanel7 = new LucaToysLite.Controls.RoundedPanel();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -86,6 +89,9 @@
             this.newWindowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.closeWindowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator21 = new System.Windows.Forms.ToolStripSeparator();
             this.openFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -144,11 +150,12 @@
             this.toolStripSeparator16 = new System.Windows.Forms.ToolStripSeparator();
             this.aboutAppToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ltToolTip1 = new LucaToysLite.Controls.LTToolTip();
-            this.roundedPanel8 = new LucaToysLite.Controls.RoundedPanel();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.roundedLabel4 = new LucaToysLite.Controls.RoundedLabel();
+            this.roundedButton14 = new LucaToysLite.Controls.RoundedButton();
+            this.roundedButton15 = new LucaToysLite.Controls.RoundedButton();
             this.panel1.SuspendLayout();
             this.roundedPanel2.SuspendLayout();
+            this.roundedPanel8.SuspendLayout();
             this.roundedPanel7.SuspendLayout();
             this.roundedPanel6.SuspendLayout();
             this.roundedPanel5.SuspendLayout();
@@ -161,7 +168,6 @@
             this.ltContextMenu3.SuspendLayout();
             this.ltContextMenu4.SuspendLayout();
             this.ltContextMenu5.SuspendLayout();
-            this.roundedPanel8.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -169,6 +175,7 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.panel1.Controls.Add(this.roundedLabel4);
             this.panel1.Controls.Add(this.roundedLabel3);
             this.panel1.Controls.Add(this.roundedLabel2);
             this.panel1.Controls.Add(this.roundedLabel1);
@@ -176,6 +183,8 @@
             this.panel1.Controls.Add(this.roundedButton4);
             this.panel1.Controls.Add(this.roundedButton3);
             this.panel1.Controls.Add(this.roundedButton2);
+            this.panel1.Controls.Add(this.roundedButton15);
+            this.panel1.Controls.Add(this.roundedButton14);
             this.panel1.Controls.Add(this.roundedButton13);
             this.panel1.Controls.Add(this.roundedButton12);
             this.panel1.Controls.Add(this.roundedButton10);
@@ -218,6 +227,42 @@
             this.roundedPanel2.Name = "roundedPanel2";
             this.roundedPanel2.Size = new System.Drawing.Size(1253, 65);
             this.roundedPanel2.TabIndex = 8;
+            // 
+            // roundedPanel8
+            // 
+            this.roundedPanel8.BackColor = System.Drawing.Color.Crimson;
+            this.roundedPanel8.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedPanel8.BorderSize = ((byte)(0));
+            this.roundedPanel8.Controls.Add(this.label12);
+            this.roundedPanel8.Controls.Add(this.label13);
+            this.roundedPanel8.EnableBorder = false;
+            this.roundedPanel8.Location = new System.Drawing.Point(1013, 12);
+            this.roundedPanel8.Name = "roundedPanel8";
+            this.roundedPanel8.Radius = 15;
+            this.roundedPanel8.Size = new System.Drawing.Size(208, 40);
+            this.roundedPanel8.TabIndex = 1;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe MDL2 Assets", 12F);
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(8, 8);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(34, 24);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Location = new System.Drawing.Point(47, 4);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(149, 30);
+            this.label13.TabIndex = 0;
+            this.label13.Text = "Format : UTF8";
             // 
             // roundedPanel7
             // 
@@ -865,12 +910,15 @@
             this.newWindowToolStripMenuItem,
             this.closeWindowToolStripMenuItem,
             this.toolStripSeparator1,
+            this.saveToolStripMenuItem,
+            this.saveAsToolStripMenuItem,
+            this.toolStripSeparator21,
             this.openFileToolStripMenuItem,
             this.toolStripSeparator2,
             this.exitToolStripMenuItem,
             this.restartToolStripMenuItem});
             this.ltContextMenu1.Name = "ltContextMenu1";
-            this.ltContextMenu1.Size = new System.Drawing.Size(210, 226);
+            this.ltContextMenu1.Size = new System.Drawing.Size(210, 300);
             this.ltContextMenu1.Closed += new System.Windows.Forms.ToolStripDropDownClosedEventHandler(this.ltContextMenu1_Closed);
             this.ltContextMenu1.Opened += new System.EventHandler(this.ltContextMenu1_Opened);
             // 
@@ -904,6 +952,25 @@
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(206, 6);
+            // 
+            // saveToolStripMenuItem
+            // 
+            this.saveToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(209, 34);
+            this.saveToolStripMenuItem.Text = "Save";
+            // 
+            // saveAsToolStripMenuItem
+            // 
+            this.saveAsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(209, 34);
+            this.saveAsToolStripMenuItem.Text = "Save As";
+            // 
+            // toolStripSeparator21
+            // 
+            this.toolStripSeparator21.Name = "toolStripSeparator21";
+            this.toolStripSeparator21.Size = new System.Drawing.Size(206, 6);
             // 
             // openFileToolStripMenuItem
             // 
@@ -1361,41 +1428,53 @@
             this.ltToolTip1.OwnerDraw = true;
             this.ltToolTip1.Themes = LucaToysLite.Controls.Themes.Dark;
             // 
-            // roundedPanel8
+            // roundedLabel4
             // 
-            this.roundedPanel8.BackColor = System.Drawing.Color.Crimson;
-            this.roundedPanel8.BorderColor = System.Drawing.Color.Crimson;
-            this.roundedPanel8.BorderSize = ((byte)(0));
-            this.roundedPanel8.Controls.Add(this.label12);
-            this.roundedPanel8.Controls.Add(this.label13);
-            this.roundedPanel8.EnableBorder = false;
-            this.roundedPanel8.Location = new System.Drawing.Point(1013, 12);
-            this.roundedPanel8.Name = "roundedPanel8";
-            this.roundedPanel8.Radius = 15;
-            this.roundedPanel8.Size = new System.Drawing.Size(208, 40);
-            this.roundedPanel8.TabIndex = 1;
+            this.roundedLabel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.roundedLabel4.BackColor = System.Drawing.Color.Crimson;
+            this.roundedLabel4.BorderRadius = ((byte)(4));
+            this.roundedLabel4.Location = new System.Drawing.Point(700, 7);
+            this.roundedLabel4.Name = "roundedLabel4";
+            this.roundedLabel4.Size = new System.Drawing.Size(4, 40);
+            this.roundedLabel4.TabIndex = 18;
             // 
-            // label12
+            // roundedButton14
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe MDL2 Assets", 12F);
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(8, 8);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(34, 24);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "";
+            this.roundedButton14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.roundedButton14.BorderRadius = ((byte)(15));
+            this.roundedButton14.BorderSize = ((byte)(2));
+            this.roundedButton14.EnableBorder = true;
+            this.roundedButton14.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedButton14.FlatAppearance.BorderSize = 0;
+            this.roundedButton14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Crimson;
+            this.roundedButton14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton14.Font = new System.Drawing.Font("Segoe MDL2 Assets", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedButton14.ForeColor = System.Drawing.Color.White;
+            this.roundedButton14.Location = new System.Drawing.Point(631, 7);
+            this.roundedButton14.Name = "roundedButton14";
+            this.roundedButton14.Size = new System.Drawing.Size(50, 40);
+            this.roundedButton14.TabIndex = 0;
+            this.roundedButton14.Text = "";
+            this.roundedButton14.UseVisualStyleBackColor = true;
             // 
-            // label13
+            // roundedButton15
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(47, 4);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(149, 30);
-            this.label13.TabIndex = 0;
-            this.label13.Text = "Format : UTF8";
+            this.roundedButton15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.roundedButton15.BorderRadius = ((byte)(15));
+            this.roundedButton15.BorderSize = ((byte)(2));
+            this.roundedButton15.EnableBorder = true;
+            this.roundedButton15.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedButton15.FlatAppearance.BorderSize = 0;
+            this.roundedButton15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Crimson;
+            this.roundedButton15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton15.Font = new System.Drawing.Font("Segoe MDL2 Assets", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedButton15.ForeColor = System.Drawing.Color.White;
+            this.roundedButton15.Location = new System.Drawing.Point(568, 7);
+            this.roundedButton15.Name = "roundedButton15";
+            this.roundedButton15.Size = new System.Drawing.Size(50, 40);
+            this.roundedButton15.TabIndex = 0;
+            this.roundedButton15.Text = "";
+            this.roundedButton15.UseVisualStyleBackColor = true;
             // 
             // Notepad
             // 
@@ -1415,6 +1494,8 @@
             this.Text = "Notepad";
             this.panel1.ResumeLayout(false);
             this.roundedPanel2.ResumeLayout(false);
+            this.roundedPanel8.ResumeLayout(false);
+            this.roundedPanel8.PerformLayout();
             this.roundedPanel7.ResumeLayout(false);
             this.roundedPanel7.PerformLayout();
             this.roundedPanel6.ResumeLayout(false);
@@ -1432,8 +1513,6 @@
             this.ltContextMenu3.ResumeLayout(false);
             this.ltContextMenu4.ResumeLayout(false);
             this.ltContextMenu5.ResumeLayout(false);
-            this.roundedPanel8.ResumeLayout(false);
-            this.roundedPanel8.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1559,5 +1638,11 @@
         private Controls.RoundedPanel roundedPanel8;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem saveAsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator21;
+        private Controls.RoundedLabel roundedLabel4;
+        private Controls.RoundedButton roundedButton15;
+        private Controls.RoundedButton roundedButton14;
     }
 }
