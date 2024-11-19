@@ -199,6 +199,12 @@
     <Compile Include="Menus\Accounting.Designer.cs">
       <DependentUpon>Accounting.cs</DependentUpon>
     </Compile>
+    <Compile Include="Menus\AppTools.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Menus\AppTools.Designer.cs">
+      <DependentUpon>AppTools.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menus\Documents.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -371,6 +377,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menus\Accounting.resx">
       <DependentUpon>Accounting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\AppTools.resx">
+      <DependentUpon>AppTools.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menus\Documents.resx">
       <DependentUpon>Documents.cs</DependentUpon>
@@ -772,6 +781,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-android-app-drawer-34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-note-68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-windows-10-personalization-68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-convert-68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-translate-68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-web-design-68.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
