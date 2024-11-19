@@ -659,5 +659,17 @@
   <ItemGroup>
     <None Include="Resources\icons8-qr-code-68.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-invoice-68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-billing-machine-68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-profit-68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-return-purchase-68.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
