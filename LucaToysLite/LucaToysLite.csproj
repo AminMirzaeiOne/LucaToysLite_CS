@@ -555,6 +555,7 @@
     <None Include="Resources\icons8-backup-28.png" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Apps\" />
     <Folder Include="Pages\Settings\DatabasePages\" />
   </ItemGroup>
   <ItemGroup>
