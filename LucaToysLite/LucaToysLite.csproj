@@ -572,5 +572,29 @@
   <ItemGroup>
     <None Include="Resources\icons8-search-client-68.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-product-68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-package-search-68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 5%281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
