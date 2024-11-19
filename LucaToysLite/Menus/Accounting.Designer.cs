@@ -28,23 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.roundedLabel1 = new LucaToysLite.Controls.RoundedLabel();
             this.roundedButton4 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton3 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton2 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton1 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton7 = new LucaToysLite.Controls.RoundedButton();
             this.roundedLabel2 = new LucaToysLite.Controls.RoundedLabel();
+            this.roundedLabel1 = new LucaToysLite.Controls.RoundedLabel();
             this.SuspendLayout();
-            // 
-            // roundedLabel1
-            // 
-            this.roundedLabel1.BackColor = System.Drawing.Color.Crimson;
-            this.roundedLabel1.BorderRadius = ((byte)(4));
-            this.roundedLabel1.Location = new System.Drawing.Point(692, 23);
-            this.roundedLabel1.Name = "roundedLabel1";
-            this.roundedLabel1.Size = new System.Drawing.Size(4, 90);
-            this.roundedLabel1.TabIndex = 17;
             // 
             // roundedButton4
             // 
@@ -155,6 +146,15 @@
             this.roundedLabel2.Size = new System.Drawing.Size(4, 90);
             this.roundedLabel2.TabIndex = 17;
             // 
+            // roundedLabel1
+            // 
+            this.roundedLabel1.BackColor = System.Drawing.Color.Crimson;
+            this.roundedLabel1.BorderRadius = ((byte)(4));
+            this.roundedLabel1.Location = new System.Drawing.Point(692, 23);
+            this.roundedLabel1.Name = "roundedLabel1";
+            this.roundedLabel1.Size = new System.Drawing.Size(4, 90);
+            this.roundedLabel1.TabIndex = 17;
+            // 
             // Accounting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
@@ -178,9 +178,9 @@
         private Controls.RoundedButton roundedButton7;
         private Controls.RoundedButton roundedButton1;
         private Controls.RoundedButton roundedButton2;
-        private Controls.RoundedLabel roundedLabel1;
         private Controls.RoundedButton roundedButton3;
         private Controls.RoundedButton roundedButton4;
         private Controls.RoundedLabel roundedLabel2;
+        private Controls.RoundedLabel roundedLabel1;
     }
 }
