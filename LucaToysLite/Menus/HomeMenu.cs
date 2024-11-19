@@ -23,6 +23,8 @@ namespace LucaToysLite.Menus
             this.panel1.Controls.Add(this.invoice);
             this.panel1.Controls.Add(this.documents);
             this.panel1.Controls.Add(this.exportData);
+            this.panel1.Controls.Add(this.appTools);
+
 
             this.users.Dock = DockStyle.Fill;
             this.products.Dock = DockStyle.Fill;
@@ -31,6 +33,7 @@ namespace LucaToysLite.Menus
             this.invoice.Dock = DockStyle.Fill;
             this.documents.Dock = DockStyle.Fill;
             this.exportData.Dock = DockStyle.Fill;
+            this.appTools.Dock = DockStyle.Fill;
 
             this.users.Visible = true;
             this.products.Visible = false;
@@ -39,6 +42,7 @@ namespace LucaToysLite.Menus
             this.invoice.Visible = false;
             this.documents.Visible = false;
             this.exportData.Visible = false;
+            this.appTools.Visible = false;
         }
 
         private LucaToysLite.Menus.Users users = new Users();
@@ -48,6 +52,7 @@ namespace LucaToysLite.Menus
         private LucaToysLite.Menus.Invoice invoice = new Invoice();
         private LucaToysLite.Menus.Documents documents = new Documents();
         private LucaToysLite.Menus.ExportData exportData = new ExportData();
+        private LucaToysLite.Menus.AppTools appTools = new AppTools();
 
         private int radius = 20;
         [DefaultValue(20)]
@@ -144,6 +149,7 @@ namespace LucaToysLite.Menus
                 this.invoice.Visible = false;
                 this.documents.Visible = false;
                 this.exportData.Visible = false;
+                this.appTools.Visible = false;
                 this.animator1.Show(this.users);
             }
         }
@@ -158,6 +164,7 @@ namespace LucaToysLite.Menus
                 this.invoice.Visible = false;
                 this.documents.Visible = false;
                 this.exportData.Visible = false;
+                this.appTools.Visible = false;
                 this.animator1.Show(this.products);
             }
         }
@@ -172,6 +179,7 @@ namespace LucaToysLite.Menus
                 this.invoice.Visible = false;
                 this.documents.Visible = false;
                 this.exportData.Visible = false;
+                this.appTools.Visible = false;
                 this.animator1.Show(this.finance);
             }
         }
@@ -186,6 +194,7 @@ namespace LucaToysLite.Menus
                 this.invoice.Visible = false;
                 this.documents.Visible = false;
                 this.exportData.Visible = false;
+                this.appTools.Visible = false;
                 this.animator1.Show(this.accounting);
             }
         }
@@ -200,6 +209,7 @@ namespace LucaToysLite.Menus
                 this.accounting.Visible = false;
                 this.documents.Visible = false;
                 this.exportData.Visible = false;
+                this.appTools.Visible = false;
                 this.animator1.Show(this.invoice);
             }
         }
@@ -214,6 +224,7 @@ namespace LucaToysLite.Menus
                 this.accounting.Visible = false;
                 this.invoice.Visible = false;
                 this.exportData.Visible = false;
+                this.appTools.Visible = false;
                 this.animator1.Show(this.documents);
             }
         }
@@ -228,7 +239,23 @@ namespace LucaToysLite.Menus
                 this.accounting.Visible = false;
                 this.invoice.Visible = false;
                 this.documents.Visible = false;
+                this.appTools.Visible = false;
                 this.animator1.Show(this.exportData);
+            }
+        }
+
+        private void roundedRadioButton10_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.roundedRadioButton10.Checked)
+            {
+                this.users.Visible = false;
+                this.products.Visible = false;
+                this.finance.Visible = false;
+                this.accounting.Visible = false;
+                this.invoice.Visible = false;
+                this.documents.Visible = false;
+                this.exportData.Visible = false;
+                this.animator1.Show(this.appTools);
             }
         }
     }
