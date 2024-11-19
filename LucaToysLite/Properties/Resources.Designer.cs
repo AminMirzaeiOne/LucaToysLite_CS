@@ -141,6 +141,16 @@ namespace LucaToysLite.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Group_1 {
+            get {
+                object obj = ResourceManager.GetObject("Group 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] GSound {
@@ -316,6 +326,16 @@ namespace LucaToysLite.Properties {
         internal static System.Drawing.Bitmap icons8_database_administrator_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-database-administrator-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_delete_user_group_woman_man_68 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-delete-user-group-woman-man-68", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -626,6 +646,16 @@ namespace LucaToysLite.Properties {
         internal static System.Drawing.Bitmap icons8_restore_28 {
             get {
                 object obj = ResourceManager.GetObject("icons8-restore-28", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_search_client_68 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-search-client-68", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

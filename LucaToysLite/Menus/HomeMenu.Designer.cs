@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.users1 = new LucaToysLite.Menus.Users();
+            this.components = new System.ComponentModel.Container();
+            WFAnimations.Animation animation1 = new WFAnimations.Animation();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeMenu));
             this.roundedPanel1 = new LucaToysLite.Controls.RoundedPanel();
             this.roundedRadioButton1 = new LucaToysLite.Controls.RoundedRadioButton();
             this.roundedRadioButton9 = new LucaToysLite.Controls.RoundedRadioButton();
@@ -40,16 +42,10 @@
             this.roundedRadioButton4 = new LucaToysLite.Controls.RoundedRadioButton();
             this.roundedRadioButton3 = new LucaToysLite.Controls.RoundedRadioButton();
             this.roundedRadioButton2 = new LucaToysLite.Controls.RoundedRadioButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.animator1 = new WFAnimations.Animator(this.components);
             this.roundedPanel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // users1
-            // 
-            this.users1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.users1.Location = new System.Drawing.Point(15, 84);
-            this.users1.Name = "users1";
-            this.users1.Size = new System.Drawing.Size(1700, 140);
-            this.users1.TabIndex = 2;
             // 
             // roundedPanel1
             // 
@@ -294,12 +290,42 @@
             this.roundedRadioButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.roundedRadioButton2.UseVisualStyleBackColor = true;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.panel1.Location = new System.Drawing.Point(3, 87);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1769, 140);
+            this.panel1.TabIndex = 2;
+            // 
+            // animator1
+            // 
+            this.animator1.AnimationType = WFAnimations.AnimationType.VertSlide;
+            this.animator1.Cursor = null;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.animator1.DefaultAnimation = animation1;
+            this.animator1.Upside = false;
+            // 
             // HomeMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.Controls.Add(this.users1);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.roundedPanel1);
             this.Name = "HomeMenu";
             this.Size = new System.Drawing.Size(1775, 230);
@@ -320,6 +346,7 @@
         private Controls.RoundedRadioButton roundedRadioButton8;
         private Controls.RoundedRadioButton roundedRadioButton9;
         private Controls.RoundedRadioButton roundedRadioButton10;
-        private Users users1;
+        private System.Windows.Forms.Panel panel1;
+        private WFAnimations.Animator animator1;
     }
 }

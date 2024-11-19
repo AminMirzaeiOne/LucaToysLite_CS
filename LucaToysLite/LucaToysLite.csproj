@@ -554,5 +554,14 @@
   <ItemGroup>
     <None Include="Resources\icons8-add-user-group-woman-man-68.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-user-group-woman-man-68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-client-68.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
