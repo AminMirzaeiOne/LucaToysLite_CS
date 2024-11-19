@@ -680,5 +680,14 @@
   <ItemGroup>
     <None Include="Resources\icons8-return-purchase-68.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-atm-68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-get-revenue-68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-payment-68.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
