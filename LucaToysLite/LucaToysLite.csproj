@@ -178,6 +178,12 @@
     <Compile Include="Menus\HomeMenu.Designer.cs">
       <DependentUpon>HomeMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Menus\Invoice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Menus\Invoice.Designer.cs">
+      <DependentUpon>Invoice.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menus\Products.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -311,6 +317,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menus\HomeMenu.resx">
       <DependentUpon>HomeMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\Invoice.resx">
+      <DependentUpon>Invoice.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menus\Products.resx">
       <DependentUpon>Products.cs</DependentUpon>
@@ -637,6 +646,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-bank-cards-68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-basket-68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-qr-code-68.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

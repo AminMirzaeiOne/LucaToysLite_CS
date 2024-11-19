@@ -19,19 +19,23 @@ namespace LucaToysLite.Menus
             this.panel1.Controls.Add(this.users);
             this.panel1.Controls.Add(this.products);
             this.panel1.Controls.Add(this.finance);
+            this.panel1.Controls.Add(this.accounting);
 
             this.users.Dock = DockStyle.Fill;
             this.products.Dock = DockStyle.Fill;
             this.finance.Dock = DockStyle.Fill;
+            this.accounting.Dock = DockStyle.Fill;
 
             this.users.Visible = true;
             this.products.Visible = false;
             this.finance.Visible = false;
+            this.accounting.Visible = false;
         }
 
         private LucaToysLite.Menus.Users users = new Users();
         private LucaToysLite.Menus.Products products = new Products();
         private LucaToysLite.Menus.Finance finance = new Finance();
+        private LucaToysLite.Menus.Accounting accounting = new Accounting();
 
         private int radius = 20;
         [DefaultValue(20)]
@@ -124,6 +128,7 @@ namespace LucaToysLite.Menus
             {
                 this.products.Visible = false;
                 this.finance.Visible = false;
+                this.accounting.Visible = false;
                 this.animator1.Show(this.users);
             }
         }
@@ -134,6 +139,7 @@ namespace LucaToysLite.Menus
             {
                 this.users.Visible = false;
                 this.finance.Visible = false;
+                this.accounting.Visible = false;
                 this.animator1.Show(this.products);
             }
         }
@@ -144,7 +150,19 @@ namespace LucaToysLite.Menus
             {
                 this.users.Visible = false;
                 this.products.Visible = false;
+                this.accounting.Visible = false;
                 this.animator1.Show(this.finance);
+            }
+        }
+
+        private void roundedRadioButton4_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.roundedRadioButton4.Checked)
+            {
+                this.users.Visible = false;
+                this.products.Visible = false;
+                this.finance.Visible = false;
+                this.animator1.Show(this.accounting);
             }
         }
     }
