@@ -58,7 +58,13 @@ namespace LucaToysLite.Apps
         private void roundedButton5_MouseDown(object sender, MouseEventArgs e)
         {
             this.downButton = this.roundedButton5;
-            this.ltContextMenu5.Show(this.roundedButton5, new Point(0, 50));
+            this.ltContextMenu7.Show(this.roundedButton5, new Point(0, 50));
+        }
+
+        private void roundedButton16_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.downButton = this.roundedButton16;
+            this.ltContextMenu5.Show(this.roundedButton16, new Point(0, 50));
         }
     }
 }
