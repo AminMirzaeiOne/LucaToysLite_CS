@@ -818,5 +818,20 @@
   <ItemGroup>
     <None Include="Resources\icons8-calculator-68.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-automatic-brightness-68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-change-theme-68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-show-property-68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-admin-settings-male-68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-database-administrator-68.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
