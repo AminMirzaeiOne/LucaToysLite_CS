@@ -16,5 +16,17 @@ namespace LucaToysLite.Menus
         {
             InitializeComponent();
         }
+
+        private void roundedButton5_Click(object sender, EventArgs e)
+        {
+            LucaToysLite.Apps.Calculator calculator = new Apps.Calculator();
+            calculator.Show();
+        }
+
+        private void roundedButton7_Click(object sender, EventArgs e)
+        {
+            LucaToysLite.Apps.Notepad notepad = new Apps.Notepad();
+            notepad.Show();
+        }
     }
 }

@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.roundedLabel1 = new LucaToysLite.Controls.RoundedLabel();
             this.roundedLabel2 = new LucaToysLite.Controls.RoundedLabel();
+            this.roundedLabel1 = new LucaToysLite.Controls.RoundedLabel();
             this.roundedButton4 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton3 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton2 = new LucaToysLite.Controls.RoundedButton();
@@ -37,15 +37,6 @@
             this.roundedButton5 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton7 = new LucaToysLite.Controls.RoundedButton();
             this.SuspendLayout();
-            // 
-            // roundedLabel1
-            // 
-            this.roundedLabel1.BackColor = System.Drawing.Color.Crimson;
-            this.roundedLabel1.BorderRadius = ((byte)(4));
-            this.roundedLabel1.Location = new System.Drawing.Point(772, 23);
-            this.roundedLabel1.Name = "roundedLabel1";
-            this.roundedLabel1.Size = new System.Drawing.Size(4, 90);
-            this.roundedLabel1.TabIndex = 21;
             // 
             // roundedLabel2
             // 
@@ -55,6 +46,15 @@
             this.roundedLabel2.Name = "roundedLabel2";
             this.roundedLabel2.Size = new System.Drawing.Size(4, 90);
             this.roundedLabel2.TabIndex = 21;
+            // 
+            // roundedLabel1
+            // 
+            this.roundedLabel1.BackColor = System.Drawing.Color.Crimson;
+            this.roundedLabel1.BorderRadius = ((byte)(4));
+            this.roundedLabel1.Location = new System.Drawing.Point(772, 23);
+            this.roundedLabel1.Name = "roundedLabel1";
+            this.roundedLabel1.Size = new System.Drawing.Size(4, 90);
+            this.roundedLabel1.TabIndex = 21;
             // 
             // roundedButton4
             // 
@@ -156,6 +156,7 @@
             this.roundedButton5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.roundedButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.roundedButton5.UseVisualStyleBackColor = true;
+            this.roundedButton5.Click += new System.EventHandler(this.roundedButton5_Click);
             // 
             // roundedButton7
             // 
@@ -176,6 +177,7 @@
             this.roundedButton7.Text = "Notepad";
             this.roundedButton7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.roundedButton7.UseVisualStyleBackColor = true;
+            this.roundedButton7.Click += new System.EventHandler(this.roundedButton7_Click);
             // 
             // AppTools
             // 
