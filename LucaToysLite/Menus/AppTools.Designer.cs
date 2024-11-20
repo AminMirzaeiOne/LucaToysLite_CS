@@ -29,10 +29,12 @@
         private void InitializeComponent()
         {
             this.roundedLabel1 = new LucaToysLite.Controls.RoundedLabel();
+            this.roundedLabel2 = new LucaToysLite.Controls.RoundedLabel();
             this.roundedButton4 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton3 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton2 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton1 = new LucaToysLite.Controls.RoundedButton();
+            this.roundedButton5 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton7 = new LucaToysLite.Controls.RoundedButton();
             this.SuspendLayout();
             // 
@@ -40,10 +42,19 @@
             // 
             this.roundedLabel1.BackColor = System.Drawing.Color.Crimson;
             this.roundedLabel1.BorderRadius = ((byte)(4));
-            this.roundedLabel1.Location = new System.Drawing.Point(473, 23);
+            this.roundedLabel1.Location = new System.Drawing.Point(772, 23);
             this.roundedLabel1.Name = "roundedLabel1";
             this.roundedLabel1.Size = new System.Drawing.Size(4, 90);
             this.roundedLabel1.TabIndex = 21;
+            // 
+            // roundedLabel2
+            // 
+            this.roundedLabel2.BackColor = System.Drawing.Color.Crimson;
+            this.roundedLabel2.BorderRadius = ((byte)(4));
+            this.roundedLabel2.Location = new System.Drawing.Point(258, 23);
+            this.roundedLabel2.Name = "roundedLabel2";
+            this.roundedLabel2.Size = new System.Drawing.Size(4, 90);
+            this.roundedLabel2.TabIndex = 21;
             // 
             // roundedButton4
             // 
@@ -57,7 +68,7 @@
             this.roundedButton4.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedButton4.ForeColor = System.Drawing.Color.White;
             this.roundedButton4.Image = global::LucaToysLite.Properties.Resources.icons8_web_design_68;
-            this.roundedButton4.Location = new System.Drawing.Point(972, 6);
+            this.roundedButton4.Location = new System.Drawing.Point(1271, 6);
             this.roundedButton4.Name = "roundedButton4";
             this.roundedButton4.Size = new System.Drawing.Size(200, 125);
             this.roundedButton4.TabIndex = 20;
@@ -77,7 +88,7 @@
             this.roundedButton3.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedButton3.ForeColor = System.Drawing.Color.White;
             this.roundedButton3.Image = global::LucaToysLite.Properties.Resources.icons8_translate_68;
-            this.roundedButton3.Location = new System.Drawing.Point(746, 6);
+            this.roundedButton3.Location = new System.Drawing.Point(1045, 6);
             this.roundedButton3.Name = "roundedButton3";
             this.roundedButton3.Size = new System.Drawing.Size(200, 125);
             this.roundedButton3.TabIndex = 20;
@@ -97,7 +108,7 @@
             this.roundedButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedButton2.ForeColor = System.Drawing.Color.White;
             this.roundedButton2.Image = global::LucaToysLite.Properties.Resources.icons8_convert_68;
-            this.roundedButton2.Location = new System.Drawing.Point(520, 6);
+            this.roundedButton2.Location = new System.Drawing.Point(819, 6);
             this.roundedButton2.Name = "roundedButton2";
             this.roundedButton2.Size = new System.Drawing.Size(200, 125);
             this.roundedButton2.TabIndex = 20;
@@ -117,13 +128,34 @@
             this.roundedButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedButton1.ForeColor = System.Drawing.Color.White;
             this.roundedButton1.Image = global::LucaToysLite.Properties.Resources.icons8_windows_10_personalization_68;
-            this.roundedButton1.Location = new System.Drawing.Point(233, 6);
+            this.roundedButton1.Location = new System.Drawing.Point(532, 6);
             this.roundedButton1.Name = "roundedButton1";
             this.roundedButton1.Size = new System.Drawing.Size(200, 125);
             this.roundedButton1.TabIndex = 20;
             this.roundedButton1.Text = "Paint Drawing";
             this.roundedButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.roundedButton1.UseVisualStyleBackColor = true;
+            // 
+            // roundedButton5
+            // 
+            this.roundedButton5.BorderRadius = ((byte)(20));
+            this.roundedButton5.BorderSize = ((byte)(3));
+            this.roundedButton5.EnableBorder = true;
+            this.roundedButton5.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedButton5.FlatAppearance.BorderSize = 0;
+            this.roundedButton5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Crimson;
+            this.roundedButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton5.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedButton5.ForeColor = System.Drawing.Color.White;
+            this.roundedButton5.Image = global::LucaToysLite.Properties.Resources.icons8_calculator_68;
+            this.roundedButton5.Location = new System.Drawing.Point(15, 6);
+            this.roundedButton5.Name = "roundedButton5";
+            this.roundedButton5.Size = new System.Drawing.Size(200, 125);
+            this.roundedButton5.TabIndex = 20;
+            this.roundedButton5.Text = "Calculator";
+            this.roundedButton5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.roundedButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.roundedButton5.UseVisualStyleBackColor = true;
             // 
             // roundedButton7
             // 
@@ -137,7 +169,7 @@
             this.roundedButton7.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedButton7.ForeColor = System.Drawing.Color.White;
             this.roundedButton7.Image = global::LucaToysLite.Properties.Resources.icons8_note_68;
-            this.roundedButton7.Location = new System.Drawing.Point(10, 6);
+            this.roundedButton7.Location = new System.Drawing.Point(309, 6);
             this.roundedButton7.Name = "roundedButton7";
             this.roundedButton7.Size = new System.Drawing.Size(200, 125);
             this.roundedButton7.TabIndex = 20;
@@ -150,11 +182,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.Controls.Add(this.roundedLabel2);
             this.Controls.Add(this.roundedLabel1);
             this.Controls.Add(this.roundedButton4);
             this.Controls.Add(this.roundedButton3);
             this.Controls.Add(this.roundedButton2);
             this.Controls.Add(this.roundedButton1);
+            this.Controls.Add(this.roundedButton5);
             this.Controls.Add(this.roundedButton7);
             this.Name = "AppTools";
             this.Size = new System.Drawing.Size(1843, 140);
@@ -170,5 +204,7 @@
         private Controls.RoundedButton roundedButton2;
         private Controls.RoundedButton roundedButton3;
         private Controls.RoundedButton roundedButton4;
+        private Controls.RoundedLabel roundedLabel2;
+        private Controls.RoundedButton roundedButton5;
     }
 }

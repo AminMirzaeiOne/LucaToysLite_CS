@@ -806,5 +806,8 @@
   <ItemGroup>
     <None Include="Resources\icons8-web-design-68.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-calculator-68.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
