@@ -229,6 +229,12 @@
     <Compile Include="Menus\Finance.Designer.cs">
       <DependentUpon>Finance.cs</DependentUpon>
     </Compile>
+    <Compile Include="Menus\Help.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Menus\Help.Designer.cs">
+      <DependentUpon>Help.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menus\HomeMenu.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -404,6 +410,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menus\Finance.resx">
       <DependentUpon>Finance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\Help.resx">
+      <DependentUpon>Help.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menus\HomeMenu.resx">
       <DependentUpon>HomeMenu.cs</DependentUpon>
