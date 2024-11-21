@@ -364,6 +364,7 @@ namespace LucaToysLite.Forms
             this.roundedRadioButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.roundedRadioButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.roundedRadioButton1.UseVisualStyleBackColor = true;
+            this.roundedRadioButton1.CheckedChanged += new System.EventHandler(this.roundedRadioButton1_CheckedChanged);
             // 
             // roundedRadioButton3
             // 
