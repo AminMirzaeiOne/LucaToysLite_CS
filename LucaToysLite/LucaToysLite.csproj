@@ -355,6 +355,12 @@
     <Compile Include="Panels\Purchase\FixedCustomer.Designer.cs">
       <DependentUpon>FixedCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Panels\Purchase\ToysList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Purchase\ToysList.Designer.cs">
+      <DependentUpon>ToysList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Panels\Purchase\VariousCustomer.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -491,6 +497,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Panels\Purchase\FixedCustomer.resx">
       <DependentUpon>FixedCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Purchase\ToysList.resx">
+      <DependentUpon>ToysList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Panels\Purchase\VariousCustomer.resx">
       <DependentUpon>VariousCustomer.cs</DependentUpon>
