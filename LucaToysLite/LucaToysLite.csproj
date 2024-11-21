@@ -882,5 +882,53 @@
   <ItemGroup>
     <None Include="Resources\icons8-toy-48.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-accountant-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-bill-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-discount-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-tax-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-calculator-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-receipt-declined-54.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-receipt-declined-62.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-print-62.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-collaborative-goal-62.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-receipt-62.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-back-62.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-forward-62.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-date-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-clear-shopping-cart-62.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cash-receipt-62.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-registration-62.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
