@@ -349,6 +349,12 @@
     <Compile Include="Pages\Settings\Database.Designer.cs">
       <DependentUpon>Database.cs</DependentUpon>
     </Compile>
+    <Compile Include="Panels\Purchase\DollsList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Purchase\DollsList.Designer.cs">
+      <DependentUpon>DollsList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Panels\Purchase\FixedCustomer.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -494,6 +500,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\Settings\Database.resx">
       <DependentUpon>Database.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Purchase\DollsList.resx">
+      <DependentUpon>DollsList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Panels\Purchase\FixedCustomer.resx">
       <DependentUpon>FixedCustomer.cs</DependentUpon>
