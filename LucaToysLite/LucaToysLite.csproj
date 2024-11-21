@@ -355,6 +355,12 @@
     <Compile Include="Panels\Purchase\FixedCustomer.Designer.cs">
       <DependentUpon>FixedCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Panels\Purchase\VariousCustomer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Purchase\VariousCustomer.Designer.cs">
+      <DependentUpon>VariousCustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Apps\Calculator.resx">
@@ -485,6 +491,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Panels\Purchase\FixedCustomer.resx">
       <DependentUpon>FixedCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Purchase\VariousCustomer.resx">
+      <DependentUpon>VariousCustomer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -949,6 +958,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-customers-42%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-name-42.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

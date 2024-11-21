@@ -30,10 +30,10 @@ namespace LucaToysLite.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            WFAnimations.Animation animation1 = new WFAnimations.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PurchaseMode));
             this.roundedPanel12 = new LucaToysLite.Controls.RoundedPanel();
-            this.label14 = new System.Windows.Forms.Label();
-            this.roundedButton10 = new LucaToysLite.Controls.RoundedButton();
             this.roundedPanel4 = new LucaToysLite.Controls.RoundedPanel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.roundedPanel2 = new LucaToysLite.Controls.RoundedPanel();
@@ -56,9 +56,11 @@ namespace LucaToysLite.Forms
             this.roundedPanel6 = new LucaToysLite.Controls.RoundedPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
+            this.roundedLabel4 = new LucaToysLite.Controls.RoundedLabel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.animator1 = new WFAnimations.Animator(this.components);
             this.roundedRadioButton4 = new LucaToysLite.Controls.RoundedRadioButton();
             this.roundedRadioButton2 = new LucaToysLite.Controls.RoundedRadioButton();
-            this.roundedLabel1 = new LucaToysLite.Controls.RoundedLabel();
             this.roundedRadioButton1 = new LucaToysLite.Controls.RoundedRadioButton();
             this.roundedRadioButton3 = new LucaToysLite.Controls.RoundedRadioButton();
             this.roundedButton4 = new LucaToysLite.Controls.RoundedButton();
@@ -76,7 +78,6 @@ namespace LucaToysLite.Forms
             this.label4 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.roundedLabel4 = new LucaToysLite.Controls.RoundedLabel();
             this.roundedPanel12.SuspendLayout();
             this.roundedPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -98,47 +99,16 @@ namespace LucaToysLite.Forms
             this.roundedPanel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.roundedPanel12.BorderColor = System.Drawing.Color.Crimson;
             this.roundedPanel12.BorderSize = ((byte)(3));
-            this.roundedPanel12.Controls.Add(this.label14);
+            this.roundedPanel12.Controls.Add(this.panel1);
             this.roundedPanel12.Controls.Add(this.roundedLabel4);
             this.roundedPanel12.Controls.Add(this.roundedRadioButton4);
             this.roundedPanel12.Controls.Add(this.roundedRadioButton2);
-            this.roundedPanel12.Controls.Add(this.roundedLabel1);
-            this.roundedPanel12.Controls.Add(this.roundedButton10);
+            this.animator1.SetDecoration(this.roundedPanel12, WFAnimations.DecorationType.None);
             this.roundedPanel12.EnableBorder = true;
             this.roundedPanel12.Location = new System.Drawing.Point(385, 237);
             this.roundedPanel12.Name = "roundedPanel12";
             this.roundedPanel12.Size = new System.Drawing.Size(1164, 90);
             this.roundedPanel12.TabIndex = 1;
-            // 
-            // label14
-            // 
-            this.label14.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(834, 18);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(140, 30);
-            this.label14.TabIndex = 1;
-            this.label14.Text = "Amin Mirzaei";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // roundedButton10
-            // 
-            this.roundedButton10.BorderRadius = ((byte)(20));
-            this.roundedButton10.BorderSize = ((byte)(3));
-            this.roundedButton10.EnableBorder = true;
-            this.roundedButton10.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
-            this.roundedButton10.FlatAppearance.BorderSize = 0;
-            this.roundedButton10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Crimson;
-            this.roundedButton10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton10.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.roundedButton10.ForeColor = System.Drawing.Color.White;
-            this.roundedButton10.Location = new System.Drawing.Point(979, 12);
-            this.roundedButton10.Name = "roundedButton10";
-            this.roundedButton10.Size = new System.Drawing.Size(160, 45);
-            this.roundedButton10.TabIndex = 18;
-            this.roundedButton10.Text = "Select Customer";
-            this.roundedButton10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.roundedButton10.UseVisualStyleBackColor = true;
             // 
             // roundedPanel4
             // 
@@ -149,6 +119,7 @@ namespace LucaToysLite.Forms
             this.roundedPanel4.BorderColor = System.Drawing.Color.Crimson;
             this.roundedPanel4.BorderSize = ((byte)(3));
             this.roundedPanel4.Controls.Add(this.dataGridView1);
+            this.animator1.SetDecoration(this.roundedPanel4, WFAnimations.DecorationType.None);
             this.roundedPanel4.EnableBorder = true;
             this.roundedPanel4.Location = new System.Drawing.Point(385, 344);
             this.roundedPanel4.Name = "roundedPanel4";
@@ -162,6 +133,7 @@ namespace LucaToysLite.Forms
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.animator1.SetDecoration(this.dataGridView1, WFAnimations.DecorationType.None);
             this.dataGridView1.Location = new System.Drawing.Point(15, 13);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
@@ -179,6 +151,7 @@ namespace LucaToysLite.Forms
             this.roundedPanel2.Controls.Add(this.label11);
             this.roundedPanel2.Controls.Add(this.roundedRadioButton1);
             this.roundedPanel2.Controls.Add(this.roundedRadioButton3);
+            this.animator1.SetDecoration(this.roundedPanel2, WFAnimations.DecorationType.None);
             this.roundedPanel2.EnableBorder = true;
             this.roundedPanel2.Location = new System.Drawing.Point(18, 237);
             this.roundedPanel2.Name = "roundedPanel2";
@@ -190,6 +163,7 @@ namespace LucaToysLite.Forms
             this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.BackColor = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.label11, WFAnimations.DecorationType.None);
             this.label11.Location = new System.Drawing.Point(5, 87);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(341, 3);
@@ -202,6 +176,7 @@ namespace LucaToysLite.Forms
             this.roundedPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.roundedPanel3.BorderColor = System.Drawing.Color.Crimson;
             this.roundedPanel3.BorderSize = ((byte)(3));
+            this.animator1.SetDecoration(this.roundedPanel3, WFAnimations.DecorationType.None);
             this.roundedPanel3.EnableBorder = true;
             this.roundedPanel3.Location = new System.Drawing.Point(1567, 237);
             this.roundedPanel3.Name = "roundedPanel3";
@@ -226,6 +201,7 @@ namespace LucaToysLite.Forms
             this.roundedPanel5.Controls.Add(this.roundedButton5);
             this.roundedPanel5.Controls.Add(this.roundedButton2);
             this.roundedPanel5.Controls.Add(this.roundedButton1);
+            this.animator1.SetDecoration(this.roundedPanel5, WFAnimations.DecorationType.None);
             this.roundedPanel5.EnableBorder = true;
             this.roundedPanel5.Location = new System.Drawing.Point(18, 60);
             this.roundedPanel5.Name = "roundedPanel5";
@@ -236,6 +212,7 @@ namespace LucaToysLite.Forms
             // 
             this.roundedLabel3.BackColor = System.Drawing.Color.Crimson;
             this.roundedLabel3.BorderRadius = ((byte)(4));
+            this.animator1.SetDecoration(this.roundedLabel3, WFAnimations.DecorationType.None);
             this.roundedLabel3.Location = new System.Drawing.Point(1335, 35);
             this.roundedLabel3.Name = "roundedLabel3";
             this.roundedLabel3.Size = new System.Drawing.Size(4, 90);
@@ -245,6 +222,7 @@ namespace LucaToysLite.Forms
             // 
             this.roundedLabel2.BackColor = System.Drawing.Color.Crimson;
             this.roundedLabel2.BorderRadius = ((byte)(4));
+            this.animator1.SetDecoration(this.roundedLabel2, WFAnimations.DecorationType.None);
             this.roundedLabel2.Location = new System.Drawing.Point(856, 35);
             this.roundedLabel2.Name = "roundedLabel2";
             this.roundedLabel2.Size = new System.Drawing.Size(4, 90);
@@ -263,6 +241,7 @@ namespace LucaToysLite.Forms
             this.roundedPanel1.Controls.Add(this.roundedPanel7);
             this.roundedPanel1.Controls.Add(this.roundedPanel11);
             this.roundedPanel1.Controls.Add(this.roundedPanel6);
+            this.animator1.SetDecoration(this.roundedPanel1, WFAnimations.DecorationType.None);
             this.roundedPanel1.EnableBorder = true;
             this.roundedPanel1.Location = new System.Drawing.Point(18, 597);
             this.roundedPanel1.Name = "roundedPanel1";
@@ -276,6 +255,7 @@ namespace LucaToysLite.Forms
             this.roundedPanel10.BorderSize = ((byte)(0));
             this.roundedPanel10.Controls.Add(this.label9);
             this.roundedPanel10.Controls.Add(this.label10);
+            this.animator1.SetDecoration(this.roundedPanel10, WFAnimations.DecorationType.None);
             this.roundedPanel10.EnableBorder = false;
             this.roundedPanel10.Location = new System.Drawing.Point(1498, 36);
             this.roundedPanel10.Name = "roundedPanel10";
@@ -286,6 +266,7 @@ namespace LucaToysLite.Forms
             // label9
             // 
             this.label9.AutoSize = true;
+            this.animator1.SetDecoration(this.label9, WFAnimations.DecorationType.None);
             this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(78, 31);
@@ -301,6 +282,7 @@ namespace LucaToysLite.Forms
             this.roundedPanel9.BorderSize = ((byte)(0));
             this.roundedPanel9.Controls.Add(this.label7);
             this.roundedPanel9.Controls.Add(this.label8);
+            this.animator1.SetDecoration(this.roundedPanel9, WFAnimations.DecorationType.None);
             this.roundedPanel9.EnableBorder = false;
             this.roundedPanel9.Location = new System.Drawing.Point(1206, 36);
             this.roundedPanel9.Name = "roundedPanel9";
@@ -311,6 +293,7 @@ namespace LucaToysLite.Forms
             // label7
             // 
             this.label7.AutoSize = true;
+            this.animator1.SetDecoration(this.label7, WFAnimations.DecorationType.None);
             this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(78, 31);
@@ -326,6 +309,7 @@ namespace LucaToysLite.Forms
             this.roundedPanel8.BorderSize = ((byte)(0));
             this.roundedPanel8.Controls.Add(this.label5);
             this.roundedPanel8.Controls.Add(this.label6);
+            this.animator1.SetDecoration(this.roundedPanel8, WFAnimations.DecorationType.None);
             this.roundedPanel8.EnableBorder = false;
             this.roundedPanel8.Location = new System.Drawing.Point(915, 36);
             this.roundedPanel8.Name = "roundedPanel8";
@@ -336,6 +320,7 @@ namespace LucaToysLite.Forms
             // label5
             // 
             this.label5.AutoSize = true;
+            this.animator1.SetDecoration(this.label5, WFAnimations.DecorationType.None);
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(78, 31);
@@ -351,6 +336,7 @@ namespace LucaToysLite.Forms
             this.roundedPanel7.BorderSize = ((byte)(0));
             this.roundedPanel7.Controls.Add(this.label3);
             this.roundedPanel7.Controls.Add(this.label4);
+            this.animator1.SetDecoration(this.roundedPanel7, WFAnimations.DecorationType.None);
             this.roundedPanel7.EnableBorder = false;
             this.roundedPanel7.Location = new System.Drawing.Point(566, 36);
             this.roundedPanel7.Name = "roundedPanel7";
@@ -361,6 +347,7 @@ namespace LucaToysLite.Forms
             // label3
             // 
             this.label3.AutoSize = true;
+            this.animator1.SetDecoration(this.label3, WFAnimations.DecorationType.None);
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(80, 32);
@@ -376,6 +363,7 @@ namespace LucaToysLite.Forms
             this.roundedPanel11.BorderSize = ((byte)(0));
             this.roundedPanel11.Controls.Add(this.label12);
             this.roundedPanel11.Controls.Add(this.label13);
+            this.animator1.SetDecoration(this.roundedPanel11, WFAnimations.DecorationType.None);
             this.roundedPanel11.EnableBorder = false;
             this.roundedPanel11.Location = new System.Drawing.Point(23, 36);
             this.roundedPanel11.Name = "roundedPanel11";
@@ -386,6 +374,7 @@ namespace LucaToysLite.Forms
             // label12
             // 
             this.label12.AutoSize = true;
+            this.animator1.SetDecoration(this.label12, WFAnimations.DecorationType.None);
             this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.label12.ForeColor = System.Drawing.Color.White;
             this.label12.Location = new System.Drawing.Point(80, 32);
@@ -401,6 +390,7 @@ namespace LucaToysLite.Forms
             this.roundedPanel6.BorderSize = ((byte)(0));
             this.roundedPanel6.Controls.Add(this.label1);
             this.roundedPanel6.Controls.Add(this.label2);
+            this.animator1.SetDecoration(this.roundedPanel6, WFAnimations.DecorationType.None);
             this.roundedPanel6.EnableBorder = false;
             this.roundedPanel6.Location = new System.Drawing.Point(318, 36);
             this.roundedPanel6.Name = "roundedPanel6";
@@ -411,6 +401,7 @@ namespace LucaToysLite.Forms
             // label1
             // 
             this.label1.AutoSize = true;
+            this.animator1.SetDecoration(this.label1, WFAnimations.DecorationType.None);
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(80, 32);
@@ -426,6 +417,7 @@ namespace LucaToysLite.Forms
             this.windowToolbar1.CloseMessage = true;
             this.windowToolbar1.ColorPalette = System.Drawing.Color.Crimson;
             this.windowToolbar1.DarkTheme = true;
+            this.animator1.SetDecoration(this.windowToolbar1, WFAnimations.DecorationType.None);
             this.windowToolbar1.Dock = System.Windows.Forms.DockStyle.Top;
             this.windowToolbar1.IconButton = true;
             this.windowToolbar1.IconButtonImage = null;
@@ -442,11 +434,52 @@ namespace LucaToysLite.Forms
             this.windowToolbar1.TitleText = "Purchase Mode";
             this.windowToolbar1.WindowBorderSize = ((byte)(3));
             // 
+            // roundedLabel4
+            // 
+            this.roundedLabel4.BackColor = System.Drawing.Color.Crimson;
+            this.roundedLabel4.BorderRadius = ((byte)(4));
+            this.animator1.SetDecoration(this.roundedLabel4, WFAnimations.DecorationType.None);
+            this.roundedLabel4.Location = new System.Drawing.Point(545, 0);
+            this.roundedLabel4.Name = "roundedLabel4";
+            this.roundedLabel4.Size = new System.Drawing.Size(4, 90);
+            this.roundedLabel4.TabIndex = 19;
+            // 
+            // panel1
+            // 
+            this.animator1.SetDecoration(this.panel1, WFAnimations.DecorationType.None);
+            this.panel1.Location = new System.Drawing.Point(554, 10);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(600, 70);
+            this.panel1.TabIndex = 20;
+            // 
+            // animator1
+            // 
+            this.animator1.AnimationType = WFAnimations.AnimationType.Transparent;
+            this.animator1.Cursor = null;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 1F;
+            this.animator1.DefaultAnimation = animation1;
+            this.animator1.Upside = false;
+            // 
             // roundedRadioButton4
             // 
             this.roundedRadioButton4.Appearance = System.Windows.Forms.Appearance.Button;
             this.roundedRadioButton4.BorderSize = ((byte)(2));
             this.roundedRadioButton4.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.roundedRadioButton4, WFAnimations.DecorationType.None);
             this.roundedRadioButton4.EnableBorder = true;
             this.roundedRadioButton4.FlatAppearance.BorderSize = 0;
             this.roundedRadioButton4.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
@@ -462,6 +495,7 @@ namespace LucaToysLite.Forms
             this.roundedRadioButton4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.roundedRadioButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.roundedRadioButton4.UseVisualStyleBackColor = true;
+            this.roundedRadioButton4.CheckedChanged += new System.EventHandler(this.roundedRadioButton4_CheckedChanged);
             // 
             // roundedRadioButton2
             // 
@@ -469,6 +503,7 @@ namespace LucaToysLite.Forms
             this.roundedRadioButton2.BorderSize = ((byte)(2));
             this.roundedRadioButton2.Checked = true;
             this.roundedRadioButton2.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.roundedRadioButton2, WFAnimations.DecorationType.None);
             this.roundedRadioButton2.EnableBorder = true;
             this.roundedRadioButton2.FlatAppearance.BorderSize = 0;
             this.roundedRadioButton2.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
@@ -485,21 +520,14 @@ namespace LucaToysLite.Forms
             this.roundedRadioButton2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.roundedRadioButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.roundedRadioButton2.UseVisualStyleBackColor = true;
-            // 
-            // roundedLabel1
-            // 
-            this.roundedLabel1.BorderRadius = ((byte)(20));
-            this.roundedLabel1.Image = global::LucaToysLite.Properties.Resources.icons8_test_account_42;
-            this.roundedLabel1.Location = new System.Drawing.Point(785, 13);
-            this.roundedLabel1.Name = "roundedLabel1";
-            this.roundedLabel1.Size = new System.Drawing.Size(42, 42);
-            this.roundedLabel1.TabIndex = 0;
+            this.roundedRadioButton2.CheckedChanged += new System.EventHandler(this.roundedRadioButton2_CheckedChanged);
             // 
             // roundedRadioButton1
             // 
             this.roundedRadioButton1.Appearance = System.Windows.Forms.Appearance.Button;
             this.roundedRadioButton1.BorderSize = ((byte)(2));
             this.roundedRadioButton1.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.roundedRadioButton1, WFAnimations.DecorationType.None);
             this.roundedRadioButton1.EnableBorder = true;
             this.roundedRadioButton1.FlatAppearance.BorderSize = 0;
             this.roundedRadioButton1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
@@ -521,6 +549,7 @@ namespace LucaToysLite.Forms
             this.roundedRadioButton3.Appearance = System.Windows.Forms.Appearance.Button;
             this.roundedRadioButton3.BorderSize = ((byte)(2));
             this.roundedRadioButton3.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.roundedRadioButton3, WFAnimations.DecorationType.None);
             this.roundedRadioButton3.EnableBorder = true;
             this.roundedRadioButton3.FlatAppearance.BorderSize = 0;
             this.roundedRadioButton3.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
@@ -541,6 +570,7 @@ namespace LucaToysLite.Forms
             // 
             this.roundedButton4.BorderRadius = ((byte)(20));
             this.roundedButton4.BorderSize = ((byte)(3));
+            this.animator1.SetDecoration(this.roundedButton4, WFAnimations.DecorationType.None);
             this.roundedButton4.EnableBorder = true;
             this.roundedButton4.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
             this.roundedButton4.FlatAppearance.BorderSize = 0;
@@ -561,6 +591,7 @@ namespace LucaToysLite.Forms
             // 
             this.roundedButton9.BorderRadius = ((byte)(20));
             this.roundedButton9.BorderSize = ((byte)(3));
+            this.animator1.SetDecoration(this.roundedButton9, WFAnimations.DecorationType.None);
             this.roundedButton9.EnableBorder = true;
             this.roundedButton9.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
             this.roundedButton9.FlatAppearance.BorderSize = 0;
@@ -581,6 +612,7 @@ namespace LucaToysLite.Forms
             // 
             this.roundedButton8.BorderRadius = ((byte)(20));
             this.roundedButton8.BorderSize = ((byte)(3));
+            this.animator1.SetDecoration(this.roundedButton8, WFAnimations.DecorationType.None);
             this.roundedButton8.EnableBorder = true;
             this.roundedButton8.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
             this.roundedButton8.FlatAppearance.BorderSize = 0;
@@ -601,6 +633,7 @@ namespace LucaToysLite.Forms
             // 
             this.roundedButton6.BorderRadius = ((byte)(20));
             this.roundedButton6.BorderSize = ((byte)(3));
+            this.animator1.SetDecoration(this.roundedButton6, WFAnimations.DecorationType.None);
             this.roundedButton6.EnableBorder = true;
             this.roundedButton6.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
             this.roundedButton6.FlatAppearance.BorderSize = 0;
@@ -621,6 +654,7 @@ namespace LucaToysLite.Forms
             // 
             this.roundedButton3.BorderRadius = ((byte)(20));
             this.roundedButton3.BorderSize = ((byte)(3));
+            this.animator1.SetDecoration(this.roundedButton3, WFAnimations.DecorationType.None);
             this.roundedButton3.EnableBorder = true;
             this.roundedButton3.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
             this.roundedButton3.FlatAppearance.BorderSize = 0;
@@ -641,6 +675,7 @@ namespace LucaToysLite.Forms
             // 
             this.roundedButton7.BorderRadius = ((byte)(20));
             this.roundedButton7.BorderSize = ((byte)(3));
+            this.animator1.SetDecoration(this.roundedButton7, WFAnimations.DecorationType.None);
             this.roundedButton7.EnableBorder = true;
             this.roundedButton7.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
             this.roundedButton7.FlatAppearance.BorderSize = 0;
@@ -661,6 +696,7 @@ namespace LucaToysLite.Forms
             // 
             this.roundedButton5.BorderRadius = ((byte)(20));
             this.roundedButton5.BorderSize = ((byte)(3));
+            this.animator1.SetDecoration(this.roundedButton5, WFAnimations.DecorationType.None);
             this.roundedButton5.EnableBorder = true;
             this.roundedButton5.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
             this.roundedButton5.FlatAppearance.BorderSize = 0;
@@ -681,6 +717,7 @@ namespace LucaToysLite.Forms
             // 
             this.roundedButton2.BorderRadius = ((byte)(20));
             this.roundedButton2.BorderSize = ((byte)(3));
+            this.animator1.SetDecoration(this.roundedButton2, WFAnimations.DecorationType.None);
             this.roundedButton2.EnableBorder = true;
             this.roundedButton2.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
             this.roundedButton2.FlatAppearance.BorderSize = 0;
@@ -701,6 +738,7 @@ namespace LucaToysLite.Forms
             // 
             this.roundedButton1.BorderRadius = ((byte)(20));
             this.roundedButton1.BorderSize = ((byte)(3));
+            this.animator1.SetDecoration(this.roundedButton1, WFAnimations.DecorationType.None);
             this.roundedButton1.EnableBorder = true;
             this.roundedButton1.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
             this.roundedButton1.FlatAppearance.BorderSize = 0;
@@ -719,6 +757,7 @@ namespace LucaToysLite.Forms
             // 
             // label10
             // 
+            this.animator1.SetDecoration(this.label10, WFAnimations.DecorationType.None);
             this.label10.Font = new System.Drawing.Font("Segoe MDL2 Assets", 12F);
             this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Image = global::LucaToysLite.Properties.Resources.icons8_calculator_48;
@@ -729,6 +768,7 @@ namespace LucaToysLite.Forms
             // 
             // label8
             // 
+            this.animator1.SetDecoration(this.label8, WFAnimations.DecorationType.None);
             this.label8.Font = new System.Drawing.Font("Segoe MDL2 Assets", 12F);
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Image = global::LucaToysLite.Properties.Resources.icons8_tax_48;
@@ -739,6 +779,7 @@ namespace LucaToysLite.Forms
             // 
             // label6
             // 
+            this.animator1.SetDecoration(this.label6, WFAnimations.DecorationType.None);
             this.label6.Font = new System.Drawing.Font("Segoe MDL2 Assets", 12F);
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Image = global::LucaToysLite.Properties.Resources.icons8_discount_48;
@@ -749,6 +790,7 @@ namespace LucaToysLite.Forms
             // 
             // label4
             // 
+            this.animator1.SetDecoration(this.label4, WFAnimations.DecorationType.None);
             this.label4.Font = new System.Drawing.Font("Segoe MDL2 Assets", 12F);
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Image = ((System.Drawing.Image)(resources.GetObject("label4.Image")));
@@ -759,6 +801,7 @@ namespace LucaToysLite.Forms
             // 
             // label13
             // 
+            this.animator1.SetDecoration(this.label13, WFAnimations.DecorationType.None);
             this.label13.Font = new System.Drawing.Font("Segoe MDL2 Assets", 12F);
             this.label13.ForeColor = System.Drawing.Color.White;
             this.label13.Image = global::LucaToysLite.Properties.Resources.icons8_date_48;
@@ -769,6 +812,7 @@ namespace LucaToysLite.Forms
             // 
             // label2
             // 
+            this.animator1.SetDecoration(this.label2, WFAnimations.DecorationType.None);
             this.label2.Font = new System.Drawing.Font("Segoe MDL2 Assets", 12F);
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Image = global::LucaToysLite.Properties.Resources.icons8_accountant_48;
@@ -776,15 +820,6 @@ namespace LucaToysLite.Forms
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(48, 48);
             this.label2.TabIndex = 0;
-            // 
-            // roundedLabel4
-            // 
-            this.roundedLabel4.BackColor = System.Drawing.Color.Crimson;
-            this.roundedLabel4.BorderRadius = ((byte)(4));
-            this.roundedLabel4.Location = new System.Drawing.Point(545, 0);
-            this.roundedLabel4.Name = "roundedLabel4";
-            this.roundedLabel4.Size = new System.Drawing.Size(4, 90);
-            this.roundedLabel4.TabIndex = 19;
             // 
             // PurchaseMode
             // 
@@ -799,6 +834,7 @@ namespace LucaToysLite.Forms
             this.Controls.Add(this.roundedPanel5);
             this.Controls.Add(this.roundedPanel1);
             this.Controls.Add(this.windowToolbar1);
+            this.animator1.SetDecoration(this, WFAnimations.DecorationType.None);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PurchaseMode";
@@ -868,11 +904,10 @@ namespace LucaToysLite.Forms
         private System.Windows.Forms.Label label13;
         private Controls.RoundedButton roundedButton9;
         private Controls.RoundedPanel roundedPanel12;
-        private Controls.RoundedLabel roundedLabel1;
-        private System.Windows.Forms.Label label14;
-        private Controls.RoundedButton roundedButton10;
         private Controls.RoundedRadioButton roundedRadioButton2;
         private Controls.RoundedRadioButton roundedRadioButton4;
         private Controls.RoundedLabel roundedLabel4;
+        private System.Windows.Forms.Panel panel1;
+        private WFAnimations.Animator animator1;
     }
 }
