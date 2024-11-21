@@ -842,5 +842,26 @@
   <ItemGroup>
     <None Include="Resources\icons8-database-administrator-68.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 18.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
