@@ -87,6 +87,16 @@ namespace LucaToysLite.Controls
             this.HolderColor = Color.Gray;
         }
 
+        public override Color BackColor
+        {
+            get { return base.BackColor; }
+            set
+            {
+                base.BackColor = value;
+                this.holderLabel.BackColor = value;
+            }
+        }
+
 
         public System.Drawing.Size ClearSize { get { return this.btnClear.Size; } set { this.btnClear.Size = value; } }
         public System.Drawing.Point ClearLocation { get { return this.btnClear.Location; } set { this.btnClear.Location = value; } }
