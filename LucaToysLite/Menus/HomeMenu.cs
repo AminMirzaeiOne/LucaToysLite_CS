@@ -25,6 +25,7 @@ namespace LucaToysLite.Menus
             this.panel1.Controls.Add(this.exportData);
             this.panel1.Controls.Add(this.appTools);
             this.panel1.Controls.Add(this.settings);
+            this.panel1.Controls.Add(this.help);
 
 
             this.users.Dock = DockStyle.Fill;
@@ -36,6 +37,7 @@ namespace LucaToysLite.Menus
             this.exportData.Dock = DockStyle.Fill;
             this.appTools.Dock = DockStyle.Fill;
             this.settings.Dock = DockStyle.Fill;
+            this.help.Dock = DockStyle.Fill;
 
             this.users.Visible = true;
             this.products.Visible = false;
@@ -46,6 +48,7 @@ namespace LucaToysLite.Menus
             this.exportData.Visible = false;
             this.appTools.Visible = false;
             this.settings.Visible = false;
+            this.help.Visible = false;
         }
 
         private LucaToysLite.Menus.Users users = new Users();
@@ -57,6 +60,7 @@ namespace LucaToysLite.Menus
         private LucaToysLite.Menus.ExportData exportData = new ExportData();
         private LucaToysLite.Menus.AppTools appTools = new AppTools();
         private LucaToysLite.Menus.Settings settings = new Settings();
+        private LucaToysLite.Menus.Help help = new Help();
 
         private int radius = 20;
         [DefaultValue(20)]
@@ -275,6 +279,22 @@ namespace LucaToysLite.Menus
                 this.documents.Visible = false;
                 this.appTools.Visible = false;
                 this.animator1.Show(this.settings);
+            }
+        }
+
+        private void roundedRadioButton9_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.roundedRadioButton9.Checked)
+            {
+                this.users.Visible = false;
+                this.products.Visible = false;
+                this.finance.Visible = false;
+                this.accounting.Visible = false;
+                this.invoice.Visible = false;
+                this.documents.Visible = false;
+                this.appTools.Visible = false;
+                this.settings.Visible = false;
+                this.animator1.Show(this.help);
             }
         }
     }
