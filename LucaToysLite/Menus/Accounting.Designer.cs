@@ -76,6 +76,7 @@
             this.roundedButton3.Text = "Purchase Mode";
             this.roundedButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.roundedButton3.UseVisualStyleBackColor = true;
+            this.roundedButton3.Click += new System.EventHandler(this.roundedButton3_Click);
             // 
             // roundedButton2
             // 

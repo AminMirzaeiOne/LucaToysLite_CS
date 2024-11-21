@@ -649,6 +649,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Pages\Settings\DatabasePages\" />
+    <Folder Include="Panels\Purchase\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-show-property-48.png" />

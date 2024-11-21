@@ -16,5 +16,11 @@ namespace LucaToysLite.Menus
         {
             InitializeComponent();
         }
+
+        private void roundedButton3_Click(object sender, EventArgs e)
+        {
+            LucaToysLite.Forms.PurchaseMode purchaseMode = new Forms.PurchaseMode();
+            purchaseMode.Show();
+        }
     }
 }
