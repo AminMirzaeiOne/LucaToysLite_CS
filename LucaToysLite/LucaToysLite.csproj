@@ -330,6 +330,12 @@
     <Compile Include="Pages\About\Version.Designer.cs">
       <DependentUpon>Version.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pages\AddSeller\Description.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\AddSeller\Description.Designer.cs">
+      <DependentUpon>Description.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pages\AddSeller\Important.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -541,6 +547,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\About\Version.resx">
       <DependentUpon>Version.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\AddSeller\Description.resx">
+      <DependentUpon>Description.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\AddSeller\Important.resx">
       <DependentUpon>Important.cs</DependentUpon>
