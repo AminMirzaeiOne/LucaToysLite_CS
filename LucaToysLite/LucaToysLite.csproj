@@ -1291,5 +1291,23 @@
   <ItemGroup>
     <None Include="Resources\icons8-contact-48.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-name-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-family-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-name-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-id-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-phone-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-family-64.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
