@@ -28,24 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ltVertScrollBar1 = new LucaToysLite.Controls.LTVertScrollBar();
             this.homeMenu1 = new LucaToysLite.Menus.HomeMenu();
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
             this.SuspendLayout();
-            // 
-            // ltVertScrollBar1
-            // 
-            this.ltVertScrollBar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
-            this.ltVertScrollBar1.BorderColor = System.Drawing.Color.Crimson;
-            this.ltVertScrollBar1.BorderSize = ((byte)(3));
-            this.ltVertScrollBar1.ColorPallet = System.Drawing.Color.Crimson;
-            this.ltVertScrollBar1.EnableBorder = true;
-            this.ltVertScrollBar1.Location = new System.Drawing.Point(486, 289);
-            this.ltVertScrollBar1.Name = "ltVertScrollBar1";
-            this.ltVertScrollBar1.ScrollHeight = 100;
-            this.ltVertScrollBar1.Size = new System.Drawing.Size(40, 353);
-            this.ltVertScrollBar1.TabIndex = 2;
-            this.ltVertScrollBar1.Value = ((byte)(0));
             // 
             // homeMenu1
             // 
@@ -89,7 +74,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(1090, 650);
-            this.Controls.Add(this.ltVertScrollBar1);
             this.Controls.Add(this.homeMenu1);
             this.Controls.Add(this.windowToolbar1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -105,6 +89,5 @@
         #endregion
         private Controls.WindowToolbar windowToolbar1;
         private Menus.HomeMenu homeMenu1;
-        private Controls.LTVertScrollBar ltVertScrollBar1;
     }
 }

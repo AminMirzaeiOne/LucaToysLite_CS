@@ -119,6 +119,9 @@
     <Compile Include="Controls\LTContextMenu.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Controls\LTGradintPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Controls\LTMenuItem.cs">
       <SubType>Component</SubType>
     </Compile>

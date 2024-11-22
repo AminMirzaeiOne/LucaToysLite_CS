@@ -43,6 +43,8 @@ namespace LucaToysLite.Controls
             }
         }
 
+        public System.Windows.Forms.Panel Page { get; set; }
+
         public System.Boolean EnableBorder { get; set; } = true;
 
         public System.Drawing.Color BorderColor { get; set; } = Color.Crimson;
@@ -145,10 +147,12 @@ namespace LucaToysLite.Controls
                 {
                     this.roundedButton3.Location = new Point(
                     this.roundedButton3.Location.X, (this.roundedButton3.Location.Y - this.lastLocation.Y) + e.Y);
+                    if (this.Page != null)
+                        this.Page.AutoScrollPosition = this.roundedButton3.Location;
 
                     this.Update();
                 }
-                    
+
             }
         }
 
