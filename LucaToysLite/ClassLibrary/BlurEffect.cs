@@ -40,5 +40,11 @@ namespace LucaToysLite.ClassLibrary
             public int SizeOfData;
         }
 
+        public static class User32
+        {
+            [DllImport("user32.dll")]
+            internal static extern int SetWindowCompositionAttribute(IntPtr hwnd, ref WindowCompositionAttributeData data);
+        }
+
     }
 }
