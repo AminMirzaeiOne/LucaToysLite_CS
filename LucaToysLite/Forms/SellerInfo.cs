@@ -15,6 +15,23 @@ namespace LucaToysLite.Forms
         public SellerInfo()
         {
             InitializeComponent();
+
+            this.panel1.Controls.Add(this.photos);
+
+            this.photos.Dock = DockStyle.Fill;
+
+            this.photos.Visible = false;
+
+        }
+
+        private LucaToysLite.Pages.SellerInfo.Photos photos = new Pages.SellerInfo.Photos();
+
+        private void roundedRadioButton4_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.roundedRadioButton4.Checked)
+            {
+                this.animator1.Show(this.photos);
+            }
         }
     }
 }
