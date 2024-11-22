@@ -1,4 +1,4 @@
-﻿namespace LucaToysLite.Pages.AddSeller
+﻿namespace LucaToysLite.Pages.AddCustomer
 {
     partial class Description
     {
@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.roundedPanel7 = new LucaToysLite.Controls.RoundedPanel();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.roundedPanel7 = new LucaToysLite.Controls.RoundedPanel();
             this.roundedButton9 = new LucaToysLite.Controls.RoundedButton();
             this.roundedPanel5 = new LucaToysLite.Controls.RoundedPanel();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -37,17 +37,6 @@
             this.roundedPanel7.SuspendLayout();
             this.roundedPanel5.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // roundedPanel7
-            // 
-            this.roundedPanel7.BorderColor = System.Drawing.Color.Crimson;
-            this.roundedPanel7.BorderSize = ((byte)(3));
-            this.roundedPanel7.Controls.Add(this.textBox2);
-            this.roundedPanel7.EnableBorder = true;
-            this.roundedPanel7.Location = new System.Drawing.Point(13, 81);
-            this.roundedPanel7.Name = "roundedPanel7";
-            this.roundedPanel7.Size = new System.Drawing.Size(676, 225);
-            this.roundedPanel7.TabIndex = 12;
             // 
             // textBox2
             // 
@@ -63,6 +52,17 @@
             this.textBox2.TabIndex = 1;
             this.textBox2.Text = "Enter Description";
             // 
+            // roundedPanel7
+            // 
+            this.roundedPanel7.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedPanel7.BorderSize = ((byte)(3));
+            this.roundedPanel7.Controls.Add(this.textBox2);
+            this.roundedPanel7.EnableBorder = true;
+            this.roundedPanel7.Location = new System.Drawing.Point(13, 81);
+            this.roundedPanel7.Name = "roundedPanel7";
+            this.roundedPanel7.Size = new System.Drawing.Size(676, 225);
+            this.roundedPanel7.TabIndex = 19;
+            // 
             // roundedButton9
             // 
             this.roundedButton9.BorderRadius = ((byte)(20));
@@ -77,7 +77,7 @@
             this.roundedButton9.Location = new System.Drawing.Point(698, 79);
             this.roundedButton9.Name = "roundedButton9";
             this.roundedButton9.Size = new System.Drawing.Size(35, 35);
-            this.roundedButton9.TabIndex = 16;
+            this.roundedButton9.TabIndex = 21;
             this.roundedButton9.Text = "";
             this.roundedButton9.UseVisualStyleBackColor = true;
             // 
@@ -90,7 +90,7 @@
             this.roundedPanel5.Location = new System.Drawing.Point(13, 18);
             this.roundedPanel5.Name = "roundedPanel5";
             this.roundedPanel5.Size = new System.Drawing.Size(676, 45);
-            this.roundedPanel5.TabIndex = 14;
+            this.roundedPanel5.TabIndex = 20;
             // 
             // textBox1
             // 
@@ -120,7 +120,7 @@
             this.roundedButton8.Location = new System.Drawing.Point(698, 21);
             this.roundedButton8.Name = "roundedButton8";
             this.roundedButton8.Size = new System.Drawing.Size(35, 35);
-            this.roundedButton8.TabIndex = 18;
+            this.roundedButton8.TabIndex = 22;
             this.roundedButton8.Text = "";
             this.roundedButton8.UseVisualStyleBackColor = true;
             // 
@@ -145,8 +145,9 @@
         }
 
         #endregion
-        private Controls.RoundedPanel roundedPanel7;
+
         private System.Windows.Forms.TextBox textBox2;
+        private Controls.RoundedPanel roundedPanel7;
         private Controls.RoundedButton roundedButton9;
         private Controls.RoundedPanel roundedPanel5;
         private System.Windows.Forms.TextBox textBox1;
