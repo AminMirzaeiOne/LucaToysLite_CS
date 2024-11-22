@@ -198,6 +198,12 @@
     <Compile Include="Forms\AddSeller.Designer.cs">
       <DependentUpon>AddSeller.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\DeleteSeller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DeleteSeller.Designer.cs">
+      <DependentUpon>DeleteSeller.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -481,6 +487,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddSeller.resx">
       <DependentUpon>AddSeller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DeleteSeller.resx">
+      <DependentUpon>DeleteSeller.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
