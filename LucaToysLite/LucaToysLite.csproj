@@ -1108,5 +1108,17 @@
   <ItemGroup>
     <None Include="Resources\Group 19.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-star-filled-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-star-filled-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-table-of-content-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-more-32.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

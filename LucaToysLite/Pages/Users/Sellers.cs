@@ -16,5 +16,11 @@ namespace LucaToysLite.Pages.Users
         {
             InitializeComponent();
         }
+
+        private void roundedButton1_Click(object sender, EventArgs e)
+        {
+            LucaToysLite.Forms.AddSeller addSeller = new Forms.AddSeller();
+            addSeller.Show();
+        }
     }
 }

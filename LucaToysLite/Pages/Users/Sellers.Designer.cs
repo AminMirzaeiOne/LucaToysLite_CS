@@ -138,6 +138,7 @@
             this.roundedButton1.TabIndex = 0;
             this.ltToolTip1.SetToolTip(this.roundedButton1, "Add Seller");
             this.roundedButton1.UseVisualStyleBackColor = true;
+            this.roundedButton1.Click += new System.EventHandler(this.roundedButton1_Click);
             // 
             // roundedPanel3
             // 
