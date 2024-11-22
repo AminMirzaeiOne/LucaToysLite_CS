@@ -144,6 +144,12 @@
     <Compile Include="Controls\LTVerticalScrollBar.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Controls\LTVertScrollBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\LTVertScrollBar.Designer.cs">
+      <DependentUpon>LTVertScrollBar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\LucaToysLogo.cs">
       <SubType>UserControl</SubType>
     </Compile>
