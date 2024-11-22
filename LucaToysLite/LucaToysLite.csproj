@@ -530,6 +530,9 @@
     <EmbeddedResource Include="Pages\Settings\Database.resx">
       <DependentUpon>Database.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Users\Sellers.resx">
+      <DependentUpon>Sellers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Panels\Purchase\DollsList.resx">
       <DependentUpon>DollsList.cs</DependentUpon>
     </EmbeddedResource>
@@ -1056,6 +1059,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-customers-72%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-62.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-62.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-sync-62.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-info-62.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
