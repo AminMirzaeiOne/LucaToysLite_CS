@@ -366,6 +366,12 @@
     <Compile Include="Pages\Settings\Database.Designer.cs">
       <DependentUpon>Database.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Users\Customers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\Users\Customers.Designer.cs">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Users\Sellers.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -529,6 +535,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\Settings\Database.resx">
       <DependentUpon>Database.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Users\Customers.resx">
+      <DependentUpon>Customers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\Users\Sellers.resx">
       <DependentUpon>Sellers.cs</DependentUpon>
