@@ -86,6 +86,7 @@
     <Compile Include="Apps\WebBrowser.Designer.cs">
       <DependentUpon>WebBrowser.cs</DependentUpon>
     </Compile>
+    <Compile Include="ClassLibrary\BlurEffect.cs" />
     <Compile Include="ClassLibrary\WindowAnimation.cs" />
     <Compile Include="ClassLibrary\XToolStripDropDown.cs">
       <SubType>Component</SubType>
