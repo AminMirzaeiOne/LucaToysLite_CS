@@ -15,9 +15,20 @@ namespace LucaToysLite.Controls
         public LTGradintPanel()
         {
             this.DoubleBuffered = true;
+            this.timer.Interval = 50;
+            this.timer.Start();
+            this.timer.Tick += (s, e) => { this.Angle = this.Angle % 360 + 1; };
         }
 
         private Color cl1 = Color.RoyalBlue, cl2 = Color.Crimson;
+        private Timer timer = new Timer();
+        private float ang = 45;
+
+        public float Angle
+        {
+            get { return this.ang; }
+            set { this.ang = value; this.Invalidate(); }
+        }
 
         public System.Drawing.Color ColorOne
         {
