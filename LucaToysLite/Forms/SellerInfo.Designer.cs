@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
             this.roundedRadioButton5 = new LucaToysLite.Controls.RoundedRadioButton();
             this.roundedRadioButton4 = new LucaToysLite.Controls.RoundedRadioButton();
             this.roundedRadioButton3 = new LucaToysLite.Controls.RoundedRadioButton();
@@ -38,29 +38,6 @@
             this.roundedRadioButton1 = new LucaToysLite.Controls.RoundedRadioButton();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // windowToolbar1
-            // 
-            this.windowToolbar1.BackColor = System.Drawing.Color.Crimson;
-            this.windowToolbar1.BorderStyleRadius = true;
-            this.windowToolbar1.CloseMessage = true;
-            this.windowToolbar1.ColorPalette = System.Drawing.Color.Crimson;
-            this.windowToolbar1.DarkTheme = true;
-            this.windowToolbar1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.windowToolbar1.IconButton = true;
-            this.windowToolbar1.IconButtonImage = null;
-            this.windowToolbar1.IconButtonSybmol = "";
-            this.windowToolbar1.IconMenu = true;
-            this.windowToolbar1.Location = new System.Drawing.Point(0, 0);
-            this.windowToolbar1.MaximizeButton = true;
-            this.windowToolbar1.MinimizeButton = true;
-            this.windowToolbar1.MoveOption = true;
-            this.windowToolbar1.Name = "windowToolbar1";
-            this.windowToolbar1.Size = new System.Drawing.Size(1025, 45);
-            this.windowToolbar1.StartupSound = LucaToysLite.Controls.WindowToolbar.StartupSounds.None;
-            this.windowToolbar1.TabIndex = 0;
-            this.windowToolbar1.TitleText = "Seller Inforamtion";
-            this.windowToolbar1.WindowBorderSize = ((byte)(3));
             // 
             // label1
             // 
@@ -92,6 +69,29 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(210, 533);
             this.tableLayoutPanel1.TabIndex = 5;
             // 
+            // windowToolbar1
+            // 
+            this.windowToolbar1.BackColor = System.Drawing.Color.Crimson;
+            this.windowToolbar1.BorderStyleRadius = true;
+            this.windowToolbar1.CloseMessage = true;
+            this.windowToolbar1.ColorPalette = System.Drawing.Color.Crimson;
+            this.windowToolbar1.DarkTheme = true;
+            this.windowToolbar1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.windowToolbar1.IconButton = true;
+            this.windowToolbar1.IconButtonImage = null;
+            this.windowToolbar1.IconButtonSybmol = "";
+            this.windowToolbar1.IconMenu = true;
+            this.windowToolbar1.Location = new System.Drawing.Point(0, 0);
+            this.windowToolbar1.MaximizeButton = true;
+            this.windowToolbar1.MinimizeButton = true;
+            this.windowToolbar1.MoveOption = true;
+            this.windowToolbar1.Name = "windowToolbar1";
+            this.windowToolbar1.Size = new System.Drawing.Size(1025, 45);
+            this.windowToolbar1.StartupSound = LucaToysLite.Controls.WindowToolbar.StartupSounds.None;
+            this.windowToolbar1.TabIndex = 0;
+            this.windowToolbar1.TitleText = "Seller Inforamtion";
+            this.windowToolbar1.WindowBorderSize = ((byte)(3));
+            // 
             // roundedRadioButton5
             // 
             this.roundedRadioButton5.Appearance = System.Windows.Forms.Appearance.Button;
@@ -104,13 +104,13 @@
             this.roundedRadioButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedRadioButton5.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.roundedRadioButton5.ForeColor = System.Drawing.Color.White;
-            this.roundedRadioButton5.Image = global::LucaToysLite.Properties.Resources.icons8_database_administrator_48;
+            this.roundedRadioButton5.Image = global::LucaToysLite.Properties.Resources.icons8_contact_48;
             this.roundedRadioButton5.Location = new System.Drawing.Point(5, 429);
             this.roundedRadioButton5.Margin = new System.Windows.Forms.Padding(5);
             this.roundedRadioButton5.Name = "roundedRadioButton5";
             this.roundedRadioButton5.Size = new System.Drawing.Size(200, 99);
             this.roundedRadioButton5.TabIndex = 4;
-            this.roundedRadioButton5.Text = "Database";
+            this.roundedRadioButton5.Text = "Lateral";
             this.roundedRadioButton5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.roundedRadioButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.roundedRadioButton5.UseVisualStyleBackColor = true;
@@ -127,7 +127,7 @@
             this.roundedRadioButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedRadioButton4.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.roundedRadioButton4.ForeColor = System.Drawing.Color.White;
-            this.roundedRadioButton4.Image = global::LucaToysLite.Properties.Resources.icons8_caretaker_48;
+            this.roundedRadioButton4.Image = global::LucaToysLite.Properties.Resources.icons8_photo_48;
             this.roundedRadioButton4.Location = new System.Drawing.Point(5, 323);
             this.roundedRadioButton4.Margin = new System.Windows.Forms.Padding(5);
             this.roundedRadioButton4.Name = "roundedRadioButton4";
@@ -150,7 +150,7 @@
             this.roundedRadioButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedRadioButton3.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.roundedRadioButton3.ForeColor = System.Drawing.Color.White;
-            this.roundedRadioButton3.Image = global::LucaToysLite.Properties.Resources.icons8_show_property_48;
+            this.roundedRadioButton3.Image = global::LucaToysLite.Properties.Resources.icons8_table_of_content_48;
             this.roundedRadioButton3.Location = new System.Drawing.Point(5, 217);
             this.roundedRadioButton3.Margin = new System.Windows.Forms.Padding(5);
             this.roundedRadioButton3.Name = "roundedRadioButton3";
@@ -173,7 +173,7 @@
             this.roundedRadioButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedRadioButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.roundedRadioButton2.ForeColor = System.Drawing.Color.White;
-            this.roundedRadioButton2.Image = global::LucaToysLite.Properties.Resources.icons8_xlarge_icons_48_1_;
+            this.roundedRadioButton2.Image = global::LucaToysLite.Properties.Resources.icons8_more_48;
             this.roundedRadioButton2.Location = new System.Drawing.Point(5, 111);
             this.roundedRadioButton2.Margin = new System.Windows.Forms.Padding(5);
             this.roundedRadioButton2.Name = "roundedRadioButton2";

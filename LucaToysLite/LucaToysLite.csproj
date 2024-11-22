@@ -1270,5 +1270,17 @@
   <ItemGroup>
     <None Include="Resources\Group 18%282%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-more-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-table-of-content-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-photo-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-contact-48.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
