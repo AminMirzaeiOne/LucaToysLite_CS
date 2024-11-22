@@ -30,13 +30,13 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
             this.roundedRadioButton5 = new LucaToysLite.Controls.RoundedRadioButton();
             this.roundedRadioButton4 = new LucaToysLite.Controls.RoundedRadioButton();
             this.roundedRadioButton3 = new LucaToysLite.Controls.RoundedRadioButton();
             this.roundedRadioButton2 = new LucaToysLite.Controls.RoundedRadioButton();
             this.roundedRadioButton1 = new LucaToysLite.Controls.RoundedRadioButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,36 +69,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(210, 533);
             this.tableLayoutPanel1.TabIndex = 3;
-            // 
-            // panel1
-            // 
-            this.panel1.Location = new System.Drawing.Point(252, 61);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(753, 521);
-            this.panel1.TabIndex = 5;
-            // 
-            // windowToolbar1
-            // 
-            this.windowToolbar1.BackColor = System.Drawing.Color.Crimson;
-            this.windowToolbar1.BorderStyleRadius = true;
-            this.windowToolbar1.CloseMessage = true;
-            this.windowToolbar1.ColorPalette = System.Drawing.Color.Crimson;
-            this.windowToolbar1.DarkTheme = true;
-            this.windowToolbar1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.windowToolbar1.IconButton = true;
-            this.windowToolbar1.IconButtonImage = null;
-            this.windowToolbar1.IconButtonSybmol = "";
-            this.windowToolbar1.IconMenu = true;
-            this.windowToolbar1.Location = new System.Drawing.Point(0, 0);
-            this.windowToolbar1.MaximizeButton = true;
-            this.windowToolbar1.MinimizeButton = true;
-            this.windowToolbar1.MoveOption = true;
-            this.windowToolbar1.Name = "windowToolbar1";
-            this.windowToolbar1.Size = new System.Drawing.Size(1030, 45);
-            this.windowToolbar1.StartupSound = LucaToysLite.Controls.WindowToolbar.StartupSounds.None;
-            this.windowToolbar1.TabIndex = 0;
-            this.windowToolbar1.TitleText = "Settings";
-            this.windowToolbar1.WindowBorderSize = ((byte)(3));
             // 
             // roundedRadioButton5
             // 
@@ -218,6 +188,36 @@
             this.roundedRadioButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.roundedRadioButton1.UseVisualStyleBackColor = true;
             this.roundedRadioButton1.CheckedChanged += new System.EventHandler(this.roundedRadioButton1_CheckedChanged);
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(252, 61);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(753, 521);
+            this.panel1.TabIndex = 5;
+            // 
+            // windowToolbar1
+            // 
+            this.windowToolbar1.BackColor = System.Drawing.Color.Crimson;
+            this.windowToolbar1.BorderStyleRadius = true;
+            this.windowToolbar1.CloseMessage = true;
+            this.windowToolbar1.ColorPalette = System.Drawing.Color.Crimson;
+            this.windowToolbar1.DarkTheme = true;
+            this.windowToolbar1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.windowToolbar1.IconButton = true;
+            this.windowToolbar1.IconButtonImage = null;
+            this.windowToolbar1.IconButtonSybmol = "";
+            this.windowToolbar1.IconMenu = true;
+            this.windowToolbar1.Location = new System.Drawing.Point(0, 0);
+            this.windowToolbar1.MaximizeButton = true;
+            this.windowToolbar1.MinimizeButton = true;
+            this.windowToolbar1.MoveOption = true;
+            this.windowToolbar1.Name = "windowToolbar1";
+            this.windowToolbar1.Size = new System.Drawing.Size(1030, 45);
+            this.windowToolbar1.StartupSound = LucaToysLite.Controls.WindowToolbar.StartupSounds.None;
+            this.windowToolbar1.TabIndex = 0;
+            this.windowToolbar1.TitleText = "Settings";
+            this.windowToolbar1.WindowBorderSize = ((byte)(3));
             // 
             // Settings
             // 

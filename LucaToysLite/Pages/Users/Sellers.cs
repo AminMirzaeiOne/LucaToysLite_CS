@@ -22,5 +22,11 @@ namespace LucaToysLite.Pages.Users
             LucaToysLite.Forms.AddSeller addSeller = new Forms.AddSeller();
             addSeller.Show();
         }
+
+        private void roundedButton4_Click(object sender, EventArgs e)
+        {
+            LucaToysLite.Forms.SellerInfo sellerInfo = new Forms.SellerInfo();
+            sellerInfo.Show();
+        }
     }
 }

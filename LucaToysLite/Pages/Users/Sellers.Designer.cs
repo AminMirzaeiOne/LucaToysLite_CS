@@ -84,6 +84,7 @@
             this.roundedButton4.TabIndex = 0;
             this.ltToolTip1.SetToolTip(this.roundedButton4, "About Seller");
             this.roundedButton4.UseVisualStyleBackColor = true;
+            this.roundedButton4.Click += new System.EventHandler(this.roundedButton4_Click);
             // 
             // roundedButton3
             // 
