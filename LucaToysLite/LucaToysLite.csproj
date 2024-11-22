@@ -551,6 +551,9 @@
     <EmbeddedResource Include="Forms\PurchaseMode.resx">
       <DependentUpon>PurchaseMode.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SellerInfo.resx">
+      <DependentUpon>SellerInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
     </EmbeddedResource>
