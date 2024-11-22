@@ -15,6 +15,20 @@ namespace LucaToysLite.Forms
         public AddSeller()
         {
             InitializeComponent();
+            this.panel1.Controls.Add(this.important);
+
+            this.important.Dock = DockStyle.Fill;
+
+            this.important.Visible = true;
+        }
+        private LucaToysLite.Pages.AddSeller.Important important = new Pages.AddSeller.Important();
+
+        private void roundedRadioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.roundedRadioButton1.Checked)
+            {
+                this.animator1.Show(this.important);
+            }
         }
     }
 }
