@@ -22,5 +22,17 @@ namespace LucaToysLite.Menus
             LucaToysLite.Forms.Users users = new Forms.Users();
             users.Show();
         }
+
+        private void roundedButton2_Click(object sender, EventArgs e)
+        {
+            LucaToysLite.Forms.AddSeller addSeller = new Forms.AddSeller();
+            addSeller.Show();
+        }
+
+        private void roundedButton3_Click(object sender, EventArgs e)
+        {
+            LucaToysLite.Forms.DeleteSeller deleteSeller = new Forms.DeleteSeller();
+            deleteSeller.Show();
+        }
     }
 }
