@@ -25,6 +25,14 @@ namespace LucaToysLite.Messages
 
         }
 
+        private void ActiveOwner()
+        {
+            FormWindowState windowState = FormWindowState.Normal;
+            windowState = this.Owner.WindowState;
+            this.Owner.WindowState = FormWindowState.Minimized;
+            this.Owner.WindowState = windowState;
+        }
+
         protected override void OnClosed(EventArgs e)
         {
             base.OnClosed(e);
