@@ -413,6 +413,9 @@
     <EmbeddedResource Include="Controls\LTTextBox.resx">
       <DependentUpon>LTTextBox.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controls\LTVertScrollBar.resx">
+      <DependentUpon>LTVertScrollBar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\LucaToysLogo.resx">
       <DependentUpon>LucaToysLogo.cs</DependentUpon>
     </EmbeddedResource>
