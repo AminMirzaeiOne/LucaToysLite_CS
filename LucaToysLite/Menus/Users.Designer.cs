@@ -97,6 +97,7 @@
             this.roundedButton6.Text = "Delete Customer";
             this.roundedButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.roundedButton6.UseVisualStyleBackColor = true;
+            this.roundedButton6.Click += new System.EventHandler(this.roundedButton6_Click);
             // 
             // roundedButton5
             // 
