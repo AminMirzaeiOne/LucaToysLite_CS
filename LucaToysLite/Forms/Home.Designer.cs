@@ -30,6 +30,7 @@
         {
             this.homeMenu1 = new LucaToysLite.Menus.HomeMenu();
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // homeMenu1
@@ -68,12 +69,23 @@
             this.windowToolbar1.TitleText = "Window";
             this.windowToolbar1.WindowBorderSize = ((byte)(3));
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(395, 390);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(212, 53);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(1090, 650);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.homeMenu1);
             this.Controls.Add(this.windowToolbar1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -81,6 +93,7 @@
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
+            this.Load += new System.EventHandler(this.Home_Load);
             this.ResumeLayout(false);
 
         }
@@ -88,5 +101,6 @@
         #endregion
         private Controls.WindowToolbar windowToolbar1;
         private Menus.HomeMenu homeMenu1;
+        private System.Windows.Forms.Button button1;
     }
 }

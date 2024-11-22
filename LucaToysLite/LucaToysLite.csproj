@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,6 +32,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -86,7 +88,6 @@
     <Compile Include="Apps\WebBrowser.Designer.cs">
       <DependentUpon>WebBrowser.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClassLibrary\BlurEffect.cs" />
     <Compile Include="ClassLibrary\WindowAnimation.cs" />
     <Compile Include="ClassLibrary\XToolStripDropDown.cs">
       <SubType>Component</SubType>
