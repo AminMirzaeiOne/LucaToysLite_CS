@@ -311,8 +311,7 @@ namespace LucaToysLite.Messages
                 case LucaToysLite.Controls.LTMessageBox.ActionTypes.Exit:
                 case LucaToysLite.Controls.LTMessageBox.ActionTypes.Restart:
                     this.windowToolbar1.Close();
-                    this.Owner.WindowState = FormWindowState.Minimized;
-                    this.Owner.WindowState = FormWindowState.Normal;
+                    this.ActiveOwner();
                     break;
             }
         }
@@ -329,8 +328,7 @@ namespace LucaToysLite.Messages
                 case LucaToysLite.Controls.LTMessageBox.ActionTypes.Exit:
                 case LucaToysLite.Controls.LTMessageBox.ActionTypes.Restart:
                     this.windowToolbar1.Close();
-                    this.Owner.WindowState = FormWindowState.Minimized;
-                    this.Owner.WindowState = FormWindowState.Normal;
+                    this.ActiveOwner();
                     break;
             }
         }
