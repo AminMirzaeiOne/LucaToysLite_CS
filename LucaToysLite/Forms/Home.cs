@@ -11,7 +11,6 @@ using System.Windows.Forms;
 using LucaToysLite.ClassLibrary;
 using LucaToysLite.Controls;
 using LucaToysLite.Messages;
-using static LucaToysLite.ClassLibrary.BlurEffect;
 
 namespace LucaToysLite.Forms
 {

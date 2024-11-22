@@ -12,10 +12,29 @@ namespace LucaToysLite.Messages
 {
     public partial class Hybrid : Form
     {
+        private Form frm = new Form();
+        public void FocusEnable(Form window)
+        {
+
+            this.frm.FormBorderStyle = FormBorderStyle.None;
+            this.frm.BackColor = Color.Black;
+            this.frm.Opacity = 0.6;
+            this.frm.Show();
+            this.frm.Location = window.Location;
+            this.frm.Size = window.Size;
+
+        }
+
+        protected override void OnClosed(EventArgs e)
+        {
+            base.OnClosed(e);
+            this.frm.Close();
+        }
 
         public Hybrid()
         {
             InitializeComponent();
+            this.FocusEnable(this.Owner);
         }
 
         public Hybrid(Form owner,string title, string content)
@@ -25,6 +44,7 @@ namespace LucaToysLite.Messages
             this.TitleText = title;
             this.ContentText = content;
             this.windowToolbar1.CloseMessage = false;
+            this.FocusEnable(this.Owner);
         }
 
         public Hybrid(Form owner,string title, string content, string description)
@@ -35,6 +55,7 @@ namespace LucaToysLite.Messages
             this.ContentText = content;
             this.DescriptionText = description;
             this.windowToolbar1.CloseMessage = false;
+            this.FocusEnable(this.Owner);
 
         }
 
@@ -47,6 +68,7 @@ namespace LucaToysLite.Messages
             this.DescriptionText = description;
             this.MessageIcon = icon;
             this.windowToolbar1.CloseMessage = false;
+            this.FocusEnable(this.Owner);
 
         }
 
@@ -59,6 +81,7 @@ namespace LucaToysLite.Messages
             this.DescriptionText = description;
             this.IconType = type;
             this.windowToolbar1.CloseMessage = false;
+            this.FocusEnable(this.Owner);
 
         }
 
@@ -71,6 +94,7 @@ namespace LucaToysLite.Messages
             this.DescriptionText = description;
             this.ActionType = action;
             this.windowToolbar1.CloseMessage = false;
+            this.FocusEnable(this.Owner);
 
         }
 
@@ -84,6 +108,7 @@ namespace LucaToysLite.Messages
             this.MessageIcon = icon;
             this.SoundType = sound;
             this.windowToolbar1.CloseMessage = false;
+            this.FocusEnable(this.Owner);
 
         }
 
@@ -97,6 +122,7 @@ namespace LucaToysLite.Messages
             this.IconType = icon;
             this.SoundType = sound;
             this.windowToolbar1.CloseMessage = false;
+            this.FocusEnable(this.Owner);
 
         }
 
@@ -110,6 +136,7 @@ namespace LucaToysLite.Messages
             this.ActionType = action;
             this.SoundType = sound;
             this.windowToolbar1.CloseMessage = false;
+            this.FocusEnable(this.Owner);
 
         }
 
@@ -276,16 +303,28 @@ namespace LucaToysLite.Messages
                 case LucaToysLite.Controls.LTMessageBox.ActionTypes.Exit:
                 case LucaToysLite.Controls.LTMessageBox.ActionTypes.Restart:
                     this.windowToolbar1.Close();
+                    this.Owner.WindowState = FormWindowState.Minimized;
+                    this.Owner.WindowState = FormWindowState.Normal;
                     break;
             }
         }
 
         private void roundedButton3_Click(object sender, EventArgs e)
         {
-            if (this.ButtonThreeAction == null)
-                this.windowToolbar1.Close();
-            else
-                this.ButtonThreeAction(null, null);
+            switch (this.ActionType)
+            {
+                case LucaToysLite.Controls.LTMessageBox.ActionTypes.None:
+                    if (this.ButtonThreeAction != null)
+                        this.ButtonThreeAction(null, null);
+                    break;
+                case LucaToysLite.Controls.LTMessageBox.ActionTypes.Close:
+                case LucaToysLite.Controls.LTMessageBox.ActionTypes.Exit:
+                case LucaToysLite.Controls.LTMessageBox.ActionTypes.Restart:
+                    this.windowToolbar1.Close();
+                    this.Owner.WindowState = FormWindowState.Minimized;
+                    this.Owner.WindowState = FormWindowState.Normal;
+                    break;
+            }
         }
 
         private void copyContentToolStripMenuItem_Click(object sender, EventArgs e)
