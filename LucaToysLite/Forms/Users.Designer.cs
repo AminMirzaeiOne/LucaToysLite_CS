@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            WFAnimations.Animation animation2 = new WFAnimations.Animation();
+            WFAnimations.Animation animation1 = new WFAnimations.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Users));
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.animator1 = new WFAnimations.Animator(this.components);
-            this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
             this.roundedRadioButton3 = new LucaToysLite.Controls.RoundedRadioButton();
             this.roundedRadioButton2 = new LucaToysLite.Controls.RoundedRadioButton();
             this.roundedRadioButton1 = new LucaToysLite.Controls.RoundedRadioButton();
+            this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -87,47 +87,23 @@
             // 
             this.animator1.AnimationType = WFAnimations.AnimationType.Transparent;
             this.animator1.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 1F;
-            this.animator1.DefaultAnimation = animation2;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 1F;
+            this.animator1.DefaultAnimation = animation1;
             this.animator1.Upside = false;
-            // 
-            // windowToolbar1
-            // 
-            this.windowToolbar1.BackColor = System.Drawing.Color.Crimson;
-            this.windowToolbar1.BorderStyleRadius = true;
-            this.windowToolbar1.CloseMessage = true;
-            this.windowToolbar1.ColorPalette = System.Drawing.Color.Crimson;
-            this.windowToolbar1.DarkTheme = true;
-            this.animator1.SetDecoration(this.windowToolbar1, WFAnimations.DecorationType.None);
-            this.windowToolbar1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.windowToolbar1.IconButton = true;
-            this.windowToolbar1.IconButtonImage = null;
-            this.windowToolbar1.IconButtonSybmol = "";
-            this.windowToolbar1.IconMenu = true;
-            this.windowToolbar1.Location = new System.Drawing.Point(0, 0);
-            this.windowToolbar1.MaximizeButton = true;
-            this.windowToolbar1.MinimizeButton = true;
-            this.windowToolbar1.MoveOption = true;
-            this.windowToolbar1.Name = "windowToolbar1";
-            this.windowToolbar1.Size = new System.Drawing.Size(1182, 45);
-            this.windowToolbar1.StartupSound = LucaToysLite.Controls.WindowToolbar.StartupSounds.None;
-            this.windowToolbar1.TabIndex = 0;
-            this.windowToolbar1.TitleText = "User Manage";
-            this.windowToolbar1.WindowBorderSize = ((byte)(3));
             // 
             // roundedRadioButton3
             // 
@@ -176,6 +152,7 @@
             this.roundedRadioButton2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.roundedRadioButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.roundedRadioButton2.UseVisualStyleBackColor = true;
+            this.roundedRadioButton2.CheckedChanged += new System.EventHandler(this.roundedRadioButton2_CheckedChanged);
             // 
             // roundedRadioButton1
             // 
@@ -203,6 +180,30 @@
             this.roundedRadioButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.roundedRadioButton1.UseVisualStyleBackColor = true;
             this.roundedRadioButton1.CheckedChanged += new System.EventHandler(this.roundedRadioButton1_CheckedChanged);
+            // 
+            // windowToolbar1
+            // 
+            this.windowToolbar1.BackColor = System.Drawing.Color.Crimson;
+            this.windowToolbar1.BorderStyleRadius = true;
+            this.windowToolbar1.CloseMessage = true;
+            this.windowToolbar1.ColorPalette = System.Drawing.Color.Crimson;
+            this.windowToolbar1.DarkTheme = true;
+            this.animator1.SetDecoration(this.windowToolbar1, WFAnimations.DecorationType.None);
+            this.windowToolbar1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.windowToolbar1.IconButton = true;
+            this.windowToolbar1.IconButtonImage = null;
+            this.windowToolbar1.IconButtonSybmol = "";
+            this.windowToolbar1.IconMenu = true;
+            this.windowToolbar1.Location = new System.Drawing.Point(0, 0);
+            this.windowToolbar1.MaximizeButton = true;
+            this.windowToolbar1.MinimizeButton = true;
+            this.windowToolbar1.MoveOption = true;
+            this.windowToolbar1.Name = "windowToolbar1";
+            this.windowToolbar1.Size = new System.Drawing.Size(1182, 45);
+            this.windowToolbar1.StartupSound = LucaToysLite.Controls.WindowToolbar.StartupSounds.None;
+            this.windowToolbar1.TabIndex = 0;
+            this.windowToolbar1.TitleText = "User Manage";
+            this.windowToolbar1.WindowBorderSize = ((byte)(3));
             // 
             // Users
             // 

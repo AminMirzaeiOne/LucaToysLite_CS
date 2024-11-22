@@ -378,6 +378,12 @@
     <Compile Include="Pages\Users\Sellers.Designer.cs">
       <DependentUpon>Sellers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Users\Sundry.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\Users\Sundry.Designer.cs">
+      <DependentUpon>Sundry.cs</DependentUpon>
+    </Compile>
     <Compile Include="Panels\Purchase\DollsList.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -541,6 +547,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\Users\Sellers.resx">
       <DependentUpon>Sellers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Users\Sundry.resx">
+      <DependentUpon>Sundry.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Panels\Purchase\DollsList.resx">
       <DependentUpon>DollsList.cs</DependentUpon>
