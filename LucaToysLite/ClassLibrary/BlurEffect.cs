@@ -32,5 +32,13 @@ namespace LucaToysLite.ClassLibrary
             public int AnimationId;
         }
 
+        [StructLayout(LayoutKind.Sequential)]
+        public struct WindowCompositionAttributeData
+        {
+            public WindowCompositionAttribute Attribute;
+            public IntPtr Data;
+            public int SizeOfData;
+        }
+
     }
 }
