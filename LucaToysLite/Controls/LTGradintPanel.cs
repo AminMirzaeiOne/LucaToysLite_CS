@@ -12,6 +12,31 @@ namespace LucaToysLite.Controls
 {
     public class LTGradintPanel : System.Windows.Forms.Panel
     {
+        public LTGradintPanel()
+        {
+            this.DoubleBuffered = true;
+        }
+
+        private Color cl1 = Color.RoyalBlue, cl2 = Color.Crimson;
+
+        public System.Drawing.Color ColorOne
+        {
+            get { return this.cl1; }
+            set
+            {
+                this.cl1 = value;
+            }
+        }
+
+        public System.Drawing.Color ColorTwo
+        {
+            get { return this.cl2; }
+            set
+            {
+                this.cl2 = value;
+            }
+        }
+
         private int radius = 20;
         [DefaultValue(20)]
         public int Radius
@@ -88,11 +113,15 @@ namespace LucaToysLite.Controls
                 this.Region = new Region(GraphPath);
                 using (Pen pen = new Pen(this.BorderColor, this.BorderSize))
                 {
+
+                    e.Graphics.FillPath(new LinearGradientBrush(ClientRectangle, this.ColorOne, this.ColorTwo, 45), GraphPath);
                     pen.Alignment = PenAlignment.Inset;
                     if (this.EnableBorder)
                         e.Graphics.DrawPath(pen, GraphPath);
                 }
             }
+
+
         }
 
 
