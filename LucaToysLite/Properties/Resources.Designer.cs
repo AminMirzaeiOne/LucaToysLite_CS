@@ -483,6 +483,16 @@ namespace LucaToysLite.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_automatic_contrast_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-automatic-contrast-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_back_62 {
             get {
                 object obj = ResourceManager.GetObject("icons8-back-62", resourceCulture);
@@ -763,6 +773,16 @@ namespace LucaToysLite.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_copy_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-copy-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_csv_68 {
             get {
                 object obj = ResourceManager.GetObject("icons8-csv-68", resourceCulture);
@@ -1006,6 +1026,16 @@ namespace LucaToysLite.Properties {
         internal static System.Drawing.Bitmap icons8_english_to_arabic_28 {
             get {
                 object obj = ResourceManager.GetObject("icons8-english-to-arabic-28", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_erase_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-erase-32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

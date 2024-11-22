@@ -1120,5 +1120,14 @@
   <ItemGroup>
     <None Include="Resources\icons8-more-32.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-erase-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-automatic-contrast-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-copy-32.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
