@@ -449,6 +449,9 @@
     <EmbeddedResource Include="Forms\SplashScreen.resx">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Users.resx">
+      <DependentUpon>Users.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Menus\Accounting.resx">
       <DependentUpon>Accounting.cs</DependentUpon>
     </EmbeddedResource>
@@ -705,6 +708,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Pages\Settings\DatabasePages\" />
+    <Folder Include="Pages\Users\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-show-property-48.png" />
@@ -1023,6 +1027,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-barcode-reader-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-categorize-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-customers-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-customers-48%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-customers-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-customers-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-customers-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-customers-72%282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-customers-72%281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
