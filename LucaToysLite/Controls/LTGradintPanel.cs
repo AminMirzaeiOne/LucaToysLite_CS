@@ -15,14 +15,37 @@ namespace LucaToysLite.Controls
         public LTGradintPanel()
         {
             this.DoubleBuffered = true;
-            this.timer.Interval = 50;
-            this.timer.Start();
             this.timer.Tick += (s, e) => { this.Angle = this.Angle % 360 + 1; };
+            if (this.Animation)
+                this.timer.Start();
+            else
+                this.timer.Stop();
         }
 
         private Color cl1 = Color.RoyalBlue, cl2 = Color.Crimson;
         private Timer timer = new Timer();
         private float ang = 45;
+        private System.Boolean animation = true;
+
+        [DefaultValue(50)]
+        public System.Byte Interval
+        {
+            get { return (byte)this.timer.Interval; }
+            set { this.timer.Interval = value; }
+        }
+
+        public System.Boolean Animation
+        {
+            get { return this.animation; }
+            set
+            {
+                this.animation = value;
+                if (value)
+                    this.timer.Start();
+                else
+                    this.timer.Stop();
+            }
+        }
 
         public float Angle
         {
@@ -125,7 +148,7 @@ namespace LucaToysLite.Controls
                 using (Pen pen = new Pen(this.BorderColor, this.BorderSize))
                 {
 
-                    e.Graphics.FillPath(new LinearGradientBrush(ClientRectangle, this.ColorOne, this.ColorTwo, 45), GraphPath);
+                    e.Graphics.FillPath(new LinearGradientBrush(ClientRectangle, this.ColorOne, this.ColorTwo, this.Angle), GraphPath);
                     pen.Alignment = PenAlignment.Inset;
                     if (this.EnableBorder)
                         e.Graphics.DrawPath(pen, GraphPath);
