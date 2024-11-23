@@ -17,17 +17,21 @@ namespace LucaToysLite.Forms
             InitializeComponent();
 
             this.panel1.Controls.Add(this.important);
+            this.panel1.Controls.Add(this.unnecessary);
             this.panel1.Controls.Add(this.photos);
 
             this.important.Dock = DockStyle.Fill;
+            this.unnecessary.Dock = DockStyle.Fill;
             this.photos.Dock = DockStyle.Fill;
 
             this.important.Visible = true;
+            this.unnecessary.Visible = false;
             this.photos.Visible = false;
 
         }
 
         private LucaToysLite.Pages.SellerInfo.Important important = new Pages.SellerInfo.Important();
+        private LucaToysLite.Pages.SellerInfo.Unnecessary unnecessary = new Pages.SellerInfo.Unnecessary();
         private LucaToysLite.Pages.SellerInfo.Photos photos = new Pages.SellerInfo.Photos();
 
         private void roundedRadioButton4_CheckedChanged(object sender, EventArgs e)
@@ -35,6 +39,7 @@ namespace LucaToysLite.Forms
             if (this.roundedRadioButton4.Checked)
             {
                 this.important.Visible = false;
+                this.unnecessary.Visible = false;
                 this.animator1.Show(this.photos);
             }
         }
@@ -44,7 +49,18 @@ namespace LucaToysLite.Forms
             if (this.roundedRadioButton1.Checked)
             {
                 this.photos.Visible = false;
+                this.unnecessary.Visible = false;
                 this.animator1.Show(this.important);
+            }
+        }
+
+        private void roundedRadioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.roundedRadioButton2.Checked)
+            {
+                this.photos.Visible = false;
+                this.important.Visible = false;
+                this.animator1.Show(this.unnecessary);
             }
         }
     }

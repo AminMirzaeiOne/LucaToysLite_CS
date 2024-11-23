@@ -1324,5 +1324,23 @@
   <ItemGroup>
     <None Include="Resources\icons8-phone-68.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-email-68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cute-cake-68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-certificate-68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-smart-home-shield-68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-bank-cards-68%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-worldwide-location-68.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
