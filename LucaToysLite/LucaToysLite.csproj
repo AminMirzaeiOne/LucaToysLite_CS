@@ -234,6 +234,12 @@
     <Compile Include="Forms\PurchaseMode.Designer.cs">
       <DependentUpon>PurchaseMode.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\SearchUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SearchUser.Designer.cs">
+      <DependentUpon>SearchUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\SellerInfo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -619,6 +625,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PurchaseMode.resx">
       <DependentUpon>PurchaseMode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SearchUser.resx">
+      <DependentUpon>SearchUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SellerInfo.resx">
       <DependentUpon>SellerInfo.cs</DependentUpon>
