@@ -198,6 +198,7 @@
             this.roundedButton2.Text = "Add Toy";
             this.roundedButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.roundedButton2.UseVisualStyleBackColor = true;
+            this.roundedButton2.Click += new System.EventHandler(this.roundedButton2_Click);
             // 
             // roundedButton1
             // 
