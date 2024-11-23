@@ -28,23 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.roundedPanel1 = new LucaToysLite.Controls.RoundedPanel();
             this.roundedButton1 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton2 = new LucaToysLite.Controls.RoundedButton();
             this.roundedPanel3 = new LucaToysLite.Controls.RoundedPanel();
+            this.roundedPanel1 = new LucaToysLite.Controls.RoundedPanel();
             this.SuspendLayout();
-            // 
-            // roundedPanel1
-            // 
-            this.roundedPanel1.BackgroundImage = global::LucaToysLite.Properties.Resources.Group_18_1_;
-            this.roundedPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.roundedPanel1.BorderColor = System.Drawing.Color.Crimson;
-            this.roundedPanel1.BorderSize = ((byte)(3));
-            this.roundedPanel1.EnableBorder = true;
-            this.roundedPanel1.Location = new System.Drawing.Point(76, 83);
-            this.roundedPanel1.Name = "roundedPanel1";
-            this.roundedPanel1.Size = new System.Drawing.Size(240, 240);
-            this.roundedPanel1.TabIndex = 1;
             // 
             // roundedButton1
             // 
@@ -84,7 +72,7 @@
             // 
             // roundedPanel3
             // 
-            this.roundedPanel3.BackgroundImage = global::LucaToysLite.Properties.Resources.Group_19;
+            this.roundedPanel3.BackgroundImage = global::LucaToysLite.Properties.Resources.Group_18_2_;
             this.roundedPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.roundedPanel3.BorderColor = System.Drawing.Color.Crimson;
             this.roundedPanel3.BorderSize = ((byte)(3));
@@ -93,6 +81,18 @@
             this.roundedPanel3.Name = "roundedPanel3";
             this.roundedPanel3.Size = new System.Drawing.Size(240, 240);
             this.roundedPanel3.TabIndex = 1;
+            // 
+            // roundedPanel1
+            // 
+            this.roundedPanel1.BackgroundImage = global::LucaToysLite.Properties.Resources.Group_19_1_;
+            this.roundedPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.roundedPanel1.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedPanel1.BorderSize = ((byte)(3));
+            this.roundedPanel1.EnableBorder = true;
+            this.roundedPanel1.Location = new System.Drawing.Point(76, 83);
+            this.roundedPanel1.Name = "roundedPanel1";
+            this.roundedPanel1.Size = new System.Drawing.Size(240, 240);
+            this.roundedPanel1.TabIndex = 1;
             // 
             // Photos
             // 
