@@ -432,6 +432,12 @@
     <Compile Include="Pages\AddSeller\Unnecessary.Designer.cs">
       <DependentUpon>Unnecessary.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pages\AddToy\Important.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\AddToy\Important.Designer.cs">
+      <DependentUpon>Important.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pages\CustomerInfo\Description.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -761,6 +767,9 @@
     <EmbeddedResource Include="Pages\AddSeller\Unnecessary.resx">
       <DependentUpon>Unnecessary.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pages\AddToy\Important.resx">
+      <DependentUpon>Important.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pages\CustomerInfo\Description.resx">
       <DependentUpon>Description.cs</DependentUpon>
     </EmbeddedResource>
@@ -1013,7 +1022,6 @@
     <None Include="Resources\icons8-backup-28.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Pages\AddToy\" />
     <Folder Include="Pages\Settings\DatabasePages\" />
   </ItemGroup>
   <ItemGroup>
