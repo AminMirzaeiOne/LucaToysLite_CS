@@ -414,6 +414,12 @@
     <Compile Include="Pages\SellerInfo\Important.Designer.cs">
       <DependentUpon>Important.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pages\SellerInfo\Lateral.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\SellerInfo\Lateral.Designer.cs">
+      <DependentUpon>Lateral.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pages\SellerInfo\Photos.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -667,6 +673,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\SellerInfo\Important.resx">
       <DependentUpon>Important.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\SellerInfo\Lateral.resx">
+      <DependentUpon>Lateral.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\SellerInfo\Photos.resx">
       <DependentUpon>Photos.cs</DependentUpon>
