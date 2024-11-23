@@ -383,6 +383,16 @@ namespace LucaToysLite.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_about_me_68 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-about-me-68", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_accountant_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-accountant-48", resourceCulture);
@@ -756,6 +766,16 @@ namespace LucaToysLite.Properties {
         internal static System.Drawing.Bitmap icons8_clear_shopping_cart_62 {
             get {
                 object obj = ResourceManager.GetObject("icons8-clear-shopping-cart-62", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_close_window_68 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-close-window-68", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2056,6 +2076,16 @@ namespace LucaToysLite.Properties {
         internal static System.Drawing.Bitmap icons8_update_48_1_ {
             get {
                 object obj = ResourceManager.GetObject("icons8-update-48(1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_update_user_68 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-update-user-68", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
