@@ -48,6 +48,9 @@
             this.roundedButton5 = new LucaToysLite.Controls.RoundedButton();
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
             this.roundedButton4 = new LucaToysLite.Controls.RoundedButton();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.roundedPanel2.SuspendLayout();
             this.roundedPanel5.SuspendLayout();
             this.roundedPanel1.SuspendLayout();
@@ -229,6 +232,9 @@
             this.roundedPanel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.roundedPanel5.BorderColor = System.Drawing.Color.Crimson;
             this.roundedPanel5.BorderSize = ((byte)(3));
+            this.roundedPanel5.Controls.Add(this.label6);
+            this.roundedPanel5.Controls.Add(this.label5);
+            this.roundedPanel5.Controls.Add(this.label4);
             this.roundedPanel5.Controls.Add(this.label3);
             this.roundedPanel5.Controls.Add(this.roundedPanel6);
             this.roundedPanel5.Controls.Add(this.roundedButton3);
@@ -244,12 +250,13 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(212, 26);
+            this.label3.Location = new System.Drawing.Point(194, 27);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(176, 25);
+            this.label3.Size = new System.Drawing.Size(157, 28);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Name : Amin Mirzaei";
+            this.label3.Text = "Name : Mohsen";
             // 
             // roundedPanel6
             // 
@@ -445,6 +452,39 @@
             this.roundedButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.roundedButton4.UseVisualStyleBackColor = true;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(194, 69);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(164, 28);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Family : Hossinei";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(194, 110);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(196, 28);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Phone : 0912239249";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(194, 150);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(148, 28);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Usercode : 498";
+            // 
             // SearchUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
@@ -495,5 +535,8 @@
         private Controls.RoundedPanel roundedPanel6;
         private System.Windows.Forms.Label label3;
         private Controls.RoundedButton roundedButton4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label6;
     }
 }
