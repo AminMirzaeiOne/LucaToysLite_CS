@@ -1233,6 +1233,16 @@ namespace LucaToysLite.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_game_72 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-game-72", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_geography_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-geography-48", resourceCulture);
@@ -1596,6 +1606,16 @@ namespace LucaToysLite.Properties {
         internal static System.Drawing.Bitmap icons8_playlist_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-playlist-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_plush_72 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-plush-72", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2026,6 +2046,16 @@ namespace LucaToysLite.Properties {
         internal static System.Drawing.Bitmap icons8_toy_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-toy-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_toy_car_72 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-toy-car-72", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
