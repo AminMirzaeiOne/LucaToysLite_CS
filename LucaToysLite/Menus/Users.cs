@@ -58,5 +58,11 @@ namespace LucaToysLite.Menus
             LucaToysLite.Forms.UpdateCustomer updateCustomer = new Forms.UpdateCustomer();
             updateCustomer.Show();
         }
+
+        private void roundedButton8_Click(object sender, EventArgs e)
+        {
+            LucaToysLite.Forms.SearchUser searchUser = new Forms.SearchUser();
+            searchUser.Show();
+        }
     }
 }
