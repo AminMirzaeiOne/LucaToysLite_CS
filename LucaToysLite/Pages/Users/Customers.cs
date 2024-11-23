@@ -16,5 +16,11 @@ namespace LucaToysLite.Pages.Users
         {
             InitializeComponent();
         }
+
+        private void roundedButton4_Click(object sender, EventArgs e)
+        {
+            LucaToysLite.Forms.CustomerInfo customerInfo = new Forms.CustomerInfo();
+            customerInfo.Show();
+        }
     }
 }

@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.roundedPanel2 = new LucaToysLite.Controls.RoundedPanel();
+            this.roundedButton4 = new LucaToysLite.Controls.RoundedButton();
+            this.roundedButton3 = new LucaToysLite.Controls.RoundedButton();
+            this.roundedButton2 = new LucaToysLite.Controls.RoundedButton();
+            this.roundedButton1 = new LucaToysLite.Controls.RoundedButton();
             this.roundedPanel3 = new LucaToysLite.Controls.RoundedPanel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.roundedPanel1 = new LucaToysLite.Controls.RoundedPanel();
@@ -37,12 +41,8 @@
             this.ltRadioButton1 = new LucaToysLite.Controls.LTRadioButton();
             this.roundedPanel4 = new LucaToysLite.Controls.RoundedPanel();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.ltToolTip1 = new LucaToysLite.Controls.LTToolTip();
-            this.roundedButton4 = new LucaToysLite.Controls.RoundedButton();
-            this.roundedButton3 = new LucaToysLite.Controls.RoundedButton();
-            this.roundedButton2 = new LucaToysLite.Controls.RoundedButton();
-            this.roundedButton1 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton5 = new LucaToysLite.Controls.RoundedButton();
+            this.ltToolTip1 = new LucaToysLite.Controls.LTToolTip();
             this.roundedPanel2.SuspendLayout();
             this.roundedPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -66,6 +66,79 @@
             this.roundedPanel2.Name = "roundedPanel2";
             this.roundedPanel2.Size = new System.Drawing.Size(175, 521);
             this.roundedPanel2.TabIndex = 1;
+            // 
+            // roundedButton4
+            // 
+            this.roundedButton4.BorderRadius = ((byte)(20));
+            this.roundedButton4.BorderSize = ((byte)(3));
+            this.roundedButton4.EnableBorder = true;
+            this.roundedButton4.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedButton4.FlatAppearance.BorderSize = 0;
+            this.roundedButton4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Crimson;
+            this.roundedButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton4.ForeColor = System.Drawing.Color.White;
+            this.roundedButton4.Image = global::LucaToysLite.Properties.Resources.icons8_info_62;
+            this.roundedButton4.Location = new System.Drawing.Point(20, 394);
+            this.roundedButton4.Name = "roundedButton4";
+            this.roundedButton4.Size = new System.Drawing.Size(135, 110);
+            this.roundedButton4.TabIndex = 0;
+            this.ltToolTip1.SetToolTip(this.roundedButton4, "About Customer");
+            this.roundedButton4.UseVisualStyleBackColor = true;
+            this.roundedButton4.Click += new System.EventHandler(this.roundedButton4_Click);
+            // 
+            // roundedButton3
+            // 
+            this.roundedButton3.BorderRadius = ((byte)(20));
+            this.roundedButton3.BorderSize = ((byte)(3));
+            this.roundedButton3.EnableBorder = true;
+            this.roundedButton3.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedButton3.FlatAppearance.BorderSize = 0;
+            this.roundedButton3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Crimson;
+            this.roundedButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton3.ForeColor = System.Drawing.Color.White;
+            this.roundedButton3.Image = global::LucaToysLite.Properties.Resources.icons8_sync_62;
+            this.roundedButton3.Location = new System.Drawing.Point(20, 267);
+            this.roundedButton3.Name = "roundedButton3";
+            this.roundedButton3.Size = new System.Drawing.Size(135, 110);
+            this.roundedButton3.TabIndex = 0;
+            this.ltToolTip1.SetToolTip(this.roundedButton3, "Update Customer");
+            this.roundedButton3.UseVisualStyleBackColor = true;
+            // 
+            // roundedButton2
+            // 
+            this.roundedButton2.BorderRadius = ((byte)(20));
+            this.roundedButton2.BorderSize = ((byte)(3));
+            this.roundedButton2.EnableBorder = true;
+            this.roundedButton2.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedButton2.FlatAppearance.BorderSize = 0;
+            this.roundedButton2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Crimson;
+            this.roundedButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton2.ForeColor = System.Drawing.Color.White;
+            this.roundedButton2.Image = global::LucaToysLite.Properties.Resources.icons8_delete_62;
+            this.roundedButton2.Location = new System.Drawing.Point(20, 141);
+            this.roundedButton2.Name = "roundedButton2";
+            this.roundedButton2.Size = new System.Drawing.Size(135, 110);
+            this.roundedButton2.TabIndex = 0;
+            this.ltToolTip1.SetToolTip(this.roundedButton2, "Delete Customer");
+            this.roundedButton2.UseVisualStyleBackColor = true;
+            // 
+            // roundedButton1
+            // 
+            this.roundedButton1.BorderRadius = ((byte)(20));
+            this.roundedButton1.BorderSize = ((byte)(3));
+            this.roundedButton1.EnableBorder = true;
+            this.roundedButton1.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedButton1.FlatAppearance.BorderSize = 0;
+            this.roundedButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Crimson;
+            this.roundedButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton1.ForeColor = System.Drawing.Color.White;
+            this.roundedButton1.Image = global::LucaToysLite.Properties.Resources.icons8_add_62;
+            this.roundedButton1.Location = new System.Drawing.Point(20, 14);
+            this.roundedButton1.Name = "roundedButton1";
+            this.roundedButton1.Size = new System.Drawing.Size(135, 110);
+            this.roundedButton1.TabIndex = 0;
+            this.ltToolTip1.SetToolTip(this.roundedButton1, "Add Customer");
+            this.roundedButton1.UseVisualStyleBackColor = true;
             // 
             // roundedPanel3
             // 
@@ -188,88 +261,6 @@
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "Search Customer";
             // 
-            // ltToolTip1
-            // 
-            this.ltToolTip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
-            this.ltToolTip1.BorderColor = System.Drawing.Color.Crimson;
-            this.ltToolTip1.BorderRadius = ((byte)(14));
-            this.ltToolTip1.BorderSize = ((byte)(2));
-            this.ltToolTip1.ForeColor = System.Drawing.Color.White;
-            this.ltToolTip1.OwnerDraw = true;
-            this.ltToolTip1.Themes = LucaToysLite.Controls.Themes.Dark;
-            // 
-            // roundedButton4
-            // 
-            this.roundedButton4.BorderRadius = ((byte)(20));
-            this.roundedButton4.BorderSize = ((byte)(3));
-            this.roundedButton4.EnableBorder = true;
-            this.roundedButton4.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
-            this.roundedButton4.FlatAppearance.BorderSize = 0;
-            this.roundedButton4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Crimson;
-            this.roundedButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton4.ForeColor = System.Drawing.Color.White;
-            this.roundedButton4.Image = global::LucaToysLite.Properties.Resources.icons8_info_62;
-            this.roundedButton4.Location = new System.Drawing.Point(20, 394);
-            this.roundedButton4.Name = "roundedButton4";
-            this.roundedButton4.Size = new System.Drawing.Size(135, 110);
-            this.roundedButton4.TabIndex = 0;
-            this.ltToolTip1.SetToolTip(this.roundedButton4, "About Customer");
-            this.roundedButton4.UseVisualStyleBackColor = true;
-            // 
-            // roundedButton3
-            // 
-            this.roundedButton3.BorderRadius = ((byte)(20));
-            this.roundedButton3.BorderSize = ((byte)(3));
-            this.roundedButton3.EnableBorder = true;
-            this.roundedButton3.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
-            this.roundedButton3.FlatAppearance.BorderSize = 0;
-            this.roundedButton3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Crimson;
-            this.roundedButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton3.ForeColor = System.Drawing.Color.White;
-            this.roundedButton3.Image = global::LucaToysLite.Properties.Resources.icons8_sync_62;
-            this.roundedButton3.Location = new System.Drawing.Point(20, 267);
-            this.roundedButton3.Name = "roundedButton3";
-            this.roundedButton3.Size = new System.Drawing.Size(135, 110);
-            this.roundedButton3.TabIndex = 0;
-            this.ltToolTip1.SetToolTip(this.roundedButton3, "Update Customer");
-            this.roundedButton3.UseVisualStyleBackColor = true;
-            // 
-            // roundedButton2
-            // 
-            this.roundedButton2.BorderRadius = ((byte)(20));
-            this.roundedButton2.BorderSize = ((byte)(3));
-            this.roundedButton2.EnableBorder = true;
-            this.roundedButton2.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
-            this.roundedButton2.FlatAppearance.BorderSize = 0;
-            this.roundedButton2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Crimson;
-            this.roundedButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton2.ForeColor = System.Drawing.Color.White;
-            this.roundedButton2.Image = global::LucaToysLite.Properties.Resources.icons8_delete_62;
-            this.roundedButton2.Location = new System.Drawing.Point(20, 141);
-            this.roundedButton2.Name = "roundedButton2";
-            this.roundedButton2.Size = new System.Drawing.Size(135, 110);
-            this.roundedButton2.TabIndex = 0;
-            this.ltToolTip1.SetToolTip(this.roundedButton2, "Delete Customer");
-            this.roundedButton2.UseVisualStyleBackColor = true;
-            // 
-            // roundedButton1
-            // 
-            this.roundedButton1.BorderRadius = ((byte)(20));
-            this.roundedButton1.BorderSize = ((byte)(3));
-            this.roundedButton1.EnableBorder = true;
-            this.roundedButton1.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
-            this.roundedButton1.FlatAppearance.BorderSize = 0;
-            this.roundedButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Crimson;
-            this.roundedButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton1.ForeColor = System.Drawing.Color.White;
-            this.roundedButton1.Image = global::LucaToysLite.Properties.Resources.icons8_add_62;
-            this.roundedButton1.Location = new System.Drawing.Point(20, 14);
-            this.roundedButton1.Name = "roundedButton1";
-            this.roundedButton1.Size = new System.Drawing.Size(135, 110);
-            this.roundedButton1.TabIndex = 0;
-            this.ltToolTip1.SetToolTip(this.roundedButton1, "Add Customer");
-            this.roundedButton1.UseVisualStyleBackColor = true;
-            // 
             // roundedButton5
             // 
             this.roundedButton5.BorderRadius = ((byte)(20));
@@ -289,6 +280,16 @@
             this.roundedButton5.Text = " Search";
             this.roundedButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.roundedButton5.UseVisualStyleBackColor = true;
+            // 
+            // ltToolTip1
+            // 
+            this.ltToolTip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.ltToolTip1.BorderColor = System.Drawing.Color.Crimson;
+            this.ltToolTip1.BorderRadius = ((byte)(14));
+            this.ltToolTip1.BorderSize = ((byte)(2));
+            this.ltToolTip1.ForeColor = System.Drawing.Color.White;
+            this.ltToolTip1.OwnerDraw = true;
+            this.ltToolTip1.Themes = LucaToysLite.Controls.Themes.Dark;
             // 
             // Customers
             // 
