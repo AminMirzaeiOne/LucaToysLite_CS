@@ -432,6 +432,12 @@
     <Compile Include="Pages\AddSeller\Unnecessary.Designer.cs">
       <DependentUpon>Unnecessary.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pages\AddToy\Description.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\AddToy\Description.Designer.cs">
+      <DependentUpon>Description.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pages\AddToy\Important.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -772,6 +778,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\AddSeller\Unnecessary.resx">
       <DependentUpon>Unnecessary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\AddToy\Description.resx">
+      <DependentUpon>Description.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\AddToy\Important.resx">
       <DependentUpon>Important.cs</DependentUpon>
