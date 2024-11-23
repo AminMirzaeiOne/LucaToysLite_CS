@@ -28,13 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            WFAnimations.Animation animation4 = new WFAnimations.Animation();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Products));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
             this.roundedRadioButton3 = new LucaToysLite.Controls.RoundedRadioButton();
             this.roundedRadioButton2 = new LucaToysLite.Controls.RoundedRadioButton();
             this.roundedRadioButton1 = new LucaToysLite.Controls.RoundedRadioButton();
+            this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
+            this.animator1 = new WFAnimations.Animator(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -43,6 +47,7 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.animator1.SetDecoration(this.panel1, WFAnimations.DecorationType.None);
             this.panel1.Location = new System.Drawing.Point(240, 54);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(930, 630);
@@ -53,6 +58,7 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label1.BackColor = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.label1, WFAnimations.DecorationType.None);
             this.label1.Location = new System.Drawing.Point(232, 35);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(2, 663);
@@ -67,6 +73,7 @@
             this.tableLayoutPanel1.Controls.Add(this.roundedRadioButton3, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.roundedRadioButton2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.roundedRadioButton1, 0, 0);
+            this.animator1.SetDecoration(this.tableLayoutPanel1, WFAnimations.DecorationType.None);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(11, 51);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
@@ -76,34 +83,12 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(210, 638);
             this.tableLayoutPanel1.TabIndex = 6;
             // 
-            // windowToolbar1
-            // 
-            this.windowToolbar1.BackColor = System.Drawing.Color.Crimson;
-            this.windowToolbar1.BorderStyleRadius = true;
-            this.windowToolbar1.CloseMessage = true;
-            this.windowToolbar1.ColorPalette = System.Drawing.Color.Crimson;
-            this.windowToolbar1.DarkTheme = true;
-            this.windowToolbar1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.windowToolbar1.IconButton = true;
-            this.windowToolbar1.IconButtonImage = null;
-            this.windowToolbar1.IconButtonSybmol = "";
-            this.windowToolbar1.IconMenu = true;
-            this.windowToolbar1.Location = new System.Drawing.Point(0, 0);
-            this.windowToolbar1.MaximizeButton = true;
-            this.windowToolbar1.MinimizeButton = true;
-            this.windowToolbar1.MoveOption = true;
-            this.windowToolbar1.Name = "windowToolbar1";
-            this.windowToolbar1.Size = new System.Drawing.Size(1182, 45);
-            this.windowToolbar1.StartupSound = LucaToysLite.Controls.WindowToolbar.StartupSounds.None;
-            this.windowToolbar1.TabIndex = 0;
-            this.windowToolbar1.TitleText = "Product Manager";
-            this.windowToolbar1.WindowBorderSize = ((byte)(3));
-            // 
             // roundedRadioButton3
             // 
             this.roundedRadioButton3.Appearance = System.Windows.Forms.Appearance.Button;
             this.roundedRadioButton3.BorderSize = ((byte)(2));
             this.roundedRadioButton3.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.roundedRadioButton3, WFAnimations.DecorationType.None);
             this.roundedRadioButton3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.roundedRadioButton3.EnableBorder = true;
             this.roundedRadioButton3.FlatAppearance.BorderSize = 0;
@@ -121,12 +106,14 @@
             this.roundedRadioButton3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.roundedRadioButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.roundedRadioButton3.UseVisualStyleBackColor = true;
+            this.roundedRadioButton3.CheckedChanged += new System.EventHandler(this.roundedRadioButton3_CheckedChanged);
             // 
             // roundedRadioButton2
             // 
             this.roundedRadioButton2.Appearance = System.Windows.Forms.Appearance.Button;
             this.roundedRadioButton2.BorderSize = ((byte)(2));
             this.roundedRadioButton2.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.roundedRadioButton2, WFAnimations.DecorationType.None);
             this.roundedRadioButton2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.roundedRadioButton2.EnableBorder = true;
             this.roundedRadioButton2.FlatAppearance.BorderSize = 0;
@@ -144,6 +131,7 @@
             this.roundedRadioButton2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.roundedRadioButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.roundedRadioButton2.UseVisualStyleBackColor = true;
+            this.roundedRadioButton2.CheckedChanged += new System.EventHandler(this.roundedRadioButton2_CheckedChanged);
             // 
             // roundedRadioButton1
             // 
@@ -151,6 +139,7 @@
             this.roundedRadioButton1.BorderSize = ((byte)(2));
             this.roundedRadioButton1.Checked = true;
             this.roundedRadioButton1.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.roundedRadioButton1, WFAnimations.DecorationType.None);
             this.roundedRadioButton1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.roundedRadioButton1.EnableBorder = true;
             this.roundedRadioButton1.FlatAppearance.BorderSize = 0;
@@ -169,6 +158,53 @@
             this.roundedRadioButton1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.roundedRadioButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.roundedRadioButton1.UseVisualStyleBackColor = true;
+            this.roundedRadioButton1.CheckedChanged += new System.EventHandler(this.roundedRadioButton1_CheckedChanged);
+            // 
+            // windowToolbar1
+            // 
+            this.windowToolbar1.BackColor = System.Drawing.Color.Crimson;
+            this.windowToolbar1.BorderStyleRadius = true;
+            this.windowToolbar1.CloseMessage = true;
+            this.windowToolbar1.ColorPalette = System.Drawing.Color.Crimson;
+            this.windowToolbar1.DarkTheme = true;
+            this.animator1.SetDecoration(this.windowToolbar1, WFAnimations.DecorationType.None);
+            this.windowToolbar1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.windowToolbar1.IconButton = true;
+            this.windowToolbar1.IconButtonImage = null;
+            this.windowToolbar1.IconButtonSybmol = "";
+            this.windowToolbar1.IconMenu = true;
+            this.windowToolbar1.Location = new System.Drawing.Point(0, 0);
+            this.windowToolbar1.MaximizeButton = true;
+            this.windowToolbar1.MinimizeButton = true;
+            this.windowToolbar1.MoveOption = true;
+            this.windowToolbar1.Name = "windowToolbar1";
+            this.windowToolbar1.Size = new System.Drawing.Size(1182, 45);
+            this.windowToolbar1.StartupSound = LucaToysLite.Controls.WindowToolbar.StartupSounds.None;
+            this.windowToolbar1.TabIndex = 0;
+            this.windowToolbar1.TitleText = "Product Manager";
+            this.windowToolbar1.WindowBorderSize = ((byte)(3));
+            // 
+            // animator1
+            // 
+            this.animator1.AnimationType = WFAnimations.AnimationType.VertSlide;
+            this.animator1.Cursor = null;
+            animation4.AnimateOnlyDifferences = true;
+            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
+            animation4.LeafCoeff = 0F;
+            animation4.MaxTime = 1F;
+            animation4.MinTime = 0F;
+            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
+            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
+            animation4.MosaicSize = 0;
+            animation4.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation4.RotateCoeff = 0F;
+            animation4.RotateLimit = 0F;
+            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
+            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
+            animation4.TimeCoeff = 0F;
+            animation4.TransparencyCoeff = 0F;
+            this.animator1.DefaultAnimation = animation4;
+            this.animator1.Upside = false;
             // 
             // Products
             // 
@@ -180,6 +216,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.windowToolbar1);
+            this.animator1.SetDecoration(this, WFAnimations.DecorationType.None);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Products";
@@ -199,5 +236,6 @@
         private Controls.RoundedRadioButton roundedRadioButton3;
         private Controls.RoundedRadioButton roundedRadioButton2;
         private Controls.RoundedRadioButton roundedRadioButton1;
+        private WFAnimations.Animator animator1;
     }
 }
