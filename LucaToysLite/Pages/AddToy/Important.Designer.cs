@@ -52,7 +52,7 @@
             this.roundedPanel9.BorderSize = ((byte)(3));
             this.roundedPanel9.Controls.Add(this.textBox4);
             this.roundedPanel9.EnableBorder = true;
-            this.roundedPanel9.Location = new System.Drawing.Point(384, 97);
+            this.roundedPanel9.Location = new System.Drawing.Point(384, 96);
             this.roundedPanel9.Name = "roundedPanel9";
             this.roundedPanel9.Size = new System.Drawing.Size(308, 45);
             this.roundedPanel9.TabIndex = 11;
@@ -82,7 +82,7 @@
             this.roundedButton11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton11.Font = new System.Drawing.Font("Segoe MDL2 Assets", 5F, System.Drawing.FontStyle.Bold);
             this.roundedButton11.ForeColor = System.Drawing.Color.White;
-            this.roundedButton11.Location = new System.Drawing.Point(701, 102);
+            this.roundedButton11.Location = new System.Drawing.Point(701, 101);
             this.roundedButton11.Name = "roundedButton11";
             this.roundedButton11.Size = new System.Drawing.Size(35, 35);
             this.roundedButton11.TabIndex = 15;
@@ -95,7 +95,7 @@
             this.roundedPanel7.BorderSize = ((byte)(3));
             this.roundedPanel7.Controls.Add(this.textBox2);
             this.roundedPanel7.EnableBorder = true;
-            this.roundedPanel7.Location = new System.Drawing.Point(384, 18);
+            this.roundedPanel7.Location = new System.Drawing.Point(384, 17);
             this.roundedPanel7.Name = "roundedPanel7";
             this.roundedPanel7.Size = new System.Drawing.Size(308, 45);
             this.roundedPanel7.TabIndex = 12;
@@ -120,7 +120,7 @@
             this.roundedPanel8.BorderSize = ((byte)(3));
             this.roundedPanel8.Controls.Add(this.textBox3);
             this.roundedPanel8.EnableBorder = true;
-            this.roundedPanel8.Location = new System.Drawing.Point(9, 97);
+            this.roundedPanel8.Location = new System.Drawing.Point(9, 96);
             this.roundedPanel8.Name = "roundedPanel8";
             this.roundedPanel8.Size = new System.Drawing.Size(308, 45);
             this.roundedPanel8.TabIndex = 13;
@@ -150,7 +150,7 @@
             this.roundedButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton9.Font = new System.Drawing.Font("Segoe MDL2 Assets", 5F, System.Drawing.FontStyle.Bold);
             this.roundedButton9.ForeColor = System.Drawing.Color.White;
-            this.roundedButton9.Location = new System.Drawing.Point(701, 23);
+            this.roundedButton9.Location = new System.Drawing.Point(701, 22);
             this.roundedButton9.Name = "roundedButton9";
             this.roundedButton9.Size = new System.Drawing.Size(35, 35);
             this.roundedButton9.TabIndex = 16;
@@ -168,7 +168,7 @@
             this.roundedButton10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton10.Font = new System.Drawing.Font("Segoe MDL2 Assets", 5F, System.Drawing.FontStyle.Bold);
             this.roundedButton10.ForeColor = System.Drawing.Color.White;
-            this.roundedButton10.Location = new System.Drawing.Point(326, 102);
+            this.roundedButton10.Location = new System.Drawing.Point(326, 101);
             this.roundedButton10.Name = "roundedButton10";
             this.roundedButton10.Size = new System.Drawing.Size(35, 35);
             this.roundedButton10.TabIndex = 17;
@@ -181,7 +181,7 @@
             this.roundedPanel5.BorderSize = ((byte)(3));
             this.roundedPanel5.Controls.Add(this.textBox1);
             this.roundedPanel5.EnableBorder = true;
-            this.roundedPanel5.Location = new System.Drawing.Point(9, 18);
+            this.roundedPanel5.Location = new System.Drawing.Point(9, 17);
             this.roundedPanel5.Name = "roundedPanel5";
             this.roundedPanel5.Size = new System.Drawing.Size(308, 45);
             this.roundedPanel5.TabIndex = 14;
@@ -211,7 +211,7 @@
             this.roundedButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton8.Font = new System.Drawing.Font("Segoe MDL2 Assets", 5F, System.Drawing.FontStyle.Bold);
             this.roundedButton8.ForeColor = System.Drawing.Color.White;
-            this.roundedButton8.Location = new System.Drawing.Point(326, 23);
+            this.roundedButton8.Location = new System.Drawing.Point(326, 22);
             this.roundedButton8.Name = "roundedButton8";
             this.roundedButton8.Size = new System.Drawing.Size(35, 35);
             this.roundedButton8.TabIndex = 18;
