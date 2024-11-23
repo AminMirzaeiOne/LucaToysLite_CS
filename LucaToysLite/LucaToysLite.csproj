@@ -1513,5 +1513,11 @@
   <ItemGroup>
     <None Include="Resources\icons8-rocking-horse-68%281%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-rocking-horse-68%281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-rocking-horse-68%281%292.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
