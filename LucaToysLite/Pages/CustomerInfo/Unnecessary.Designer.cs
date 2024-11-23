@@ -449,6 +449,7 @@
             this.Controls.Add(this.roundedPanel2);
             this.Controls.Add(this.roundedPanel1);
             this.Controls.Add(this.roundedPanel4);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Unnecessary";
             this.Size = new System.Drawing.Size(695, 512);
             this.roundedPanel6.ResumeLayout(false);
