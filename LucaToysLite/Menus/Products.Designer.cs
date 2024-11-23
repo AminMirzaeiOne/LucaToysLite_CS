@@ -177,6 +177,7 @@
             this.roundedButton8.Text = "Search Products";
             this.roundedButton8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.roundedButton8.UseVisualStyleBackColor = true;
+            this.roundedButton8.Click += new System.EventHandler(this.roundedButton8_Click);
             // 
             // roundedButton2
             // 

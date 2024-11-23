@@ -28,8 +28,437 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.roundedPanel3 = new LucaToysLite.Controls.RoundedPanel();
+            this.roundedPanel1 = new LucaToysLite.Controls.RoundedPanel();
+            this.roundedPanel4 = new LucaToysLite.Controls.RoundedPanel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.roundedButton5 = new LucaToysLite.Controls.RoundedButton();
+            this.roundedPanel2 = new LucaToysLite.Controls.RoundedPanel();
+            this.ltComboBox1 = new LucaToysLite.Controls.LTComboBox();
+            this.ltComboBox4 = new LucaToysLite.Controls.LTComboBox();
+            this.ltComboBox3 = new LucaToysLite.Controls.LTComboBox();
+            this.ltComboBox2 = new LucaToysLite.Controls.LTComboBox();
+            this.roundedPanel5 = new LucaToysLite.Controls.RoundedPanel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.roundedPanel6 = new LucaToysLite.Controls.RoundedPanel();
+            this.roundedButton3 = new LucaToysLite.Controls.RoundedButton();
+            this.roundedButton2 = new LucaToysLite.Controls.RoundedButton();
+            this.roundedButton4 = new LucaToysLite.Controls.RoundedButton();
+            this.roundedButton1 = new LucaToysLite.Controls.RoundedButton();
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
+            this.roundedPanel1.SuspendLayout();
+            this.roundedPanel4.SuspendLayout();
+            this.roundedPanel2.SuspendLayout();
+            this.roundedPanel5.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.Font = new System.Drawing.Font("Segoe MDL2 Assets", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Crimson;
+            this.label2.Location = new System.Drawing.Point(579, 57);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(156, 24);
+            this.label2.TabIndex = 5;
+            this.label2.Text = " Search Filter";
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Segoe MDL2 Assets", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Crimson;
+            this.label1.Location = new System.Drawing.Point(38, 57);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(156, 24);
+            this.label1.TabIndex = 6;
+            this.label1.Text = " Search Result";
+            // 
+            // roundedPanel3
+            // 
+            this.roundedPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.roundedPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.roundedPanel3.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedPanel3.BorderSize = ((byte)(3));
+            this.roundedPanel3.EnableBorder = true;
+            this.roundedPanel3.Location = new System.Drawing.Point(23, 169);
+            this.roundedPanel3.Name = "roundedPanel3";
+            this.roundedPanel3.Size = new System.Drawing.Size(900, 650);
+            this.roundedPanel3.TabIndex = 7;
+            // 
+            // roundedPanel1
+            // 
+            this.roundedPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.roundedPanel1.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedPanel1.BorderSize = ((byte)(3));
+            this.roundedPanel1.Controls.Add(this.roundedPanel4);
+            this.roundedPanel1.Controls.Add(this.roundedButton5);
+            this.roundedPanel1.EnableBorder = true;
+            this.roundedPanel1.Location = new System.Drawing.Point(23, 69);
+            this.roundedPanel1.Name = "roundedPanel1";
+            this.roundedPanel1.Size = new System.Drawing.Size(523, 85);
+            this.roundedPanel1.TabIndex = 8;
+            // 
+            // roundedPanel4
+            // 
+            this.roundedPanel4.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedPanel4.BorderSize = ((byte)(3));
+            this.roundedPanel4.Controls.Add(this.textBox1);
+            this.roundedPanel4.EnableBorder = true;
+            this.roundedPanel4.Location = new System.Drawing.Point(15, 22);
+            this.roundedPanel4.Name = "roundedPanel4";
+            this.roundedPanel4.Size = new System.Drawing.Size(342, 45);
+            this.roundedPanel4.TabIndex = 0;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.ForeColor = System.Drawing.Color.White;
+            this.textBox1.Location = new System.Drawing.Point(14, 9);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(312, 26);
+            this.textBox1.TabIndex = 1;
+            this.textBox1.Text = "Search Product";
+            // 
+            // roundedButton5
+            // 
+            this.roundedButton5.BorderRadius = ((byte)(20));
+            this.roundedButton5.BorderSize = ((byte)(3));
+            this.roundedButton5.EnableBorder = true;
+            this.roundedButton5.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedButton5.FlatAppearance.BorderSize = 0;
+            this.roundedButton5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Crimson;
+            this.roundedButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton5.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedButton5.ForeColor = System.Drawing.Color.White;
+            this.roundedButton5.Image = global::LucaToysLite.Properties.Resources.icons8_search_32;
+            this.roundedButton5.Location = new System.Drawing.Point(369, 22);
+            this.roundedButton5.Name = "roundedButton5";
+            this.roundedButton5.Size = new System.Drawing.Size(130, 45);
+            this.roundedButton5.TabIndex = 0;
+            this.roundedButton5.Text = " Search";
+            this.roundedButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.roundedButton5.UseVisualStyleBackColor = true;
+            // 
+            // roundedPanel2
+            // 
+            this.roundedPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.roundedPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.roundedPanel2.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedPanel2.BorderSize = ((byte)(3));
+            this.roundedPanel2.Controls.Add(this.ltComboBox1);
+            this.roundedPanel2.Controls.Add(this.ltComboBox4);
+            this.roundedPanel2.Controls.Add(this.ltComboBox3);
+            this.roundedPanel2.Controls.Add(this.ltComboBox2);
+            this.roundedPanel2.EnableBorder = true;
+            this.roundedPanel2.Location = new System.Drawing.Point(564, 69);
+            this.roundedPanel2.Name = "roundedPanel2";
+            this.roundedPanel2.Size = new System.Drawing.Size(789, 85);
+            this.roundedPanel2.TabIndex = 9;
+            // 
+            // ltComboBox1
+            // 
+            this.ltComboBox1.BorderRadius = ((byte)(20));
+            this.ltComboBox1.BorderSize = ((byte)(3));
+            this.ltComboBox1.ColorPallet = System.Drawing.Color.Crimson;
+            this.ltComboBox1.EnableBorder = true;
+            this.ltComboBox1.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
+            this.ltComboBox1.FlatAppearance.BorderSize = 0;
+            this.ltComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ltComboBox1.ForeColor = System.Drawing.Color.White;
+            this.ltComboBox1.Items = new string[] {
+        "Toys",
+        "Dolls",
+        "Sundry"};
+            this.ltComboBox1.ItemsBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.ltComboBox1.ItemsCheckedColor = System.Drawing.Color.Crimson;
+            this.ltComboBox1.ItemsFont = new System.Drawing.Font("Segoe UI Semibold", 9F);
+            this.ltComboBox1.ItemsForeColor = System.Drawing.Color.White;
+            this.ltComboBox1.ItemsHeight = ((byte)(40));
+            this.ltComboBox1.Location = new System.Drawing.Point(19, 21);
+            this.ltComboBox1.Name = "ltComboBox1";
+            this.ltComboBox1.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.ltComboBox1.Size = new System.Drawing.Size(175, 45);
+            this.ltComboBox1.TabIndex = 1;
+            this.ltComboBox1.Text = "Product Type";
+            this.ltComboBox1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ltComboBox1.TopDirection = false;
+            this.ltComboBox1.UseVisualStyleBackColor = true;
+            // 
+            // ltComboBox4
+            // 
+            this.ltComboBox4.BorderRadius = ((byte)(20));
+            this.ltComboBox4.BorderSize = ((byte)(3));
+            this.ltComboBox4.ColorPallet = System.Drawing.Color.Crimson;
+            this.ltComboBox4.EnableBorder = true;
+            this.ltComboBox4.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
+            this.ltComboBox4.FlatAppearance.BorderSize = 0;
+            this.ltComboBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ltComboBox4.ForeColor = System.Drawing.Color.White;
+            this.ltComboBox4.Items = new string[] {
+        "Name",
+        "Family",
+        "Age",
+        "Usercode",
+        "Phone",
+        "Address",
+        "Account Number 1",
+        "Account Number 2"};
+            this.ltComboBox4.ItemsBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.ltComboBox4.ItemsCheckedColor = System.Drawing.Color.Crimson;
+            this.ltComboBox4.ItemsFont = new System.Drawing.Font("Segoe UI Semibold", 9F);
+            this.ltComboBox4.ItemsForeColor = System.Drawing.Color.White;
+            this.ltComboBox4.ItemsHeight = ((byte)(40));
+            this.ltComboBox4.Location = new System.Drawing.Point(592, 21);
+            this.ltComboBox4.Name = "ltComboBox4";
+            this.ltComboBox4.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.ltComboBox4.Size = new System.Drawing.Size(175, 45);
+            this.ltComboBox4.TabIndex = 1;
+            this.ltComboBox4.Text = "Search Based";
+            this.ltComboBox4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ltComboBox4.TopDirection = false;
+            this.ltComboBox4.UseVisualStyleBackColor = true;
+            // 
+            // ltComboBox3
+            // 
+            this.ltComboBox3.BorderRadius = ((byte)(20));
+            this.ltComboBox3.BorderSize = ((byte)(3));
+            this.ltComboBox3.ColorPallet = System.Drawing.Color.Crimson;
+            this.ltComboBox3.EnableBorder = true;
+            this.ltComboBox3.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
+            this.ltComboBox3.FlatAppearance.BorderSize = 0;
+            this.ltComboBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ltComboBox3.ForeColor = System.Drawing.Color.White;
+            this.ltComboBox3.Items = new string[] {
+        "Name",
+        "Family",
+        "Age",
+        "Usercode",
+        "Phone",
+        "Address",
+        "Account Number 1",
+        "Account Number 2"};
+            this.ltComboBox3.ItemsBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.ltComboBox3.ItemsCheckedColor = System.Drawing.Color.Crimson;
+            this.ltComboBox3.ItemsFont = new System.Drawing.Font("Segoe UI Semibold", 9F);
+            this.ltComboBox3.ItemsForeColor = System.Drawing.Color.White;
+            this.ltComboBox3.ItemsHeight = ((byte)(40));
+            this.ltComboBox3.Location = new System.Drawing.Point(401, 21);
+            this.ltComboBox3.Name = "ltComboBox3";
+            this.ltComboBox3.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.ltComboBox3.Size = new System.Drawing.Size(175, 45);
+            this.ltComboBox3.TabIndex = 1;
+            this.ltComboBox3.Text = "Search Based";
+            this.ltComboBox3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ltComboBox3.TopDirection = false;
+            this.ltComboBox3.UseVisualStyleBackColor = true;
+            // 
+            // ltComboBox2
+            // 
+            this.ltComboBox2.BorderRadius = ((byte)(20));
+            this.ltComboBox2.BorderSize = ((byte)(3));
+            this.ltComboBox2.ColorPallet = System.Drawing.Color.Crimson;
+            this.ltComboBox2.EnableBorder = true;
+            this.ltComboBox2.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
+            this.ltComboBox2.FlatAppearance.BorderSize = 0;
+            this.ltComboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ltComboBox2.ForeColor = System.Drawing.Color.White;
+            this.ltComboBox2.Items = new string[] {
+        "Name",
+        "Family",
+        "Age",
+        "Usercode",
+        "Phone",
+        "Address",
+        "Account Number 1",
+        "Account Number 2"};
+            this.ltComboBox2.ItemsBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.ltComboBox2.ItemsCheckedColor = System.Drawing.Color.Crimson;
+            this.ltComboBox2.ItemsFont = new System.Drawing.Font("Segoe UI Semibold", 9F);
+            this.ltComboBox2.ItemsForeColor = System.Drawing.Color.White;
+            this.ltComboBox2.ItemsHeight = ((byte)(40));
+            this.ltComboBox2.Location = new System.Drawing.Point(211, 21);
+            this.ltComboBox2.Name = "ltComboBox2";
+            this.ltComboBox2.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.ltComboBox2.Size = new System.Drawing.Size(175, 45);
+            this.ltComboBox2.TabIndex = 1;
+            this.ltComboBox2.Text = "Search Based";
+            this.ltComboBox2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ltComboBox2.TopDirection = false;
+            this.ltComboBox2.UseVisualStyleBackColor = true;
+            // 
+            // roundedPanel5
+            // 
+            this.roundedPanel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.roundedPanel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.roundedPanel5.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedPanel5.BorderSize = ((byte)(3));
+            this.roundedPanel5.Controls.Add(this.label4);
+            this.roundedPanel5.Controls.Add(this.label6);
+            this.roundedPanel5.Controls.Add(this.label5);
+            this.roundedPanel5.Controls.Add(this.label3);
+            this.roundedPanel5.Controls.Add(this.roundedPanel6);
+            this.roundedPanel5.Controls.Add(this.roundedButton3);
+            this.roundedPanel5.Controls.Add(this.roundedButton2);
+            this.roundedPanel5.Controls.Add(this.roundedButton4);
+            this.roundedPanel5.Controls.Add(this.roundedButton1);
+            this.roundedPanel5.EnableBorder = true;
+            this.roundedPanel5.Location = new System.Drawing.Point(939, 169);
+            this.roundedPanel5.Name = "roundedPanel5";
+            this.roundedPanel5.Size = new System.Drawing.Size(411, 650);
+            this.roundedPanel5.TabIndex = 10;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(194, 154);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(198, 28);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Product Code : 4839";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(194, 116);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(147, 28);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Bardcoe : 4983";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(194, 72);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(209, 28);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Brand : Golder Flower";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(194, 27);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(112, 28);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Name : Car";
+            // 
+            // roundedPanel6
+            // 
+            this.roundedPanel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.roundedPanel6.BackgroundImage = global::LucaToysLite.Properties.Resources.icons8_rocking_horse_68_1_;
+            this.roundedPanel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.roundedPanel6.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedPanel6.BorderSize = ((byte)(3));
+            this.roundedPanel6.EnableBorder = true;
+            this.roundedPanel6.Location = new System.Drawing.Point(27, 26);
+            this.roundedPanel6.Name = "roundedPanel6";
+            this.roundedPanel6.Size = new System.Drawing.Size(155, 155);
+            this.roundedPanel6.TabIndex = 4;
+            // 
+            // roundedButton3
+            // 
+            this.roundedButton3.BorderRadius = ((byte)(20));
+            this.roundedButton3.BorderSize = ((byte)(3));
+            this.roundedButton3.EnableBorder = true;
+            this.roundedButton3.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedButton3.FlatAppearance.BorderSize = 0;
+            this.roundedButton3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Crimson;
+            this.roundedButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton3.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.roundedButton3.ForeColor = System.Drawing.Color.White;
+            this.roundedButton3.Image = global::LucaToysLite.Properties.Resources.icons8_update_68;
+            this.roundedButton3.Location = new System.Drawing.Point(21, 208);
+            this.roundedButton3.Name = "roundedButton3";
+            this.roundedButton3.Size = new System.Drawing.Size(375, 90);
+            this.roundedButton3.TabIndex = 0;
+            this.roundedButton3.Text = " Update Product";
+            this.roundedButton3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.roundedButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.roundedButton3.UseVisualStyleBackColor = true;
+            // 
+            // roundedButton2
+            // 
+            this.roundedButton2.BorderRadius = ((byte)(20));
+            this.roundedButton2.BorderSize = ((byte)(3));
+            this.roundedButton2.EnableBorder = true;
+            this.roundedButton2.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedButton2.FlatAppearance.BorderSize = 0;
+            this.roundedButton2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Crimson;
+            this.roundedButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.roundedButton2.ForeColor = System.Drawing.Color.White;
+            this.roundedButton2.Image = global::LucaToysLite.Properties.Resources.icons8_info_squared_68;
+            this.roundedButton2.Location = new System.Drawing.Point(21, 320);
+            this.roundedButton2.Name = "roundedButton2";
+            this.roundedButton2.Size = new System.Drawing.Size(375, 90);
+            this.roundedButton2.TabIndex = 0;
+            this.roundedButton2.Text = " About Product";
+            this.roundedButton2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.roundedButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.roundedButton2.UseVisualStyleBackColor = true;
+            // 
+            // roundedButton4
+            // 
+            this.roundedButton4.BorderRadius = ((byte)(20));
+            this.roundedButton4.BorderSize = ((byte)(3));
+            this.roundedButton4.EnableBorder = true;
+            this.roundedButton4.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedButton4.FlatAppearance.BorderSize = 0;
+            this.roundedButton4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Crimson;
+            this.roundedButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton4.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.roundedButton4.ForeColor = System.Drawing.Color.White;
+            this.roundedButton4.Image = global::LucaToysLite.Properties.Resources.icons8_close_window_68;
+            this.roundedButton4.Location = new System.Drawing.Point(21, 536);
+            this.roundedButton4.Name = "roundedButton4";
+            this.roundedButton4.Size = new System.Drawing.Size(375, 90);
+            this.roundedButton4.TabIndex = 0;
+            this.roundedButton4.Text = " Close Window";
+            this.roundedButton4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.roundedButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.roundedButton4.UseVisualStyleBackColor = true;
+            // 
+            // roundedButton1
+            // 
+            this.roundedButton1.BorderRadius = ((byte)(20));
+            this.roundedButton1.BorderSize = ((byte)(3));
+            this.roundedButton1.EnableBorder = true;
+            this.roundedButton1.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedButton1.FlatAppearance.BorderSize = 0;
+            this.roundedButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Crimson;
+            this.roundedButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.roundedButton1.ForeColor = System.Drawing.Color.White;
+            this.roundedButton1.Image = global::LucaToysLite.Properties.Resources.icons8_delete_68;
+            this.roundedButton1.Location = new System.Drawing.Point(21, 428);
+            this.roundedButton1.Name = "roundedButton1";
+            this.roundedButton1.Size = new System.Drawing.Size(375, 90);
+            this.roundedButton1.TabIndex = 0;
+            this.roundedButton1.Text = " Delete Product";
+            this.roundedButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.roundedButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.roundedButton1.UseVisualStyleBackColor = true;
             // 
             // windowToolbar1
             // 
@@ -60,6 +489,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(1371, 844);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.roundedPanel3);
+            this.Controls.Add(this.roundedPanel1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.roundedPanel2);
+            this.Controls.Add(this.roundedPanel5);
             this.Controls.Add(this.windowToolbar1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -67,6 +502,12 @@
             this.Name = "SearchProduct";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SearchProduct";
+            this.roundedPanel1.ResumeLayout(false);
+            this.roundedPanel4.ResumeLayout(false);
+            this.roundedPanel4.PerformLayout();
+            this.roundedPanel2.ResumeLayout(false);
+            this.roundedPanel5.ResumeLayout(false);
+            this.roundedPanel5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -74,5 +515,27 @@
         #endregion
 
         private Controls.WindowToolbar windowToolbar1;
+        private Controls.RoundedPanel roundedPanel4;
+        private System.Windows.Forms.TextBox textBox1;
+        private Controls.RoundedButton roundedButton5;
+        private Controls.RoundedPanel roundedPanel3;
+        private Controls.RoundedPanel roundedPanel1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private Controls.LTComboBox ltComboBox4;
+        private Controls.LTComboBox ltComboBox3;
+        private Controls.LTComboBox ltComboBox2;
+        private System.Windows.Forms.Label label3;
+        private Controls.RoundedPanel roundedPanel6;
+        private Controls.RoundedButton roundedButton3;
+        private Controls.RoundedButton roundedButton2;
+        private Controls.RoundedButton roundedButton4;
+        private Controls.RoundedButton roundedButton1;
+        private Controls.LTComboBox ltComboBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private Controls.RoundedPanel roundedPanel2;
+        private Controls.RoundedPanel roundedPanel5;
+        private System.Windows.Forms.Label label4;
     }
 }

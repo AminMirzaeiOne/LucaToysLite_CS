@@ -1486,5 +1486,23 @@
   <ItemGroup>
     <None Include="Resources\icons8-game-72.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-update-68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-info-squared-68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-rocking-horse-74.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-rocking-horse-68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-rocking-horse-68%281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
