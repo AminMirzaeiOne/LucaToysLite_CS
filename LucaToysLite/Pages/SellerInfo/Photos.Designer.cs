@@ -72,7 +72,7 @@
             // 
             // roundedPanel3
             // 
-            this.roundedPanel3.BackgroundImage = global::LucaToysLite.Properties.Resources.Group_18_2_;
+            this.roundedPanel3.BackgroundImage = global::LucaToysLite.Properties.Resources.Group_19;
             this.roundedPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.roundedPanel3.BorderColor = System.Drawing.Color.Crimson;
             this.roundedPanel3.BorderSize = ((byte)(3));
@@ -84,7 +84,7 @@
             // 
             // roundedPanel1
             // 
-            this.roundedPanel1.BackgroundImage = global::LucaToysLite.Properties.Resources.Group_19_1_;
+            this.roundedPanel1.BackgroundImage = global::LucaToysLite.Properties.Resources.Group_18_1_;
             this.roundedPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.roundedPanel1.BorderColor = System.Drawing.Color.Crimson;
             this.roundedPanel1.BorderSize = ((byte)(3));
