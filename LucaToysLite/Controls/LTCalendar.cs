@@ -101,9 +101,12 @@ namespace LucaToysLite.Controls
             }
         }
 
-
-
-
-
+        private void roundedButton1_Paint(object sender, PaintEventArgs e)
+        {
+            StringFormat sf = new StringFormat();
+            sf.Alignment = StringAlignment.Far;
+            sf.LineAlignment = StringAlignment.Center;
+            e.Graphics.DrawString("", new Font("Segoe MDL2 Assets",10,FontStyle.Bold),new SolidBrush(Color.Crimson),new Rectangle(0,2,e.ClipRectangle.Width-15,e.ClipRectangle.Height),sf);
+        }
     }
 }

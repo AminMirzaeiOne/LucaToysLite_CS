@@ -32,6 +32,7 @@
             this.ltClock1 = new LucaToysLite.Controls.LTClock();
             this.homeMenu1 = new LucaToysLite.Menus.HomeMenu();
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
+            this.ltCalendar1 = new LucaToysLite.Controls.LTCalendar();
             this.SuspendLayout();
             // 
             // ltClock1
@@ -80,12 +81,26 @@
             this.windowToolbar1.TitleText = "Window";
             this.windowToolbar1.WindowBorderSize = ((byte)(3));
             // 
+            // ltCalendar1
+            // 
+            this.ltCalendar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.ltCalendar1.BorderColor = System.Drawing.Color.Crimson;
+            this.ltCalendar1.BorderSize = ((byte)(2));
+            this.ltCalendar1.EnableBorder = true;
+            this.ltCalendar1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ltCalendar1.Location = new System.Drawing.Point(543, 303);
+            this.ltCalendar1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ltCalendar1.Name = "ltCalendar1";
+            this.ltCalendar1.Size = new System.Drawing.Size(450, 450);
+            this.ltCalendar1.TabIndex = 3;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(1090, 650);
+            this.Controls.Add(this.ltCalendar1);
             this.Controls.Add(this.ltClock1);
             this.Controls.Add(this.homeMenu1);
             this.Controls.Add(this.windowToolbar1);
@@ -103,5 +118,6 @@
         private Controls.WindowToolbar windowToolbar1;
         private Menus.HomeMenu homeMenu1;
         private Controls.LTClock ltClock1;
+        private Controls.LTCalendar ltCalendar1;
     }
 }

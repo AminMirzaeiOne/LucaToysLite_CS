@@ -1609,5 +1609,8 @@
   <ItemGroup>
     <None Include="Resources\rb_7716.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-calendar-48.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
