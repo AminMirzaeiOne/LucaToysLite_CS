@@ -1564,5 +1564,8 @@
   <ItemGroup>
     <None Include="Resources\icons8-rocking-horse-68%281%292.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-manager-96.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

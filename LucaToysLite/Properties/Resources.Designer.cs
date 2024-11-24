@@ -1433,6 +1433,16 @@ namespace LucaToysLite.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_manager_96 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-manager-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_media_28 {
             get {
                 object obj = ResourceManager.GetObject("icons8-media-28", resourceCulture);
