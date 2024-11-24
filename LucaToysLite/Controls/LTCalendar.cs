@@ -103,10 +103,17 @@ namespace LucaToysLite.Controls
 
         private void roundedButton1_Paint(object sender, PaintEventArgs e)
         {
-            StringFormat sf = new StringFormat();
-            sf.Alignment = StringAlignment.Far;
-            sf.LineAlignment = StringAlignment.Center;
-            e.Graphics.DrawString("", new Font("Segoe MDL2 Assets",10,FontStyle.Bold),new SolidBrush(Color.Crimson),new Rectangle(0,2,e.ClipRectangle.Width-15,e.ClipRectangle.Height),sf);
+            StringFormat arrow = new StringFormat();
+            StringFormat title = new StringFormat();
+
+            arrow.Alignment = StringAlignment.Far;
+            arrow.LineAlignment = StringAlignment.Center;
+
+            title.Alignment = StringAlignment.Near;
+            title.LineAlignment = StringAlignment.Near;
+
+            e.Graphics.DrawString("", new Font("Segoe MDL2 Assets",10,FontStyle.Bold),new SolidBrush(Color.Crimson),new Rectangle(0,2,e.ClipRectangle.Width-15,e.ClipRectangle.Height),arrow);
+            e.Graphics.DrawString("Select Date", new Font("Segoe UI Semibold", 9,FontStyle.Regular),new SolidBrush(Color.Crimson), new Rectangle(60, 10, e.ClipRectangle.Width, e.ClipRectangle.Height), title);
         }
     }
 }

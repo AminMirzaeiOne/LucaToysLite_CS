@@ -33,6 +33,7 @@
             // 
             // roundedButton1
             // 
+            this.roundedButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.roundedButton1.BorderRadius = ((byte)(20));
             this.roundedButton1.BorderSize = ((byte)(3));
             this.roundedButton1.EnableBorder = true;
@@ -47,8 +48,8 @@
             this.roundedButton1.Name = "roundedButton1";
             this.roundedButton1.Size = new System.Drawing.Size(398, 76);
             this.roundedButton1.TabIndex = 0;
-            this.roundedButton1.Text = "Select Date Time";
-            this.roundedButton1.UseVisualStyleBackColor = true;
+            this.roundedButton1.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.roundedButton1.UseVisualStyleBackColor = false;
             this.roundedButton1.Paint += new System.Windows.Forms.PaintEventHandler(this.roundedButton1_Paint);
             // 
             // LTCalendar
