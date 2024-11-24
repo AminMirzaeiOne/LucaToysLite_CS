@@ -19,7 +19,11 @@ namespace LucaToysLite.Forms
 
         private void Login_Load(object sender, EventArgs e)
         {
+        }
 
+        private void roundedButton3_Click(object sender, EventArgs e)
+        {
+            this.ltGradintPanel1.Animation = true;
         }
     }
 }
