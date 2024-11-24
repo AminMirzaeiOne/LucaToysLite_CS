@@ -16,5 +16,10 @@ namespace LucaToysLite.Forms
         {
             InitializeComponent();
         }
+
+        private void roundedButton3_Click(object sender, EventArgs e)
+        {
+            this.ltGradintPanel1.Animation = true;
+        }
     }
 }
