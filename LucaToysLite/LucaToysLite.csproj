@@ -104,6 +104,12 @@
     <Compile Include="Controls\LoadingControl.Designer.cs">
       <DependentUpon>LoadingControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\LTCalendar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\LTCalendar.Designer.cs">
+      <DependentUpon>LTCalendar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\LTCheckBox.cs">
       <SubType>Component</SubType>
     </Compile>

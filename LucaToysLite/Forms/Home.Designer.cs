@@ -28,9 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            this.ltClock1 = new LucaToysLite.Controls.LTClock();
             this.homeMenu1 = new LucaToysLite.Menus.HomeMenu();
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
             this.SuspendLayout();
+            // 
+            // ltClock1
+            // 
+            this.ltClock1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.ltClock1.ColorPallet = System.Drawing.Color.Crimson;
+            this.ltClock1.Location = new System.Drawing.Point(27, 303);
+            this.ltClock1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.ltClock1.Name = "ltClock1";
+            this.ltClock1.Size = new System.Drawing.Size(200, 200);
+            this.ltClock1.TabIndex = 2;
             // 
             // homeMenu1
             // 
@@ -74,6 +86,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(1090, 650);
+            this.Controls.Add(this.ltClock1);
             this.Controls.Add(this.homeMenu1);
             this.Controls.Add(this.windowToolbar1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -89,5 +102,6 @@
         #endregion
         private Controls.WindowToolbar windowToolbar1;
         private Menus.HomeMenu homeMenu1;
+        private Controls.LTClock ltClock1;
     }
 }
