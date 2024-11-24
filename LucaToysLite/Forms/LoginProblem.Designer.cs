@@ -31,26 +31,28 @@
             this.roundedPanel3 = new LucaToysLite.Controls.RoundedPanel();
             this.roundedButton3 = new LucaToysLite.Controls.RoundedButton();
             this.roundedPanel1 = new LucaToysLite.Controls.RoundedPanel();
-            this.roundedPanel2 = new LucaToysLite.Controls.RoundedPanel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.roundedPanel4 = new LucaToysLite.Controls.RoundedPanel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.ltGradintPanel1 = new LucaToysLite.Controls.LTGradintPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
+            this.roundedPanel2 = new LucaToysLite.Controls.RoundedPanel();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.ltComboBox1 = new LucaToysLite.Controls.LTComboBox();
             this.roundedPanel3.SuspendLayout();
-            this.roundedPanel2.SuspendLayout();
             this.roundedPanel4.SuspendLayout();
             this.ltGradintPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.roundedPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // roundedPanel3
             // 
             this.roundedPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.roundedPanel3.BorderColor = System.Drawing.Color.Crimson;
-            this.roundedPanel3.BorderSize = ((byte)(4));
+            this.roundedPanel3.BorderSize = ((byte)(3));
+            this.roundedPanel3.Controls.Add(this.ltComboBox1);
             this.roundedPanel3.Controls.Add(this.roundedButton3);
             this.roundedPanel3.Controls.Add(this.roundedPanel1);
             this.roundedPanel3.Controls.Add(this.roundedPanel2);
@@ -73,11 +75,11 @@
             this.roundedButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton3.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedButton3.ForeColor = System.Drawing.Color.White;
-            this.roundedButton3.Location = new System.Drawing.Point(178, 428);
+            this.roundedButton3.Location = new System.Drawing.Point(176, 488);
             this.roundedButton3.Name = "roundedButton3";
             this.roundedButton3.Size = new System.Drawing.Size(223, 60);
             this.roundedButton3.TabIndex = 9;
-            this.roundedButton3.Text = "Login";
+            this.roundedButton3.Text = "Send Code";
             this.roundedButton3.UseVisualStyleBackColor = false;
             this.roundedButton3.Click += new System.EventHandler(this.roundedButton3_Click);
             // 
@@ -93,39 +95,13 @@
             this.roundedPanel1.Size = new System.Drawing.Size(200, 200);
             this.roundedPanel1.TabIndex = 6;
             // 
-            // roundedPanel2
-            // 
-            this.roundedPanel2.BorderColor = System.Drawing.Color.Crimson;
-            this.roundedPanel2.BorderSize = ((byte)(3));
-            this.roundedPanel2.Controls.Add(this.textBox2);
-            this.roundedPanel2.EnableBorder = true;
-            this.roundedPanel2.Location = new System.Drawing.Point(124, 347);
-            this.roundedPanel2.Name = "roundedPanel2";
-            this.roundedPanel2.Size = new System.Drawing.Size(343, 54);
-            this.roundedPanel2.TabIndex = 7;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(14, 9);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(313, 38);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.Text = "Password";
-            // 
             // roundedPanel4
             // 
             this.roundedPanel4.BorderColor = System.Drawing.Color.Crimson;
             this.roundedPanel4.BorderSize = ((byte)(3));
             this.roundedPanel4.Controls.Add(this.textBox1);
             this.roundedPanel4.EnableBorder = true;
-            this.roundedPanel4.Location = new System.Drawing.Point(124, 271);
+            this.roundedPanel4.Location = new System.Drawing.Point(124, 332);
             this.roundedPanel4.Name = "roundedPanel4";
             this.roundedPanel4.Size = new System.Drawing.Size(343, 54);
             this.roundedPanel4.TabIndex = 8;
@@ -143,7 +119,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(313, 38);
             this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "Username";
+            this.textBox1.Text = "Email Or Phone";
             // 
             // ltGradintPanel1
             // 
@@ -209,6 +185,63 @@
             this.windowToolbar1.TitleText = "Login Problem";
             this.windowToolbar1.WindowBorderSize = ((byte)(3));
             // 
+            // roundedPanel2
+            // 
+            this.roundedPanel2.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedPanel2.BorderSize = ((byte)(3));
+            this.roundedPanel2.Controls.Add(this.textBox2);
+            this.roundedPanel2.EnableBorder = true;
+            this.roundedPanel2.Location = new System.Drawing.Point(124, 408);
+            this.roundedPanel2.Name = "roundedPanel2";
+            this.roundedPanel2.Size = new System.Drawing.Size(343, 54);
+            this.roundedPanel2.TabIndex = 7;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.ForeColor = System.Drawing.Color.White;
+            this.textBox2.Location = new System.Drawing.Point(14, 9);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(313, 38);
+            this.textBox2.TabIndex = 1;
+            this.textBox2.Text = "Digit Code";
+            // 
+            // ltComboBox1
+            // 
+            this.ltComboBox1.BorderRadius = ((byte)(20));
+            this.ltComboBox1.BorderSize = ((byte)(3));
+            this.ltComboBox1.ColorPallet = System.Drawing.Color.Crimson;
+            this.ltComboBox1.EnableBorder = true;
+            this.ltComboBox1.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
+            this.ltComboBox1.FlatAppearance.BorderSize = 0;
+            this.ltComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ltComboBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ltComboBox1.ForeColor = System.Drawing.Color.White;
+            this.ltComboBox1.Items = new string[] {
+        "Forgot Username",
+        "Forgot Password",
+        "Software Bug",
+        "Other Problems"};
+            this.ltComboBox1.ItemsBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.ltComboBox1.ItemsCheckedColor = System.Drawing.Color.Crimson;
+            this.ltComboBox1.ItemsFont = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ltComboBox1.ItemsForeColor = System.Drawing.Color.White;
+            this.ltComboBox1.ItemsHeight = ((byte)(40));
+            this.ltComboBox1.Location = new System.Drawing.Point(124, 259);
+            this.ltComboBox1.Name = "ltComboBox1";
+            this.ltComboBox1.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
+            this.ltComboBox1.Size = new System.Drawing.Size(343, 55);
+            this.ltComboBox1.TabIndex = 10;
+            this.ltComboBox1.Text = "Problem Type";
+            this.ltComboBox1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ltComboBox1.TopDirection = false;
+            this.ltComboBox1.UseVisualStyleBackColor = true;
+            // 
             // LoginProblem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
@@ -224,12 +257,12 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoginProblem";
             this.roundedPanel3.ResumeLayout(false);
-            this.roundedPanel2.ResumeLayout(false);
-            this.roundedPanel2.PerformLayout();
             this.roundedPanel4.ResumeLayout(false);
             this.roundedPanel4.PerformLayout();
             this.ltGradintPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.roundedPanel2.ResumeLayout(false);
+            this.roundedPanel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -240,12 +273,13 @@
         private Controls.RoundedPanel roundedPanel3;
         private Controls.RoundedButton roundedButton3;
         private Controls.RoundedPanel roundedPanel1;
-        private Controls.RoundedPanel roundedPanel2;
-        private System.Windows.Forms.TextBox textBox2;
         private Controls.RoundedPanel roundedPanel4;
         private System.Windows.Forms.TextBox textBox1;
         private Controls.LTGradintPanel ltGradintPanel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private Controls.RoundedPanel roundedPanel2;
+        private System.Windows.Forms.TextBox textBox2;
+        private Controls.LTComboBox ltComboBox1;
     }
 }
