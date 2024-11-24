@@ -30,6 +30,7 @@
         {
             this.roundedPanel3 = new LucaToysLite.Controls.RoundedPanel();
             this.roundedButton3 = new LucaToysLite.Controls.RoundedButton();
+            this.roundedPanel1 = new LucaToysLite.Controls.RoundedPanel();
             this.roundedPanel8 = new LucaToysLite.Controls.RoundedPanel();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.roundedPanel6 = new LucaToysLite.Controls.RoundedPanel();
@@ -44,9 +45,8 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.ltGradintPanel1 = new LucaToysLite.Controls.LTGradintPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
-            this.roundedPanel1 = new LucaToysLite.Controls.RoundedPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
             this.roundedPanel3.SuspendLayout();
             this.roundedPanel8.SuspendLayout();
             this.roundedPanel6.SuspendLayout();
@@ -97,8 +97,22 @@
             this.roundedButton3.UseVisualStyleBackColor = false;
             this.roundedButton3.Click += new System.EventHandler(this.roundedButton3_Click);
             // 
+            // roundedPanel1
+            // 
+            this.roundedPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.roundedPanel1.BackgroundImage = global::LucaToysLite.Properties.Resources.icons8_manager_96;
+            this.roundedPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.roundedPanel1.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedPanel1.BorderSize = ((byte)(3));
+            this.roundedPanel1.EnableBorder = true;
+            this.roundedPanel1.Location = new System.Drawing.Point(195, 32);
+            this.roundedPanel1.Name = "roundedPanel1";
+            this.roundedPanel1.Size = new System.Drawing.Size(200, 200);
+            this.roundedPanel1.TabIndex = 6;
+            // 
             // roundedPanel8
             // 
+            this.roundedPanel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.roundedPanel8.BorderColor = System.Drawing.Color.Crimson;
             this.roundedPanel8.BorderSize = ((byte)(3));
             this.roundedPanel8.Controls.Add(this.textBox6);
@@ -112,7 +126,7 @@
             // 
             this.textBox6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox6.ForeColor = System.Drawing.Color.White;
@@ -125,6 +139,7 @@
             // 
             // roundedPanel6
             // 
+            this.roundedPanel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.roundedPanel6.BorderColor = System.Drawing.Color.Crimson;
             this.roundedPanel6.BorderSize = ((byte)(3));
             this.roundedPanel6.Controls.Add(this.textBox4);
@@ -138,7 +153,7 @@
             // 
             this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.ForeColor = System.Drawing.Color.White;
@@ -151,6 +166,7 @@
             // 
             // roundedPanel2
             // 
+            this.roundedPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.roundedPanel2.BorderColor = System.Drawing.Color.Crimson;
             this.roundedPanel2.BorderSize = ((byte)(3));
             this.roundedPanel2.Controls.Add(this.textBox2);
@@ -164,7 +180,7 @@
             // 
             this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.ForeColor = System.Drawing.Color.White;
@@ -177,6 +193,7 @@
             // 
             // roundedPanel7
             // 
+            this.roundedPanel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.roundedPanel7.BorderColor = System.Drawing.Color.Crimson;
             this.roundedPanel7.BorderSize = ((byte)(3));
             this.roundedPanel7.Controls.Add(this.textBox5);
@@ -190,7 +207,7 @@
             // 
             this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox5.ForeColor = System.Drawing.Color.White;
@@ -203,6 +220,7 @@
             // 
             // roundedPanel5
             // 
+            this.roundedPanel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.roundedPanel5.BorderColor = System.Drawing.Color.Crimson;
             this.roundedPanel5.BorderSize = ((byte)(3));
             this.roundedPanel5.Controls.Add(this.textBox3);
@@ -216,7 +234,7 @@
             // 
             this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.ForeColor = System.Drawing.Color.White;
@@ -229,6 +247,7 @@
             // 
             // roundedPanel4
             // 
+            this.roundedPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.roundedPanel4.BorderColor = System.Drawing.Color.Crimson;
             this.roundedPanel4.BorderSize = ((byte)(3));
             this.roundedPanel4.Controls.Add(this.textBox1);
@@ -242,7 +261,7 @@
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.White;
@@ -283,6 +302,17 @@
             this.label1.Text = "Sign Up Manager";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::LucaToysLite.Properties.Resources.rb_7965;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(20, 11);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(370, 571);
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
+            // 
             // windowToolbar1
             // 
             this.windowToolbar1.BackColor = System.Drawing.Color.Crimson;
@@ -305,29 +335,6 @@
             this.windowToolbar1.TabIndex = 0;
             this.windowToolbar1.TitleText = "Sign Up";
             this.windowToolbar1.WindowBorderSize = ((byte)(3));
-            // 
-            // roundedPanel1
-            // 
-            this.roundedPanel1.BackgroundImage = global::LucaToysLite.Properties.Resources.icons8_manager_96;
-            this.roundedPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.roundedPanel1.BorderColor = System.Drawing.Color.Crimson;
-            this.roundedPanel1.BorderSize = ((byte)(3));
-            this.roundedPanel1.EnableBorder = true;
-            this.roundedPanel1.Location = new System.Drawing.Point(195, 32);
-            this.roundedPanel1.Name = "roundedPanel1";
-            this.roundedPanel1.Size = new System.Drawing.Size(200, 200);
-            this.roundedPanel1.TabIndex = 6;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::LucaToysLite.Properties.Resources.rb_7965;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(20, 11);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(370, 571);
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
             // 
             // SignUp
             // 
