@@ -46,7 +46,7 @@
             this.roundedButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.roundedButton1.Location = new System.Drawing.Point(24, 24);
             this.roundedButton1.Name = "roundedButton1";
-            this.roundedButton1.Size = new System.Drawing.Size(398, 76);
+            this.roundedButton1.Size = new System.Drawing.Size(398, 85);
             this.roundedButton1.TabIndex = 0;
             this.roundedButton1.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.roundedButton1.UseVisualStyleBackColor = false;

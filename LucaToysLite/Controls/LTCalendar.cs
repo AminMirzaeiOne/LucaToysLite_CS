@@ -105,6 +105,7 @@ namespace LucaToysLite.Controls
         {
             StringFormat arrow = new StringFormat();
             StringFormat title = new StringFormat();
+            StringFormat date = new StringFormat();
 
             arrow.Alignment = StringAlignment.Far;
             arrow.LineAlignment = StringAlignment.Center;
@@ -112,8 +113,12 @@ namespace LucaToysLite.Controls
             title.Alignment = StringAlignment.Near;
             title.LineAlignment = StringAlignment.Near;
 
+            date.Alignment = StringAlignment.Near;
+            date.LineAlignment = StringAlignment.Near;
+
             e.Graphics.DrawString("", new Font("Segoe MDL2 Assets",10,FontStyle.Bold),new SolidBrush(Color.Crimson),new Rectangle(0,2,e.ClipRectangle.Width-15,e.ClipRectangle.Height),arrow);
-            e.Graphics.DrawString("Select Date", new Font("Segoe UI Semibold", 9,FontStyle.Regular),new SolidBrush(Color.Crimson), new Rectangle(60, 10, e.ClipRectangle.Width, e.ClipRectangle.Height), title);
+            e.Graphics.DrawString("Select Date", new Font("Segoe UI Semibold", 9,FontStyle.Regular),new SolidBrush(Color.Crimson), new Rectangle(60, 12, e.ClipRectangle.Width, e.ClipRectangle.Height), title);
+            e.Graphics.DrawString("2024/11/4", new Font("Segoe UI Semibold", 11,FontStyle.Regular),new SolidBrush(Color.White), new Rectangle(60, 40, e.ClipRectangle.Width, e.ClipRectangle.Height), date);
         }
     }
 }
