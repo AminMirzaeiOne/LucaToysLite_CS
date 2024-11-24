@@ -57,6 +57,7 @@
             this.ltGradintPanel1 = new LucaToysLite.Controls.LTGradintPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
+            this.label1 = new System.Windows.Forms.Label();
             this.roundedPanel3.SuspendLayout();
             this.roundedPanel2.SuspendLayout();
             this.ltContextMenu2.SuspendLayout();
@@ -336,6 +337,7 @@
             this.ltGradintPanel1.BorderSize = ((byte)(2));
             this.ltGradintPanel1.ColorOne = System.Drawing.Color.RoyalBlue;
             this.ltGradintPanel1.ColorTwo = System.Drawing.Color.Crimson;
+            this.ltGradintPanel1.Controls.Add(this.label1);
             this.ltGradintPanel1.Controls.Add(this.pictureBox1);
             this.ltGradintPanel1.EnableBorder = false;
             this.ltGradintPanel1.Interval = ((byte)(20));
@@ -377,6 +379,18 @@
             this.windowToolbar1.TabIndex = 0;
             this.windowToolbar1.TitleText = "Login Manager";
             this.windowToolbar1.WindowBorderSize = ((byte)(3));
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(75, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(254, 86);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Login Manager";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Login
             // 
@@ -437,5 +451,6 @@
         private System.Windows.Forms.TextBox textBox2;
         private Controls.RoundedPanel roundedPanel4;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
