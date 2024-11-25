@@ -29,24 +29,24 @@
         private void InitializeComponent()
         {
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
-            this.ltRadioButton3 = new LucaToysLite.Controls.LTRadioButton();
-            this.ltRadioButton2 = new LucaToysLite.Controls.LTRadioButton();
             this.roundedPanel1 = new LucaToysLite.Controls.RoundedPanel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ltRadioButton1 = new LucaToysLite.Controls.LTRadioButton();
             this.roundedPanel2 = new LucaToysLite.Controls.RoundedPanel();
             this.roundedButton1 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton4 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton3 = new LucaToysLite.Controls.RoundedButton();
-            this.roundedPanel3 = new LucaToysLite.Controls.RoundedPanel();
-            this.roundedButton5 = new LucaToysLite.Controls.RoundedButton();
             this.roundedPanel4 = new LucaToysLite.Controls.RoundedPanel();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.roundedButton5 = new LucaToysLite.Controls.RoundedButton();
+            this.roundedPanel3 = new LucaToysLite.Controls.RoundedPanel();
+            this.ltRadioButton3 = new LucaToysLite.Controls.LTRadioButton();
+            this.ltRadioButton2 = new LucaToysLite.Controls.LTRadioButton();
+            this.ltRadioButton1 = new LucaToysLite.Controls.LTRadioButton();
             this.roundedPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.roundedPanel2.SuspendLayout();
-            this.roundedPanel3.SuspendLayout();
             this.roundedPanel4.SuspendLayout();
+            this.roundedPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // windowToolbar1
@@ -72,38 +72,6 @@
             this.windowToolbar1.TitleText = "Update Toy";
             this.windowToolbar1.WindowBorderSize = ((byte)(3));
             // 
-            // ltRadioButton3
-            // 
-            this.ltRadioButton3.AutoSize = true;
-            this.ltRadioButton3.CheckedColor = System.Drawing.Color.Crimson;
-            this.ltRadioButton3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ltRadioButton3.ForeColor = System.Drawing.Color.White;
-            this.ltRadioButton3.Location = new System.Drawing.Point(702, 90);
-            this.ltRadioButton3.MinimumSize = new System.Drawing.Size(0, 21);
-            this.ltRadioButton3.Name = "ltRadioButton3";
-            this.ltRadioButton3.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.ltRadioButton3.Size = new System.Drawing.Size(176, 29);
-            this.ltRadioButton3.TabIndex = 19;
-            this.ltRadioButton3.Text = "Customer Code";
-            this.ltRadioButton3.UnCheckedColor = System.Drawing.Color.Gray;
-            this.ltRadioButton3.UseVisualStyleBackColor = true;
-            // 
-            // ltRadioButton2
-            // 
-            this.ltRadioButton2.AutoSize = true;
-            this.ltRadioButton2.CheckedColor = System.Drawing.Color.Crimson;
-            this.ltRadioButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ltRadioButton2.ForeColor = System.Drawing.Color.White;
-            this.ltRadioButton2.Location = new System.Drawing.Point(598, 90);
-            this.ltRadioButton2.MinimumSize = new System.Drawing.Size(0, 21);
-            this.ltRadioButton2.Name = "ltRadioButton2";
-            this.ltRadioButton2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.ltRadioButton2.Size = new System.Drawing.Size(99, 29);
-            this.ltRadioButton2.TabIndex = 20;
-            this.ltRadioButton2.Text = "Family";
-            this.ltRadioButton2.UnCheckedColor = System.Drawing.Color.Gray;
-            this.ltRadioButton2.UseVisualStyleBackColor = true;
-            // 
             // roundedPanel1
             // 
             this.roundedPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -127,24 +95,6 @@
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(840, 315);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // ltRadioButton1
-            // 
-            this.ltRadioButton1.AutoSize = true;
-            this.ltRadioButton1.Checked = true;
-            this.ltRadioButton1.CheckedColor = System.Drawing.Color.Crimson;
-            this.ltRadioButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ltRadioButton1.ForeColor = System.Drawing.Color.White;
-            this.ltRadioButton1.Location = new System.Drawing.Point(503, 90);
-            this.ltRadioButton1.MinimumSize = new System.Drawing.Size(0, 21);
-            this.ltRadioButton1.Name = "ltRadioButton1";
-            this.ltRadioButton1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.ltRadioButton1.Size = new System.Drawing.Size(96, 29);
-            this.ltRadioButton1.TabIndex = 21;
-            this.ltRadioButton1.TabStop = true;
-            this.ltRadioButton1.Text = "Name";
-            this.ltRadioButton1.UnCheckedColor = System.Drawing.Color.Gray;
-            this.ltRadioButton1.UseVisualStyleBackColor = true;
             // 
             // roundedPanel2
             // 
@@ -216,41 +166,6 @@
             this.roundedButton3.Text = "Update";
             this.roundedButton3.UseVisualStyleBackColor = false;
             // 
-            // roundedPanel3
-            // 
-            this.roundedPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.roundedPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.roundedPanel3.BorderColor = System.Drawing.Color.Crimson;
-            this.roundedPanel3.BorderSize = ((byte)(3));
-            this.roundedPanel3.Controls.Add(this.roundedButton5);
-            this.roundedPanel3.Controls.Add(this.roundedPanel4);
-            this.roundedPanel3.EnableBorder = true;
-            this.roundedPanel3.Location = new System.Drawing.Point(25, 64);
-            this.roundedPanel3.Name = "roundedPanel3";
-            this.roundedPanel3.Size = new System.Drawing.Size(862, 80);
-            this.roundedPanel3.TabIndex = 24;
-            // 
-            // roundedButton5
-            // 
-            this.roundedButton5.BorderRadius = ((byte)(20));
-            this.roundedButton5.BorderSize = ((byte)(3));
-            this.roundedButton5.EnableBorder = true;
-            this.roundedButton5.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
-            this.roundedButton5.FlatAppearance.BorderSize = 0;
-            this.roundedButton5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Crimson;
-            this.roundedButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton5.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedButton5.ForeColor = System.Drawing.Color.White;
-            this.roundedButton5.Image = global::LucaToysLite.Properties.Resources.icons8_search_32;
-            this.roundedButton5.Location = new System.Drawing.Point(334, 17);
-            this.roundedButton5.Name = "roundedButton5";
-            this.roundedButton5.Size = new System.Drawing.Size(130, 45);
-            this.roundedButton5.TabIndex = 2;
-            this.roundedButton5.Text = " Search";
-            this.roundedButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.roundedButton5.UseVisualStyleBackColor = true;
-            // 
             // roundedPanel4
             // 
             this.roundedPanel4.BorderColor = System.Drawing.Color.Crimson;
@@ -274,7 +189,95 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(269, 26);
             this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "Search Customer";
+            this.textBox1.Text = "Search Toy";
+            // 
+            // roundedButton5
+            // 
+            this.roundedButton5.BorderRadius = ((byte)(20));
+            this.roundedButton5.BorderSize = ((byte)(3));
+            this.roundedButton5.EnableBorder = true;
+            this.roundedButton5.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedButton5.FlatAppearance.BorderSize = 0;
+            this.roundedButton5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Crimson;
+            this.roundedButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton5.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedButton5.ForeColor = System.Drawing.Color.White;
+            this.roundedButton5.Image = global::LucaToysLite.Properties.Resources.icons8_search_32;
+            this.roundedButton5.Location = new System.Drawing.Point(334, 17);
+            this.roundedButton5.Name = "roundedButton5";
+            this.roundedButton5.Size = new System.Drawing.Size(130, 45);
+            this.roundedButton5.TabIndex = 2;
+            this.roundedButton5.Text = " Search";
+            this.roundedButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.roundedButton5.UseVisualStyleBackColor = true;
+            // 
+            // roundedPanel3
+            // 
+            this.roundedPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.roundedPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.roundedPanel3.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedPanel3.BorderSize = ((byte)(3));
+            this.roundedPanel3.Controls.Add(this.ltRadioButton3);
+            this.roundedPanel3.Controls.Add(this.ltRadioButton2);
+            this.roundedPanel3.Controls.Add(this.ltRadioButton1);
+            this.roundedPanel3.Controls.Add(this.roundedButton5);
+            this.roundedPanel3.Controls.Add(this.roundedPanel4);
+            this.roundedPanel3.EnableBorder = true;
+            this.roundedPanel3.Location = new System.Drawing.Point(25, 64);
+            this.roundedPanel3.Name = "roundedPanel3";
+            this.roundedPanel3.Size = new System.Drawing.Size(862, 80);
+            this.roundedPanel3.TabIndex = 24;
+            // 
+            // ltRadioButton3
+            // 
+            this.ltRadioButton3.AutoSize = true;
+            this.ltRadioButton3.CheckedColor = System.Drawing.Color.Crimson;
+            this.ltRadioButton3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ltRadioButton3.ForeColor = System.Drawing.Color.White;
+            this.ltRadioButton3.Location = new System.Drawing.Point(708, 26);
+            this.ltRadioButton3.MinimumSize = new System.Drawing.Size(0, 21);
+            this.ltRadioButton3.Name = "ltRadioButton3";
+            this.ltRadioButton3.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.ltRadioButton3.Size = new System.Drawing.Size(123, 29);
+            this.ltRadioButton3.TabIndex = 10;
+            this.ltRadioButton3.Text = "Toy Code";
+            this.ltRadioButton3.UnCheckedColor = System.Drawing.Color.Gray;
+            this.ltRadioButton3.UseVisualStyleBackColor = true;
+            // 
+            // ltRadioButton2
+            // 
+            this.ltRadioButton2.AutoSize = true;
+            this.ltRadioButton2.CheckedColor = System.Drawing.Color.Crimson;
+            this.ltRadioButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ltRadioButton2.ForeColor = System.Drawing.Color.White;
+            this.ltRadioButton2.Location = new System.Drawing.Point(596, 26);
+            this.ltRadioButton2.MinimumSize = new System.Drawing.Size(0, 21);
+            this.ltRadioButton2.Name = "ltRadioButton2";
+            this.ltRadioButton2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.ltRadioButton2.Size = new System.Drawing.Size(96, 29);
+            this.ltRadioButton2.TabIndex = 11;
+            this.ltRadioButton2.Text = "Brand";
+            this.ltRadioButton2.UnCheckedColor = System.Drawing.Color.Gray;
+            this.ltRadioButton2.UseVisualStyleBackColor = true;
+            // 
+            // ltRadioButton1
+            // 
+            this.ltRadioButton1.AutoSize = true;
+            this.ltRadioButton1.Checked = true;
+            this.ltRadioButton1.CheckedColor = System.Drawing.Color.Crimson;
+            this.ltRadioButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ltRadioButton1.ForeColor = System.Drawing.Color.White;
+            this.ltRadioButton1.Location = new System.Drawing.Point(491, 26);
+            this.ltRadioButton1.MinimumSize = new System.Drawing.Size(0, 21);
+            this.ltRadioButton1.Name = "ltRadioButton1";
+            this.ltRadioButton1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.ltRadioButton1.Size = new System.Drawing.Size(96, 29);
+            this.ltRadioButton1.TabIndex = 12;
+            this.ltRadioButton1.TabStop = true;
+            this.ltRadioButton1.Text = "Name";
+            this.ltRadioButton1.UnCheckedColor = System.Drawing.Color.Gray;
+            this.ltRadioButton1.UseVisualStyleBackColor = true;
             // 
             // UpdateToy
             // 
@@ -282,10 +285,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(915, 600);
-            this.Controls.Add(this.ltRadioButton3);
-            this.Controls.Add(this.ltRadioButton2);
             this.Controls.Add(this.roundedPanel1);
-            this.Controls.Add(this.ltRadioButton1);
             this.Controls.Add(this.roundedPanel2);
             this.Controls.Add(this.roundedPanel3);
             this.Controls.Add(this.windowToolbar1);
@@ -297,29 +297,29 @@
             this.roundedPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.roundedPanel2.ResumeLayout(false);
-            this.roundedPanel3.ResumeLayout(false);
             this.roundedPanel4.ResumeLayout(false);
             this.roundedPanel4.PerformLayout();
+            this.roundedPanel3.ResumeLayout(false);
+            this.roundedPanel3.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private Controls.WindowToolbar windowToolbar1;
-        private Controls.LTRadioButton ltRadioButton3;
-        private Controls.LTRadioButton ltRadioButton2;
         private Controls.RoundedPanel roundedPanel1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private Controls.LTRadioButton ltRadioButton1;
         private Controls.RoundedPanel roundedPanel2;
         private Controls.RoundedButton roundedButton1;
         private Controls.RoundedButton roundedButton4;
         private Controls.RoundedButton roundedButton3;
-        private Controls.RoundedPanel roundedPanel3;
-        private Controls.RoundedButton roundedButton5;
         private Controls.RoundedPanel roundedPanel4;
         private System.Windows.Forms.TextBox textBox1;
+        private Controls.RoundedButton roundedButton5;
+        private Controls.RoundedPanel roundedPanel3;
+        private Controls.LTRadioButton ltRadioButton3;
+        private Controls.LTRadioButton ltRadioButton2;
+        private Controls.LTRadioButton ltRadioButton1;
     }
 }
