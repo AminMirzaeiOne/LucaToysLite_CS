@@ -16,6 +16,18 @@ namespace LucaToysLite.Controls
         public LTCalendar()
         {
             InitializeComponent();
+            this.ContextMenuStrip = this.ltContextMenu1;
+        }
+
+        private System.String arrowIcon = "";
+
+        public bool ShowPanel
+        {
+            get { return this.roundedPanel1.Visible; }
+            set
+            {
+                this.roundedPanel1.Visible = value;
+            }
         }
 
         private int radius = 20;
@@ -116,9 +128,48 @@ namespace LucaToysLite.Controls
             date.Alignment = StringAlignment.Near;
             date.LineAlignment = StringAlignment.Near;
 
-            e.Graphics.DrawString("", new Font("Segoe MDL2 Assets",10,FontStyle.Bold),new SolidBrush(Color.Crimson),new Rectangle(0,2,e.ClipRectangle.Width-15,e.ClipRectangle.Height),arrow);
+            e.Graphics.DrawString(this.arrowIcon, new Font("Segoe MDL2 Assets",10,FontStyle.Bold),new SolidBrush(Color.Crimson),new Rectangle(0,2,e.ClipRectangle.Width-15,e.ClipRectangle.Height),arrow);
             e.Graphics.DrawString("Select Date", new Font("Segoe UI Semibold", 9,FontStyle.Regular),new SolidBrush(Color.Crimson), new Rectangle(60, 12, e.ClipRectangle.Width, e.ClipRectangle.Height), title);
             e.Graphics.DrawString("2024/11/4", new Font("Segoe UI Semibold", 11,FontStyle.Regular),new SolidBrush(Color.White), new Rectangle(60, 40, e.ClipRectangle.Width, e.ClipRectangle.Height), date);
+        }
+
+        private void roundedButton1_Click(object sender, EventArgs e)
+        {
+            if (this.ShowPanel)
+            {
+                this.animator1.Hide(this.roundedPanel1);
+                this.arrowIcon = "";
+            }
+            else
+            {
+                this.animator1.Show(this.roundedPanel1);
+                this.arrowIcon = "";
+
+                
+            }
+        }
+
+        private void showBorderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.EnableBorder = true;
+            this.BackColor = Color.FromArgb(15, 15, 15);
+            this.roundedButton1.BackColor = Color.FromArgb(20, 20, 20);
+            this.roundedPanel1.BackColor = Color.FromArgb(20, 20, 20);
+            this.Invalidate();
+        }
+
+        private void showBorderToolStripMenuItem_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void hideBorderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.EnableBorder = false;
+            this.BackColor = Color.FromArgb(20, 20,20);
+            this.roundedButton1.BackColor = Color.FromArgb(15, 15, 15);
+            this.roundedPanel1.BackColor = Color.FromArgb(15, 15, 15);
+            this.Invalidate();
         }
     }
 }
