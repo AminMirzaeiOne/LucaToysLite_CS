@@ -1702,5 +1702,14 @@
   <ItemGroup>
     <None Include="Resources\Group 22.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-credit-control-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-credit-card-cash-withdrawal-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-credit-card-cash-withdrawal-62.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

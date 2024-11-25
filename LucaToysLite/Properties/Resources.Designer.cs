@@ -893,6 +893,36 @@ namespace LucaToysLite.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_credit_card_cash_withdrawal_62 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-credit-card-cash-withdrawal-62", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_credit_card_cash_withdrawal_96 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-credit-card-cash-withdrawal-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_credit_control_96 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-credit-control-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_csv_68 {
             get {
                 object obj = ResourceManager.GetObject("icons8-csv-68", resourceCulture);
