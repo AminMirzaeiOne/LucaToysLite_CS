@@ -839,6 +839,9 @@
     <EmbeddedResource Include="Pages\AddCustomer\Unnecessary.resx">
       <DependentUpon>Unnecessary.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pages\AddDoll\Important.resx">
+      <DependentUpon>Important.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pages\AddSeller\Description.resx">
       <DependentUpon>Description.cs</DependentUpon>
     </EmbeddedResource>
