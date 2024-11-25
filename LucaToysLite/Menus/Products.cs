@@ -52,5 +52,17 @@ namespace LucaToysLite.Menus
             LucaToysLite.Forms.AddDoll addDoll = new Forms.AddDoll();
             addDoll.Show();
         }
+
+        private void roundedButton6_Click(object sender, EventArgs e)
+        {
+            LucaToysLite.Forms.DeleteDoll deleteDoll = new Forms.DeleteDoll();
+            deleteDoll.Show();
+        }
+
+        private void roundedButton7_Click(object sender, EventArgs e)
+        {
+            LucaToysLite.Forms.UpdateDoll updateDoll = new Forms.UpdateDoll();
+            updateDoll.Show();
+        }
     }
 }

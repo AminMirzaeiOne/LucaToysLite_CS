@@ -77,6 +77,7 @@
             this.roundedButton7.Text = "Update Doll";
             this.roundedButton7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.roundedButton7.UseVisualStyleBackColor = true;
+            this.roundedButton7.Click += new System.EventHandler(this.roundedButton7_Click);
             // 
             // roundedButton6
             // 
@@ -97,6 +98,7 @@
             this.roundedButton6.Text = "Delete Doll";
             this.roundedButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.roundedButton6.UseVisualStyleBackColor = true;
+            this.roundedButton6.Click += new System.EventHandler(this.roundedButton6_Click);
             // 
             // roundedButton5
             // 
