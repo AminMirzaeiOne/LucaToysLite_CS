@@ -71,6 +71,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="ClassLibrary\" />
     <Folder Include="Controls\" />
     <Folder Include="Forms\" />
     <Folder Include="Pages\" />
