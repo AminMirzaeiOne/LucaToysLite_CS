@@ -30,22 +30,22 @@
         {
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
             this.roundedPanel3 = new LucaToysLite.Controls.RoundedPanel();
-            this.roundedPanel1 = new LucaToysLite.Controls.RoundedPanel();
-            this.roundedPanel2 = new LucaToysLite.Controls.RoundedPanel();
-            this.roundedButton3 = new LucaToysLite.Controls.RoundedButton();
-            this.roundedButton4 = new LucaToysLite.Controls.RoundedButton();
+            this.roundedButton5 = new LucaToysLite.Controls.RoundedButton();
             this.roundedPanel4 = new LucaToysLite.Controls.RoundedPanel();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.roundedButton5 = new LucaToysLite.Controls.RoundedButton();
+            this.roundedPanel1 = new LucaToysLite.Controls.RoundedPanel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.roundedPanel2 = new LucaToysLite.Controls.RoundedPanel();
+            this.roundedButton4 = new LucaToysLite.Controls.RoundedButton();
+            this.roundedButton3 = new LucaToysLite.Controls.RoundedButton();
             this.ltRadioButton3 = new LucaToysLite.Controls.LTRadioButton();
             this.ltRadioButton2 = new LucaToysLite.Controls.LTRadioButton();
             this.ltRadioButton1 = new LucaToysLite.Controls.LTRadioButton();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.roundedPanel3.SuspendLayout();
-            this.roundedPanel1.SuspendLayout();
-            this.roundedPanel2.SuspendLayout();
             this.roundedPanel4.SuspendLayout();
+            this.roundedPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.roundedPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // windowToolbar1
@@ -78,78 +78,36 @@
             this.roundedPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.roundedPanel3.BorderColor = System.Drawing.Color.Crimson;
             this.roundedPanel3.BorderSize = ((byte)(3));
+            this.roundedPanel3.Controls.Add(this.ltRadioButton3);
             this.roundedPanel3.Controls.Add(this.roundedButton5);
+            this.roundedPanel3.Controls.Add(this.ltRadioButton2);
             this.roundedPanel3.Controls.Add(this.roundedPanel4);
+            this.roundedPanel3.Controls.Add(this.ltRadioButton1);
             this.roundedPanel3.EnableBorder = true;
             this.roundedPanel3.Location = new System.Drawing.Point(26, 64);
             this.roundedPanel3.Name = "roundedPanel3";
             this.roundedPanel3.Size = new System.Drawing.Size(862, 80);
             this.roundedPanel3.TabIndex = 6;
             // 
-            // roundedPanel1
+            // roundedButton5
             // 
-            this.roundedPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.roundedPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.roundedPanel1.BorderColor = System.Drawing.Color.Crimson;
-            this.roundedPanel1.BorderSize = ((byte)(3));
-            this.roundedPanel1.Controls.Add(this.dataGridView1);
-            this.roundedPanel1.EnableBorder = true;
-            this.roundedPanel1.Location = new System.Drawing.Point(26, 160);
-            this.roundedPanel1.Name = "roundedPanel1";
-            this.roundedPanel1.Size = new System.Drawing.Size(862, 333);
-            this.roundedPanel1.TabIndex = 6;
-            // 
-            // roundedPanel2
-            // 
-            this.roundedPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.roundedPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.roundedPanel2.BorderColor = System.Drawing.Color.Crimson;
-            this.roundedPanel2.BorderSize = ((byte)(3));
-            this.roundedPanel2.Controls.Add(this.roundedButton4);
-            this.roundedPanel2.Controls.Add(this.roundedButton3);
-            this.roundedPanel2.EnableBorder = true;
-            this.roundedPanel2.Location = new System.Drawing.Point(26, 513);
-            this.roundedPanel2.Name = "roundedPanel2";
-            this.roundedPanel2.Size = new System.Drawing.Size(862, 70);
-            this.roundedPanel2.TabIndex = 6;
-            // 
-            // roundedButton3
-            // 
-            this.roundedButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.roundedButton3.BackColor = System.Drawing.Color.Crimson;
-            this.roundedButton3.BorderRadius = ((byte)(20));
-            this.roundedButton3.BorderSize = ((byte)(3));
-            this.roundedButton3.EnableBorder = true;
-            this.roundedButton3.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
-            this.roundedButton3.FlatAppearance.BorderSize = 0;
-            this.roundedButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton3.ForeColor = System.Drawing.Color.White;
-            this.roundedButton3.Location = new System.Drawing.Point(697, 14);
-            this.roundedButton3.Name = "roundedButton3";
-            this.roundedButton3.Size = new System.Drawing.Size(148, 45);
-            this.roundedButton3.TabIndex = 3;
-            this.roundedButton3.Text = "Delete";
-            this.roundedButton3.UseVisualStyleBackColor = false;
-            // 
-            // roundedButton4
-            // 
-            this.roundedButton4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.roundedButton4.BorderRadius = ((byte)(20));
-            this.roundedButton4.BorderSize = ((byte)(3));
-            this.roundedButton4.EnableBorder = true;
-            this.roundedButton4.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
-            this.roundedButton4.FlatAppearance.BorderSize = 0;
-            this.roundedButton4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Crimson;
-            this.roundedButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton4.ForeColor = System.Drawing.Color.White;
-            this.roundedButton4.Location = new System.Drawing.Point(533, 14);
-            this.roundedButton4.Name = "roundedButton4";
-            this.roundedButton4.Size = new System.Drawing.Size(148, 45);
-            this.roundedButton4.TabIndex = 4;
-            this.roundedButton4.Text = "Cancel";
-            this.roundedButton4.UseVisualStyleBackColor = true;
+            this.roundedButton5.BorderRadius = ((byte)(20));
+            this.roundedButton5.BorderSize = ((byte)(3));
+            this.roundedButton5.EnableBorder = true;
+            this.roundedButton5.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedButton5.FlatAppearance.BorderSize = 0;
+            this.roundedButton5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Crimson;
+            this.roundedButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton5.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedButton5.ForeColor = System.Drawing.Color.White;
+            this.roundedButton5.Image = global::LucaToysLite.Properties.Resources.icons8_search_32;
+            this.roundedButton5.Location = new System.Drawing.Point(334, 17);
+            this.roundedButton5.Name = "roundedButton5";
+            this.roundedButton5.Size = new System.Drawing.Size(130, 45);
+            this.roundedButton5.TabIndex = 2;
+            this.roundedButton5.Text = " Search";
+            this.roundedButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.roundedButton5.UseVisualStyleBackColor = true;
             // 
             // roundedPanel4
             // 
@@ -176,25 +134,80 @@
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "Search Seller";
             // 
-            // roundedButton5
+            // roundedPanel1
             // 
-            this.roundedButton5.BorderRadius = ((byte)(20));
-            this.roundedButton5.BorderSize = ((byte)(3));
-            this.roundedButton5.EnableBorder = true;
-            this.roundedButton5.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
-            this.roundedButton5.FlatAppearance.BorderSize = 0;
-            this.roundedButton5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Crimson;
-            this.roundedButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton5.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedButton5.ForeColor = System.Drawing.Color.White;
-            this.roundedButton5.Image = global::LucaToysLite.Properties.Resources.icons8_search_32;
-            this.roundedButton5.Location = new System.Drawing.Point(334, 17);
-            this.roundedButton5.Name = "roundedButton5";
-            this.roundedButton5.Size = new System.Drawing.Size(130, 45);
-            this.roundedButton5.TabIndex = 2;
-            this.roundedButton5.Text = " Search";
-            this.roundedButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.roundedButton5.UseVisualStyleBackColor = true;
+            this.roundedPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.roundedPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.roundedPanel1.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedPanel1.BorderSize = ((byte)(3));
+            this.roundedPanel1.Controls.Add(this.dataGridView1);
+            this.roundedPanel1.EnableBorder = true;
+            this.roundedPanel1.Location = new System.Drawing.Point(26, 160);
+            this.roundedPanel1.Name = "roundedPanel1";
+            this.roundedPanel1.Size = new System.Drawing.Size(862, 333);
+            this.roundedPanel1.TabIndex = 6;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 9);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 62;
+            this.dataGridView1.RowTemplate.Height = 28;
+            this.dataGridView1.Size = new System.Drawing.Size(840, 315);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // roundedPanel2
+            // 
+            this.roundedPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.roundedPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.roundedPanel2.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedPanel2.BorderSize = ((byte)(3));
+            this.roundedPanel2.Controls.Add(this.roundedButton4);
+            this.roundedPanel2.Controls.Add(this.roundedButton3);
+            this.roundedPanel2.EnableBorder = true;
+            this.roundedPanel2.Location = new System.Drawing.Point(26, 513);
+            this.roundedPanel2.Name = "roundedPanel2";
+            this.roundedPanel2.Size = new System.Drawing.Size(862, 70);
+            this.roundedPanel2.TabIndex = 6;
+            // 
+            // roundedButton4
+            // 
+            this.roundedButton4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.roundedButton4.BorderRadius = ((byte)(20));
+            this.roundedButton4.BorderSize = ((byte)(3));
+            this.roundedButton4.EnableBorder = true;
+            this.roundedButton4.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedButton4.FlatAppearance.BorderSize = 0;
+            this.roundedButton4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Crimson;
+            this.roundedButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton4.ForeColor = System.Drawing.Color.White;
+            this.roundedButton4.Location = new System.Drawing.Point(533, 14);
+            this.roundedButton4.Name = "roundedButton4";
+            this.roundedButton4.Size = new System.Drawing.Size(148, 45);
+            this.roundedButton4.TabIndex = 4;
+            this.roundedButton4.Text = "Cancel";
+            this.roundedButton4.UseVisualStyleBackColor = true;
+            // 
+            // roundedButton3
+            // 
+            this.roundedButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.roundedButton3.BackColor = System.Drawing.Color.Crimson;
+            this.roundedButton3.BorderRadius = ((byte)(20));
+            this.roundedButton3.BorderSize = ((byte)(3));
+            this.roundedButton3.EnableBorder = true;
+            this.roundedButton3.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedButton3.FlatAppearance.BorderSize = 0;
+            this.roundedButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton3.ForeColor = System.Drawing.Color.White;
+            this.roundedButton3.Location = new System.Drawing.Point(697, 14);
+            this.roundedButton3.Name = "roundedButton3";
+            this.roundedButton3.Size = new System.Drawing.Size(148, 45);
+            this.roundedButton3.TabIndex = 3;
+            this.roundedButton3.Text = "Delete";
+            this.roundedButton3.UseVisualStyleBackColor = false;
             // 
             // ltRadioButton3
             // 
@@ -202,7 +215,7 @@
             this.ltRadioButton3.CheckedColor = System.Drawing.Color.Crimson;
             this.ltRadioButton3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ltRadioButton3.ForeColor = System.Drawing.Color.White;
-            this.ltRadioButton3.Location = new System.Drawing.Point(729, 90);
+            this.ltRadioButton3.Location = new System.Drawing.Point(709, 26);
             this.ltRadioButton3.MinimumSize = new System.Drawing.Size(0, 21);
             this.ltRadioButton3.Name = "ltRadioButton3";
             this.ltRadioButton3.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -218,7 +231,7 @@
             this.ltRadioButton2.CheckedColor = System.Drawing.Color.Crimson;
             this.ltRadioButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ltRadioButton2.ForeColor = System.Drawing.Color.White;
-            this.ltRadioButton2.Location = new System.Drawing.Point(615, 90);
+            this.ltRadioButton2.Location = new System.Drawing.Point(598, 26);
             this.ltRadioButton2.MinimumSize = new System.Drawing.Size(0, 21);
             this.ltRadioButton2.Name = "ltRadioButton2";
             this.ltRadioButton2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -235,7 +248,7 @@
             this.ltRadioButton1.CheckedColor = System.Drawing.Color.Crimson;
             this.ltRadioButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ltRadioButton1.ForeColor = System.Drawing.Color.White;
-            this.ltRadioButton1.Location = new System.Drawing.Point(513, 90);
+            this.ltRadioButton1.Location = new System.Drawing.Point(487, 26);
             this.ltRadioButton1.MinimumSize = new System.Drawing.Size(0, 21);
             this.ltRadioButton1.Name = "ltRadioButton1";
             this.ltRadioButton1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -246,26 +259,13 @@
             this.ltRadioButton1.UnCheckedColor = System.Drawing.Color.Gray;
             this.ltRadioButton1.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 9);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(840, 315);
-            this.dataGridView1.TabIndex = 0;
-            // 
             // DeleteSeller
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(915, 600);
-            this.Controls.Add(this.ltRadioButton3);
-            this.Controls.Add(this.ltRadioButton2);
             this.Controls.Add(this.roundedPanel1);
-            this.Controls.Add(this.ltRadioButton1);
             this.Controls.Add(this.roundedPanel2);
             this.Controls.Add(this.roundedPanel3);
             this.Controls.Add(this.windowToolbar1);
@@ -275,13 +275,13 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DeleteSeller";
             this.roundedPanel3.ResumeLayout(false);
-            this.roundedPanel1.ResumeLayout(false);
-            this.roundedPanel2.ResumeLayout(false);
+            this.roundedPanel3.PerformLayout();
             this.roundedPanel4.ResumeLayout(false);
             this.roundedPanel4.PerformLayout();
+            this.roundedPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.roundedPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

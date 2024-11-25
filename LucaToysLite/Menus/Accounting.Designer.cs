@@ -137,6 +137,7 @@
             this.roundedButton7.Text = "Manage Accounts";
             this.roundedButton7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.roundedButton7.UseVisualStyleBackColor = true;
+            this.roundedButton7.Click += new System.EventHandler(this.roundedButton7_Click);
             // 
             // roundedLabel2
             // 
