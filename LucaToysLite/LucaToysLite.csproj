@@ -462,6 +462,12 @@
     <Compile Include="Pages\About\Version.Designer.cs">
       <DependentUpon>Version.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pages\AddAccount\Important.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\AddAccount\Important.Designer.cs">
+      <DependentUpon>Important.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pages\AddCustomer\Description.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -878,6 +884,9 @@
     <EmbeddedResource Include="Pages\About\Version.resx">
       <DependentUpon>Version.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pages\AddAccount\Important.resx">
+      <DependentUpon>Important.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pages\AddCustomer\Description.resx">
       <DependentUpon>Description.cs</DependentUpon>
     </EmbeddedResource>
@@ -1166,7 +1175,6 @@
     <None Include="Resources\icons8-backup-28.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Pages\AddAccount\" />
     <Folder Include="Pages\Settings\DatabasePages\" />
   </ItemGroup>
   <ItemGroup>
