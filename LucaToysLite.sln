@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LucaToysLite", "LucaToysLit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Updater", "Updater\Updater.csproj", "{DADF4707-EA37-4C22-BF9D-D1F9D9D8EF6D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Setup", "Setup\Setup.csproj", "{CC545B05-8032-44A5-A530-493A57740CEA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{DADF4707-EA37-4C22-BF9D-D1F9D9D8EF6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DADF4707-EA37-4C22-BF9D-D1F9D9D8EF6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DADF4707-EA37-4C22-BF9D-D1F9D9D8EF6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC545B05-8032-44A5-A530-493A57740CEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC545B05-8032-44A5-A530-493A57740CEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC545B05-8032-44A5-A530-493A57740CEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC545B05-8032-44A5-A530-493A57740CEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
