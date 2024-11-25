@@ -758,6 +758,9 @@
     <EmbeddedResource Include="Forms\UpdateSeller.resx">
       <DependentUpon>UpdateSeller.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UpdateToy.resx">
+      <DependentUpon>UpdateToy.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Users.resx">
       <DependentUpon>Users.cs</DependentUpon>
     </EmbeddedResource>
