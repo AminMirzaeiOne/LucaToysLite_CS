@@ -5,6 +5,8 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LucaToysLite", "LucaToysLite\LucaToysLite.csproj", "{FA3282FF-BB5B-4241-9BC2-CA601EFE1C22}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Updater", "Updater\Updater.csproj", "{DADF4707-EA37-4C22-BF9D-D1F9D9D8EF6D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{FA3282FF-BB5B-4241-9BC2-CA601EFE1C22}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA3282FF-BB5B-4241-9BC2-CA601EFE1C22}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA3282FF-BB5B-4241-9BC2-CA601EFE1C22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DADF4707-EA37-4C22-BF9D-D1F9D9D8EF6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DADF4707-EA37-4C22-BF9D-D1F9D9D8EF6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DADF4707-EA37-4C22-BF9D-D1F9D9D8EF6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DADF4707-EA37-4C22-BF9D-D1F9D9D8EF6D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
