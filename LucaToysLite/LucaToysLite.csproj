@@ -456,6 +456,12 @@
     <Compile Include="Pages\AddCustomer\Unnecessary.Designer.cs">
       <DependentUpon>Unnecessary.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pages\AddDoll\Description.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\AddDoll\Description.Designer.cs">
+      <DependentUpon>Description.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pages\AddDoll\Important.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -844,6 +850,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\AddCustomer\Unnecessary.resx">
       <DependentUpon>Unnecessary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\AddDoll\Description.resx">
+      <DependentUpon>Description.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\AddDoll\Important.resx">
       <DependentUpon>Important.cs</DependentUpon>
