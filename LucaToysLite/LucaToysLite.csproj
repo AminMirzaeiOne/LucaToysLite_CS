@@ -456,6 +456,12 @@
     <Compile Include="Pages\AddCustomer\Unnecessary.Designer.cs">
       <DependentUpon>Unnecessary.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pages\AddDoll\Important.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\AddDoll\Important.Designer.cs">
+      <DependentUpon>Important.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pages\AddSeller\Description.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -1103,7 +1109,6 @@
     <None Include="Resources\icons8-backup-28.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Pages\AddDoll\" />
     <Folder Include="Pages\Settings\DatabasePages\" />
   </ItemGroup>
   <ItemGroup>
