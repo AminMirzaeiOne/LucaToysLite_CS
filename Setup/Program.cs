@@ -17,7 +17,7 @@ namespace Setup
             SetProcessDPIAware();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Setup.Forms.SplashScreen());
         }
 
         [System.Runtime.InteropServices.DllImport("user32.dll")]
