@@ -1203,6 +1203,16 @@ namespace LucaToysLite.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_eps_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-eps-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_erase_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8-erase-32", resourceCulture);
@@ -1393,6 +1403,16 @@ namespace LucaToysLite.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_illustrator_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-illustrator-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_info_34 {
             get {
                 object obj = ResourceManager.GetObject("icons8-info-34", resourceCulture);
@@ -1476,6 +1496,16 @@ namespace LucaToysLite.Properties {
         internal static System.Drawing.Bitmap icons8_iran_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-iran-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_jpg_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-jpg-48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1703,6 +1733,16 @@ namespace LucaToysLite.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_photoshop_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-photoshop-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_playlist_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-playlist-48", resourceCulture);
@@ -1723,9 +1763,29 @@ namespace LucaToysLite.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_png_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-png-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_price_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-price-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_print_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-print-48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

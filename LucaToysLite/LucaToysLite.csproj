@@ -1756,5 +1756,23 @@
   <ItemGroup>
     <None Include="Resources\icons8-credit-card-cash-withdrawal-62.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-eps-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-png-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-jpg-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-photoshop-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-illustrator-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-print-48.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
