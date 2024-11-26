@@ -564,6 +564,12 @@
     <Compile Include="Pages\AddToy\Unnecessary.Designer.cs">
       <DependentUpon>Unnecessary.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pages\BarcodeCreator\Based.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\BarcodeCreator\Based.Designer.cs">
+      <DependentUpon>Based.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pages\CustomerInfo\Description.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -959,6 +965,9 @@
     <EmbeddedResource Include="Pages\AddToy\Unnecessary.resx">
       <DependentUpon>Unnecessary.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pages\BarcodeCreator\Based.resx">
+      <DependentUpon>Based.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pages\CustomerInfo\Description.resx">
       <DependentUpon>Description.cs</DependentUpon>
     </EmbeddedResource>
@@ -1211,7 +1220,6 @@
     <None Include="Resources\icons8-backup-28.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Pages\BarcodeCreator\" />
     <Folder Include="Pages\Settings\DatabasePages\" />
   </ItemGroup>
   <ItemGroup>
