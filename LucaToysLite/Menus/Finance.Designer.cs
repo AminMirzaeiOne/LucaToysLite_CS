@@ -113,7 +113,7 @@
             this.roundedButton4.Name = "roundedButton4";
             this.roundedButton4.Size = new System.Drawing.Size(200, 125);
             this.roundedButton4.TabIndex = 18;
-            this.roundedButton4.Text = "Update Toy";
+            this.roundedButton4.Text = "Costs";
             this.roundedButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.roundedButton4.UseVisualStyleBackColor = true;
             // 
