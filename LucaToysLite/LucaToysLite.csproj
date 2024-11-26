@@ -570,6 +570,12 @@
     <Compile Include="Pages\BarcodeCreator\Based.Designer.cs">
       <DependentUpon>Based.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pages\BarcodeCreator\Output.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\BarcodeCreator\Output.Designer.cs">
+      <DependentUpon>Output.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pages\CustomerInfo\Description.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -967,6 +973,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\BarcodeCreator\Based.resx">
       <DependentUpon>Based.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\BarcodeCreator\Output.resx">
+      <DependentUpon>Output.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\CustomerInfo\Description.resx">
       <DependentUpon>Description.cs</DependentUpon>
