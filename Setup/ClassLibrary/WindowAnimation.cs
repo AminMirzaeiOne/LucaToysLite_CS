@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace LucaToysLite.ClassLibrary
+namespace Setup.ClassLibrary
 {
     public class WindowAnimation
     {

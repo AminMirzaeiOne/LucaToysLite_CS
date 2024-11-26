@@ -66,7 +66,7 @@ namespace LucaToysLite.Controls
         public System.Boolean BorderStyleRadius { get; set; } = true;
         public System.Byte WindowBorderSize { get; set; } = 3;
 
-        private LucaToysLite.ClassLibrary.WindowAnimation animation;
+        private Setup.ClassLibrary.WindowAnimation animation;
         private LucaToysLite.Controls.WindowToolbar.StartupSounds startupSounds = StartupSounds.None;
         private System.Media.SoundPlayer soundPlayer = new System.Media.SoundPlayer();
 
@@ -308,7 +308,7 @@ namespace LucaToysLite.Controls
 
         private void LoadEvent(object sender, EventArgs e)
         {
-            this.animation = new ClassLibrary.WindowAnimation((Form)this.Parent);
+            this.animation = new Setup.ClassLibrary.WindowAnimation((Form)this.Parent);
             this.animation.Start();
             if (this.Parent != null && this.BorderStyleRadius)
             {
