@@ -860,6 +860,9 @@
     <EmbeddedResource Include="Forms\DeleteToy.resx">
       <DependentUpon>DeleteToy.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Export.resx">
+      <DependentUpon>Export.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
@@ -1860,6 +1863,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-fit-vertical-42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-customers-72%281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-product-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-budget-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-accounting-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-invoice-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-document-72.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
