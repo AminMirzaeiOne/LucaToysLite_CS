@@ -513,6 +513,16 @@ namespace LucaToysLite.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_administrative_tools_34 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-administrative-tools-34", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_android_app_drawer_34 {
             get {
                 object obj = ResourceManager.GetObject("icons8-android-app-drawer-34", resourceCulture);
@@ -1653,6 +1663,16 @@ namespace LucaToysLite.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_output_34 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-output-34", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_package_search_68 {
             get {
                 object obj = ResourceManager.GetObject("icons8-package-search-68", resourceCulture);
@@ -1766,6 +1786,16 @@ namespace LucaToysLite.Properties {
         internal static System.Drawing.Bitmap icons8_png_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-png-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_preview_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-preview-48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

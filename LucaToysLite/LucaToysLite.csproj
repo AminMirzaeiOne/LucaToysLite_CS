@@ -1774,5 +1774,14 @@
   <ItemGroup>
     <None Include="Resources\icons8-print-48.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-administrative-tools-34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-output-34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-preview-48.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
