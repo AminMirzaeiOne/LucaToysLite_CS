@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.roundedLabel3 = new LucaToysLite.Controls.RoundedLabel();
             this.roundedLabel2 = new LucaToysLite.Controls.RoundedLabel();
             this.roundedLabel1 = new LucaToysLite.Controls.RoundedLabel();
+            this.roundedButton6 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton4 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton3 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton2 = new LucaToysLite.Controls.RoundedButton();
@@ -37,6 +39,15 @@
             this.roundedButton5 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton7 = new LucaToysLite.Controls.RoundedButton();
             this.SuspendLayout();
+            // 
+            // roundedLabel3
+            // 
+            this.roundedLabel3.BackColor = System.Drawing.Color.Crimson;
+            this.roundedLabel3.BorderRadius = ((byte)(4));
+            this.roundedLabel3.Location = new System.Drawing.Point(1514, 25);
+            this.roundedLabel3.Name = "roundedLabel3";
+            this.roundedLabel3.Size = new System.Drawing.Size(4, 90);
+            this.roundedLabel3.TabIndex = 22;
             // 
             // roundedLabel2
             // 
@@ -55,6 +66,27 @@
             this.roundedLabel1.Name = "roundedLabel1";
             this.roundedLabel1.Size = new System.Drawing.Size(4, 90);
             this.roundedLabel1.TabIndex = 21;
+            // 
+            // roundedButton6
+            // 
+            this.roundedButton6.BorderRadius = ((byte)(20));
+            this.roundedButton6.BorderSize = ((byte)(3));
+            this.roundedButton6.EnableBorder = true;
+            this.roundedButton6.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedButton6.FlatAppearance.BorderSize = 0;
+            this.roundedButton6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Crimson;
+            this.roundedButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton6.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedButton6.ForeColor = System.Drawing.Color.White;
+            this.roundedButton6.Image = global::LucaToysLite.Properties.Resources.icons8_phone_68_1_;
+            this.roundedButton6.Location = new System.Drawing.Point(1562, 6);
+            this.roundedButton6.Name = "roundedButton6";
+            this.roundedButton6.Size = new System.Drawing.Size(200, 125);
+            this.roundedButton6.TabIndex = 20;
+            this.roundedButton6.Text = "Phone Book";
+            this.roundedButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.roundedButton6.UseVisualStyleBackColor = true;
+            this.roundedButton6.Click += new System.EventHandler(this.roundedButton6_Click);
             // 
             // roundedButton4
             // 
@@ -184,8 +216,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.Controls.Add(this.roundedLabel3);
             this.Controls.Add(this.roundedLabel2);
             this.Controls.Add(this.roundedLabel1);
+            this.Controls.Add(this.roundedButton6);
             this.Controls.Add(this.roundedButton4);
             this.Controls.Add(this.roundedButton3);
             this.Controls.Add(this.roundedButton2);
@@ -208,5 +242,7 @@
         private Controls.RoundedButton roundedButton4;
         private Controls.RoundedLabel roundedLabel2;
         private Controls.RoundedButton roundedButton5;
+        private Controls.RoundedLabel roundedLabel3;
+        private Controls.RoundedButton roundedButton6;
     }
 }

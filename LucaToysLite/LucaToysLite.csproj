@@ -1903,5 +1903,8 @@
   <ItemGroup>
     <None Include="Resources\icons8-settings-72.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-phone-68%281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -28,5 +28,11 @@ namespace LucaToysLite.Menus
             LucaToysLite.Apps.Notepad notepad = new Apps.Notepad();
             notepad.Show();
         }
+
+        private void roundedButton6_Click(object sender, EventArgs e)
+        {
+            LucaToysLite.Apps.PhoneBook phoneBook = new Apps.PhoneBook();
+            phoneBook.Show();
+        }
     }
 }
