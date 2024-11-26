@@ -18,6 +18,8 @@ namespace LucaToysLite.Controls
             InitializeComponent();
         }
 
+        public System.Int32 MaximumNumber { get; set; } = 1000;
+
         private int radius = 20;
         [DefaultValue(20)]
         public int Radius
