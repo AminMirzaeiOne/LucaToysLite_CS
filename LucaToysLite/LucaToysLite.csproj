@@ -1211,6 +1211,7 @@
     <None Include="Resources\icons8-backup-28.png" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Pages\BarcodeCreator\" />
     <Folder Include="Pages\Settings\DatabasePages\" />
   </ItemGroup>
   <ItemGroup>
