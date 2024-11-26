@@ -66,6 +66,7 @@
             this.roundedButton1.TabIndex = 1;
             this.roundedButton1.Text = "";
             this.roundedButton1.UseVisualStyleBackColor = false;
+            this.roundedButton1.Click += new System.EventHandler(this.roundedButton1_Click);
             // 
             // roundedButton2
             // 
@@ -84,6 +85,7 @@
             this.roundedButton2.TabIndex = 1;
             this.roundedButton2.Text = "";
             this.roundedButton2.UseVisualStyleBackColor = false;
+            this.roundedButton2.Click += new System.EventHandler(this.roundedButton2_Click);
             // 
             // NumberBox
             // 

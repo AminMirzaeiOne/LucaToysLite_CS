@@ -18,7 +18,9 @@ namespace LucaToysLite.Controls
             InitializeComponent();
         }
 
+
         public System.Int32 MaximumNumber { get; set; } = 1000;
+
 
         private int radius = 20;
         [DefaultValue(20)]
@@ -103,5 +105,24 @@ namespace LucaToysLite.Controls
             }
         }
 
+        private void roundedButton1_Click(object sender, EventArgs e)
+        {
+            if (int.Parse(this.textBox1.Text) < this.MaximumNumber)
+            {
+                int result = int.Parse(this.textBox1.Text) + 1;
+                this.textBox1.Text = result.ToString();
+            }
+        }
+
+        private void roundedButton2_Click(object sender, EventArgs e)
+        {
+            if (int.Parse(this.textBox1.Text) > 0)
+            {
+                int result = int.Parse(this.textBox1.Text) - 1;
+                this.textBox1.Text = result.ToString();
+            }
+
+
+        }
     }
 }
