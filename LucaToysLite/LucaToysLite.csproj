@@ -636,6 +636,12 @@
     <Compile Include="Pages\CustomerInfo\Unnecessary.Designer.cs">
       <DependentUpon>Unnecessary.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Export\UsersData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\Export\UsersData.Designer.cs">
+      <DependentUpon>UsersData.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Product\Dolls.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -1036,6 +1042,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\CustomerInfo\Unnecessary.resx">
       <DependentUpon>Unnecessary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Export\UsersData.resx">
+      <DependentUpon>UsersData.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\Product\Dolls.resx">
       <DependentUpon>Dolls.cs</DependentUpon>
