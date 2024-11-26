@@ -15,6 +15,11 @@ namespace Setup.Forms
         public SplashScreen()
         {
             InitializeComponent();
+            
+        }
+
+        private void SplashScreen_Load(object sender, EventArgs e)
+        {
             Setup.ClassLibrary.WindowAnimation animation = new ClassLibrary.WindowAnimation(this);
             animation.Start();
         }
