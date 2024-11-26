@@ -80,7 +80,7 @@
             this.roundedButton1.Name = "roundedButton1";
             this.roundedButton1.Size = new System.Drawing.Size(200, 125);
             this.roundedButton1.TabIndex = 19;
-            this.roundedButton1.Text = "Arriveds";
+            this.roundedButton1.Text = "Receipts";
             this.roundedButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.roundedButton1.UseVisualStyleBackColor = true;
             // 

@@ -22,5 +22,11 @@ namespace LucaToysLite.Menus
             LucaToysLite.Forms.SoldToys soldToys = new Forms.SoldToys();
             soldToys.Show();
         }
+
+        private void roundedButton6_Click(object sender, EventArgs e)
+        {
+            LucaToysLite.Forms.SoldDolls soldDolls = new Forms.SoldDolls();
+            soldDolls.Show();
+        }
     }
 }
