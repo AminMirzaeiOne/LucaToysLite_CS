@@ -348,6 +348,12 @@
     <Compile Include="Forms\SignUp.Designer.cs">
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\SoldDolls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SoldDolls.Designer.cs">
+      <DependentUpon>SoldDolls.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\SoldToys.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -880,6 +886,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SoldDolls.resx">
+      <DependentUpon>SoldDolls.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SoldToys.resx">
       <DependentUpon>SoldToys.cs</DependentUpon>
