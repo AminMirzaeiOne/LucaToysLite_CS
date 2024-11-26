@@ -851,6 +851,9 @@
     <EmbeddedResource Include="Forms\LoginProblem.resx">
       <DependentUpon>LoginProblem.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Performance.resx">
+      <DependentUpon>Performance.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Products.resx">
       <DependentUpon>Products.cs</DependentUpon>
     </EmbeddedResource>
