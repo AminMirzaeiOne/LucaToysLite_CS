@@ -59,6 +59,9 @@
     <Compile Include="Controls\LTContextMenu.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Controls\LTGradintPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Controls\LTMessageBox.cs" />
     <Compile Include="Controls\LucaToysLogo.cs">
       <SubType>UserControl</SubType>
