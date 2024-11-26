@@ -51,7 +51,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(81, 25);
+            this.label1.Location = new System.Drawing.Point(81, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(80, 25);
             this.label1.TabIndex = 1;
@@ -63,7 +63,7 @@
             this.roundedPanel4.BorderSize = ((byte)(3));
             this.roundedPanel4.Controls.Add(this.textBox1);
             this.roundedPanel4.EnableBorder = true;
-            this.roundedPanel4.Location = new System.Drawing.Point(22, 70);
+            this.roundedPanel4.Location = new System.Drawing.Point(22, 76);
             this.roundedPanel4.Name = "roundedPanel4";
             this.roundedPanel4.Size = new System.Drawing.Size(245, 45);
             this.roundedPanel4.TabIndex = 9;
@@ -87,7 +87,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(81, 145);
+            this.label2.Location = new System.Drawing.Point(81, 155);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 25);
             this.label2.TabIndex = 1;
@@ -99,7 +99,7 @@
             this.roundedPanel1.BorderSize = ((byte)(3));
             this.roundedPanel1.Controls.Add(this.textBox2);
             this.roundedPanel1.EnableBorder = true;
-            this.roundedPanel1.Location = new System.Drawing.Point(22, 190);
+            this.roundedPanel1.Location = new System.Drawing.Point(22, 201);
             this.roundedPanel1.Name = "roundedPanel1";
             this.roundedPanel1.Size = new System.Drawing.Size(175, 45);
             this.roundedPanel1.TabIndex = 9;
@@ -131,7 +131,7 @@
             this.roundedButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedButton3.ForeColor = System.Drawing.Color.White;
-            this.roundedButton3.Location = new System.Drawing.Point(206, 190);
+            this.roundedButton3.Location = new System.Drawing.Point(207, 201);
             this.roundedButton3.Name = "roundedButton3";
             this.roundedButton3.Size = new System.Drawing.Size(82, 45);
             this.roundedButton3.TabIndex = 10;
@@ -142,7 +142,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(81, 264);
+            this.label3.Location = new System.Drawing.Point(81, 280);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(80, 25);
             this.label3.TabIndex = 1;
@@ -167,7 +167,7 @@
             this.ltComboBox1.ItemsFont = new System.Drawing.Font("Segoe UI Semibold", 9F);
             this.ltComboBox1.ItemsForeColor = System.Drawing.Color.White;
             this.ltComboBox1.ItemsHeight = ((byte)(40));
-            this.ltComboBox1.Location = new System.Drawing.Point(22, 304);
+            this.ltComboBox1.Location = new System.Drawing.Point(22, 320);
             this.ltComboBox1.Name = "ltComboBox1";
             this.ltComboBox1.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.ltComboBox1.Size = new System.Drawing.Size(245, 45);
@@ -181,7 +181,7 @@
             // 
             this.pictureBox2.BackgroundImage = global::LucaToysLite.Properties.Resources.icons8_rent_42;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(22, 136);
+            this.pictureBox2.Location = new System.Drawing.Point(22, 147);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(42, 42);
             this.pictureBox2.TabIndex = 0;
@@ -191,7 +191,7 @@
             // 
             this.pictureBox3.BackgroundImage = global::LucaToysLite.Properties.Resources.icons8_text_42;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox3.Location = new System.Drawing.Point(22, 255);
+            this.pictureBox3.Location = new System.Drawing.Point(22, 271);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(42, 42);
             this.pictureBox3.TabIndex = 0;
@@ -201,7 +201,7 @@
             // 
             this.pictureBox1.BackgroundImage = global::LucaToysLite.Properties.Resources.icons8_content_42;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(22, 16);
+            this.pictureBox1.Location = new System.Drawing.Point(22, 22);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(42, 42);
             this.pictureBox1.TabIndex = 0;
@@ -224,7 +224,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Based";
-            this.Size = new System.Drawing.Size(303, 335);
+            this.Size = new System.Drawing.Size(303, 399);
             this.roundedPanel4.ResumeLayout(false);
             this.roundedPanel4.PerformLayout();
             this.roundedPanel1.ResumeLayout(false);

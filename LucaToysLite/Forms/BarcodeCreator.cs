@@ -35,5 +35,10 @@ namespace LucaToysLite.Forms
                 this.animator1.Show(this.barcodeCreator);
             }
         }
+
+        private void roundedPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

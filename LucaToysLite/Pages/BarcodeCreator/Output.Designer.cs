@@ -36,7 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.Name = "Output";
-            this.Size = new System.Drawing.Size(303, 335);
+            this.Size = new System.Drawing.Size(303, 399);
             this.ResumeLayout(false);
 
         }
