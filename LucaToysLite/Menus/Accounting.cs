@@ -28,5 +28,11 @@ namespace LucaToysLite.Menus
             LucaToysLite.Forms.Accounts accounts = new Forms.Accounts();
             accounts.Show();
         }
+
+        private void roundedButton1_Click(object sender, EventArgs e)
+        {
+            LucaToysLite.Forms.AddAccount addAccount = new Forms.AddAccount();
+            addAccount.Show();
+        }
     }
 }
