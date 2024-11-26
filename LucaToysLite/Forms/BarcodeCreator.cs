@@ -16,11 +16,14 @@ namespace LucaToysLite.Forms
         {
             InitializeComponent();
             this.panel1.Controls.Add(this.barcodeCreator);
+            this.panel1.Controls.Add(this.output);
 
-            this.barcodeCreator.Visible = false;
+            this.barcodeCreator.Visible = true;
+            this.output.Visible = false;
         }
 
         private LucaToysLite.Pages.BarcodeCreator.Based barcodeCreator = new Pages.BarcodeCreator.Based();
+        private LucaToysLite.Pages.BarcodeCreator.Output output = new Pages.BarcodeCreator.Output();
 
 
         private void roundedButton7_Click(object sender, EventArgs e)
@@ -32,6 +35,7 @@ namespace LucaToysLite.Forms
         {
             if (this.roundedRadioButton33.Checked) 
             {
+                this.output.Visible = false;
                 this.animator1.Show(this.barcodeCreator);
             }
         }
@@ -39,6 +43,15 @@ namespace LucaToysLite.Forms
         private void roundedPanel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void roundedRadioButton34_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.roundedRadioButton34.Checked)
+            {
+                this.barcodeCreator.Visible = false;
+                this.animator1.Show(this.output);
+            }
         }
     }
 }

@@ -1825,5 +1825,8 @@
   <ItemGroup>
     <None Include="Resources\icons8-authy-42.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-fit-vertical-42.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1313,6 +1313,16 @@ namespace LucaToysLite.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_fit_vertical_42 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-fit-vertical-42", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_font_28 {
             get {
                 object obj = ResourceManager.GetObject("icons8-font-28", resourceCulture);
