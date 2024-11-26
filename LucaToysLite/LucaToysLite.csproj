@@ -168,6 +168,12 @@
     <Compile Include="Controls\MultiPage.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Controls\NumberBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NumberBox.Designer.cs">
+      <DependentUpon>NumberBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\RoundedButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -778,6 +784,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\LucaToysLogo.resx">
       <DependentUpon>LucaToysLogo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NumberBox.resx">
+      <DependentUpon>NumberBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\VerticalMenu.resx">
       <DependentUpon>VerticalMenu.cs</DependentUpon>
@@ -1809,6 +1818,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-text-42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-resolution-42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-authy-42.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
