@@ -504,6 +504,12 @@
     <Compile Include="Messages\Hybrid.Designer.cs">
       <DependentUpon>Hybrid.cs</DependentUpon>
     </Compile>
+    <Compile Include="Messages\Success.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Messages\Success.Designer.cs">
+      <DependentUpon>Success.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pages\About\Developer.cs">
       <SubType>UserControl</SubType>
     </Compile>
