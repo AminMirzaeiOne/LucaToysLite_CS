@@ -1693,6 +1693,36 @@ namespace LucaToysLite.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_menu_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-menu-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_menu_38 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-menu-38", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_menu_42 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-menu-42", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_money_68 {
             get {
                 object obj = ResourceManager.GetObject("icons8-money-68", resourceCulture);
@@ -2216,6 +2246,16 @@ namespace LucaToysLite.Properties {
         internal static System.Drawing.Bitmap icons8_rocking_horse_74 {
             get {
                 object obj = ResourceManager.GetObject("icons8-rocking-horse-74", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_search_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-search-30", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

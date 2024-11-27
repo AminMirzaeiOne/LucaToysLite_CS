@@ -37,6 +37,9 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Silver;
@@ -48,6 +51,9 @@
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe MDL2 Assets", 18F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.Silver;
@@ -66,7 +72,7 @@
             this.homeBottomMenu1.EnableBorder = true;
             this.homeBottomMenu1.Location = new System.Drawing.Point(250, 607);
             this.homeBottomMenu1.Name = "homeBottomMenu1";
-            this.homeBottomMenu1.Size = new System.Drawing.Size(590, 60);
+            this.homeBottomMenu1.Size = new System.Drawing.Size(590, 70);
             this.homeBottomMenu1.TabIndex = 3;
             // 
             // homeMenu1

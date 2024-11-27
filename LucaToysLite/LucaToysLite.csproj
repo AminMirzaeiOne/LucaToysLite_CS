@@ -486,6 +486,12 @@
     <Compile Include="Menus\Widgets.Designer.cs">
       <DependentUpon>Widgets.cs</DependentUpon>
     </Compile>
+    <Compile Include="Menus\WorkspaceManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Menus\WorkspaceManager.Designer.cs">
+      <DependentUpon>WorkspaceManager.cs</DependentUpon>
+    </Compile>
     <Compile Include="Messages\Hybrid.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1977,6 +1983,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-flipboard-68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-menu-42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-menu-38.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-menu-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-30.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
