@@ -24,6 +24,8 @@ namespace LucaToysLite.Controls
             set { this.timer1.Interval = value; }
         }
 
+        public System.Byte Speed { get; set; } = 5;
+
         public event EventHandler EndProcess;
 
         private int radius = 20;
@@ -129,7 +131,7 @@ namespace LucaToysLite.Controls
         {
             if (this.roundedLabel1.Size.Width < this.Size.Width)
             {
-                this.roundedLabel1.Width += 5;
+                this.roundedLabel1.Width += this.Speed;
             }
             else
             {
