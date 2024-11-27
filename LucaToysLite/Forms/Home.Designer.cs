@@ -30,6 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.workspaceManager1 = new LucaToysLite.Menus.WorkspaceManager();
             this.homeBottomMenu1 = new LucaToysLite.Menus.HomeBottomMenu();
             this.homeMenu1 = new LucaToysLite.Menus.HomeMenu();
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
@@ -63,6 +64,18 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "";
             // 
+            // workspaceManager1
+            // 
+            this.workspaceManager1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.workspaceManager1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.workspaceManager1.BorderColor = System.Drawing.Color.Crimson;
+            this.workspaceManager1.BorderSize = ((byte)(3));
+            this.workspaceManager1.EnableBorder = true;
+            this.workspaceManager1.Location = new System.Drawing.Point(18, 607);
+            this.workspaceManager1.Name = "workspaceManager1";
+            this.workspaceManager1.Size = new System.Drawing.Size(309, 70);
+            this.workspaceManager1.TabIndex = 5;
+            // 
             // homeBottomMenu1
             // 
             this.homeBottomMenu1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
@@ -70,7 +83,7 @@
             this.homeBottomMenu1.BorderColor = System.Drawing.Color.Crimson;
             this.homeBottomMenu1.BorderSize = ((byte)(3));
             this.homeBottomMenu1.EnableBorder = true;
-            this.homeBottomMenu1.Location = new System.Drawing.Point(250, 607);
+            this.homeBottomMenu1.Location = new System.Drawing.Point(343, 607);
             this.homeBottomMenu1.Name = "homeBottomMenu1";
             this.homeBottomMenu1.Size = new System.Drawing.Size(590, 70);
             this.homeBottomMenu1.TabIndex = 3;
@@ -117,6 +130,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(1133, 701);
+            this.Controls.Add(this.workspaceManager1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.homeBottomMenu1);
@@ -139,5 +153,6 @@
         private Menus.HomeBottomMenu homeBottomMenu1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private Menus.WorkspaceManager workspaceManager1;
     }
 }
