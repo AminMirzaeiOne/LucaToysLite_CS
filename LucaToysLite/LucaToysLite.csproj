@@ -794,6 +794,12 @@
     <Compile Include="Widgets\Clock.Designer.cs">
       <DependentUpon>Clock.cs</DependentUpon>
     </Compile>
+    <Compile Include="Widgets\MiniWeb.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Widgets\MiniWeb.Designer.cs">
+      <DependentUpon>MiniWeb.cs</DependentUpon>
+    </Compile>
     <Compile Include="Widgets\Weather.cs">
       <SubType>UserControl</SubType>
     </Compile>
