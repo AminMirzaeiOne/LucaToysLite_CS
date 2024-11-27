@@ -800,6 +800,12 @@
     <Compile Include="Widgets\MiniWeb.Designer.cs">
       <DependentUpon>MiniWeb.cs</DependentUpon>
     </Compile>
+    <Compile Include="Widgets\ToDoList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Widgets\ToDoList.Designer.cs">
+      <DependentUpon>ToDoList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Widgets\Weather.cs">
       <SubType>UserControl</SubType>
     </Compile>
