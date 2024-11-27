@@ -34,6 +34,7 @@
             this.homeBottomMenu1 = new LucaToysLite.Menus.HomeBottomMenu();
             this.homeMenu1 = new LucaToysLite.Menus.HomeMenu();
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
+            this.quickView1 = new LucaToysLite.Menus.QuickView();
             this.SuspendLayout();
             // 
             // label1
@@ -124,12 +125,22 @@
             this.windowToolbar1.TitleText = "Home Window";
             this.windowToolbar1.WindowBorderSize = ((byte)(3));
             // 
+            // quickView1
+            // 
+            this.quickView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.quickView1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quickView1.Location = new System.Drawing.Point(953, 607);
+            this.quickView1.Name = "quickView1";
+            this.quickView1.Size = new System.Drawing.Size(309, 70);
+            this.quickView1.TabIndex = 6;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(1133, 701);
+            this.Controls.Add(this.quickView1);
             this.Controls.Add(this.workspaceManager1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -154,5 +165,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private Menus.WorkspaceManager workspaceManager1;
+        private Menus.QuickView quickView1;
     }
 }

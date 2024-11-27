@@ -2020,5 +2020,8 @@
   <ItemGroup>
     <None Include="Resources\Group 23.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-notification-30.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
