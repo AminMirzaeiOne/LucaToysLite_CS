@@ -28,14 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.roundedLabel2 = new LucaToysLite.Controls.RoundedLabel();
             this.roundedLabel1 = new LucaToysLite.Controls.RoundedLabel();
+            this.roundedButton7 = new LucaToysLite.Controls.RoundedButton();
+            this.roundedButton6 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton5 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton4 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton2 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton3 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton1 = new LucaToysLite.Controls.RoundedButton();
-            this.roundedLabel2 = new LucaToysLite.Controls.RoundedLabel();
             this.SuspendLayout();
+            // 
+            // roundedLabel2
+            // 
+            this.roundedLabel2.BackColor = System.Drawing.Color.Crimson;
+            this.roundedLabel2.BorderRadius = ((byte)(4));
+            this.roundedLabel2.Location = new System.Drawing.Point(1224, 25);
+            this.roundedLabel2.Name = "roundedLabel2";
+            this.roundedLabel2.Size = new System.Drawing.Size(4, 90);
+            this.roundedLabel2.TabIndex = 5;
             // 
             // roundedLabel1
             // 
@@ -45,6 +56,48 @@
             this.roundedLabel1.Name = "roundedLabel1";
             this.roundedLabel1.Size = new System.Drawing.Size(4, 90);
             this.roundedLabel1.TabIndex = 5;
+            // 
+            // roundedButton7
+            // 
+            this.roundedButton7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.roundedButton7.BorderRadius = ((byte)(20));
+            this.roundedButton7.BorderSize = ((byte)(3));
+            this.roundedButton7.EnableBorder = true;
+            this.roundedButton7.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedButton7.FlatAppearance.BorderSize = 0;
+            this.roundedButton7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Crimson;
+            this.roundedButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton7.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedButton7.ForeColor = System.Drawing.Color.White;
+            this.roundedButton7.Image = global::LucaToysLite.Properties.Resources.icons8_flipboard_68;
+            this.roundedButton7.Location = new System.Drawing.Point(1498, 6);
+            this.roundedButton7.Name = "roundedButton7";
+            this.roundedButton7.Size = new System.Drawing.Size(200, 125);
+            this.roundedButton7.TabIndex = 4;
+            this.roundedButton7.Text = "White Board";
+            this.roundedButton7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.roundedButton7.UseVisualStyleBackColor = false;
+            // 
+            // roundedButton6
+            // 
+            this.roundedButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.roundedButton6.BorderRadius = ((byte)(20));
+            this.roundedButton6.BorderSize = ((byte)(3));
+            this.roundedButton6.EnableBorder = true;
+            this.roundedButton6.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedButton6.FlatAppearance.BorderSize = 0;
+            this.roundedButton6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Crimson;
+            this.roundedButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton6.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedButton6.ForeColor = System.Drawing.Color.White;
+            this.roundedButton6.Image = global::LucaToysLite.Properties.Resources.icons8_pc_68;
+            this.roundedButton6.Location = new System.Drawing.Point(1270, 6);
+            this.roundedButton6.Name = "roundedButton6";
+            this.roundedButton6.Size = new System.Drawing.Size(200, 125);
+            this.roundedButton6.TabIndex = 4;
+            this.roundedButton6.Text = "PC Info";
+            this.roundedButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.roundedButton6.UseVisualStyleBackColor = false;
             // 
             // roundedButton5
             // 
@@ -151,15 +204,6 @@
             this.roundedButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.roundedButton1.UseVisualStyleBackColor = false;
             // 
-            // roundedLabel2
-            // 
-            this.roundedLabel2.BackColor = System.Drawing.Color.Crimson;
-            this.roundedLabel2.BorderRadius = ((byte)(4));
-            this.roundedLabel2.Location = new System.Drawing.Point(1224, 25);
-            this.roundedLabel2.Name = "roundedLabel2";
-            this.roundedLabel2.Size = new System.Drawing.Size(4, 90);
-            this.roundedLabel2.TabIndex = 5;
-            // 
             // Widgets
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
@@ -167,6 +211,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.Controls.Add(this.roundedLabel2);
             this.Controls.Add(this.roundedLabel1);
+            this.Controls.Add(this.roundedButton7);
+            this.Controls.Add(this.roundedButton6);
             this.Controls.Add(this.roundedButton5);
             this.Controls.Add(this.roundedButton4);
             this.Controls.Add(this.roundedButton2);
@@ -188,5 +234,7 @@
         private Controls.RoundedButton roundedButton4;
         private Controls.RoundedButton roundedButton5;
         private Controls.RoundedLabel roundedLabel2;
+        private Controls.RoundedButton roundedButton6;
+        private Controls.RoundedButton roundedButton7;
     }
 }

@@ -1963,5 +1963,11 @@
   <ItemGroup>
     <None Include="Resources\icons8-widget-34.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pc-68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-flipboard-68.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
