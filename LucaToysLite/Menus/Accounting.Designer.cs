@@ -39,6 +39,7 @@
             // 
             // roundedButton4
             // 
+            this.roundedButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.roundedButton4.BorderRadius = ((byte)(20));
             this.roundedButton4.BorderSize = ((byte)(3));
             this.roundedButton4.EnableBorder = true;
@@ -55,11 +56,12 @@
             this.roundedButton4.TabIndex = 16;
             this.roundedButton4.Text = "Barcode Creator";
             this.roundedButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.roundedButton4.UseVisualStyleBackColor = true;
+            this.roundedButton4.UseVisualStyleBackColor = false;
             this.roundedButton4.Click += new System.EventHandler(this.roundedButton4_Click);
             // 
             // roundedButton3
             // 
+            this.roundedButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.roundedButton3.BorderRadius = ((byte)(20));
             this.roundedButton3.BorderSize = ((byte)(3));
             this.roundedButton3.EnableBorder = true;
@@ -76,11 +78,12 @@
             this.roundedButton3.TabIndex = 16;
             this.roundedButton3.Text = "Purchase Mode";
             this.roundedButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.roundedButton3.UseVisualStyleBackColor = true;
+            this.roundedButton3.UseVisualStyleBackColor = false;
             this.roundedButton3.Click += new System.EventHandler(this.roundedButton3_Click);
             // 
             // roundedButton2
             // 
+            this.roundedButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.roundedButton2.BorderRadius = ((byte)(20));
             this.roundedButton2.BorderSize = ((byte)(3));
             this.roundedButton2.EnableBorder = true;
@@ -97,11 +100,12 @@
             this.roundedButton2.TabIndex = 16;
             this.roundedButton2.Text = "Delete Account";
             this.roundedButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.roundedButton2.UseVisualStyleBackColor = true;
+            this.roundedButton2.UseVisualStyleBackColor = false;
             this.roundedButton2.Click += new System.EventHandler(this.roundedButton2_Click);
             // 
             // roundedButton1
             // 
+            this.roundedButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.roundedButton1.BorderRadius = ((byte)(20));
             this.roundedButton1.BorderSize = ((byte)(3));
             this.roundedButton1.EnableBorder = true;
@@ -118,11 +122,12 @@
             this.roundedButton1.TabIndex = 16;
             this.roundedButton1.Text = "Add Account";
             this.roundedButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.roundedButton1.UseVisualStyleBackColor = true;
+            this.roundedButton1.UseVisualStyleBackColor = false;
             this.roundedButton1.Click += new System.EventHandler(this.roundedButton1_Click);
             // 
             // roundedButton7
             // 
+            this.roundedButton7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.roundedButton7.BorderRadius = ((byte)(20));
             this.roundedButton7.BorderSize = ((byte)(3));
             this.roundedButton7.EnableBorder = true;
@@ -139,7 +144,7 @@
             this.roundedButton7.TabIndex = 16;
             this.roundedButton7.Text = "Manage Accounts";
             this.roundedButton7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.roundedButton7.UseVisualStyleBackColor = true;
+            this.roundedButton7.UseVisualStyleBackColor = false;
             this.roundedButton7.Click += new System.EventHandler(this.roundedButton7_Click);
             // 
             // roundedLabel2

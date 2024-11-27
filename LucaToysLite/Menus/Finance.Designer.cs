@@ -59,6 +59,7 @@
             // 
             // roundedButton6
             // 
+            this.roundedButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.roundedButton6.BorderRadius = ((byte)(20));
             this.roundedButton6.BorderSize = ((byte)(3));
             this.roundedButton6.EnableBorder = true;
@@ -75,11 +76,12 @@
             this.roundedButton6.TabIndex = 16;
             this.roundedButton6.Text = "Sold Dolls";
             this.roundedButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.roundedButton6.UseVisualStyleBackColor = true;
+            this.roundedButton6.UseVisualStyleBackColor = false;
             this.roundedButton6.Click += new System.EventHandler(this.roundedButton6_Click);
             // 
             // roundedButton5
             // 
+            this.roundedButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.roundedButton5.BorderRadius = ((byte)(20));
             this.roundedButton5.BorderSize = ((byte)(3));
             this.roundedButton5.EnableBorder = true;
@@ -96,11 +98,12 @@
             this.roundedButton5.TabIndex = 17;
             this.roundedButton5.Text = "Sold Toys";
             this.roundedButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.roundedButton5.UseVisualStyleBackColor = true;
+            this.roundedButton5.UseVisualStyleBackColor = false;
             this.roundedButton5.Click += new System.EventHandler(this.roundedButton5_Click);
             // 
             // roundedButton4
             // 
+            this.roundedButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.roundedButton4.BorderRadius = ((byte)(20));
             this.roundedButton4.BorderSize = ((byte)(3));
             this.roundedButton4.EnableBorder = true;
@@ -117,10 +120,11 @@
             this.roundedButton4.TabIndex = 18;
             this.roundedButton4.Text = "Costs";
             this.roundedButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.roundedButton4.UseVisualStyleBackColor = true;
+            this.roundedButton4.UseVisualStyleBackColor = false;
             // 
             // roundedButton3
             // 
+            this.roundedButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.roundedButton3.BorderRadius = ((byte)(20));
             this.roundedButton3.BorderSize = ((byte)(3));
             this.roundedButton3.EnableBorder = true;
@@ -137,10 +141,11 @@
             this.roundedButton3.TabIndex = 19;
             this.roundedButton3.Text = "Revenues";
             this.roundedButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.roundedButton3.UseVisualStyleBackColor = true;
+            this.roundedButton3.UseVisualStyleBackColor = false;
             // 
             // roundedButton8
             // 
+            this.roundedButton8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.roundedButton8.BorderRadius = ((byte)(20));
             this.roundedButton8.BorderSize = ((byte)(3));
             this.roundedButton8.EnableBorder = true;
@@ -157,10 +162,11 @@
             this.roundedButton8.TabIndex = 20;
             this.roundedButton8.Text = "Transactions";
             this.roundedButton8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.roundedButton8.UseVisualStyleBackColor = true;
+            this.roundedButton8.UseVisualStyleBackColor = false;
             // 
             // roundedButton2
             // 
+            this.roundedButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.roundedButton2.BorderRadius = ((byte)(20));
             this.roundedButton2.BorderSize = ((byte)(3));
             this.roundedButton2.EnableBorder = true;
@@ -177,10 +183,11 @@
             this.roundedButton2.TabIndex = 21;
             this.roundedButton2.Text = "Cash Operation";
             this.roundedButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.roundedButton2.UseVisualStyleBackColor = true;
+            this.roundedButton2.UseVisualStyleBackColor = false;
             // 
             // roundedButton1
             // 
+            this.roundedButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.roundedButton1.BorderRadius = ((byte)(20));
             this.roundedButton1.BorderSize = ((byte)(3));
             this.roundedButton1.EnableBorder = true;
@@ -197,7 +204,7 @@
             this.roundedButton1.TabIndex = 22;
             this.roundedButton1.Text = "Performance";
             this.roundedButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.roundedButton1.UseVisualStyleBackColor = true;
+            this.roundedButton1.UseVisualStyleBackColor = false;
             // 
             // Finance
             // 

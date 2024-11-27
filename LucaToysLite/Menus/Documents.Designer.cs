@@ -46,6 +46,7 @@
             // 
             // roundedButton2
             // 
+            this.roundedButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.roundedButton2.BorderRadius = ((byte)(20));
             this.roundedButton2.BorderSize = ((byte)(3));
             this.roundedButton2.EnableBorder = true;
@@ -62,10 +63,11 @@
             this.roundedButton2.TabIndex = 19;
             this.roundedButton2.Text = "Payments";
             this.roundedButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.roundedButton2.UseVisualStyleBackColor = true;
+            this.roundedButton2.UseVisualStyleBackColor = false;
             // 
             // roundedButton1
             // 
+            this.roundedButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.roundedButton1.BorderRadius = ((byte)(20));
             this.roundedButton1.BorderSize = ((byte)(3));
             this.roundedButton1.EnableBorder = true;
@@ -82,10 +84,11 @@
             this.roundedButton1.TabIndex = 19;
             this.roundedButton1.Text = "Receipts";
             this.roundedButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.roundedButton1.UseVisualStyleBackColor = true;
+            this.roundedButton1.UseVisualStyleBackColor = false;
             // 
             // roundedButton7
             // 
+            this.roundedButton7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.roundedButton7.BorderRadius = ((byte)(20));
             this.roundedButton7.BorderSize = ((byte)(3));
             this.roundedButton7.EnableBorder = true;
@@ -102,7 +105,7 @@
             this.roundedButton7.TabIndex = 19;
             this.roundedButton7.Text = "Arriveds";
             this.roundedButton7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.roundedButton7.UseVisualStyleBackColor = true;
+            this.roundedButton7.UseVisualStyleBackColor = false;
             // 
             // roundedLabel2
             // 

@@ -30,11 +30,11 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.quickView1 = new LucaToysLite.Menus.QuickView();
             this.workspaceManager1 = new LucaToysLite.Menus.WorkspaceManager();
             this.homeBottomMenu1 = new LucaToysLite.Menus.HomeBottomMenu();
             this.homeMenu1 = new LucaToysLite.Menus.HomeMenu();
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
-            this.quickView1 = new LucaToysLite.Menus.QuickView();
             this.SuspendLayout();
             // 
             // label1
@@ -65,6 +65,19 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "";
             // 
+            // quickView1
+            // 
+            this.quickView1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.quickView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.quickView1.BorderColor = System.Drawing.Color.Crimson;
+            this.quickView1.BorderSize = ((byte)(3));
+            this.quickView1.EnableBorder = true;
+            this.quickView1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quickView1.Location = new System.Drawing.Point(1123, 657);
+            this.quickView1.Name = "quickView1";
+            this.quickView1.Size = new System.Drawing.Size(309, 70);
+            this.quickView1.TabIndex = 6;
+            // 
             // workspaceManager1
             // 
             this.workspaceManager1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -72,7 +85,7 @@
             this.workspaceManager1.BorderColor = System.Drawing.Color.Crimson;
             this.workspaceManager1.BorderSize = ((byte)(3));
             this.workspaceManager1.EnableBorder = true;
-            this.workspaceManager1.Location = new System.Drawing.Point(18, 607);
+            this.workspaceManager1.Location = new System.Drawing.Point(18, 657);
             this.workspaceManager1.Name = "workspaceManager1";
             this.workspaceManager1.Size = new System.Drawing.Size(309, 70);
             this.workspaceManager1.TabIndex = 5;
@@ -84,7 +97,7 @@
             this.homeBottomMenu1.BorderColor = System.Drawing.Color.Crimson;
             this.homeBottomMenu1.BorderSize = ((byte)(3));
             this.homeBottomMenu1.EnableBorder = true;
-            this.homeBottomMenu1.Location = new System.Drawing.Point(343, 607);
+            this.homeBottomMenu1.Location = new System.Drawing.Point(438, 657);
             this.homeBottomMenu1.Name = "homeBottomMenu1";
             this.homeBottomMenu1.Size = new System.Drawing.Size(590, 70);
             this.homeBottomMenu1.TabIndex = 3;
@@ -99,7 +112,7 @@
             this.homeMenu1.Location = new System.Drawing.Point(12, 52);
             this.homeMenu1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.homeMenu1.Name = "homeMenu1";
-            this.homeMenu1.Size = new System.Drawing.Size(1109, 230);
+            this.homeMenu1.Size = new System.Drawing.Size(1427, 230);
             this.homeMenu1.TabIndex = 1;
             // 
             // windowToolbar1
@@ -119,27 +132,18 @@
             this.windowToolbar1.MinimizeButton = true;
             this.windowToolbar1.MoveOption = true;
             this.windowToolbar1.Name = "windowToolbar1";
-            this.windowToolbar1.Size = new System.Drawing.Size(1133, 45);
+            this.windowToolbar1.Size = new System.Drawing.Size(1451, 45);
             this.windowToolbar1.StartupSound = LucaToysLite.Controls.WindowToolbar.StartupSounds.None;
             this.windowToolbar1.TabIndex = 0;
             this.windowToolbar1.TitleText = "Home Window";
             this.windowToolbar1.WindowBorderSize = ((byte)(3));
-            // 
-            // quickView1
-            // 
-            this.quickView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.quickView1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.quickView1.Location = new System.Drawing.Point(953, 607);
-            this.quickView1.Name = "quickView1";
-            this.quickView1.Size = new System.Drawing.Size(309, 70);
-            this.quickView1.TabIndex = 6;
             // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.ClientSize = new System.Drawing.Size(1133, 701);
+            this.ClientSize = new System.Drawing.Size(1451, 751);
             this.Controls.Add(this.quickView1);
             this.Controls.Add(this.workspaceManager1);
             this.Controls.Add(this.label2);

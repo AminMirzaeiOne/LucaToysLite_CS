@@ -60,6 +60,7 @@
             // 
             // roundedButton7
             // 
+            this.roundedButton7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.roundedButton7.BorderRadius = ((byte)(20));
             this.roundedButton7.BorderSize = ((byte)(3));
             this.roundedButton7.EnableBorder = true;
@@ -76,11 +77,12 @@
             this.roundedButton7.TabIndex = 3;
             this.roundedButton7.Text = "Update Customer";
             this.roundedButton7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.roundedButton7.UseVisualStyleBackColor = true;
+            this.roundedButton7.UseVisualStyleBackColor = false;
             this.roundedButton7.Click += new System.EventHandler(this.roundedButton7_Click);
             // 
             // roundedButton6
             // 
+            this.roundedButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.roundedButton6.BorderRadius = ((byte)(20));
             this.roundedButton6.BorderSize = ((byte)(3));
             this.roundedButton6.EnableBorder = true;
@@ -97,11 +99,12 @@
             this.roundedButton6.TabIndex = 3;
             this.roundedButton6.Text = "Delete Customer";
             this.roundedButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.roundedButton6.UseVisualStyleBackColor = true;
+            this.roundedButton6.UseVisualStyleBackColor = false;
             this.roundedButton6.Click += new System.EventHandler(this.roundedButton6_Click);
             // 
             // roundedButton5
             // 
+            this.roundedButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.roundedButton5.BorderRadius = ((byte)(20));
             this.roundedButton5.BorderSize = ((byte)(3));
             this.roundedButton5.EnableBorder = true;
@@ -118,11 +121,12 @@
             this.roundedButton5.TabIndex = 3;
             this.roundedButton5.Text = "Add Customer";
             this.roundedButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.roundedButton5.UseVisualStyleBackColor = true;
+            this.roundedButton5.UseVisualStyleBackColor = false;
             this.roundedButton5.Click += new System.EventHandler(this.roundedButton5_Click);
             // 
             // roundedButton4
             // 
+            this.roundedButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.roundedButton4.BorderRadius = ((byte)(20));
             this.roundedButton4.BorderSize = ((byte)(3));
             this.roundedButton4.EnableBorder = true;
@@ -139,11 +143,12 @@
             this.roundedButton4.TabIndex = 3;
             this.roundedButton4.Text = "Update Seller";
             this.roundedButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.roundedButton4.UseVisualStyleBackColor = true;
+            this.roundedButton4.UseVisualStyleBackColor = false;
             this.roundedButton4.Click += new System.EventHandler(this.roundedButton4_Click);
             // 
             // roundedButton3
             // 
+            this.roundedButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.roundedButton3.BorderRadius = ((byte)(20));
             this.roundedButton3.BorderSize = ((byte)(3));
             this.roundedButton3.EnableBorder = true;
@@ -160,11 +165,12 @@
             this.roundedButton3.TabIndex = 3;
             this.roundedButton3.Text = "Delete Seller";
             this.roundedButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.roundedButton3.UseVisualStyleBackColor = true;
+            this.roundedButton3.UseVisualStyleBackColor = false;
             this.roundedButton3.Click += new System.EventHandler(this.roundedButton3_Click);
             // 
             // roundedButton8
             // 
+            this.roundedButton8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.roundedButton8.BorderRadius = ((byte)(20));
             this.roundedButton8.BorderSize = ((byte)(3));
             this.roundedButton8.EnableBorder = true;
@@ -181,11 +187,12 @@
             this.roundedButton8.TabIndex = 3;
             this.roundedButton8.Text = "Search User";
             this.roundedButton8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.roundedButton8.UseVisualStyleBackColor = true;
+            this.roundedButton8.UseVisualStyleBackColor = false;
             this.roundedButton8.Click += new System.EventHandler(this.roundedButton8_Click);
             // 
             // roundedButton2
             // 
+            this.roundedButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.roundedButton2.BorderRadius = ((byte)(20));
             this.roundedButton2.BorderSize = ((byte)(3));
             this.roundedButton2.EnableBorder = true;
@@ -202,11 +209,12 @@
             this.roundedButton2.TabIndex = 3;
             this.roundedButton2.Text = "Add Seller";
             this.roundedButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.roundedButton2.UseVisualStyleBackColor = true;
+            this.roundedButton2.UseVisualStyleBackColor = false;
             this.roundedButton2.Click += new System.EventHandler(this.roundedButton2_Click);
             // 
             // roundedButton1
             // 
+            this.roundedButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.roundedButton1.BorderRadius = ((byte)(20));
             this.roundedButton1.BorderSize = ((byte)(3));
             this.roundedButton1.EnableBorder = true;
@@ -223,7 +231,7 @@
             this.roundedButton1.TabIndex = 3;
             this.roundedButton1.Text = "Users Manage";
             this.roundedButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.roundedButton1.UseVisualStyleBackColor = true;
+            this.roundedButton1.UseVisualStyleBackColor = false;
             this.roundedButton1.Click += new System.EventHandler(this.roundedButton1_Click);
             // 
             // Users

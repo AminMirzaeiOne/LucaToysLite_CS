@@ -69,6 +69,7 @@
             // 
             // roundedButton6
             // 
+            this.roundedButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.roundedButton6.BorderRadius = ((byte)(20));
             this.roundedButton6.BorderSize = ((byte)(3));
             this.roundedButton6.EnableBorder = true;
@@ -85,11 +86,12 @@
             this.roundedButton6.TabIndex = 20;
             this.roundedButton6.Text = "Phone Book";
             this.roundedButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.roundedButton6.UseVisualStyleBackColor = true;
+            this.roundedButton6.UseVisualStyleBackColor = false;
             this.roundedButton6.Click += new System.EventHandler(this.roundedButton6_Click);
             // 
             // roundedButton4
             // 
+            this.roundedButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.roundedButton4.BorderRadius = ((byte)(20));
             this.roundedButton4.BorderSize = ((byte)(3));
             this.roundedButton4.EnableBorder = true;
@@ -106,10 +108,11 @@
             this.roundedButton4.TabIndex = 20;
             this.roundedButton4.Text = "Web Browser";
             this.roundedButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.roundedButton4.UseVisualStyleBackColor = true;
+            this.roundedButton4.UseVisualStyleBackColor = false;
             // 
             // roundedButton3
             // 
+            this.roundedButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.roundedButton3.BorderRadius = ((byte)(20));
             this.roundedButton3.BorderSize = ((byte)(3));
             this.roundedButton3.EnableBorder = true;
@@ -126,10 +129,11 @@
             this.roundedButton3.TabIndex = 20;
             this.roundedButton3.Text = "Translator";
             this.roundedButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.roundedButton3.UseVisualStyleBackColor = true;
+            this.roundedButton3.UseVisualStyleBackColor = false;
             // 
             // roundedButton2
             // 
+            this.roundedButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.roundedButton2.BorderRadius = ((byte)(20));
             this.roundedButton2.BorderSize = ((byte)(3));
             this.roundedButton2.EnableBorder = true;
@@ -146,10 +150,11 @@
             this.roundedButton2.TabIndex = 20;
             this.roundedButton2.Text = "Converter";
             this.roundedButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.roundedButton2.UseVisualStyleBackColor = true;
+            this.roundedButton2.UseVisualStyleBackColor = false;
             // 
             // roundedButton1
             // 
+            this.roundedButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.roundedButton1.BorderRadius = ((byte)(20));
             this.roundedButton1.BorderSize = ((byte)(3));
             this.roundedButton1.EnableBorder = true;
@@ -166,10 +171,11 @@
             this.roundedButton1.TabIndex = 20;
             this.roundedButton1.Text = "Paint Drawing";
             this.roundedButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.roundedButton1.UseVisualStyleBackColor = true;
+            this.roundedButton1.UseVisualStyleBackColor = false;
             // 
             // roundedButton5
             // 
+            this.roundedButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.roundedButton5.BorderRadius = ((byte)(20));
             this.roundedButton5.BorderSize = ((byte)(3));
             this.roundedButton5.EnableBorder = true;
@@ -187,11 +193,12 @@
             this.roundedButton5.Text = "Calculator";
             this.roundedButton5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.roundedButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.roundedButton5.UseVisualStyleBackColor = true;
+            this.roundedButton5.UseVisualStyleBackColor = false;
             this.roundedButton5.Click += new System.EventHandler(this.roundedButton5_Click);
             // 
             // roundedButton7
             // 
+            this.roundedButton7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.roundedButton7.BorderRadius = ((byte)(20));
             this.roundedButton7.BorderSize = ((byte)(3));
             this.roundedButton7.EnableBorder = true;
@@ -208,7 +215,7 @@
             this.roundedButton7.TabIndex = 20;
             this.roundedButton7.Text = "Notepad";
             this.roundedButton7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.roundedButton7.UseVisualStyleBackColor = true;
+            this.roundedButton7.UseVisualStyleBackColor = false;
             this.roundedButton7.Click += new System.EventHandler(this.roundedButton7_Click);
             // 
             // AppTools
