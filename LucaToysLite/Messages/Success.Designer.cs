@@ -30,7 +30,6 @@
         {
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
             this.roundedButton1 = new LucaToysLite.Controls.RoundedButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.ltContextMenu1 = new LucaToysLite.Controls.LTContextMenu();
@@ -41,8 +40,10 @@
             this.searchDescriptionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.defaultButtonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.loadingControl1 = new LucaToysLite.Controls.LoadingControl();
             this.ltContextMenu1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // windowToolbar1
@@ -86,25 +87,15 @@
             this.roundedButton1.Text = "OK";
             this.roundedButton1.UseVisualStyleBackColor = false;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::LucaToysLite.Properties.Resources.icons8_info_96;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(33, 135);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(180, 180);
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(259, 200);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(464, 131);
+            this.label1.Size = new System.Drawing.Size(464, 115);
             this.label1.TabIndex = 3;
-            this.label1.Text = "asdfsadfklasdflas;df\r\nasdflasjdfkasdfasdflasfj\r\nasdfasdlfkajsldfjasldfjaslfd";
+            this.label1.Text = "The administrator logged in with the correct username and password";
             // 
             // label2
             // 
@@ -114,8 +105,9 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(464, 116);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Close This Window";
+            this.label2.Text = "Success Login Manager";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // ltContextMenu1
             // 
@@ -138,46 +130,66 @@
             // 
             this.copyContentToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.copyContentToolStripMenuItem.Name = "copyContentToolStripMenuItem";
-            this.copyContentToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
+            this.copyContentToolStripMenuItem.Size = new System.Drawing.Size(231, 32);
             this.copyContentToolStripMenuItem.Text = "Copy Content";
             // 
             // copyDescriptionToolStripMenuItem
             // 
             this.copyDescriptionToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.copyDescriptionToolStripMenuItem.Name = "copyDescriptionToolStripMenuItem";
-            this.copyDescriptionToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
+            this.copyDescriptionToolStripMenuItem.Size = new System.Drawing.Size(231, 32);
             this.copyDescriptionToolStripMenuItem.Text = "Copy Description";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(237, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(228, 6);
             // 
             // searchContentToolStripMenuItem
             // 
             this.searchContentToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.searchContentToolStripMenuItem.Name = "searchContentToolStripMenuItem";
-            this.searchContentToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
+            this.searchContentToolStripMenuItem.Size = new System.Drawing.Size(231, 32);
             this.searchContentToolStripMenuItem.Text = "Search Content";
             // 
             // searchDescriptionToolStripMenuItem
             // 
             this.searchDescriptionToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.searchDescriptionToolStripMenuItem.Name = "searchDescriptionToolStripMenuItem";
-            this.searchDescriptionToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
+            this.searchDescriptionToolStripMenuItem.Size = new System.Drawing.Size(231, 32);
             this.searchDescriptionToolStripMenuItem.Text = "Search Description";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(237, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(228, 6);
             // 
             // defaultButtonToolStripMenuItem
             // 
             this.defaultButtonToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.defaultButtonToolStripMenuItem.Name = "defaultButtonToolStripMenuItem";
-            this.defaultButtonToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
+            this.defaultButtonToolStripMenuItem.Size = new System.Drawing.Size(231, 32);
             this.defaultButtonToolStripMenuItem.Text = "Default Button";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::LucaToysLite.Properties.Resources.icons8_success_96;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(33, 135);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(180, 180);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
+            // loadingControl1
+            // 
+            this.loadingControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.loadingControl1.ColorPalette = System.Drawing.Color.Green;
+            this.loadingControl1.DarkTheme = true;
+            this.loadingControl1.Location = new System.Drawing.Point(33, 331);
+            this.loadingControl1.Name = "loadingControl1";
+            this.loadingControl1.Size = new System.Drawing.Size(690, 30);
+            this.loadingControl1.TabIndex = 7;
             // 
             // Success
             // 
@@ -186,6 +198,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(750, 450);
             this.ContextMenuStrip = this.ltContextMenu1;
+            this.Controls.Add(this.loadingControl1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
@@ -196,8 +209,9 @@
             this.Name = "Success";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Success";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.Success_Load);
             this.ltContextMenu1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -217,5 +231,6 @@
         private System.Windows.Forms.ToolStripMenuItem searchDescriptionToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem defaultButtonToolStripMenuItem;
+        private Controls.LoadingControl loadingControl1;
     }
 }

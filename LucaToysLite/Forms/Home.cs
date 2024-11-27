@@ -26,5 +26,11 @@ namespace LucaToysLite.Forms
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            LucaToysLite.Messages.Success success = new Success();
+            success.Show();
+        }
     }
 }

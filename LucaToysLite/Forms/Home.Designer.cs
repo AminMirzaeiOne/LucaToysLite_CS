@@ -50,6 +50,7 @@
             this.label1.Size = new System.Drawing.Size(281, 30);
             this.label1.TabIndex = 4;
             this.label1.Text = "Change Background Image";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 

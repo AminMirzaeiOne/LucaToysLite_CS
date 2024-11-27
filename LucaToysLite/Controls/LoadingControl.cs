@@ -18,6 +18,12 @@ namespace LucaToysLite.Controls
             InitializeComponent();
         }
 
+        public System.Byte Interval
+        {
+            get { return (byte) this.timer1.Interval; }
+            set { this.timer1.Interval = value; }
+        }
+
         public event EventHandler EndProcess;
 
         private int radius = 20;
