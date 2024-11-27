@@ -129,6 +129,7 @@
             this.radioUsers.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.radioUsers.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.radioUsers.UseVisualStyleBackColor = true;
+            this.radioUsers.CheckedChanged += new System.EventHandler(this.radioUsers_CheckedChanged);
             // 
             // radioHelp
             // 
@@ -151,6 +152,7 @@
             this.radioHelp.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.radioHelp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.radioHelp.UseVisualStyleBackColor = true;
+            this.radioHelp.CheckedChanged += new System.EventHandler(this.radioUsers_CheckedChanged);
             // 
             // radioWidgets
             // 
@@ -173,6 +175,7 @@
             this.radioWidgets.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.radioWidgets.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.radioWidgets.UseVisualStyleBackColor = true;
+            this.radioWidgets.CheckedChanged += new System.EventHandler(this.radioUsers_CheckedChanged);
             // 
             // radioApps
             // 
@@ -195,6 +198,7 @@
             this.radioApps.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.radioApps.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.radioApps.UseVisualStyleBackColor = true;
+            this.radioApps.CheckedChanged += new System.EventHandler(this.radioUsers_CheckedChanged);
             // 
             // radioSettings
             // 
@@ -217,6 +221,7 @@
             this.radioSettings.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.radioSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.radioSettings.UseVisualStyleBackColor = true;
+            this.radioSettings.CheckedChanged += new System.EventHandler(this.radioUsers_CheckedChanged);
             // 
             // radioExport
             // 
@@ -239,6 +244,7 @@
             this.radioExport.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.radioExport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.radioExport.UseVisualStyleBackColor = true;
+            this.radioExport.CheckedChanged += new System.EventHandler(this.radioUsers_CheckedChanged);
             // 
             // radioDocuments
             // 
@@ -261,6 +267,7 @@
             this.radioDocuments.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.radioDocuments.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.radioDocuments.UseVisualStyleBackColor = true;
+            this.radioDocuments.CheckedChanged += new System.EventHandler(this.radioUsers_CheckedChanged);
             // 
             // radioInvoice
             // 
@@ -283,6 +290,7 @@
             this.radioInvoice.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.radioInvoice.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.radioInvoice.UseVisualStyleBackColor = true;
+            this.radioInvoice.CheckedChanged += new System.EventHandler(this.radioUsers_CheckedChanged);
             // 
             // radioAccounting
             // 
@@ -305,6 +313,7 @@
             this.radioAccounting.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.radioAccounting.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.radioAccounting.UseVisualStyleBackColor = true;
+            this.radioAccounting.CheckedChanged += new System.EventHandler(this.radioUsers_CheckedChanged);
             // 
             // radioFinance
             // 
@@ -327,6 +336,7 @@
             this.radioFinance.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.radioFinance.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.radioFinance.UseVisualStyleBackColor = true;
+            this.radioFinance.CheckedChanged += new System.EventHandler(this.radioUsers_CheckedChanged);
             // 
             // radioProduct
             // 
@@ -349,6 +359,7 @@
             this.radioProduct.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.radioProduct.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.radioProduct.UseVisualStyleBackColor = true;
+            this.radioProduct.CheckedChanged += new System.EventHandler(this.radioUsers_CheckedChanged);
             // 
             // HomeMenu
             // 

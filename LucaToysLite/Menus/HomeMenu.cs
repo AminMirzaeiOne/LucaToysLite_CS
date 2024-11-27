@@ -150,5 +150,120 @@ namespace LucaToysLite.Menus
         {
 
         }
+
+        private void radioUsers_CheckedChanged(object sender, EventArgs e)
+        {
+            var rb = (RadioButton)sender;
+            if (rb == this.radioUsers)
+            {
+                foreach (UserControl item in this.panel1.Controls)
+                {
+                    if (item != this.users)
+                        item.Visible = false;
+                    else
+                        this.animator1.Show(this.users);
+                }
+            }
+            else if (rb == this.radioProduct)
+            {
+                foreach (UserControl item in this.panel1.Controls)
+                {
+                    if (item != this.products)
+                        item.Visible = false;
+                    else
+                        this.animator1.Show(this.products);
+                }
+            }
+            else if (rb == this.radioFinance)
+            {
+                foreach (UserControl item in this.panel1.Controls)
+                {
+                    if (item != this.finance)
+                        item.Visible = false;
+                    else
+                        this.animator1.Show(this.finance);
+                }
+            }
+            else if (rb == this.radioAccounting)
+            {
+                foreach (UserControl item in this.panel1.Controls)
+                {
+                    if (item != this.accounting)
+                        item.Visible = false;
+                    else
+                        this.animator1.Show(this.accounting);
+                }
+            }
+            else if (rb == this.radioInvoice)
+            {
+                foreach (UserControl item in this.panel1.Controls)
+                {
+                    if (item != this.invoice)
+                        item.Visible = false;
+                    else
+                        this.animator1.Show(this.invoice);
+                }
+            }
+            else if (rb == this.radioDocuments)
+            {
+                foreach (UserControl item in this.panel1.Controls)
+                {
+                    if (item != this.documents)
+                        item.Visible = false;
+                    else
+                        this.animator1.Show(this.documents);
+                }
+            }
+            else if (rb == this.radioExport)
+            {
+                foreach (UserControl item in this.panel1.Controls)
+                {
+                    if (item != this.exportData)
+                        item.Visible = false;
+                    else
+                        this.animator1.Show(this.exportData);
+                }
+            }
+            else if (rb == this.radioApps)
+            {
+                foreach (UserControl item in this.panel1.Controls)
+                {
+                    if (item != this.appTools)
+                        item.Visible = false;
+                    else
+                        this.animator1.Show(this.appTools);
+                }
+            }
+            else if (rb == this.radioWidgets)
+            {
+                foreach (UserControl item in this.panel1.Controls)
+                {
+                    if (item != this.widgets)
+                        item.Visible = false;
+                    else
+                        this.animator1.Show(this.widgets);
+                }
+            }
+            else if (rb == this.radioSettings)
+            {
+                foreach (UserControl item in this.panel1.Controls)
+                {
+                    if (item != this.settings)
+                        item.Visible = false;
+                    else
+                        this.animator1.Show(this.settings);
+                }
+            }
+            else if (rb == this.radioHelp)
+            {
+                foreach (UserControl item in this.panel1.Controls)
+                {
+                    if (item != this.help)
+                        item.Visible = false;
+                    else
+                        this.animator1.Show(this.help);
+                }
+            }
+        }
     }
 }
