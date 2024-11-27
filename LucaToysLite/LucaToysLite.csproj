@@ -782,6 +782,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Widgets\Cleander.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Widgets\Cleander.Designer.cs">
+      <DependentUpon>Cleander.cs</DependentUpon>
+    </Compile>
     <Compile Include="Widgets\Clock.cs">
       <SubType>UserControl</SubType>
     </Compile>
