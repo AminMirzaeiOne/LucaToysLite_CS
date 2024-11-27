@@ -1043,6 +1043,9 @@
     <EmbeddedResource Include="Messages\Hybrid.resx">
       <DependentUpon>Hybrid.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Messages\Success.resx">
+      <DependentUpon>Success.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pages\About\Developer.resx">
       <DependentUpon>Developer.cs</DependentUpon>
     </EmbeddedResource>
