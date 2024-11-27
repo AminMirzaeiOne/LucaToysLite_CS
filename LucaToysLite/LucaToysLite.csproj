@@ -1945,5 +1945,23 @@
   <ItemGroup>
     <None Include="Resources\icons8-phone-68%281%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-calendar-68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-clock-68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-night-wind-68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-todo-list-68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-internet-68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-widget-34.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

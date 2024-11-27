@@ -26,6 +26,7 @@ namespace LucaToysLite.Menus
             this.panel1.Controls.Add(this.appTools);
             this.panel1.Controls.Add(this.settings);
             this.panel1.Controls.Add(this.help);
+            this.panel1.Controls.Add(this.widgets);
 
 
             this.users.Dock = DockStyle.Fill;
@@ -38,6 +39,7 @@ namespace LucaToysLite.Menus
             this.appTools.Dock = DockStyle.Fill;
             this.settings.Dock = DockStyle.Fill;
             this.help.Dock = DockStyle.Fill;
+            this.widgets.Dock = DockStyle.Fill;
 
             this.users.Visible = true;
             this.products.Visible = false;
@@ -49,6 +51,7 @@ namespace LucaToysLite.Menus
             this.appTools.Visible = false;
             this.settings.Visible = false;
             this.help.Visible = false;
+            this.widgets.Visible = false;
         }
 
         private LucaToysLite.Menus.Users users = new Users();
@@ -61,6 +64,7 @@ namespace LucaToysLite.Menus
         private LucaToysLite.Menus.AppTools appTools = new AppTools();
         private LucaToysLite.Menus.Settings settings = new Settings();
         private LucaToysLite.Menus.Help help = new Help();
+        private LucaToysLite.Menus.Widgets widgets = new Widgets();
 
         private int radius = 20;
         [DefaultValue(20)]
@@ -145,157 +149,6 @@ namespace LucaToysLite.Menus
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
-        }
-
-        private void roundedRadioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-            if (this.roundedRadioButton1.Checked)
-            {
-                this.products.Visible = false;
-                this.finance.Visible = false;
-                this.accounting.Visible = false;
-                this.invoice.Visible = false;
-                this.documents.Visible = false;
-                this.exportData.Visible = false;
-                this.appTools.Visible = false;
-                this.animator1.Show(this.users);
-            }
-        }
-
-        private void roundedRadioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-            if (this.roundedRadioButton2.Checked)
-            {
-                this.users.Visible = false;
-                this.finance.Visible = false;
-                this.accounting.Visible = false;
-                this.invoice.Visible = false;
-                this.documents.Visible = false;
-                this.exportData.Visible = false;
-                this.appTools.Visible = false;
-                this.animator1.Show(this.products);
-            }
-        }
-
-        private void roundedRadioButton3_CheckedChanged(object sender, EventArgs e)
-        {
-            if (this.roundedRadioButton3.Checked)
-            {
-                this.users.Visible = false;
-                this.products.Visible = false;
-                this.accounting.Visible = false;
-                this.invoice.Visible = false;
-                this.documents.Visible = false;
-                this.exportData.Visible = false;
-                this.appTools.Visible = false;
-                this.animator1.Show(this.finance);
-            }
-        }
-
-        private void roundedRadioButton4_CheckedChanged(object sender, EventArgs e)
-        {
-            if (this.roundedRadioButton4.Checked)
-            {
-                this.users.Visible = false;
-                this.products.Visible = false;
-                this.finance.Visible = false;
-                this.invoice.Visible = false;
-                this.documents.Visible = false;
-                this.exportData.Visible = false;
-                this.appTools.Visible = false;
-                this.animator1.Show(this.accounting);
-            }
-        }
-
-        private void roundedRadioButton5_CheckedChanged(object sender, EventArgs e)
-        {
-            if (this.roundedRadioButton5.Checked)
-            {
-                this.users.Visible = false;
-                this.products.Visible = false;
-                this.finance.Visible = false;
-                this.accounting.Visible = false;
-                this.documents.Visible = false;
-                this.exportData.Visible = false;
-                this.appTools.Visible = false;
-                this.animator1.Show(this.invoice);
-            }
-        }
-
-        private void roundedRadioButton6_CheckedChanged(object sender, EventArgs e)
-        {
-            if (this.roundedRadioButton6.Checked)
-            {
-                this.users.Visible = false;
-                this.products.Visible = false;
-                this.finance.Visible = false;
-                this.accounting.Visible = false;
-                this.invoice.Visible = false;
-                this.exportData.Visible = false;
-                this.appTools.Visible = false;
-                this.animator1.Show(this.documents);
-            }
-        }
-
-        private void roundedRadioButton7_CheckedChanged(object sender, EventArgs e)
-        {
-            if (this.roundedRadioButton7.Checked)
-            {
-                this.users.Visible = false;
-                this.products.Visible = false;
-                this.finance.Visible = false;
-                this.accounting.Visible = false;
-                this.invoice.Visible = false;
-                this.documents.Visible = false;
-                this.appTools.Visible = false;
-                this.animator1.Show(this.exportData);
-            }
-        }
-
-        private void roundedRadioButton10_CheckedChanged(object sender, EventArgs e)
-        {
-            if (this.roundedRadioButton10.Checked)
-            {
-                this.users.Visible = false;
-                this.products.Visible = false;
-                this.finance.Visible = false;
-                this.accounting.Visible = false;
-                this.invoice.Visible = false;
-                this.documents.Visible = false;
-                this.exportData.Visible = false;
-                this.animator1.Show(this.appTools);
-            }
-        }
-
-        private void roundedRadioButton8_CheckedChanged(object sender, EventArgs e)
-        {
-            if (this.roundedRadioButton8.Checked)
-            {
-                this.users.Visible = false;
-                this.products.Visible = false;
-                this.finance.Visible = false;
-                this.accounting.Visible = false;
-                this.invoice.Visible = false;
-                this.documents.Visible = false;
-                this.appTools.Visible = false;
-                this.animator1.Show(this.settings);
-            }
-        }
-
-        private void roundedRadioButton9_CheckedChanged(object sender, EventArgs e)
-        {
-            if (this.roundedRadioButton9.Checked)
-            {
-                this.users.Visible = false;
-                this.products.Visible = false;
-                this.finance.Visible = false;
-                this.accounting.Visible = false;
-                this.invoice.Visible = false;
-                this.documents.Visible = false;
-                this.appTools.Visible = false;
-                this.settings.Visible = false;
-                this.animator1.Show(this.help);
-            }
         }
     }
 }

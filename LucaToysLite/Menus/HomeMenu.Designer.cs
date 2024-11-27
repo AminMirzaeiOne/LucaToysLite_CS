@@ -34,16 +34,17 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.animator1 = new WFAnimations.Animator(this.components);
             this.roundedPanel1 = new LucaToysLite.Controls.RoundedPanel();
-            this.roundedRadioButton1 = new LucaToysLite.Controls.RoundedRadioButton();
-            this.roundedRadioButton9 = new LucaToysLite.Controls.RoundedRadioButton();
-            this.roundedRadioButton10 = new LucaToysLite.Controls.RoundedRadioButton();
-            this.roundedRadioButton8 = new LucaToysLite.Controls.RoundedRadioButton();
-            this.roundedRadioButton7 = new LucaToysLite.Controls.RoundedRadioButton();
-            this.roundedRadioButton6 = new LucaToysLite.Controls.RoundedRadioButton();
-            this.roundedRadioButton5 = new LucaToysLite.Controls.RoundedRadioButton();
-            this.roundedRadioButton4 = new LucaToysLite.Controls.RoundedRadioButton();
-            this.roundedRadioButton3 = new LucaToysLite.Controls.RoundedRadioButton();
-            this.roundedRadioButton2 = new LucaToysLite.Controls.RoundedRadioButton();
+            this.radioUsers = new LucaToysLite.Controls.RoundedRadioButton();
+            this.radioHelp = new LucaToysLite.Controls.RoundedRadioButton();
+            this.radioWidgets = new LucaToysLite.Controls.RoundedRadioButton();
+            this.radioApps = new LucaToysLite.Controls.RoundedRadioButton();
+            this.radioSettings = new LucaToysLite.Controls.RoundedRadioButton();
+            this.radioExport = new LucaToysLite.Controls.RoundedRadioButton();
+            this.radioDocuments = new LucaToysLite.Controls.RoundedRadioButton();
+            this.radioInvoice = new LucaToysLite.Controls.RoundedRadioButton();
+            this.radioAccounting = new LucaToysLite.Controls.RoundedRadioButton();
+            this.radioFinance = new LucaToysLite.Controls.RoundedRadioButton();
+            this.radioProduct = new LucaToysLite.Controls.RoundedRadioButton();
             this.roundedPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,7 +56,7 @@
             this.animator1.SetDecoration(this.panel1, WFAnimations.DecorationType.None);
             this.panel1.Location = new System.Drawing.Point(3, 87);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1769, 140);
+            this.panel1.Size = new System.Drawing.Size(1951, 140);
             this.panel1.TabIndex = 2;
             // 
             // animator1
@@ -87,254 +88,267 @@
             this.roundedPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.roundedPanel1.BorderColor = System.Drawing.Color.Crimson;
             this.roundedPanel1.BorderSize = ((byte)(0));
-            this.roundedPanel1.Controls.Add(this.roundedRadioButton1);
-            this.roundedPanel1.Controls.Add(this.roundedRadioButton9);
-            this.roundedPanel1.Controls.Add(this.roundedRadioButton10);
-            this.roundedPanel1.Controls.Add(this.roundedRadioButton8);
-            this.roundedPanel1.Controls.Add(this.roundedRadioButton7);
-            this.roundedPanel1.Controls.Add(this.roundedRadioButton6);
-            this.roundedPanel1.Controls.Add(this.roundedRadioButton5);
-            this.roundedPanel1.Controls.Add(this.roundedRadioButton4);
-            this.roundedPanel1.Controls.Add(this.roundedRadioButton3);
-            this.roundedPanel1.Controls.Add(this.roundedRadioButton2);
+            this.roundedPanel1.Controls.Add(this.radioUsers);
+            this.roundedPanel1.Controls.Add(this.radioHelp);
+            this.roundedPanel1.Controls.Add(this.radioWidgets);
+            this.roundedPanel1.Controls.Add(this.radioApps);
+            this.roundedPanel1.Controls.Add(this.radioSettings);
+            this.roundedPanel1.Controls.Add(this.radioExport);
+            this.roundedPanel1.Controls.Add(this.radioDocuments);
+            this.roundedPanel1.Controls.Add(this.radioInvoice);
+            this.roundedPanel1.Controls.Add(this.radioAccounting);
+            this.roundedPanel1.Controls.Add(this.radioFinance);
+            this.roundedPanel1.Controls.Add(this.radioProduct);
             this.animator1.SetDecoration(this.roundedPanel1, WFAnimations.DecorationType.None);
             this.roundedPanel1.EnableBorder = false;
             this.roundedPanel1.Location = new System.Drawing.Point(3, 2);
             this.roundedPanel1.Name = "roundedPanel1";
-            this.roundedPanel1.Size = new System.Drawing.Size(1769, 80);
+            this.roundedPanel1.Size = new System.Drawing.Size(1951, 80);
             this.roundedPanel1.TabIndex = 1;
             // 
-            // roundedRadioButton1
+            // radioUsers
             // 
-            this.roundedRadioButton1.Appearance = System.Windows.Forms.Appearance.Button;
-            this.roundedRadioButton1.BorderSize = ((byte)(2));
-            this.roundedRadioButton1.Checked = true;
-            this.roundedRadioButton1.ColorPallet = System.Drawing.Color.Crimson;
-            this.animator1.SetDecoration(this.roundedRadioButton1, WFAnimations.DecorationType.None);
-            this.roundedRadioButton1.EnableBorder = true;
-            this.roundedRadioButton1.FlatAppearance.BorderSize = 0;
-            this.roundedRadioButton1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
-            this.roundedRadioButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedRadioButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedRadioButton1.ForeColor = System.Drawing.Color.White;
-            this.roundedRadioButton1.Image = global::LucaToysLite.Properties.Resources.icons8_user_groups_34;
-            this.roundedRadioButton1.Location = new System.Drawing.Point(14, 8);
-            this.roundedRadioButton1.Name = "roundedRadioButton1";
-            this.roundedRadioButton1.Size = new System.Drawing.Size(160, 64);
-            this.roundedRadioButton1.TabIndex = 0;
-            this.roundedRadioButton1.TabStop = true;
-            this.roundedRadioButton1.Text = " Users";
-            this.roundedRadioButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.roundedRadioButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.roundedRadioButton1.UseVisualStyleBackColor = true;
-            this.roundedRadioButton1.CheckedChanged += new System.EventHandler(this.roundedRadioButton1_CheckedChanged);
+            this.radioUsers.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioUsers.BorderSize = ((byte)(2));
+            this.radioUsers.Checked = true;
+            this.radioUsers.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.radioUsers, WFAnimations.DecorationType.None);
+            this.radioUsers.EnableBorder = true;
+            this.radioUsers.FlatAppearance.BorderSize = 0;
+            this.radioUsers.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
+            this.radioUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioUsers.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioUsers.ForeColor = System.Drawing.Color.White;
+            this.radioUsers.Image = global::LucaToysLite.Properties.Resources.icons8_user_groups_34;
+            this.radioUsers.Location = new System.Drawing.Point(14, 8);
+            this.radioUsers.Name = "radioUsers";
+            this.radioUsers.Size = new System.Drawing.Size(160, 64);
+            this.radioUsers.TabIndex = 0;
+            this.radioUsers.TabStop = true;
+            this.radioUsers.Text = " Users";
+            this.radioUsers.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.radioUsers.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.radioUsers.UseVisualStyleBackColor = true;
             // 
-            // roundedRadioButton9
+            // radioHelp
             // 
-            this.roundedRadioButton9.Appearance = System.Windows.Forms.Appearance.Button;
-            this.roundedRadioButton9.BorderSize = ((byte)(2));
-            this.roundedRadioButton9.ColorPallet = System.Drawing.Color.Crimson;
-            this.animator1.SetDecoration(this.roundedRadioButton9, WFAnimations.DecorationType.None);
-            this.roundedRadioButton9.EnableBorder = true;
-            this.roundedRadioButton9.FlatAppearance.BorderSize = 0;
-            this.roundedRadioButton9.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
-            this.roundedRadioButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedRadioButton9.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedRadioButton9.ForeColor = System.Drawing.Color.White;
-            this.roundedRadioButton9.Image = global::LucaToysLite.Properties.Resources.icons8_help_34;
-            this.roundedRadioButton9.Location = new System.Drawing.Point(1600, 8);
-            this.roundedRadioButton9.Name = "roundedRadioButton9";
-            this.roundedRadioButton9.Size = new System.Drawing.Size(160, 64);
-            this.roundedRadioButton9.TabIndex = 0;
-            this.roundedRadioButton9.Text = " Help";
-            this.roundedRadioButton9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.roundedRadioButton9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.roundedRadioButton9.UseVisualStyleBackColor = true;
-            this.roundedRadioButton9.CheckedChanged += new System.EventHandler(this.roundedRadioButton9_CheckedChanged);
+            this.radioHelp.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioHelp.BorderSize = ((byte)(2));
+            this.radioHelp.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.radioHelp, WFAnimations.DecorationType.None);
+            this.radioHelp.EnableBorder = true;
+            this.radioHelp.FlatAppearance.BorderSize = 0;
+            this.radioHelp.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
+            this.radioHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioHelp.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioHelp.ForeColor = System.Drawing.Color.White;
+            this.radioHelp.Image = global::LucaToysLite.Properties.Resources.icons8_help_34;
+            this.radioHelp.Location = new System.Drawing.Point(1778, 8);
+            this.radioHelp.Name = "radioHelp";
+            this.radioHelp.Size = new System.Drawing.Size(160, 64);
+            this.radioHelp.TabIndex = 0;
+            this.radioHelp.Text = " Help";
+            this.radioHelp.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.radioHelp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.radioHelp.UseVisualStyleBackColor = true;
             // 
-            // roundedRadioButton10
+            // radioWidgets
             // 
-            this.roundedRadioButton10.Appearance = System.Windows.Forms.Appearance.Button;
-            this.roundedRadioButton10.BorderSize = ((byte)(2));
-            this.roundedRadioButton10.ColorPallet = System.Drawing.Color.Crimson;
-            this.animator1.SetDecoration(this.roundedRadioButton10, WFAnimations.DecorationType.None);
-            this.roundedRadioButton10.EnableBorder = true;
-            this.roundedRadioButton10.FlatAppearance.BorderSize = 0;
-            this.roundedRadioButton10.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
-            this.roundedRadioButton10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedRadioButton10.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedRadioButton10.ForeColor = System.Drawing.Color.White;
-            this.roundedRadioButton10.Image = global::LucaToysLite.Properties.Resources.icons8_android_app_drawer_34;
-            this.roundedRadioButton10.Location = new System.Drawing.Point(1244, 8);
-            this.roundedRadioButton10.Name = "roundedRadioButton10";
-            this.roundedRadioButton10.Size = new System.Drawing.Size(160, 64);
-            this.roundedRadioButton10.TabIndex = 0;
-            this.roundedRadioButton10.Text = "App Tools";
-            this.roundedRadioButton10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.roundedRadioButton10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.roundedRadioButton10.UseVisualStyleBackColor = true;
-            this.roundedRadioButton10.CheckedChanged += new System.EventHandler(this.roundedRadioButton10_CheckedChanged);
+            this.radioWidgets.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioWidgets.BorderSize = ((byte)(2));
+            this.radioWidgets.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.radioWidgets, WFAnimations.DecorationType.None);
+            this.radioWidgets.EnableBorder = true;
+            this.radioWidgets.FlatAppearance.BorderSize = 0;
+            this.radioWidgets.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
+            this.radioWidgets.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioWidgets.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioWidgets.ForeColor = System.Drawing.Color.White;
+            this.radioWidgets.Image = global::LucaToysLite.Properties.Resources.icons8_widget_34;
+            this.radioWidgets.Location = new System.Drawing.Point(1421, 8);
+            this.radioWidgets.Name = "radioWidgets";
+            this.radioWidgets.Size = new System.Drawing.Size(160, 64);
+            this.radioWidgets.TabIndex = 0;
+            this.radioWidgets.Text = " Widgets";
+            this.radioWidgets.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.radioWidgets.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.radioWidgets.UseVisualStyleBackColor = true;
             // 
-            // roundedRadioButton8
+            // radioApps
             // 
-            this.roundedRadioButton8.Appearance = System.Windows.Forms.Appearance.Button;
-            this.roundedRadioButton8.BorderSize = ((byte)(2));
-            this.roundedRadioButton8.ColorPallet = System.Drawing.Color.Crimson;
-            this.animator1.SetDecoration(this.roundedRadioButton8, WFAnimations.DecorationType.None);
-            this.roundedRadioButton8.EnableBorder = true;
-            this.roundedRadioButton8.FlatAppearance.BorderSize = 0;
-            this.roundedRadioButton8.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
-            this.roundedRadioButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedRadioButton8.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedRadioButton8.ForeColor = System.Drawing.Color.White;
-            this.roundedRadioButton8.Image = global::LucaToysLite.Properties.Resources.icons8_settings_34;
-            this.roundedRadioButton8.Location = new System.Drawing.Point(1422, 8);
-            this.roundedRadioButton8.Name = "roundedRadioButton8";
-            this.roundedRadioButton8.Size = new System.Drawing.Size(160, 64);
-            this.roundedRadioButton8.TabIndex = 0;
-            this.roundedRadioButton8.Text = "Settings";
-            this.roundedRadioButton8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.roundedRadioButton8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.roundedRadioButton8.UseVisualStyleBackColor = true;
-            this.roundedRadioButton8.CheckedChanged += new System.EventHandler(this.roundedRadioButton8_CheckedChanged);
+            this.radioApps.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioApps.BorderSize = ((byte)(2));
+            this.radioApps.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.radioApps, WFAnimations.DecorationType.None);
+            this.radioApps.EnableBorder = true;
+            this.radioApps.FlatAppearance.BorderSize = 0;
+            this.radioApps.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
+            this.radioApps.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioApps.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioApps.ForeColor = System.Drawing.Color.White;
+            this.radioApps.Image = global::LucaToysLite.Properties.Resources.icons8_android_app_drawer_34;
+            this.radioApps.Location = new System.Drawing.Point(1244, 8);
+            this.radioApps.Name = "radioApps";
+            this.radioApps.Size = new System.Drawing.Size(160, 64);
+            this.radioApps.TabIndex = 0;
+            this.radioApps.Text = "App Tools";
+            this.radioApps.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.radioApps.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.radioApps.UseVisualStyleBackColor = true;
             // 
-            // roundedRadioButton7
+            // radioSettings
             // 
-            this.roundedRadioButton7.Appearance = System.Windows.Forms.Appearance.Button;
-            this.roundedRadioButton7.BorderSize = ((byte)(2));
-            this.roundedRadioButton7.ColorPallet = System.Drawing.Color.Crimson;
-            this.animator1.SetDecoration(this.roundedRadioButton7, WFAnimations.DecorationType.None);
-            this.roundedRadioButton7.EnableBorder = true;
-            this.roundedRadioButton7.FlatAppearance.BorderSize = 0;
-            this.roundedRadioButton7.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
-            this.roundedRadioButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedRadioButton7.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedRadioButton7.ForeColor = System.Drawing.Color.White;
-            this.roundedRadioButton7.Image = global::LucaToysLite.Properties.Resources.icons8_data_migration_34;
-            this.roundedRadioButton7.Location = new System.Drawing.Point(1067, 8);
-            this.roundedRadioButton7.Name = "roundedRadioButton7";
-            this.roundedRadioButton7.Size = new System.Drawing.Size(160, 64);
-            this.roundedRadioButton7.TabIndex = 0;
-            this.roundedRadioButton7.Text = " Export Data";
-            this.roundedRadioButton7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.roundedRadioButton7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.roundedRadioButton7.UseVisualStyleBackColor = true;
-            this.roundedRadioButton7.CheckedChanged += new System.EventHandler(this.roundedRadioButton7_CheckedChanged);
+            this.radioSettings.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioSettings.BorderSize = ((byte)(2));
+            this.radioSettings.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.radioSettings, WFAnimations.DecorationType.None);
+            this.radioSettings.EnableBorder = true;
+            this.radioSettings.FlatAppearance.BorderSize = 0;
+            this.radioSettings.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
+            this.radioSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioSettings.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioSettings.ForeColor = System.Drawing.Color.White;
+            this.radioSettings.Image = global::LucaToysLite.Properties.Resources.icons8_settings_34;
+            this.radioSettings.Location = new System.Drawing.Point(1599, 8);
+            this.radioSettings.Name = "radioSettings";
+            this.radioSettings.Size = new System.Drawing.Size(160, 64);
+            this.radioSettings.TabIndex = 0;
+            this.radioSettings.Text = "Settings";
+            this.radioSettings.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.radioSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.radioSettings.UseVisualStyleBackColor = true;
             // 
-            // roundedRadioButton6
+            // radioExport
             // 
-            this.roundedRadioButton6.Appearance = System.Windows.Forms.Appearance.Button;
-            this.roundedRadioButton6.BorderSize = ((byte)(2));
-            this.roundedRadioButton6.ColorPallet = System.Drawing.Color.Crimson;
-            this.animator1.SetDecoration(this.roundedRadioButton6, WFAnimations.DecorationType.None);
-            this.roundedRadioButton6.EnableBorder = true;
-            this.roundedRadioButton6.FlatAppearance.BorderSize = 0;
-            this.roundedRadioButton6.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
-            this.roundedRadioButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedRadioButton6.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedRadioButton6.ForeColor = System.Drawing.Color.White;
-            this.roundedRadioButton6.Image = global::LucaToysLite.Properties.Resources.icons8_petition_34;
-            this.roundedRadioButton6.Location = new System.Drawing.Point(890, 8);
-            this.roundedRadioButton6.Name = "roundedRadioButton6";
-            this.roundedRadioButton6.Size = new System.Drawing.Size(160, 64);
-            this.roundedRadioButton6.TabIndex = 0;
-            this.roundedRadioButton6.Text = " Documents";
-            this.roundedRadioButton6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.roundedRadioButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.roundedRadioButton6.UseVisualStyleBackColor = true;
-            this.roundedRadioButton6.CheckedChanged += new System.EventHandler(this.roundedRadioButton6_CheckedChanged);
+            this.radioExport.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioExport.BorderSize = ((byte)(2));
+            this.radioExport.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.radioExport, WFAnimations.DecorationType.None);
+            this.radioExport.EnableBorder = true;
+            this.radioExport.FlatAppearance.BorderSize = 0;
+            this.radioExport.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
+            this.radioExport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioExport.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioExport.ForeColor = System.Drawing.Color.White;
+            this.radioExport.Image = global::LucaToysLite.Properties.Resources.icons8_data_migration_34;
+            this.radioExport.Location = new System.Drawing.Point(1067, 8);
+            this.radioExport.Name = "radioExport";
+            this.radioExport.Size = new System.Drawing.Size(160, 64);
+            this.radioExport.TabIndex = 0;
+            this.radioExport.Text = " Export Data";
+            this.radioExport.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.radioExport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.radioExport.UseVisualStyleBackColor = true;
             // 
-            // roundedRadioButton5
+            // radioDocuments
             // 
-            this.roundedRadioButton5.Appearance = System.Windows.Forms.Appearance.Button;
-            this.roundedRadioButton5.BorderSize = ((byte)(2));
-            this.roundedRadioButton5.ColorPallet = System.Drawing.Color.Crimson;
-            this.animator1.SetDecoration(this.roundedRadioButton5, WFAnimations.DecorationType.None);
-            this.roundedRadioButton5.EnableBorder = true;
-            this.roundedRadioButton5.FlatAppearance.BorderSize = 0;
-            this.roundedRadioButton5.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
-            this.roundedRadioButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedRadioButton5.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedRadioButton5.ForeColor = System.Drawing.Color.White;
-            this.roundedRadioButton5.Image = global::LucaToysLite.Properties.Resources.icons8_invoice_34;
-            this.roundedRadioButton5.Location = new System.Drawing.Point(713, 8);
-            this.roundedRadioButton5.Name = "roundedRadioButton5";
-            this.roundedRadioButton5.Size = new System.Drawing.Size(160, 64);
-            this.roundedRadioButton5.TabIndex = 0;
-            this.roundedRadioButton5.Text = " Invoice";
-            this.roundedRadioButton5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.roundedRadioButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.roundedRadioButton5.UseVisualStyleBackColor = true;
-            this.roundedRadioButton5.CheckedChanged += new System.EventHandler(this.roundedRadioButton5_CheckedChanged);
+            this.radioDocuments.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioDocuments.BorderSize = ((byte)(2));
+            this.radioDocuments.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.radioDocuments, WFAnimations.DecorationType.None);
+            this.radioDocuments.EnableBorder = true;
+            this.radioDocuments.FlatAppearance.BorderSize = 0;
+            this.radioDocuments.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
+            this.radioDocuments.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioDocuments.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioDocuments.ForeColor = System.Drawing.Color.White;
+            this.radioDocuments.Image = global::LucaToysLite.Properties.Resources.icons8_petition_34;
+            this.radioDocuments.Location = new System.Drawing.Point(890, 8);
+            this.radioDocuments.Name = "radioDocuments";
+            this.radioDocuments.Size = new System.Drawing.Size(160, 64);
+            this.radioDocuments.TabIndex = 0;
+            this.radioDocuments.Text = " Documents";
+            this.radioDocuments.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.radioDocuments.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.radioDocuments.UseVisualStyleBackColor = true;
             // 
-            // roundedRadioButton4
+            // radioInvoice
             // 
-            this.roundedRadioButton4.Appearance = System.Windows.Forms.Appearance.Button;
-            this.roundedRadioButton4.BorderSize = ((byte)(2));
-            this.roundedRadioButton4.ColorPallet = System.Drawing.Color.Crimson;
-            this.animator1.SetDecoration(this.roundedRadioButton4, WFAnimations.DecorationType.None);
-            this.roundedRadioButton4.EnableBorder = true;
-            this.roundedRadioButton4.FlatAppearance.BorderSize = 0;
-            this.roundedRadioButton4.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
-            this.roundedRadioButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedRadioButton4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedRadioButton4.ForeColor = System.Drawing.Color.White;
-            this.roundedRadioButton4.Image = global::LucaToysLite.Properties.Resources.icons8_accounting_34;
-            this.roundedRadioButton4.Location = new System.Drawing.Point(537, 8);
-            this.roundedRadioButton4.Name = "roundedRadioButton4";
-            this.roundedRadioButton4.Size = new System.Drawing.Size(160, 64);
-            this.roundedRadioButton4.TabIndex = 0;
-            this.roundedRadioButton4.Text = " Accounting";
-            this.roundedRadioButton4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.roundedRadioButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.roundedRadioButton4.UseVisualStyleBackColor = true;
-            this.roundedRadioButton4.CheckedChanged += new System.EventHandler(this.roundedRadioButton4_CheckedChanged);
+            this.radioInvoice.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioInvoice.BorderSize = ((byte)(2));
+            this.radioInvoice.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.radioInvoice, WFAnimations.DecorationType.None);
+            this.radioInvoice.EnableBorder = true;
+            this.radioInvoice.FlatAppearance.BorderSize = 0;
+            this.radioInvoice.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
+            this.radioInvoice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioInvoice.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioInvoice.ForeColor = System.Drawing.Color.White;
+            this.radioInvoice.Image = global::LucaToysLite.Properties.Resources.icons8_invoice_34;
+            this.radioInvoice.Location = new System.Drawing.Point(713, 8);
+            this.radioInvoice.Name = "radioInvoice";
+            this.radioInvoice.Size = new System.Drawing.Size(160, 64);
+            this.radioInvoice.TabIndex = 0;
+            this.radioInvoice.Text = " Invoice";
+            this.radioInvoice.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.radioInvoice.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.radioInvoice.UseVisualStyleBackColor = true;
             // 
-            // roundedRadioButton3
+            // radioAccounting
             // 
-            this.roundedRadioButton3.Appearance = System.Windows.Forms.Appearance.Button;
-            this.roundedRadioButton3.BorderSize = ((byte)(2));
-            this.roundedRadioButton3.ColorPallet = System.Drawing.Color.Crimson;
-            this.animator1.SetDecoration(this.roundedRadioButton3, WFAnimations.DecorationType.None);
-            this.roundedRadioButton3.EnableBorder = true;
-            this.roundedRadioButton3.FlatAppearance.BorderSize = 0;
-            this.roundedRadioButton3.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
-            this.roundedRadioButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedRadioButton3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedRadioButton3.ForeColor = System.Drawing.Color.White;
-            this.roundedRadioButton3.Image = global::LucaToysLite.Properties.Resources.icons8_stock_share_34;
-            this.roundedRadioButton3.Location = new System.Drawing.Point(362, 8);
-            this.roundedRadioButton3.Name = "roundedRadioButton3";
-            this.roundedRadioButton3.Size = new System.Drawing.Size(160, 64);
-            this.roundedRadioButton3.TabIndex = 0;
-            this.roundedRadioButton3.Text = " Finance";
-            this.roundedRadioButton3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.roundedRadioButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.roundedRadioButton3.UseVisualStyleBackColor = true;
-            this.roundedRadioButton3.CheckedChanged += new System.EventHandler(this.roundedRadioButton3_CheckedChanged);
+            this.radioAccounting.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioAccounting.BorderSize = ((byte)(2));
+            this.radioAccounting.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.radioAccounting, WFAnimations.DecorationType.None);
+            this.radioAccounting.EnableBorder = true;
+            this.radioAccounting.FlatAppearance.BorderSize = 0;
+            this.radioAccounting.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
+            this.radioAccounting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioAccounting.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioAccounting.ForeColor = System.Drawing.Color.White;
+            this.radioAccounting.Image = global::LucaToysLite.Properties.Resources.icons8_accounting_34;
+            this.radioAccounting.Location = new System.Drawing.Point(537, 8);
+            this.radioAccounting.Name = "radioAccounting";
+            this.radioAccounting.Size = new System.Drawing.Size(160, 64);
+            this.radioAccounting.TabIndex = 0;
+            this.radioAccounting.Text = " Accounting";
+            this.radioAccounting.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.radioAccounting.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.radioAccounting.UseVisualStyleBackColor = true;
             // 
-            // roundedRadioButton2
+            // radioFinance
             // 
-            this.roundedRadioButton2.Appearance = System.Windows.Forms.Appearance.Button;
-            this.roundedRadioButton2.BorderSize = ((byte)(2));
-            this.roundedRadioButton2.ColorPallet = System.Drawing.Color.Crimson;
-            this.animator1.SetDecoration(this.roundedRadioButton2, WFAnimations.DecorationType.None);
-            this.roundedRadioButton2.EnableBorder = true;
-            this.roundedRadioButton2.FlatAppearance.BorderSize = 0;
-            this.roundedRadioButton2.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
-            this.roundedRadioButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedRadioButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedRadioButton2.ForeColor = System.Drawing.Color.White;
-            this.roundedRadioButton2.Image = global::LucaToysLite.Properties.Resources.icons8_code_blocks_34;
-            this.roundedRadioButton2.Location = new System.Drawing.Point(188, 8);
-            this.roundedRadioButton2.Name = "roundedRadioButton2";
-            this.roundedRadioButton2.Size = new System.Drawing.Size(160, 64);
-            this.roundedRadioButton2.TabIndex = 0;
-            this.roundedRadioButton2.Text = " Products";
-            this.roundedRadioButton2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.roundedRadioButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.roundedRadioButton2.UseVisualStyleBackColor = true;
-            this.roundedRadioButton2.CheckedChanged += new System.EventHandler(this.roundedRadioButton2_CheckedChanged);
+            this.radioFinance.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioFinance.BorderSize = ((byte)(2));
+            this.radioFinance.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.radioFinance, WFAnimations.DecorationType.None);
+            this.radioFinance.EnableBorder = true;
+            this.radioFinance.FlatAppearance.BorderSize = 0;
+            this.radioFinance.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
+            this.radioFinance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioFinance.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioFinance.ForeColor = System.Drawing.Color.White;
+            this.radioFinance.Image = global::LucaToysLite.Properties.Resources.icons8_stock_share_34;
+            this.radioFinance.Location = new System.Drawing.Point(362, 8);
+            this.radioFinance.Name = "radioFinance";
+            this.radioFinance.Size = new System.Drawing.Size(160, 64);
+            this.radioFinance.TabIndex = 0;
+            this.radioFinance.Text = " Finance";
+            this.radioFinance.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.radioFinance.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.radioFinance.UseVisualStyleBackColor = true;
+            // 
+            // radioProduct
+            // 
+            this.radioProduct.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioProduct.BorderSize = ((byte)(2));
+            this.radioProduct.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.radioProduct, WFAnimations.DecorationType.None);
+            this.radioProduct.EnableBorder = true;
+            this.radioProduct.FlatAppearance.BorderSize = 0;
+            this.radioProduct.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
+            this.radioProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioProduct.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioProduct.ForeColor = System.Drawing.Color.White;
+            this.radioProduct.Image = global::LucaToysLite.Properties.Resources.icons8_code_blocks_34;
+            this.radioProduct.Location = new System.Drawing.Point(188, 8);
+            this.radioProduct.Name = "radioProduct";
+            this.radioProduct.Size = new System.Drawing.Size(160, 64);
+            this.radioProduct.TabIndex = 0;
+            this.radioProduct.Text = " Products";
+            this.radioProduct.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.radioProduct.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.radioProduct.UseVisualStyleBackColor = true;
             // 
             // HomeMenu
             // 
@@ -345,25 +359,26 @@
             this.Controls.Add(this.roundedPanel1);
             this.animator1.SetDecoration(this, WFAnimations.DecorationType.None);
             this.Name = "HomeMenu";
-            this.Size = new System.Drawing.Size(1775, 230);
+            this.Size = new System.Drawing.Size(1957, 230);
             this.roundedPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private Controls.RoundedRadioButton roundedRadioButton1;
-        private Controls.RoundedRadioButton roundedRadioButton2;
+        private Controls.RoundedRadioButton radioUsers;
+        private Controls.RoundedRadioButton radioProduct;
         private Controls.RoundedPanel roundedPanel1;
-        private Controls.RoundedRadioButton roundedRadioButton3;
-        private Controls.RoundedRadioButton roundedRadioButton4;
-        private Controls.RoundedRadioButton roundedRadioButton5;
-        private Controls.RoundedRadioButton roundedRadioButton6;
-        private Controls.RoundedRadioButton roundedRadioButton7;
-        private Controls.RoundedRadioButton roundedRadioButton8;
-        private Controls.RoundedRadioButton roundedRadioButton10;
+        private Controls.RoundedRadioButton radioFinance;
+        private Controls.RoundedRadioButton radioAccounting;
+        private Controls.RoundedRadioButton radioInvoice;
+        private Controls.RoundedRadioButton radioDocuments;
+        private Controls.RoundedRadioButton radioExport;
+        private Controls.RoundedRadioButton radioSettings;
+        private Controls.RoundedRadioButton radioApps;
         private System.Windows.Forms.Panel panel1;
         private WFAnimations.Animator animator1;
-        private Controls.RoundedRadioButton roundedRadioButton9;
+        private Controls.RoundedRadioButton radioWidgets;
+        private Controls.RoundedRadioButton radioHelp;
     }
 }
