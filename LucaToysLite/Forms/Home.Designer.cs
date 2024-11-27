@@ -28,10 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.homeBottomMenu1 = new LucaToysLite.Menus.HomeBottomMenu();
             this.homeMenu1 = new LucaToysLite.Menus.HomeMenu();
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
-            this.numberBox1 = new LucaToysLite.Controls.NumberBox();
             this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Silver;
+            this.label1.Location = new System.Drawing.Point(444, 429);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(281, 30);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Change Background Image";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe MDL2 Assets", 18F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.Silver;
+            this.label2.Location = new System.Drawing.Point(386, 423);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(52, 36);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "";
+            // 
+            // homeBottomMenu1
+            // 
+            this.homeBottomMenu1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.homeBottomMenu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.homeBottomMenu1.BorderColor = System.Drawing.Color.Crimson;
+            this.homeBottomMenu1.BorderSize = ((byte)(3));
+            this.homeBottomMenu1.EnableBorder = true;
+            this.homeBottomMenu1.Location = new System.Drawing.Point(250, 607);
+            this.homeBottomMenu1.Name = "homeBottomMenu1";
+            this.homeBottomMenu1.Size = new System.Drawing.Size(590, 60);
+            this.homeBottomMenu1.TabIndex = 3;
             // 
             // homeMenu1
             // 
@@ -43,7 +79,7 @@
             this.homeMenu1.Location = new System.Drawing.Point(12, 52);
             this.homeMenu1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.homeMenu1.Name = "homeMenu1";
-            this.homeMenu1.Size = new System.Drawing.Size(1066, 230);
+            this.homeMenu1.Size = new System.Drawing.Size(1109, 230);
             this.homeMenu1.TabIndex = 1;
             // 
             // windowToolbar1
@@ -63,31 +99,21 @@
             this.windowToolbar1.MinimizeButton = true;
             this.windowToolbar1.MoveOption = true;
             this.windowToolbar1.Name = "windowToolbar1";
-            this.windowToolbar1.Size = new System.Drawing.Size(1090, 45);
+            this.windowToolbar1.Size = new System.Drawing.Size(1133, 45);
             this.windowToolbar1.StartupSound = LucaToysLite.Controls.WindowToolbar.StartupSounds.None;
             this.windowToolbar1.TabIndex = 0;
-            this.windowToolbar1.TitleText = "Window";
+            this.windowToolbar1.TitleText = "Home Window";
             this.windowToolbar1.WindowBorderSize = ((byte)(3));
-            // 
-            // numberBox1
-            // 
-            this.numberBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.numberBox1.BorderColor = System.Drawing.Color.Crimson;
-            this.numberBox1.BorderSize = ((byte)(2));
-            this.numberBox1.EnableBorder = true;
-            this.numberBox1.Location = new System.Drawing.Point(426, 390);
-            this.numberBox1.MaximumNumber = 1000;
-            this.numberBox1.Name = "numberBox1";
-            this.numberBox1.Size = new System.Drawing.Size(210, 63);
-            this.numberBox1.TabIndex = 2;
             // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.ClientSize = new System.Drawing.Size(1090, 650);
-            this.Controls.Add(this.numberBox1);
+            this.ClientSize = new System.Drawing.Size(1133, 701);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.homeBottomMenu1);
             this.Controls.Add(this.homeMenu1);
             this.Controls.Add(this.windowToolbar1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -97,12 +123,15 @@
             this.Text = "Home";
             this.Load += new System.EventHandler(this.Home_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
         private Controls.WindowToolbar windowToolbar1;
         private Menus.HomeMenu homeMenu1;
-        private Controls.NumberBox numberBox1;
+        private Menus.HomeBottomMenu homeBottomMenu1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

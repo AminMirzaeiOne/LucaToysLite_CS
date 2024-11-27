@@ -36,7 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.Name = "HomeBottomMenu";
-            this.Size = new System.Drawing.Size(659, 159);
+            this.Size = new System.Drawing.Size(650, 60);
             this.ResumeLayout(false);
 
         }
