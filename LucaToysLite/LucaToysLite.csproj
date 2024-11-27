@@ -1022,6 +1022,9 @@
     <EmbeddedResource Include="Menus\Widgets.resx">
       <DependentUpon>Widgets.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Menus\WorkspaceManager.resx">
+      <DependentUpon>WorkspaceManager.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Messages\Hybrid.resx">
       <DependentUpon>Hybrid.cs</DependentUpon>
     </EmbeddedResource>
