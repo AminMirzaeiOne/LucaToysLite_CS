@@ -143,6 +143,16 @@ namespace LucaToysLite.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap GifIcons {
+            get {
+                object obj = ResourceManager.GetObject("GifIcons", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Group_1 {
             get {
                 object obj = ResourceManager.GetObject("Group 1", resourceCulture);
@@ -2866,6 +2876,26 @@ namespace LucaToysLite.Properties {
         internal static System.Drawing.Bitmap rb_7965 {
             get {
                 object obj = ResourceManager.GetObject("rb_7965", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Success_GIF___Success___Discover___Share_GIFs {
+            get {
+                object obj = ResourceManager.GetObject("Success GIF - Success - Discover & Share GIFs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WaitingIcon {
+            get {
+                object obj = ResourceManager.GetObject("WaitingIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -2038,5 +2038,14 @@
   <ItemGroup>
     <None Include="Resources\icons8-success-96.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WaitingIcon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Success GIF - Success - Discover &amp; Share GIFs.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GifIcons.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

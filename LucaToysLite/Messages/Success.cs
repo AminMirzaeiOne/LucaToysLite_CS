@@ -26,5 +26,10 @@ namespace LucaToysLite.Messages
         {
             this.loadingControl1.StartProgress();
         }
+
+        private void roundedButton1_Click(object sender, EventArgs e)
+        {
+            this.windowToolbar1.Close();
+        }
     }
 }

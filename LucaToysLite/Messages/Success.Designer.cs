@@ -40,8 +40,8 @@
             this.searchDescriptionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.defaultButtonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.loadingControl1 = new LucaToysLite.Controls.LoadingControl();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ltContextMenu1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -50,7 +50,7 @@
             // 
             this.windowToolbar1.BackColor = System.Drawing.Color.Crimson;
             this.windowToolbar1.BorderStyleRadius = true;
-            this.windowToolbar1.CloseMessage = true;
+            this.windowToolbar1.CloseMessage = false;
             this.windowToolbar1.ColorPalette = System.Drawing.Color.Crimson;
             this.windowToolbar1.DarkTheme = true;
             this.windowToolbar1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -59,8 +59,8 @@
             this.windowToolbar1.IconButtonSybmol = "";
             this.windowToolbar1.IconMenu = true;
             this.windowToolbar1.Location = new System.Drawing.Point(0, 0);
-            this.windowToolbar1.MaximizeButton = true;
-            this.windowToolbar1.MinimizeButton = true;
+            this.windowToolbar1.MaximizeButton = false;
+            this.windowToolbar1.MinimizeButton = false;
             this.windowToolbar1.MoveOption = true;
             this.windowToolbar1.Name = "windowToolbar1";
             this.windowToolbar1.Size = new System.Drawing.Size(750, 45);
@@ -86,6 +86,7 @@
             this.roundedButton1.TabIndex = 1;
             this.roundedButton1.Text = "OK";
             this.roundedButton1.UseVisualStyleBackColor = false;
+            this.roundedButton1.Click += new System.EventHandler(this.roundedButton1_Click);
             // 
             // label1
             // 
@@ -171,25 +172,28 @@
             this.defaultButtonToolStripMenuItem.Size = new System.Drawing.Size(231, 32);
             this.defaultButtonToolStripMenuItem.Text = "Default Button";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::LucaToysLite.Properties.Resources.icons8_success_96;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(33, 135);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(180, 180);
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            // 
             // loadingControl1
             // 
             this.loadingControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.loadingControl1.ColorPalette = System.Drawing.Color.Green;
+            this.loadingControl1.ColorPalette = System.Drawing.Color.Crimson;
             this.loadingControl1.DarkTheme = true;
+            this.loadingControl1.Interval = ((byte)(15));
             this.loadingControl1.Location = new System.Drawing.Point(33, 331);
             this.loadingControl1.Name = "loadingControl1";
             this.loadingControl1.Size = new System.Drawing.Size(690, 30);
+            this.loadingControl1.Speed = ((byte)(15));
             this.loadingControl1.TabIndex = 7;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Image = global::LucaToysLite.Properties.Resources.Success_GIF___Success___Discover___Share_GIFs;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 60);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(223, 264);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
             // 
             // Success
             // 
