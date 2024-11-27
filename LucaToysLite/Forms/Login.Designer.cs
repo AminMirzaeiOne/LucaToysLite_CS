@@ -55,9 +55,9 @@
             this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ltGradintPanel1 = new LucaToysLite.Controls.LTGradintPanel();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
-            this.label1 = new System.Windows.Forms.Label();
             this.roundedPanel3.SuspendLayout();
             this.roundedPanel2.SuspendLayout();
             this.ltContextMenu2.SuspendLayout();
@@ -101,6 +101,7 @@
             this.roundedButton4.TabIndex = 10;
             this.roundedButton4.Text = "Problem";
             this.roundedButton4.UseVisualStyleBackColor = true;
+            this.roundedButton4.Click += new System.EventHandler(this.roundedButton4_Click);
             // 
             // roundedButton3
             // 
@@ -346,6 +347,18 @@
             this.ltGradintPanel1.Size = new System.Drawing.Size(400, 592);
             this.ltGradintPanel1.TabIndex = 14;
             // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(75, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(254, 86);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Login Manager";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
@@ -379,18 +392,6 @@
             this.windowToolbar1.TabIndex = 0;
             this.windowToolbar1.TitleText = "Login Manager";
             this.windowToolbar1.WindowBorderSize = ((byte)(3));
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(75, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(254, 86);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Login Manager";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Login
             // 

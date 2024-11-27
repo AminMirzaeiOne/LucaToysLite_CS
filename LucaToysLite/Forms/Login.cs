@@ -25,5 +25,11 @@ namespace LucaToysLite.Forms
         {
             this.ltGradintPanel1.Animation = true;
         }
+
+        private void roundedButton4_Click(object sender, EventArgs e)
+        {
+            LucaToysLite.Forms.LoginProblem loginProblem = new LoginProblem();
+            loginProblem.Show();
+        }
     }
 }
