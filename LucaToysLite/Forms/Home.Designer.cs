@@ -108,7 +108,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.homeMenu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.homeMenu1.BorderColor = System.Drawing.Color.Crimson;
-            this.homeMenu1.BorderSize = ((byte)(2));
+            this.homeMenu1.BorderSize = ((byte)(3));
             this.homeMenu1.Location = new System.Drawing.Point(12, 52);
             this.homeMenu1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.homeMenu1.Name = "homeMenu1";

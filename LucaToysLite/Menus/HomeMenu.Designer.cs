@@ -54,7 +54,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.animator1.SetDecoration(this.panel1, WFAnimations.DecorationType.None);
-            this.panel1.Location = new System.Drawing.Point(3, 87);
+            this.panel1.Location = new System.Drawing.Point(3, 85);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1951, 140);
             this.panel1.TabIndex = 2;
