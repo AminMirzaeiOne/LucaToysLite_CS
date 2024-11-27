@@ -52,9 +52,9 @@
             this.roundedPanel5.BorderColor = System.Drawing.Color.Crimson;
             this.roundedPanel5.BorderSize = ((byte)(3));
             this.roundedPanel5.EnableBorder = true;
-            this.roundedPanel5.Location = new System.Drawing.Point(922, 153);
+            this.roundedPanel5.Location = new System.Drawing.Point(914, 153);
             this.roundedPanel5.Name = "roundedPanel5";
-            this.roundedPanel5.Size = new System.Drawing.Size(162, 517);
+            this.roundedPanel5.Size = new System.Drawing.Size(170, 451);
             this.roundedPanel5.TabIndex = 13;
             // 
             // roundedPanel2
@@ -66,9 +66,9 @@
             this.roundedPanel2.BorderColor = System.Drawing.Color.Crimson;
             this.roundedPanel2.BorderSize = ((byte)(3));
             this.roundedPanel2.EnableBorder = true;
-            this.roundedPanel2.Location = new System.Drawing.Point(328, 153);
+            this.roundedPanel2.Location = new System.Drawing.Point(324, 153);
             this.roundedPanel2.Name = "roundedPanel2";
-            this.roundedPanel2.Size = new System.Drawing.Size(575, 517);
+            this.roundedPanel2.Size = new System.Drawing.Size(575, 451);
             this.roundedPanel2.TabIndex = 13;
             // 
             // roundedPanel1
@@ -81,7 +81,7 @@
             this.roundedPanel1.EnableBorder = true;
             this.roundedPanel1.Location = new System.Drawing.Point(19, 153);
             this.roundedPanel1.Name = "roundedPanel1";
-            this.roundedPanel1.Size = new System.Drawing.Size(290, 517);
+            this.roundedPanel1.Size = new System.Drawing.Size(290, 451);
             this.roundedPanel1.TabIndex = 13;
             // 
             // roundedPanel3
@@ -109,7 +109,7 @@
             this.ltRadioButton4.CheckedColor = System.Drawing.Color.Crimson;
             this.ltRadioButton4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ltRadioButton4.ForeColor = System.Drawing.Color.White;
-            this.ltRadioButton4.Location = new System.Drawing.Point(835, 26);
+            this.ltRadioButton4.Location = new System.Drawing.Point(826, 26);
             this.ltRadioButton4.MinimumSize = new System.Drawing.Size(0, 21);
             this.ltRadioButton4.Name = "ltRadioButton4";
             this.ltRadioButton4.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -125,7 +125,7 @@
             this.ltRadioButton3.CheckedColor = System.Drawing.Color.Crimson;
             this.ltRadioButton3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ltRadioButton3.ForeColor = System.Drawing.Color.White;
-            this.ltRadioButton3.Location = new System.Drawing.Point(724, 26);
+            this.ltRadioButton3.Location = new System.Drawing.Point(715, 26);
             this.ltRadioButton3.MinimumSize = new System.Drawing.Size(0, 21);
             this.ltRadioButton3.Name = "ltRadioButton3";
             this.ltRadioButton3.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -141,7 +141,7 @@
             this.ltRadioButton2.CheckedColor = System.Drawing.Color.Crimson;
             this.ltRadioButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ltRadioButton2.ForeColor = System.Drawing.Color.White;
-            this.ltRadioButton2.Location = new System.Drawing.Point(610, 26);
+            this.ltRadioButton2.Location = new System.Drawing.Point(601, 26);
             this.ltRadioButton2.MinimumSize = new System.Drawing.Size(0, 21);
             this.ltRadioButton2.Name = "ltRadioButton2";
             this.ltRadioButton2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -158,7 +158,7 @@
             this.ltRadioButton1.CheckedColor = System.Drawing.Color.Crimson;
             this.ltRadioButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ltRadioButton1.ForeColor = System.Drawing.Color.White;
-            this.ltRadioButton1.Location = new System.Drawing.Point(500, 26);
+            this.ltRadioButton1.Location = new System.Drawing.Point(491, 26);
             this.ltRadioButton1.MinimumSize = new System.Drawing.Size(0, 21);
             this.ltRadioButton1.Name = "ltRadioButton1";
             this.ltRadioButton1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -242,7 +242,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.ClientSize = new System.Drawing.Size(1106, 691);
+            this.ClientSize = new System.Drawing.Size(1106, 625);
             this.Controls.Add(this.roundedPanel5);
             this.Controls.Add(this.roundedPanel2);
             this.Controls.Add(this.roundedPanel1);
