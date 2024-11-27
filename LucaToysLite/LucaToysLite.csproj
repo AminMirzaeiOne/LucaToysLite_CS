@@ -444,6 +444,12 @@
     <Compile Include="Menus\Help.Designer.cs">
       <DependentUpon>Help.cs</DependentUpon>
     </Compile>
+    <Compile Include="Menus\HomeBottomMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Menus\HomeBottomMenu.Designer.cs">
+      <DependentUpon>HomeBottomMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menus\HomeMenu.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -988,6 +994,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menus\Help.resx">
       <DependentUpon>Help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\HomeBottomMenu.resx">
+      <DependentUpon>HomeBottomMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menus\HomeMenu.resx">
       <DependentUpon>HomeMenu.cs</DependentUpon>
