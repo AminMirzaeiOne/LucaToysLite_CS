@@ -2080,5 +2080,26 @@
   <ItemGroup>
     <None Include="Resources\icons8-tab-381.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-rain-cloud-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-rain-cloud-641.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-google-68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-youtube-music-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-instagram-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-twitter-circled-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-whatsapp-72.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

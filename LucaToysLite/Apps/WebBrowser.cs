@@ -15,7 +15,7 @@ namespace LucaToysLite.Apps
     {
         public WebBrowser()
         {
-            
+            this.InitializeComponent();
         }
     }
 }
