@@ -52,5 +52,11 @@ namespace LucaToysLite.Menus
             LucaToysLite.Apps.Paint paint = new Apps.Paint();
             paint.Show();
         }
+
+        private void roundedButton2_Click(object sender, EventArgs e)
+        {
+            LucaToysLite.Apps.Converter converter = new Apps.Converter();
+            converter.Show();
+        }
     }
 }
