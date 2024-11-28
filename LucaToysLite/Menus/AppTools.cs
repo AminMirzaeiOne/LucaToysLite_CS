@@ -46,5 +46,11 @@ namespace LucaToysLite.Menus
             LucaToysLite.Apps.WebBrowser webBrowser = new Apps.WebBrowser();
             webBrowser.Show();
         }
+
+        private void roundedButton1_Click(object sender, EventArgs e)
+        {
+            LucaToysLite.Apps.Paint paint = new Apps.Paint();
+            paint.Show();
+        }
     }
 }
