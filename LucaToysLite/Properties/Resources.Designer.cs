@@ -583,6 +583,16 @@ namespace LucaToysLite.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_amazon_prime_video_38 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-amazon-prime-video-38", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_android_app_drawer_34 {
             get {
                 object obj = ResourceManager.GetObject("icons8-android-app-drawer-34", resourceCulture);
@@ -1653,6 +1663,16 @@ namespace LucaToysLite.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_instagram_38 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-instagram-38", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_instagram_old_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-instagram-old-48", resourceCulture);
@@ -2523,6 +2543,26 @@ namespace LucaToysLite.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_tab_38 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-tab-38", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_tab_381 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-tab-381", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_table_of_content_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8-table-of-content-32", resourceCulture);
@@ -2876,6 +2916,16 @@ namespace LucaToysLite.Properties {
         internal static System.Drawing.Bitmap icons8_xls_68 {
             get {
                 object obj = ResourceManager.GetObject("icons8-xls-68", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_youtube_music_38 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-youtube-music-38", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

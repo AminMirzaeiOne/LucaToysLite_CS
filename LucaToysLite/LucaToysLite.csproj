@@ -2065,5 +2065,20 @@
   <ItemGroup>
     <None Include="Resources\icons8-microsoft-translator-50.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-amazon-prime-video-38.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-youtube-music-38.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-instagram-38.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-tab-38.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-tab-381.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

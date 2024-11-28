@@ -40,5 +40,11 @@ namespace LucaToysLite.Menus
             LucaToysLite.Apps.Translator translator = new Apps.Translator();
             translator.Show();
         }
+
+        private void roundedButton4_Click(object sender, EventArgs e)
+        {
+            LucaToysLite.Apps.WebBrowser webBrowser = new Apps.WebBrowser();
+            webBrowser.Show();
+        }
     }
 }
