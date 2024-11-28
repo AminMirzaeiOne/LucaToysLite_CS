@@ -34,5 +34,11 @@ namespace LucaToysLite.Menus
             LucaToysLite.Apps.PhoneBook phoneBook = new Apps.PhoneBook();
             phoneBook.Show();
         }
+
+        private void roundedButton3_Click(object sender, EventArgs e)
+        {
+            LucaToysLite.Apps.Translator translator = new Apps.Translator();
+            translator.Show();
+        }
     }
 }
