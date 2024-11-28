@@ -16,5 +16,10 @@ namespace LucaToysLite.Apps
         {
             InitializeComponent();
         }
+
+        private void roundedPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
