@@ -38,7 +38,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.roundedPanel6 = new LucaToysLite.Controls.RoundedPanel();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.roundedButton6 = new LucaToysLite.Controls.RoundedButton();
             this.roundedPanel2 = new LucaToysLite.Controls.RoundedPanel();
@@ -59,6 +58,7 @@
             this.roundedButton2 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton1 = new LucaToysLite.Controls.RoundedButton();
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
+            this.label3 = new System.Windows.Forms.Label();
             this.roundedPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.roundedPanel6.SuspendLayout();
@@ -194,7 +194,6 @@
             this.roundedButton7.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
             this.roundedButton7.Size = new System.Drawing.Size(150, 150);
             this.roundedButton7.TabIndex = 24;
-            this.roundedButton7.Text = "Youtube";
             this.roundedButton7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.roundedButton7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.roundedButton7.UseVisualStyleBackColor = true;
@@ -238,25 +237,13 @@
             this.roundedPanel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.roundedPanel6.BorderColor = System.Drawing.Color.Crimson;
             this.roundedPanel6.BorderSize = ((byte)(3));
-            this.roundedPanel6.Controls.Add(this.richTextBox1);
+            this.roundedPanel6.Controls.Add(this.label3);
             this.roundedPanel6.Controls.Add(this.pictureBox2);
             this.roundedPanel6.EnableBorder = true;
             this.roundedPanel6.Location = new System.Drawing.Point(80, 138);
             this.roundedPanel6.Name = "roundedPanel6";
             this.roundedPanel6.Size = new System.Drawing.Size(700, 80);
             this.roundedPanel6.TabIndex = 1;
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.ForeColor = System.Drawing.Color.White;
-            this.richTextBox1.Location = new System.Drawing.Point(87, 10);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(602, 60);
-            this.richTextBox1.TabIndex = 24;
-            this.richTextBox1.Text = "Digikala";
             // 
             // pictureBox2
             // 
@@ -624,6 +611,17 @@
             this.windowToolbar1.TitleText = "Web Browser";
             this.windowToolbar1.WindowBorderSize = ((byte)(3));
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(91, 25);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(102, 32);
+            this.label3.TabIndex = 24;
+            this.label3.Text = "Digikala";
+            // 
             // WebBrowser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
@@ -644,6 +642,7 @@
             this.roundedPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.roundedPanel6.ResumeLayout(false);
+            this.roundedPanel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.roundedPanel2.ResumeLayout(false);
             this.roundedPanel1.ResumeLayout(false);
@@ -683,10 +682,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.RichTextBox richTextBox1;
         private Controls.RoundedButton roundedButton7;
         private Controls.RoundedButton roundedButton10;
         private Controls.RoundedButton roundedButton9;
         private Controls.RoundedButton roundedButton8;
+        private System.Windows.Forms.Label label3;
     }
 }
