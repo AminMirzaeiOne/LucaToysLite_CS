@@ -16,5 +16,17 @@ namespace LucaToysLite.Menus
         {
             InitializeComponent();
         }
+
+        private LucaToysLite.Widgets.Clock clock = new LucaToysLite.Widgets.Clock();
+
+        public System.Windows.Forms.Form Window { get; set; } = null;
+
+        private void roundedButton1_Click(object sender, EventArgs e)
+        {
+            if(this.Window != null)
+            {
+                this.Window.Controls.Add(this.clock);
+            }
+        }
     }
 }
