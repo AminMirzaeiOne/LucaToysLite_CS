@@ -2118,6 +2118,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="LucaLogo.ico" />
+    <None Include="Resources\icons8-return-purchase-72.png" />
+    <None Include="Resources\icons8-buy-72.png" />
     <None Include="Resources\icons8-purchase-order-68.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
