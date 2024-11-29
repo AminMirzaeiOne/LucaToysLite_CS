@@ -28,8 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // Clock
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Name = "Clock";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Clock_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Clock_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Clock_MouseUp);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
