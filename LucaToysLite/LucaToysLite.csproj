@@ -122,12 +122,6 @@
     <Compile Include="Controls\LTCheckBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Controls\LTClock.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Controls\LTClock.Designer.cs">
-      <DependentUpon>LTClock.cs</DependentUpon>
-    </Compile>
     <Compile Include="Controls\LTComboBox.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -874,9 +868,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\LTCalendar.resx">
       <DependentUpon>LTCalendar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\LTClock.resx">
-      <DependentUpon>LTClock.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\LTTextBox.resx">
       <DependentUpon>LTTextBox.cs</DependentUpon>
