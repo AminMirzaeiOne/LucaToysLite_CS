@@ -52,6 +52,7 @@ namespace LucaToysLite.Menus
             this.settings.Visible = false;
             this.help.Visible = false;
             this.widgets.Visible = false;
+
         }
 
         private LucaToysLite.Menus.Users users = new Users();
@@ -236,6 +237,7 @@ namespace LucaToysLite.Menus
             }
             else if (rb == this.radioWidgets)
             {
+                this.widgets.Window = (Form)this.Parent;
                 foreach (UserControl item in this.panel1.Controls)
                 {
                     if (item != this.widgets)

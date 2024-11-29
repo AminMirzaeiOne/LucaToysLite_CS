@@ -23,10 +23,11 @@ namespace LucaToysLite.Menus
 
         private void roundedButton1_Click(object sender, EventArgs e)
         {
-            if(this.Window != null)
-            {
                 this.Window.Controls.Add(this.clock);
-            }
+                this.clock.BackColor = Color.White;
+                this.clock.Location = new System.Drawing.Point(200, 200);
+                this.clock.BringToFront();
+            
         }
     }
 }
