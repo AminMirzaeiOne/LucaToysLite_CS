@@ -48,6 +48,9 @@
             this.roundedButton7 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton6 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton1 = new LucaToysLite.Controls.RoundedButton();
+            this.roundedPanel1 = new LucaToysLite.Controls.RoundedPanel();
+            this.roundedPanel2 = new LucaToysLite.Controls.RoundedPanel();
+            this.roundedPanel3 = new LucaToysLite.Controls.RoundedPanel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -402,12 +405,55 @@
             this.roundedButton1.Text = "File";
             this.roundedButton1.UseVisualStyleBackColor = true;
             // 
+            // roundedPanel1
+            // 
+            this.roundedPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.roundedPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.roundedPanel1.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedPanel1.BorderSize = ((byte)(3));
+            this.roundedPanel1.EnableBorder = true;
+            this.roundedPanel1.Location = new System.Drawing.Point(21, 120);
+            this.roundedPanel1.Name = "roundedPanel1";
+            this.roundedPanel1.Size = new System.Drawing.Size(300, 500);
+            this.roundedPanel1.TabIndex = 6;
+            // 
+            // roundedPanel2
+            // 
+            this.roundedPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.roundedPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.roundedPanel2.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedPanel2.BorderSize = ((byte)(3));
+            this.roundedPanel2.EnableBorder = true;
+            this.roundedPanel2.Location = new System.Drawing.Point(1087, 120);
+            this.roundedPanel2.Name = "roundedPanel2";
+            this.roundedPanel2.Size = new System.Drawing.Size(200, 500);
+            this.roundedPanel2.TabIndex = 6;
+            // 
+            // roundedPanel3
+            // 
+            this.roundedPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.roundedPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.roundedPanel3.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedPanel3.BorderSize = ((byte)(3));
+            this.roundedPanel3.EnableBorder = true;
+            this.roundedPanel3.Location = new System.Drawing.Point(338, 120);
+            this.roundedPanel3.Name = "roundedPanel3";
+            this.roundedPanel3.Size = new System.Drawing.Size(731, 500);
+            this.roundedPanel3.TabIndex = 6;
+            // 
             // Paint
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(1306, 640);
+            this.Controls.Add(this.roundedPanel3);
+            this.Controls.Add(this.roundedPanel2);
+            this.Controls.Add(this.roundedPanel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.windowToolbar1);
@@ -443,5 +489,8 @@
         private Controls.RoundedButton roundedButton7;
         private Controls.RoundedButton roundedButton6;
         private Controls.RoundedButton roundedButton1;
+        private Controls.RoundedPanel roundedPanel1;
+        private Controls.RoundedPanel roundedPanel2;
+        private Controls.RoundedPanel roundedPanel3;
     }
 }
