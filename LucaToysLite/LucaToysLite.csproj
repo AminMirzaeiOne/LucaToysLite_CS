@@ -34,6 +34,9 @@
     <WarningLevel>4</WarningLevel>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>LucaLogo.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -2112,6 +2115,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-rtf-document-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LucaLogo.ico" />
+    <None Include="Resources\icons8-purchase-order-68.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
