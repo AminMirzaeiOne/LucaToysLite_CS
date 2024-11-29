@@ -31,7 +31,6 @@
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.roundedLabel4 = new LucaToysLite.Controls.RoundedLabel();
             this.roundedLabel3 = new LucaToysLite.Controls.RoundedLabel();
             this.roundedLabel2 = new LucaToysLite.Controls.RoundedLabel();
             this.roundedLabel1 = new LucaToysLite.Controls.RoundedLabel();
@@ -41,7 +40,6 @@
             this.roundedButton2 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton15 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton14 = new LucaToysLite.Controls.RoundedButton();
-            this.roundedButton13 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton12 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton10 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton11 = new LucaToysLite.Controls.RoundedButton();
@@ -91,7 +89,6 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
-            this.panel1.Controls.Add(this.roundedLabel4);
             this.panel1.Controls.Add(this.roundedLabel3);
             this.panel1.Controls.Add(this.roundedLabel2);
             this.panel1.Controls.Add(this.roundedLabel1);
@@ -101,7 +98,6 @@
             this.panel1.Controls.Add(this.roundedButton2);
             this.panel1.Controls.Add(this.roundedButton15);
             this.panel1.Controls.Add(this.roundedButton14);
-            this.panel1.Controls.Add(this.roundedButton13);
             this.panel1.Controls.Add(this.roundedButton12);
             this.panel1.Controls.Add(this.roundedButton10);
             this.panel1.Controls.Add(this.roundedButton11);
@@ -114,16 +110,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1297, 55);
             this.panel1.TabIndex = 3;
-            // 
-            // roundedLabel4
-            // 
-            this.roundedLabel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.roundedLabel4.BackColor = System.Drawing.Color.Crimson;
-            this.roundedLabel4.BorderRadius = ((byte)(4));
-            this.roundedLabel4.Location = new System.Drawing.Point(700, 7);
-            this.roundedLabel4.Name = "roundedLabel4";
-            this.roundedLabel4.Size = new System.Drawing.Size(4, 40);
-            this.roundedLabel4.TabIndex = 18;
             // 
             // roundedLabel3
             // 
@@ -239,7 +225,7 @@
             this.roundedButton15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton15.Font = new System.Drawing.Font("Segoe MDL2 Assets", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedButton15.ForeColor = System.Drawing.Color.White;
-            this.roundedButton15.Location = new System.Drawing.Point(568, 7);
+            this.roundedButton15.Location = new System.Drawing.Point(656, 7);
             this.roundedButton15.Name = "roundedButton15";
             this.roundedButton15.Size = new System.Drawing.Size(50, 40);
             this.roundedButton15.TabIndex = 0;
@@ -258,31 +244,12 @@
             this.roundedButton14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton14.Font = new System.Drawing.Font("Segoe MDL2 Assets", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedButton14.ForeColor = System.Drawing.Color.White;
-            this.roundedButton14.Location = new System.Drawing.Point(631, 7);
+            this.roundedButton14.Location = new System.Drawing.Point(719, 7);
             this.roundedButton14.Name = "roundedButton14";
             this.roundedButton14.Size = new System.Drawing.Size(50, 40);
             this.roundedButton14.TabIndex = 0;
             this.roundedButton14.Text = "";
             this.roundedButton14.UseVisualStyleBackColor = true;
-            // 
-            // roundedButton13
-            // 
-            this.roundedButton13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.roundedButton13.BorderRadius = ((byte)(15));
-            this.roundedButton13.BorderSize = ((byte)(2));
-            this.roundedButton13.EnableBorder = true;
-            this.roundedButton13.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
-            this.roundedButton13.FlatAppearance.BorderSize = 0;
-            this.roundedButton13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Crimson;
-            this.roundedButton13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton13.Font = new System.Drawing.Font("Segoe MDL2 Assets", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedButton13.ForeColor = System.Drawing.Color.White;
-            this.roundedButton13.Location = new System.Drawing.Point(722, 7);
-            this.roundedButton13.Name = "roundedButton13";
-            this.roundedButton13.Size = new System.Drawing.Size(50, 40);
-            this.roundedButton13.TabIndex = 0;
-            this.roundedButton13.Text = "";
-            this.roundedButton13.UseVisualStyleBackColor = true;
             // 
             // roundedButton12
             // 
@@ -459,7 +426,6 @@
         private Controls.WindowToolbar windowToolbar1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private Controls.RoundedLabel roundedLabel4;
         private Controls.RoundedLabel roundedLabel3;
         private Controls.RoundedLabel roundedLabel2;
         private Controls.RoundedLabel roundedLabel1;
@@ -469,7 +435,6 @@
         private Controls.RoundedButton roundedButton2;
         private Controls.RoundedButton roundedButton15;
         private Controls.RoundedButton roundedButton14;
-        private Controls.RoundedButton roundedButton13;
         private Controls.RoundedButton roundedButton12;
         private Controls.RoundedButton roundedButton10;
         private Controls.RoundedButton roundedButton11;
