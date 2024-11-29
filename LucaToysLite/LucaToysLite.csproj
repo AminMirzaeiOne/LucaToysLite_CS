@@ -2101,5 +2101,17 @@
   <ItemGroup>
     <None Include="Resources\icons8-whatsapp-72.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-music-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-video-gallery-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-wallpaper-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-rtf-document-72.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
