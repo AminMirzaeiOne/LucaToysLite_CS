@@ -489,12 +489,6 @@
     <Compile Include="Menus\Widgets.Designer.cs">
       <DependentUpon>Widgets.cs</DependentUpon>
     </Compile>
-    <Compile Include="Menus\WorkspaceManager.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Menus\WorkspaceManager.Designer.cs">
-      <DependentUpon>WorkspaceManager.cs</DependentUpon>
-    </Compile>
     <Compile Include="Messages\Hybrid.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1030,9 +1024,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menus\Widgets.resx">
       <DependentUpon>Widgets.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Menus\WorkspaceManager.resx">
-      <DependentUpon>WorkspaceManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Messages\Hybrid.resx">
       <DependentUpon>Hybrid.cs</DependentUpon>
