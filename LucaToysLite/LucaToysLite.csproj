@@ -935,6 +935,9 @@
     <EmbeddedResource Include="Forms\LoginProblem.resx">
       <DependentUpon>LoginProblem.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManagerInvoice.resx">
+      <DependentUpon>ManagerInvoice.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Performance.resx">
       <DependentUpon>Performance.cs</DependentUpon>
     </EmbeddedResource>
