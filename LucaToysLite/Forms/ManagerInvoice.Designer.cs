@@ -48,6 +48,7 @@
             this.roundedRadioButton2 = new LucaToysLite.Controls.RoundedRadioButton();
             this.roundedRadioButton1 = new LucaToysLite.Controls.RoundedRadioButton();
             this.roundedRadioButton4 = new LucaToysLite.Controls.RoundedRadioButton();
+            this.ltRadioButton4 = new LucaToysLite.Controls.LTRadioButton();
             this.tableLayoutPanel1.SuspendLayout();
             this.roundedPanel3.SuspendLayout();
             this.roundedPanel4.SuspendLayout();
@@ -114,6 +115,7 @@
             this.roundedPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.roundedPanel3.BorderColor = System.Drawing.Color.Crimson;
             this.roundedPanel3.BorderSize = ((byte)(3));
+            this.roundedPanel3.Controls.Add(this.ltRadioButton4);
             this.roundedPanel3.Controls.Add(this.ltRadioButton3);
             this.roundedPanel3.Controls.Add(this.roundedButton5);
             this.roundedPanel3.Controls.Add(this.ltRadioButton2);
@@ -131,7 +133,7 @@
             this.ltRadioButton3.CheckedColor = System.Drawing.Color.Crimson;
             this.ltRadioButton3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ltRadioButton3.ForeColor = System.Drawing.Color.White;
-            this.ltRadioButton3.Location = new System.Drawing.Point(833, 26);
+            this.ltRadioButton3.Location = new System.Drawing.Point(790, 26);
             this.ltRadioButton3.MinimumSize = new System.Drawing.Size(0, 21);
             this.ltRadioButton3.Name = "ltRadioButton3";
             this.ltRadioButton3.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -147,7 +149,7 @@
             this.ltRadioButton2.CheckedColor = System.Drawing.Color.Crimson;
             this.ltRadioButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ltRadioButton2.ForeColor = System.Drawing.Color.White;
-            this.ltRadioButton2.Location = new System.Drawing.Point(651, 26);
+            this.ltRadioButton2.Location = new System.Drawing.Point(624, 26);
             this.ltRadioButton2.MinimumSize = new System.Drawing.Size(0, 21);
             this.ltRadioButton2.Name = "ltRadioButton2";
             this.ltRadioButton2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -189,7 +191,7 @@
             this.ltRadioButton1.CheckedColor = System.Drawing.Color.Crimson;
             this.ltRadioButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ltRadioButton1.ForeColor = System.Drawing.Color.White;
-            this.ltRadioButton1.Location = new System.Drawing.Point(491, 26);
+            this.ltRadioButton1.Location = new System.Drawing.Point(477, 26);
             this.ltRadioButton1.MinimumSize = new System.Drawing.Size(0, 21);
             this.ltRadioButton1.Name = "ltRadioButton1";
             this.ltRadioButton1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -429,6 +431,22 @@
             this.roundedRadioButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.roundedRadioButton4.UseVisualStyleBackColor = true;
             // 
+            // ltRadioButton4
+            // 
+            this.ltRadioButton4.AutoSize = true;
+            this.ltRadioButton4.CheckedColor = System.Drawing.Color.Crimson;
+            this.ltRadioButton4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ltRadioButton4.ForeColor = System.Drawing.Color.White;
+            this.ltRadioButton4.Location = new System.Drawing.Point(956, 26);
+            this.ltRadioButton4.MinimumSize = new System.Drawing.Size(0, 21);
+            this.ltRadioButton4.Name = "ltRadioButton4";
+            this.ltRadioButton4.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.ltRadioButton4.Size = new System.Drawing.Size(123, 29);
+            this.ltRadioButton4.TabIndex = 3;
+            this.ltRadioButton4.Text = "Date Reg";
+            this.ltRadioButton4.UnCheckedColor = System.Drawing.Color.Gray;
+            this.ltRadioButton4.UseVisualStyleBackColor = true;
+            // 
             // ManagerInvoice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
@@ -478,5 +496,6 @@
         private Controls.RoundedButton roundedButton1;
         private Controls.RoundedButton roundedButton4;
         private Controls.RoundedRadioButton roundedRadioButton4;
+        private Controls.LTRadioButton ltRadioButton4;
     }
 }
