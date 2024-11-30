@@ -231,6 +231,12 @@
     <Compile Include="Forms\AddDoll.Designer.cs">
       <DependentUpon>AddDoll.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AddPurchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddPurchase.Designer.cs">
+      <DependentUpon>AddPurchase.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AddSeller.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -895,6 +901,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddDoll.resx">
       <DependentUpon>AddDoll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddPurchase.resx">
+      <DependentUpon>AddPurchase.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddSeller.resx">
       <DependentUpon>AddSeller.cs</DependentUpon>
