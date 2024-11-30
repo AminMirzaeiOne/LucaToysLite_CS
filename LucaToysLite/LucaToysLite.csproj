@@ -309,6 +309,12 @@
     <Compile Include="Forms\LoginProblem.Designer.cs">
       <DependentUpon>LoginProblem.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ManagerInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManagerInvoice.Designer.cs">
+      <DependentUpon>ManagerInvoice.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Performance.cs">
       <SubType>Form</SubType>
     </Compile>
