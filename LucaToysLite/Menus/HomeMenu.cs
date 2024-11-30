@@ -27,6 +27,7 @@ namespace LucaToysLite.Menus
             this.panel1.Controls.Add(this.settings);
             this.panel1.Controls.Add(this.help);
             this.panel1.Controls.Add(this.widgets);
+            this.panel1.Controls.Add(this.salesman);
 
 
             this.users.Dock = DockStyle.Fill;
@@ -40,6 +41,7 @@ namespace LucaToysLite.Menus
             this.settings.Dock = DockStyle.Fill;
             this.help.Dock = DockStyle.Fill;
             this.widgets.Dock = DockStyle.Fill;
+            this.salesman.Dock = DockStyle.Fill;
 
             this.users.Visible = true;
             this.products.Visible = false;
@@ -52,6 +54,7 @@ namespace LucaToysLite.Menus
             this.settings.Visible = false;
             this.help.Visible = false;
             this.widgets.Visible = false;
+            this.salesman.Visible = false;
 
         }
 
@@ -66,6 +69,7 @@ namespace LucaToysLite.Menus
         private LucaToysLite.Menus.Settings settings = new Settings();
         private LucaToysLite.Menus.Help help = new Help();
         private LucaToysLite.Menus.Widgets widgets = new Widgets();
+        private LucaToysLite.Menus.Salesman salesman = new Salesman();
 
         private int radius = 20;
         [DefaultValue(20)]
@@ -264,6 +268,16 @@ namespace LucaToysLite.Menus
                         item.Visible = false;
                     else
                         this.animator1.Show(this.help);
+                }
+            }
+            else if (rb == this.radioSalesman)
+            {
+                foreach (UserControl item in this.panel1.Controls)
+                {
+                    if (item != this.salesman)
+                        item.Visible = false;
+                    else
+                        this.animator1.Show(this.salesman);
                 }
             }
         }

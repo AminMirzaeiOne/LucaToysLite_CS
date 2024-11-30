@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            WFAnimations.Animation animation1 = new WFAnimations.Animation();
+            WFAnimations.Animation animation2 = new WFAnimations.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeMenu));
             this.panel1 = new System.Windows.Forms.Panel();
             this.animator1 = new WFAnimations.Animator(this.components);
@@ -40,6 +40,7 @@
             this.radioApps = new LucaToysLite.Controls.RoundedRadioButton();
             this.radioSettings = new LucaToysLite.Controls.RoundedRadioButton();
             this.radioExport = new LucaToysLite.Controls.RoundedRadioButton();
+            this.radioSalesman = new LucaToysLite.Controls.RoundedRadioButton();
             this.radioDocuments = new LucaToysLite.Controls.RoundedRadioButton();
             this.radioInvoice = new LucaToysLite.Controls.RoundedRadioButton();
             this.radioAccounting = new LucaToysLite.Controls.RoundedRadioButton();
@@ -63,22 +64,22 @@
             // 
             this.animator1.AnimationType = WFAnimations.AnimationType.Transparent;
             this.animator1.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 1F;
-            this.animator1.DefaultAnimation = animation1;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 1F;
+            this.animator1.DefaultAnimation = animation2;
             this.animator1.Upside = false;
             // 
             // roundedPanel1
@@ -88,12 +89,13 @@
             this.roundedPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.roundedPanel1.BorderColor = System.Drawing.Color.Crimson;
             this.roundedPanel1.BorderSize = ((byte)(0));
+            this.roundedPanel1.Controls.Add(this.radioWidgets);
             this.roundedPanel1.Controls.Add(this.radioUsers);
             this.roundedPanel1.Controls.Add(this.radioHelp);
-            this.roundedPanel1.Controls.Add(this.radioWidgets);
             this.roundedPanel1.Controls.Add(this.radioApps);
             this.roundedPanel1.Controls.Add(this.radioSettings);
             this.roundedPanel1.Controls.Add(this.radioExport);
+            this.roundedPanel1.Controls.Add(this.radioSalesman);
             this.roundedPanel1.Controls.Add(this.radioDocuments);
             this.roundedPanel1.Controls.Add(this.radioInvoice);
             this.roundedPanel1.Controls.Add(this.radioAccounting);
@@ -144,7 +146,7 @@
             this.radioHelp.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioHelp.ForeColor = System.Drawing.Color.White;
             this.radioHelp.Image = global::LucaToysLite.Properties.Resources.icons8_help_34;
-            this.radioHelp.Location = new System.Drawing.Point(1778, 8);
+            this.radioHelp.Location = new System.Drawing.Point(1952, 8);
             this.radioHelp.Name = "radioHelp";
             this.radioHelp.Size = new System.Drawing.Size(160, 64);
             this.radioHelp.TabIndex = 0;
@@ -167,7 +169,7 @@
             this.radioWidgets.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioWidgets.ForeColor = System.Drawing.Color.White;
             this.radioWidgets.Image = global::LucaToysLite.Properties.Resources.icons8_widget_34;
-            this.radioWidgets.Location = new System.Drawing.Point(1421, 8);
+            this.radioWidgets.Location = new System.Drawing.Point(1598, 8);
             this.radioWidgets.Name = "radioWidgets";
             this.radioWidgets.Size = new System.Drawing.Size(160, 64);
             this.radioWidgets.TabIndex = 0;
@@ -190,7 +192,7 @@
             this.radioApps.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioApps.ForeColor = System.Drawing.Color.White;
             this.radioApps.Image = global::LucaToysLite.Properties.Resources.icons8_android_app_drawer_34;
-            this.radioApps.Location = new System.Drawing.Point(1244, 8);
+            this.radioApps.Location = new System.Drawing.Point(1421, 8);
             this.radioApps.Name = "radioApps";
             this.radioApps.Size = new System.Drawing.Size(160, 64);
             this.radioApps.TabIndex = 0;
@@ -213,7 +215,7 @@
             this.radioSettings.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioSettings.ForeColor = System.Drawing.Color.White;
             this.radioSettings.Image = global::LucaToysLite.Properties.Resources.icons8_settings_34;
-            this.radioSettings.Location = new System.Drawing.Point(1599, 8);
+            this.radioSettings.Location = new System.Drawing.Point(1775, 8);
             this.radioSettings.Name = "radioSettings";
             this.radioSettings.Size = new System.Drawing.Size(160, 64);
             this.radioSettings.TabIndex = 0;
@@ -236,7 +238,7 @@
             this.radioExport.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioExport.ForeColor = System.Drawing.Color.White;
             this.radioExport.Image = global::LucaToysLite.Properties.Resources.icons8_data_migration_34;
-            this.radioExport.Location = new System.Drawing.Point(1067, 8);
+            this.radioExport.Location = new System.Drawing.Point(1244, 8);
             this.radioExport.Name = "radioExport";
             this.radioExport.Size = new System.Drawing.Size(160, 64);
             this.radioExport.TabIndex = 0;
@@ -245,6 +247,29 @@
             this.radioExport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.radioExport.UseVisualStyleBackColor = true;
             this.radioExport.CheckedChanged += new System.EventHandler(this.radioUsers_CheckedChanged);
+            // 
+            // radioSalesman
+            // 
+            this.radioSalesman.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioSalesman.BorderSize = ((byte)(2));
+            this.radioSalesman.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.radioSalesman, WFAnimations.DecorationType.None);
+            this.radioSalesman.EnableBorder = true;
+            this.radioSalesman.FlatAppearance.BorderSize = 0;
+            this.radioSalesman.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
+            this.radioSalesman.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioSalesman.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioSalesman.ForeColor = System.Drawing.Color.White;
+            this.radioSalesman.Image = global::LucaToysLite.Properties.Resources.icons8_company_34;
+            this.radioSalesman.Location = new System.Drawing.Point(1067, 8);
+            this.radioSalesman.Name = "radioSalesman";
+            this.radioSalesman.Size = new System.Drawing.Size(160, 64);
+            this.radioSalesman.TabIndex = 0;
+            this.radioSalesman.Text = " Salesman";
+            this.radioSalesman.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.radioSalesman.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.radioSalesman.UseVisualStyleBackColor = true;
+            this.radioSalesman.CheckedChanged += new System.EventHandler(this.radioUsers_CheckedChanged);
             // 
             // radioDocuments
             // 
@@ -391,5 +416,6 @@
         private WFAnimations.Animator animator1;
         private Controls.RoundedRadioButton radioWidgets;
         private Controls.RoundedRadioButton radioHelp;
+        private Controls.RoundedRadioButton radioSalesman;
     }
 }
