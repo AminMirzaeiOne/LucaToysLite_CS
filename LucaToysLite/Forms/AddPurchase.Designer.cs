@@ -48,7 +48,7 @@
             this.windowToolbar1.MinimizeButton = true;
             this.windowToolbar1.MoveOption = true;
             this.windowToolbar1.Name = "windowToolbar1";
-            this.windowToolbar1.Size = new System.Drawing.Size(869, 45);
+            this.windowToolbar1.Size = new System.Drawing.Size(1021, 45);
             this.windowToolbar1.StartupSound = LucaToysLite.Controls.WindowToolbar.StartupSounds.None;
             this.windowToolbar1.TabIndex = 0;
             this.windowToolbar1.TitleText = "Add Purchase";
@@ -59,7 +59,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.ClientSize = new System.Drawing.Size(869, 516);
+            this.ClientSize = new System.Drawing.Size(1021, 635);
             this.Controls.Add(this.windowToolbar1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddPurchase";

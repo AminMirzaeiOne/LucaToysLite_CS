@@ -39,6 +39,7 @@
             this.ltRadioButton1 = new LucaToysLite.Controls.LTRadioButton();
             this.roundedPanel1 = new LucaToysLite.Controls.RoundedPanel();
             this.roundedPanel2 = new LucaToysLite.Controls.RoundedPanel();
+            this.roundedButton4 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton3 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton2 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton1 = new LucaToysLite.Controls.RoundedButton();
@@ -46,6 +47,7 @@
             this.roundedRadioButton3 = new LucaToysLite.Controls.RoundedRadioButton();
             this.roundedRadioButton2 = new LucaToysLite.Controls.RoundedRadioButton();
             this.roundedRadioButton1 = new LucaToysLite.Controls.RoundedRadioButton();
+            this.roundedRadioButton4 = new LucaToysLite.Controls.RoundedRadioButton();
             this.tableLayoutPanel1.SuspendLayout();
             this.roundedPanel3.SuspendLayout();
             this.roundedPanel4.SuspendLayout();
@@ -57,9 +59,9 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label1.BackColor = System.Drawing.Color.Crimson;
-            this.label1.Location = new System.Drawing.Point(231, 38);
+            this.label1.Location = new System.Drawing.Point(255, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(2, 651);
+            this.label1.Size = new System.Drawing.Size(2, 817);
             this.label1.TabIndex = 11;
             // 
             // tableLayoutPanel1
@@ -68,16 +70,18 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.roundedRadioButton4, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.roundedRadioButton3, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.roundedRadioButton2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.roundedRadioButton1, 0, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 51);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(210, 626);
+            this.tableLayoutPanel1.RowCount = 4;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(225, 792);
             this.tableLayoutPanel1.TabIndex = 10;
             // 
             // windowToolbar1
@@ -97,7 +101,7 @@
             this.windowToolbar1.MinimizeButton = true;
             this.windowToolbar1.MoveOption = true;
             this.windowToolbar1.Name = "windowToolbar1";
-            this.windowToolbar1.Size = new System.Drawing.Size(1286, 45);
+            this.windowToolbar1.Size = new System.Drawing.Size(1378, 45);
             this.windowToolbar1.StartupSound = LucaToysLite.Controls.WindowToolbar.StartupSounds.None;
             this.windowToolbar1.TabIndex = 0;
             this.windowToolbar1.TitleText = "Manager Invoice";
@@ -116,9 +120,9 @@
             this.roundedPanel3.Controls.Add(this.roundedPanel4);
             this.roundedPanel3.Controls.Add(this.ltRadioButton1);
             this.roundedPanel3.EnableBorder = true;
-            this.roundedPanel3.Location = new System.Drawing.Point(244, 56);
+            this.roundedPanel3.Location = new System.Drawing.Point(275, 56);
             this.roundedPanel3.Name = "roundedPanel3";
-            this.roundedPanel3.Size = new System.Drawing.Size(1028, 80);
+            this.roundedPanel3.Size = new System.Drawing.Size(1089, 80);
             this.roundedPanel3.TabIndex = 12;
             // 
             // ltRadioButton3
@@ -203,13 +207,14 @@
             this.roundedPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.roundedPanel1.BorderColor = System.Drawing.Color.Crimson;
             this.roundedPanel1.BorderSize = ((byte)(3));
+            this.roundedPanel1.Controls.Add(this.roundedButton4);
             this.roundedPanel1.Controls.Add(this.roundedButton3);
             this.roundedPanel1.Controls.Add(this.roundedButton2);
             this.roundedPanel1.Controls.Add(this.roundedButton1);
             this.roundedPanel1.EnableBorder = true;
-            this.roundedPanel1.Location = new System.Drawing.Point(1022, 151);
+            this.roundedPanel1.Location = new System.Drawing.Point(1114, 151);
             this.roundedPanel1.Name = "roundedPanel1";
-            this.roundedPanel1.Size = new System.Drawing.Size(250, 521);
+            this.roundedPanel1.Size = new System.Drawing.Size(250, 687);
             this.roundedPanel1.TabIndex = 12;
             // 
             // roundedPanel2
@@ -221,10 +226,31 @@
             this.roundedPanel2.BorderColor = System.Drawing.Color.Crimson;
             this.roundedPanel2.BorderSize = ((byte)(3));
             this.roundedPanel2.EnableBorder = true;
-            this.roundedPanel2.Location = new System.Drawing.Point(244, 151);
+            this.roundedPanel2.Location = new System.Drawing.Point(275, 151);
             this.roundedPanel2.Name = "roundedPanel2";
-            this.roundedPanel2.Size = new System.Drawing.Size(765, 521);
+            this.roundedPanel2.Size = new System.Drawing.Size(826, 687);
             this.roundedPanel2.TabIndex = 12;
+            // 
+            // roundedButton4
+            // 
+            this.roundedButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.roundedButton4.BorderRadius = ((byte)(20));
+            this.roundedButton4.BorderSize = ((byte)(3));
+            this.roundedButton4.EnableBorder = true;
+            this.roundedButton4.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedButton4.FlatAppearance.BorderSize = 0;
+            this.roundedButton4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Crimson;
+            this.roundedButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.5F, System.Drawing.FontStyle.Bold);
+            this.roundedButton4.ForeColor = System.Drawing.Color.White;
+            this.roundedButton4.Image = global::LucaToysLite.Properties.Resources.Group_30;
+            this.roundedButton4.Location = new System.Drawing.Point(22, 520);
+            this.roundedButton4.Name = "roundedButton4";
+            this.roundedButton4.Size = new System.Drawing.Size(207, 145);
+            this.roundedButton4.TabIndex = 3;
+            this.roundedButton4.Text = "Preview Invoice";
+            this.roundedButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.roundedButton4.UseVisualStyleBackColor = false;
             // 
             // roundedButton3
             // 
@@ -239,7 +265,7 @@
             this.roundedButton3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.5F, System.Drawing.FontStyle.Bold);
             this.roundedButton3.ForeColor = System.Drawing.Color.White;
             this.roundedButton3.Image = global::LucaToysLite.Properties.Resources.Group_27;
-            this.roundedButton3.Location = new System.Drawing.Point(22, 355);
+            this.roundedButton3.Location = new System.Drawing.Point(22, 353);
             this.roundedButton3.Name = "roundedButton3";
             this.roundedButton3.Size = new System.Drawing.Size(207, 145);
             this.roundedButton3.TabIndex = 3;
@@ -260,7 +286,7 @@
             this.roundedButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.5F, System.Drawing.FontStyle.Bold);
             this.roundedButton2.ForeColor = System.Drawing.Color.White;
             this.roundedButton2.Image = global::LucaToysLite.Properties.Resources.Group_28;
-            this.roundedButton2.Location = new System.Drawing.Point(22, 188);
+            this.roundedButton2.Location = new System.Drawing.Point(22, 186);
             this.roundedButton2.Name = "roundedButton2";
             this.roundedButton2.Size = new System.Drawing.Size(207, 145);
             this.roundedButton2.TabIndex = 4;
@@ -281,7 +307,7 @@
             this.roundedButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.5F, System.Drawing.FontStyle.Bold);
             this.roundedButton1.ForeColor = System.Drawing.Color.White;
             this.roundedButton1.Image = global::LucaToysLite.Properties.Resources.Group_29;
-            this.roundedButton1.Location = new System.Drawing.Point(22, 22);
+            this.roundedButton1.Location = new System.Drawing.Point(22, 20);
             this.roundedButton1.Name = "roundedButton1";
             this.roundedButton1.Size = new System.Drawing.Size(207, 145);
             this.roundedButton1.TabIndex = 5;
@@ -322,10 +348,10 @@
             this.roundedRadioButton3.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.roundedRadioButton3.ForeColor = System.Drawing.Color.White;
             this.roundedRadioButton3.Image = global::LucaToysLite.Properties.Resources.icons8_profit_72;
-            this.roundedRadioButton3.Location = new System.Drawing.Point(5, 421);
+            this.roundedRadioButton3.Location = new System.Drawing.Point(5, 401);
             this.roundedRadioButton3.Margin = new System.Windows.Forms.Padding(5);
             this.roundedRadioButton3.Name = "roundedRadioButton3";
-            this.roundedRadioButton3.Size = new System.Drawing.Size(200, 200);
+            this.roundedRadioButton3.Size = new System.Drawing.Size(215, 188);
             this.roundedRadioButton3.TabIndex = 2;
             this.roundedRadioButton3.Text = "Profit and Loss";
             this.roundedRadioButton3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -345,10 +371,10 @@
             this.roundedRadioButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.roundedRadioButton2.ForeColor = System.Drawing.Color.White;
             this.roundedRadioButton2.Image = global::LucaToysLite.Properties.Resources.icons8_pos_terminal_72;
-            this.roundedRadioButton2.Location = new System.Drawing.Point(5, 213);
+            this.roundedRadioButton2.Location = new System.Drawing.Point(5, 203);
             this.roundedRadioButton2.Margin = new System.Windows.Forms.Padding(5);
             this.roundedRadioButton2.Name = "roundedRadioButton2";
-            this.roundedRadioButton2.Size = new System.Drawing.Size(200, 198);
+            this.roundedRadioButton2.Size = new System.Drawing.Size(215, 188);
             this.roundedRadioButton2.TabIndex = 1;
             this.roundedRadioButton2.Text = "Sales Invoice";
             this.roundedRadioButton2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -372,7 +398,7 @@
             this.roundedRadioButton1.Location = new System.Drawing.Point(5, 5);
             this.roundedRadioButton1.Margin = new System.Windows.Forms.Padding(5);
             this.roundedRadioButton1.Name = "roundedRadioButton1";
-            this.roundedRadioButton1.Size = new System.Drawing.Size(200, 198);
+            this.roundedRadioButton1.Size = new System.Drawing.Size(215, 188);
             this.roundedRadioButton1.TabIndex = 0;
             this.roundedRadioButton1.TabStop = true;
             this.roundedRadioButton1.Text = "Purchase Invoice";
@@ -380,12 +406,35 @@
             this.roundedRadioButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.roundedRadioButton1.UseVisualStyleBackColor = true;
             // 
+            // roundedRadioButton4
+            // 
+            this.roundedRadioButton4.Appearance = System.Windows.Forms.Appearance.Button;
+            this.roundedRadioButton4.BorderSize = ((byte)(2));
+            this.roundedRadioButton4.ColorPallet = System.Drawing.Color.Crimson;
+            this.roundedRadioButton4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.roundedRadioButton4.EnableBorder = true;
+            this.roundedRadioButton4.FlatAppearance.BorderSize = 0;
+            this.roundedRadioButton4.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
+            this.roundedRadioButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedRadioButton4.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.roundedRadioButton4.ForeColor = System.Drawing.Color.White;
+            this.roundedRadioButton4.Image = global::LucaToysLite.Properties.Resources.icons8_profit_72;
+            this.roundedRadioButton4.Location = new System.Drawing.Point(5, 599);
+            this.roundedRadioButton4.Margin = new System.Windows.Forms.Padding(5);
+            this.roundedRadioButton4.Name = "roundedRadioButton4";
+            this.roundedRadioButton4.Size = new System.Drawing.Size(215, 188);
+            this.roundedRadioButton4.TabIndex = 3;
+            this.roundedRadioButton4.Text = "Profit and Loss";
+            this.roundedRadioButton4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.roundedRadioButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.roundedRadioButton4.UseVisualStyleBackColor = true;
+            // 
             // ManagerInvoice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.ClientSize = new System.Drawing.Size(1286, 689);
+            this.ClientSize = new System.Drawing.Size(1378, 855);
             this.Controls.Add(this.roundedPanel2);
             this.Controls.Add(this.roundedPanel1);
             this.Controls.Add(this.roundedPanel3);
@@ -427,5 +476,7 @@
         private Controls.RoundedButton roundedButton3;
         private Controls.RoundedButton roundedButton2;
         private Controls.RoundedButton roundedButton1;
+        private Controls.RoundedButton roundedButton4;
+        private Controls.RoundedRadioButton roundedRadioButton4;
     }
 }
