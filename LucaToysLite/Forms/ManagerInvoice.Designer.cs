@@ -60,7 +60,7 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label1.BackColor = System.Drawing.Color.Crimson;
-            this.label1.Location = new System.Drawing.Point(255, 38);
+            this.label1.Location = new System.Drawing.Point(251, 38);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(2, 817);
             this.label1.TabIndex = 11;
@@ -340,6 +340,7 @@
             // roundedRadioButton3
             // 
             this.roundedRadioButton3.Appearance = System.Windows.Forms.Appearance.Button;
+            this.roundedRadioButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.roundedRadioButton3.BorderSize = ((byte)(2));
             this.roundedRadioButton3.ColorPallet = System.Drawing.Color.Crimson;
             this.roundedRadioButton3.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -358,11 +359,12 @@
             this.roundedRadioButton3.Text = "Profit and Loss";
             this.roundedRadioButton3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.roundedRadioButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.roundedRadioButton3.UseVisualStyleBackColor = true;
+            this.roundedRadioButton3.UseVisualStyleBackColor = false;
             // 
             // roundedRadioButton2
             // 
             this.roundedRadioButton2.Appearance = System.Windows.Forms.Appearance.Button;
+            this.roundedRadioButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.roundedRadioButton2.BorderSize = ((byte)(2));
             this.roundedRadioButton2.ColorPallet = System.Drawing.Color.Crimson;
             this.roundedRadioButton2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -381,11 +383,12 @@
             this.roundedRadioButton2.Text = "Sales Invoice";
             this.roundedRadioButton2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.roundedRadioButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.roundedRadioButton2.UseVisualStyleBackColor = true;
+            this.roundedRadioButton2.UseVisualStyleBackColor = false;
             // 
             // roundedRadioButton1
             // 
             this.roundedRadioButton1.Appearance = System.Windows.Forms.Appearance.Button;
+            this.roundedRadioButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.roundedRadioButton1.BorderSize = ((byte)(2));
             this.roundedRadioButton1.Checked = true;
             this.roundedRadioButton1.ColorPallet = System.Drawing.Color.Crimson;
@@ -406,11 +409,12 @@
             this.roundedRadioButton1.Text = "Purchase Invoice";
             this.roundedRadioButton1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.roundedRadioButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.roundedRadioButton1.UseVisualStyleBackColor = true;
+            this.roundedRadioButton1.UseVisualStyleBackColor = false;
             // 
             // roundedRadioButton4
             // 
             this.roundedRadioButton4.Appearance = System.Windows.Forms.Appearance.Button;
+            this.roundedRadioButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.roundedRadioButton4.BorderSize = ((byte)(2));
             this.roundedRadioButton4.ColorPallet = System.Drawing.Color.Crimson;
             this.roundedRadioButton4.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -429,7 +433,7 @@
             this.roundedRadioButton4.Text = "Profit and Loss";
             this.roundedRadioButton4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.roundedRadioButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.roundedRadioButton4.UseVisualStyleBackColor = true;
+            this.roundedRadioButton4.UseVisualStyleBackColor = false;
             // 
             // ltRadioButton4
             // 
