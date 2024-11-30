@@ -16,5 +16,11 @@ namespace LucaToysLite.Menus
         {
             InitializeComponent();
         }
+
+        private void roundedButton5_Click(object sender, EventArgs e)
+        {
+            LucaToysLite.Forms.ManagerInvoice managerInvoice = new Forms.ManagerInvoice();
+            managerInvoice.Show();
+        }
     }
 }
