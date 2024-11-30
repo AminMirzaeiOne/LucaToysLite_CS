@@ -2103,6 +2103,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="LucaLogo.ico" />
+    <None Include="Resources\icons8-profit-72.png" />
     <None Include="Resources\icons8-pos-terminal-72.png" />
     <None Include="Resources\icons8-receipt-72.png" />
     <None Include="Resources\icons8-return-purchase-72.png" />
