@@ -465,12 +465,6 @@
     <Compile Include="Menus\Products.Designer.cs">
       <DependentUpon>Products.cs</DependentUpon>
     </Compile>
-    <Compile Include="Menus\QuickView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Menus\QuickView.Designer.cs">
-      <DependentUpon>QuickView.cs</DependentUpon>
-    </Compile>
     <Compile Include="Menus\Settings.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -1012,9 +1006,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menus\Products.resx">
       <DependentUpon>Products.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Menus\QuickView.resx">
-      <DependentUpon>QuickView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menus\Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
