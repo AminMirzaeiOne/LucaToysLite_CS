@@ -39,7 +39,10 @@
             this.roundedButton4 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton2 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton1 = new LucaToysLite.Controls.RoundedButton();
+            this.roundedPanel2 = new LucaToysLite.Controls.RoundedPanel();
+            this.roundedButton5 = new LucaToysLite.Controls.RoundedButton();
             this.roundedPanel5.SuspendLayout();
+            this.roundedPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // windowToolbar1
@@ -111,10 +114,11 @@
             this.roundedPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.roundedPanel1.BorderColor = System.Drawing.Color.Crimson;
             this.roundedPanel1.BorderSize = ((byte)(3));
+            this.roundedPanel1.Controls.Add(this.roundedButton5);
             this.roundedPanel1.EnableBorder = true;
-            this.roundedPanel1.Location = new System.Drawing.Point(966, 224);
+            this.roundedPanel1.Location = new System.Drawing.Point(959, 223);
             this.roundedPanel1.Name = "roundedPanel1";
-            this.roundedPanel1.Size = new System.Drawing.Size(223, 478);
+            this.roundedPanel1.Size = new System.Drawing.Size(230, 375);
             this.roundedPanel1.TabIndex = 2;
             // 
             // roundedButton7
@@ -212,12 +216,12 @@
             this.roundedButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedButton2.ForeColor = System.Drawing.Color.White;
-            this.roundedButton2.Image = global::LucaToysLite.Properties.Resources.icons8_forward_62;
+            this.roundedButton2.Image = global::LucaToysLite.Properties.Resources.icons8_delete_621;
             this.roundedButton2.Location = new System.Drawing.Point(196, 18);
             this.roundedButton2.Name = "roundedButton2";
             this.roundedButton2.Size = new System.Drawing.Size(162, 114);
             this.roundedButton2.TabIndex = 19;
-            this.roundedButton2.Text = "Redo Product";
+            this.roundedButton2.Text = "Delete Invoice";
             this.roundedButton2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.roundedButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.roundedButton2.UseVisualStyleBackColor = true;
@@ -243,12 +247,47 @@
             this.roundedButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.roundedButton1.UseVisualStyleBackColor = true;
             // 
+            // roundedPanel2
+            // 
+            this.roundedPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.roundedPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.roundedPanel2.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedPanel2.BorderSize = ((byte)(3));
+            this.roundedPanel2.EnableBorder = true;
+            this.roundedPanel2.Location = new System.Drawing.Point(17, 613);
+            this.roundedPanel2.Name = "roundedPanel2";
+            this.roundedPanel2.Size = new System.Drawing.Size(1172, 100);
+            this.roundedPanel2.TabIndex = 2;
+            // 
+            // roundedButton5
+            // 
+            this.roundedButton5.BorderRadius = ((byte)(20));
+            this.roundedButton5.BorderSize = ((byte)(3));
+            this.roundedButton5.EnableBorder = true;
+            this.roundedButton5.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedButton5.FlatAppearance.BorderSize = 0;
+            this.roundedButton5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Crimson;
+            this.roundedButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton5.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedButton5.ForeColor = System.Drawing.Color.White;
+            this.roundedButton5.Image = global::LucaToysLite.Properties.Resources.icons8_print_62;
+            this.roundedButton5.Location = new System.Drawing.Point(28, 21);
+            this.roundedButton5.Name = "roundedButton5";
+            this.roundedButton5.Size = new System.Drawing.Size(179, 119);
+            this.roundedButton5.TabIndex = 19;
+            this.roundedButton5.Text = "Print Invoice";
+            this.roundedButton5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.roundedButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.roundedButton5.UseVisualStyleBackColor = true;
+            // 
             // AddPurchase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(1206, 732);
+            this.Controls.Add(this.roundedPanel2);
             this.Controls.Add(this.roundedPanel1);
             this.Controls.Add(this.roundedPanel5);
             this.Controls.Add(this.windowToolbar1);
@@ -257,6 +296,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddPurchase";
             this.roundedPanel5.ResumeLayout(false);
+            this.roundedPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -274,5 +314,7 @@
         private Controls.RoundedButton roundedButton7;
         private Controls.RoundedLabel roundedLabel1;
         private Controls.RoundedPanel roundedPanel1;
+        private Controls.RoundedPanel roundedPanel2;
+        private Controls.RoundedButton roundedButton5;
     }
 }
