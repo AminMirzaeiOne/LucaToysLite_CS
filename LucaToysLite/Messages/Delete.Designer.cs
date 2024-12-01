@@ -44,11 +44,11 @@
             this.windowToolbar1.IconButtonSybmol = "";
             this.windowToolbar1.IconMenu = true;
             this.windowToolbar1.Location = new System.Drawing.Point(0, 0);
-            this.windowToolbar1.MaximizeButton = true;
-            this.windowToolbar1.MinimizeButton = true;
+            this.windowToolbar1.MaximizeButton = false;
+            this.windowToolbar1.MinimizeButton = false;
             this.windowToolbar1.MoveOption = true;
             this.windowToolbar1.Name = "windowToolbar1";
-            this.windowToolbar1.Size = new System.Drawing.Size(889, 45);
+            this.windowToolbar1.Size = new System.Drawing.Size(750, 45);
             this.windowToolbar1.StartupSound = LucaToysLite.Controls.WindowToolbar.StartupSounds.None;
             this.windowToolbar1.TabIndex = 0;
             this.windowToolbar1.TitleText = "Delete";
@@ -59,7 +59,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.ClientSize = new System.Drawing.Size(889, 562);
+            this.ClientSize = new System.Drawing.Size(750, 450);
             this.Controls.Add(this.windowToolbar1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
