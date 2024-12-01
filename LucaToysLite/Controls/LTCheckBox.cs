@@ -33,6 +33,9 @@ namespace LucaToysLite.Controls
             }
         }
 
+        public System.String CheckedSymbol { get; set; } = "";
+        public System.String UnCheckedSymbol { get; set; } = string.Empty;
+
         public System.Byte BorderSize { get; set; } = 2;
         public System.Drawing.Color ColorPallet
         {
