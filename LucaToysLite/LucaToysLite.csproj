@@ -462,6 +462,12 @@
     <Compile Include="Forms\UpdateDoll.Designer.cs">
       <DependentUpon>UpdateDoll.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\UpdatePerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UpdatePerson.Designer.cs">
+      <DependentUpon>UpdatePerson.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\UpdateSeller.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1096,6 +1102,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UpdateDoll.resx">
       <DependentUpon>UpdateDoll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UpdatePerson.resx">
+      <DependentUpon>UpdatePerson.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UpdateSeller.resx">
       <DependentUpon>UpdateSeller.cs</DependentUpon>
