@@ -37,14 +37,17 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(16, 18);
+            this.label1.Image = global::LucaToysLite.Properties.Resources.icons8_to_do_list_48;
+            this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label1.Location = new System.Drawing.Point(13, 17);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(159, 36);
+            this.label1.Size = new System.Drawing.Size(217, 45);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Manuscripts";
+            this.label1.Text = "  Manuscripts";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // roundedLabel1
             // 
@@ -135,7 +138,6 @@
             this.Name = "ToDoList";
             this.Size = new System.Drawing.Size(360, 630);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
