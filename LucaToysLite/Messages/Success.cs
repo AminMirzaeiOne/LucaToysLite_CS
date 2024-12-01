@@ -17,11 +17,6 @@ namespace LucaToysLite.Messages
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Success_Load(object sender, EventArgs e)
         {
             this.loadingControl1.StartProgress();
@@ -30,6 +25,12 @@ namespace LucaToysLite.Messages
         private void roundedButton1_Click(object sender, EventArgs e)
         {
             this.windowToolbar1.Close();
+        }
+
+        public System.String TitleText
+        {
+            get { return this.windowToolbar1.TitleText; }
+            set { this.windowToolbar1.TitleText = value; }
         }
     }
 }
