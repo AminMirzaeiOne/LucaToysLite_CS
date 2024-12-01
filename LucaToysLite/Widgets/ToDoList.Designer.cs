@@ -31,6 +31,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.roundedLabel1 = new LucaToysLite.Controls.RoundedLabel();
             this.ltCheckBox1 = new LucaToysLite.Controls.LTCheckBox();
+            this.roundedButton1 = new LucaToysLite.Controls.RoundedButton();
+            this.roundedButton4 = new LucaToysLite.Controls.RoundedButton();
             this.SuspendLayout();
             // 
             // label1
@@ -75,11 +77,57 @@
             this.ltCheckBox1.UnCheckedSymbol = "";
             this.ltCheckBox1.UseVisualStyleBackColor = true;
             // 
+            // roundedButton1
+            // 
+            this.roundedButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.roundedButton1.BorderRadius = ((byte)(20));
+            this.roundedButton1.BorderSize = ((byte)(3));
+            this.roundedButton1.EnableBorder = true;
+            this.roundedButton1.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedButton1.FlatAppearance.BorderSize = 0;
+            this.roundedButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Crimson;
+            this.roundedButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedButton1.ForeColor = System.Drawing.Color.White;
+            this.roundedButton1.Image = global::LucaToysLite.Properties.Resources.icons8_settings_38;
+            this.roundedButton1.Location = new System.Drawing.Point(10, 554);
+            this.roundedButton1.Name = "roundedButton1";
+            this.roundedButton1.Size = new System.Drawing.Size(59, 60);
+            this.roundedButton1.TabIndex = 27;
+            this.roundedButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.roundedButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.roundedButton1.UseVisualStyleBackColor = true;
+            // 
+            // roundedButton4
+            // 
+            this.roundedButton4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.roundedButton4.BorderRadius = ((byte)(20));
+            this.roundedButton4.BorderSize = ((byte)(3));
+            this.roundedButton4.EnableBorder = true;
+            this.roundedButton4.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedButton4.FlatAppearance.BorderSize = 0;
+            this.roundedButton4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Crimson;
+            this.roundedButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedButton4.ForeColor = System.Drawing.Color.White;
+            this.roundedButton4.Image = global::LucaToysLite.Properties.Resources.icons8_plus_38;
+            this.roundedButton4.Location = new System.Drawing.Point(80, 554);
+            this.roundedButton4.Name = "roundedButton4";
+            this.roundedButton4.Size = new System.Drawing.Size(270, 60);
+            this.roundedButton4.TabIndex = 27;
+            this.roundedButton4.Text = " Add New Task";
+            this.roundedButton4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.roundedButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.roundedButton4.UseVisualStyleBackColor = true;
+            // 
             // ToDoList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.Controls.Add(this.roundedButton1);
+            this.Controls.Add(this.roundedButton4);
             this.Controls.Add(this.ltCheckBox1);
             this.Controls.Add(this.roundedLabel1);
             this.Controls.Add(this.label1);
@@ -96,5 +144,7 @@
         private System.Windows.Forms.Label label1;
         private Controls.RoundedLabel roundedLabel1;
         private Controls.LTCheckBox ltCheckBox1;
+        private Controls.RoundedButton roundedButton4;
+        private Controls.RoundedButton roundedButton1;
     }
 }

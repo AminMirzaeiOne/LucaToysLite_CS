@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.homeMenu1 = new LucaToysLite.Menus.HomeMenu();
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
+            this.toDoList1 = new LucaToysLite.Widgets.ToDoList();
             this.SuspendLayout();
             // 
             // homeMenu1
@@ -69,12 +70,25 @@
             this.windowToolbar1.TitleText = "Home Window";
             this.windowToolbar1.WindowBorderSize = ((byte)(3));
             // 
+            // toDoList1
+            // 
+            this.toDoList1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.toDoList1.BorderColor = System.Drawing.Color.Crimson;
+            this.toDoList1.BorderSize = ((byte)(3));
+            this.toDoList1.EnableBorder = true;
+            this.toDoList1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toDoList1.Location = new System.Drawing.Point(161, 312);
+            this.toDoList1.Name = "toDoList1";
+            this.toDoList1.Size = new System.Drawing.Size(360, 630);
+            this.toDoList1.TabIndex = 2;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(1451, 751);
+            this.Controls.Add(this.toDoList1);
             this.Controls.Add(this.homeMenu1);
             this.Controls.Add(this.windowToolbar1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -91,5 +105,6 @@
         #endregion
         private Controls.WindowToolbar windowToolbar1;
         private Menus.HomeMenu homeMenu1;
+        private Widgets.ToDoList toDoList1;
     }
 }
