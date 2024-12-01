@@ -238,6 +238,7 @@
             this.roundedButton4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.roundedButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.roundedButton4.UseVisualStyleBackColor = true;
+            this.roundedButton4.Click += new System.EventHandler(this.roundedButton4_Click);
             // 
             // roundedButton3
             // 
