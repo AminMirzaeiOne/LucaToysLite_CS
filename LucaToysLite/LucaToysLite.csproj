@@ -134,6 +134,7 @@
     <Compile Include="Controls\LTContextMenu.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Controls\LTDeleteMessage.cs" />
     <Compile Include="Controls\LTGradintPanel.cs">
       <SubType>Component</SubType>
     </Compile>
