@@ -216,6 +216,12 @@
     <Compile Include="Forms\About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AboutBrand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AboutBrand.Designer.cs">
+      <DependentUpon>AboutBrand.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Accounts.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -955,6 +961,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\About.resx">
       <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AboutBrand.resx">
+      <DependentUpon>AboutBrand.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Accounts.resx">
       <DependentUpon>Accounts.cs</DependentUpon>
