@@ -914,6 +914,12 @@
     <Compile Include="Widgets\MiniWeb.Designer.cs">
       <DependentUpon>MiniWeb.cs</DependentUpon>
     </Compile>
+    <Compile Include="Widgets\PCInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Widgets\PCInfo.Designer.cs">
+      <DependentUpon>PCInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Widgets\ToDoList.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -1334,6 +1340,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Widgets\MiniWeb.resx">
       <DependentUpon>MiniWeb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Widgets\PCInfo.resx">
+      <DependentUpon>PCInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Widgets\ToDoList.resx">
       <DependentUpon>ToDoList.cs</DependentUpon>
