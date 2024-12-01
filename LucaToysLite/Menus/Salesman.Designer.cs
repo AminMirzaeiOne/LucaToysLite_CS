@@ -86,6 +86,7 @@
             this.roundedButton5.Text = "Delete Person";
             this.roundedButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.roundedButton5.UseVisualStyleBackColor = false;
+            this.roundedButton5.Click += new System.EventHandler(this.roundedButton5_Click);
             // 
             // roundedButton3
             // 
