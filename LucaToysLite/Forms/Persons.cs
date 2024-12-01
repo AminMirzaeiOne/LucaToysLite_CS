@@ -22,5 +22,11 @@ namespace LucaToysLite.Forms
             LucaToysLite.Forms.AddPerson addPerson = new AddPerson();
             addPerson.Show();
         }
+
+        private void roundedButton4_Click(object sender, EventArgs e)
+        {
+            LucaToysLite.Forms.PersonInfo personInfo = new PersonInfo();
+            personInfo.Show();
+        }
     }
 }
