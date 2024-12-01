@@ -40,5 +40,11 @@ namespace LucaToysLite.Menus
             LucaToysLite.Forms.AddPerson addPerson = new Forms.AddPerson();
             addPerson.Show();
         }
+
+        private void roundedButton4_Click(object sender, EventArgs e)
+        {
+            LucaToysLite.Forms.DeleteBrand deleteBrand = new Forms.DeleteBrand();
+            deleteBrand.Show();
+        }
     }
 }
