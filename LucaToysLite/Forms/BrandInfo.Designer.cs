@@ -1,6 +1,6 @@
 ﻿namespace LucaToysLite.Forms
 {
-    partial class AboutBrand
+    partial class BrandInfo
     {
         /// <summary>
         /// Required designer variable.

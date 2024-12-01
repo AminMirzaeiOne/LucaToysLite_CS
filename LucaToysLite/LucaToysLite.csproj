@@ -216,11 +216,11 @@
     <Compile Include="Forms\About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\AboutBrand.cs">
+    <Compile Include="Forms\BrandInfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AboutBrand.Designer.cs">
-      <DependentUpon>AboutBrand.cs</DependentUpon>
+    <Compile Include="Forms\BrandInfo.Designer.cs">
+      <DependentUpon>BrandInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Accounts.cs">
       <SubType>Form</SubType>
@@ -962,8 +962,8 @@
     <EmbeddedResource Include="Forms\About.resx">
       <DependentUpon>About.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AboutBrand.resx">
-      <DependentUpon>AboutBrand.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\BrandInfo.resx">
+      <DependentUpon>BrandInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Accounts.resx">
       <DependentUpon>Accounts.cs</DependentUpon>

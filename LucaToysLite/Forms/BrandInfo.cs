@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LucaToysLite.Forms
 {
-    public partial class AboutBrand : Form
+    public partial class BrandInfo : Form
     {
-        public AboutBrand()
+        public BrandInfo()
         {
             InitializeComponent();
         }
