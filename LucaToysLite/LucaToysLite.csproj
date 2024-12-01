@@ -1335,6 +1335,9 @@
     <EmbeddedResource Include="Widgets\MiniWeb.resx">
       <DependentUpon>MiniWeb.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Widgets\ToDoList.resx">
+      <DependentUpon>ToDoList.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
