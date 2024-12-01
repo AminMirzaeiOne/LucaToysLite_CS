@@ -29,8 +29,7 @@ namespace LucaToysLite.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            LucaToysLite.Messages.Success success = new Success();
-            success.Show();
+            LTSuccessMessage.Show(this, "Messi", "Microsoft", "Hello I Am Amin Mirzaei");
         }
     }
 }
