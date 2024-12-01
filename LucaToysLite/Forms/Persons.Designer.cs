@@ -117,7 +117,7 @@
             this.roundedButton4.Name = "roundedButton4";
             this.roundedButton4.Size = new System.Drawing.Size(185, 125);
             this.roundedButton4.TabIndex = 4;
-            this.roundedButton4.Text = "About Brand";
+            this.roundedButton4.Text = "About Person";
             this.roundedButton4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.roundedButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.roundedButton4.UseVisualStyleBackColor = true;
@@ -138,7 +138,7 @@
             this.roundedButton3.Name = "roundedButton3";
             this.roundedButton3.Size = new System.Drawing.Size(185, 125);
             this.roundedButton3.TabIndex = 4;
-            this.roundedButton3.Text = "Update Brand";
+            this.roundedButton3.Text = "Update Person";
             this.roundedButton3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.roundedButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.roundedButton3.UseVisualStyleBackColor = true;
@@ -159,7 +159,7 @@
             this.roundedButton2.Name = "roundedButton2";
             this.roundedButton2.Size = new System.Drawing.Size(185, 125);
             this.roundedButton2.TabIndex = 4;
-            this.roundedButton2.Text = "Delete Brand";
+            this.roundedButton2.Text = "Delete Person";
             this.roundedButton2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.roundedButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.roundedButton2.UseVisualStyleBackColor = true;
@@ -180,7 +180,7 @@
             this.roundedButton1.Name = "roundedButton1";
             this.roundedButton1.Size = new System.Drawing.Size(185, 125);
             this.roundedButton1.TabIndex = 4;
-            this.roundedButton1.Text = "Add Brand";
+            this.roundedButton1.Text = "Add Person";
             this.roundedButton1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.roundedButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.roundedButton1.UseVisualStyleBackColor = true;
