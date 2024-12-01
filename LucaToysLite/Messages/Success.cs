@@ -27,10 +27,37 @@ namespace LucaToysLite.Messages
             this.windowToolbar1.Close();
         }
 
+        private Form frm = new Form();
+        public void FocusEnable(Form window)
+        {
+
+            this.frm.FormBorderStyle = FormBorderStyle.None;
+            this.frm.BackColor = Color.Black;
+            this.frm.Opacity = 0.6;
+            this.frm.Show();
+            this.frm.Location = window.Location;
+            this.frm.Size = window.Size;
+
+        }
+
         public System.String TitleText
         {
             get { return this.windowToolbar1.TitleText; }
             set { this.windowToolbar1.TitleText = value; }
         }
+
+        public System.String ContentText
+        {
+            get { return this.windowToolbar1.TitleText; }
+            set { this.windowToolbar1.TitleText = value; }
+        }
+
+        public System.String DescriptionText
+        {
+            get { return this.windowToolbar1.TitleText; }
+            set { this.windowToolbar1.TitleText = value; }
+        }
+
+        
     }
 }
