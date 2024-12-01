@@ -174,9 +174,9 @@
             this.ltRadioButton3.MinimumSize = new System.Drawing.Size(0, 21);
             this.ltRadioButton3.Name = "ltRadioButton3";
             this.ltRadioButton3.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.ltRadioButton3.Size = new System.Drawing.Size(129, 29);
+            this.ltRadioButton3.Size = new System.Drawing.Size(144, 29);
             this.ltRadioButton3.TabIndex = 13;
-            this.ltRadioButton3.Text = "Doll Code";
+            this.ltRadioButton3.Text = "Brand Code";
             this.ltRadioButton3.UnCheckedColor = System.Drawing.Color.Gray;
             this.ltRadioButton3.UseVisualStyleBackColor = true;
             // 
@@ -190,9 +190,9 @@
             this.ltRadioButton2.MinimumSize = new System.Drawing.Size(0, 21);
             this.ltRadioButton2.Name = "ltRadioButton2";
             this.ltRadioButton2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.ltRadioButton2.Size = new System.Drawing.Size(96, 29);
+            this.ltRadioButton2.Size = new System.Drawing.Size(103, 29);
             this.ltRadioButton2.TabIndex = 14;
-            this.ltRadioButton2.Text = "Brand";
+            this.ltRadioButton2.Text = "Owner";
             this.ltRadioButton2.UnCheckedColor = System.Drawing.Color.Gray;
             this.ltRadioButton2.UseVisualStyleBackColor = true;
             // 
@@ -239,7 +239,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(269, 26);
             this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "Search Doll";
+            this.textBox1.Text = "Search Brand";
             // 
             // ltRadioButton1
             // 
