@@ -527,6 +527,12 @@
     <Compile Include="Messages\Success.Designer.cs">
       <DependentUpon>Success.cs</DependentUpon>
     </Compile>
+    <Compile Include="Messages\Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Messages\Update.Designer.cs">
+      <DependentUpon>Update.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pages\About\Developer.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -1068,6 +1074,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Messages\Success.resx">
       <DependentUpon>Success.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Messages\Update.resx">
+      <DependentUpon>Update.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\About\Developer.resx">
       <DependentUpon>Developer.cs</DependentUpon>
