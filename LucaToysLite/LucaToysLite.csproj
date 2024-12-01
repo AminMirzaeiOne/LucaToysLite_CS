@@ -147,6 +147,7 @@
     <Compile Include="Controls\LTRadioButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Controls\LTSuccessMessage.cs" />
     <Compile Include="Controls\LTSwitchButton.cs">
       <SubType>Component</SubType>
     </Compile>
