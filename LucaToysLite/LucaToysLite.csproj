@@ -161,6 +161,7 @@
     <Compile Include="Controls\LTToolTip.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Controls\LTUpdateMessage.cs" />
     <Compile Include="Controls\LTVerticalScrollBar.cs">
       <SubType>Component</SubType>
     </Compile>
