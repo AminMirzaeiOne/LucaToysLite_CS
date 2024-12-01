@@ -90,7 +90,7 @@
             this.roundedButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedButton1.ForeColor = System.Drawing.Color.White;
             this.roundedButton1.Image = global::LucaToysLite.Properties.Resources.icons8_settings_38;
-            this.roundedButton1.Location = new System.Drawing.Point(10, 554);
+            this.roundedButton1.Location = new System.Drawing.Point(289, 554);
             this.roundedButton1.Name = "roundedButton1";
             this.roundedButton1.Size = new System.Drawing.Size(59, 60);
             this.roundedButton1.TabIndex = 27;
@@ -112,7 +112,7 @@
             this.roundedButton4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedButton4.ForeColor = System.Drawing.Color.White;
             this.roundedButton4.Image = global::LucaToysLite.Properties.Resources.icons8_plus_38;
-            this.roundedButton4.Location = new System.Drawing.Point(80, 554);
+            this.roundedButton4.Location = new System.Drawing.Point(9, 554);
             this.roundedButton4.Name = "roundedButton4";
             this.roundedButton4.Size = new System.Drawing.Size(270, 60);
             this.roundedButton4.TabIndex = 27;
