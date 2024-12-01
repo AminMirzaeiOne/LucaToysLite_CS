@@ -34,7 +34,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.roundedButton1 = new LucaToysLite.Controls.RoundedButton();
+            this.ltContextMenu1 = new LucaToysLite.Controls.LTContextMenu();
+            this.copyContentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.copyDescriptionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.searchContentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.searchDescriptionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.defaultButtonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.ltContextMenu1.SuspendLayout();
             this.SuspendLayout();
             // 
             // windowToolbar1
@@ -75,7 +84,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Image = global::LucaToysLite.Properties.Resources.icons8_success_96;
+            this.pictureBox1.Image = global::LucaToysLite.Properties.Resources.icons8_error_96;
             this.pictureBox1.Location = new System.Drawing.Point(35, 100);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(180, 180);
@@ -91,7 +100,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(464, 115);
             this.label1.TabIndex = 8;
-            this.label1.Text = "The administrator logged in with the correct username and password";
+            this.label1.Text = "The seller has been successfully removed from the list of sellers";
             // 
             // label2
             // 
@@ -122,12 +131,75 @@
             this.roundedButton1.Text = "OK";
             this.roundedButton1.UseVisualStyleBackColor = false;
             // 
+            // ltContextMenu1
+            // 
+            this.ltContextMenu1.Background = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.ltContextMenu1.BorderSize = ((byte)(2));
+            this.ltContextMenu1.ColorPallet = System.Drawing.Color.Crimson;
+            this.ltContextMenu1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.ltContextMenu1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.copyContentToolStripMenuItem,
+            this.copyDescriptionToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.searchContentToolStripMenuItem,
+            this.searchDescriptionToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.defaultButtonToolStripMenuItem});
+            this.ltContextMenu1.Name = "ltContextMenu1";
+            this.ltContextMenu1.Size = new System.Drawing.Size(232, 176);
+            // 
+            // copyContentToolStripMenuItem
+            // 
+            this.copyContentToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.copyContentToolStripMenuItem.Name = "copyContentToolStripMenuItem";
+            this.copyContentToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
+            this.copyContentToolStripMenuItem.Text = "Copy Content";
+            // 
+            // copyDescriptionToolStripMenuItem
+            // 
+            this.copyDescriptionToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.copyDescriptionToolStripMenuItem.Name = "copyDescriptionToolStripMenuItem";
+            this.copyDescriptionToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
+            this.copyDescriptionToolStripMenuItem.Text = "Copy Description";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(237, 6);
+            // 
+            // searchContentToolStripMenuItem
+            // 
+            this.searchContentToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.searchContentToolStripMenuItem.Name = "searchContentToolStripMenuItem";
+            this.searchContentToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
+            this.searchContentToolStripMenuItem.Text = "Search Content";
+            // 
+            // searchDescriptionToolStripMenuItem
+            // 
+            this.searchDescriptionToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.searchDescriptionToolStripMenuItem.Name = "searchDescriptionToolStripMenuItem";
+            this.searchDescriptionToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
+            this.searchDescriptionToolStripMenuItem.Text = "Search Description";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(237, 6);
+            // 
+            // defaultButtonToolStripMenuItem
+            // 
+            this.defaultButtonToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.defaultButtonToolStripMenuItem.Name = "defaultButtonToolStripMenuItem";
+            this.defaultButtonToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
+            this.defaultButtonToolStripMenuItem.Text = "Default Button";
+            // 
             // Delete
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(750, 450);
+            this.ContextMenuStrip = this.ltContextMenu1;
             this.Controls.Add(this.loadingControl1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
@@ -141,6 +213,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Delete";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ltContextMenu1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -153,5 +226,13 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private Controls.RoundedButton roundedButton1;
+        private Controls.LTContextMenu ltContextMenu1;
+        private System.Windows.Forms.ToolStripMenuItem copyContentToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem copyDescriptionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem searchContentToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem searchDescriptionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem defaultButtonToolStripMenuItem;
     }
 }
