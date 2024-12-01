@@ -40,8 +40,8 @@
             this.searchDescriptionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.defaultButtonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loadingControl1 = new LucaToysLite.Controls.LoadingControl();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.loadingControl1 = new LucaToysLite.Controls.LoadingControl();
             this.ltContextMenu1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -172,28 +172,28 @@
             this.defaultButtonToolStripMenuItem.Size = new System.Drawing.Size(231, 32);
             this.defaultButtonToolStripMenuItem.Text = "Default Button";
             // 
-            // loadingControl1
-            // 
-            this.loadingControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.loadingControl1.ColorPalette = System.Drawing.Color.Crimson;
-            this.loadingControl1.DarkTheme = true;
-            this.loadingControl1.Interval = ((byte)(15));
-            this.loadingControl1.Location = new System.Drawing.Point(33, 331);
-            this.loadingControl1.Name = "loadingControl1";
-            this.loadingControl1.Size = new System.Drawing.Size(690, 30);
-            this.loadingControl1.Speed = ((byte)(15));
-            this.loadingControl1.TabIndex = 7;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Image = global::LucaToysLite.Properties.Resources.Success_GIF___Success___Discover___Share_GIFs;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 60);
+            this.pictureBox1.Image = global::LucaToysLite.Properties.Resources.WaitingIcon;
+            this.pictureBox1.Location = new System.Drawing.Point(35, 100);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(223, 264);
+            this.pictureBox1.Size = new System.Drawing.Size(180, 180);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
+            // 
+            // loadingControl1
+            // 
+            this.loadingControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.loadingControl1.ColorPalette = System.Drawing.Color.Crimson;
+            this.loadingControl1.DarkTheme = true;
+            this.loadingControl1.Interval = ((byte)(15));
+            this.loadingControl1.Location = new System.Drawing.Point(36, 319);
+            this.loadingControl1.Name = "loadingControl1";
+            this.loadingControl1.Size = new System.Drawing.Size(680, 30);
+            this.loadingControl1.Speed = ((byte)(15));
+            this.loadingControl1.TabIndex = 6;
             // 
             // Success
             // 
