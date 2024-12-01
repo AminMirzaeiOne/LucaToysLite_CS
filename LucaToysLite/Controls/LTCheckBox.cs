@@ -112,9 +112,9 @@ namespace LucaToysLite.Controls
         {
             base.OnCheckedChanged(e);
             if (this.Checked)
-                this.Text = "";
+                this.Text = this.CheckedSymbol;
             else
-                this.Text = string.Empty;
+                this.Text = this.UnCheckedSymbol;
         }
 
     }
