@@ -130,6 +130,7 @@
             this.roundedButton1.TabIndex = 7;
             this.roundedButton1.Text = "OK";
             this.roundedButton1.UseVisualStyleBackColor = false;
+            this.roundedButton1.Click += new System.EventHandler(this.roundedButton1_Click);
             // 
             // ltContextMenu1
             // 
@@ -152,45 +153,45 @@
             // 
             this.copyContentToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.copyContentToolStripMenuItem.Name = "copyContentToolStripMenuItem";
-            this.copyContentToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
+            this.copyContentToolStripMenuItem.Size = new System.Drawing.Size(231, 32);
             this.copyContentToolStripMenuItem.Text = "Copy Content";
             // 
             // copyDescriptionToolStripMenuItem
             // 
             this.copyDescriptionToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.copyDescriptionToolStripMenuItem.Name = "copyDescriptionToolStripMenuItem";
-            this.copyDescriptionToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
+            this.copyDescriptionToolStripMenuItem.Size = new System.Drawing.Size(231, 32);
             this.copyDescriptionToolStripMenuItem.Text = "Copy Description";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(237, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(228, 6);
             // 
             // searchContentToolStripMenuItem
             // 
             this.searchContentToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.searchContentToolStripMenuItem.Name = "searchContentToolStripMenuItem";
-            this.searchContentToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
+            this.searchContentToolStripMenuItem.Size = new System.Drawing.Size(231, 32);
             this.searchContentToolStripMenuItem.Text = "Search Content";
             // 
             // searchDescriptionToolStripMenuItem
             // 
             this.searchDescriptionToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.searchDescriptionToolStripMenuItem.Name = "searchDescriptionToolStripMenuItem";
-            this.searchDescriptionToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
+            this.searchDescriptionToolStripMenuItem.Size = new System.Drawing.Size(231, 32);
             this.searchDescriptionToolStripMenuItem.Text = "Search Description";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(237, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(228, 6);
             // 
             // defaultButtonToolStripMenuItem
             // 
             this.defaultButtonToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.defaultButtonToolStripMenuItem.Name = "defaultButtonToolStripMenuItem";
-            this.defaultButtonToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
+            this.defaultButtonToolStripMenuItem.Size = new System.Drawing.Size(231, 32);
             this.defaultButtonToolStripMenuItem.Text = "Default Button";
             // 
             // Delete
@@ -212,6 +213,7 @@
             this.Name = "Delete";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Delete";
+            this.Load += new System.EventHandler(this.Success_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ltContextMenu1.ResumeLayout(false);
             this.ResumeLayout(false);
