@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.roundedLabel1 = new LucaToysLite.Controls.RoundedLabel();
-            this.roundedLabel2 = new LucaToysLite.Controls.RoundedLabel();
             this.roundedLabel3 = new LucaToysLite.Controls.RoundedLabel();
+            this.roundedLabel2 = new LucaToysLite.Controls.RoundedLabel();
+            this.roundedLabel1 = new LucaToysLite.Controls.RoundedLabel();
             this.roundedButton5 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton3 = new LucaToysLite.Controls.RoundedButton();
             this.roundedButton1 = new LucaToysLite.Controls.RoundedButton();
@@ -39,14 +39,14 @@
             this.roundedButton7 = new LucaToysLite.Controls.RoundedButton();
             this.SuspendLayout();
             // 
-            // roundedLabel1
+            // roundedLabel3
             // 
-            this.roundedLabel1.BackColor = System.Drawing.Color.Crimson;
-            this.roundedLabel1.BorderRadius = ((byte)(4));
-            this.roundedLabel1.Location = new System.Drawing.Point(463, 25);
-            this.roundedLabel1.Name = "roundedLabel1";
-            this.roundedLabel1.Size = new System.Drawing.Size(4, 90);
-            this.roundedLabel1.TabIndex = 19;
+            this.roundedLabel3.BackColor = System.Drawing.Color.Crimson;
+            this.roundedLabel3.BorderRadius = ((byte)(4));
+            this.roundedLabel3.Location = new System.Drawing.Point(1439, 25);
+            this.roundedLabel3.Name = "roundedLabel3";
+            this.roundedLabel3.Size = new System.Drawing.Size(4, 90);
+            this.roundedLabel3.TabIndex = 19;
             // 
             // roundedLabel2
             // 
@@ -57,14 +57,14 @@
             this.roundedLabel2.Size = new System.Drawing.Size(4, 90);
             this.roundedLabel2.TabIndex = 19;
             // 
-            // roundedLabel3
+            // roundedLabel1
             // 
-            this.roundedLabel3.BackColor = System.Drawing.Color.Crimson;
-            this.roundedLabel3.BorderRadius = ((byte)(4));
-            this.roundedLabel3.Location = new System.Drawing.Point(1439, 25);
-            this.roundedLabel3.Name = "roundedLabel3";
-            this.roundedLabel3.Size = new System.Drawing.Size(4, 90);
-            this.roundedLabel3.TabIndex = 19;
+            this.roundedLabel1.BackColor = System.Drawing.Color.Crimson;
+            this.roundedLabel1.BorderRadius = ((byte)(4));
+            this.roundedLabel1.Location = new System.Drawing.Point(463, 25);
+            this.roundedLabel1.Name = "roundedLabel1";
+            this.roundedLabel1.Size = new System.Drawing.Size(4, 90);
+            this.roundedLabel1.TabIndex = 19;
             // 
             // roundedButton5
             // 
@@ -128,6 +128,7 @@
             this.roundedButton1.Text = "Persons";
             this.roundedButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.roundedButton1.UseVisualStyleBackColor = false;
+            this.roundedButton1.Click += new System.EventHandler(this.roundedButton1_Click);
             // 
             // roundedButton4
             // 
