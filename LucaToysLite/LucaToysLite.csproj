@@ -101,6 +101,12 @@
     <Compile Include="ClassLibrary\XToolStripDropDown.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Controls\CircleLoading.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CircleLoading.Designer.cs">
+      <DependentUpon>CircleLoading.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Item.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -865,6 +871,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Apps\WebBrowser.resx">
       <DependentUpon>WebBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CircleLoading.resx">
+      <DependentUpon>CircleLoading.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Item.resx">
       <DependentUpon>Item.cs</DependentUpon>
