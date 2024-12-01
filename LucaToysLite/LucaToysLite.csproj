@@ -312,6 +312,12 @@
     <Compile Include="Forms\DeleteDoll.Designer.cs">
       <DependentUpon>DeleteDoll.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\DeletePerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DeletePerson.Designer.cs">
+      <DependentUpon>DeletePerson.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\DeleteSeller.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -997,6 +1003,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\DeleteDoll.resx">
       <DependentUpon>DeleteDoll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DeletePerson.resx">
+      <DependentUpon>DeletePerson.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\DeleteSeller.resx">
       <DependentUpon>DeleteSeller.cs</DependentUpon>
