@@ -77,7 +77,7 @@
             this.ltRadioButton3.CheckedColor = System.Drawing.Color.Crimson;
             this.ltRadioButton3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ltRadioButton3.ForeColor = System.Drawing.Color.White;
-            this.ltRadioButton3.Location = new System.Drawing.Point(735, 90);
+            this.ltRadioButton3.Location = new System.Drawing.Point(707, 26);
             this.ltRadioButton3.MinimumSize = new System.Drawing.Size(0, 21);
             this.ltRadioButton3.Name = "ltRadioButton3";
             this.ltRadioButton3.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -93,7 +93,7 @@
             this.ltRadioButton2.CheckedColor = System.Drawing.Color.Crimson;
             this.ltRadioButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ltRadioButton2.ForeColor = System.Drawing.Color.White;
-            this.ltRadioButton2.Location = new System.Drawing.Point(623, 90);
+            this.ltRadioButton2.Location = new System.Drawing.Point(595, 26);
             this.ltRadioButton2.MinimumSize = new System.Drawing.Size(0, 21);
             this.ltRadioButton2.Name = "ltRadioButton2";
             this.ltRadioButton2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -134,7 +134,7 @@
             this.ltRadioButton1.CheckedColor = System.Drawing.Color.Crimson;
             this.ltRadioButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ltRadioButton1.ForeColor = System.Drawing.Color.White;
-            this.ltRadioButton1.Location = new System.Drawing.Point(519, 90);
+            this.ltRadioButton1.Location = new System.Drawing.Point(491, 26);
             this.ltRadioButton1.MinimumSize = new System.Drawing.Size(0, 21);
             this.ltRadioButton1.Name = "ltRadioButton1";
             this.ltRadioButton1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -203,8 +203,11 @@
             this.roundedPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.roundedPanel3.BorderColor = System.Drawing.Color.Crimson;
             this.roundedPanel3.BorderSize = ((byte)(3));
+            this.roundedPanel3.Controls.Add(this.ltRadioButton3);
+            this.roundedPanel3.Controls.Add(this.ltRadioButton2);
             this.roundedPanel3.Controls.Add(this.roundedButton5);
             this.roundedPanel3.Controls.Add(this.roundedPanel4);
+            this.roundedPanel3.Controls.Add(this.ltRadioButton1);
             this.roundedPanel3.EnableBorder = true;
             this.roundedPanel3.Location = new System.Drawing.Point(26, 64);
             this.roundedPanel3.Name = "roundedPanel3";
@@ -262,10 +265,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(915, 600);
-            this.Controls.Add(this.ltRadioButton3);
-            this.Controls.Add(this.ltRadioButton2);
             this.Controls.Add(this.roundedPanel1);
-            this.Controls.Add(this.ltRadioButton1);
             this.Controls.Add(this.roundedPanel2);
             this.Controls.Add(this.roundedPanel3);
             this.Controls.Add(this.windowToolbar1);
@@ -278,10 +278,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.roundedPanel2.ResumeLayout(false);
             this.roundedPanel3.ResumeLayout(false);
+            this.roundedPanel3.PerformLayout();
             this.roundedPanel4.ResumeLayout(false);
             this.roundedPanel4.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
