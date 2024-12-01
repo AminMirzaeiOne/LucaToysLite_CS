@@ -16,5 +16,11 @@ namespace LucaToysLite.Forms
         {
             InitializeComponent();
         }
+
+        private void roundedButton1_Click(object sender, EventArgs e)
+        {
+            LucaToysLite.Forms.AddBrand addBrand = new AddBrand();
+            addBrand.Show();
+        }
     }
 }
