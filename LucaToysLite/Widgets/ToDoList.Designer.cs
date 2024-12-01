@@ -30,6 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.roundedLabel1 = new LucaToysLite.Controls.RoundedLabel();
+            this.ltCheckBox1 = new LucaToysLite.Controls.LTCheckBox();
             this.SuspendLayout();
             // 
             // label1
@@ -52,11 +53,34 @@
             this.roundedLabel1.Size = new System.Drawing.Size(357, 4);
             this.roundedLabel1.TabIndex = 25;
             // 
+            // ltCheckBox1
+            // 
+            this.ltCheckBox1.Appearance = System.Windows.Forms.Appearance.Button;
+            this.ltCheckBox1.BorderSize = ((byte)(3));
+            this.ltCheckBox1.Checked = true;
+            this.ltCheckBox1.CheckedSymbol = "";
+            this.ltCheckBox1.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.ltCheckBox1.ColorPallet = System.Drawing.Color.Crimson;
+            this.ltCheckBox1.FlatAppearance.BorderSize = 0;
+            this.ltCheckBox1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
+            this.ltCheckBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ltCheckBox1.Font = new System.Drawing.Font("Segoe MDL2 Assets", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ltCheckBox1.ForeColor = System.Drawing.Color.White;
+            this.ltCheckBox1.Location = new System.Drawing.Point(300, 18);
+            this.ltCheckBox1.Name = "ltCheckBox1";
+            this.ltCheckBox1.Size = new System.Drawing.Size(45, 45);
+            this.ltCheckBox1.TabIndex = 26;
+            this.ltCheckBox1.Text = "";
+            this.ltCheckBox1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ltCheckBox1.UnCheckedSymbol = "";
+            this.ltCheckBox1.UseVisualStyleBackColor = true;
+            // 
             // ToDoList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.Controls.Add(this.ltCheckBox1);
             this.Controls.Add(this.roundedLabel1);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -71,5 +95,6 @@
 
         private System.Windows.Forms.Label label1;
         private Controls.RoundedLabel roundedLabel1;
+        private Controls.LTCheckBox ltCheckBox1;
     }
 }
