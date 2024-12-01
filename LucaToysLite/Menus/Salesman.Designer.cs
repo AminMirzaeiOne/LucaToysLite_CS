@@ -171,6 +171,7 @@
             this.roundedButton2.Text = "Add Brand";
             this.roundedButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.roundedButton2.UseVisualStyleBackColor = false;
+            this.roundedButton2.Click += new System.EventHandler(this.roundedButton2_Click);
             // 
             // roundedButton7
             // 
