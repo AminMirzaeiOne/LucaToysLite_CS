@@ -15,6 +15,7 @@ namespace LucaToysLite.Messages
         public Success()
         {
             InitializeComponent();
+            this.FocusEnable(this.Owner);
         }
 
         private void Success_Load(object sender, EventArgs e)
@@ -25,6 +26,7 @@ namespace LucaToysLite.Messages
         private void roundedButton1_Click(object sender, EventArgs e)
         {
             this.windowToolbar1.Close();
+            this.ActiveOwner();
         }
 
         private Form frm = new Form();
@@ -39,6 +41,46 @@ namespace LucaToysLite.Messages
             this.frm.Size = window.Size;
 
         }
+
+        private void ActiveOwner()
+        {
+            FormWindowState windowState = FormWindowState.Normal;
+            windowState = this.Owner.WindowState;
+            this.Owner.WindowState = FormWindowState.Minimized;
+            this.Owner.WindowState = windowState;
+        }
+
+        protected override void OnClosed(EventArgs e)
+        {
+            base.OnClosed(e);
+            this.frm.Close();
+        }
+
+        public Success(Form owner, string title, string content)
+        {
+            InitializeComponent();
+            this.Owner = owner;
+            this.TitleText = title;
+            this.ContentText = content;
+            this.windowToolbar1.CloseMessage = false;
+            this.FocusEnable(this.Owner);
+        }
+
+        public Success(Form owner, string title, string content, string description)
+        {
+            InitializeComponent();
+            this.Owner = owner;
+            this.TitleText = title;
+            this.ContentText = content;
+            this.DescriptionText = description;
+            this.windowToolbar1.CloseMessage = false;
+            this.FocusEnable(this.Owner);
+
+        }
+
+       
+
+       
 
         public System.String TitleText
         {
