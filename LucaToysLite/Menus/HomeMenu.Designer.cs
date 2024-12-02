@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            WFAnimations.Animation animation1 = new WFAnimations.Animation();
+            WFAnimations.Animation animation7 = new WFAnimations.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeMenu));
             this.panel1 = new System.Windows.Forms.Panel();
             this.animator1 = new WFAnimations.Animator(this.components);
@@ -117,6 +117,13 @@
             this.updateBrandToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updatePersonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportContextMenu = new LucaToysLite.Controls.LTContextMenu();
+            this.exportDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.importDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator17 = new System.Windows.Forms.ToolStripSeparator();
+            this.exportTXTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportCSVToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportPDFToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportXLSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.roundedPanel1.SuspendLayout();
             this.usersContextMenu.SuspendLayout();
             this.productContextMenu.SuspendLayout();
@@ -125,6 +132,7 @@
             this.invoiceContextMenu.SuspendLayout();
             this.documentsContextMenu.SuspendLayout();
             this.salesmanContextMenu.SuspendLayout();
+            this.exportContextMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -142,22 +150,22 @@
             // 
             this.animator1.AnimationType = WFAnimations.AnimationType.Transparent;
             this.animator1.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 1F;
-            this.animator1.DefaultAnimation = animation1;
+            animation7.AnimateOnlyDifferences = true;
+            animation7.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.BlindCoeff")));
+            animation7.LeafCoeff = 0F;
+            animation7.MaxTime = 1F;
+            animation7.MinTime = 0F;
+            animation7.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.MosaicCoeff")));
+            animation7.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation7.MosaicShift")));
+            animation7.MosaicSize = 0;
+            animation7.Padding = new System.Windows.Forms.Padding(0);
+            animation7.RotateCoeff = 0F;
+            animation7.RotateLimit = 0F;
+            animation7.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.ScaleCoeff")));
+            animation7.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.SlideCoeff")));
+            animation7.TimeCoeff = 0F;
+            animation7.TransparencyCoeff = 1F;
+            this.animator1.DefaultAnimation = animation7;
             this.animator1.Upside = false;
             // 
             // roundedPanel1
@@ -1128,8 +1136,63 @@
             this.animator1.SetDecoration(this.exportContextMenu, WFAnimations.DecorationType.None);
             this.exportContextMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exportContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.exportContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.exportDataToolStripMenuItem,
+            this.importDataToolStripMenuItem,
+            this.toolStripSeparator17,
+            this.exportTXTToolStripMenuItem,
+            this.exportCSVToolStripMenuItem,
+            this.exportPDFToolStripMenuItem,
+            this.exportXLSToolStripMenuItem});
             this.exportContextMenu.Name = "exportContextMenu";
-            this.exportContextMenu.Size = new System.Drawing.Size(241, 37);
+            this.exportContextMenu.Size = new System.Drawing.Size(241, 271);
+            // 
+            // exportDataToolStripMenuItem
+            // 
+            this.exportDataToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.exportDataToolStripMenuItem.Name = "exportDataToolStripMenuItem";
+            this.exportDataToolStripMenuItem.Size = new System.Drawing.Size(240, 38);
+            this.exportDataToolStripMenuItem.Text = "Export Data";
+            // 
+            // importDataToolStripMenuItem
+            // 
+            this.importDataToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.importDataToolStripMenuItem.Name = "importDataToolStripMenuItem";
+            this.importDataToolStripMenuItem.Size = new System.Drawing.Size(240, 38);
+            this.importDataToolStripMenuItem.Text = "Import Data";
+            // 
+            // toolStripSeparator17
+            // 
+            this.toolStripSeparator17.Name = "toolStripSeparator17";
+            this.toolStripSeparator17.Size = new System.Drawing.Size(237, 6);
+            // 
+            // exportTXTToolStripMenuItem
+            // 
+            this.exportTXTToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.exportTXTToolStripMenuItem.Name = "exportTXTToolStripMenuItem";
+            this.exportTXTToolStripMenuItem.Size = new System.Drawing.Size(240, 38);
+            this.exportTXTToolStripMenuItem.Text = "Export TXT";
+            // 
+            // exportCSVToolStripMenuItem
+            // 
+            this.exportCSVToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.exportCSVToolStripMenuItem.Name = "exportCSVToolStripMenuItem";
+            this.exportCSVToolStripMenuItem.Size = new System.Drawing.Size(240, 38);
+            this.exportCSVToolStripMenuItem.Text = "Export CSV";
+            // 
+            // exportPDFToolStripMenuItem
+            // 
+            this.exportPDFToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.exportPDFToolStripMenuItem.Name = "exportPDFToolStripMenuItem";
+            this.exportPDFToolStripMenuItem.Size = new System.Drawing.Size(240, 38);
+            this.exportPDFToolStripMenuItem.Text = "Export PDF";
+            // 
+            // exportXLSToolStripMenuItem
+            // 
+            this.exportXLSToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.exportXLSToolStripMenuItem.Name = "exportXLSToolStripMenuItem";
+            this.exportXLSToolStripMenuItem.Size = new System.Drawing.Size(240, 38);
+            this.exportXLSToolStripMenuItem.Text = "Export XLS";
             // 
             // HomeMenu
             // 
@@ -1149,6 +1212,7 @@
             this.invoiceContextMenu.ResumeLayout(false);
             this.documentsContextMenu.ResumeLayout(false);
             this.salesmanContextMenu.ResumeLayout(false);
+            this.exportContextMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1240,5 +1304,12 @@
         private System.Windows.Forms.ToolStripMenuItem updateBrandToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem updatePersonToolStripMenuItem;
         private Controls.LTContextMenu exportContextMenu;
+        private System.Windows.Forms.ToolStripMenuItem exportDataToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem importDataToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator17;
+        private System.Windows.Forms.ToolStripMenuItem exportTXTToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exportCSVToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exportPDFToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exportXLSToolStripMenuItem;
     }
 }
