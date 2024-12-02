@@ -72,7 +72,6 @@
             this.widgetsContextMenu = new LucaToysLite.Controls.LTContextMenu();
             this.toolStripSeparator21 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator22 = new System.Windows.Forms.ToolStripSeparator();
-            this.whiteBoardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.radioHelp = new LucaToysLite.Controls.RoundedRadioButton();
             this.radioFinance = new LucaToysLite.Controls.RoundedRadioButton();
             this.radioUsers = new LucaToysLite.Controls.RoundedRadioButton();
@@ -150,6 +149,7 @@
             this.toDoListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miniWebToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pCInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.whiteBoardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.roundedPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.usersContextMenu.SuspendLayout();
@@ -630,15 +630,6 @@
             this.toolStripSeparator22.Name = "toolStripSeparator22";
             this.toolStripSeparator22.Size = new System.Drawing.Size(254, 6);
             // 
-            // whiteBoardToolStripMenuItem
-            // 
-            this.whiteBoardToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.whiteBoardToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_flipboard_48;
-            this.whiteBoardToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.whiteBoardToolStripMenuItem.Name = "whiteBoardToolStripMenuItem";
-            this.whiteBoardToolStripMenuItem.Size = new System.Drawing.Size(257, 56);
-            this.whiteBoardToolStripMenuItem.Text = "White Board";
-            // 
             // radioHelp
             // 
             this.radioHelp.Appearance = System.Windows.Forms.Appearance.Button;
@@ -782,6 +773,7 @@
             this.radioWidgets.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.radioWidgets.UseVisualStyleBackColor = true;
             this.radioWidgets.CheckedChanged += new System.EventHandler(this.radioUsers_CheckedChanged);
+            this.radioWidgets.MouseDown += new System.Windows.Forms.MouseEventHandler(this.radioWidgets_MouseDown);
             // 
             // radioSettings
             // 
@@ -1510,6 +1502,15 @@
             this.pCInfoToolStripMenuItem.Name = "pCInfoToolStripMenuItem";
             this.pCInfoToolStripMenuItem.Size = new System.Drawing.Size(257, 56);
             this.pCInfoToolStripMenuItem.Text = "PC Info";
+            // 
+            // whiteBoardToolStripMenuItem
+            // 
+            this.whiteBoardToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.whiteBoardToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_flipboard_48;
+            this.whiteBoardToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.whiteBoardToolStripMenuItem.Name = "whiteBoardToolStripMenuItem";
+            this.whiteBoardToolStripMenuItem.Size = new System.Drawing.Size(257, 56);
+            this.whiteBoardToolStripMenuItem.Text = "White Board";
             // 
             // HomeMenu
             // 
