@@ -232,6 +232,9 @@
   <data name="icons8-back-62" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-back-62.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8-android-app-drawer-34" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-android-app-drawer-34.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8-settings-34" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-settings-34.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -406,6 +409,9 @@
   <data name="Group 22" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Group 43" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 43.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Group 7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -418,8 +424,8 @@
   <data name="AStartupSound" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ASSound.wav;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="icons8-android-app-drawer-34" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-android-app-drawer-34.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-bribery-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-bribery-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-id-68" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-id-68.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -558,9 +564,6 @@
   </data>
   <data name="icons8-database-administrator-68" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-database-administrator-68.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group 16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-forward-62" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-forward-62.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -850,6 +853,9 @@
   <data name="icons8-family-68" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-family-68.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8-name-68" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-name-68.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8-remove-42(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-remove-42(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -1069,8 +1075,8 @@
   <data name="icons8-warning-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-warning-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-name-68" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-name-68.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Group 16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-code-blocks-34" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-code-blocks-34.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1180,7 +1186,7 @@
   <data name="icons8-add-62" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-add-62.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-bribery-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-bribery-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Group 44" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 44.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
