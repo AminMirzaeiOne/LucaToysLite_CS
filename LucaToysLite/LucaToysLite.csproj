@@ -2274,6 +2274,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="LucaLogo.ico" />
+    <None Include="Resources\icons8-feedback-hub-68.png" />
+    <None Include="Resources\icons8-info-popup-48.png" />
     <None Include="Resources\icons8-info-popup-68.png" />
     <None Include="Resources\icons8-sync-48.png" />
     <None Include="Resources\icons8-update-done-48.png" />
