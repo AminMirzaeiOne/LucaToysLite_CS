@@ -211,7 +211,7 @@
             this.roundedButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton3.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedButton3.ForeColor = System.Drawing.Color.White;
-            this.roundedButton3.Image = global::LucaToysLite.Properties.Resources.icons8_menu_30;
+            this.roundedButton3.Image = global::LucaToysLite.Properties.Resources.icons8_menu_301;
             this.roundedButton3.Location = new System.Drawing.Point(13, 10);
             this.roundedButton3.Name = "roundedButton3";
             this.roundedButton3.Size = new System.Drawing.Size(50, 50);

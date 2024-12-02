@@ -36,6 +36,9 @@
             this.homeMenu1 = new LucaToysLite.Menus.HomeMenu();
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
             this.homeBottomMenu1 = new LucaToysLite.Menus.HomeBottomMenu();
+            this.ltContextMenu1 = new LucaToysLite.Controls.LTContextMenu();
+            this.hideLargeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ltContextMenu1.SuspendLayout();
             this.SuspendLayout();
             // 
             // timerHide
@@ -76,6 +79,7 @@
             this.homeMenu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.homeMenu1.BorderColor = System.Drawing.Color.Crimson;
             this.homeMenu1.BorderSize = ((byte)(3));
+            this.homeMenu1.ContextMenuStrip = this.ltContextMenu1;
             this.homeMenu1.Location = new System.Drawing.Point(12, 52);
             this.homeMenu1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.homeMenu1.Name = "homeMenu1";
@@ -118,6 +122,26 @@
             this.homeBottomMenu1.Size = new System.Drawing.Size(800, 70);
             this.homeBottomMenu1.TabIndex = 3;
             // 
+            // ltContextMenu1
+            // 
+            this.ltContextMenu1.Background = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.ltContextMenu1.BorderSize = ((byte)(2));
+            this.ltContextMenu1.ColorPallet = System.Drawing.Color.Crimson;
+            this.ltContextMenu1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ltContextMenu1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.ltContextMenu1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.hideLargeToolStripMenuItem});
+            this.ltContextMenu1.Name = "ltContextMenu1";
+            this.ltContextMenu1.Size = new System.Drawing.Size(241, 71);
+            // 
+            // hideLargeToolStripMenuItem
+            // 
+            this.hideLargeToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.hideLargeToolStripMenuItem.Name = "hideLargeToolStripMenuItem";
+            this.hideLargeToolStripMenuItem.Size = new System.Drawing.Size(240, 34);
+            this.hideLargeToolStripMenuItem.Text = "Hide Large";
+            this.hideLargeToolStripMenuItem.Click += new System.EventHandler(this.hideLargeToolStripMenuItem_Click);
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
@@ -135,6 +159,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
             this.Load += new System.EventHandler(this.Home_Load);
+            this.ltContextMenu1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -146,5 +171,7 @@
         private System.Windows.Forms.Timer timerHide;
         private Menus.HomeBottomMenu homeBottomMenu1;
         private System.Windows.Forms.Timer timerShow;
+        private Controls.LTContextMenu ltContextMenu1;
+        private System.Windows.Forms.ToolStripMenuItem hideLargeToolStripMenuItem;
     }
 }

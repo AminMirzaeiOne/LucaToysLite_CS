@@ -62,6 +62,19 @@ namespace LucaToysLite.Menus
 
         }
 
+        public System.Boolean LargeSub
+        {
+            get { return this.panel1.Visible; }
+            set
+            {
+                this.panel1.Visible = value;
+                if (value)
+                    this.Height = 230;
+                else
+                    this.Height = 80;
+            }
+        }
+
         private byte leftMax = 10;
         private byte righttMax = 10;
 
@@ -169,138 +182,142 @@ namespace LucaToysLite.Menus
 
         private void radioUsers_CheckedChanged(object sender, EventArgs e)
         {
-            var rb = (RadioButton)sender;
-            if (rb == this.radioUsers)
+            if (this.LargeSub)
             {
-                foreach (UserControl item in this.panel1.Controls)
+                var rb = (RadioButton)sender;
+                if (rb == this.radioUsers)
                 {
-                    if (item != this.users)
-                        item.Visible = false;
-                    else
-                        this.animator1.Show(this.users);
+                    foreach (UserControl item in this.panel1.Controls)
+                    {
+                        if (item != this.users)
+                            item.Visible = false;
+                        else
+                            this.animator1.Show(this.users);
+                    }
+                }
+                else if (rb == this.radioProduct)
+                {
+                    foreach (UserControl item in this.panel1.Controls)
+                    {
+                        if (item != this.products)
+                            item.Visible = false;
+                        else
+                            this.animator1.Show(this.products);
+                    }
+                }
+                else if (rb == this.radioFinance)
+                {
+                    foreach (UserControl item in this.panel1.Controls)
+                    {
+                        if (item != this.finance)
+                            item.Visible = false;
+                        else
+                            this.animator1.Show(this.finance);
+                    }
+                }
+                else if (rb == this.radioAccounting)
+                {
+                    foreach (UserControl item in this.panel1.Controls)
+                    {
+                        if (item != this.accounting)
+                            item.Visible = false;
+                        else
+                            this.animator1.Show(this.accounting);
+                    }
+                }
+                else if (rb == this.radioInvoice)
+                {
+                    foreach (UserControl item in this.panel1.Controls)
+                    {
+                        if (item != this.invoice)
+                            item.Visible = false;
+                        else
+                            this.animator1.Show(this.invoice);
+                    }
+                }
+                else if (rb == this.radioDocuments)
+                {
+                    foreach (UserControl item in this.panel1.Controls)
+                    {
+                        if (item != this.documents)
+                            item.Visible = false;
+                        else
+                            this.animator1.Show(this.documents);
+                    }
+                }
+                else if (rb == this.radioExport)
+                {
+                    foreach (UserControl item in this.panel1.Controls)
+                    {
+                        if (item != this.exportData)
+                            item.Visible = false;
+                        else
+                            this.animator1.Show(this.exportData);
+                    }
+                }
+                else if (rb == this.radioApps)
+                {
+                    foreach (UserControl item in this.panel1.Controls)
+                    {
+                        if (item != this.appTools)
+                            item.Visible = false;
+                        else
+                            this.animator1.Show(this.appTools);
+                    }
+                }
+                else if (rb == this.radioWidgets)
+                {
+                    this.widgets.Window = (Form)this.Parent;
+                    foreach (UserControl item in this.panel1.Controls)
+                    {
+                        if (item != this.widgets)
+                            item.Visible = false;
+                        else
+                            this.animator1.Show(this.widgets);
+                    }
+                }
+                else if (rb == this.radioSettings)
+                {
+                    foreach (UserControl item in this.panel1.Controls)
+                    {
+                        if (item != this.settings)
+                            item.Visible = false;
+                        else
+                            this.animator1.Show(this.settings);
+                    }
+                }
+                else if (rb == this.radioHelp)
+                {
+                    foreach (UserControl item in this.panel1.Controls)
+                    {
+                        if (item != this.help)
+                            item.Visible = false;
+                        else
+                            this.animator1.Show(this.help);
+                    }
+                }
+                else if (rb == this.radioSalesman)
+                {
+                    foreach (UserControl item in this.panel1.Controls)
+                    {
+                        if (item != this.salesman)
+                            item.Visible = false;
+                        else
+                            this.animator1.Show(this.salesman);
+                    }
+                }
+                else if (rb == this.radioAbout)
+                {
+                    foreach (UserControl item in this.panel1.Controls)
+                    {
+                        if (item != this.about)
+                            item.Visible = false;
+                        else
+                            this.animator1.Show(this.about);
+                    }
                 }
             }
-            else if (rb == this.radioProduct)
-            {
-                foreach (UserControl item in this.panel1.Controls)
-                {
-                    if (item != this.products)
-                        item.Visible = false;
-                    else
-                        this.animator1.Show(this.products);
-                }
-            }
-            else if (rb == this.radioFinance)
-            {
-                foreach (UserControl item in this.panel1.Controls)
-                {
-                    if (item != this.finance)
-                        item.Visible = false;
-                    else
-                        this.animator1.Show(this.finance);
-                }
-            }
-            else if (rb == this.radioAccounting)
-            {
-                foreach (UserControl item in this.panel1.Controls)
-                {
-                    if (item != this.accounting)
-                        item.Visible = false;
-                    else
-                        this.animator1.Show(this.accounting);
-                }
-            }
-            else if (rb == this.radioInvoice)
-            {
-                foreach (UserControl item in this.panel1.Controls)
-                {
-                    if (item != this.invoice)
-                        item.Visible = false;
-                    else
-                        this.animator1.Show(this.invoice);
-                }
-            }
-            else if (rb == this.radioDocuments)
-            {
-                foreach (UserControl item in this.panel1.Controls)
-                {
-                    if (item != this.documents)
-                        item.Visible = false;
-                    else
-                        this.animator1.Show(this.documents);
-                }
-            }
-            else if (rb == this.radioExport)
-            {
-                foreach (UserControl item in this.panel1.Controls)
-                {
-                    if (item != this.exportData)
-                        item.Visible = false;
-                    else
-                        this.animator1.Show(this.exportData);
-                }
-            }
-            else if (rb == this.radioApps)
-            {
-                foreach (UserControl item in this.panel1.Controls)
-                {
-                    if (item != this.appTools)
-                        item.Visible = false;
-                    else
-                        this.animator1.Show(this.appTools);
-                }
-            }
-            else if (rb == this.radioWidgets)
-            {
-                this.widgets.Window = (Form)this.Parent;
-                foreach (UserControl item in this.panel1.Controls)
-                {
-                    if (item != this.widgets)
-                        item.Visible = false;
-                    else
-                        this.animator1.Show(this.widgets);
-                }
-            }
-            else if (rb == this.radioSettings)
-            {
-                foreach (UserControl item in this.panel1.Controls)
-                {
-                    if (item != this.settings)
-                        item.Visible = false;
-                    else
-                        this.animator1.Show(this.settings);
-                }
-            }
-            else if (rb == this.radioHelp)
-            {
-                foreach (UserControl item in this.panel1.Controls)
-                {
-                    if (item != this.help)
-                        item.Visible = false;
-                    else
-                        this.animator1.Show(this.help);
-                }
-            }
-            else if (rb == this.radioSalesman)
-            {
-                foreach (UserControl item in this.panel1.Controls)
-                {
-                    if (item != this.salesman)
-                        item.Visible = false;
-                    else
-                        this.animator1.Show(this.salesman);
-                }
-            }
-            else if (rb == this.radioAbout)
-            {
-                foreach (UserControl item in this.panel1.Controls)
-                {
-                    if (item != this.about)
-                        item.Visible = false;
-                    else
-                        this.animator1.Show(this.about);
-                }
-            }
+            
         }
 
         private void radioUsers_MouseDown(object sender, MouseEventArgs e)
@@ -340,7 +357,7 @@ namespace LucaToysLite.Menus
 
         private void radioExport_MouseDown(object sender, MouseEventArgs e)
         {
-            this.exportContextMenu.Show(this.radioExport, new Point(0,70));
+            this.exportContextMenu.Show(this.radioExport, new Point(0, 70));
         }
 
         private void radioApps_MouseDown(object sender, MouseEventArgs e)
@@ -374,7 +391,7 @@ namespace LucaToysLite.Menus
             this.timerLeft.Start();
         }
 
-        
+
 
         private void roundedButton1_Click(object sender, EventArgs e)
         {
@@ -387,7 +404,7 @@ namespace LucaToysLite.Menus
             if (this.leftMin < 80)
             {
                 this.leftMin += 8;
-                foreach(RoundedRadioButton item in this.panel2.Controls.OfType<RoundedRadioButton>())
+                foreach (RoundedRadioButton item in this.panel2.Controls.OfType<RoundedRadioButton>())
                 {
                     item.Left += this.leftMin;
                 }
@@ -397,9 +414,9 @@ namespace LucaToysLite.Menus
                 this.timerLeft.Stop();
                 this.rightMin = 0;
             }
-            
+
         }
-         
+
         private void timerRight_Tick(object sender, EventArgs e)
         {
             if (this.rightMin < 80)

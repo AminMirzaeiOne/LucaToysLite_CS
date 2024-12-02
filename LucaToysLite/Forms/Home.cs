@@ -58,5 +58,10 @@ namespace LucaToysLite.Forms
                 this.timerShow.Stop();
             }
         }
+
+        private void hideLargeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.homeMenu1.LargeSub = false;
+        }
     }
 }
