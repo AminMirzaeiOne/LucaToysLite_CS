@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            WFAnimations.Animation animation5 = new WFAnimations.Animation();
+            WFAnimations.Animation animation1 = new WFAnimations.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeMenu));
             this.panel1 = new System.Windows.Forms.Panel();
             this.animator1 = new WFAnimations.Animator(this.components);
@@ -51,6 +51,10 @@
             this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
+            this.documentsContextMenu = new LucaToysLite.Controls.LTContextMenu();
+            this.arrivedsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator13 = new System.Windows.Forms.ToolStripSeparator();
             this.radioWidgets = new LucaToysLite.Controls.RoundedRadioButton();
             this.radioUsers = new LucaToysLite.Controls.RoundedRadioButton();
             this.radioHelp = new LucaToysLite.Controls.RoundedRadioButton();
@@ -97,12 +101,8 @@
             this.profitAndLossToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salesInvoiceToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.purchaseInvoiceToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.documentsContextMenu = new LucaToysLite.Controls.LTContextMenu();
-            this.arrivedsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
             this.receiptsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.paymentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator13 = new System.Windows.Forms.ToolStripSeparator();
             this.debtsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.roundedPanel1.SuspendLayout();
             this.usersContextMenu.SuspendLayout();
@@ -128,22 +128,22 @@
             // 
             this.animator1.AnimationType = WFAnimations.AnimationType.Transparent;
             this.animator1.Cursor = null;
-            animation5.AnimateOnlyDifferences = true;
-            animation5.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.BlindCoeff")));
-            animation5.LeafCoeff = 0F;
-            animation5.MaxTime = 1F;
-            animation5.MinTime = 0F;
-            animation5.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicCoeff")));
-            animation5.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicShift")));
-            animation5.MosaicSize = 0;
-            animation5.Padding = new System.Windows.Forms.Padding(0);
-            animation5.RotateCoeff = 0F;
-            animation5.RotateLimit = 0F;
-            animation5.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.ScaleCoeff")));
-            animation5.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.SlideCoeff")));
-            animation5.TimeCoeff = 0F;
-            animation5.TransparencyCoeff = 1F;
-            this.animator1.DefaultAnimation = animation5;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 1F;
+            this.animator1.DefaultAnimation = animation1;
             this.animator1.Upside = false;
             // 
             // roundedPanel1
@@ -340,6 +340,43 @@
             // 
             this.toolStripSeparator11.Name = "toolStripSeparator11";
             this.toolStripSeparator11.Size = new System.Drawing.Size(299, 6);
+            // 
+            // documentsContextMenu
+            // 
+            this.documentsContextMenu.Background = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.documentsContextMenu.BorderSize = ((byte)(2));
+            this.documentsContextMenu.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.documentsContextMenu, WFAnimations.DecorationType.None);
+            this.documentsContextMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.documentsContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.documentsContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.arrivedsToolStripMenuItem,
+            this.toolStripSeparator12,
+            this.receiptsToolStripMenuItem,
+            this.paymentsToolStripMenuItem,
+            this.toolStripSeparator13,
+            this.debtsToolStripMenuItem});
+            this.documentsContextMenu.Name = "documentsContextMenu";
+            this.documentsContextMenu.Size = new System.Drawing.Size(226, 240);
+            // 
+            // arrivedsToolStripMenuItem
+            // 
+            this.arrivedsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.arrivedsToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_atm_48;
+            this.arrivedsToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.arrivedsToolStripMenuItem.Name = "arrivedsToolStripMenuItem";
+            this.arrivedsToolStripMenuItem.Size = new System.Drawing.Size(225, 56);
+            this.arrivedsToolStripMenuItem.Text = "Arriveds";
+            // 
+            // toolStripSeparator12
+            // 
+            this.toolStripSeparator12.Name = "toolStripSeparator12";
+            this.toolStripSeparator12.Size = new System.Drawing.Size(222, 6);
+            // 
+            // toolStripSeparator13
+            // 
+            this.toolStripSeparator13.Name = "toolStripSeparator13";
+            this.toolStripSeparator13.Size = new System.Drawing.Size(222, 6);
             // 
             // radioWidgets
             // 
@@ -930,60 +967,31 @@
             this.purchaseInvoiceToolStripMenuItem1.Size = new System.Drawing.Size(302, 56);
             this.purchaseInvoiceToolStripMenuItem1.Text = "Purchase Invoice";
             // 
-            // documentsContextMenu
-            // 
-            this.documentsContextMenu.Background = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.documentsContextMenu.BorderSize = ((byte)(2));
-            this.documentsContextMenu.ColorPallet = System.Drawing.Color.Crimson;
-            this.animator1.SetDecoration(this.documentsContextMenu, WFAnimations.DecorationType.None);
-            this.documentsContextMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.documentsContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.documentsContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.arrivedsToolStripMenuItem,
-            this.toolStripSeparator12,
-            this.receiptsToolStripMenuItem,
-            this.paymentsToolStripMenuItem,
-            this.toolStripSeparator13,
-            this.debtsToolStripMenuItem});
-            this.documentsContextMenu.Name = "documentsContextMenu";
-            this.documentsContextMenu.Size = new System.Drawing.Size(194, 168);
-            // 
-            // arrivedsToolStripMenuItem
-            // 
-            this.arrivedsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.arrivedsToolStripMenuItem.Name = "arrivedsToolStripMenuItem";
-            this.arrivedsToolStripMenuItem.Size = new System.Drawing.Size(240, 38);
-            this.arrivedsToolStripMenuItem.Text = "Arriveds";
-            // 
-            // toolStripSeparator12
-            // 
-            this.toolStripSeparator12.Name = "toolStripSeparator12";
-            this.toolStripSeparator12.Size = new System.Drawing.Size(237, 6);
-            // 
             // receiptsToolStripMenuItem
             // 
             this.receiptsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.receiptsToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_get_revenue_48;
+            this.receiptsToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.receiptsToolStripMenuItem.Name = "receiptsToolStripMenuItem";
-            this.receiptsToolStripMenuItem.Size = new System.Drawing.Size(240, 38);
+            this.receiptsToolStripMenuItem.Size = new System.Drawing.Size(225, 56);
             this.receiptsToolStripMenuItem.Text = "Receipts";
             // 
             // paymentsToolStripMenuItem
             // 
             this.paymentsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.paymentsToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_payment_48;
+            this.paymentsToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.paymentsToolStripMenuItem.Name = "paymentsToolStripMenuItem";
-            this.paymentsToolStripMenuItem.Size = new System.Drawing.Size(240, 38);
+            this.paymentsToolStripMenuItem.Size = new System.Drawing.Size(225, 56);
             this.paymentsToolStripMenuItem.Text = "Payments";
-            // 
-            // toolStripSeparator13
-            // 
-            this.toolStripSeparator13.Name = "toolStripSeparator13";
-            this.toolStripSeparator13.Size = new System.Drawing.Size(237, 6);
             // 
             // debtsToolStripMenuItem
             // 
             this.debtsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.debtsToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_payment_history_48;
+            this.debtsToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.debtsToolStripMenuItem.Name = "debtsToolStripMenuItem";
-            this.debtsToolStripMenuItem.Size = new System.Drawing.Size(193, 38);
+            this.debtsToolStripMenuItem.Size = new System.Drawing.Size(225, 56);
             this.debtsToolStripMenuItem.Text = "Debts";
             // 
             // HomeMenu

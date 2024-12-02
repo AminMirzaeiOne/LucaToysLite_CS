@@ -2265,6 +2265,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="LucaLogo.ico" />
+    <None Include="Resources\icons8-atm-48.png" />
+    <None Include="Resources\icons8-get-revenue-48.png" />
+    <None Include="Resources\icons8-payment-48.png" />
+    <None Include="Resources\icons8-payment-history-48.png" />
     <None Include="Resources\icons8-return-purchase-48.png" />
     <None Include="Resources\icons8-profit-48.png" />
     <None Include="Resources\icons8-invoice-48.png" />
