@@ -2265,6 +2265,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="LucaLogo.ico" />
+    <None Include="Resources\icons8-add-tag-48.png" />
+    <None Include="Resources\icons8-remove-tag-48.png" />
+    <None Include="Resources\Group 51.png" />
+    <None Include="Resources\Group 50.png" />
+    <None Include="Resources\Group 49.png" />
+    <None Include="Resources\Group 48.png" />
+    <None Include="Resources\icons8-funko-48.png" />
+    <None Include="Resources\icons8-manager-48.png" />
     <None Include="Resources\icons8-atm-48.png" />
     <None Include="Resources\icons8-get-revenue-48.png" />
     <None Include="Resources\icons8-payment-48.png" />
