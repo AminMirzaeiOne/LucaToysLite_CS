@@ -2274,6 +2274,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="LucaLogo.ico" />
+    <None Include="Resources\icons8-sync-48.png" />
+    <None Include="Resources\icons8-update-done-48.png" />
+    <None Include="Resources\icons8-cpu-48%281%29.png" />
+    <None Include="Resources\icons8-developer-481.png" />
+    <None Include="Resources\icons8-certification-48.png" />
+    <None Include="Resources\icons8-version-482.png" />
     <None Include="Resources\icons8-update-done-68.png" />
     <None Include="Resources\icons8-sync-68.png" />
     <None Include="Resources\icons8-cpu-68.png" />
