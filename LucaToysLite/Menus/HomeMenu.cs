@@ -399,7 +399,7 @@ namespace LucaToysLite.Menus
             }
             
         }
-
+         
         private void timerRight_Tick(object sender, EventArgs e)
         {
             if (this.rightMin < 80)
