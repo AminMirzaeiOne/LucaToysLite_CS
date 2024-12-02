@@ -486,6 +486,12 @@
     <Compile Include="Forms\Users.Designer.cs">
       <DependentUpon>Users.cs</DependentUpon>
     </Compile>
+    <Compile Include="Menus\About.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Menus\About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menus\Accounting.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -1126,6 +1132,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Users.resx">
       <DependentUpon>Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\About.resx">
+      <DependentUpon>About.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menus\Accounting.resx">
       <DependentUpon>Accounting.cs</DependentUpon>
