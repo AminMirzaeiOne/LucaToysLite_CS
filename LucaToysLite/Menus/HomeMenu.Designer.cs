@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            WFAnimations.Animation animation1 = new WFAnimations.Animation();
+            WFAnimations.Animation animation8 = new WFAnimations.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeMenu));
             this.panel1 = new System.Windows.Forms.Panel();
             this.animator1 = new WFAnimations.Animator(this.components);
@@ -141,6 +141,15 @@
             this.roundedButton1 = new LucaToysLite.Controls.RoundedButton();
             this.roundedLabel2 = new LucaToysLite.Controls.RoundedLabel();
             this.widgetsContextMenu = new LucaToysLite.Controls.LTContextMenu();
+            this.clockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cleanderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.weatherToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator21 = new System.Windows.Forms.ToolStripSeparator();
+            this.toDoListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.miniWebToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator22 = new System.Windows.Forms.ToolStripSeparator();
+            this.pCInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.whiteBoardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.roundedPanel1.SuspendLayout();
             this.usersContextMenu.SuspendLayout();
             this.productContextMenu.SuspendLayout();
@@ -152,6 +161,7 @@
             this.exportContextMenu.SuspendLayout();
             this.appToolsContextMenu.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.widgetsContextMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -169,22 +179,22 @@
             // 
             this.animator1.AnimationType = WFAnimations.AnimationType.Transparent;
             this.animator1.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 1F;
-            this.animator1.DefaultAnimation = animation1;
+            animation8.AnimateOnlyDifferences = true;
+            animation8.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.BlindCoeff")));
+            animation8.LeafCoeff = 0F;
+            animation8.MaxTime = 1F;
+            animation8.MinTime = 0F;
+            animation8.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.MosaicCoeff")));
+            animation8.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation8.MosaicShift")));
+            animation8.MosaicSize = 0;
+            animation8.Padding = new System.Windows.Forms.Padding(0);
+            animation8.RotateCoeff = 0F;
+            animation8.RotateLimit = 0F;
+            animation8.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.ScaleCoeff")));
+            animation8.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.SlideCoeff")));
+            animation8.TimeCoeff = 0F;
+            animation8.TransparencyCoeff = 1F;
+            this.animator1.DefaultAnimation = animation8;
             this.animator1.Upside = false;
             // 
             // roundedPanel1
@@ -1415,8 +1425,77 @@
             this.animator1.SetDecoration(this.widgetsContextMenu, WFAnimations.DecorationType.None);
             this.widgetsContextMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.widgetsContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.widgetsContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.clockToolStripMenuItem,
+            this.cleanderToolStripMenuItem,
+            this.weatherToolStripMenuItem,
+            this.toolStripSeparator21,
+            this.toDoListToolStripMenuItem,
+            this.miniWebToolStripMenuItem,
+            this.toolStripSeparator22,
+            this.pCInfoToolStripMenuItem,
+            this.whiteBoardToolStripMenuItem});
             this.widgetsContextMenu.Name = "widgetsContextMenu";
-            this.widgetsContextMenu.Size = new System.Drawing.Size(61, 4);
+            this.widgetsContextMenu.Size = new System.Drawing.Size(226, 282);
+            // 
+            // clockToolStripMenuItem
+            // 
+            this.clockToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.clockToolStripMenuItem.Name = "clockToolStripMenuItem";
+            this.clockToolStripMenuItem.Size = new System.Drawing.Size(240, 38);
+            this.clockToolStripMenuItem.Text = "Clock";
+            // 
+            // cleanderToolStripMenuItem
+            // 
+            this.cleanderToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.cleanderToolStripMenuItem.Name = "cleanderToolStripMenuItem";
+            this.cleanderToolStripMenuItem.Size = new System.Drawing.Size(240, 38);
+            this.cleanderToolStripMenuItem.Text = "Cleander";
+            // 
+            // weatherToolStripMenuItem
+            // 
+            this.weatherToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.weatherToolStripMenuItem.Name = "weatherToolStripMenuItem";
+            this.weatherToolStripMenuItem.Size = new System.Drawing.Size(240, 38);
+            this.weatherToolStripMenuItem.Text = "Weather";
+            // 
+            // toolStripSeparator21
+            // 
+            this.toolStripSeparator21.Name = "toolStripSeparator21";
+            this.toolStripSeparator21.Size = new System.Drawing.Size(237, 6);
+            // 
+            // toDoListToolStripMenuItem
+            // 
+            this.toDoListToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.toDoListToolStripMenuItem.Name = "toDoListToolStripMenuItem";
+            this.toDoListToolStripMenuItem.Size = new System.Drawing.Size(240, 38);
+            this.toDoListToolStripMenuItem.Text = "To Do List";
+            // 
+            // miniWebToolStripMenuItem
+            // 
+            this.miniWebToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.miniWebToolStripMenuItem.Name = "miniWebToolStripMenuItem";
+            this.miniWebToolStripMenuItem.Size = new System.Drawing.Size(240, 38);
+            this.miniWebToolStripMenuItem.Text = "Mini Web";
+            // 
+            // toolStripSeparator22
+            // 
+            this.toolStripSeparator22.Name = "toolStripSeparator22";
+            this.toolStripSeparator22.Size = new System.Drawing.Size(237, 6);
+            // 
+            // pCInfoToolStripMenuItem
+            // 
+            this.pCInfoToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.pCInfoToolStripMenuItem.Name = "pCInfoToolStripMenuItem";
+            this.pCInfoToolStripMenuItem.Size = new System.Drawing.Size(240, 38);
+            this.pCInfoToolStripMenuItem.Text = "PC Info";
+            // 
+            // whiteBoardToolStripMenuItem
+            // 
+            this.whiteBoardToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.whiteBoardToolStripMenuItem.Name = "whiteBoardToolStripMenuItem";
+            this.whiteBoardToolStripMenuItem.Size = new System.Drawing.Size(225, 38);
+            this.whiteBoardToolStripMenuItem.Text = "White Board";
             // 
             // HomeMenu
             // 
@@ -1439,6 +1518,7 @@
             this.exportContextMenu.ResumeLayout(false);
             this.appToolsContextMenu.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.widgetsContextMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1554,5 +1634,14 @@
         private Controls.RoundedButton roundedButton1;
         private Controls.RoundedLabel roundedLabel2;
         private Controls.LTContextMenu widgetsContextMenu;
+        private System.Windows.Forms.ToolStripMenuItem clockToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cleanderToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem weatherToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator21;
+        private System.Windows.Forms.ToolStripMenuItem toDoListToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem miniWebToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator22;
+        private System.Windows.Forms.ToolStripMenuItem pCInfoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem whiteBoardToolStripMenuItem;
     }
 }
