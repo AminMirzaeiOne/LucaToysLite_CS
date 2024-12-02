@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            WFAnimations.Animation animation2 = new WFAnimations.Animation();
+            WFAnimations.Animation animation1 = new WFAnimations.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeMenu));
             this.panel1 = new System.Windows.Forms.Panel();
             this.animator1 = new WFAnimations.Animator(this.components);
@@ -47,7 +47,6 @@
             this.accountingContextMenu = new LucaToysLite.Controls.LTContextMenu();
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
-            this.barcodeCreatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.radioWidgets = new LucaToysLite.Controls.RoundedRadioButton();
             this.radioUsers = new LucaToysLite.Controls.RoundedRadioButton();
             this.radioHelp = new LucaToysLite.Controls.RoundedRadioButton();
@@ -87,6 +86,8 @@
             this.deleteAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.purchaseModeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.barcodeCreatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.invoiceContextMenu = new LucaToysLite.Controls.LTContextMenu();
             this.roundedPanel1.SuspendLayout();
             this.usersContextMenu.SuspendLayout();
             this.productContextMenu.SuspendLayout();
@@ -109,22 +110,22 @@
             // 
             this.animator1.AnimationType = WFAnimations.AnimationType.Transparent;
             this.animator1.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 1F;
-            this.animator1.DefaultAnimation = animation2;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 1F;
+            this.animator1.DefaultAnimation = animation1;
             this.animator1.Upside = false;
             // 
             // roundedPanel1
@@ -279,21 +280,12 @@
             // toolStripSeparator7
             // 
             this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(322, 6);
+            this.toolStripSeparator7.Size = new System.Drawing.Size(304, 6);
             // 
             // toolStripSeparator8
             // 
             this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(322, 6);
-            // 
-            // barcodeCreatorToolStripMenuItem
-            // 
-            this.barcodeCreatorToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.barcodeCreatorToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_qr_code_48;
-            this.barcodeCreatorToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.barcodeCreatorToolStripMenuItem.Name = "barcodeCreatorToolStripMenuItem";
-            this.barcodeCreatorToolStripMenuItem.Size = new System.Drawing.Size(307, 58);
-            this.barcodeCreatorToolStripMenuItem.Text = "Barcode Creator";
+            this.toolStripSeparator8.Size = new System.Drawing.Size(304, 6);
             // 
             // radioWidgets
             // 
@@ -781,7 +773,7 @@
             this.manageAccountToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_bank_cards_48;
             this.manageAccountToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.manageAccountToolStripMenuItem.Name = "manageAccountToolStripMenuItem";
-            this.manageAccountToolStripMenuItem.Size = new System.Drawing.Size(325, 76);
+            this.manageAccountToolStripMenuItem.Size = new System.Drawing.Size(307, 58);
             this.manageAccountToolStripMenuItem.Text = "Manage Account";
             // 
             // addAccountToolStripMenuItem
@@ -790,7 +782,7 @@
             this.addAccountToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.Group_45_1_;
             this.addAccountToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.addAccountToolStripMenuItem.Name = "addAccountToolStripMenuItem";
-            this.addAccountToolStripMenuItem.Size = new System.Drawing.Size(325, 76);
+            this.addAccountToolStripMenuItem.Size = new System.Drawing.Size(307, 58);
             this.addAccountToolStripMenuItem.Text = "Add Account";
             // 
             // deleteAccountToolStripMenuItem
@@ -799,7 +791,7 @@
             this.deleteAccountToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.Group_46_1_;
             this.deleteAccountToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.deleteAccountToolStripMenuItem.Name = "deleteAccountToolStripMenuItem";
-            this.deleteAccountToolStripMenuItem.Size = new System.Drawing.Size(325, 76);
+            this.deleteAccountToolStripMenuItem.Size = new System.Drawing.Size(307, 58);
             this.deleteAccountToolStripMenuItem.Text = "Delete Account";
             // 
             // updateAccountToolStripMenuItem
@@ -808,7 +800,7 @@
             this.updateAccountToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.Group_47_1_;
             this.updateAccountToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.updateAccountToolStripMenuItem.Name = "updateAccountToolStripMenuItem";
-            this.updateAccountToolStripMenuItem.Size = new System.Drawing.Size(325, 76);
+            this.updateAccountToolStripMenuItem.Size = new System.Drawing.Size(307, 58);
             this.updateAccountToolStripMenuItem.Text = "Update Account";
             // 
             // purchaseModeToolStripMenuItem
@@ -817,8 +809,28 @@
             this.purchaseModeToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_basket_48;
             this.purchaseModeToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.purchaseModeToolStripMenuItem.Name = "purchaseModeToolStripMenuItem";
-            this.purchaseModeToolStripMenuItem.Size = new System.Drawing.Size(325, 76);
+            this.purchaseModeToolStripMenuItem.Size = new System.Drawing.Size(307, 58);
             this.purchaseModeToolStripMenuItem.Text = "Purchase Mode";
+            // 
+            // barcodeCreatorToolStripMenuItem
+            // 
+            this.barcodeCreatorToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.barcodeCreatorToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_qr_code_48;
+            this.barcodeCreatorToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.barcodeCreatorToolStripMenuItem.Name = "barcodeCreatorToolStripMenuItem";
+            this.barcodeCreatorToolStripMenuItem.Size = new System.Drawing.Size(307, 58);
+            this.barcodeCreatorToolStripMenuItem.Text = "Barcode Creator";
+            // 
+            // invoiceContextMenu
+            // 
+            this.invoiceContextMenu.Background = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.invoiceContextMenu.BorderSize = ((byte)(2));
+            this.invoiceContextMenu.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.invoiceContextMenu, WFAnimations.DecorationType.None);
+            this.invoiceContextMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.invoiceContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.invoiceContextMenu.Name = "invoiceContextMenu";
+            this.invoiceContextMenu.Size = new System.Drawing.Size(241, 37);
             // 
             // HomeMenu
             // 
@@ -896,5 +908,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator8;
         private System.Windows.Forms.ToolStripMenuItem purchaseModeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem barcodeCreatorToolStripMenuItem;
+        private Controls.LTContextMenu invoiceContextMenu;
     }
 }
