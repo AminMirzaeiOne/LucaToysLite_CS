@@ -36,13 +36,8 @@
             this.roundedPanel1 = new LucaToysLite.Controls.RoundedPanel();
             this.ltContextMenu1 = new LucaToysLite.Controls.LTContextMenu();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.addSellerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteSellerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.updateSellerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.addCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.updateCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.radioWidgets = new LucaToysLite.Controls.RoundedRadioButton();
             this.radioUsers = new LucaToysLite.Controls.RoundedRadioButton();
             this.radioHelp = new LucaToysLite.Controls.RoundedRadioButton();
@@ -57,6 +52,11 @@
             this.radioProduct = new LucaToysLite.Controls.RoundedRadioButton();
             this.manageUsersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.searchUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addSellerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteSellerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.updateSellerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.updateCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.roundedPanel1.SuspendLayout();
             this.ltContextMenu1.SuspendLayout();
             this.SuspendLayout();
@@ -140,59 +140,25 @@
             this.deleteCustomerToolStripMenuItem,
             this.updateCustomerToolStripMenuItem});
             this.ltContextMenu1.Name = "ltContextMenu1";
-            this.ltContextMenu1.Size = new System.Drawing.Size(313, 464);
+            this.ltContextMenu1.Size = new System.Drawing.Size(317, 464);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(309, 6);
-            // 
-            // addSellerToolStripMenuItem
-            // 
-            this.addSellerToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.addSellerToolStripMenuItem.Name = "addSellerToolStripMenuItem";
-            this.addSellerToolStripMenuItem.Size = new System.Drawing.Size(312, 56);
-            this.addSellerToolStripMenuItem.Text = "Add Seller";
-            // 
-            // deleteSellerToolStripMenuItem
-            // 
-            this.deleteSellerToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.deleteSellerToolStripMenuItem.Name = "deleteSellerToolStripMenuItem";
-            this.deleteSellerToolStripMenuItem.Size = new System.Drawing.Size(312, 56);
-            this.deleteSellerToolStripMenuItem.Text = "Delete Seller";
-            // 
-            // updateSellerToolStripMenuItem
-            // 
-            this.updateSellerToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.updateSellerToolStripMenuItem.Name = "updateSellerToolStripMenuItem";
-            this.updateSellerToolStripMenuItem.Size = new System.Drawing.Size(312, 56);
-            this.updateSellerToolStripMenuItem.Text = "Update Seller";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(313, 6);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(309, 6);
-            // 
-            // addCustomerToolStripMenuItem
-            // 
-            this.addCustomerToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.addCustomerToolStripMenuItem.Name = "addCustomerToolStripMenuItem";
-            this.addCustomerToolStripMenuItem.Size = new System.Drawing.Size(312, 56);
-            this.addCustomerToolStripMenuItem.Text = "Add Customer";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(313, 6);
             // 
             // deleteCustomerToolStripMenuItem
             // 
             this.deleteCustomerToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.deleteCustomerToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.deleteCustomerToolStripMenuItem.Name = "deleteCustomerToolStripMenuItem";
-            this.deleteCustomerToolStripMenuItem.Size = new System.Drawing.Size(312, 56);
+            this.deleteCustomerToolStripMenuItem.Size = new System.Drawing.Size(316, 56);
             this.deleteCustomerToolStripMenuItem.Text = "Delete Customer";
-            // 
-            // updateCustomerToolStripMenuItem
-            // 
-            this.updateCustomerToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.updateCustomerToolStripMenuItem.Name = "updateCustomerToolStripMenuItem";
-            this.updateCustomerToolStripMenuItem.Size = new System.Drawing.Size(312, 56);
-            this.updateCustomerToolStripMenuItem.Text = "Update Customer";
             // 
             // radioWidgets
             // 
@@ -479,7 +445,7 @@
             this.manageUsersToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_racism_48;
             this.manageUsersToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.manageUsersToolStripMenuItem.Name = "manageUsersToolStripMenuItem";
-            this.manageUsersToolStripMenuItem.Size = new System.Drawing.Size(312, 56);
+            this.manageUsersToolStripMenuItem.Size = new System.Drawing.Size(316, 56);
             this.manageUsersToolStripMenuItem.Text = "Manage Users";
             // 
             // searchUserToolStripMenuItem
@@ -488,8 +454,53 @@
             this.searchUserToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_search_client_48;
             this.searchUserToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.searchUserToolStripMenuItem.Name = "searchUserToolStripMenuItem";
-            this.searchUserToolStripMenuItem.Size = new System.Drawing.Size(312, 56);
+            this.searchUserToolStripMenuItem.Size = new System.Drawing.Size(316, 56);
             this.searchUserToolStripMenuItem.Text = "Search User";
+            // 
+            // addSellerToolStripMenuItem
+            // 
+            this.addSellerToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.addSellerToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_add_user_48;
+            this.addSellerToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.addSellerToolStripMenuItem.Name = "addSellerToolStripMenuItem";
+            this.addSellerToolStripMenuItem.Size = new System.Drawing.Size(316, 56);
+            this.addSellerToolStripMenuItem.Text = "Add Seller";
+            // 
+            // deleteSellerToolStripMenuItem
+            // 
+            this.deleteSellerToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.deleteSellerToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_denied_48;
+            this.deleteSellerToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.deleteSellerToolStripMenuItem.Name = "deleteSellerToolStripMenuItem";
+            this.deleteSellerToolStripMenuItem.Size = new System.Drawing.Size(316, 56);
+            this.deleteSellerToolStripMenuItem.Text = "Delete Seller";
+            // 
+            // updateSellerToolStripMenuItem
+            // 
+            this.updateSellerToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.updateSellerToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_registration_48;
+            this.updateSellerToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.updateSellerToolStripMenuItem.Name = "updateSellerToolStripMenuItem";
+            this.updateSellerToolStripMenuItem.Size = new System.Drawing.Size(316, 56);
+            this.updateSellerToolStripMenuItem.Text = "Update Seller";
+            // 
+            // addCustomerToolStripMenuItem
+            // 
+            this.addCustomerToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.addCustomerToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_add_user_group_woman_man_48;
+            this.addCustomerToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.addCustomerToolStripMenuItem.Name = "addCustomerToolStripMenuItem";
+            this.addCustomerToolStripMenuItem.Size = new System.Drawing.Size(316, 56);
+            this.addCustomerToolStripMenuItem.Text = "Add Customer";
+            // 
+            // updateCustomerToolStripMenuItem
+            // 
+            this.updateCustomerToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.updateCustomerToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.Group_38_1_;
+            this.updateCustomerToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.updateCustomerToolStripMenuItem.Name = "updateCustomerToolStripMenuItem";
+            this.updateCustomerToolStripMenuItem.Size = new System.Drawing.Size(316, 56);
+            this.updateCustomerToolStripMenuItem.Text = "Update Customer";
             // 
             // HomeMenu
             // 
