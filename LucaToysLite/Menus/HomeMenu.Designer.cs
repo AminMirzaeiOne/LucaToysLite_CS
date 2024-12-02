@@ -52,7 +52,6 @@
             this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
             this.documentsContextMenu = new LucaToysLite.Controls.LTContextMenu();
-            this.arrivedsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator13 = new System.Windows.Forms.ToolStripSeparator();
             this.radioWidgets = new LucaToysLite.Controls.RoundedRadioButton();
@@ -101,6 +100,7 @@
             this.profitAndLossToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salesInvoiceToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.purchaseInvoiceToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.arrivedsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.receiptsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.paymentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.debtsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -359,15 +359,6 @@
             this.documentsContextMenu.Name = "documentsContextMenu";
             this.documentsContextMenu.Size = new System.Drawing.Size(226, 240);
             // 
-            // arrivedsToolStripMenuItem
-            // 
-            this.arrivedsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.arrivedsToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_atm_48;
-            this.arrivedsToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.arrivedsToolStripMenuItem.Name = "arrivedsToolStripMenuItem";
-            this.arrivedsToolStripMenuItem.Size = new System.Drawing.Size(225, 56);
-            this.arrivedsToolStripMenuItem.Text = "Arriveds";
-            // 
             // toolStripSeparator12
             // 
             this.toolStripSeparator12.Name = "toolStripSeparator12";
@@ -564,6 +555,7 @@
             this.radioDocuments.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.radioDocuments.UseVisualStyleBackColor = true;
             this.radioDocuments.CheckedChanged += new System.EventHandler(this.radioUsers_CheckedChanged);
+            this.radioDocuments.MouseDown += new System.Windows.Forms.MouseEventHandler(this.radioDocuments_MouseDown);
             // 
             // radioInvoice
             // 
@@ -966,6 +958,15 @@
             this.purchaseInvoiceToolStripMenuItem1.Name = "purchaseInvoiceToolStripMenuItem1";
             this.purchaseInvoiceToolStripMenuItem1.Size = new System.Drawing.Size(302, 56);
             this.purchaseInvoiceToolStripMenuItem1.Text = "Purchase Invoice";
+            // 
+            // arrivedsToolStripMenuItem
+            // 
+            this.arrivedsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.arrivedsToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_atm_48;
+            this.arrivedsToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.arrivedsToolStripMenuItem.Name = "arrivedsToolStripMenuItem";
+            this.arrivedsToolStripMenuItem.Size = new System.Drawing.Size(225, 56);
+            this.arrivedsToolStripMenuItem.Text = "Arriveds";
             // 
             // receiptsToolStripMenuItem
             // 
