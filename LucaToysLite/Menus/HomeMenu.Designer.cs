@@ -37,6 +37,7 @@
             this.roundedButton1 = new LucaToysLite.Controls.RoundedButton();
             this.roundedLabel2 = new LucaToysLite.Controls.RoundedLabel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.radioAbout = new LucaToysLite.Controls.RoundedRadioButton();
             this.radioHelp = new LucaToysLite.Controls.RoundedRadioButton();
             this.radioFinance = new LucaToysLite.Controls.RoundedRadioButton();
             this.radioUsers = new LucaToysLite.Controls.RoundedRadioButton();
@@ -168,7 +169,6 @@
             this.helpInvoiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpFinanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpAccoutingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.radioAbout = new LucaToysLite.Controls.RoundedRadioButton();
             this.roundedPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.usersContextMenu.SuspendLayout();
@@ -294,6 +294,29 @@
             this.panel2.Size = new System.Drawing.Size(1811, 70);
             this.panel2.TabIndex = 22;
             // 
+            // radioAbout
+            // 
+            this.radioAbout.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioAbout.BorderSize = ((byte)(2));
+            this.radioAbout.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.radioAbout, WFAnimations.DecorationType.None);
+            this.radioAbout.EnableBorder = true;
+            this.radioAbout.FlatAppearance.BorderSize = 0;
+            this.radioAbout.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
+            this.radioAbout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioAbout.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioAbout.ForeColor = System.Drawing.Color.White;
+            this.radioAbout.Image = global::LucaToysLite.Properties.Resources.icons8_info_34;
+            this.radioAbout.Location = new System.Drawing.Point(1698, 3);
+            this.radioAbout.Name = "radioAbout";
+            this.radioAbout.Size = new System.Drawing.Size(160, 64);
+            this.radioAbout.TabIndex = 0;
+            this.radioAbout.Text = " About";
+            this.radioAbout.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.radioAbout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.radioAbout.UseVisualStyleBackColor = true;
+            this.radioAbout.CheckedChanged += new System.EventHandler(this.radioUsers_CheckedChanged);
+            // 
             // radioHelp
             // 
             this.radioHelp.Appearance = System.Windows.Forms.Appearance.Button;
@@ -307,7 +330,7 @@
             this.radioHelp.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioHelp.ForeColor = System.Drawing.Color.White;
             this.radioHelp.Image = global::LucaToysLite.Properties.Resources.icons8_help_34;
-            this.radioHelp.Location = new System.Drawing.Point(1601, 3);
+            this.radioHelp.Location = new System.Drawing.Point(1520, 3);
             this.radioHelp.Name = "radioHelp";
             this.radioHelp.Size = new System.Drawing.Size(160, 64);
             this.radioHelp.TabIndex = 0;
@@ -331,7 +354,7 @@
             this.radioFinance.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioFinance.ForeColor = System.Drawing.Color.White;
             this.radioFinance.Image = global::LucaToysLite.Properties.Resources.icons8_stock_share_34;
-            this.radioFinance.Location = new System.Drawing.Point(10, 3);
+            this.radioFinance.Location = new System.Drawing.Point(-71, 3);
             this.radioFinance.Name = "radioFinance";
             this.radioFinance.Size = new System.Drawing.Size(160, 64);
             this.radioFinance.TabIndex = 0;
@@ -405,7 +428,7 @@
             this.radioExport.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioExport.ForeColor = System.Drawing.Color.White;
             this.radioExport.Image = global::LucaToysLite.Properties.Resources.icons8_data_migration_34;
-            this.radioExport.Location = new System.Drawing.Point(892, 3);
+            this.radioExport.Location = new System.Drawing.Point(811, 3);
             this.radioExport.Name = "radioExport";
             this.radioExport.Size = new System.Drawing.Size(160, 64);
             this.radioExport.TabIndex = 0;
@@ -429,7 +452,7 @@
             this.radioWidgets.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioWidgets.ForeColor = System.Drawing.Color.White;
             this.radioWidgets.Image = global::LucaToysLite.Properties.Resources.icons8_widget_34;
-            this.radioWidgets.Location = new System.Drawing.Point(1246, 3);
+            this.radioWidgets.Location = new System.Drawing.Point(1165, 3);
             this.radioWidgets.Name = "radioWidgets";
             this.radioWidgets.Size = new System.Drawing.Size(160, 64);
             this.radioWidgets.TabIndex = 0;
@@ -453,7 +476,7 @@
             this.radioSettings.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioSettings.ForeColor = System.Drawing.Color.White;
             this.radioSettings.Image = global::LucaToysLite.Properties.Resources.icons8_settings_34;
-            this.radioSettings.Location = new System.Drawing.Point(1423, 3);
+            this.radioSettings.Location = new System.Drawing.Point(1342, 3);
             this.radioSettings.Name = "radioSettings";
             this.radioSettings.Size = new System.Drawing.Size(160, 64);
             this.radioSettings.TabIndex = 0;
@@ -477,7 +500,7 @@
             this.radioAccounting.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioAccounting.ForeColor = System.Drawing.Color.White;
             this.radioAccounting.Image = global::LucaToysLite.Properties.Resources.icons8_accounting_34;
-            this.radioAccounting.Location = new System.Drawing.Point(185, 3);
+            this.radioAccounting.Location = new System.Drawing.Point(104, 3);
             this.radioAccounting.Name = "radioAccounting";
             this.radioAccounting.Size = new System.Drawing.Size(160, 64);
             this.radioAccounting.TabIndex = 0;
@@ -501,7 +524,7 @@
             this.radioSalesman.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioSalesman.ForeColor = System.Drawing.Color.White;
             this.radioSalesman.Image = global::LucaToysLite.Properties.Resources.icons8_company_34;
-            this.radioSalesman.Location = new System.Drawing.Point(715, 3);
+            this.radioSalesman.Location = new System.Drawing.Point(634, 3);
             this.radioSalesman.Name = "radioSalesman";
             this.radioSalesman.Size = new System.Drawing.Size(160, 64);
             this.radioSalesman.TabIndex = 0;
@@ -525,7 +548,7 @@
             this.radioApps.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioApps.ForeColor = System.Drawing.Color.White;
             this.radioApps.Image = global::LucaToysLite.Properties.Resources.icons8_android_app_drawer_34;
-            this.radioApps.Location = new System.Drawing.Point(1069, 3);
+            this.radioApps.Location = new System.Drawing.Point(988, 3);
             this.radioApps.Name = "radioApps";
             this.radioApps.Size = new System.Drawing.Size(160, 64);
             this.radioApps.TabIndex = 0;
@@ -549,7 +572,7 @@
             this.radioInvoice.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioInvoice.ForeColor = System.Drawing.Color.White;
             this.radioInvoice.Image = global::LucaToysLite.Properties.Resources.icons8_invoice_34;
-            this.radioInvoice.Location = new System.Drawing.Point(361, 3);
+            this.radioInvoice.Location = new System.Drawing.Point(280, 3);
             this.radioInvoice.Name = "radioInvoice";
             this.radioInvoice.Size = new System.Drawing.Size(160, 64);
             this.radioInvoice.TabIndex = 0;
@@ -573,7 +596,7 @@
             this.radioDocuments.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioDocuments.ForeColor = System.Drawing.Color.White;
             this.radioDocuments.Image = global::LucaToysLite.Properties.Resources.icons8_petition_34;
-            this.radioDocuments.Location = new System.Drawing.Point(538, 3);
+            this.radioDocuments.Location = new System.Drawing.Point(457, 3);
             this.radioDocuments.Name = "radioDocuments";
             this.radioDocuments.Size = new System.Drawing.Size(160, 64);
             this.radioDocuments.TabIndex = 0;
@@ -1703,29 +1726,6 @@
             this.helpAccoutingToolStripMenuItem.Name = "helpAccoutingToolStripMenuItem";
             this.helpAccoutingToolStripMenuItem.Size = new System.Drawing.Size(293, 62);
             this.helpAccoutingToolStripMenuItem.Text = "Help Accouting";
-            // 
-            // radioAbout
-            // 
-            this.radioAbout.Appearance = System.Windows.Forms.Appearance.Button;
-            this.radioAbout.BorderSize = ((byte)(2));
-            this.radioAbout.ColorPallet = System.Drawing.Color.Crimson;
-            this.animator1.SetDecoration(this.radioAbout, WFAnimations.DecorationType.None);
-            this.radioAbout.EnableBorder = true;
-            this.radioAbout.FlatAppearance.BorderSize = 0;
-            this.radioAbout.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
-            this.radioAbout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioAbout.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioAbout.ForeColor = System.Drawing.Color.White;
-            this.radioAbout.Image = global::LucaToysLite.Properties.Resources.icons8_info_34;
-            this.radioAbout.Location = new System.Drawing.Point(1779, 3);
-            this.radioAbout.Name = "radioAbout";
-            this.radioAbout.Size = new System.Drawing.Size(160, 64);
-            this.radioAbout.TabIndex = 0;
-            this.radioAbout.Text = " About";
-            this.radioAbout.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.radioAbout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.radioAbout.UseVisualStyleBackColor = true;
-            this.radioAbout.CheckedChanged += new System.EventHandler(this.radioUsers_CheckedChanged);
             // 
             // HomeMenu
             // 
