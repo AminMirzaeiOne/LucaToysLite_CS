@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            WFAnimations.Animation animation1 = new WFAnimations.Animation();
+            WFAnimations.Animation animation2 = new WFAnimations.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeMenu));
             this.panel1 = new System.Windows.Forms.Panel();
             this.animator1 = new WFAnimations.Animator(this.components);
@@ -135,6 +135,12 @@
             this.translatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.webBrowserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.phoneBookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.roundedButton4 = new LucaToysLite.Controls.RoundedButton();
+            this.roundedLabel1 = new LucaToysLite.Controls.RoundedLabel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.roundedButton1 = new LucaToysLite.Controls.RoundedButton();
+            this.roundedLabel2 = new LucaToysLite.Controls.RoundedLabel();
+            this.panel1.SuspendLayout();
             this.roundedPanel1.SuspendLayout();
             this.usersContextMenu.SuspendLayout();
             this.productContextMenu.SuspendLayout();
@@ -152,6 +158,18 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.panel1.Controls.Add(this.radioFinance);
+            this.panel1.Controls.Add(this.radioProduct);
+            this.panel1.Controls.Add(this.radioWidgets);
+            this.panel1.Controls.Add(this.radioAccounting);
+            this.panel1.Controls.Add(this.radioUsers);
+            this.panel1.Controls.Add(this.radioInvoice);
+            this.panel1.Controls.Add(this.radioHelp);
+            this.panel1.Controls.Add(this.radioDocuments);
+            this.panel1.Controls.Add(this.radioApps);
+            this.panel1.Controls.Add(this.radioSalesman);
+            this.panel1.Controls.Add(this.radioSettings);
+            this.panel1.Controls.Add(this.radioExport);
             this.animator1.SetDecoration(this.panel1, WFAnimations.DecorationType.None);
             this.panel1.Location = new System.Drawing.Point(3, 85);
             this.panel1.Name = "panel1";
@@ -162,22 +180,22 @@
             // 
             this.animator1.AnimationType = WFAnimations.AnimationType.Transparent;
             this.animator1.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 1F;
-            this.animator1.DefaultAnimation = animation1;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 1F;
+            this.animator1.DefaultAnimation = animation2;
             this.animator1.Upside = false;
             // 
             // roundedPanel1
@@ -187,18 +205,11 @@
             this.roundedPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.roundedPanel1.BorderColor = System.Drawing.Color.Crimson;
             this.roundedPanel1.BorderSize = ((byte)(0));
-            this.roundedPanel1.Controls.Add(this.radioWidgets);
-            this.roundedPanel1.Controls.Add(this.radioUsers);
-            this.roundedPanel1.Controls.Add(this.radioHelp);
-            this.roundedPanel1.Controls.Add(this.radioApps);
-            this.roundedPanel1.Controls.Add(this.radioSettings);
-            this.roundedPanel1.Controls.Add(this.radioExport);
-            this.roundedPanel1.Controls.Add(this.radioSalesman);
-            this.roundedPanel1.Controls.Add(this.radioDocuments);
-            this.roundedPanel1.Controls.Add(this.radioInvoice);
-            this.roundedPanel1.Controls.Add(this.radioAccounting);
-            this.roundedPanel1.Controls.Add(this.radioFinance);
-            this.roundedPanel1.Controls.Add(this.radioProduct);
+            this.roundedPanel1.Controls.Add(this.roundedButton1);
+            this.roundedPanel1.Controls.Add(this.roundedLabel2);
+            this.roundedPanel1.Controls.Add(this.panel2);
+            this.roundedPanel1.Controls.Add(this.roundedButton4);
+            this.roundedPanel1.Controls.Add(this.roundedLabel1);
             this.animator1.SetDecoration(this.roundedPanel1, WFAnimations.DecorationType.None);
             this.roundedPanel1.EnableBorder = false;
             this.roundedPanel1.Location = new System.Drawing.Point(3, 2);
@@ -515,7 +526,7 @@
             this.radioWidgets.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioWidgets.ForeColor = System.Drawing.Color.White;
             this.radioWidgets.Image = global::LucaToysLite.Properties.Resources.icons8_widget_34;
-            this.radioWidgets.Location = new System.Drawing.Point(1598, 8);
+            this.radioWidgets.Location = new System.Drawing.Point(1630, 39);
             this.radioWidgets.Name = "radioWidgets";
             this.radioWidgets.Size = new System.Drawing.Size(160, 64);
             this.radioWidgets.TabIndex = 0;
@@ -539,7 +550,7 @@
             this.radioUsers.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioUsers.ForeColor = System.Drawing.Color.White;
             this.radioUsers.Image = global::LucaToysLite.Properties.Resources.icons8_user_groups_34;
-            this.radioUsers.Location = new System.Drawing.Point(14, 8);
+            this.radioUsers.Location = new System.Drawing.Point(46, 39);
             this.radioUsers.Name = "radioUsers";
             this.radioUsers.Size = new System.Drawing.Size(160, 64);
             this.radioUsers.TabIndex = 0;
@@ -564,7 +575,7 @@
             this.radioHelp.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioHelp.ForeColor = System.Drawing.Color.White;
             this.radioHelp.Image = global::LucaToysLite.Properties.Resources.icons8_help_34;
-            this.radioHelp.Location = new System.Drawing.Point(1952, 8);
+            this.radioHelp.Location = new System.Drawing.Point(1985, 39);
             this.radioHelp.Name = "radioHelp";
             this.radioHelp.Size = new System.Drawing.Size(160, 64);
             this.radioHelp.TabIndex = 0;
@@ -587,7 +598,7 @@
             this.radioApps.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioApps.ForeColor = System.Drawing.Color.White;
             this.radioApps.Image = global::LucaToysLite.Properties.Resources.icons8_android_app_drawer_34;
-            this.radioApps.Location = new System.Drawing.Point(1421, 8);
+            this.radioApps.Location = new System.Drawing.Point(1453, 39);
             this.radioApps.Name = "radioApps";
             this.radioApps.Size = new System.Drawing.Size(160, 64);
             this.radioApps.TabIndex = 0;
@@ -611,7 +622,7 @@
             this.radioSettings.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioSettings.ForeColor = System.Drawing.Color.White;
             this.radioSettings.Image = global::LucaToysLite.Properties.Resources.icons8_settings_34;
-            this.radioSettings.Location = new System.Drawing.Point(1775, 8);
+            this.radioSettings.Location = new System.Drawing.Point(1807, 39);
             this.radioSettings.Name = "radioSettings";
             this.radioSettings.Size = new System.Drawing.Size(160, 64);
             this.radioSettings.TabIndex = 0;
@@ -634,7 +645,7 @@
             this.radioExport.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioExport.ForeColor = System.Drawing.Color.White;
             this.radioExport.Image = global::LucaToysLite.Properties.Resources.icons8_data_migration_34;
-            this.radioExport.Location = new System.Drawing.Point(1244, 8);
+            this.radioExport.Location = new System.Drawing.Point(1276, 39);
             this.radioExport.Name = "radioExport";
             this.radioExport.Size = new System.Drawing.Size(160, 64);
             this.radioExport.TabIndex = 0;
@@ -658,7 +669,7 @@
             this.radioSalesman.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioSalesman.ForeColor = System.Drawing.Color.White;
             this.radioSalesman.Image = global::LucaToysLite.Properties.Resources.icons8_company_34;
-            this.radioSalesman.Location = new System.Drawing.Point(1067, 8);
+            this.radioSalesman.Location = new System.Drawing.Point(1099, 39);
             this.radioSalesman.Name = "radioSalesman";
             this.radioSalesman.Size = new System.Drawing.Size(160, 64);
             this.radioSalesman.TabIndex = 0;
@@ -682,7 +693,7 @@
             this.radioDocuments.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioDocuments.ForeColor = System.Drawing.Color.White;
             this.radioDocuments.Image = global::LucaToysLite.Properties.Resources.icons8_petition_34;
-            this.radioDocuments.Location = new System.Drawing.Point(890, 8);
+            this.radioDocuments.Location = new System.Drawing.Point(922, 39);
             this.radioDocuments.Name = "radioDocuments";
             this.radioDocuments.Size = new System.Drawing.Size(160, 64);
             this.radioDocuments.TabIndex = 0;
@@ -706,7 +717,7 @@
             this.radioInvoice.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioInvoice.ForeColor = System.Drawing.Color.White;
             this.radioInvoice.Image = global::LucaToysLite.Properties.Resources.icons8_invoice_34;
-            this.radioInvoice.Location = new System.Drawing.Point(713, 8);
+            this.radioInvoice.Location = new System.Drawing.Point(745, 39);
             this.radioInvoice.Name = "radioInvoice";
             this.radioInvoice.Size = new System.Drawing.Size(160, 64);
             this.radioInvoice.TabIndex = 0;
@@ -730,7 +741,7 @@
             this.radioAccounting.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioAccounting.ForeColor = System.Drawing.Color.White;
             this.radioAccounting.Image = global::LucaToysLite.Properties.Resources.icons8_accounting_34;
-            this.radioAccounting.Location = new System.Drawing.Point(537, 8);
+            this.radioAccounting.Location = new System.Drawing.Point(569, 39);
             this.radioAccounting.Name = "radioAccounting";
             this.radioAccounting.Size = new System.Drawing.Size(160, 64);
             this.radioAccounting.TabIndex = 0;
@@ -754,7 +765,7 @@
             this.radioFinance.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioFinance.ForeColor = System.Drawing.Color.White;
             this.radioFinance.Image = global::LucaToysLite.Properties.Resources.icons8_stock_share_34;
-            this.radioFinance.Location = new System.Drawing.Point(362, 8);
+            this.radioFinance.Location = new System.Drawing.Point(394, 39);
             this.radioFinance.Name = "radioFinance";
             this.radioFinance.Size = new System.Drawing.Size(160, 64);
             this.radioFinance.TabIndex = 0;
@@ -778,7 +789,7 @@
             this.radioProduct.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioProduct.ForeColor = System.Drawing.Color.White;
             this.radioProduct.Image = global::LucaToysLite.Properties.Resources.icons8_code_blocks_34;
-            this.radioProduct.Location = new System.Drawing.Point(188, 8);
+            this.radioProduct.Location = new System.Drawing.Point(220, 39);
             this.radioProduct.Name = "radioProduct";
             this.radioProduct.Size = new System.Drawing.Size(160, 64);
             this.radioProduct.TabIndex = 0;
@@ -1320,6 +1331,81 @@
             this.phoneBookToolStripMenuItem.Size = new System.Drawing.Size(264, 56);
             this.phoneBookToolStripMenuItem.Text = "Phone Book";
             // 
+            // roundedButton4
+            // 
+            this.roundedButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.roundedButton4.BorderRadius = ((byte)(20));
+            this.roundedButton4.BorderSize = ((byte)(3));
+            this.animator1.SetDecoration(this.roundedButton4, WFAnimations.DecorationType.None);
+            this.roundedButton4.EnableBorder = false;
+            this.roundedButton4.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedButton4.FlatAppearance.BorderSize = 0;
+            this.roundedButton4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.roundedButton4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.roundedButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton4.Font = new System.Drawing.Font("Segoe MDL2 Assets", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedButton4.ForeColor = System.Drawing.Color.White;
+            this.roundedButton4.Location = new System.Drawing.Point(8, 8);
+            this.roundedButton4.Name = "roundedButton4";
+            this.roundedButton4.Size = new System.Drawing.Size(45, 65);
+            this.roundedButton4.TabIndex = 3;
+            this.roundedButton4.Text = "";
+            this.roundedButton4.UseVisualStyleBackColor = false;
+            // 
+            // roundedLabel1
+            // 
+            this.roundedLabel1.BackColor = System.Drawing.Color.Crimson;
+            this.roundedLabel1.BorderRadius = ((byte)(4));
+            this.animator1.SetDecoration(this.roundedLabel1, WFAnimations.DecorationType.None);
+            this.roundedLabel1.Location = new System.Drawing.Point(61, -5);
+            this.roundedLabel1.Name = "roundedLabel1";
+            this.roundedLabel1.Size = new System.Drawing.Size(3, 90);
+            this.roundedLabel1.TabIndex = 21;
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.animator1.SetDecoration(this.panel2, WFAnimations.DecorationType.None);
+            this.panel2.Location = new System.Drawing.Point(70, 5);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1810, 70);
+            this.panel2.TabIndex = 22;
+            // 
+            // roundedButton1
+            // 
+            this.roundedButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.roundedButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.roundedButton1.BorderRadius = ((byte)(20));
+            this.roundedButton1.BorderSize = ((byte)(3));
+            this.animator1.SetDecoration(this.roundedButton1, WFAnimations.DecorationType.None);
+            this.roundedButton1.EnableBorder = false;
+            this.roundedButton1.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedButton1.FlatAppearance.BorderSize = 0;
+            this.roundedButton1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.roundedButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.roundedButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton1.Font = new System.Drawing.Font("Segoe MDL2 Assets", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedButton1.ForeColor = System.Drawing.Color.White;
+            this.roundedButton1.Location = new System.Drawing.Point(1897, 8);
+            this.roundedButton1.Name = "roundedButton1";
+            this.roundedButton1.Size = new System.Drawing.Size(45, 65);
+            this.roundedButton1.TabIndex = 23;
+            this.roundedButton1.Text = "";
+            this.roundedButton1.UseVisualStyleBackColor = false;
+            // 
+            // roundedLabel2
+            // 
+            this.roundedLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.roundedLabel2.BackColor = System.Drawing.Color.Crimson;
+            this.roundedLabel2.BorderRadius = ((byte)(4));
+            this.animator1.SetDecoration(this.roundedLabel2, WFAnimations.DecorationType.None);
+            this.roundedLabel2.Location = new System.Drawing.Point(1888, -5);
+            this.roundedLabel2.Name = "roundedLabel2";
+            this.roundedLabel2.Size = new System.Drawing.Size(3, 90);
+            this.roundedLabel2.TabIndex = 24;
+            // 
             // HomeMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
@@ -1330,6 +1416,7 @@
             this.animator1.SetDecoration(this, WFAnimations.DecorationType.None);
             this.Name = "HomeMenu";
             this.Size = new System.Drawing.Size(1957, 230);
+            this.panel1.ResumeLayout(false);
             this.roundedPanel1.ResumeLayout(false);
             this.usersContextMenu.ResumeLayout(false);
             this.productContextMenu.ResumeLayout(false);
@@ -1449,5 +1536,10 @@
         private System.Windows.Forms.ToolStripMenuItem webBrowserToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator20;
         private System.Windows.Forms.ToolStripMenuItem phoneBookToolStripMenuItem;
+        private Controls.RoundedButton roundedButton4;
+        private Controls.RoundedLabel roundedLabel1;
+        private System.Windows.Forms.Panel panel2;
+        private Controls.RoundedButton roundedButton1;
+        private Controls.RoundedLabel roundedLabel2;
     }
 }
