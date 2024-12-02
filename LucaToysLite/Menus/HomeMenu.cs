@@ -61,6 +61,12 @@ namespace LucaToysLite.Menus
 
         }
 
+        private byte leftMax = 10;
+        private byte righttMax = 10;
+
+        private byte leftMin = 0;
+        private byte rightMin = 0;
+
         private LucaToysLite.Menus.Users users = new Users();
         private LucaToysLite.Menus.Products products = new Products();
         private LucaToysLite.Menus.Finance finance = new Finance();
@@ -354,6 +360,56 @@ namespace LucaToysLite.Menus
         private void radioHelp_MouseDown(object sender, MouseEventArgs e)
         {
             this.helpContextMenu.Show(this.radioHelp, new Point(0, 70));
+        }
+
+        private void radioAbout_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.aboutContextMenu.Show(this.radioAbout, new Point(0, 70));
+        }
+
+        private void roundedButton4_Click(object sender, EventArgs e)
+        {
+            this.timerRight.Stop();
+            this.timerLeft.Start();
+        }
+
+        
+
+        private void roundedButton1_Click(object sender, EventArgs e)
+        {
+            this.timerLeft.Stop();
+            this.timerRight.Start();
+        }
+
+        private void timerLeft_Tick(object sender, EventArgs e)
+        {
+            if (this.leftMin < 80)
+            {
+                this.leftMin += 8;
+                this.radioUsers.Left += this.leftMin;
+                this.radioProduct.Left += this.leftMin;
+                this.radioFinance.Left += this.leftMin;
+                this.radioAccounting.Left += this.leftMin;
+                this.radioInvoice.Left += this.leftMin;
+                this.radioDocuments.Left += this.leftMin;
+                this.radioSalesman.Left += this.leftMin;
+                this.radioExport.Left += this.leftMin;
+                this.radioApps.Left += this.leftMin;
+                this.radioWidgets.Left += this.leftMin;
+                this.radioSettings.Left += this.leftMin;
+                this.radioHelp.Left += this.leftMin;
+                this.radioAbout.Left += this.leftMin;
+            }
+            else
+            {
+                this.timerLeft.Stop();
+            }
+            
+        }
+
+        private void timerRight_Tick(object sender, EventArgs e)
+        {
+
         }
     }
 }
