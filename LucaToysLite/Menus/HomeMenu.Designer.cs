@@ -64,7 +64,6 @@
             this.toolStripSeparator18 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator19 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator20 = new System.Windows.Forms.ToolStripSeparator();
-            this.phoneBookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.radioWidgets = new LucaToysLite.Controls.RoundedRadioButton();
             this.radioUsers = new LucaToysLite.Controls.RoundedRadioButton();
             this.radioHelp = new LucaToysLite.Controls.RoundedRadioButton();
@@ -135,6 +134,7 @@
             this.converterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.translatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.webBrowserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.phoneBookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.roundedPanel1.SuspendLayout();
             this.usersContextMenu.SuspendLayout();
             this.productContextMenu.SuspendLayout();
@@ -502,15 +502,6 @@
             this.toolStripSeparator20.Name = "toolStripSeparator20";
             this.toolStripSeparator20.Size = new System.Drawing.Size(261, 6);
             // 
-            // phoneBookToolStripMenuItem
-            // 
-            this.phoneBookToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.phoneBookToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_phone_48;
-            this.phoneBookToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.phoneBookToolStripMenuItem.Name = "phoneBookToolStripMenuItem";
-            this.phoneBookToolStripMenuItem.Size = new System.Drawing.Size(264, 56);
-            this.phoneBookToolStripMenuItem.Text = "Phone Book";
-            // 
             // radioWidgets
             // 
             this.radioWidgets.Appearance = System.Windows.Forms.Appearance.Button;
@@ -605,6 +596,7 @@
             this.radioApps.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.radioApps.UseVisualStyleBackColor = true;
             this.radioApps.CheckedChanged += new System.EventHandler(this.radioUsers_CheckedChanged);
+            this.radioApps.MouseDown += new System.Windows.Forms.MouseEventHandler(this.radioApps_MouseDown);
             // 
             // radioSettings
             // 
@@ -1318,6 +1310,15 @@
             this.webBrowserToolStripMenuItem.Name = "webBrowserToolStripMenuItem";
             this.webBrowserToolStripMenuItem.Size = new System.Drawing.Size(264, 56);
             this.webBrowserToolStripMenuItem.Text = "Web Browser";
+            // 
+            // phoneBookToolStripMenuItem
+            // 
+            this.phoneBookToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.phoneBookToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_phone_48;
+            this.phoneBookToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.phoneBookToolStripMenuItem.Name = "phoneBookToolStripMenuItem";
+            this.phoneBookToolStripMenuItem.Size = new System.Drawing.Size(264, 56);
+            this.phoneBookToolStripMenuItem.Text = "Phone Book";
             // 
             // HomeMenu
             // 
