@@ -51,8 +51,6 @@
             this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
-            this.salesInvoiceToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.purchaseInvoiceToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.radioWidgets = new LucaToysLite.Controls.RoundedRadioButton();
             this.radioUsers = new LucaToysLite.Controls.RoundedRadioButton();
             this.radioHelp = new LucaToysLite.Controls.RoundedRadioButton();
@@ -97,6 +95,9 @@
             this.salesInvoiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.purchaseInvoiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.profitAndLossToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salesInvoiceToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.purchaseInvoiceToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.documentsContextMenu = new LucaToysLite.Controls.LTContextMenu();
             this.roundedPanel1.SuspendLayout();
             this.usersContextMenu.SuspendLayout();
             this.productContextMenu.SuspendLayout();
@@ -332,24 +333,6 @@
             // 
             this.toolStripSeparator11.Name = "toolStripSeparator11";
             this.toolStripSeparator11.Size = new System.Drawing.Size(299, 6);
-            // 
-            // salesInvoiceToolStripMenuItem1
-            // 
-            this.salesInvoiceToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
-            this.salesInvoiceToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("salesInvoiceToolStripMenuItem1.Image")));
-            this.salesInvoiceToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.salesInvoiceToolStripMenuItem1.Name = "salesInvoiceToolStripMenuItem1";
-            this.salesInvoiceToolStripMenuItem1.Size = new System.Drawing.Size(302, 56);
-            this.salesInvoiceToolStripMenuItem1.Text = "Sales Invoice";
-            // 
-            // purchaseInvoiceToolStripMenuItem1
-            // 
-            this.purchaseInvoiceToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
-            this.purchaseInvoiceToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("purchaseInvoiceToolStripMenuItem1.Image")));
-            this.purchaseInvoiceToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.purchaseInvoiceToolStripMenuItem1.Name = "purchaseInvoiceToolStripMenuItem1";
-            this.purchaseInvoiceToolStripMenuItem1.Size = new System.Drawing.Size(302, 56);
-            this.purchaseInvoiceToolStripMenuItem1.Text = "Purchase Invoice";
             // 
             // radioWidgets
             // 
@@ -922,6 +905,35 @@
             this.profitAndLossToolStripMenuItem.Size = new System.Drawing.Size(302, 56);
             this.profitAndLossToolStripMenuItem.Text = "Profit and Loss";
             // 
+            // salesInvoiceToolStripMenuItem1
+            // 
+            this.salesInvoiceToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
+            this.salesInvoiceToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("salesInvoiceToolStripMenuItem1.Image")));
+            this.salesInvoiceToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.salesInvoiceToolStripMenuItem1.Name = "salesInvoiceToolStripMenuItem1";
+            this.salesInvoiceToolStripMenuItem1.Size = new System.Drawing.Size(302, 56);
+            this.salesInvoiceToolStripMenuItem1.Text = "Sales Invoice";
+            // 
+            // purchaseInvoiceToolStripMenuItem1
+            // 
+            this.purchaseInvoiceToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
+            this.purchaseInvoiceToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("purchaseInvoiceToolStripMenuItem1.Image")));
+            this.purchaseInvoiceToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.purchaseInvoiceToolStripMenuItem1.Name = "purchaseInvoiceToolStripMenuItem1";
+            this.purchaseInvoiceToolStripMenuItem1.Size = new System.Drawing.Size(302, 56);
+            this.purchaseInvoiceToolStripMenuItem1.Text = "Purchase Invoice";
+            // 
+            // documentsContextMenu
+            // 
+            this.documentsContextMenu.Background = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.documentsContextMenu.BorderSize = ((byte)(2));
+            this.documentsContextMenu.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.documentsContextMenu, WFAnimations.DecorationType.None);
+            this.documentsContextMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.documentsContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.documentsContextMenu.Name = "documentsContextMenu";
+            this.documentsContextMenu.Size = new System.Drawing.Size(61, 4);
+            // 
             // HomeMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
@@ -1009,5 +1021,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator11;
         private System.Windows.Forms.ToolStripMenuItem salesInvoiceToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem purchaseInvoiceToolStripMenuItem1;
+        private Controls.LTContextMenu documentsContextMenu;
     }
 }
