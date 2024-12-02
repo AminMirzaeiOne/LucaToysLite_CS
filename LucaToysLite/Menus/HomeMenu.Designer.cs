@@ -29,11 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            WFAnimations.Animation animation8 = new WFAnimations.Animation();
+            WFAnimations.Animation animation1 = new WFAnimations.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeMenu));
             this.panel1 = new System.Windows.Forms.Panel();
             this.animator1 = new WFAnimations.Animator(this.components);
             this.roundedPanel1 = new LucaToysLite.Controls.RoundedPanel();
+            this.roundedButton1 = new LucaToysLite.Controls.RoundedButton();
+            this.roundedLabel2 = new LucaToysLite.Controls.RoundedLabel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.roundedButton4 = new LucaToysLite.Controls.RoundedButton();
+            this.roundedLabel1 = new LucaToysLite.Controls.RoundedLabel();
             this.usersContextMenu = new LucaToysLite.Controls.LTContextMenu();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
@@ -64,18 +69,22 @@
             this.toolStripSeparator18 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator19 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator20 = new System.Windows.Forms.ToolStripSeparator();
-            this.radioWidgets = new LucaToysLite.Controls.RoundedRadioButton();
-            this.radioUsers = new LucaToysLite.Controls.RoundedRadioButton();
+            this.widgetsContextMenu = new LucaToysLite.Controls.LTContextMenu();
+            this.toolStripSeparator21 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator22 = new System.Windows.Forms.ToolStripSeparator();
+            this.whiteBoardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.radioHelp = new LucaToysLite.Controls.RoundedRadioButton();
-            this.radioApps = new LucaToysLite.Controls.RoundedRadioButton();
-            this.radioSettings = new LucaToysLite.Controls.RoundedRadioButton();
-            this.radioExport = new LucaToysLite.Controls.RoundedRadioButton();
-            this.radioSalesman = new LucaToysLite.Controls.RoundedRadioButton();
-            this.radioDocuments = new LucaToysLite.Controls.RoundedRadioButton();
-            this.radioInvoice = new LucaToysLite.Controls.RoundedRadioButton();
-            this.radioAccounting = new LucaToysLite.Controls.RoundedRadioButton();
             this.radioFinance = new LucaToysLite.Controls.RoundedRadioButton();
+            this.radioUsers = new LucaToysLite.Controls.RoundedRadioButton();
             this.radioProduct = new LucaToysLite.Controls.RoundedRadioButton();
+            this.radioExport = new LucaToysLite.Controls.RoundedRadioButton();
+            this.radioWidgets = new LucaToysLite.Controls.RoundedRadioButton();
+            this.radioSettings = new LucaToysLite.Controls.RoundedRadioButton();
+            this.radioAccounting = new LucaToysLite.Controls.RoundedRadioButton();
+            this.radioSalesman = new LucaToysLite.Controls.RoundedRadioButton();
+            this.radioApps = new LucaToysLite.Controls.RoundedRadioButton();
+            this.radioInvoice = new LucaToysLite.Controls.RoundedRadioButton();
+            this.radioDocuments = new LucaToysLite.Controls.RoundedRadioButton();
             this.manageUsersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.searchUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addSellerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -135,22 +144,14 @@
             this.translatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.webBrowserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.phoneBookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.roundedButton4 = new LucaToysLite.Controls.RoundedButton();
-            this.roundedLabel1 = new LucaToysLite.Controls.RoundedLabel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.roundedButton1 = new LucaToysLite.Controls.RoundedButton();
-            this.roundedLabel2 = new LucaToysLite.Controls.RoundedLabel();
-            this.widgetsContextMenu = new LucaToysLite.Controls.LTContextMenu();
             this.clockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cleanderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.weatherToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator21 = new System.Windows.Forms.ToolStripSeparator();
             this.toDoListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miniWebToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator22 = new System.Windows.Forms.ToolStripSeparator();
             this.pCInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.whiteBoardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.roundedPanel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.usersContextMenu.SuspendLayout();
             this.productContextMenu.SuspendLayout();
             this.financeContextMenu.SuspendLayout();
@@ -160,7 +161,6 @@
             this.salesmanContextMenu.SuspendLayout();
             this.exportContextMenu.SuspendLayout();
             this.appToolsContextMenu.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.widgetsContextMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -179,22 +179,22 @@
             // 
             this.animator1.AnimationType = WFAnimations.AnimationType.Transparent;
             this.animator1.Cursor = null;
-            animation8.AnimateOnlyDifferences = true;
-            animation8.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.BlindCoeff")));
-            animation8.LeafCoeff = 0F;
-            animation8.MaxTime = 1F;
-            animation8.MinTime = 0F;
-            animation8.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.MosaicCoeff")));
-            animation8.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation8.MosaicShift")));
-            animation8.MosaicSize = 0;
-            animation8.Padding = new System.Windows.Forms.Padding(0);
-            animation8.RotateCoeff = 0F;
-            animation8.RotateLimit = 0F;
-            animation8.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.ScaleCoeff")));
-            animation8.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.SlideCoeff")));
-            animation8.TimeCoeff = 0F;
-            animation8.TransparencyCoeff = 1F;
-            this.animator1.DefaultAnimation = animation8;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 1F;
+            this.animator1.DefaultAnimation = animation1;
             this.animator1.Upside = false;
             // 
             // roundedPanel1
@@ -215,6 +215,93 @@
             this.roundedPanel1.Name = "roundedPanel1";
             this.roundedPanel1.Size = new System.Drawing.Size(1951, 80);
             this.roundedPanel1.TabIndex = 1;
+            // 
+            // roundedButton1
+            // 
+            this.roundedButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.roundedButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.roundedButton1.BorderRadius = ((byte)(20));
+            this.roundedButton1.BorderSize = ((byte)(3));
+            this.animator1.SetDecoration(this.roundedButton1, WFAnimations.DecorationType.None);
+            this.roundedButton1.EnableBorder = false;
+            this.roundedButton1.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedButton1.FlatAppearance.BorderSize = 0;
+            this.roundedButton1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.roundedButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.roundedButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton1.Font = new System.Drawing.Font("Segoe MDL2 Assets", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedButton1.ForeColor = System.Drawing.Color.White;
+            this.roundedButton1.Location = new System.Drawing.Point(1897, 8);
+            this.roundedButton1.Name = "roundedButton1";
+            this.roundedButton1.Size = new System.Drawing.Size(45, 65);
+            this.roundedButton1.TabIndex = 23;
+            this.roundedButton1.Text = "";
+            this.roundedButton1.UseVisualStyleBackColor = false;
+            // 
+            // roundedLabel2
+            // 
+            this.roundedLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.roundedLabel2.BackColor = System.Drawing.Color.Crimson;
+            this.roundedLabel2.BorderRadius = ((byte)(4));
+            this.animator1.SetDecoration(this.roundedLabel2, WFAnimations.DecorationType.None);
+            this.roundedLabel2.Location = new System.Drawing.Point(1888, -5);
+            this.roundedLabel2.Name = "roundedLabel2";
+            this.roundedLabel2.Size = new System.Drawing.Size(3, 90);
+            this.roundedLabel2.TabIndex = 24;
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.panel2.Controls.Add(this.radioHelp);
+            this.panel2.Controls.Add(this.radioFinance);
+            this.panel2.Controls.Add(this.radioUsers);
+            this.panel2.Controls.Add(this.radioProduct);
+            this.panel2.Controls.Add(this.radioExport);
+            this.panel2.Controls.Add(this.radioWidgets);
+            this.panel2.Controls.Add(this.radioSettings);
+            this.panel2.Controls.Add(this.radioAccounting);
+            this.panel2.Controls.Add(this.radioSalesman);
+            this.panel2.Controls.Add(this.radioApps);
+            this.panel2.Controls.Add(this.radioInvoice);
+            this.panel2.Controls.Add(this.radioDocuments);
+            this.animator1.SetDecoration(this.panel2, WFAnimations.DecorationType.None);
+            this.panel2.Location = new System.Drawing.Point(70, 5);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1811, 70);
+            this.panel2.TabIndex = 22;
+            // 
+            // roundedButton4
+            // 
+            this.roundedButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.roundedButton4.BorderRadius = ((byte)(20));
+            this.roundedButton4.BorderSize = ((byte)(3));
+            this.animator1.SetDecoration(this.roundedButton4, WFAnimations.DecorationType.None);
+            this.roundedButton4.EnableBorder = false;
+            this.roundedButton4.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedButton4.FlatAppearance.BorderSize = 0;
+            this.roundedButton4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.roundedButton4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.roundedButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton4.Font = new System.Drawing.Font("Segoe MDL2 Assets", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedButton4.ForeColor = System.Drawing.Color.White;
+            this.roundedButton4.Location = new System.Drawing.Point(8, 8);
+            this.roundedButton4.Name = "roundedButton4";
+            this.roundedButton4.Size = new System.Drawing.Size(45, 65);
+            this.roundedButton4.TabIndex = 3;
+            this.roundedButton4.Text = "";
+            this.roundedButton4.UseVisualStyleBackColor = false;
+            // 
+            // roundedLabel1
+            // 
+            this.roundedLabel1.BackColor = System.Drawing.Color.Crimson;
+            this.roundedLabel1.BorderRadius = ((byte)(4));
+            this.animator1.SetDecoration(this.roundedLabel1, WFAnimations.DecorationType.None);
+            this.roundedLabel1.Location = new System.Drawing.Point(61, -5);
+            this.roundedLabel1.Name = "roundedLabel1";
+            this.roundedLabel1.Size = new System.Drawing.Size(3, 90);
+            this.roundedLabel1.TabIndex = 21;
             // 
             // usersContextMenu
             // 
@@ -512,28 +599,92 @@
             this.toolStripSeparator20.Name = "toolStripSeparator20";
             this.toolStripSeparator20.Size = new System.Drawing.Size(261, 6);
             // 
-            // radioWidgets
+            // widgetsContextMenu
             // 
-            this.radioWidgets.Appearance = System.Windows.Forms.Appearance.Button;
-            this.radioWidgets.BorderSize = ((byte)(2));
-            this.radioWidgets.ColorPallet = System.Drawing.Color.Crimson;
-            this.animator1.SetDecoration(this.radioWidgets, WFAnimations.DecorationType.None);
-            this.radioWidgets.EnableBorder = true;
-            this.radioWidgets.FlatAppearance.BorderSize = 0;
-            this.radioWidgets.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
-            this.radioWidgets.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioWidgets.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioWidgets.ForeColor = System.Drawing.Color.White;
-            this.radioWidgets.Image = global::LucaToysLite.Properties.Resources.icons8_widget_34;
-            this.radioWidgets.Location = new System.Drawing.Point(1246, 3);
-            this.radioWidgets.Name = "radioWidgets";
-            this.radioWidgets.Size = new System.Drawing.Size(160, 64);
-            this.radioWidgets.TabIndex = 0;
-            this.radioWidgets.Text = " Widgets";
-            this.radioWidgets.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.radioWidgets.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.radioWidgets.UseVisualStyleBackColor = true;
-            this.radioWidgets.CheckedChanged += new System.EventHandler(this.radioUsers_CheckedChanged);
+            this.widgetsContextMenu.Background = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.widgetsContextMenu.BorderSize = ((byte)(2));
+            this.widgetsContextMenu.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.widgetsContextMenu, WFAnimations.DecorationType.None);
+            this.widgetsContextMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.widgetsContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.widgetsContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.clockToolStripMenuItem,
+            this.cleanderToolStripMenuItem,
+            this.weatherToolStripMenuItem,
+            this.toolStripSeparator21,
+            this.toDoListToolStripMenuItem,
+            this.miniWebToolStripMenuItem,
+            this.toolStripSeparator22,
+            this.pCInfoToolStripMenuItem,
+            this.whiteBoardToolStripMenuItem});
+            this.widgetsContextMenu.Name = "widgetsContextMenu";
+            this.widgetsContextMenu.Size = new System.Drawing.Size(258, 408);
+            // 
+            // toolStripSeparator21
+            // 
+            this.toolStripSeparator21.Name = "toolStripSeparator21";
+            this.toolStripSeparator21.Size = new System.Drawing.Size(254, 6);
+            // 
+            // toolStripSeparator22
+            // 
+            this.toolStripSeparator22.Name = "toolStripSeparator22";
+            this.toolStripSeparator22.Size = new System.Drawing.Size(254, 6);
+            // 
+            // whiteBoardToolStripMenuItem
+            // 
+            this.whiteBoardToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.whiteBoardToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_flipboard_48;
+            this.whiteBoardToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.whiteBoardToolStripMenuItem.Name = "whiteBoardToolStripMenuItem";
+            this.whiteBoardToolStripMenuItem.Size = new System.Drawing.Size(257, 56);
+            this.whiteBoardToolStripMenuItem.Text = "White Board";
+            // 
+            // radioHelp
+            // 
+            this.radioHelp.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioHelp.BorderSize = ((byte)(2));
+            this.radioHelp.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.radioHelp, WFAnimations.DecorationType.None);
+            this.radioHelp.EnableBorder = true;
+            this.radioHelp.FlatAppearance.BorderSize = 0;
+            this.radioHelp.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
+            this.radioHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioHelp.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioHelp.ForeColor = System.Drawing.Color.White;
+            this.radioHelp.Image = global::LucaToysLite.Properties.Resources.icons8_help_34;
+            this.radioHelp.Location = new System.Drawing.Point(1599, 3);
+            this.radioHelp.Name = "radioHelp";
+            this.radioHelp.Size = new System.Drawing.Size(160, 64);
+            this.radioHelp.TabIndex = 0;
+            this.radioHelp.Text = " Help";
+            this.radioHelp.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.radioHelp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.radioHelp.UseVisualStyleBackColor = true;
+            this.radioHelp.CheckedChanged += new System.EventHandler(this.radioUsers_CheckedChanged);
+            // 
+            // radioFinance
+            // 
+            this.radioFinance.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioFinance.BorderSize = ((byte)(2));
+            this.radioFinance.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.radioFinance, WFAnimations.DecorationType.None);
+            this.radioFinance.EnableBorder = true;
+            this.radioFinance.FlatAppearance.BorderSize = 0;
+            this.radioFinance.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
+            this.radioFinance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioFinance.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioFinance.ForeColor = System.Drawing.Color.White;
+            this.radioFinance.Image = global::LucaToysLite.Properties.Resources.icons8_stock_share_34;
+            this.radioFinance.Location = new System.Drawing.Point(10, 3);
+            this.radioFinance.Name = "radioFinance";
+            this.radioFinance.Size = new System.Drawing.Size(160, 64);
+            this.radioFinance.TabIndex = 0;
+            this.radioFinance.Text = " Finance";
+            this.radioFinance.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.radioFinance.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.radioFinance.UseVisualStyleBackColor = true;
+            this.radioFinance.CheckedChanged += new System.EventHandler(this.radioUsers_CheckedChanged);
+            this.radioFinance.MouseDown += new System.Windows.Forms.MouseEventHandler(this.radioFinance_MouseDown);
             // 
             // radioUsers
             // 
@@ -561,75 +712,29 @@
             this.radioUsers.CheckedChanged += new System.EventHandler(this.radioUsers_CheckedChanged);
             this.radioUsers.MouseDown += new System.Windows.Forms.MouseEventHandler(this.radioUsers_MouseDown);
             // 
-            // radioHelp
+            // radioProduct
             // 
-            this.radioHelp.Appearance = System.Windows.Forms.Appearance.Button;
-            this.radioHelp.BorderSize = ((byte)(2));
-            this.radioHelp.ColorPallet = System.Drawing.Color.Crimson;
-            this.animator1.SetDecoration(this.radioHelp, WFAnimations.DecorationType.None);
-            this.radioHelp.EnableBorder = true;
-            this.radioHelp.FlatAppearance.BorderSize = 0;
-            this.radioHelp.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
-            this.radioHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioHelp.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioHelp.ForeColor = System.Drawing.Color.White;
-            this.radioHelp.Image = global::LucaToysLite.Properties.Resources.icons8_help_34;
-            this.radioHelp.Location = new System.Drawing.Point(1599, 3);
-            this.radioHelp.Name = "radioHelp";
-            this.radioHelp.Size = new System.Drawing.Size(160, 64);
-            this.radioHelp.TabIndex = 0;
-            this.radioHelp.Text = " Help";
-            this.radioHelp.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.radioHelp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.radioHelp.UseVisualStyleBackColor = true;
-            this.radioHelp.CheckedChanged += new System.EventHandler(this.radioUsers_CheckedChanged);
-            // 
-            // radioApps
-            // 
-            this.radioApps.Appearance = System.Windows.Forms.Appearance.Button;
-            this.radioApps.BorderSize = ((byte)(2));
-            this.radioApps.ColorPallet = System.Drawing.Color.Crimson;
-            this.animator1.SetDecoration(this.radioApps, WFAnimations.DecorationType.None);
-            this.radioApps.EnableBorder = true;
-            this.radioApps.FlatAppearance.BorderSize = 0;
-            this.radioApps.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
-            this.radioApps.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioApps.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioApps.ForeColor = System.Drawing.Color.White;
-            this.radioApps.Image = global::LucaToysLite.Properties.Resources.icons8_android_app_drawer_34;
-            this.radioApps.Location = new System.Drawing.Point(1069, 3);
-            this.radioApps.Name = "radioApps";
-            this.radioApps.Size = new System.Drawing.Size(160, 64);
-            this.radioApps.TabIndex = 0;
-            this.radioApps.Text = "App Tools";
-            this.radioApps.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.radioApps.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.radioApps.UseVisualStyleBackColor = true;
-            this.radioApps.CheckedChanged += new System.EventHandler(this.radioUsers_CheckedChanged);
-            this.radioApps.MouseDown += new System.Windows.Forms.MouseEventHandler(this.radioApps_MouseDown);
-            // 
-            // radioSettings
-            // 
-            this.radioSettings.Appearance = System.Windows.Forms.Appearance.Button;
-            this.radioSettings.BorderSize = ((byte)(2));
-            this.radioSettings.ColorPallet = System.Drawing.Color.Crimson;
-            this.animator1.SetDecoration(this.radioSettings, WFAnimations.DecorationType.None);
-            this.radioSettings.EnableBorder = true;
-            this.radioSettings.FlatAppearance.BorderSize = 0;
-            this.radioSettings.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
-            this.radioSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioSettings.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioSettings.ForeColor = System.Drawing.Color.White;
-            this.radioSettings.Image = global::LucaToysLite.Properties.Resources.icons8_settings_34;
-            this.radioSettings.Location = new System.Drawing.Point(1423, 3);
-            this.radioSettings.Name = "radioSettings";
-            this.radioSettings.Size = new System.Drawing.Size(160, 64);
-            this.radioSettings.TabIndex = 0;
-            this.radioSettings.Text = "Settings";
-            this.radioSettings.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.radioSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.radioSettings.UseVisualStyleBackColor = true;
-            this.radioSettings.CheckedChanged += new System.EventHandler(this.radioUsers_CheckedChanged);
+            this.radioProduct.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioProduct.BorderSize = ((byte)(2));
+            this.radioProduct.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.radioProduct, WFAnimations.DecorationType.None);
+            this.radioProduct.EnableBorder = true;
+            this.radioProduct.FlatAppearance.BorderSize = 0;
+            this.radioProduct.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
+            this.radioProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioProduct.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioProduct.ForeColor = System.Drawing.Color.White;
+            this.radioProduct.Image = global::LucaToysLite.Properties.Resources.icons8_code_blocks_34;
+            this.radioProduct.Location = new System.Drawing.Point(-164, 3);
+            this.radioProduct.Name = "radioProduct";
+            this.radioProduct.Size = new System.Drawing.Size(160, 64);
+            this.radioProduct.TabIndex = 0;
+            this.radioProduct.Text = " Products";
+            this.radioProduct.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.radioProduct.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.radioProduct.UseVisualStyleBackColor = true;
+            this.radioProduct.CheckedChanged += new System.EventHandler(this.radioUsers_CheckedChanged);
+            this.radioProduct.MouseDown += new System.Windows.Forms.MouseEventHandler(this.radioProduct_MouseDown);
             // 
             // radioExport
             // 
@@ -655,77 +760,51 @@
             this.radioExport.CheckedChanged += new System.EventHandler(this.radioUsers_CheckedChanged);
             this.radioExport.MouseDown += new System.Windows.Forms.MouseEventHandler(this.radioExport_MouseDown);
             // 
-            // radioSalesman
+            // radioWidgets
             // 
-            this.radioSalesman.Appearance = System.Windows.Forms.Appearance.Button;
-            this.radioSalesman.BorderSize = ((byte)(2));
-            this.radioSalesman.ColorPallet = System.Drawing.Color.Crimson;
-            this.animator1.SetDecoration(this.radioSalesman, WFAnimations.DecorationType.None);
-            this.radioSalesman.EnableBorder = true;
-            this.radioSalesman.FlatAppearance.BorderSize = 0;
-            this.radioSalesman.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
-            this.radioSalesman.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioSalesman.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioSalesman.ForeColor = System.Drawing.Color.White;
-            this.radioSalesman.Image = global::LucaToysLite.Properties.Resources.icons8_company_34;
-            this.radioSalesman.Location = new System.Drawing.Point(715, 3);
-            this.radioSalesman.Name = "radioSalesman";
-            this.radioSalesman.Size = new System.Drawing.Size(160, 64);
-            this.radioSalesman.TabIndex = 0;
-            this.radioSalesman.Text = " Salesman";
-            this.radioSalesman.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.radioSalesman.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.radioSalesman.UseVisualStyleBackColor = true;
-            this.radioSalesman.CheckedChanged += new System.EventHandler(this.radioUsers_CheckedChanged);
-            this.radioSalesman.MouseDown += new System.Windows.Forms.MouseEventHandler(this.radioSalesman_MouseDown);
+            this.radioWidgets.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioWidgets.BorderSize = ((byte)(2));
+            this.radioWidgets.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.radioWidgets, WFAnimations.DecorationType.None);
+            this.radioWidgets.EnableBorder = true;
+            this.radioWidgets.FlatAppearance.BorderSize = 0;
+            this.radioWidgets.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
+            this.radioWidgets.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioWidgets.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioWidgets.ForeColor = System.Drawing.Color.White;
+            this.radioWidgets.Image = global::LucaToysLite.Properties.Resources.icons8_widget_34;
+            this.radioWidgets.Location = new System.Drawing.Point(1246, 3);
+            this.radioWidgets.Name = "radioWidgets";
+            this.radioWidgets.Size = new System.Drawing.Size(160, 64);
+            this.radioWidgets.TabIndex = 0;
+            this.radioWidgets.Text = " Widgets";
+            this.radioWidgets.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.radioWidgets.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.radioWidgets.UseVisualStyleBackColor = true;
+            this.radioWidgets.CheckedChanged += new System.EventHandler(this.radioUsers_CheckedChanged);
             // 
-            // radioDocuments
+            // radioSettings
             // 
-            this.radioDocuments.Appearance = System.Windows.Forms.Appearance.Button;
-            this.radioDocuments.BorderSize = ((byte)(2));
-            this.radioDocuments.ColorPallet = System.Drawing.Color.Crimson;
-            this.animator1.SetDecoration(this.radioDocuments, WFAnimations.DecorationType.None);
-            this.radioDocuments.EnableBorder = true;
-            this.radioDocuments.FlatAppearance.BorderSize = 0;
-            this.radioDocuments.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
-            this.radioDocuments.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioDocuments.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioDocuments.ForeColor = System.Drawing.Color.White;
-            this.radioDocuments.Image = global::LucaToysLite.Properties.Resources.icons8_petition_34;
-            this.radioDocuments.Location = new System.Drawing.Point(538, 3);
-            this.radioDocuments.Name = "radioDocuments";
-            this.radioDocuments.Size = new System.Drawing.Size(160, 64);
-            this.radioDocuments.TabIndex = 0;
-            this.radioDocuments.Text = " Documents";
-            this.radioDocuments.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.radioDocuments.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.radioDocuments.UseVisualStyleBackColor = true;
-            this.radioDocuments.CheckedChanged += new System.EventHandler(this.radioUsers_CheckedChanged);
-            this.radioDocuments.MouseDown += new System.Windows.Forms.MouseEventHandler(this.radioDocuments_MouseDown);
-            // 
-            // radioInvoice
-            // 
-            this.radioInvoice.Appearance = System.Windows.Forms.Appearance.Button;
-            this.radioInvoice.BorderSize = ((byte)(2));
-            this.radioInvoice.ColorPallet = System.Drawing.Color.Crimson;
-            this.animator1.SetDecoration(this.radioInvoice, WFAnimations.DecorationType.None);
-            this.radioInvoice.EnableBorder = true;
-            this.radioInvoice.FlatAppearance.BorderSize = 0;
-            this.radioInvoice.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
-            this.radioInvoice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioInvoice.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioInvoice.ForeColor = System.Drawing.Color.White;
-            this.radioInvoice.Image = global::LucaToysLite.Properties.Resources.icons8_invoice_34;
-            this.radioInvoice.Location = new System.Drawing.Point(361, 3);
-            this.radioInvoice.Name = "radioInvoice";
-            this.radioInvoice.Size = new System.Drawing.Size(160, 64);
-            this.radioInvoice.TabIndex = 0;
-            this.radioInvoice.Text = " Invoice";
-            this.radioInvoice.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.radioInvoice.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.radioInvoice.UseVisualStyleBackColor = true;
-            this.radioInvoice.CheckedChanged += new System.EventHandler(this.radioUsers_CheckedChanged);
-            this.radioInvoice.MouseDown += new System.Windows.Forms.MouseEventHandler(this.radioInvoice_MouseDown);
+            this.radioSettings.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioSettings.BorderSize = ((byte)(2));
+            this.radioSettings.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.radioSettings, WFAnimations.DecorationType.None);
+            this.radioSettings.EnableBorder = true;
+            this.radioSettings.FlatAppearance.BorderSize = 0;
+            this.radioSettings.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
+            this.radioSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioSettings.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioSettings.ForeColor = System.Drawing.Color.White;
+            this.radioSettings.Image = global::LucaToysLite.Properties.Resources.icons8_settings_34;
+            this.radioSettings.Location = new System.Drawing.Point(1423, 3);
+            this.radioSettings.Name = "radioSettings";
+            this.radioSettings.Size = new System.Drawing.Size(160, 64);
+            this.radioSettings.TabIndex = 0;
+            this.radioSettings.Text = "Settings";
+            this.radioSettings.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.radioSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.radioSettings.UseVisualStyleBackColor = true;
+            this.radioSettings.CheckedChanged += new System.EventHandler(this.radioUsers_CheckedChanged);
             // 
             // radioAccounting
             // 
@@ -751,53 +830,101 @@
             this.radioAccounting.CheckedChanged += new System.EventHandler(this.radioUsers_CheckedChanged);
             this.radioAccounting.MouseDown += new System.Windows.Forms.MouseEventHandler(this.radioAccounting_MouseDown);
             // 
-            // radioFinance
+            // radioSalesman
             // 
-            this.radioFinance.Appearance = System.Windows.Forms.Appearance.Button;
-            this.radioFinance.BorderSize = ((byte)(2));
-            this.radioFinance.ColorPallet = System.Drawing.Color.Crimson;
-            this.animator1.SetDecoration(this.radioFinance, WFAnimations.DecorationType.None);
-            this.radioFinance.EnableBorder = true;
-            this.radioFinance.FlatAppearance.BorderSize = 0;
-            this.radioFinance.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
-            this.radioFinance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioFinance.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioFinance.ForeColor = System.Drawing.Color.White;
-            this.radioFinance.Image = global::LucaToysLite.Properties.Resources.icons8_stock_share_34;
-            this.radioFinance.Location = new System.Drawing.Point(10, 3);
-            this.radioFinance.Name = "radioFinance";
-            this.radioFinance.Size = new System.Drawing.Size(160, 64);
-            this.radioFinance.TabIndex = 0;
-            this.radioFinance.Text = " Finance";
-            this.radioFinance.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.radioFinance.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.radioFinance.UseVisualStyleBackColor = true;
-            this.radioFinance.CheckedChanged += new System.EventHandler(this.radioUsers_CheckedChanged);
-            this.radioFinance.MouseDown += new System.Windows.Forms.MouseEventHandler(this.radioFinance_MouseDown);
+            this.radioSalesman.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioSalesman.BorderSize = ((byte)(2));
+            this.radioSalesman.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.radioSalesman, WFAnimations.DecorationType.None);
+            this.radioSalesman.EnableBorder = true;
+            this.radioSalesman.FlatAppearance.BorderSize = 0;
+            this.radioSalesman.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
+            this.radioSalesman.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioSalesman.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioSalesman.ForeColor = System.Drawing.Color.White;
+            this.radioSalesman.Image = global::LucaToysLite.Properties.Resources.icons8_company_34;
+            this.radioSalesman.Location = new System.Drawing.Point(715, 3);
+            this.radioSalesman.Name = "radioSalesman";
+            this.radioSalesman.Size = new System.Drawing.Size(160, 64);
+            this.radioSalesman.TabIndex = 0;
+            this.radioSalesman.Text = " Salesman";
+            this.radioSalesman.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.radioSalesman.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.radioSalesman.UseVisualStyleBackColor = true;
+            this.radioSalesman.CheckedChanged += new System.EventHandler(this.radioUsers_CheckedChanged);
+            this.radioSalesman.MouseDown += new System.Windows.Forms.MouseEventHandler(this.radioSalesman_MouseDown);
             // 
-            // radioProduct
+            // radioApps
             // 
-            this.radioProduct.Appearance = System.Windows.Forms.Appearance.Button;
-            this.radioProduct.BorderSize = ((byte)(2));
-            this.radioProduct.ColorPallet = System.Drawing.Color.Crimson;
-            this.animator1.SetDecoration(this.radioProduct, WFAnimations.DecorationType.None);
-            this.radioProduct.EnableBorder = true;
-            this.radioProduct.FlatAppearance.BorderSize = 0;
-            this.radioProduct.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
-            this.radioProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioProduct.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioProduct.ForeColor = System.Drawing.Color.White;
-            this.radioProduct.Image = global::LucaToysLite.Properties.Resources.icons8_code_blocks_34;
-            this.radioProduct.Location = new System.Drawing.Point(-164, 3);
-            this.radioProduct.Name = "radioProduct";
-            this.radioProduct.Size = new System.Drawing.Size(160, 64);
-            this.radioProduct.TabIndex = 0;
-            this.radioProduct.Text = " Products";
-            this.radioProduct.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.radioProduct.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.radioProduct.UseVisualStyleBackColor = true;
-            this.radioProduct.CheckedChanged += new System.EventHandler(this.radioUsers_CheckedChanged);
-            this.radioProduct.MouseDown += new System.Windows.Forms.MouseEventHandler(this.radioProduct_MouseDown);
+            this.radioApps.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioApps.BorderSize = ((byte)(2));
+            this.radioApps.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.radioApps, WFAnimations.DecorationType.None);
+            this.radioApps.EnableBorder = true;
+            this.radioApps.FlatAppearance.BorderSize = 0;
+            this.radioApps.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
+            this.radioApps.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioApps.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioApps.ForeColor = System.Drawing.Color.White;
+            this.radioApps.Image = global::LucaToysLite.Properties.Resources.icons8_android_app_drawer_34;
+            this.radioApps.Location = new System.Drawing.Point(1069, 3);
+            this.radioApps.Name = "radioApps";
+            this.radioApps.Size = new System.Drawing.Size(160, 64);
+            this.radioApps.TabIndex = 0;
+            this.radioApps.Text = "App Tools";
+            this.radioApps.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.radioApps.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.radioApps.UseVisualStyleBackColor = true;
+            this.radioApps.CheckedChanged += new System.EventHandler(this.radioUsers_CheckedChanged);
+            this.radioApps.MouseDown += new System.Windows.Forms.MouseEventHandler(this.radioApps_MouseDown);
+            // 
+            // radioInvoice
+            // 
+            this.radioInvoice.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioInvoice.BorderSize = ((byte)(2));
+            this.radioInvoice.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.radioInvoice, WFAnimations.DecorationType.None);
+            this.radioInvoice.EnableBorder = true;
+            this.radioInvoice.FlatAppearance.BorderSize = 0;
+            this.radioInvoice.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
+            this.radioInvoice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioInvoice.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioInvoice.ForeColor = System.Drawing.Color.White;
+            this.radioInvoice.Image = global::LucaToysLite.Properties.Resources.icons8_invoice_34;
+            this.radioInvoice.Location = new System.Drawing.Point(361, 3);
+            this.radioInvoice.Name = "radioInvoice";
+            this.radioInvoice.Size = new System.Drawing.Size(160, 64);
+            this.radioInvoice.TabIndex = 0;
+            this.radioInvoice.Text = " Invoice";
+            this.radioInvoice.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.radioInvoice.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.radioInvoice.UseVisualStyleBackColor = true;
+            this.radioInvoice.CheckedChanged += new System.EventHandler(this.radioUsers_CheckedChanged);
+            this.radioInvoice.MouseDown += new System.Windows.Forms.MouseEventHandler(this.radioInvoice_MouseDown);
+            // 
+            // radioDocuments
+            // 
+            this.radioDocuments.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioDocuments.BorderSize = ((byte)(2));
+            this.radioDocuments.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.radioDocuments, WFAnimations.DecorationType.None);
+            this.radioDocuments.EnableBorder = true;
+            this.radioDocuments.FlatAppearance.BorderSize = 0;
+            this.radioDocuments.FlatAppearance.CheckedBackColor = System.Drawing.Color.Crimson;
+            this.radioDocuments.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioDocuments.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioDocuments.ForeColor = System.Drawing.Color.White;
+            this.radioDocuments.Image = global::LucaToysLite.Properties.Resources.icons8_petition_34;
+            this.radioDocuments.Location = new System.Drawing.Point(538, 3);
+            this.radioDocuments.Name = "radioDocuments";
+            this.radioDocuments.Size = new System.Drawing.Size(160, 64);
+            this.radioDocuments.TabIndex = 0;
+            this.radioDocuments.Text = " Documents";
+            this.radioDocuments.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.radioDocuments.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.radioDocuments.UseVisualStyleBackColor = true;
+            this.radioDocuments.CheckedChanged += new System.EventHandler(this.radioUsers_CheckedChanged);
+            this.radioDocuments.MouseDown += new System.Windows.Forms.MouseEventHandler(this.radioDocuments_MouseDown);
             // 
             // manageUsersToolStripMenuItem
             // 
@@ -1330,172 +1457,59 @@
             this.phoneBookToolStripMenuItem.Size = new System.Drawing.Size(264, 56);
             this.phoneBookToolStripMenuItem.Text = "Phone Book";
             // 
-            // roundedButton4
-            // 
-            this.roundedButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.roundedButton4.BorderRadius = ((byte)(20));
-            this.roundedButton4.BorderSize = ((byte)(3));
-            this.animator1.SetDecoration(this.roundedButton4, WFAnimations.DecorationType.None);
-            this.roundedButton4.EnableBorder = false;
-            this.roundedButton4.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
-            this.roundedButton4.FlatAppearance.BorderSize = 0;
-            this.roundedButton4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
-            this.roundedButton4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.roundedButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton4.Font = new System.Drawing.Font("Segoe MDL2 Assets", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedButton4.ForeColor = System.Drawing.Color.White;
-            this.roundedButton4.Location = new System.Drawing.Point(8, 8);
-            this.roundedButton4.Name = "roundedButton4";
-            this.roundedButton4.Size = new System.Drawing.Size(45, 65);
-            this.roundedButton4.TabIndex = 3;
-            this.roundedButton4.Text = "";
-            this.roundedButton4.UseVisualStyleBackColor = false;
-            // 
-            // roundedLabel1
-            // 
-            this.roundedLabel1.BackColor = System.Drawing.Color.Crimson;
-            this.roundedLabel1.BorderRadius = ((byte)(4));
-            this.animator1.SetDecoration(this.roundedLabel1, WFAnimations.DecorationType.None);
-            this.roundedLabel1.Location = new System.Drawing.Point(61, -5);
-            this.roundedLabel1.Name = "roundedLabel1";
-            this.roundedLabel1.Size = new System.Drawing.Size(3, 90);
-            this.roundedLabel1.TabIndex = 21;
-            // 
-            // panel2
-            // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.panel2.Controls.Add(this.radioHelp);
-            this.panel2.Controls.Add(this.radioFinance);
-            this.panel2.Controls.Add(this.radioUsers);
-            this.panel2.Controls.Add(this.radioProduct);
-            this.panel2.Controls.Add(this.radioExport);
-            this.panel2.Controls.Add(this.radioWidgets);
-            this.panel2.Controls.Add(this.radioSettings);
-            this.panel2.Controls.Add(this.radioAccounting);
-            this.panel2.Controls.Add(this.radioSalesman);
-            this.panel2.Controls.Add(this.radioApps);
-            this.panel2.Controls.Add(this.radioInvoice);
-            this.panel2.Controls.Add(this.radioDocuments);
-            this.animator1.SetDecoration(this.panel2, WFAnimations.DecorationType.None);
-            this.panel2.Location = new System.Drawing.Point(70, 5);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1811, 70);
-            this.panel2.TabIndex = 22;
-            // 
-            // roundedButton1
-            // 
-            this.roundedButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.roundedButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.roundedButton1.BorderRadius = ((byte)(20));
-            this.roundedButton1.BorderSize = ((byte)(3));
-            this.animator1.SetDecoration(this.roundedButton1, WFAnimations.DecorationType.None);
-            this.roundedButton1.EnableBorder = false;
-            this.roundedButton1.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
-            this.roundedButton1.FlatAppearance.BorderSize = 0;
-            this.roundedButton1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
-            this.roundedButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.roundedButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton1.Font = new System.Drawing.Font("Segoe MDL2 Assets", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedButton1.ForeColor = System.Drawing.Color.White;
-            this.roundedButton1.Location = new System.Drawing.Point(1897, 8);
-            this.roundedButton1.Name = "roundedButton1";
-            this.roundedButton1.Size = new System.Drawing.Size(45, 65);
-            this.roundedButton1.TabIndex = 23;
-            this.roundedButton1.Text = "";
-            this.roundedButton1.UseVisualStyleBackColor = false;
-            // 
-            // roundedLabel2
-            // 
-            this.roundedLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.roundedLabel2.BackColor = System.Drawing.Color.Crimson;
-            this.roundedLabel2.BorderRadius = ((byte)(4));
-            this.animator1.SetDecoration(this.roundedLabel2, WFAnimations.DecorationType.None);
-            this.roundedLabel2.Location = new System.Drawing.Point(1888, -5);
-            this.roundedLabel2.Name = "roundedLabel2";
-            this.roundedLabel2.Size = new System.Drawing.Size(3, 90);
-            this.roundedLabel2.TabIndex = 24;
-            // 
-            // widgetsContextMenu
-            // 
-            this.widgetsContextMenu.Background = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.widgetsContextMenu.BorderSize = ((byte)(2));
-            this.widgetsContextMenu.ColorPallet = System.Drawing.Color.Crimson;
-            this.animator1.SetDecoration(this.widgetsContextMenu, WFAnimations.DecorationType.None);
-            this.widgetsContextMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.widgetsContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.widgetsContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.clockToolStripMenuItem,
-            this.cleanderToolStripMenuItem,
-            this.weatherToolStripMenuItem,
-            this.toolStripSeparator21,
-            this.toDoListToolStripMenuItem,
-            this.miniWebToolStripMenuItem,
-            this.toolStripSeparator22,
-            this.pCInfoToolStripMenuItem,
-            this.whiteBoardToolStripMenuItem});
-            this.widgetsContextMenu.Name = "widgetsContextMenu";
-            this.widgetsContextMenu.Size = new System.Drawing.Size(226, 282);
-            // 
             // clockToolStripMenuItem
             // 
             this.clockToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.clockToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_clock_48;
+            this.clockToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.clockToolStripMenuItem.Name = "clockToolStripMenuItem";
-            this.clockToolStripMenuItem.Size = new System.Drawing.Size(240, 38);
+            this.clockToolStripMenuItem.Size = new System.Drawing.Size(257, 56);
             this.clockToolStripMenuItem.Text = "Clock";
             // 
             // cleanderToolStripMenuItem
             // 
             this.cleanderToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.cleanderToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_calendar_481;
+            this.cleanderToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.cleanderToolStripMenuItem.Name = "cleanderToolStripMenuItem";
-            this.cleanderToolStripMenuItem.Size = new System.Drawing.Size(240, 38);
+            this.cleanderToolStripMenuItem.Size = new System.Drawing.Size(257, 56);
             this.cleanderToolStripMenuItem.Text = "Cleander";
             // 
             // weatherToolStripMenuItem
             // 
             this.weatherToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.weatherToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_night_wind_48;
+            this.weatherToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.weatherToolStripMenuItem.Name = "weatherToolStripMenuItem";
-            this.weatherToolStripMenuItem.Size = new System.Drawing.Size(240, 38);
+            this.weatherToolStripMenuItem.Size = new System.Drawing.Size(257, 56);
             this.weatherToolStripMenuItem.Text = "Weather";
-            // 
-            // toolStripSeparator21
-            // 
-            this.toolStripSeparator21.Name = "toolStripSeparator21";
-            this.toolStripSeparator21.Size = new System.Drawing.Size(237, 6);
             // 
             // toDoListToolStripMenuItem
             // 
             this.toDoListToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.toDoListToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_to_do_list_48_1_;
+            this.toDoListToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toDoListToolStripMenuItem.Name = "toDoListToolStripMenuItem";
-            this.toDoListToolStripMenuItem.Size = new System.Drawing.Size(240, 38);
+            this.toDoListToolStripMenuItem.Size = new System.Drawing.Size(257, 56);
             this.toDoListToolStripMenuItem.Text = "To Do List";
             // 
             // miniWebToolStripMenuItem
             // 
             this.miniWebToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.miniWebToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_internet_48;
+            this.miniWebToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.miniWebToolStripMenuItem.Name = "miniWebToolStripMenuItem";
-            this.miniWebToolStripMenuItem.Size = new System.Drawing.Size(240, 38);
+            this.miniWebToolStripMenuItem.Size = new System.Drawing.Size(257, 56);
             this.miniWebToolStripMenuItem.Text = "Mini Web";
-            // 
-            // toolStripSeparator22
-            // 
-            this.toolStripSeparator22.Name = "toolStripSeparator22";
-            this.toolStripSeparator22.Size = new System.Drawing.Size(237, 6);
             // 
             // pCInfoToolStripMenuItem
             // 
             this.pCInfoToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.pCInfoToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_pc_48;
+            this.pCInfoToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.pCInfoToolStripMenuItem.Name = "pCInfoToolStripMenuItem";
-            this.pCInfoToolStripMenuItem.Size = new System.Drawing.Size(240, 38);
+            this.pCInfoToolStripMenuItem.Size = new System.Drawing.Size(257, 56);
             this.pCInfoToolStripMenuItem.Text = "PC Info";
-            // 
-            // whiteBoardToolStripMenuItem
-            // 
-            this.whiteBoardToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.whiteBoardToolStripMenuItem.Name = "whiteBoardToolStripMenuItem";
-            this.whiteBoardToolStripMenuItem.Size = new System.Drawing.Size(225, 38);
-            this.whiteBoardToolStripMenuItem.Text = "White Board";
             // 
             // HomeMenu
             // 
@@ -1508,6 +1522,7 @@
             this.Name = "HomeMenu";
             this.Size = new System.Drawing.Size(1957, 230);
             this.roundedPanel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.usersContextMenu.ResumeLayout(false);
             this.productContextMenu.ResumeLayout(false);
             this.financeContextMenu.ResumeLayout(false);
@@ -1517,7 +1532,6 @@
             this.salesmanContextMenu.ResumeLayout(false);
             this.exportContextMenu.ResumeLayout(false);
             this.appToolsContextMenu.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
             this.widgetsContextMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
