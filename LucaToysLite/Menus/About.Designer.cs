@@ -202,6 +202,7 @@
             this.roundedButton6.Text = "About Form";
             this.roundedButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.roundedButton6.UseVisualStyleBackColor = false;
+            this.roundedButton6.Click += new System.EventHandler(this.roundedButton6_Click);
             // 
             // roundedButton7
             // 
