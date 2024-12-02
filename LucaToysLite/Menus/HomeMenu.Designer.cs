@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            WFAnimations.Animation animation1 = new WFAnimations.Animation();
+            WFAnimations.Animation animation4 = new WFAnimations.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeMenu));
             this.panel1 = new System.Windows.Forms.Panel();
             this.animator1 = new WFAnimations.Animator(this.components);
@@ -37,41 +37,6 @@
             this.roundedButton1 = new LucaToysLite.Controls.RoundedButton();
             this.roundedLabel2 = new LucaToysLite.Controls.RoundedLabel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.roundedButton4 = new LucaToysLite.Controls.RoundedButton();
-            this.roundedLabel1 = new LucaToysLite.Controls.RoundedLabel();
-            this.usersContextMenu = new LucaToysLite.Controls.LTContextMenu();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.deleteCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.productContextMenu = new LucaToysLite.Controls.LTContextMenu();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.financeContextMenu = new LucaToysLite.Controls.LTContextMenu();
-            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
-            this.accountingContextMenu = new LucaToysLite.Controls.LTContextMenu();
-            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
-            this.invoiceContextMenu = new LucaToysLite.Controls.LTContextMenu();
-            this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
-            this.documentsContextMenu = new LucaToysLite.Controls.LTContextMenu();
-            this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator13 = new System.Windows.Forms.ToolStripSeparator();
-            this.salesmanContextMenu = new LucaToysLite.Controls.LTContextMenu();
-            this.toolStripSeparator14 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator15 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator16 = new System.Windows.Forms.ToolStripSeparator();
-            this.exportContextMenu = new LucaToysLite.Controls.LTContextMenu();
-            this.toolStripSeparator17 = new System.Windows.Forms.ToolStripSeparator();
-            this.appToolsContextMenu = new LucaToysLite.Controls.LTContextMenu();
-            this.toolStripSeparator18 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator19 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator20 = new System.Windows.Forms.ToolStripSeparator();
-            this.widgetsContextMenu = new LucaToysLite.Controls.LTContextMenu();
-            this.toolStripSeparator21 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator22 = new System.Windows.Forms.ToolStripSeparator();
             this.radioHelp = new LucaToysLite.Controls.RoundedRadioButton();
             this.radioFinance = new LucaToysLite.Controls.RoundedRadioButton();
             this.radioUsers = new LucaToysLite.Controls.RoundedRadioButton();
@@ -84,72 +49,115 @@
             this.radioApps = new LucaToysLite.Controls.RoundedRadioButton();
             this.radioInvoice = new LucaToysLite.Controls.RoundedRadioButton();
             this.radioDocuments = new LucaToysLite.Controls.RoundedRadioButton();
+            this.roundedButton4 = new LucaToysLite.Controls.RoundedButton();
+            this.roundedLabel1 = new LucaToysLite.Controls.RoundedLabel();
+            this.usersContextMenu = new LucaToysLite.Controls.LTContextMenu();
             this.manageUsersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.searchUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.addSellerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteSellerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateSellerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.addCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.productContextMenu = new LucaToysLite.Controls.LTContextMenu();
             this.managerProductsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.searchProductsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.addToyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateToyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.addDollToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteDollToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateDollToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.financeContextMenu = new LucaToysLite.Controls.LTContextMenu();
             this.performanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.transactionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.costsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.revenuesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cashOperationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.soldToysToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.soldDollsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.accountingContextMenu = new LucaToysLite.Controls.LTContextMenu();
             this.manageAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
             this.addAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
             this.purchaseModeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.barcodeCreatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.invoiceContextMenu = new LucaToysLite.Controls.LTContextMenu();
             this.managerInvoiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
             this.salesInvoiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.purchaseInvoiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
             this.profitAndLossToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
             this.salesInvoiceToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.purchaseInvoiceToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.documentsContextMenu = new LucaToysLite.Controls.LTContextMenu();
             this.arrivedsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
             this.receiptsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.paymentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator13 = new System.Windows.Forms.ToolStripSeparator();
             this.debtsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salesmanContextMenu = new LucaToysLite.Controls.LTContextMenu();
             this.manageBrandsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.managePersonsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator14 = new System.Windows.Forms.ToolStripSeparator();
             this.addBrandToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addPersonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator15 = new System.Windows.Forms.ToolStripSeparator();
             this.deleteBrandToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deletePersonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator16 = new System.Windows.Forms.ToolStripSeparator();
             this.updateBrandToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updatePersonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportContextMenu = new LucaToysLite.Controls.LTContextMenu();
             this.exportDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.importDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator17 = new System.Windows.Forms.ToolStripSeparator();
             this.exportTXTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportCSVToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportPDFToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportXLSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.appToolsContextMenu = new LucaToysLite.Controls.LTContextMenu();
             this.calculatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator18 = new System.Windows.Forms.ToolStripSeparator();
             this.paintToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.notepadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator19 = new System.Windows.Forms.ToolStripSeparator();
             this.converterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.translatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.webBrowserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator20 = new System.Windows.Forms.ToolStripSeparator();
             this.phoneBookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.widgetsContextMenu = new LucaToysLite.Controls.LTContextMenu();
             this.clockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cleanderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.weatherToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator21 = new System.Windows.Forms.ToolStripSeparator();
             this.toDoListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miniWebToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator22 = new System.Windows.Forms.ToolStripSeparator();
             this.pCInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.whiteBoardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.settingsContextMenu = new LucaToysLite.Controls.LTContextMenu();
+            this.generalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.appearanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator23 = new System.Windows.Forms.ToolStripSeparator();
+            this.viewsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator24 = new System.Windows.Forms.ToolStripSeparator();
+            this.managerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.databaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.roundedPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.usersContextMenu.SuspendLayout();
@@ -162,6 +170,7 @@
             this.exportContextMenu.SuspendLayout();
             this.appToolsContextMenu.SuspendLayout();
             this.widgetsContextMenu.SuspendLayout();
+            this.settingsContextMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -179,22 +188,22 @@
             // 
             this.animator1.AnimationType = WFAnimations.AnimationType.Transparent;
             this.animator1.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 1F;
-            this.animator1.DefaultAnimation = animation1;
+            animation4.AnimateOnlyDifferences = true;
+            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
+            animation4.LeafCoeff = 0F;
+            animation4.MaxTime = 1F;
+            animation4.MinTime = 0F;
+            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
+            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
+            animation4.MosaicSize = 0;
+            animation4.Padding = new System.Windows.Forms.Padding(0);
+            animation4.RotateCoeff = 0F;
+            animation4.RotateLimit = 0F;
+            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
+            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
+            animation4.TimeCoeff = 0F;
+            animation4.TransparencyCoeff = 1F;
+            this.animator1.DefaultAnimation = animation4;
             this.animator1.Upside = false;
             // 
             // roundedPanel1
@@ -271,364 +280,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1811, 70);
             this.panel2.TabIndex = 22;
-            // 
-            // roundedButton4
-            // 
-            this.roundedButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.roundedButton4.BorderRadius = ((byte)(20));
-            this.roundedButton4.BorderSize = ((byte)(3));
-            this.animator1.SetDecoration(this.roundedButton4, WFAnimations.DecorationType.None);
-            this.roundedButton4.EnableBorder = false;
-            this.roundedButton4.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
-            this.roundedButton4.FlatAppearance.BorderSize = 0;
-            this.roundedButton4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
-            this.roundedButton4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.roundedButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton4.Font = new System.Drawing.Font("Segoe MDL2 Assets", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedButton4.ForeColor = System.Drawing.Color.White;
-            this.roundedButton4.Location = new System.Drawing.Point(8, 8);
-            this.roundedButton4.Name = "roundedButton4";
-            this.roundedButton4.Size = new System.Drawing.Size(45, 65);
-            this.roundedButton4.TabIndex = 3;
-            this.roundedButton4.Text = "";
-            this.roundedButton4.UseVisualStyleBackColor = false;
-            // 
-            // roundedLabel1
-            // 
-            this.roundedLabel1.BackColor = System.Drawing.Color.Crimson;
-            this.roundedLabel1.BorderRadius = ((byte)(4));
-            this.animator1.SetDecoration(this.roundedLabel1, WFAnimations.DecorationType.None);
-            this.roundedLabel1.Location = new System.Drawing.Point(61, -5);
-            this.roundedLabel1.Name = "roundedLabel1";
-            this.roundedLabel1.Size = new System.Drawing.Size(3, 90);
-            this.roundedLabel1.TabIndex = 21;
-            // 
-            // usersContextMenu
-            // 
-            this.usersContextMenu.Background = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.usersContextMenu.BorderSize = ((byte)(2));
-            this.usersContextMenu.ColorPallet = System.Drawing.Color.Crimson;
-            this.animator1.SetDecoration(this.usersContextMenu, WFAnimations.DecorationType.None);
-            this.usersContextMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usersContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.usersContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.manageUsersToolStripMenuItem,
-            this.searchUserToolStripMenuItem,
-            this.toolStripSeparator1,
-            this.addSellerToolStripMenuItem,
-            this.deleteSellerToolStripMenuItem,
-            this.updateSellerToolStripMenuItem,
-            this.toolStripSeparator2,
-            this.addCustomerToolStripMenuItem,
-            this.deleteCustomerToolStripMenuItem,
-            this.updateCustomerToolStripMenuItem});
-            this.usersContextMenu.Name = "ltContextMenu1";
-            this.usersContextMenu.Size = new System.Drawing.Size(317, 464);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(313, 6);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(313, 6);
-            // 
-            // deleteCustomerToolStripMenuItem
-            // 
-            this.deleteCustomerToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.deleteCustomerToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.deleteCustomerToolStripMenuItem.Name = "deleteCustomerToolStripMenuItem";
-            this.deleteCustomerToolStripMenuItem.Size = new System.Drawing.Size(316, 56);
-            this.deleteCustomerToolStripMenuItem.Text = "Delete Customer";
-            // 
-            // productContextMenu
-            // 
-            this.productContextMenu.Background = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.productContextMenu.BorderSize = ((byte)(2));
-            this.productContextMenu.ColorPallet = System.Drawing.Color.Crimson;
-            this.animator1.SetDecoration(this.productContextMenu, WFAnimations.DecorationType.None);
-            this.productContextMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.productContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.productContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.managerProductsToolStripMenuItem,
-            this.searchProductsToolStripMenuItem,
-            this.toolStripSeparator3,
-            this.addToyToolStripMenuItem,
-            this.deleteToyToolStripMenuItem,
-            this.updateToyToolStripMenuItem,
-            this.toolStripSeparator4,
-            this.addDollToolStripMenuItem,
-            this.deleteDollToolStripMenuItem,
-            this.updateDollToolStripMenuItem});
-            this.productContextMenu.Name = "productContextMenu";
-            this.productContextMenu.Size = new System.Drawing.Size(327, 512);
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(323, 6);
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(323, 6);
-            // 
-            // financeContextMenu
-            // 
-            this.financeContextMenu.Background = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.financeContextMenu.BorderSize = ((byte)(2));
-            this.financeContextMenu.ColorPallet = System.Drawing.Color.Crimson;
-            this.animator1.SetDecoration(this.financeContextMenu, WFAnimations.DecorationType.None);
-            this.financeContextMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.financeContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.financeContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.performanceToolStripMenuItem,
-            this.transactionsToolStripMenuItem,
-            this.toolStripSeparator5,
-            this.costsToolStripMenuItem,
-            this.revenuesToolStripMenuItem,
-            this.cashOperationToolStripMenuItem,
-            this.toolStripSeparator6,
-            this.soldToysToolStripMenuItem,
-            this.soldDollsToolStripMenuItem});
-            this.financeContextMenu.Name = "financeContextMenu";
-            this.financeContextMenu.Size = new System.Drawing.Size(296, 450);
-            // 
-            // toolStripSeparator5
-            // 
-            this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(292, 6);
-            // 
-            // toolStripSeparator6
-            // 
-            this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(292, 6);
-            // 
-            // accountingContextMenu
-            // 
-            this.accountingContextMenu.Background = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.accountingContextMenu.BorderSize = ((byte)(2));
-            this.accountingContextMenu.ColorPallet = System.Drawing.Color.Crimson;
-            this.animator1.SetDecoration(this.accountingContextMenu, WFAnimations.DecorationType.None);
-            this.accountingContextMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.accountingContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.accountingContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.manageAccountToolStripMenuItem,
-            this.toolStripSeparator7,
-            this.addAccountToolStripMenuItem,
-            this.deleteAccountToolStripMenuItem,
-            this.updateAccountToolStripMenuItem,
-            this.toolStripSeparator8,
-            this.purchaseModeToolStripMenuItem,
-            this.barcodeCreatorToolStripMenuItem});
-            this.accountingContextMenu.Name = "accountingContextMenu";
-            this.accountingContextMenu.Size = new System.Drawing.Size(308, 364);
-            // 
-            // toolStripSeparator7
-            // 
-            this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(304, 6);
-            // 
-            // toolStripSeparator8
-            // 
-            this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(304, 6);
-            // 
-            // invoiceContextMenu
-            // 
-            this.invoiceContextMenu.Background = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.invoiceContextMenu.BorderSize = ((byte)(2));
-            this.invoiceContextMenu.ColorPallet = System.Drawing.Color.Crimson;
-            this.animator1.SetDecoration(this.invoiceContextMenu, WFAnimations.DecorationType.None);
-            this.invoiceContextMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.invoiceContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.invoiceContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.managerInvoiceToolStripMenuItem,
-            this.toolStripSeparator9,
-            this.salesInvoiceToolStripMenuItem,
-            this.purchaseInvoiceToolStripMenuItem,
-            this.toolStripSeparator10,
-            this.profitAndLossToolStripMenuItem,
-            this.toolStripSeparator11,
-            this.salesInvoiceToolStripMenuItem1,
-            this.purchaseInvoiceToolStripMenuItem1});
-            this.invoiceContextMenu.Name = "invoiceContextMenu";
-            this.invoiceContextMenu.Size = new System.Drawing.Size(303, 358);
-            // 
-            // toolStripSeparator9
-            // 
-            this.toolStripSeparator9.Name = "toolStripSeparator9";
-            this.toolStripSeparator9.Size = new System.Drawing.Size(299, 6);
-            // 
-            // toolStripSeparator10
-            // 
-            this.toolStripSeparator10.Name = "toolStripSeparator10";
-            this.toolStripSeparator10.Size = new System.Drawing.Size(299, 6);
-            // 
-            // toolStripSeparator11
-            // 
-            this.toolStripSeparator11.Name = "toolStripSeparator11";
-            this.toolStripSeparator11.Size = new System.Drawing.Size(299, 6);
-            // 
-            // documentsContextMenu
-            // 
-            this.documentsContextMenu.Background = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.documentsContextMenu.BorderSize = ((byte)(2));
-            this.documentsContextMenu.ColorPallet = System.Drawing.Color.Crimson;
-            this.animator1.SetDecoration(this.documentsContextMenu, WFAnimations.DecorationType.None);
-            this.documentsContextMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.documentsContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.documentsContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.arrivedsToolStripMenuItem,
-            this.toolStripSeparator12,
-            this.receiptsToolStripMenuItem,
-            this.paymentsToolStripMenuItem,
-            this.toolStripSeparator13,
-            this.debtsToolStripMenuItem});
-            this.documentsContextMenu.Name = "documentsContextMenu";
-            this.documentsContextMenu.Size = new System.Drawing.Size(226, 240);
-            // 
-            // toolStripSeparator12
-            // 
-            this.toolStripSeparator12.Name = "toolStripSeparator12";
-            this.toolStripSeparator12.Size = new System.Drawing.Size(222, 6);
-            // 
-            // toolStripSeparator13
-            // 
-            this.toolStripSeparator13.Name = "toolStripSeparator13";
-            this.toolStripSeparator13.Size = new System.Drawing.Size(222, 6);
-            // 
-            // salesmanContextMenu
-            // 
-            this.salesmanContextMenu.Background = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.salesmanContextMenu.BorderSize = ((byte)(2));
-            this.salesmanContextMenu.ColorPallet = System.Drawing.Color.Crimson;
-            this.animator1.SetDecoration(this.salesmanContextMenu, WFAnimations.DecorationType.None);
-            this.salesmanContextMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.salesmanContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.salesmanContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.manageBrandsToolStripMenuItem,
-            this.managePersonsToolStripMenuItem,
-            this.toolStripSeparator14,
-            this.addBrandToolStripMenuItem,
-            this.addPersonToolStripMenuItem,
-            this.toolStripSeparator15,
-            this.deleteBrandToolStripMenuItem,
-            this.deletePersonToolStripMenuItem,
-            this.toolStripSeparator16,
-            this.updateBrandToolStripMenuItem,
-            this.updatePersonToolStripMenuItem});
-            this.salesmanContextMenu.Name = "salesmanContextMenu";
-            this.salesmanContextMenu.Size = new System.Drawing.Size(306, 518);
-            // 
-            // toolStripSeparator14
-            // 
-            this.toolStripSeparator14.Name = "toolStripSeparator14";
-            this.toolStripSeparator14.Size = new System.Drawing.Size(302, 6);
-            // 
-            // toolStripSeparator15
-            // 
-            this.toolStripSeparator15.Name = "toolStripSeparator15";
-            this.toolStripSeparator15.Size = new System.Drawing.Size(302, 6);
-            // 
-            // toolStripSeparator16
-            // 
-            this.toolStripSeparator16.Name = "toolStripSeparator16";
-            this.toolStripSeparator16.Size = new System.Drawing.Size(302, 6);
-            // 
-            // exportContextMenu
-            // 
-            this.exportContextMenu.Background = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.exportContextMenu.BorderSize = ((byte)(2));
-            this.exportContextMenu.ColorPallet = System.Drawing.Color.Crimson;
-            this.animator1.SetDecoration(this.exportContextMenu, WFAnimations.DecorationType.None);
-            this.exportContextMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exportContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.exportContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.exportDataToolStripMenuItem,
-            this.importDataToolStripMenuItem,
-            this.toolStripSeparator17,
-            this.exportTXTToolStripMenuItem,
-            this.exportCSVToolStripMenuItem,
-            this.exportPDFToolStripMenuItem,
-            this.exportXLSToolStripMenuItem});
-            this.exportContextMenu.Name = "exportContextMenu";
-            this.exportContextMenu.Size = new System.Drawing.Size(255, 346);
-            // 
-            // toolStripSeparator17
-            // 
-            this.toolStripSeparator17.Name = "toolStripSeparator17";
-            this.toolStripSeparator17.Size = new System.Drawing.Size(251, 6);
-            // 
-            // appToolsContextMenu
-            // 
-            this.appToolsContextMenu.Background = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.appToolsContextMenu.BorderSize = ((byte)(2));
-            this.appToolsContextMenu.ColorPallet = System.Drawing.Color.Crimson;
-            this.animator1.SetDecoration(this.appToolsContextMenu, WFAnimations.DecorationType.None);
-            this.appToolsContextMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.appToolsContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.appToolsContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.calculatorToolStripMenuItem,
-            this.toolStripSeparator18,
-            this.paintToolStripMenuItem,
-            this.notepadToolStripMenuItem,
-            this.toolStripSeparator19,
-            this.converterToolStripMenuItem,
-            this.translatorToolStripMenuItem,
-            this.webBrowserToolStripMenuItem,
-            this.toolStripSeparator20,
-            this.phoneBookToolStripMenuItem});
-            this.appToolsContextMenu.Name = "appToolsContextMenu";
-            this.appToolsContextMenu.Size = new System.Drawing.Size(265, 414);
-            // 
-            // toolStripSeparator18
-            // 
-            this.toolStripSeparator18.Name = "toolStripSeparator18";
-            this.toolStripSeparator18.Size = new System.Drawing.Size(261, 6);
-            // 
-            // toolStripSeparator19
-            // 
-            this.toolStripSeparator19.Name = "toolStripSeparator19";
-            this.toolStripSeparator19.Size = new System.Drawing.Size(261, 6);
-            // 
-            // toolStripSeparator20
-            // 
-            this.toolStripSeparator20.Name = "toolStripSeparator20";
-            this.toolStripSeparator20.Size = new System.Drawing.Size(261, 6);
-            // 
-            // widgetsContextMenu
-            // 
-            this.widgetsContextMenu.Background = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.widgetsContextMenu.BorderSize = ((byte)(2));
-            this.widgetsContextMenu.ColorPallet = System.Drawing.Color.Crimson;
-            this.animator1.SetDecoration(this.widgetsContextMenu, WFAnimations.DecorationType.None);
-            this.widgetsContextMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.widgetsContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.widgetsContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.clockToolStripMenuItem,
-            this.cleanderToolStripMenuItem,
-            this.weatherToolStripMenuItem,
-            this.toolStripSeparator21,
-            this.toDoListToolStripMenuItem,
-            this.miniWebToolStripMenuItem,
-            this.toolStripSeparator22,
-            this.pCInfoToolStripMenuItem,
-            this.whiteBoardToolStripMenuItem});
-            this.widgetsContextMenu.Name = "widgetsContextMenu";
-            this.widgetsContextMenu.Size = new System.Drawing.Size(258, 408);
-            // 
-            // toolStripSeparator21
-            // 
-            this.toolStripSeparator21.Name = "toolStripSeparator21";
-            this.toolStripSeparator21.Size = new System.Drawing.Size(254, 6);
-            // 
-            // toolStripSeparator22
-            // 
-            this.toolStripSeparator22.Name = "toolStripSeparator22";
-            this.toolStripSeparator22.Size = new System.Drawing.Size(254, 6);
             // 
             // radioHelp
             // 
@@ -918,6 +569,59 @@
             this.radioDocuments.CheckedChanged += new System.EventHandler(this.radioUsers_CheckedChanged);
             this.radioDocuments.MouseDown += new System.Windows.Forms.MouseEventHandler(this.radioDocuments_MouseDown);
             // 
+            // roundedButton4
+            // 
+            this.roundedButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.roundedButton4.BorderRadius = ((byte)(20));
+            this.roundedButton4.BorderSize = ((byte)(3));
+            this.animator1.SetDecoration(this.roundedButton4, WFAnimations.DecorationType.None);
+            this.roundedButton4.EnableBorder = false;
+            this.roundedButton4.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedButton4.FlatAppearance.BorderSize = 0;
+            this.roundedButton4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.roundedButton4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.roundedButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton4.Font = new System.Drawing.Font("Segoe MDL2 Assets", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedButton4.ForeColor = System.Drawing.Color.White;
+            this.roundedButton4.Location = new System.Drawing.Point(8, 8);
+            this.roundedButton4.Name = "roundedButton4";
+            this.roundedButton4.Size = new System.Drawing.Size(45, 65);
+            this.roundedButton4.TabIndex = 3;
+            this.roundedButton4.Text = "";
+            this.roundedButton4.UseVisualStyleBackColor = false;
+            // 
+            // roundedLabel1
+            // 
+            this.roundedLabel1.BackColor = System.Drawing.Color.Crimson;
+            this.roundedLabel1.BorderRadius = ((byte)(4));
+            this.animator1.SetDecoration(this.roundedLabel1, WFAnimations.DecorationType.None);
+            this.roundedLabel1.Location = new System.Drawing.Point(61, -5);
+            this.roundedLabel1.Name = "roundedLabel1";
+            this.roundedLabel1.Size = new System.Drawing.Size(3, 90);
+            this.roundedLabel1.TabIndex = 21;
+            // 
+            // usersContextMenu
+            // 
+            this.usersContextMenu.Background = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.usersContextMenu.BorderSize = ((byte)(2));
+            this.usersContextMenu.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.usersContextMenu, WFAnimations.DecorationType.None);
+            this.usersContextMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usersContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.usersContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.manageUsersToolStripMenuItem,
+            this.searchUserToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.addSellerToolStripMenuItem,
+            this.deleteSellerToolStripMenuItem,
+            this.updateSellerToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.addCustomerToolStripMenuItem,
+            this.deleteCustomerToolStripMenuItem,
+            this.updateCustomerToolStripMenuItem});
+            this.usersContextMenu.Name = "ltContextMenu1";
+            this.usersContextMenu.Size = new System.Drawing.Size(317, 464);
+            // 
             // manageUsersToolStripMenuItem
             // 
             this.manageUsersToolStripMenuItem.ForeColor = System.Drawing.Color.White;
@@ -935,6 +639,11 @@
             this.searchUserToolStripMenuItem.Name = "searchUserToolStripMenuItem";
             this.searchUserToolStripMenuItem.Size = new System.Drawing.Size(316, 56);
             this.searchUserToolStripMenuItem.Text = "Search User";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(313, 6);
             // 
             // addSellerToolStripMenuItem
             // 
@@ -963,6 +672,11 @@
             this.updateSellerToolStripMenuItem.Size = new System.Drawing.Size(316, 56);
             this.updateSellerToolStripMenuItem.Text = "Update Seller";
             // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(313, 6);
+            // 
             // addCustomerToolStripMenuItem
             // 
             this.addCustomerToolStripMenuItem.ForeColor = System.Drawing.Color.White;
@@ -972,6 +686,14 @@
             this.addCustomerToolStripMenuItem.Size = new System.Drawing.Size(316, 56);
             this.addCustomerToolStripMenuItem.Text = "Add Customer";
             // 
+            // deleteCustomerToolStripMenuItem
+            // 
+            this.deleteCustomerToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.deleteCustomerToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.deleteCustomerToolStripMenuItem.Name = "deleteCustomerToolStripMenuItem";
+            this.deleteCustomerToolStripMenuItem.Size = new System.Drawing.Size(316, 56);
+            this.deleteCustomerToolStripMenuItem.Text = "Delete Customer";
+            // 
             // updateCustomerToolStripMenuItem
             // 
             this.updateCustomerToolStripMenuItem.ForeColor = System.Drawing.Color.White;
@@ -980,6 +702,28 @@
             this.updateCustomerToolStripMenuItem.Name = "updateCustomerToolStripMenuItem";
             this.updateCustomerToolStripMenuItem.Size = new System.Drawing.Size(316, 56);
             this.updateCustomerToolStripMenuItem.Text = "Update Customer";
+            // 
+            // productContextMenu
+            // 
+            this.productContextMenu.Background = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.productContextMenu.BorderSize = ((byte)(2));
+            this.productContextMenu.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.productContextMenu, WFAnimations.DecorationType.None);
+            this.productContextMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.productContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.productContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.managerProductsToolStripMenuItem,
+            this.searchProductsToolStripMenuItem,
+            this.toolStripSeparator3,
+            this.addToyToolStripMenuItem,
+            this.deleteToyToolStripMenuItem,
+            this.updateToyToolStripMenuItem,
+            this.toolStripSeparator4,
+            this.addDollToolStripMenuItem,
+            this.deleteDollToolStripMenuItem,
+            this.updateDollToolStripMenuItem});
+            this.productContextMenu.Name = "productContextMenu";
+            this.productContextMenu.Size = new System.Drawing.Size(327, 512);
             // 
             // managerProductsToolStripMenuItem
             // 
@@ -998,6 +742,11 @@
             this.searchProductsToolStripMenuItem.Name = "searchProductsToolStripMenuItem";
             this.searchProductsToolStripMenuItem.Size = new System.Drawing.Size(326, 62);
             this.searchProductsToolStripMenuItem.Text = "Search Products";
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(323, 6);
             // 
             // addToyToolStripMenuItem
             // 
@@ -1026,6 +775,11 @@
             this.updateToyToolStripMenuItem.Size = new System.Drawing.Size(326, 62);
             this.updateToyToolStripMenuItem.Text = "Update Toy";
             // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(323, 6);
+            // 
             // addDollToolStripMenuItem
             // 
             this.addDollToolStripMenuItem.ForeColor = System.Drawing.Color.White;
@@ -1053,6 +807,27 @@
             this.updateDollToolStripMenuItem.Size = new System.Drawing.Size(326, 62);
             this.updateDollToolStripMenuItem.Text = "Update Doll";
             // 
+            // financeContextMenu
+            // 
+            this.financeContextMenu.Background = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.financeContextMenu.BorderSize = ((byte)(2));
+            this.financeContextMenu.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.financeContextMenu, WFAnimations.DecorationType.None);
+            this.financeContextMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.financeContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.financeContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.performanceToolStripMenuItem,
+            this.transactionsToolStripMenuItem,
+            this.toolStripSeparator5,
+            this.costsToolStripMenuItem,
+            this.revenuesToolStripMenuItem,
+            this.cashOperationToolStripMenuItem,
+            this.toolStripSeparator6,
+            this.soldToysToolStripMenuItem,
+            this.soldDollsToolStripMenuItem});
+            this.financeContextMenu.Name = "financeContextMenu";
+            this.financeContextMenu.Size = new System.Drawing.Size(296, 450);
+            // 
             // performanceToolStripMenuItem
             // 
             this.performanceToolStripMenuItem.ForeColor = System.Drawing.Color.White;
@@ -1070,6 +845,11 @@
             this.transactionsToolStripMenuItem.Name = "transactionsToolStripMenuItem";
             this.transactionsToolStripMenuItem.Size = new System.Drawing.Size(295, 62);
             this.transactionsToolStripMenuItem.Text = "Transactions";
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(292, 6);
             // 
             // costsToolStripMenuItem
             // 
@@ -1098,6 +878,11 @@
             this.cashOperationToolStripMenuItem.Size = new System.Drawing.Size(295, 62);
             this.cashOperationToolStripMenuItem.Text = "Cash Operation";
             // 
+            // toolStripSeparator6
+            // 
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
+            this.toolStripSeparator6.Size = new System.Drawing.Size(292, 6);
+            // 
             // soldToysToolStripMenuItem
             // 
             this.soldToysToolStripMenuItem.ForeColor = System.Drawing.Color.White;
@@ -1116,6 +901,26 @@
             this.soldDollsToolStripMenuItem.Size = new System.Drawing.Size(295, 62);
             this.soldDollsToolStripMenuItem.Text = "Sold Dolls";
             // 
+            // accountingContextMenu
+            // 
+            this.accountingContextMenu.Background = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.accountingContextMenu.BorderSize = ((byte)(2));
+            this.accountingContextMenu.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.accountingContextMenu, WFAnimations.DecorationType.None);
+            this.accountingContextMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accountingContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.accountingContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.manageAccountToolStripMenuItem,
+            this.toolStripSeparator7,
+            this.addAccountToolStripMenuItem,
+            this.deleteAccountToolStripMenuItem,
+            this.updateAccountToolStripMenuItem,
+            this.toolStripSeparator8,
+            this.purchaseModeToolStripMenuItem,
+            this.barcodeCreatorToolStripMenuItem});
+            this.accountingContextMenu.Name = "accountingContextMenu";
+            this.accountingContextMenu.Size = new System.Drawing.Size(308, 364);
+            // 
             // manageAccountToolStripMenuItem
             // 
             this.manageAccountToolStripMenuItem.ForeColor = System.Drawing.Color.White;
@@ -1124,6 +929,11 @@
             this.manageAccountToolStripMenuItem.Name = "manageAccountToolStripMenuItem";
             this.manageAccountToolStripMenuItem.Size = new System.Drawing.Size(307, 58);
             this.manageAccountToolStripMenuItem.Text = "Manage Account";
+            // 
+            // toolStripSeparator7
+            // 
+            this.toolStripSeparator7.Name = "toolStripSeparator7";
+            this.toolStripSeparator7.Size = new System.Drawing.Size(304, 6);
             // 
             // addAccountToolStripMenuItem
             // 
@@ -1152,6 +962,11 @@
             this.updateAccountToolStripMenuItem.Size = new System.Drawing.Size(307, 58);
             this.updateAccountToolStripMenuItem.Text = "Update Account";
             // 
+            // toolStripSeparator8
+            // 
+            this.toolStripSeparator8.Name = "toolStripSeparator8";
+            this.toolStripSeparator8.Size = new System.Drawing.Size(304, 6);
+            // 
             // purchaseModeToolStripMenuItem
             // 
             this.purchaseModeToolStripMenuItem.ForeColor = System.Drawing.Color.White;
@@ -1170,6 +985,27 @@
             this.barcodeCreatorToolStripMenuItem.Size = new System.Drawing.Size(307, 58);
             this.barcodeCreatorToolStripMenuItem.Text = "Barcode Creator";
             // 
+            // invoiceContextMenu
+            // 
+            this.invoiceContextMenu.Background = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.invoiceContextMenu.BorderSize = ((byte)(2));
+            this.invoiceContextMenu.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.invoiceContextMenu, WFAnimations.DecorationType.None);
+            this.invoiceContextMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.invoiceContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.invoiceContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.managerInvoiceToolStripMenuItem,
+            this.toolStripSeparator9,
+            this.salesInvoiceToolStripMenuItem,
+            this.purchaseInvoiceToolStripMenuItem,
+            this.toolStripSeparator10,
+            this.profitAndLossToolStripMenuItem,
+            this.toolStripSeparator11,
+            this.salesInvoiceToolStripMenuItem1,
+            this.purchaseInvoiceToolStripMenuItem1});
+            this.invoiceContextMenu.Name = "invoiceContextMenu";
+            this.invoiceContextMenu.Size = new System.Drawing.Size(303, 358);
+            // 
             // managerInvoiceToolStripMenuItem
             // 
             this.managerInvoiceToolStripMenuItem.ForeColor = System.Drawing.Color.White;
@@ -1178,6 +1014,11 @@
             this.managerInvoiceToolStripMenuItem.Name = "managerInvoiceToolStripMenuItem";
             this.managerInvoiceToolStripMenuItem.Size = new System.Drawing.Size(302, 56);
             this.managerInvoiceToolStripMenuItem.Text = "Manager Invoice";
+            // 
+            // toolStripSeparator9
+            // 
+            this.toolStripSeparator9.Name = "toolStripSeparator9";
+            this.toolStripSeparator9.Size = new System.Drawing.Size(299, 6);
             // 
             // salesInvoiceToolStripMenuItem
             // 
@@ -1197,6 +1038,11 @@
             this.purchaseInvoiceToolStripMenuItem.Size = new System.Drawing.Size(302, 56);
             this.purchaseInvoiceToolStripMenuItem.Text = "Purchase Invoice";
             // 
+            // toolStripSeparator10
+            // 
+            this.toolStripSeparator10.Name = "toolStripSeparator10";
+            this.toolStripSeparator10.Size = new System.Drawing.Size(299, 6);
+            // 
             // profitAndLossToolStripMenuItem
             // 
             this.profitAndLossToolStripMenuItem.ForeColor = System.Drawing.Color.White;
@@ -1205,6 +1051,11 @@
             this.profitAndLossToolStripMenuItem.Name = "profitAndLossToolStripMenuItem";
             this.profitAndLossToolStripMenuItem.Size = new System.Drawing.Size(302, 56);
             this.profitAndLossToolStripMenuItem.Text = "Profit and Loss";
+            // 
+            // toolStripSeparator11
+            // 
+            this.toolStripSeparator11.Name = "toolStripSeparator11";
+            this.toolStripSeparator11.Size = new System.Drawing.Size(299, 6);
             // 
             // salesInvoiceToolStripMenuItem1
             // 
@@ -1224,6 +1075,24 @@
             this.purchaseInvoiceToolStripMenuItem1.Size = new System.Drawing.Size(302, 56);
             this.purchaseInvoiceToolStripMenuItem1.Text = "Purchase Invoice";
             // 
+            // documentsContextMenu
+            // 
+            this.documentsContextMenu.Background = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.documentsContextMenu.BorderSize = ((byte)(2));
+            this.documentsContextMenu.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.documentsContextMenu, WFAnimations.DecorationType.None);
+            this.documentsContextMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.documentsContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.documentsContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.arrivedsToolStripMenuItem,
+            this.toolStripSeparator12,
+            this.receiptsToolStripMenuItem,
+            this.paymentsToolStripMenuItem,
+            this.toolStripSeparator13,
+            this.debtsToolStripMenuItem});
+            this.documentsContextMenu.Name = "documentsContextMenu";
+            this.documentsContextMenu.Size = new System.Drawing.Size(226, 240);
+            // 
             // arrivedsToolStripMenuItem
             // 
             this.arrivedsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
@@ -1232,6 +1101,11 @@
             this.arrivedsToolStripMenuItem.Name = "arrivedsToolStripMenuItem";
             this.arrivedsToolStripMenuItem.Size = new System.Drawing.Size(225, 56);
             this.arrivedsToolStripMenuItem.Text = "Arriveds";
+            // 
+            // toolStripSeparator12
+            // 
+            this.toolStripSeparator12.Name = "toolStripSeparator12";
+            this.toolStripSeparator12.Size = new System.Drawing.Size(222, 6);
             // 
             // receiptsToolStripMenuItem
             // 
@@ -1251,6 +1125,11 @@
             this.paymentsToolStripMenuItem.Size = new System.Drawing.Size(225, 56);
             this.paymentsToolStripMenuItem.Text = "Payments";
             // 
+            // toolStripSeparator13
+            // 
+            this.toolStripSeparator13.Name = "toolStripSeparator13";
+            this.toolStripSeparator13.Size = new System.Drawing.Size(222, 6);
+            // 
             // debtsToolStripMenuItem
             // 
             this.debtsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
@@ -1259,6 +1138,29 @@
             this.debtsToolStripMenuItem.Name = "debtsToolStripMenuItem";
             this.debtsToolStripMenuItem.Size = new System.Drawing.Size(225, 56);
             this.debtsToolStripMenuItem.Text = "Debts";
+            // 
+            // salesmanContextMenu
+            // 
+            this.salesmanContextMenu.Background = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.salesmanContextMenu.BorderSize = ((byte)(2));
+            this.salesmanContextMenu.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.salesmanContextMenu, WFAnimations.DecorationType.None);
+            this.salesmanContextMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.salesmanContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.salesmanContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.manageBrandsToolStripMenuItem,
+            this.managePersonsToolStripMenuItem,
+            this.toolStripSeparator14,
+            this.addBrandToolStripMenuItem,
+            this.addPersonToolStripMenuItem,
+            this.toolStripSeparator15,
+            this.deleteBrandToolStripMenuItem,
+            this.deletePersonToolStripMenuItem,
+            this.toolStripSeparator16,
+            this.updateBrandToolStripMenuItem,
+            this.updatePersonToolStripMenuItem});
+            this.salesmanContextMenu.Name = "salesmanContextMenu";
+            this.salesmanContextMenu.Size = new System.Drawing.Size(306, 518);
             // 
             // manageBrandsToolStripMenuItem
             // 
@@ -1278,6 +1180,11 @@
             this.managePersonsToolStripMenuItem.Size = new System.Drawing.Size(305, 62);
             this.managePersonsToolStripMenuItem.Text = "Manage Persons";
             // 
+            // toolStripSeparator14
+            // 
+            this.toolStripSeparator14.Name = "toolStripSeparator14";
+            this.toolStripSeparator14.Size = new System.Drawing.Size(302, 6);
+            // 
             // addBrandToolStripMenuItem
             // 
             this.addBrandToolStripMenuItem.ForeColor = System.Drawing.Color.White;
@@ -1295,6 +1202,11 @@
             this.addPersonToolStripMenuItem.Name = "addPersonToolStripMenuItem";
             this.addPersonToolStripMenuItem.Size = new System.Drawing.Size(305, 62);
             this.addPersonToolStripMenuItem.Text = "Add Person";
+            // 
+            // toolStripSeparator15
+            // 
+            this.toolStripSeparator15.Name = "toolStripSeparator15";
+            this.toolStripSeparator15.Size = new System.Drawing.Size(302, 6);
             // 
             // deleteBrandToolStripMenuItem
             // 
@@ -1314,6 +1226,11 @@
             this.deletePersonToolStripMenuItem.Size = new System.Drawing.Size(305, 62);
             this.deletePersonToolStripMenuItem.Text = "Delete Person";
             // 
+            // toolStripSeparator16
+            // 
+            this.toolStripSeparator16.Name = "toolStripSeparator16";
+            this.toolStripSeparator16.Size = new System.Drawing.Size(302, 6);
+            // 
             // updateBrandToolStripMenuItem
             // 
             this.updateBrandToolStripMenuItem.ForeColor = System.Drawing.Color.White;
@@ -1332,6 +1249,25 @@
             this.updatePersonToolStripMenuItem.Size = new System.Drawing.Size(305, 62);
             this.updatePersonToolStripMenuItem.Text = "Update Person";
             // 
+            // exportContextMenu
+            // 
+            this.exportContextMenu.Background = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.exportContextMenu.BorderSize = ((byte)(2));
+            this.exportContextMenu.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.exportContextMenu, WFAnimations.DecorationType.None);
+            this.exportContextMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exportContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.exportContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.exportDataToolStripMenuItem,
+            this.importDataToolStripMenuItem,
+            this.toolStripSeparator17,
+            this.exportTXTToolStripMenuItem,
+            this.exportCSVToolStripMenuItem,
+            this.exportPDFToolStripMenuItem,
+            this.exportXLSToolStripMenuItem});
+            this.exportContextMenu.Name = "exportContextMenu";
+            this.exportContextMenu.Size = new System.Drawing.Size(255, 346);
+            // 
             // exportDataToolStripMenuItem
             // 
             this.exportDataToolStripMenuItem.ForeColor = System.Drawing.Color.White;
@@ -1349,6 +1285,11 @@
             this.importDataToolStripMenuItem.Name = "importDataToolStripMenuItem";
             this.importDataToolStripMenuItem.Size = new System.Drawing.Size(254, 56);
             this.importDataToolStripMenuItem.Text = "Import Data";
+            // 
+            // toolStripSeparator17
+            // 
+            this.toolStripSeparator17.Name = "toolStripSeparator17";
+            this.toolStripSeparator17.Size = new System.Drawing.Size(251, 6);
             // 
             // exportTXTToolStripMenuItem
             // 
@@ -1386,6 +1327,28 @@
             this.exportXLSToolStripMenuItem.Size = new System.Drawing.Size(254, 56);
             this.exportXLSToolStripMenuItem.Text = "Export XLS";
             // 
+            // appToolsContextMenu
+            // 
+            this.appToolsContextMenu.Background = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.appToolsContextMenu.BorderSize = ((byte)(2));
+            this.appToolsContextMenu.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.appToolsContextMenu, WFAnimations.DecorationType.None);
+            this.appToolsContextMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.appToolsContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.appToolsContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.calculatorToolStripMenuItem,
+            this.toolStripSeparator18,
+            this.paintToolStripMenuItem,
+            this.notepadToolStripMenuItem,
+            this.toolStripSeparator19,
+            this.converterToolStripMenuItem,
+            this.translatorToolStripMenuItem,
+            this.webBrowserToolStripMenuItem,
+            this.toolStripSeparator20,
+            this.phoneBookToolStripMenuItem});
+            this.appToolsContextMenu.Name = "appToolsContextMenu";
+            this.appToolsContextMenu.Size = new System.Drawing.Size(265, 414);
+            // 
             // calculatorToolStripMenuItem
             // 
             this.calculatorToolStripMenuItem.ForeColor = System.Drawing.Color.White;
@@ -1394,6 +1357,11 @@
             this.calculatorToolStripMenuItem.Name = "calculatorToolStripMenuItem";
             this.calculatorToolStripMenuItem.Size = new System.Drawing.Size(264, 56);
             this.calculatorToolStripMenuItem.Text = "Calculator";
+            // 
+            // toolStripSeparator18
+            // 
+            this.toolStripSeparator18.Name = "toolStripSeparator18";
+            this.toolStripSeparator18.Size = new System.Drawing.Size(261, 6);
             // 
             // paintToolStripMenuItem
             // 
@@ -1412,6 +1380,11 @@
             this.notepadToolStripMenuItem.Name = "notepadToolStripMenuItem";
             this.notepadToolStripMenuItem.Size = new System.Drawing.Size(264, 56);
             this.notepadToolStripMenuItem.Text = "Notepad";
+            // 
+            // toolStripSeparator19
+            // 
+            this.toolStripSeparator19.Name = "toolStripSeparator19";
+            this.toolStripSeparator19.Size = new System.Drawing.Size(261, 6);
             // 
             // converterToolStripMenuItem
             // 
@@ -1440,6 +1413,11 @@
             this.webBrowserToolStripMenuItem.Size = new System.Drawing.Size(264, 56);
             this.webBrowserToolStripMenuItem.Text = "Web Browser";
             // 
+            // toolStripSeparator20
+            // 
+            this.toolStripSeparator20.Name = "toolStripSeparator20";
+            this.toolStripSeparator20.Size = new System.Drawing.Size(261, 6);
+            // 
             // phoneBookToolStripMenuItem
             // 
             this.phoneBookToolStripMenuItem.ForeColor = System.Drawing.Color.White;
@@ -1448,6 +1426,27 @@
             this.phoneBookToolStripMenuItem.Name = "phoneBookToolStripMenuItem";
             this.phoneBookToolStripMenuItem.Size = new System.Drawing.Size(264, 56);
             this.phoneBookToolStripMenuItem.Text = "Phone Book";
+            // 
+            // widgetsContextMenu
+            // 
+            this.widgetsContextMenu.Background = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.widgetsContextMenu.BorderSize = ((byte)(2));
+            this.widgetsContextMenu.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.widgetsContextMenu, WFAnimations.DecorationType.None);
+            this.widgetsContextMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.widgetsContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.widgetsContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.clockToolStripMenuItem,
+            this.cleanderToolStripMenuItem,
+            this.weatherToolStripMenuItem,
+            this.toolStripSeparator21,
+            this.toDoListToolStripMenuItem,
+            this.miniWebToolStripMenuItem,
+            this.toolStripSeparator22,
+            this.pCInfoToolStripMenuItem,
+            this.whiteBoardToolStripMenuItem});
+            this.widgetsContextMenu.Name = "widgetsContextMenu";
+            this.widgetsContextMenu.Size = new System.Drawing.Size(258, 408);
             // 
             // clockToolStripMenuItem
             // 
@@ -1476,6 +1475,11 @@
             this.weatherToolStripMenuItem.Size = new System.Drawing.Size(257, 56);
             this.weatherToolStripMenuItem.Text = "Weather";
             // 
+            // toolStripSeparator21
+            // 
+            this.toolStripSeparator21.Name = "toolStripSeparator21";
+            this.toolStripSeparator21.Size = new System.Drawing.Size(254, 6);
+            // 
             // toDoListToolStripMenuItem
             // 
             this.toDoListToolStripMenuItem.ForeColor = System.Drawing.Color.White;
@@ -1494,6 +1498,11 @@
             this.miniWebToolStripMenuItem.Size = new System.Drawing.Size(257, 56);
             this.miniWebToolStripMenuItem.Text = "Mini Web";
             // 
+            // toolStripSeparator22
+            // 
+            this.toolStripSeparator22.Name = "toolStripSeparator22";
+            this.toolStripSeparator22.Size = new System.Drawing.Size(254, 6);
+            // 
             // pCInfoToolStripMenuItem
             // 
             this.pCInfoToolStripMenuItem.ForeColor = System.Drawing.Color.White;
@@ -1511,6 +1520,70 @@
             this.whiteBoardToolStripMenuItem.Name = "whiteBoardToolStripMenuItem";
             this.whiteBoardToolStripMenuItem.Size = new System.Drawing.Size(257, 56);
             this.whiteBoardToolStripMenuItem.Text = "White Board";
+            // 
+            // settingsContextMenu
+            // 
+            this.settingsContextMenu.Background = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.settingsContextMenu.BorderSize = ((byte)(2));
+            this.settingsContextMenu.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.settingsContextMenu, WFAnimations.DecorationType.None);
+            this.settingsContextMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.settingsContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.settingsContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.generalToolStripMenuItem,
+            this.managerToolStripMenuItem,
+            this.toolStripSeparator23,
+            this.viewsToolStripMenuItem,
+            this.appearanceToolStripMenuItem,
+            this.toolStripSeparator24,
+            this.databaseToolStripMenuItem});
+            this.settingsContextMenu.Name = "settingsContextMenu";
+            this.settingsContextMenu.Size = new System.Drawing.Size(241, 239);
+            // 
+            // generalToolStripMenuItem
+            // 
+            this.generalToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.generalToolStripMenuItem.Name = "generalToolStripMenuItem";
+            this.generalToolStripMenuItem.Size = new System.Drawing.Size(240, 38);
+            this.generalToolStripMenuItem.Text = "General";
+            // 
+            // appearanceToolStripMenuItem
+            // 
+            this.appearanceToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.appearanceToolStripMenuItem.Name = "appearanceToolStripMenuItem";
+            this.appearanceToolStripMenuItem.Size = new System.Drawing.Size(240, 38);
+            this.appearanceToolStripMenuItem.Text = "Appearance";
+            // 
+            // toolStripSeparator23
+            // 
+            this.toolStripSeparator23.Name = "toolStripSeparator23";
+            this.toolStripSeparator23.Size = new System.Drawing.Size(237, 6);
+            // 
+            // viewsToolStripMenuItem
+            // 
+            this.viewsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.viewsToolStripMenuItem.Name = "viewsToolStripMenuItem";
+            this.viewsToolStripMenuItem.Size = new System.Drawing.Size(240, 38);
+            this.viewsToolStripMenuItem.Text = "Views";
+            // 
+            // toolStripSeparator24
+            // 
+            this.toolStripSeparator24.Name = "toolStripSeparator24";
+            this.toolStripSeparator24.Size = new System.Drawing.Size(237, 6);
+            // 
+            // managerToolStripMenuItem
+            // 
+            this.managerToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.managerToolStripMenuItem.Name = "managerToolStripMenuItem";
+            this.managerToolStripMenuItem.Size = new System.Drawing.Size(240, 38);
+            this.managerToolStripMenuItem.Text = "Manager";
+            // 
+            // databaseToolStripMenuItem
+            // 
+            this.databaseToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.databaseToolStripMenuItem.Name = "databaseToolStripMenuItem";
+            this.databaseToolStripMenuItem.Size = new System.Drawing.Size(240, 38);
+            this.databaseToolStripMenuItem.Text = "Database";
             // 
             // HomeMenu
             // 
@@ -1534,6 +1607,7 @@
             this.exportContextMenu.ResumeLayout(false);
             this.appToolsContextMenu.ResumeLayout(false);
             this.widgetsContextMenu.ResumeLayout(false);
+            this.settingsContextMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1658,5 +1732,13 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator22;
         private System.Windows.Forms.ToolStripMenuItem pCInfoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem whiteBoardToolStripMenuItem;
+        private Controls.LTContextMenu settingsContextMenu;
+        private System.Windows.Forms.ToolStripMenuItem generalToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator23;
+        private System.Windows.Forms.ToolStripMenuItem viewsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem appearanceToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator24;
+        private System.Windows.Forms.ToolStripMenuItem managerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem databaseToolStripMenuItem;
     }
 }
