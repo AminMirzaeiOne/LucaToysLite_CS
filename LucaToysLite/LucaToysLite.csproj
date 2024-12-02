@@ -2265,6 +2265,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="LucaLogo.ico" />
+    <None Include="Resources\icons8-qr-code-48.png" />
+    <None Include="Resources\Group 47%281%29.png" />
+    <None Include="Resources\Group 45%281%29.png" />
+    <None Include="Resources\Group 46%281%29.png" />
+    <None Include="Resources\icons8-basket-48.png" />
+    <None Include="Resources\Group 47.png" />
+    <None Include="Resources\Group 46.png" />
+    <None Include="Resources\Group 45.png" />
+    <None Include="Resources\icons8-bank-cards-48.png" />
     <None Include="Resources\Group 44.png" />
     <None Include="Resources\Group 43.png" />
     <None Include="Resources\icons8-bribery-48.png" />
