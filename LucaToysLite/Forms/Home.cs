@@ -8,6 +8,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 using LucaToysLite.ClassLibrary;
 using LucaToysLite.Controls;
 using LucaToysLite.Messages;
@@ -32,18 +33,30 @@ namespace LucaToysLite.Forms
             LTUpdateMessage.Show(this, "Messi", "Ronaldo", "Hello I Am Amin Mirzaei");
         }
 
-        private void roundedButton1_MouseDown(object sender, MouseEventArgs e)
+        private void roundedButton1_Click(object sender, EventArgs e)
         {
+            this.timerHide.Start();
         }
 
-        private void roundedButton1_MouseLeave(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
-            this.roundedButton1.Location = new Point(this.roundedButton1.Location.X, 737);
+            if (this.roundedButton1.Top < 900)
+                this.roundedButton1.Top += 10;
+            else
+            {
+                this.timerHide.Stop();
+                this.timerShow.Start();
+            }
         }
 
-        private void roundedButton1_MouseEnter(object sender, EventArgs e)
+        private void timerShow_Tick(object sender, EventArgs e)
         {
-            this.roundedButton1.Location = new Point(this.roundedButton1.Location.X, 704);
+            if (this.homeBottomMenu1.Top > 675)
+                this.homeBottomMenu1.Top -= 10;
+            else
+            {
+                this.timerShow.Stop();
+            }
         }
     }
 }

@@ -28,11 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
+            this.timerHide = new System.Windows.Forms.Timer(this.components);
+            this.timerShow = new System.Windows.Forms.Timer(this.components);
             this.roundedButton1 = new LucaToysLite.Controls.RoundedButton();
             this.homeMenu1 = new LucaToysLite.Menus.HomeMenu();
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
+            this.homeBottomMenu1 = new LucaToysLite.Menus.HomeBottomMenu();
             this.SuspendLayout();
+            // 
+            // timerHide
+            // 
+            this.timerHide.Interval = 20;
+            this.timerHide.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // timerShow
+            // 
+            this.timerShow.Interval = 20;
+            this.timerShow.Tick += new System.EventHandler(this.timerShow_Tick);
             // 
             // roundedButton1
             // 
@@ -41,21 +55,19 @@
             this.roundedButton1.BackColor = System.Drawing.Color.Crimson;
             this.roundedButton1.BorderRadius = ((byte)(20));
             this.roundedButton1.BorderSize = ((byte)(3));
-            this.roundedButton1.EnableBorder = false;
+            this.roundedButton1.EnableBorder = true;
             this.roundedButton1.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
             this.roundedButton1.FlatAppearance.BorderSize = 0;
             this.roundedButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton1.Font = new System.Drawing.Font("Segoe MDL2 Assets", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedButton1.Font = new System.Drawing.Font("Segoe MDL2 Assets", 5F, System.Drawing.FontStyle.Bold);
             this.roundedButton1.ForeColor = System.Drawing.Color.White;
-            this.roundedButton1.Location = new System.Drawing.Point(698, 734);
+            this.roundedButton1.Location = new System.Drawing.Point(698, 717);
             this.roundedButton1.Name = "roundedButton1";
-            this.roundedButton1.Size = new System.Drawing.Size(80, 50);
+            this.roundedButton1.Size = new System.Drawing.Size(80, 40);
             this.roundedButton1.TabIndex = 2;
-            this.roundedButton1.Text = "";
+            this.roundedButton1.Text = "  ";
             this.roundedButton1.UseVisualStyleBackColor = false;
-            this.roundedButton1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.roundedButton1_MouseDown);
-            this.roundedButton1.MouseEnter += new System.EventHandler(this.roundedButton1_MouseEnter);
-            this.roundedButton1.MouseLeave += new System.EventHandler(this.roundedButton1_MouseLeave);
+            this.roundedButton1.Click += new System.EventHandler(this.roundedButton1_Click);
             // 
             // homeMenu1
             // 
@@ -93,6 +105,19 @@
             this.windowToolbar1.TitleText = "Home Window";
             this.windowToolbar1.WindowBorderSize = ((byte)(3));
             // 
+            // homeBottomMenu1
+            // 
+            this.homeBottomMenu1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.homeBottomMenu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.homeBottomMenu1.BorderColor = System.Drawing.Color.Crimson;
+            this.homeBottomMenu1.BorderSize = ((byte)(3));
+            this.homeBottomMenu1.EnableBorder = true;
+            this.homeBottomMenu1.Location = new System.Drawing.Point(379, 756);
+            this.homeBottomMenu1.Name = "homeBottomMenu1";
+            this.homeBottomMenu1.Size = new System.Drawing.Size(800, 70);
+            this.homeBottomMenu1.TabIndex = 3;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
@@ -102,6 +127,7 @@
             this.Controls.Add(this.roundedButton1);
             this.Controls.Add(this.homeMenu1);
             this.Controls.Add(this.windowToolbar1);
+            this.Controls.Add(this.homeBottomMenu1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -117,5 +143,8 @@
         private Controls.WindowToolbar windowToolbar1;
         private Menus.HomeMenu homeMenu1;
         private Controls.RoundedButton roundedButton1;
+        private System.Windows.Forms.Timer timerHide;
+        private Menus.HomeBottomMenu homeBottomMenu1;
+        private System.Windows.Forms.Timer timerShow;
     }
 }
