@@ -79,11 +79,11 @@
             this.toolStripSeparator25 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator26 = new System.Windows.Forms.ToolStripSeparator();
             this.aboutContextMenu = new LucaToysLite.Controls.LTContextMenu();
+            this.toolStripSeparator29 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator27 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator28 = new System.Windows.Forms.ToolStripSeparator();
             this.timerLeft = new System.Windows.Forms.Timer(this.components);
             this.timerRight = new System.Windows.Forms.Timer(this.components);
-            this.toolStripSeparator29 = new System.Windows.Forms.ToolStripSeparator();
             this.radioAbout = new LucaToysLite.Controls.RoundedRadioButton();
             this.radioHelp = new LucaToysLite.Controls.RoundedRadioButton();
             this.radioFinance = new LucaToysLite.Controls.RoundedRadioButton();
@@ -181,7 +181,7 @@
             this.developerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.technicalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.checkForUpdateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.feedbackAppToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.roundedPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.usersContextMenu.SuspendLayout();
@@ -746,19 +746,24 @@
             this.technicalToolStripMenuItem,
             this.toolStripSeparator28,
             this.updateToolStripMenuItem,
-            this.checkForUpdateToolStripMenuItem});
+            this.feedbackAppToolStripMenuItem});
             this.aboutContextMenu.Name = "aboutContextMenu";
-            this.aboutContextMenu.Size = new System.Drawing.Size(316, 414);
+            this.aboutContextMenu.Size = new System.Drawing.Size(275, 414);
+            // 
+            // toolStripSeparator29
+            // 
+            this.toolStripSeparator29.Name = "toolStripSeparator29";
+            this.toolStripSeparator29.Size = new System.Drawing.Size(271, 6);
             // 
             // toolStripSeparator27
             // 
             this.toolStripSeparator27.Name = "toolStripSeparator27";
-            this.toolStripSeparator27.Size = new System.Drawing.Size(312, 6);
+            this.toolStripSeparator27.Size = new System.Drawing.Size(271, 6);
             // 
             // toolStripSeparator28
             // 
             this.toolStripSeparator28.Name = "toolStripSeparator28";
-            this.toolStripSeparator28.Size = new System.Drawing.Size(312, 6);
+            this.toolStripSeparator28.Size = new System.Drawing.Size(271, 6);
             // 
             // timerLeft
             // 
@@ -769,11 +774,6 @@
             // 
             this.timerRight.Interval = 40;
             this.timerRight.Tick += new System.EventHandler(this.timerRight_Tick);
-            // 
-            // toolStripSeparator29
-            // 
-            this.toolStripSeparator29.Name = "toolStripSeparator29";
-            this.toolStripSeparator29.Size = new System.Drawing.Size(312, 6);
             // 
             // radioAbout
             // 
@@ -1797,7 +1797,7 @@
             this.aboutFormToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_info_popup_48;
             this.aboutFormToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.aboutFormToolStripMenuItem.Name = "aboutFormToolStripMenuItem";
-            this.aboutFormToolStripMenuItem.Size = new System.Drawing.Size(315, 56);
+            this.aboutFormToolStripMenuItem.Size = new System.Drawing.Size(274, 56);
             this.aboutFormToolStripMenuItem.Text = "About Form";
             // 
             // versionInfoToolStripMenuItem
@@ -1806,7 +1806,7 @@
             this.versionInfoToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_version_482;
             this.versionInfoToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.versionInfoToolStripMenuItem.Name = "versionInfoToolStripMenuItem";
-            this.versionInfoToolStripMenuItem.Size = new System.Drawing.Size(315, 56);
+            this.versionInfoToolStripMenuItem.Size = new System.Drawing.Size(274, 56);
             this.versionInfoToolStripMenuItem.Text = "Version Info";
             // 
             // licenceInfoToolStripMenuItem
@@ -1815,7 +1815,7 @@
             this.licenceInfoToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_certification_48;
             this.licenceInfoToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.licenceInfoToolStripMenuItem.Name = "licenceInfoToolStripMenuItem";
-            this.licenceInfoToolStripMenuItem.Size = new System.Drawing.Size(315, 56);
+            this.licenceInfoToolStripMenuItem.Size = new System.Drawing.Size(274, 56);
             this.licenceInfoToolStripMenuItem.Text = "Licence Info";
             // 
             // developerToolStripMenuItem
@@ -1824,7 +1824,7 @@
             this.developerToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_developer_481;
             this.developerToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.developerToolStripMenuItem.Name = "developerToolStripMenuItem";
-            this.developerToolStripMenuItem.Size = new System.Drawing.Size(315, 56);
+            this.developerToolStripMenuItem.Size = new System.Drawing.Size(274, 56);
             this.developerToolStripMenuItem.Text = "Developer";
             // 
             // technicalToolStripMenuItem
@@ -1833,7 +1833,7 @@
             this.technicalToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_cpu_48_1_;
             this.technicalToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.technicalToolStripMenuItem.Name = "technicalToolStripMenuItem";
-            this.technicalToolStripMenuItem.Size = new System.Drawing.Size(315, 56);
+            this.technicalToolStripMenuItem.Size = new System.Drawing.Size(274, 56);
             this.technicalToolStripMenuItem.Text = "Technical";
             // 
             // updateToolStripMenuItem
@@ -1842,17 +1842,17 @@
             this.updateToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_sync_48;
             this.updateToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
-            this.updateToolStripMenuItem.Size = new System.Drawing.Size(315, 56);
-            this.updateToolStripMenuItem.Text = "Update";
+            this.updateToolStripMenuItem.Size = new System.Drawing.Size(274, 56);
+            this.updateToolStripMenuItem.Text = "Update App";
             // 
-            // checkForUpdateToolStripMenuItem
+            // feedbackAppToolStripMenuItem
             // 
-            this.checkForUpdateToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.checkForUpdateToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_update_done_48;
-            this.checkForUpdateToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.checkForUpdateToolStripMenuItem.Name = "checkForUpdateToolStripMenuItem";
-            this.checkForUpdateToolStripMenuItem.Size = new System.Drawing.Size(315, 56);
-            this.checkForUpdateToolStripMenuItem.Text = "Check For Update";
+            this.feedbackAppToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.feedbackAppToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_feedback_hub_48;
+            this.feedbackAppToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.feedbackAppToolStripMenuItem.Name = "feedbackAppToolStripMenuItem";
+            this.feedbackAppToolStripMenuItem.Size = new System.Drawing.Size(274, 56);
+            this.feedbackAppToolStripMenuItem.Text = "Feedback App";
             // 
             // HomeMenu
             // 
@@ -2030,10 +2030,10 @@
         private System.Windows.Forms.ToolStripMenuItem technicalToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator28;
         private System.Windows.Forms.ToolStripMenuItem updateToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem checkForUpdateToolStripMenuItem;
         private System.Windows.Forms.Timer timerLeft;
         private System.Windows.Forms.Timer timerRight;
         private System.Windows.Forms.ToolStripMenuItem aboutFormToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator29;
+        private System.Windows.Forms.ToolStripMenuItem feedbackAppToolStripMenuItem;
     }
 }
