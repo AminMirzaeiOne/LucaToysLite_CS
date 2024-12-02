@@ -29,10 +29,33 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
+            this.roundedButton1 = new LucaToysLite.Controls.RoundedButton();
             this.homeMenu1 = new LucaToysLite.Menus.HomeMenu();
             this.windowToolbar1 = new LucaToysLite.Controls.WindowToolbar();
-            this.toDoList1 = new LucaToysLite.Widgets.ToDoList();
             this.SuspendLayout();
+            // 
+            // roundedButton1
+            // 
+            this.roundedButton1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.roundedButton1.BackColor = System.Drawing.Color.Crimson;
+            this.roundedButton1.BorderRadius = ((byte)(20));
+            this.roundedButton1.BorderSize = ((byte)(3));
+            this.roundedButton1.EnableBorder = false;
+            this.roundedButton1.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
+            this.roundedButton1.FlatAppearance.BorderSize = 0;
+            this.roundedButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton1.Font = new System.Drawing.Font("Segoe MDL2 Assets", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedButton1.ForeColor = System.Drawing.Color.White;
+            this.roundedButton1.Location = new System.Drawing.Point(698, 734);
+            this.roundedButton1.Name = "roundedButton1";
+            this.roundedButton1.Size = new System.Drawing.Size(80, 50);
+            this.roundedButton1.TabIndex = 2;
+            this.roundedButton1.Text = "";
+            this.roundedButton1.UseVisualStyleBackColor = false;
+            this.roundedButton1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.roundedButton1_MouseDown);
+            this.roundedButton1.MouseEnter += new System.EventHandler(this.roundedButton1_MouseEnter);
+            this.roundedButton1.MouseLeave += new System.EventHandler(this.roundedButton1_MouseLeave);
             // 
             // homeMenu1
             // 
@@ -70,25 +93,13 @@
             this.windowToolbar1.TitleText = "Home Window";
             this.windowToolbar1.WindowBorderSize = ((byte)(3));
             // 
-            // toDoList1
-            // 
-            this.toDoList1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.toDoList1.BorderColor = System.Drawing.Color.Crimson;
-            this.toDoList1.BorderSize = ((byte)(3));
-            this.toDoList1.EnableBorder = true;
-            this.toDoList1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toDoList1.Location = new System.Drawing.Point(161, 312);
-            this.toDoList1.Name = "toDoList1";
-            this.toDoList1.Size = new System.Drawing.Size(360, 630);
-            this.toDoList1.TabIndex = 2;
-            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(1451, 751);
-            this.Controls.Add(this.toDoList1);
+            this.Controls.Add(this.roundedButton1);
             this.Controls.Add(this.homeMenu1);
             this.Controls.Add(this.windowToolbar1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -105,6 +116,6 @@
         #endregion
         private Controls.WindowToolbar windowToolbar1;
         private Menus.HomeMenu homeMenu1;
-        private Widgets.ToDoList toDoList1;
+        private Controls.RoundedButton roundedButton1;
     }
 }

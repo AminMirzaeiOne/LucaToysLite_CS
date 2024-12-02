@@ -234,7 +234,7 @@
             this.Controls.Add(this.roundedButton1);
             this.Controls.Add(this.roundedButton3);
             this.Name = "HomeBottomMenu";
-            this.Size = new System.Drawing.Size(691, 70);
+            this.Size = new System.Drawing.Size(1286, 70);
             this.ResumeLayout(false);
 
         }
