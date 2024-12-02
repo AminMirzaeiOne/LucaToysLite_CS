@@ -116,6 +116,7 @@
             this.deletePersonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateBrandToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updatePersonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportContextMenu = new LucaToysLite.Controls.LTContextMenu();
             this.roundedPanel1.SuspendLayout();
             this.usersContextMenu.SuspendLayout();
             this.productContextMenu.SuspendLayout();
@@ -1119,6 +1120,17 @@
             this.updatePersonToolStripMenuItem.Size = new System.Drawing.Size(305, 62);
             this.updatePersonToolStripMenuItem.Text = "Update Person";
             // 
+            // exportContextMenu
+            // 
+            this.exportContextMenu.Background = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.exportContextMenu.BorderSize = ((byte)(2));
+            this.exportContextMenu.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.exportContextMenu, WFAnimations.DecorationType.None);
+            this.exportContextMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exportContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.exportContextMenu.Name = "exportContextMenu";
+            this.exportContextMenu.Size = new System.Drawing.Size(241, 37);
+            // 
             // HomeMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
@@ -1227,5 +1239,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator16;
         private System.Windows.Forms.ToolStripMenuItem updateBrandToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem updatePersonToolStripMenuItem;
+        private Controls.LTContextMenu exportContextMenu;
     }
 }
