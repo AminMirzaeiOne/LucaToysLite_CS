@@ -2265,6 +2265,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="LucaLogo.ico" />
+    <None Include="Resources\Group 42.png" />
+    <None Include="Resources\Group 41.png" />
+    <None Include="Resources\Group 40.png" />
+    <None Include="Resources\editToyIcon.png" />
+    <None Include="Resources\deleteToyIcon.png" />
+    <None Include="Resources\addToyIcon.png" />
+    <None Include="Resources\icons8-package-search-48.png" />
+    <None Include="Resources\icons8-product-48.png" />
     <None Include="Resources\Group 38%281%29.png" />
     <None Include="Resources\Group 38.png" />
     <None Include="Resources\icons8-add-user-group-woman-man-48.png" />

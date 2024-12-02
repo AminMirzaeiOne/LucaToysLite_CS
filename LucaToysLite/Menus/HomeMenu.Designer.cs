@@ -29,11 +29,19 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            WFAnimations.Animation animation7 = new WFAnimations.Animation();
+            WFAnimations.Animation animation1 = new WFAnimations.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeMenu));
             this.panel1 = new System.Windows.Forms.Panel();
             this.animator1 = new WFAnimations.Animator(this.components);
             this.roundedPanel1 = new LucaToysLite.Controls.RoundedPanel();
+            this.usersContextMenu = new LucaToysLite.Controls.LTContextMenu();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.deleteCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.productContextMenu = new LucaToysLite.Controls.LTContextMenu();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.updateDollToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.radioWidgets = new LucaToysLite.Controls.RoundedRadioButton();
             this.radioUsers = new LucaToysLite.Controls.RoundedRadioButton();
             this.radioHelp = new LucaToysLite.Controls.RoundedRadioButton();
@@ -46,28 +54,20 @@
             this.radioAccounting = new LucaToysLite.Controls.RoundedRadioButton();
             this.radioFinance = new LucaToysLite.Controls.RoundedRadioButton();
             this.radioProduct = new LucaToysLite.Controls.RoundedRadioButton();
-            this.usersContextMenu = new LucaToysLite.Controls.LTContextMenu();
             this.manageUsersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.searchUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.addSellerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteSellerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateSellerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.addCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.productContextMenu = new LucaToysLite.Controls.LTContextMenu();
             this.managerProductsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.searchProductsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.addToyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateToyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.addDollToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteDollToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.updateDollToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.roundedPanel1.SuspendLayout();
             this.usersContextMenu.SuspendLayout();
             this.productContextMenu.SuspendLayout();
@@ -88,22 +88,22 @@
             // 
             this.animator1.AnimationType = WFAnimations.AnimationType.Transparent;
             this.animator1.Cursor = null;
-            animation7.AnimateOnlyDifferences = true;
-            animation7.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.BlindCoeff")));
-            animation7.LeafCoeff = 0F;
-            animation7.MaxTime = 1F;
-            animation7.MinTime = 0F;
-            animation7.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.MosaicCoeff")));
-            animation7.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation7.MosaicShift")));
-            animation7.MosaicSize = 0;
-            animation7.Padding = new System.Windows.Forms.Padding(0);
-            animation7.RotateCoeff = 0F;
-            animation7.RotateLimit = 0F;
-            animation7.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.ScaleCoeff")));
-            animation7.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.SlideCoeff")));
-            animation7.TimeCoeff = 0F;
-            animation7.TransparencyCoeff = 1F;
-            this.animator1.DefaultAnimation = animation7;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 1F;
+            this.animator1.DefaultAnimation = animation1;
             this.animator1.Upside = false;
             // 
             // roundedPanel1
@@ -131,6 +131,87 @@
             this.roundedPanel1.Name = "roundedPanel1";
             this.roundedPanel1.Size = new System.Drawing.Size(1951, 80);
             this.roundedPanel1.TabIndex = 1;
+            // 
+            // usersContextMenu
+            // 
+            this.usersContextMenu.Background = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.usersContextMenu.BorderSize = ((byte)(2));
+            this.usersContextMenu.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.usersContextMenu, WFAnimations.DecorationType.None);
+            this.usersContextMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usersContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.usersContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.manageUsersToolStripMenuItem,
+            this.searchUserToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.addSellerToolStripMenuItem,
+            this.deleteSellerToolStripMenuItem,
+            this.updateSellerToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.addCustomerToolStripMenuItem,
+            this.deleteCustomerToolStripMenuItem,
+            this.updateCustomerToolStripMenuItem});
+            this.usersContextMenu.Name = "ltContextMenu1";
+            this.usersContextMenu.Size = new System.Drawing.Size(317, 464);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(313, 6);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(313, 6);
+            // 
+            // deleteCustomerToolStripMenuItem
+            // 
+            this.deleteCustomerToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.deleteCustomerToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.deleteCustomerToolStripMenuItem.Name = "deleteCustomerToolStripMenuItem";
+            this.deleteCustomerToolStripMenuItem.Size = new System.Drawing.Size(316, 56);
+            this.deleteCustomerToolStripMenuItem.Text = "Delete Customer";
+            // 
+            // productContextMenu
+            // 
+            this.productContextMenu.Background = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.productContextMenu.BorderSize = ((byte)(2));
+            this.productContextMenu.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.productContextMenu, WFAnimations.DecorationType.None);
+            this.productContextMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.productContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.productContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.managerProductsToolStripMenuItem,
+            this.searchProductsToolStripMenuItem,
+            this.toolStripSeparator3,
+            this.addToyToolStripMenuItem,
+            this.deleteToyToolStripMenuItem,
+            this.updateToyToolStripMenuItem,
+            this.toolStripSeparator4,
+            this.addDollToolStripMenuItem,
+            this.deleteDollToolStripMenuItem,
+            this.updateDollToolStripMenuItem});
+            this.productContextMenu.Name = "productContextMenu";
+            this.productContextMenu.Size = new System.Drawing.Size(327, 512);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(323, 6);
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(323, 6);
+            // 
+            // updateDollToolStripMenuItem
+            // 
+            this.updateDollToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.updateDollToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.Group_42;
+            this.updateDollToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.updateDollToolStripMenuItem.Name = "updateDollToolStripMenuItem";
+            this.updateDollToolStripMenuItem.Size = new System.Drawing.Size(326, 62);
+            this.updateDollToolStripMenuItem.Text = "Update Doll";
             // 
             // radioWidgets
             // 
@@ -410,28 +491,7 @@
             this.radioProduct.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.radioProduct.UseVisualStyleBackColor = true;
             this.radioProduct.CheckedChanged += new System.EventHandler(this.radioUsers_CheckedChanged);
-            // 
-            // usersContextMenu
-            // 
-            this.usersContextMenu.Background = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.usersContextMenu.BorderSize = ((byte)(2));
-            this.usersContextMenu.ColorPallet = System.Drawing.Color.Crimson;
-            this.animator1.SetDecoration(this.usersContextMenu, WFAnimations.DecorationType.None);
-            this.usersContextMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usersContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.usersContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.manageUsersToolStripMenuItem,
-            this.searchUserToolStripMenuItem,
-            this.toolStripSeparator1,
-            this.addSellerToolStripMenuItem,
-            this.deleteSellerToolStripMenuItem,
-            this.updateSellerToolStripMenuItem,
-            this.toolStripSeparator2,
-            this.addCustomerToolStripMenuItem,
-            this.deleteCustomerToolStripMenuItem,
-            this.updateCustomerToolStripMenuItem});
-            this.usersContextMenu.Name = "ltContextMenu1";
-            this.usersContextMenu.Size = new System.Drawing.Size(317, 464);
+            this.radioProduct.MouseDown += new System.Windows.Forms.MouseEventHandler(this.radioProduct_MouseDown);
             // 
             // manageUsersToolStripMenuItem
             // 
@@ -450,11 +510,6 @@
             this.searchUserToolStripMenuItem.Name = "searchUserToolStripMenuItem";
             this.searchUserToolStripMenuItem.Size = new System.Drawing.Size(316, 56);
             this.searchUserToolStripMenuItem.Text = "Search User";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(313, 6);
             // 
             // addSellerToolStripMenuItem
             // 
@@ -483,11 +538,6 @@
             this.updateSellerToolStripMenuItem.Size = new System.Drawing.Size(316, 56);
             this.updateSellerToolStripMenuItem.Text = "Update Seller";
             // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(313, 6);
-            // 
             // addCustomerToolStripMenuItem
             // 
             this.addCustomerToolStripMenuItem.ForeColor = System.Drawing.Color.White;
@@ -496,14 +546,6 @@
             this.addCustomerToolStripMenuItem.Name = "addCustomerToolStripMenuItem";
             this.addCustomerToolStripMenuItem.Size = new System.Drawing.Size(316, 56);
             this.addCustomerToolStripMenuItem.Text = "Add Customer";
-            // 
-            // deleteCustomerToolStripMenuItem
-            // 
-            this.deleteCustomerToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.deleteCustomerToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.deleteCustomerToolStripMenuItem.Name = "deleteCustomerToolStripMenuItem";
-            this.deleteCustomerToolStripMenuItem.Size = new System.Drawing.Size(316, 56);
-            this.deleteCustomerToolStripMenuItem.Text = "Delete Customer";
             // 
             // updateCustomerToolStripMenuItem
             // 
@@ -514,93 +556,68 @@
             this.updateCustomerToolStripMenuItem.Size = new System.Drawing.Size(316, 56);
             this.updateCustomerToolStripMenuItem.Text = "Update Customer";
             // 
-            // productContextMenu
-            // 
-            this.productContextMenu.Background = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.productContextMenu.BorderSize = ((byte)(2));
-            this.productContextMenu.ColorPallet = System.Drawing.Color.Crimson;
-            this.animator1.SetDecoration(this.productContextMenu, WFAnimations.DecorationType.None);
-            this.productContextMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.productContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.productContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.managerProductsToolStripMenuItem,
-            this.searchProductsToolStripMenuItem,
-            this.toolStripSeparator3,
-            this.addToyToolStripMenuItem,
-            this.deleteToyToolStripMenuItem,
-            this.updateToyToolStripMenuItem,
-            this.toolStripSeparator4,
-            this.addDollToolStripMenuItem,
-            this.deleteDollToolStripMenuItem,
-            this.updateDollToolStripMenuItem});
-            this.productContextMenu.Name = "productContextMenu";
-            this.productContextMenu.Size = new System.Drawing.Size(289, 320);
-            // 
             // managerProductsToolStripMenuItem
             // 
             this.managerProductsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.managerProductsToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_product_48;
+            this.managerProductsToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.managerProductsToolStripMenuItem.Name = "managerProductsToolStripMenuItem";
-            this.managerProductsToolStripMenuItem.Size = new System.Drawing.Size(288, 38);
+            this.managerProductsToolStripMenuItem.Size = new System.Drawing.Size(326, 62);
             this.managerProductsToolStripMenuItem.Text = "Manager Products";
             // 
             // searchProductsToolStripMenuItem
             // 
             this.searchProductsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.searchProductsToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_package_search_48;
+            this.searchProductsToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.searchProductsToolStripMenuItem.Name = "searchProductsToolStripMenuItem";
-            this.searchProductsToolStripMenuItem.Size = new System.Drawing.Size(288, 38);
+            this.searchProductsToolStripMenuItem.Size = new System.Drawing.Size(326, 62);
             this.searchProductsToolStripMenuItem.Text = "Search Products";
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(285, 6);
             // 
             // addToyToolStripMenuItem
             // 
             this.addToyToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.addToyToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.addToyIcon;
+            this.addToyToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.addToyToolStripMenuItem.Name = "addToyToolStripMenuItem";
-            this.addToyToolStripMenuItem.Size = new System.Drawing.Size(288, 38);
+            this.addToyToolStripMenuItem.Size = new System.Drawing.Size(326, 62);
             this.addToyToolStripMenuItem.Text = "Add Toy";
             // 
             // deleteToyToolStripMenuItem
             // 
             this.deleteToyToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.deleteToyToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.deleteToyIcon;
+            this.deleteToyToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.deleteToyToolStripMenuItem.Name = "deleteToyToolStripMenuItem";
-            this.deleteToyToolStripMenuItem.Size = new System.Drawing.Size(288, 38);
+            this.deleteToyToolStripMenuItem.Size = new System.Drawing.Size(326, 62);
             this.deleteToyToolStripMenuItem.Text = "Delete Toy";
             // 
             // updateToyToolStripMenuItem
             // 
             this.updateToyToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.updateToyToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.editToyIcon;
+            this.updateToyToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.updateToyToolStripMenuItem.Name = "updateToyToolStripMenuItem";
-            this.updateToyToolStripMenuItem.Size = new System.Drawing.Size(288, 38);
+            this.updateToyToolStripMenuItem.Size = new System.Drawing.Size(326, 62);
             this.updateToyToolStripMenuItem.Text = "Update Toy";
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(285, 6);
             // 
             // addDollToolStripMenuItem
             // 
             this.addDollToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.addDollToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.Group_40;
+            this.addDollToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.addDollToolStripMenuItem.Name = "addDollToolStripMenuItem";
-            this.addDollToolStripMenuItem.Size = new System.Drawing.Size(288, 38);
+            this.addDollToolStripMenuItem.Size = new System.Drawing.Size(326, 62);
             this.addDollToolStripMenuItem.Text = "Add Doll";
             // 
             // deleteDollToolStripMenuItem
             // 
             this.deleteDollToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.deleteDollToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.Group_41;
+            this.deleteDollToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.deleteDollToolStripMenuItem.Name = "deleteDollToolStripMenuItem";
-            this.deleteDollToolStripMenuItem.Size = new System.Drawing.Size(288, 38);
+            this.deleteDollToolStripMenuItem.Size = new System.Drawing.Size(326, 62);
             this.deleteDollToolStripMenuItem.Text = "Delete Doll";
-            // 
-            // updateDollToolStripMenuItem
-            // 
-            this.updateDollToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.updateDollToolStripMenuItem.Name = "updateDollToolStripMenuItem";
-            this.updateDollToolStripMenuItem.Size = new System.Drawing.Size(288, 38);
-            this.updateDollToolStripMenuItem.Text = "Update Doll";
             // 
             // HomeMenu
             // 
