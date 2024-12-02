@@ -2265,6 +2265,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="LucaLogo.ico" />
+    <None Include="Resources\icons8-xls-48.png" />
+    <None Include="Resources\icons8-pdf-48.png" />
+    <None Include="Resources\icons8-csv-48.png" />
+    <None Include="Resources\icons8-txt-48.png" />
+    <None Include="Resources\icons8-database-restore-48.png" />
+    <None Include="Resources\icons8-disk-partition-48.png" />
     <None Include="Resources\icons8-add-tag-48.png" />
     <None Include="Resources\icons8-remove-tag-48.png" />
     <None Include="Resources\Group 51.png" />

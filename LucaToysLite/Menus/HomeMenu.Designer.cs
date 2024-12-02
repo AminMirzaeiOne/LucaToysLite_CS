@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            WFAnimations.Animation animation8 = new WFAnimations.Animation();
+            WFAnimations.Animation animation1 = new WFAnimations.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeMenu));
             this.panel1 = new System.Windows.Forms.Panel();
             this.animator1 = new WFAnimations.Animator(this.components);
@@ -58,6 +58,9 @@
             this.toolStripSeparator14 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator15 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator16 = new System.Windows.Forms.ToolStripSeparator();
+            this.exportContextMenu = new LucaToysLite.Controls.LTContextMenu();
+            this.toolStripSeparator17 = new System.Windows.Forms.ToolStripSeparator();
+            this.exportXLSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.radioWidgets = new LucaToysLite.Controls.RoundedRadioButton();
             this.radioUsers = new LucaToysLite.Controls.RoundedRadioButton();
             this.radioHelp = new LucaToysLite.Controls.RoundedRadioButton();
@@ -116,14 +119,11 @@
             this.deletePersonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateBrandToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updatePersonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exportContextMenu = new LucaToysLite.Controls.LTContextMenu();
             this.exportDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.importDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator17 = new System.Windows.Forms.ToolStripSeparator();
             this.exportTXTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportCSVToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportPDFToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exportXLSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.roundedPanel1.SuspendLayout();
             this.usersContextMenu.SuspendLayout();
             this.productContextMenu.SuspendLayout();
@@ -150,22 +150,22 @@
             // 
             this.animator1.AnimationType = WFAnimations.AnimationType.Transparent;
             this.animator1.Cursor = null;
-            animation8.AnimateOnlyDifferences = true;
-            animation8.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.BlindCoeff")));
-            animation8.LeafCoeff = 0F;
-            animation8.MaxTime = 1F;
-            animation8.MinTime = 0F;
-            animation8.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.MosaicCoeff")));
-            animation8.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation8.MosaicShift")));
-            animation8.MosaicSize = 0;
-            animation8.Padding = new System.Windows.Forms.Padding(0);
-            animation8.RotateCoeff = 0F;
-            animation8.RotateLimit = 0F;
-            animation8.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.ScaleCoeff")));
-            animation8.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.SlideCoeff")));
-            animation8.TimeCoeff = 0F;
-            animation8.TransparencyCoeff = 1F;
-            this.animator1.DefaultAnimation = animation8;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 1F;
+            this.animator1.DefaultAnimation = animation1;
             this.animator1.Upside = false;
             // 
             // roundedPanel1
@@ -428,6 +428,39 @@
             // 
             this.toolStripSeparator16.Name = "toolStripSeparator16";
             this.toolStripSeparator16.Size = new System.Drawing.Size(302, 6);
+            // 
+            // exportContextMenu
+            // 
+            this.exportContextMenu.Background = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.exportContextMenu.BorderSize = ((byte)(2));
+            this.exportContextMenu.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.exportContextMenu, WFAnimations.DecorationType.None);
+            this.exportContextMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exportContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.exportContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.exportDataToolStripMenuItem,
+            this.importDataToolStripMenuItem,
+            this.toolStripSeparator17,
+            this.exportTXTToolStripMenuItem,
+            this.exportCSVToolStripMenuItem,
+            this.exportPDFToolStripMenuItem,
+            this.exportXLSToolStripMenuItem});
+            this.exportContextMenu.Name = "exportContextMenu";
+            this.exportContextMenu.Size = new System.Drawing.Size(255, 346);
+            // 
+            // toolStripSeparator17
+            // 
+            this.toolStripSeparator17.Name = "toolStripSeparator17";
+            this.toolStripSeparator17.Size = new System.Drawing.Size(251, 6);
+            // 
+            // exportXLSToolStripMenuItem
+            // 
+            this.exportXLSToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.exportXLSToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_xls_48;
+            this.exportXLSToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.exportXLSToolStripMenuItem.Name = "exportXLSToolStripMenuItem";
+            this.exportXLSToolStripMenuItem.Size = new System.Drawing.Size(254, 56);
+            this.exportXLSToolStripMenuItem.Text = "Export XLS";
             // 
             // radioWidgets
             // 
@@ -1129,71 +1162,50 @@
             this.updatePersonToolStripMenuItem.Size = new System.Drawing.Size(305, 62);
             this.updatePersonToolStripMenuItem.Text = "Update Person";
             // 
-            // exportContextMenu
-            // 
-            this.exportContextMenu.Background = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.exportContextMenu.BorderSize = ((byte)(2));
-            this.exportContextMenu.ColorPallet = System.Drawing.Color.Crimson;
-            this.animator1.SetDecoration(this.exportContextMenu, WFAnimations.DecorationType.None);
-            this.exportContextMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exportContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.exportContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.exportDataToolStripMenuItem,
-            this.importDataToolStripMenuItem,
-            this.toolStripSeparator17,
-            this.exportTXTToolStripMenuItem,
-            this.exportCSVToolStripMenuItem,
-            this.exportPDFToolStripMenuItem,
-            this.exportXLSToolStripMenuItem});
-            this.exportContextMenu.Name = "exportContextMenu";
-            this.exportContextMenu.Size = new System.Drawing.Size(223, 238);
-            // 
             // exportDataToolStripMenuItem
             // 
             this.exportDataToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.exportDataToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_database_restore_48;
+            this.exportDataToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.exportDataToolStripMenuItem.Name = "exportDataToolStripMenuItem";
-            this.exportDataToolStripMenuItem.Size = new System.Drawing.Size(240, 38);
+            this.exportDataToolStripMenuItem.Size = new System.Drawing.Size(254, 56);
             this.exportDataToolStripMenuItem.Text = "Export Data";
             // 
             // importDataToolStripMenuItem
             // 
             this.importDataToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.importDataToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_disk_partition_48;
+            this.importDataToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.importDataToolStripMenuItem.Name = "importDataToolStripMenuItem";
-            this.importDataToolStripMenuItem.Size = new System.Drawing.Size(240, 38);
+            this.importDataToolStripMenuItem.Size = new System.Drawing.Size(254, 56);
             this.importDataToolStripMenuItem.Text = "Import Data";
-            // 
-            // toolStripSeparator17
-            // 
-            this.toolStripSeparator17.Name = "toolStripSeparator17";
-            this.toolStripSeparator17.Size = new System.Drawing.Size(237, 6);
             // 
             // exportTXTToolStripMenuItem
             // 
             this.exportTXTToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.exportTXTToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_txt_48;
+            this.exportTXTToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.exportTXTToolStripMenuItem.Name = "exportTXTToolStripMenuItem";
-            this.exportTXTToolStripMenuItem.Size = new System.Drawing.Size(240, 38);
+            this.exportTXTToolStripMenuItem.Size = new System.Drawing.Size(254, 56);
             this.exportTXTToolStripMenuItem.Text = "Export TXT";
             // 
             // exportCSVToolStripMenuItem
             // 
             this.exportCSVToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.exportCSVToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_csv_48;
+            this.exportCSVToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.exportCSVToolStripMenuItem.Name = "exportCSVToolStripMenuItem";
-            this.exportCSVToolStripMenuItem.Size = new System.Drawing.Size(240, 38);
+            this.exportCSVToolStripMenuItem.Size = new System.Drawing.Size(254, 56);
             this.exportCSVToolStripMenuItem.Text = "Export CSV";
             // 
             // exportPDFToolStripMenuItem
             // 
             this.exportPDFToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.exportPDFToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_pdf_48;
+            this.exportPDFToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.exportPDFToolStripMenuItem.Name = "exportPDFToolStripMenuItem";
-            this.exportPDFToolStripMenuItem.Size = new System.Drawing.Size(240, 38);
+            this.exportPDFToolStripMenuItem.Size = new System.Drawing.Size(254, 56);
             this.exportPDFToolStripMenuItem.Text = "Export PDF";
-            // 
-            // exportXLSToolStripMenuItem
-            // 
-            this.exportXLSToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.exportXLSToolStripMenuItem.Name = "exportXLSToolStripMenuItem";
-            this.exportXLSToolStripMenuItem.Size = new System.Drawing.Size(240, 38);
-            this.exportXLSToolStripMenuItem.Text = "Export XLS";
             // 
             // HomeMenu
             // 
