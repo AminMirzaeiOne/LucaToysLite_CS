@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            WFAnimations.Animation animation7 = new WFAnimations.Animation();
+            WFAnimations.Animation animation8 = new WFAnimations.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeMenu));
             this.panel1 = new System.Windows.Forms.Panel();
             this.animator1 = new WFAnimations.Animator(this.components);
@@ -150,22 +150,22 @@
             // 
             this.animator1.AnimationType = WFAnimations.AnimationType.Transparent;
             this.animator1.Cursor = null;
-            animation7.AnimateOnlyDifferences = true;
-            animation7.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.BlindCoeff")));
-            animation7.LeafCoeff = 0F;
-            animation7.MaxTime = 1F;
-            animation7.MinTime = 0F;
-            animation7.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.MosaicCoeff")));
-            animation7.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation7.MosaicShift")));
-            animation7.MosaicSize = 0;
-            animation7.Padding = new System.Windows.Forms.Padding(0);
-            animation7.RotateCoeff = 0F;
-            animation7.RotateLimit = 0F;
-            animation7.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.ScaleCoeff")));
-            animation7.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.SlideCoeff")));
-            animation7.TimeCoeff = 0F;
-            animation7.TransparencyCoeff = 1F;
-            this.animator1.DefaultAnimation = animation7;
+            animation8.AnimateOnlyDifferences = true;
+            animation8.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.BlindCoeff")));
+            animation8.LeafCoeff = 0F;
+            animation8.MaxTime = 1F;
+            animation8.MinTime = 0F;
+            animation8.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.MosaicCoeff")));
+            animation8.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation8.MosaicShift")));
+            animation8.MosaicSize = 0;
+            animation8.Padding = new System.Windows.Forms.Padding(0);
+            animation8.RotateCoeff = 0F;
+            animation8.RotateLimit = 0F;
+            animation8.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.ScaleCoeff")));
+            animation8.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.SlideCoeff")));
+            animation8.TimeCoeff = 0F;
+            animation8.TransparencyCoeff = 1F;
+            this.animator1.DefaultAnimation = animation8;
             this.animator1.Upside = false;
             // 
             // roundedPanel1
@@ -569,6 +569,7 @@
             this.radioExport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.radioExport.UseVisualStyleBackColor = true;
             this.radioExport.CheckedChanged += new System.EventHandler(this.radioUsers_CheckedChanged);
+            this.radioExport.MouseDown += new System.Windows.Forms.MouseEventHandler(this.radioExport_MouseDown);
             // 
             // radioSalesman
             // 
@@ -1145,7 +1146,7 @@
             this.exportPDFToolStripMenuItem,
             this.exportXLSToolStripMenuItem});
             this.exportContextMenu.Name = "exportContextMenu";
-            this.exportContextMenu.Size = new System.Drawing.Size(241, 271);
+            this.exportContextMenu.Size = new System.Drawing.Size(223, 238);
             // 
             // exportDataToolStripMenuItem
             // 
