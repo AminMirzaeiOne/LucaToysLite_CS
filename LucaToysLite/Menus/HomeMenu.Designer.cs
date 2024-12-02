@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            WFAnimations.Animation animation1 = new WFAnimations.Animation();
+            WFAnimations.Animation animation7 = new WFAnimations.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeMenu));
             this.panel1 = new System.Windows.Forms.Panel();
             this.animator1 = new WFAnimations.Animator(this.components);
@@ -88,11 +88,21 @@
             this.purchaseModeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.barcodeCreatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.invoiceContextMenu = new LucaToysLite.Controls.LTContextMenu();
+            this.managerInvoiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
+            this.purchaseInvoiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salesInvoiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
+            this.profitAndLossToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salesInvoiceToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
+            this.purchaseInvoiceToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.roundedPanel1.SuspendLayout();
             this.usersContextMenu.SuspendLayout();
             this.productContextMenu.SuspendLayout();
             this.financeContextMenu.SuspendLayout();
             this.accountingContextMenu.SuspendLayout();
+            this.invoiceContextMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -110,22 +120,22 @@
             // 
             this.animator1.AnimationType = WFAnimations.AnimationType.Transparent;
             this.animator1.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 1F;
-            this.animator1.DefaultAnimation = animation1;
+            animation7.AnimateOnlyDifferences = true;
+            animation7.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.BlindCoeff")));
+            animation7.LeafCoeff = 0F;
+            animation7.MaxTime = 1F;
+            animation7.MinTime = 0F;
+            animation7.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.MosaicCoeff")));
+            animation7.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation7.MosaicShift")));
+            animation7.MosaicSize = 0;
+            animation7.Padding = new System.Windows.Forms.Padding(0);
+            animation7.RotateCoeff = 0F;
+            animation7.RotateLimit = 0F;
+            animation7.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.ScaleCoeff")));
+            animation7.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.SlideCoeff")));
+            animation7.TimeCoeff = 0F;
+            animation7.TransparencyCoeff = 1F;
+            this.animator1.DefaultAnimation = animation7;
             this.animator1.Upside = false;
             // 
             // roundedPanel1
@@ -829,8 +839,75 @@
             this.animator1.SetDecoration(this.invoiceContextMenu, WFAnimations.DecorationType.None);
             this.invoiceContextMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.invoiceContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.invoiceContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.managerInvoiceToolStripMenuItem,
+            this.toolStripSeparator9,
+            this.salesInvoiceToolStripMenuItem,
+            this.purchaseInvoiceToolStripMenuItem,
+            this.toolStripSeparator10,
+            this.profitAndLossToolStripMenuItem,
+            this.toolStripSeparator11,
+            this.salesInvoiceToolStripMenuItem1,
+            this.purchaseInvoiceToolStripMenuItem1});
             this.invoiceContextMenu.Name = "invoiceContextMenu";
-            this.invoiceContextMenu.Size = new System.Drawing.Size(241, 37);
+            this.invoiceContextMenu.Size = new System.Drawing.Size(271, 250);
+            // 
+            // managerInvoiceToolStripMenuItem
+            // 
+            this.managerInvoiceToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.managerInvoiceToolStripMenuItem.Name = "managerInvoiceToolStripMenuItem";
+            this.managerInvoiceToolStripMenuItem.Size = new System.Drawing.Size(270, 38);
+            this.managerInvoiceToolStripMenuItem.Text = "Manager Invoice";
+            // 
+            // toolStripSeparator9
+            // 
+            this.toolStripSeparator9.Name = "toolStripSeparator9";
+            this.toolStripSeparator9.Size = new System.Drawing.Size(267, 6);
+            // 
+            // purchaseInvoiceToolStripMenuItem
+            // 
+            this.purchaseInvoiceToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.purchaseInvoiceToolStripMenuItem.Name = "purchaseInvoiceToolStripMenuItem";
+            this.purchaseInvoiceToolStripMenuItem.Size = new System.Drawing.Size(270, 38);
+            this.purchaseInvoiceToolStripMenuItem.Text = "Purchase Invoice";
+            // 
+            // salesInvoiceToolStripMenuItem
+            // 
+            this.salesInvoiceToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.salesInvoiceToolStripMenuItem.Name = "salesInvoiceToolStripMenuItem";
+            this.salesInvoiceToolStripMenuItem.Size = new System.Drawing.Size(270, 38);
+            this.salesInvoiceToolStripMenuItem.Text = "Sales Invoice";
+            // 
+            // toolStripSeparator10
+            // 
+            this.toolStripSeparator10.Name = "toolStripSeparator10";
+            this.toolStripSeparator10.Size = new System.Drawing.Size(267, 6);
+            // 
+            // profitAndLossToolStripMenuItem
+            // 
+            this.profitAndLossToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.profitAndLossToolStripMenuItem.Name = "profitAndLossToolStripMenuItem";
+            this.profitAndLossToolStripMenuItem.Size = new System.Drawing.Size(270, 38);
+            this.profitAndLossToolStripMenuItem.Text = "Profit and Loss";
+            // 
+            // salesInvoiceToolStripMenuItem1
+            // 
+            this.salesInvoiceToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
+            this.salesInvoiceToolStripMenuItem1.Name = "salesInvoiceToolStripMenuItem1";
+            this.salesInvoiceToolStripMenuItem1.Size = new System.Drawing.Size(270, 38);
+            this.salesInvoiceToolStripMenuItem1.Text = "Sales Invoice";
+            // 
+            // toolStripSeparator11
+            // 
+            this.toolStripSeparator11.Name = "toolStripSeparator11";
+            this.toolStripSeparator11.Size = new System.Drawing.Size(267, 6);
+            // 
+            // purchaseInvoiceToolStripMenuItem1
+            // 
+            this.purchaseInvoiceToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
+            this.purchaseInvoiceToolStripMenuItem1.Name = "purchaseInvoiceToolStripMenuItem1";
+            this.purchaseInvoiceToolStripMenuItem1.Size = new System.Drawing.Size(270, 38);
+            this.purchaseInvoiceToolStripMenuItem1.Text = "Purchase Invoice";
             // 
             // HomeMenu
             // 
@@ -847,6 +924,7 @@
             this.productContextMenu.ResumeLayout(false);
             this.financeContextMenu.ResumeLayout(false);
             this.accountingContextMenu.ResumeLayout(false);
+            this.invoiceContextMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -909,5 +987,14 @@
         private System.Windows.Forms.ToolStripMenuItem purchaseModeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem barcodeCreatorToolStripMenuItem;
         private Controls.LTContextMenu invoiceContextMenu;
+        private System.Windows.Forms.ToolStripMenuItem managerInvoiceToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator9;
+        private System.Windows.Forms.ToolStripMenuItem purchaseInvoiceToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salesInvoiceToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator10;
+        private System.Windows.Forms.ToolStripMenuItem profitAndLossToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator11;
+        private System.Windows.Forms.ToolStripMenuItem salesInvoiceToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem purchaseInvoiceToolStripMenuItem1;
     }
 }
