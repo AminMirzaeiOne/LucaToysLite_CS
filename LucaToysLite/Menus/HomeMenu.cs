@@ -311,5 +311,10 @@ namespace LucaToysLite.Menus
         {
             this.documentsContextMenu.Show(this.radioDocuments, new Point(0, 70));
         }
+
+        private void radioSalesman_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.salesmanContextMenu.Show(this.radioSalesman, new Point(0, 70));
+        }
     }
 }

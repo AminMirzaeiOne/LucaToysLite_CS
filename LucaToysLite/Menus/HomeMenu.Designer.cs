@@ -583,6 +583,7 @@
             this.radioSalesman.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.radioSalesman.UseVisualStyleBackColor = true;
             this.radioSalesman.CheckedChanged += new System.EventHandler(this.radioUsers_CheckedChanged);
+            this.radioSalesman.MouseDown += new System.Windows.Forms.MouseEventHandler(this.radioSalesman_MouseDown);
             // 
             // radioDocuments
             // 
