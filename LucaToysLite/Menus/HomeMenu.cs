@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LucaToysLite.Controls;
 
 namespace LucaToysLite.Menus
 {
@@ -386,30 +387,34 @@ namespace LucaToysLite.Menus
             if (this.leftMin < 80)
             {
                 this.leftMin += 8;
-                this.radioUsers.Left += this.leftMin;
-                this.radioProduct.Left += this.leftMin;
-                this.radioFinance.Left += this.leftMin;
-                this.radioAccounting.Left += this.leftMin;
-                this.radioInvoice.Left += this.leftMin;
-                this.radioDocuments.Left += this.leftMin;
-                this.radioSalesman.Left += this.leftMin;
-                this.radioExport.Left += this.leftMin;
-                this.radioApps.Left += this.leftMin;
-                this.radioWidgets.Left += this.leftMin;
-                this.radioSettings.Left += this.leftMin;
-                this.radioHelp.Left += this.leftMin;
-                this.radioAbout.Left += this.leftMin;
+                foreach(RoundedRadioButton item in this.panel2.Controls.OfType<RoundedRadioButton>())
+                {
+                    item.Left += this.leftMin;
+                }
             }
             else
             {
                 this.timerLeft.Stop();
+                this.rightMin = 0;
             }
             
         }
 
         private void timerRight_Tick(object sender, EventArgs e)
         {
-
+            if (this.rightMin < 80)
+            {
+                this.rightMin += 8;
+                foreach (RoundedRadioButton item in this.panel2.Controls.OfType<RoundedRadioButton>())
+                {
+                    item.Left -= this.leftMin;
+                }
+            }
+            else
+            {
+                this.timerRight.Stop();
+                this.leftMin = 0;
+            }
         }
     }
 }
