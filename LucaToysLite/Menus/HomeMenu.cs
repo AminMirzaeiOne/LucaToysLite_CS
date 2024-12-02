@@ -285,7 +285,7 @@ namespace LucaToysLite.Menus
         private void radioUsers_MouseDown(object sender, MouseEventArgs e)
         {
             if (this.radioUsers.Checked)
-                this.ltContextMenu1.Show(this.radioUsers, new Point(0, 70));
+                this.usersContextMenu.Show(this.radioUsers, new Point(0, 70));
         }
     }
 }

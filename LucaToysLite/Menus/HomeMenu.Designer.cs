@@ -29,15 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            WFAnimations.Animation animation1 = new WFAnimations.Animation();
+            WFAnimations.Animation animation2 = new WFAnimations.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeMenu));
             this.panel1 = new System.Windows.Forms.Panel();
             this.animator1 = new WFAnimations.Animator(this.components);
             this.roundedPanel1 = new LucaToysLite.Controls.RoundedPanel();
-            this.ltContextMenu1 = new LucaToysLite.Controls.LTContextMenu();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.deleteCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.radioWidgets = new LucaToysLite.Controls.RoundedRadioButton();
             this.radioUsers = new LucaToysLite.Controls.RoundedRadioButton();
             this.radioHelp = new LucaToysLite.Controls.RoundedRadioButton();
@@ -50,15 +46,19 @@
             this.radioAccounting = new LucaToysLite.Controls.RoundedRadioButton();
             this.radioFinance = new LucaToysLite.Controls.RoundedRadioButton();
             this.radioProduct = new LucaToysLite.Controls.RoundedRadioButton();
+            this.usersContextMenu = new LucaToysLite.Controls.LTContextMenu();
             this.manageUsersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.searchUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.addSellerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteSellerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateSellerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.addCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.roundedPanel1.SuspendLayout();
-            this.ltContextMenu1.SuspendLayout();
+            this.usersContextMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -76,22 +76,22 @@
             // 
             this.animator1.AnimationType = WFAnimations.AnimationType.Transparent;
             this.animator1.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 1F;
-            this.animator1.DefaultAnimation = animation1;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 1F;
+            this.animator1.DefaultAnimation = animation2;
             this.animator1.Upside = false;
             // 
             // roundedPanel1
@@ -119,46 +119,6 @@
             this.roundedPanel1.Name = "roundedPanel1";
             this.roundedPanel1.Size = new System.Drawing.Size(1951, 80);
             this.roundedPanel1.TabIndex = 1;
-            // 
-            // ltContextMenu1
-            // 
-            this.ltContextMenu1.Background = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.ltContextMenu1.BorderSize = ((byte)(2));
-            this.ltContextMenu1.ColorPallet = System.Drawing.Color.Crimson;
-            this.animator1.SetDecoration(this.ltContextMenu1, WFAnimations.DecorationType.None);
-            this.ltContextMenu1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ltContextMenu1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.ltContextMenu1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.manageUsersToolStripMenuItem,
-            this.searchUserToolStripMenuItem,
-            this.toolStripSeparator1,
-            this.addSellerToolStripMenuItem,
-            this.deleteSellerToolStripMenuItem,
-            this.updateSellerToolStripMenuItem,
-            this.toolStripSeparator2,
-            this.addCustomerToolStripMenuItem,
-            this.deleteCustomerToolStripMenuItem,
-            this.updateCustomerToolStripMenuItem});
-            this.ltContextMenu1.Name = "ltContextMenu1";
-            this.ltContextMenu1.Size = new System.Drawing.Size(317, 464);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(313, 6);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(313, 6);
-            // 
-            // deleteCustomerToolStripMenuItem
-            // 
-            this.deleteCustomerToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.deleteCustomerToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.deleteCustomerToolStripMenuItem.Name = "deleteCustomerToolStripMenuItem";
-            this.deleteCustomerToolStripMenuItem.Size = new System.Drawing.Size(316, 56);
-            this.deleteCustomerToolStripMenuItem.Text = "Delete Customer";
             // 
             // radioWidgets
             // 
@@ -439,6 +399,28 @@
             this.radioProduct.UseVisualStyleBackColor = true;
             this.radioProduct.CheckedChanged += new System.EventHandler(this.radioUsers_CheckedChanged);
             // 
+            // usersContextMenu
+            // 
+            this.usersContextMenu.Background = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.usersContextMenu.BorderSize = ((byte)(2));
+            this.usersContextMenu.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.usersContextMenu, WFAnimations.DecorationType.None);
+            this.usersContextMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usersContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.usersContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.manageUsersToolStripMenuItem,
+            this.searchUserToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.addSellerToolStripMenuItem,
+            this.deleteSellerToolStripMenuItem,
+            this.updateSellerToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.addCustomerToolStripMenuItem,
+            this.deleteCustomerToolStripMenuItem,
+            this.updateCustomerToolStripMenuItem});
+            this.usersContextMenu.Name = "ltContextMenu1";
+            this.usersContextMenu.Size = new System.Drawing.Size(317, 464);
+            // 
             // manageUsersToolStripMenuItem
             // 
             this.manageUsersToolStripMenuItem.ForeColor = System.Drawing.Color.White;
@@ -456,6 +438,11 @@
             this.searchUserToolStripMenuItem.Name = "searchUserToolStripMenuItem";
             this.searchUserToolStripMenuItem.Size = new System.Drawing.Size(316, 56);
             this.searchUserToolStripMenuItem.Text = "Search User";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(313, 6);
             // 
             // addSellerToolStripMenuItem
             // 
@@ -484,6 +471,11 @@
             this.updateSellerToolStripMenuItem.Size = new System.Drawing.Size(316, 56);
             this.updateSellerToolStripMenuItem.Text = "Update Seller";
             // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(313, 6);
+            // 
             // addCustomerToolStripMenuItem
             // 
             this.addCustomerToolStripMenuItem.ForeColor = System.Drawing.Color.White;
@@ -492,6 +484,14 @@
             this.addCustomerToolStripMenuItem.Name = "addCustomerToolStripMenuItem";
             this.addCustomerToolStripMenuItem.Size = new System.Drawing.Size(316, 56);
             this.addCustomerToolStripMenuItem.Text = "Add Customer";
+            // 
+            // deleteCustomerToolStripMenuItem
+            // 
+            this.deleteCustomerToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.deleteCustomerToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.deleteCustomerToolStripMenuItem.Name = "deleteCustomerToolStripMenuItem";
+            this.deleteCustomerToolStripMenuItem.Size = new System.Drawing.Size(316, 56);
+            this.deleteCustomerToolStripMenuItem.Text = "Delete Customer";
             // 
             // updateCustomerToolStripMenuItem
             // 
@@ -513,7 +513,7 @@
             this.Name = "HomeMenu";
             this.Size = new System.Drawing.Size(1957, 230);
             this.roundedPanel1.ResumeLayout(false);
-            this.ltContextMenu1.ResumeLayout(false);
+            this.usersContextMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -534,7 +534,7 @@
         private Controls.RoundedRadioButton radioWidgets;
         private Controls.RoundedRadioButton radioHelp;
         private Controls.RoundedRadioButton radioSalesman;
-        private Controls.LTContextMenu ltContextMenu1;
+        private Controls.LTContextMenu usersContextMenu;
         private System.Windows.Forms.ToolStripMenuItem manageUsersToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem searchUserToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
