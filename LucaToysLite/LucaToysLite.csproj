@@ -2265,6 +2265,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="LucaLogo.ico" />
+    <None Include="Resources\icons8-phone-48.png" />
+    <None Include="Resources\icons8-web-design-48.png" />
+    <None Include="Resources\icons8-google-translate-new-48.png" />
+    <None Include="Resources\icons8-update-48.png" />
+    <None Include="Resources\icons8-drawing-48.png" />
+    <None Include="Resources\icons8-note-48.png" />
+    <None Include="Resources\icons8-calculator-481.png" />
     <None Include="Resources\icons8-xls-48.png" />
     <None Include="Resources\icons8-pdf-48.png" />
     <None Include="Resources\icons8-csv-48.png" />
