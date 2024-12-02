@@ -301,5 +301,10 @@ namespace LucaToysLite.Menus
         {
             this.accountingContextMenu.Show(this.radioAccounting, new Point(0, 70));
         }
+
+        private void radioInvoice_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.invoiceContextMenu.Show(this.radioInvoice, new Point(0, 70));
+        }
     }
 }
