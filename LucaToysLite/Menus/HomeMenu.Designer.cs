@@ -41,7 +41,12 @@
             this.productContextMenu = new LucaToysLite.Controls.LTContextMenu();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.updateDollToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.financeContextMenu = new LucaToysLite.Controls.LTContextMenu();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.costsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+            this.soldToysToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.soldDollsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.radioWidgets = new LucaToysLite.Controls.RoundedRadioButton();
             this.radioUsers = new LucaToysLite.Controls.RoundedRadioButton();
             this.radioHelp = new LucaToysLite.Controls.RoundedRadioButton();
@@ -68,9 +73,15 @@
             this.updateToyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addDollToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteDollToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.updateDollToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.performanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.transactionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.revenuesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cashOperationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.roundedPanel1.SuspendLayout();
             this.usersContextMenu.SuspendLayout();
             this.productContextMenu.SuspendLayout();
+            this.financeContextMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -204,14 +215,61 @@
             this.toolStripSeparator4.Name = "toolStripSeparator4";
             this.toolStripSeparator4.Size = new System.Drawing.Size(323, 6);
             // 
-            // updateDollToolStripMenuItem
+            // financeContextMenu
             // 
-            this.updateDollToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.updateDollToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.Group_42;
-            this.updateDollToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.updateDollToolStripMenuItem.Name = "updateDollToolStripMenuItem";
-            this.updateDollToolStripMenuItem.Size = new System.Drawing.Size(326, 62);
-            this.updateDollToolStripMenuItem.Text = "Update Doll";
+            this.financeContextMenu.Background = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.financeContextMenu.BorderSize = ((byte)(2));
+            this.financeContextMenu.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.financeContextMenu, WFAnimations.DecorationType.None);
+            this.financeContextMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.financeContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.financeContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.performanceToolStripMenuItem,
+            this.transactionsToolStripMenuItem,
+            this.toolStripSeparator5,
+            this.costsToolStripMenuItem,
+            this.revenuesToolStripMenuItem,
+            this.cashOperationToolStripMenuItem,
+            this.toolStripSeparator6,
+            this.soldToysToolStripMenuItem,
+            this.soldDollsToolStripMenuItem});
+            this.financeContextMenu.Name = "financeContextMenu";
+            this.financeContextMenu.Size = new System.Drawing.Size(290, 408);
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(286, 6);
+            // 
+            // costsToolStripMenuItem
+            // 
+            this.costsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.costsToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_bribery_48;
+            this.costsToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.costsToolStripMenuItem.Name = "costsToolStripMenuItem";
+            this.costsToolStripMenuItem.Size = new System.Drawing.Size(289, 56);
+            this.costsToolStripMenuItem.Text = "Costs";
+            // 
+            // toolStripSeparator6
+            // 
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
+            this.toolStripSeparator6.Size = new System.Drawing.Size(286, 6);
+            // 
+            // soldToysToolStripMenuItem
+            // 
+            this.soldToysToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.soldToysToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.soldToysToolStripMenuItem.Name = "soldToysToolStripMenuItem";
+            this.soldToysToolStripMenuItem.Size = new System.Drawing.Size(289, 56);
+            this.soldToysToolStripMenuItem.Text = "Sold Toys";
+            // 
+            // soldDollsToolStripMenuItem
+            // 
+            this.soldDollsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.soldDollsToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.soldDollsToolStripMenuItem.Name = "soldDollsToolStripMenuItem";
+            this.soldDollsToolStripMenuItem.Size = new System.Drawing.Size(289, 56);
+            this.soldDollsToolStripMenuItem.Text = "Sold Dolls";
             // 
             // radioWidgets
             // 
@@ -468,6 +526,7 @@
             this.radioFinance.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.radioFinance.UseVisualStyleBackColor = true;
             this.radioFinance.CheckedChanged += new System.EventHandler(this.radioUsers_CheckedChanged);
+            this.radioFinance.MouseDown += new System.Windows.Forms.MouseEventHandler(this.radioFinance_MouseDown);
             // 
             // radioProduct
             // 
@@ -619,6 +678,51 @@
             this.deleteDollToolStripMenuItem.Size = new System.Drawing.Size(326, 62);
             this.deleteDollToolStripMenuItem.Text = "Delete Doll";
             // 
+            // updateDollToolStripMenuItem
+            // 
+            this.updateDollToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.updateDollToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.Group_42;
+            this.updateDollToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.updateDollToolStripMenuItem.Name = "updateDollToolStripMenuItem";
+            this.updateDollToolStripMenuItem.Size = new System.Drawing.Size(326, 62);
+            this.updateDollToolStripMenuItem.Text = "Update Doll";
+            // 
+            // performanceToolStripMenuItem
+            // 
+            this.performanceToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.performanceToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_performance_48;
+            this.performanceToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.performanceToolStripMenuItem.Name = "performanceToolStripMenuItem";
+            this.performanceToolStripMenuItem.Size = new System.Drawing.Size(289, 56);
+            this.performanceToolStripMenuItem.Text = "Performance";
+            // 
+            // transactionsToolStripMenuItem
+            // 
+            this.transactionsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.transactionsToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_ledger_48;
+            this.transactionsToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.transactionsToolStripMenuItem.Name = "transactionsToolStripMenuItem";
+            this.transactionsToolStripMenuItem.Size = new System.Drawing.Size(289, 56);
+            this.transactionsToolStripMenuItem.Text = "Transactions";
+            // 
+            // revenuesToolStripMenuItem
+            // 
+            this.revenuesToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.revenuesToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_money_48;
+            this.revenuesToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.revenuesToolStripMenuItem.Name = "revenuesToolStripMenuItem";
+            this.revenuesToolStripMenuItem.Size = new System.Drawing.Size(289, 56);
+            this.revenuesToolStripMenuItem.Text = "Revenues";
+            // 
+            // cashOperationToolStripMenuItem
+            // 
+            this.cashOperationToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.cashOperationToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_cash_48;
+            this.cashOperationToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.cashOperationToolStripMenuItem.Name = "cashOperationToolStripMenuItem";
+            this.cashOperationToolStripMenuItem.Size = new System.Drawing.Size(289, 56);
+            this.cashOperationToolStripMenuItem.Text = "Cash Operation";
+            // 
             // HomeMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
@@ -632,6 +736,7 @@
             this.roundedPanel1.ResumeLayout(false);
             this.usersContextMenu.ResumeLayout(false);
             this.productContextMenu.ResumeLayout(false);
+            this.financeContextMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -674,5 +779,15 @@
         private System.Windows.Forms.ToolStripMenuItem addDollToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleteDollToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem updateDollToolStripMenuItem;
+        private Controls.LTContextMenu financeContextMenu;
+        private System.Windows.Forms.ToolStripMenuItem performanceToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem transactionsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
+        private System.Windows.Forms.ToolStripMenuItem cashOperationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem revenuesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem costsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
+        private System.Windows.Forms.ToolStripMenuItem soldToysToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem soldDollsToolStripMenuItem;
     }
 }

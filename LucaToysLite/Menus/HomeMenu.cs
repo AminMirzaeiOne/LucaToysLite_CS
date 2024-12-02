@@ -291,5 +291,10 @@ namespace LucaToysLite.Menus
         {
             this.productContextMenu.Show(this.radioProduct, new Point(0, 70));
         }
+
+        private void radioFinance_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.financeContextMenu.Show(this.radioFinance, new Point(0, 70));
+        }
     }
 }

@@ -943,6 +943,16 @@ namespace LucaToysLite.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_bribery_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-bribery-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_bribery_68 {
             get {
                 object obj = ResourceManager.GetObject("icons8-bribery-68", resourceCulture);
@@ -1076,6 +1086,16 @@ namespace LucaToysLite.Properties {
         internal static System.Drawing.Bitmap icons8_caretaker_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-caretaker-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_cash_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-cash-48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2063,6 +2083,16 @@ namespace LucaToysLite.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_ledger_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-ledger-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_ledger_68 {
             get {
                 object obj = ResourceManager.GetObject("icons8-ledger-68", resourceCulture);
@@ -2156,6 +2186,16 @@ namespace LucaToysLite.Properties {
         internal static System.Drawing.Bitmap icons8_microsoft_translator_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-microsoft-translator-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_money_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-money-48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2346,6 +2386,16 @@ namespace LucaToysLite.Properties {
         internal static System.Drawing.Bitmap icons8_pdf_68_1_ {
             get {
                 object obj = ResourceManager.GetObject("icons8-pdf-68(1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_performance_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-performance-48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

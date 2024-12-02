@@ -2265,6 +2265,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="LucaLogo.ico" />
+    <None Include="Resources\icons8-bribery-48.png" />
+    <None Include="Resources\icons8-money-48.png" />
+    <None Include="Resources\icons8-cash-48.png" />
+    <None Include="Resources\icons8-ledger-48.png" />
+    <None Include="Resources\icons8-performance-48.png" />
     <None Include="Resources\Group 42.png" />
     <None Include="Resources\Group 41.png" />
     <None Include="Resources\Group 40.png" />
