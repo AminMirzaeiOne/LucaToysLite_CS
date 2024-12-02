@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            WFAnimations.Animation animation3 = new WFAnimations.Animation();
+            WFAnimations.Animation animation8 = new WFAnimations.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeMenu));
             this.panel1 = new System.Windows.Forms.Panel();
             this.animator1 = new WFAnimations.Animator(this.components);
@@ -159,7 +159,15 @@
             this.toolStripSeparator24 = new System.Windows.Forms.ToolStripSeparator();
             this.databaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpContextMenu = new LucaToysLite.Controls.LTContextMenu();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpHomeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpPurchaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator25 = new System.Windows.Forms.ToolStripSeparator();
+            this.helpUsersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpProductsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator26 = new System.Windows.Forms.ToolStripSeparator();
+            this.helpAccoutingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpFinanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpInvoiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.roundedPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.usersContextMenu.SuspendLayout();
@@ -191,22 +199,22 @@
             // 
             this.animator1.AnimationType = WFAnimations.AnimationType.Transparent;
             this.animator1.Cursor = null;
-            animation3.AnimateOnlyDifferences = true;
-            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
-            animation3.LeafCoeff = 0F;
-            animation3.MaxTime = 1F;
-            animation3.MinTime = 0F;
-            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
-            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
-            animation3.MosaicSize = 0;
-            animation3.Padding = new System.Windows.Forms.Padding(0);
-            animation3.RotateCoeff = 0F;
-            animation3.RotateLimit = 0F;
-            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
-            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
-            animation3.TimeCoeff = 0F;
-            animation3.TransparencyCoeff = 1F;
-            this.animator1.DefaultAnimation = animation3;
+            animation8.AnimateOnlyDifferences = true;
+            animation8.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.BlindCoeff")));
+            animation8.LeafCoeff = 0F;
+            animation8.MaxTime = 1F;
+            animation8.MinTime = 0F;
+            animation8.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.MosaicCoeff")));
+            animation8.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation8.MosaicShift")));
+            animation8.MosaicSize = 0;
+            animation8.Padding = new System.Windows.Forms.Padding(0);
+            animation8.RotateCoeff = 0F;
+            animation8.RotateLimit = 0F;
+            animation8.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.ScaleCoeff")));
+            animation8.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.SlideCoeff")));
+            animation8.TimeCoeff = 0F;
+            animation8.TransparencyCoeff = 1F;
+            this.animator1.DefaultAnimation = animation8;
             this.animator1.Upside = false;
             // 
             // roundedPanel1
@@ -1608,16 +1616,76 @@
             this.helpContextMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.helpContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.helpContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.helpToolStripMenuItem});
+            this.helpHomeToolStripMenuItem,
+            this.helpPurchaseToolStripMenuItem,
+            this.toolStripSeparator25,
+            this.helpUsersToolStripMenuItem,
+            this.helpProductsToolStripMenuItem,
+            this.toolStripSeparator26,
+            this.helpInvoiceToolStripMenuItem,
+            this.helpFinanceToolStripMenuItem,
+            this.helpAccoutingToolStripMenuItem});
             this.helpContextMenu.Name = "helpContextMenu";
-            this.helpContextMenu.Size = new System.Drawing.Size(241, 75);
+            this.helpContextMenu.Size = new System.Drawing.Size(256, 315);
             // 
-            // helpToolStripMenuItem
+            // helpHomeToolStripMenuItem
             // 
-            this.helpToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(240, 38);
-            this.helpToolStripMenuItem.Text = "Help";
+            this.helpHomeToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.helpHomeToolStripMenuItem.Name = "helpHomeToolStripMenuItem";
+            this.helpHomeToolStripMenuItem.Size = new System.Drawing.Size(240, 38);
+            this.helpHomeToolStripMenuItem.Text = "Help Home";
+            // 
+            // helpPurchaseToolStripMenuItem
+            // 
+            this.helpPurchaseToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.helpPurchaseToolStripMenuItem.Name = "helpPurchaseToolStripMenuItem";
+            this.helpPurchaseToolStripMenuItem.Size = new System.Drawing.Size(244, 38);
+            this.helpPurchaseToolStripMenuItem.Text = "Help Purchase";
+            // 
+            // toolStripSeparator25
+            // 
+            this.toolStripSeparator25.Name = "toolStripSeparator25";
+            this.toolStripSeparator25.Size = new System.Drawing.Size(241, 6);
+            // 
+            // helpUsersToolStripMenuItem
+            // 
+            this.helpUsersToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.helpUsersToolStripMenuItem.Name = "helpUsersToolStripMenuItem";
+            this.helpUsersToolStripMenuItem.Size = new System.Drawing.Size(244, 38);
+            this.helpUsersToolStripMenuItem.Text = "Help Users";
+            // 
+            // helpProductsToolStripMenuItem
+            // 
+            this.helpProductsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.helpProductsToolStripMenuItem.Name = "helpProductsToolStripMenuItem";
+            this.helpProductsToolStripMenuItem.Size = new System.Drawing.Size(244, 38);
+            this.helpProductsToolStripMenuItem.Text = "Help Products";
+            // 
+            // toolStripSeparator26
+            // 
+            this.toolStripSeparator26.Name = "toolStripSeparator26";
+            this.toolStripSeparator26.Size = new System.Drawing.Size(241, 6);
+            // 
+            // helpAccoutingToolStripMenuItem
+            // 
+            this.helpAccoutingToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.helpAccoutingToolStripMenuItem.Name = "helpAccoutingToolStripMenuItem";
+            this.helpAccoutingToolStripMenuItem.Size = new System.Drawing.Size(255, 38);
+            this.helpAccoutingToolStripMenuItem.Text = "Help Accouting";
+            // 
+            // helpFinanceToolStripMenuItem
+            // 
+            this.helpFinanceToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.helpFinanceToolStripMenuItem.Name = "helpFinanceToolStripMenuItem";
+            this.helpFinanceToolStripMenuItem.Size = new System.Drawing.Size(255, 38);
+            this.helpFinanceToolStripMenuItem.Text = "Help Finance";
+            // 
+            // helpInvoiceToolStripMenuItem
+            // 
+            this.helpInvoiceToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.helpInvoiceToolStripMenuItem.Name = "helpInvoiceToolStripMenuItem";
+            this.helpInvoiceToolStripMenuItem.Size = new System.Drawing.Size(255, 38);
+            this.helpInvoiceToolStripMenuItem.Text = "Help Invoice";
             // 
             // HomeMenu
             // 
@@ -1776,6 +1844,14 @@
         private System.Windows.Forms.ToolStripMenuItem managerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem databaseToolStripMenuItem;
         private Controls.LTContextMenu helpContextMenu;
-        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpHomeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpPurchaseToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator25;
+        private System.Windows.Forms.ToolStripMenuItem helpUsersToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpProductsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator26;
+        private System.Windows.Forms.ToolStripMenuItem helpAccoutingToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpInvoiceToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpFinanceToolStripMenuItem;
     }
 }
