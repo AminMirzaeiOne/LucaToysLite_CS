@@ -1353,6 +1353,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Widgets\Cleander.resx">
+      <DependentUpon>Cleander.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Widgets\Clock.resx">
       <DependentUpon>Clock.cs</DependentUpon>
     </EmbeddedResource>
