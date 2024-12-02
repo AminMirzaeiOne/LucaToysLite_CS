@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            WFAnimations.Animation animation1 = new WFAnimations.Animation();
+            WFAnimations.Animation animation7 = new WFAnimations.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeMenu));
             this.panel1 = new System.Windows.Forms.Panel();
             this.animator1 = new WFAnimations.Animator(this.components);
@@ -60,7 +60,6 @@
             this.toolStripSeparator16 = new System.Windows.Forms.ToolStripSeparator();
             this.exportContextMenu = new LucaToysLite.Controls.LTContextMenu();
             this.toolStripSeparator17 = new System.Windows.Forms.ToolStripSeparator();
-            this.exportXLSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.radioWidgets = new LucaToysLite.Controls.RoundedRadioButton();
             this.radioUsers = new LucaToysLite.Controls.RoundedRadioButton();
             this.radioHelp = new LucaToysLite.Controls.RoundedRadioButton();
@@ -124,6 +123,18 @@
             this.exportTXTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportCSVToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportPDFToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportXLSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.appToolsContextMenu = new LucaToysLite.Controls.LTContextMenu();
+            this.calculatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator18 = new System.Windows.Forms.ToolStripSeparator();
+            this.paintToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.notepadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator19 = new System.Windows.Forms.ToolStripSeparator();
+            this.converterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.translatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.webBrowserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator20 = new System.Windows.Forms.ToolStripSeparator();
+            this.phoneBookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.roundedPanel1.SuspendLayout();
             this.usersContextMenu.SuspendLayout();
             this.productContextMenu.SuspendLayout();
@@ -133,6 +144,7 @@
             this.documentsContextMenu.SuspendLayout();
             this.salesmanContextMenu.SuspendLayout();
             this.exportContextMenu.SuspendLayout();
+            this.appToolsContextMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -150,22 +162,22 @@
             // 
             this.animator1.AnimationType = WFAnimations.AnimationType.Transparent;
             this.animator1.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 1F;
-            this.animator1.DefaultAnimation = animation1;
+            animation7.AnimateOnlyDifferences = true;
+            animation7.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.BlindCoeff")));
+            animation7.LeafCoeff = 0F;
+            animation7.MaxTime = 1F;
+            animation7.MinTime = 0F;
+            animation7.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.MosaicCoeff")));
+            animation7.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation7.MosaicShift")));
+            animation7.MosaicSize = 0;
+            animation7.Padding = new System.Windows.Forms.Padding(0);
+            animation7.RotateCoeff = 0F;
+            animation7.RotateLimit = 0F;
+            animation7.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.ScaleCoeff")));
+            animation7.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.SlideCoeff")));
+            animation7.TimeCoeff = 0F;
+            animation7.TransparencyCoeff = 1F;
+            this.animator1.DefaultAnimation = animation7;
             this.animator1.Upside = false;
             // 
             // roundedPanel1
@@ -452,15 +464,6 @@
             // 
             this.toolStripSeparator17.Name = "toolStripSeparator17";
             this.toolStripSeparator17.Size = new System.Drawing.Size(251, 6);
-            // 
-            // exportXLSToolStripMenuItem
-            // 
-            this.exportXLSToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.exportXLSToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_xls_48;
-            this.exportXLSToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.exportXLSToolStripMenuItem.Name = "exportXLSToolStripMenuItem";
-            this.exportXLSToolStripMenuItem.Size = new System.Drawing.Size(254, 56);
-            this.exportXLSToolStripMenuItem.Text = "Export XLS";
             // 
             // radioWidgets
             // 
@@ -1207,6 +1210,101 @@
             this.exportPDFToolStripMenuItem.Size = new System.Drawing.Size(254, 56);
             this.exportPDFToolStripMenuItem.Text = "Export PDF";
             // 
+            // exportXLSToolStripMenuItem
+            // 
+            this.exportXLSToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.exportXLSToolStripMenuItem.Image = global::LucaToysLite.Properties.Resources.icons8_xls_48;
+            this.exportXLSToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.exportXLSToolStripMenuItem.Name = "exportXLSToolStripMenuItem";
+            this.exportXLSToolStripMenuItem.Size = new System.Drawing.Size(254, 56);
+            this.exportXLSToolStripMenuItem.Text = "Export XLS";
+            // 
+            // appToolsContextMenu
+            // 
+            this.appToolsContextMenu.Background = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.appToolsContextMenu.BorderSize = ((byte)(2));
+            this.appToolsContextMenu.ColorPallet = System.Drawing.Color.Crimson;
+            this.animator1.SetDecoration(this.appToolsContextMenu, WFAnimations.DecorationType.None);
+            this.appToolsContextMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.appToolsContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.appToolsContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.calculatorToolStripMenuItem,
+            this.toolStripSeparator18,
+            this.paintToolStripMenuItem,
+            this.notepadToolStripMenuItem,
+            this.toolStripSeparator19,
+            this.converterToolStripMenuItem,
+            this.translatorToolStripMenuItem,
+            this.webBrowserToolStripMenuItem,
+            this.toolStripSeparator20,
+            this.phoneBookToolStripMenuItem});
+            this.appToolsContextMenu.Name = "appToolsContextMenu";
+            this.appToolsContextMenu.Size = new System.Drawing.Size(233, 288);
+            // 
+            // calculatorToolStripMenuItem
+            // 
+            this.calculatorToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.calculatorToolStripMenuItem.Name = "calculatorToolStripMenuItem";
+            this.calculatorToolStripMenuItem.Size = new System.Drawing.Size(240, 38);
+            this.calculatorToolStripMenuItem.Text = "Calculator";
+            // 
+            // toolStripSeparator18
+            // 
+            this.toolStripSeparator18.Name = "toolStripSeparator18";
+            this.toolStripSeparator18.Size = new System.Drawing.Size(237, 6);
+            // 
+            // paintToolStripMenuItem
+            // 
+            this.paintToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.paintToolStripMenuItem.Name = "paintToolStripMenuItem";
+            this.paintToolStripMenuItem.Size = new System.Drawing.Size(240, 38);
+            this.paintToolStripMenuItem.Text = "Paint";
+            // 
+            // notepadToolStripMenuItem
+            // 
+            this.notepadToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.notepadToolStripMenuItem.Name = "notepadToolStripMenuItem";
+            this.notepadToolStripMenuItem.Size = new System.Drawing.Size(240, 38);
+            this.notepadToolStripMenuItem.Text = "Notepad";
+            // 
+            // toolStripSeparator19
+            // 
+            this.toolStripSeparator19.Name = "toolStripSeparator19";
+            this.toolStripSeparator19.Size = new System.Drawing.Size(237, 6);
+            // 
+            // converterToolStripMenuItem
+            // 
+            this.converterToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.converterToolStripMenuItem.Name = "converterToolStripMenuItem";
+            this.converterToolStripMenuItem.Size = new System.Drawing.Size(240, 38);
+            this.converterToolStripMenuItem.Text = "Converter";
+            // 
+            // translatorToolStripMenuItem
+            // 
+            this.translatorToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.translatorToolStripMenuItem.Name = "translatorToolStripMenuItem";
+            this.translatorToolStripMenuItem.Size = new System.Drawing.Size(240, 38);
+            this.translatorToolStripMenuItem.Text = "Translator";
+            // 
+            // webBrowserToolStripMenuItem
+            // 
+            this.webBrowserToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.webBrowserToolStripMenuItem.Name = "webBrowserToolStripMenuItem";
+            this.webBrowserToolStripMenuItem.Size = new System.Drawing.Size(240, 38);
+            this.webBrowserToolStripMenuItem.Text = "Web Browser";
+            // 
+            // toolStripSeparator20
+            // 
+            this.toolStripSeparator20.Name = "toolStripSeparator20";
+            this.toolStripSeparator20.Size = new System.Drawing.Size(237, 6);
+            // 
+            // phoneBookToolStripMenuItem
+            // 
+            this.phoneBookToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.phoneBookToolStripMenuItem.Name = "phoneBookToolStripMenuItem";
+            this.phoneBookToolStripMenuItem.Size = new System.Drawing.Size(232, 38);
+            this.phoneBookToolStripMenuItem.Text = "Phone Book";
+            // 
             // HomeMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
@@ -1226,6 +1324,7 @@
             this.documentsContextMenu.ResumeLayout(false);
             this.salesmanContextMenu.ResumeLayout(false);
             this.exportContextMenu.ResumeLayout(false);
+            this.appToolsContextMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1324,5 +1423,16 @@
         private System.Windows.Forms.ToolStripMenuItem exportCSVToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exportPDFToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exportXLSToolStripMenuItem;
+        private Controls.LTContextMenu appToolsContextMenu;
+        private System.Windows.Forms.ToolStripMenuItem calculatorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator18;
+        private System.Windows.Forms.ToolStripMenuItem paintToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem notepadToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator19;
+        private System.Windows.Forms.ToolStripMenuItem converterToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem translatorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem webBrowserToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator20;
+        private System.Windows.Forms.ToolStripMenuItem phoneBookToolStripMenuItem;
     }
 }
