@@ -2265,6 +2265,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="LucaLogo.ico" />
+    <None Include="Resources\icons8-database-administrator-481.png" />
+    <None Include="Resources\icons8-change-theme-48.png" />
+    <None Include="Resources\icons8-show-property-481.png" />
+    <None Include="Resources\icons8-admin-settings-male-481.png" />
+    <None Include="Resources\icons8-automatic-brightness-48.png" />
     <None Include="Resources\icons8-flipboard-48.png" />
     <None Include="Resources\icons8-pc-48.png" />
     <None Include="Resources\icons8-internet-48.png" />
